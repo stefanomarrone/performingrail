@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Package xmi:id="_sKH5QBVDEeyMXOG2LrUsxQ" name="Trackside Initialization">
+    <packagedElement xmi:type="uml:Association" xmi:id="_Yu8vcBVCEeyMXOG2LrUsxQ" memberEnd="_YvFSUBVCEeyMXOG2LrUsxQ _YvGgcBVCEeyMXOG2LrUsxQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Yu-koBVCEeyMXOG2LrUsxQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Yu-koRVCEeyMXOG2LrUsxQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_YvFSUBVCEeyMXOG2LrUsxQ" name="trackside initialisation" type="_HAqVYBRpEeyQN9odROAPWw" association="_Yu8vcBVCEeyMXOG2LrUsxQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_YvGgcBVCEeyMXOG2LrUsxQ" name="dispatcher" association="_Yu8vcBVCEeyMXOG2LrUsxQ">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_wEHq4BIoEeyVOZB09kZL2w"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pUYQoBVCEeyMXOG2LrUsxQ" memberEnd="_pUY3sRVCEeyMXOG2LrUsxQ _pUY3shVCEeyMXOG2LrUsxQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pUYQoRVCEeyMXOG2LrUsxQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pUY3sBVCEeyMXOG2LrUsxQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_pUY3sRVCEeyMXOG2LrUsxQ" name="trackside initialisation" type="_HAqVYBRpEeyQN9odROAPWw" association="_pUYQoBVCEeyMXOG2LrUsxQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_pUY3shVCEeyMXOG2LrUsxQ" name="tms" association="_pUYQoBVCEeyMXOG2LrUsxQ">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_M__c8BIsEeyVOZB09kZL2w"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_p1nVcBVCEeyMXOG2LrUsxQ" memberEnd="_p1n8ghVCEeyMXOG2LrUsxQ _p1ojkBVCEeyMXOG2LrUsxQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p1n8gBVCEeyMXOG2LrUsxQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p1n8gRVCEeyMXOG2LrUsxQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_p1n8ghVCEeyMXOG2LrUsxQ" name="trackside initialisation" type="_HAqVYBRpEeyQN9odROAPWw" association="_p1nVcBVCEeyMXOG2LrUsxQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_p1ojkBVCEeyMXOG2LrUsxQ" name="infrastructure manager" association="_p1nVcBVCEeyMXOG2LrUsxQ">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_uVu2cBIoEeyVOZB09kZL2w"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qOtK4BVCEeyMXOG2LrUsxQ" memberEnd="_qOtK4xVCEeyMXOG2LrUsxQ _qOtx8BVCEeyMXOG2LrUsxQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qOtK4RVCEeyMXOG2LrUsxQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qOtK4hVCEeyMXOG2LrUsxQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_qOtK4xVCEeyMXOG2LrUsxQ" name="trackside initialisation" type="_HAqVYBRpEeyQN9odROAPWw" association="_qOtK4BVCEeyMXOG2LrUsxQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_qOtx8BVCEeyMXOG2LrUsxQ" name="ttd" association="_qOtK4BVCEeyMXOG2LrUsxQ">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_zC8n8BIyEeyVOZB09kZL2w"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_HAqVYBRpEeyQN9odROAPWw" name="Trackside Initialisation">
+      <include xmi:type="uml:Include" xmi:id="_GT_akBVDEeyMXOG2LrUsxQ">
+        <addition xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
+      </include>
+      <include xmi:type="uml:Include" xmi:id="_G-iMYBVDEeyMXOG2LrUsxQ">
+        <addition xmi:type="uml:UseCase" href="Reserved_Status_Management.uml#_Ez5woBRuEeyQN9odROAPWw"/>
+      </include>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_6NxaMBVDEeyMXOG2LrUsxQ" name="REQ-TrackInit" isAbstract="true">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_TU0-MBVEEeyMXOG2LrUsxQ" name="REQ-TrackInit-1"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_Jc-54BVFEeyMXOG2LrUsxQ" name="REQ-TrackInit-2"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_KADxwBVFEeyMXOG2LrUsxQ" name="REQ-TrackInit-3"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_LKEt0BVFEeyMXOG2LrUsxQ" name="REQ-TrackInit-4"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_LPn8MBVFEeyMXOG2LrUsxQ" name="REQ-TrackInit-5"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oeficDjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeficTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oegJgDjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oegwkDjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oegwkTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oegwkjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oegwkzjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oegwlDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oegwlTjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oehXoDjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oehXoTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oehXojjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oehXozjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oehXpDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oehXpTjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oehXpjjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oehXpzjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeh-sDjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oeh-sTjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeh-sjjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeh-szjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oeh-tDjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeh-tTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeh-tjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oeh-tzjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeh-uDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeh-uTjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oeilwDjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeilwTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeilwjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <Requirements:Requirement xmi:id="_6N-1kBVDEeyMXOG2LrUsxQ" base_NamedElement="_6NxaMBVDEeyMXOG2LrUsxQ" id="REQ-TrackInit" base_Class="_6NxaMBVDEeyMXOG2LrUsxQ"/>
+  <Requirements:Requirement xmi:id="_TU4BgBVEEeyMXOG2LrUsxQ" base_NamedElement="_TU0-MBVEEeyMXOG2LrUsxQ" id="REQ-TrackInit-1" text="The L3 Trackside shall consider the entire L3 Area of Control to be in Track Status Unknown when the L3 Trackside initialisation starts." base_Class="_TU0-MBVEEeyMXOG2LrUsxQ"/>
+  <Requirements:Requirement xmi:id="_JdEZcBVFEeyMXOG2LrUsxQ" base_NamedElement="_Jc-54BVFEeyMXOG2LrUsxQ" id="REQ-TrackInit-2" text="The L3 Trackside shall utilise valid Stored Information to enable faster initialisation." base_Class="_Jc-54BVFEeyMXOG2LrUsxQ"/>
+  <Requirements:Requirement xmi:id="_KAEY0BVFEeyMXOG2LrUsxQ" base_NamedElement="_KADxwBVFEeyMXOG2LrUsxQ" id="REQ-TrackInit-3" text="The L3 Trackside, if configured, shall provide a means for the person responsible for the Trackside Initialisation to confirm that the procedure is completed." base_Class="_KADxwBVFEeyMXOG2LrUsxQ"/>
+  <Requirements:Requirement xmi:id="_LKF78BVFEeyMXOG2LrUsxQ" base_NamedElement="_LKEt0BVFEeyMXOG2LrUsxQ" id="REQ-TrackInit-4" text="The L3 Trackside shall clear the remaining Unknown Track Status Areas created at the start of the Trackside Initialisation procedure and consider the Trackside Initialisation process as completed either:&#xD;&#xA;• upon receiving confirmation of completion of the Initialisation procedure from the responsible person&#xD;&#xA;• after Stored Information has been used and confirmation from the responsible person is not required." base_Class="_LKEt0BVFEeyMXOG2LrUsxQ"/>
+  <Requirements:Requirement xmi:id="_LPpKUBVFEeyMXOG2LrUsxQ" base_NamedElement="_LPn8MBVFEeyMXOG2LrUsxQ" id="REQ-TrackInit-5" text="The L3 Trackside shall send Authorisations to trains in the Area of Control only after the Trackside Initialisation procedure has been completed." base_Class="_LPn8MBVFEeyMXOG2LrUsxQ"/>
+</xmi:XMI>

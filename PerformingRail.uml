@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
   <uml:Model xmi:id="_JYaFgBIcEeyVOZB09kZL2w" name="PerformingRail">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_JblVUBIcEeyVOZB09kZL2w">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -38,22 +38,27 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_UMMgwBIzEeyVOZB09kZL2w" name="ETCS L3">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_av43QBIzEeyVOZB09kZL2w" name="Trackside">
-          <ownedUseCase xmi:type="uml:UseCase" xmi:id="_INQ5IBRuEeyQN9odROAPWw" name="Trains Management"/>
-          <ownedUseCase xmi:type="uml:UseCase" xmi:id="_INRgMBRuEeyQN9odROAPWw" name="MA Management"/>
+          <ownedUseCase xmi:type="uml:UseCase" href="Trains_Management.uml#_INQ5IBRuEeyQN9odROAPWw"/>
+          <ownedUseCase xmi:type="uml:UseCase" href="MA_Management.uml#_INRgMBRuEeyQN9odROAPWw"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_g39hIBVGEeyMXOG2LrUsxQ" name="tracksideInitialitated" visibility="public">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_u2IFIBVGEeyMXOG2LrUsxQ"/>
           </ownedAttribute>
-          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_5YQMsBRtEeyQN9odROAPWw" name="Route Management"/>
-          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_BCR5IBRuEeyQN9odROAPWw" name="TTD Management"/>
-          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_CTlwABRuEeyQN9odROAPWw" name="Manage Low Adhesion Areas"/>
-          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_DwLp0BRuEeyQN9odROAPWw" name="Manage Temporary Speed Restrictions"/>
-          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_Ez5woBRuEeyQN9odROAPWw" name="Reserved Status Management"/>
-          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_F6flQBRuEeyQN9odROAPWw" name="Track Status Management"/>
-          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_MMzQ0BRuEeyQN9odROAPWw" name="Points Management"/>
-          <nestedClassifier xmi:type="uml:UseCase" xmi:id="_Njev4BRuEeyQN9odROAPWw" name="Communication Management"/>
+          <nestedClassifier xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
+          <nestedClassifier xmi:type="uml:UseCase" href="TTD_Management.uml#_BCR5IBRuEeyQN9odROAPWw"/>
+          <nestedClassifier xmi:type="uml:UseCase" href="Manage_Low_Adhesion_Areas.uml#_CTlwABRuEeyQN9odROAPWw"/>
+          <nestedClassifier xmi:type="uml:UseCase" href="Manage_Temporary_Speed_Restrictions.uml#_DwLp0BRuEeyQN9odROAPWw"/>
+          <nestedClassifier xmi:type="uml:UseCase" href="Reserved_Status_Management.uml#_Ez5woBRuEeyQN9odROAPWw"/>
+          <nestedClassifier xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
+          <nestedClassifier xmi:type="uml:UseCase" href="Points_Management.uml#_MMzQ0BRuEeyQN9odROAPWw"/>
+          <nestedClassifier xmi:type="uml:UseCase" href="Communication_Management.uml#_Njev4BRuEeyQN9odROAPWw"/>
         </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_fF5jUBI1EeyVOZB09kZL2w" name="On board"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_fF5jUBI1EeyVOZB09kZL2w" name="On board">
+          <ownedUseCase xmi:type="uml:UseCase" href="Train_Position_Reporting.uml#_hQC-wDjZEeyQeMlHlxk6EA"/>
+          <ownedUseCase xmi:type="uml:UseCase" href="Integration_Information_Management.uml#_jD9zcDjZEeyQeMlHlxk6EA"/>
+          <ownedUseCase xmi:type="uml:UseCase" href="Manage_Dynamic_Speed_Profile.uml#_kQKg0DjZEeyQeMlHlxk6EA"/>
+          <ownedUseCase xmi:type="uml:UseCase" href="Speed_and_Distance_Supervision.uml#_lQKlQDjZEeyQeMlHlxk6EA"/>
+        </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_cLBUUBI6EeyVOZB09kZL2w" memberEnd="_cLBUUxI6EeyVOZB09kZL2w _cLB7YBI6EeyVOZB09kZL2w">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cLBUURI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
@@ -139,73 +144,24 @@
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_DB_gYBRpEeyQN9odROAPWw" name="ERTMS Use cases">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_1m7M8BRpEeyQN9odROAPWw" name="Start of Mission"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_36a5kBRpEeyQN9odROAPWw" name="Normal Train Movement"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_36bgoBRpEeyQN9odROAPWw" name="Level Transition"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_5iUEcBRpEeyQN9odROAPWw" name="Handover"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_5iUrgBRpEeyQN9odROAPWw" name="On Sight Movement"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_5iVSkBRpEeyQN9odROAPWw" name="End of Mission"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_5iV5oBRpEeyQN9odROAPWw" name="Reversing"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_6xzWYBRpEeyQN9odROAPWw" name="Splitting"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_6xz9cBRpEeyQN9odROAPWw" name="Joining"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_6x0kgBRpEeyQN9odROAPWw" name="Shunting"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_6x0kgRRpEeyQN9odROAPWw" name="Mixed Traffic"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_6x1LkBRpEeyQN9odROAPWw" name="Loss/Restore of Communication"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_6x1yoBRpEeyQN9odROAPWw" name="Loss of Train Integrity"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_6x1yoRRpEeyQN9odROAPWw" name="SR Movement"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_6x2ZsBRpEeyQN9odROAPWw" name="Radio Hole"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_8z5xABRpEeyQN9odROAPWw" name="Points Control"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_8z5xARRpEeyQN9odROAPWw" name="Sweeping"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_8z6_IBRpEeyQN9odROAPWw" name="Change of Direction"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="_sGc_cBRtEeyQN9odROAPWw" memberEnd="_sGe0oBRtEeyQN9odROAPWw _sGhQ4BRtEeyQN9odROAPWw">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sGeNkBRtEeyQN9odROAPWw" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_sGeNkRRtEeyQN9odROAPWw" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_sGe0oBRtEeyQN9odROAPWw" name="start of mission" type="_1m7M8BRpEeyQN9odROAPWw" association="_sGc_cBRtEeyQN9odROAPWw"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_sGhQ4BRtEeyQN9odROAPWw" name="driver" type="_s3WM4BIoEeyVOZB09kZL2w" association="_sGc_cBRtEeyQN9odROAPWw"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_Yu8vcBVCEeyMXOG2LrUsxQ" memberEnd="_YvFSUBVCEeyMXOG2LrUsxQ _YvGgcBVCEeyMXOG2LrUsxQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Yu-koBVCEeyMXOG2LrUsxQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Yu-koRVCEeyMXOG2LrUsxQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_YvFSUBVCEeyMXOG2LrUsxQ" name="trackside initialisation" type="_HAqVYBRpEeyQN9odROAPWw" association="_Yu8vcBVCEeyMXOG2LrUsxQ"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_YvGgcBVCEeyMXOG2LrUsxQ" name="dispatcher" type="_wEHq4BIoEeyVOZB09kZL2w" association="_Yu8vcBVCEeyMXOG2LrUsxQ"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_pUYQoBVCEeyMXOG2LrUsxQ" memberEnd="_pUY3sRVCEeyMXOG2LrUsxQ _pUY3shVCEeyMXOG2LrUsxQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pUYQoRVCEeyMXOG2LrUsxQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pUY3sBVCEeyMXOG2LrUsxQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_pUY3sRVCEeyMXOG2LrUsxQ" name="trackside initialisation" type="_HAqVYBRpEeyQN9odROAPWw" association="_pUYQoBVCEeyMXOG2LrUsxQ"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_pUY3shVCEeyMXOG2LrUsxQ" name="tms" type="_M__c8BIsEeyVOZB09kZL2w" association="_pUYQoBVCEeyMXOG2LrUsxQ"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_p1nVcBVCEeyMXOG2LrUsxQ" memberEnd="_p1n8ghVCEeyMXOG2LrUsxQ _p1ojkBVCEeyMXOG2LrUsxQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_p1n8gBVCEeyMXOG2LrUsxQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_p1n8gRVCEeyMXOG2LrUsxQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_p1n8ghVCEeyMXOG2LrUsxQ" name="trackside initialisation" type="_HAqVYBRpEeyQN9odROAPWw" association="_p1nVcBVCEeyMXOG2LrUsxQ"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_p1ojkBVCEeyMXOG2LrUsxQ" name="infrastructure manager" type="_uVu2cBIoEeyVOZB09kZL2w" association="_p1nVcBVCEeyMXOG2LrUsxQ"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_qOtK4BVCEeyMXOG2LrUsxQ" memberEnd="_qOtK4xVCEeyMXOG2LrUsxQ _qOtx8BVCEeyMXOG2LrUsxQ">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qOtK4RVCEeyMXOG2LrUsxQ" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qOtK4hVCEeyMXOG2LrUsxQ" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_qOtK4xVCEeyMXOG2LrUsxQ" name="trackside initialisation" type="_HAqVYBRpEeyQN9odROAPWw" association="_qOtK4BVCEeyMXOG2LrUsxQ"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_qOtx8BVCEeyMXOG2LrUsxQ" name="ttd" type="_zC8n8BIyEeyVOZB09kZL2w" association="_qOtK4BVCEeyMXOG2LrUsxQ"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_sKH5QBVDEeyMXOG2LrUsxQ" name="Trackside Initialization">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_HAqVYBRpEeyQN9odROAPWw" name="Trackside Initialisation">
-          <include xmi:type="uml:Include" xmi:id="_GT_akBVDEeyMXOG2LrUsxQ" addition="_F6flQBRuEeyQN9odROAPWw"/>
-          <include xmi:type="uml:Include" xmi:id="_G-iMYBVDEeyMXOG2LrUsxQ" addition="_Ez5woBRuEeyQN9odROAPWw"/>
-        </packagedElement>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_01ZAQBVDEeyMXOG2LrUsxQ" name="Requirements">
-        <packagedElement xmi:type="uml:Class" xmi:id="_6NxaMBVDEeyMXOG2LrUsxQ" name="REQ-TrackInit-Master" isAbstract="true">
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_TU0-MBVEEeyMXOG2LrUsxQ" name="REQ-TrackInit-1"/>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_Jc-54BVFEeyMXOG2LrUsxQ" name="REQ-TrackInit-2"/>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_KADxwBVFEeyMXOG2LrUsxQ" name="REQ-TrackInit-3"/>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_LKEt0BVFEeyMXOG2LrUsxQ" name="REQ-TrackInit-4"/>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_LPn8MBVFEeyMXOG2LrUsxQ" name="REQ-TrackInit-5"/>
-        </packagedElement>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Package" href="Trackside_Initialization.uml#_sKH5QBVDEeyMXOG2LrUsxQ"/>
+      <packagedElement xmi:type="uml:Package" href="Normal_Train_Movement.uml#_TpGzgDjPEeyQeMlHlxk6EA"/>
+      <packagedElement xmi:type="uml:Package" href="OnSight_Movement.uml#_GFnqQDjYEeyQeMlHlxk6EA"/>
+      <packagedElement xmi:type="uml:Package" href="Loss_Restore_of_Communication.uml#_I_v5EDjYEeyQeMlHlxk6EA"/>
+      <packagedElement xmi:type="uml:Package" href="Loss_of_Train_Integrity.uml#_LClTgDjYEeyQeMlHlxk6EA"/>
+      <packagedElement xmi:type="uml:Package" href="Staff_Responsible_Movement.uml#_M74-gDjYEeyQeMlHlxk6EA"/>
+      <packagedElement xmi:type="uml:Package" href="Points_Control.uml#_O_-9MDjYEeyQeMlHlxk6EA"/>
+      <packagedElement xmi:type="uml:Package" href="Sweeping.uml#_Qjy5UDjYEeyQeMlHlxk6EA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JZjVABIcEeyVOZB09kZL2w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JZnmcBIcEeyVOZB09kZL2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -283,10 +239,4 @@
   <Blocks:Block xmi:id="_UMVDoBIzEeyVOZB09kZL2w" base_Class="_UMMgwBIzEeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_av9IsBIzEeyVOZB09kZL2w" base_Class="_av43QBIzEeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_fF9NsBI1EeyVOZB09kZL2w" base_Class="_fF5jUBI1EeyVOZB09kZL2w"/>
-  <Requirements:Requirement xmi:id="_6N-1kBVDEeyMXOG2LrUsxQ" base_NamedElement="_6NxaMBVDEeyMXOG2LrUsxQ" id="REQ-TrackInit-Master" text="The Trackside " base_Class="_6NxaMBVDEeyMXOG2LrUsxQ"/>
-  <Requirements:Requirement xmi:id="_TU4BgBVEEeyMXOG2LrUsxQ" base_NamedElement="_TU0-MBVEEeyMXOG2LrUsxQ" id="REQ-TrackInit-1" text="The L3 Trackside shall consider the entire L3 Area of Control to be in Track Status Unknown when the L3 Trackside initialisation starts." base_Class="_TU0-MBVEEeyMXOG2LrUsxQ"/>
-  <Requirements:Requirement xmi:id="_JdEZcBVFEeyMXOG2LrUsxQ" base_NamedElement="_Jc-54BVFEeyMXOG2LrUsxQ" id="REQ-TrackInit-2" text="The L3 Trackside shall utilise valid Stored Information to enable faster initialisation." base_Class="_Jc-54BVFEeyMXOG2LrUsxQ"/>
-  <Requirements:Requirement xmi:id="_KAEY0BVFEeyMXOG2LrUsxQ" base_NamedElement="_KADxwBVFEeyMXOG2LrUsxQ" id="REQ-TrackInit-3" text="The L3 Trackside, if configured, shall provide a means for the person responsible for the Trackside Initialisation to confirm that the procedure is completed." base_Class="_KADxwBVFEeyMXOG2LrUsxQ"/>
-  <Requirements:Requirement xmi:id="_LKF78BVFEeyMXOG2LrUsxQ" base_NamedElement="_LKEt0BVFEeyMXOG2LrUsxQ" id="REQ-TrackInit-4" text="The L3 Trackside shall clear the remaining Unknown Track Status Areas created at the start of the Trackside Initialisation procedure and consider the Trackside Initialisation process as completed either:&#xD;&#xA;• upon receiving confirmation of completion of the Initialisation procedure from the responsible person&#xD;&#xA;• after Stored Information has been used and confirmation from the responsible person is not required." base_Class="_LKEt0BVFEeyMXOG2LrUsxQ"/>
-  <Requirements:Requirement xmi:id="_LPpKUBVFEeyMXOG2LrUsxQ" base_NamedElement="_LPn8MBVFEeyMXOG2LrUsxQ" id="REQ-TrackInit-5" text="The L3 Trackside shall send Authorisations to trains in the Area of Control only after the Trackside Initialisation procedure has been completed." base_Class="_LPn8MBVFEeyMXOG2LrUsxQ"/>
 </xmi:XMI>
