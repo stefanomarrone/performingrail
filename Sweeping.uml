@@ -1,6 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Qjy5UDjYEeyQeMlHlxk6EA" name="Sweeping">
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_8z5xARRpEeyQN9odROAPWw" name="Sweeping"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_8z5xARRpEeyQN9odROAPWw" name="Sweeping">
+    <include xmi:type="uml:Include" xmi:id="_b0DKYD1eEeyAv_UCn311nQ">
+      <addition xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
+    </include>
+    <include xmi:type="uml:Include" xmi:id="_hOjrQD1eEeyAv_UCn311nQ">
+      <addition xmi:type="uml:UseCase" href="TTD_Management.uml#_BCR5IBRuEeyQN9odROAPWw"/>
+    </include>
+    <include xmi:type="uml:Include" xmi:id="_lW4ykD1eEeyAv_UCn311nQ">
+      <addition xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
+    </include>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ASFqMD1eEeyAv_UCn311nQ" memberEnd="_ASiWID1eEeyAv_UCn311nQ _ASiWIT1eEeyAv_UCn311nQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ASIGcD1eEeyAv_UCn311nQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ASIGcT1eEeyAv_UCn311nQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ASiWID1eEeyAv_UCn311nQ" name="tms" association="_ASFqMD1eEeyAv_UCn311nQ">
+      <type xmi:type="uml:Class" href="PerformingRail.uml#_M__c8BIsEeyVOZB09kZL2w"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_ASiWIT1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_ASFqMD1eEeyAv_UCn311nQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NM1pYD1eEeyAv_UCn311nQ" memberEnd="_NM2Qcj1eEeyAv_UCn311nQ _NM23gD1eEeyAv_UCn311nQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NM2QcD1eEeyAv_UCn311nQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NM2QcT1eEeyAv_UCn311nQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NM2Qcj1eEeyAv_UCn311nQ" name="driver" association="_NM1pYD1eEeyAv_UCn311nQ">
+      <type xmi:type="uml:Class" href="PerformingRail.uml#_s3WM4BIoEeyVOZB09kZL2w"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NM23gD1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_NM1pYD1eEeyAv_UCn311nQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_QSPUED1eEeyAv_UCn311nQ" memberEnd="_QSP7Ij1eEeyAv_UCn311nQ _QSP7Iz1eEeyAv_UCn311nQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QSP7ID1eEeyAv_UCn311nQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QSP7IT1eEeyAv_UCn311nQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QSP7Ij1eEeyAv_UCn311nQ" name="ttd" association="_QSPUED1eEeyAv_UCn311nQ">
+      <type xmi:type="uml:Class" href="PerformingRail.uml#_zC8n8BIyEeyVOZB09kZL2w"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_QSP7Iz1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_QSPUED1eEeyAv_UCn311nQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RfcuED1eEeyAv_UCn311nQ" memberEnd="_RfdVIj1eEeyAv_UCn311nQ _RfdVIz1eEeyAv_UCn311nQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RfdVID1eEeyAv_UCn311nQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RfdVIT1eEeyAv_UCn311nQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RfdVIj1eEeyAv_UCn311nQ" name="dispatcher" association="_RfcuED1eEeyAv_UCn311nQ">
+      <type xmi:type="uml:Class" href="PerformingRail.uml#_wEHq4BIoEeyVOZB09kZL2w"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RfdVIz1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_RfcuED1eEeyAv_UCn311nQ"/>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq21MDjZEeyQeMlHlxk6EA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq21MTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
