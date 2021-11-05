@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:TimedRequirement="http:///schemas/TimedRequirement/_Ks6YIKahEeu438NAqBxT8g/2" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements http:///schemas/TimedRequirement/_Ks6YIKahEeu438NAqBxT8g/2 Timed_Requirement_profile/TimedRequirement.profile.uml#_Ks7mQKahEeu438NAqBxT8g">
+  <uml:Model xmi:id="_-BoOkJo6EeuUNNO3sHn44g" name="MB_System_req" visibility="public">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_-KEY4Jo6EeuUNNO3sHn44g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_-KjhEJo6EeuUNNO3sHn44g">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_mMejkJ35EeuEs63bdP9wEQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://SysML16_REQUIREMENTSEXTENSION/RequirementsExtension.profile.uml#RequirementsExtensionProfile"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_w0bbMJo_EeuEs63bdP9wEQ" name="MBS_Requirements" visibility="protected">
+      <packagedElement xmi:type="uml:Class" xmi:id="_QSNVYJtsEeuEs63bdP9wEQ" name="MBS_all_requirement">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_hpA6UJrWEeuEs63bdP9wEQ" name="Train_Location">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8xWEJo_Eeuv2oAWFJQOTw" name="TrainLoc-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9IJo_Eeuv2oAWFJQOTw" name="TrainLoc-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9IZo_Eeuv2oAWFJQOTw" name="TrainLoc-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9Ipo_Eeuv2oAWFJQOTw" name="TrainLoc-4"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9I5o_Eeuv2oAWFJQOTw" name="TrainLoc-5"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9JJo_Eeuv2oAWFJQOTw" name="TrainLoc-6"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9JZo_Eeuv2oAWFJQOTw" name="TrainLoc-7"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9Jpo_Eeuv2oAWFJQOTw" name="TrainLoc-8"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9J5o_Eeuv2oAWFJQOTw" name="TrainLoc-9"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9KJo_Eeuv2oAWFJQOTw" name="TrainLoc-10"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9KZo_Eeuv2oAWFJQOTw" name="TrainLoc-11"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9Kpo_Eeuv2oAWFJQOTw" name="TrainLoc-12" visibility="public"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9K5o_Eeuv2oAWFJQOTw" name="TrainLoc-13"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9LJo_Eeuv2oAWFJQOTw" name="TrainLoc-14"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_LHrKMJtsEeuEs63bdP9wEQ" name="Track_Status">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8x9LZo_Eeuv2oAWFJQOTw" name="TrackStatus-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykMJo_Eeuv2oAWFJQOTw" name="TrackStatus-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykMZo_Eeuv2oAWFJQOTw" name="TrackStatus-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykMpo_Eeuv2oAWFJQOTw" name="TrackStatus-4"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykM5o_Eeuv2oAWFJQOTw" name="TrackStatus-5"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykNJo_Eeuv2oAWFJQOTw" name="TrackStatus-6"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykNZo_Eeuv2oAWFJQOTw" name="TrackStatus-7"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykNpo_Eeuv2oAWFJQOTw" name="TrackStatus-8"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykN5o_Eeuv2oAWFJQOTw" name="TrackStatus-9"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykOJo_Eeuv2oAWFJQOTw" name="TrackStatus-10"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykOZo_Eeuv2oAWFJQOTw" name="TrackStatus-11"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykOpo_Eeuv2oAWFJQOTw" name="TrackStatus-12"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykO5o_Eeuv2oAWFJQOTw" name="TrackStatus-13"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykPJo_Eeuv2oAWFJQOTw" name="TrackStatus-14"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykPZo_Eeuv2oAWFJQOTw" name="TrackStatus-15"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykPpo_Eeuv2oAWFJQOTw" name="TrackStatus-16"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykP5o_Eeuv2oAWFJQOTw" name="TrackStatus-17"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8ykQJo_Eeuv2oAWFJQOTw" name="TrackStatus-18"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLQJo_Eeuv2oAWFJQOTw" name="TrackStatus-19"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_-JZgcJtsEeuEs63bdP9wEQ" name="Reserved_Status">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLQZo_Eeuv2oAWFJQOTw" name="Reserved-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLQpo_Eeuv2oAWFJQOTw" name="Reserved-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLQ5o_Eeuv2oAWFJQOTw" name="Reserved-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLRJo_Eeuv2oAWFJQOTw" name="Reserved-4"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLRZo_Eeuv2oAWFJQOTw" name="Reserved-5"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLRpo_Eeuv2oAWFJQOTw" name="Reserved-6"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_Icyb0JttEeuEs63bdP9wEQ" name="Fixed_Virtual_Blocks">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLR5o_Eeuv2oAWFJQOTw" name="FVB-1"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_KZpxIJttEeuEs63bdP9wEQ" name="Trackside_Train_Detection">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLSJo_Eeuv2oAWFJQOTw" name="TTD-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLSZo_Eeuv2oAWFJQOTw" name="TTD-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLSpo_Eeuv2oAWFJQOTw" name="TTD-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLS5o_Eeuv2oAWFJQOTw" name="TTD-4"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLTJo_Eeuv2oAWFJQOTw" name="TTD-5"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLTZo_Eeuv2oAWFJQOTw" name="TTD-6"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLTpo_Eeuv2oAWFJQOTw" name="TTD-7"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_4y45UJttEeuEs63bdP9wEQ" name="Point_Control">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLT5o_Eeuv2oAWFJQOTw" name="PTS-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLUJo_Eeuv2oAWFJQOTw" name="PTS-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLUZo_Eeuv2oAWFJQOTw" name="PTS-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zLUpo_Eeuv2oAWFJQOTw" name="PTS-4"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_B4SXkJtuEeuEs63bdP9wEQ" name="Movement_Authority">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyUJo_Eeuv2oAWFJQOTw" name="MA-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyUZo_Eeuv2oAWFJQOTw" name="MA-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyUpo_Eeuv2oAWFJQOTw" name="MA-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyU5o_Eeuv2oAWFJQOTw" name="MA-4"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyVJo_Eeuv2oAWFJQOTw" name="MA-5"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyVZo_Eeuv2oAWFJQOTw" name="MA-6"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyVpo_Eeuv2oAWFJQOTw" name="MA-7"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyV5o_Eeuv2oAWFJQOTw" name="MA-8"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyWJo_Eeuv2oAWFJQOTw" name="MA-9"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyWZo_Eeuv2oAWFJQOTw" name="MA-10"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyWpo_Eeuv2oAWFJQOTw" name="MA-11"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyW5o_Eeuv2oAWFJQOTw" name="MA-12"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_VQBBQJtuEeuEs63bdP9wEQ" name="EoA_Exclusion_Area">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyXJo_Eeuv2oAWFJQOTw" name="EoAExclusionArea-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyXZo_Eeuv2oAWFJQOTw" name="EoAExclusionArea-2"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_dDQ7IJtuEeuEs63bdP9wEQ" name="Start_Of_Mission">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyXpo_Eeuv2oAWFJQOTw" name="StartTrain-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyX5o_Eeuv2oAWFJQOTw" name="StartTrain-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyYJo_Eeuv2oAWFJQOTw" name="StartTrain-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyYZo_Eeuv2oAWFJQOTw" name="StartTrain-4"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C8zyYpo_Eeuv2oAWFJQOTw" name="StartTrain-5"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZYJo_Eeuv2oAWFJQOTw" name="StartTrain-6"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZYZo_Eeuv2oAWFJQOTw" name="StartTrain-7"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZYpo_Eeuv2oAWFJQOTw" name="StartTrain-8"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZY5o_Eeuv2oAWFJQOTw" name="StartTrain-9"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZZJo_Eeuv2oAWFJQOTw" name="StartTrain-10"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZZZo_Eeuv2oAWFJQOTw" name="StartTrain-11"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZZpo_Eeuv2oAWFJQOTw" name="StartTrain-12"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZZ5o_Eeuv2oAWFJQOTw" name="StartTrain-13"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZaJo_Eeuv2oAWFJQOTw" name="StartTrain-14"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZaZo_Eeuv2oAWFJQOTw" name="StartTrain-15"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_7oYDQJtuEeuEs63bdP9wEQ" name="First_MA">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80Zb5o_Eeuv2oAWFJQOTw" name="FirstMA-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZcJo_Eeuv2oAWFJQOTw" name="FirstMA-2"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_gMdYgJuhEeuEs63bdP9wEQ" name="Loss_of_Communication">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZcZo_Eeuv2oAWFJQOTw" name="LossComms-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80Zcpo_Eeuv2oAWFJQOTw" name="LossComms-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81AcJo_Eeuv2oAWFJQOTw" name="LossComms-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81AcZo_Eeuv2oAWFJQOTw" name="LossComms-4"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81Acpo_Eeuv2oAWFJQOTw" name="LossComms-5"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81Ac5o_Eeuv2oAWFJQOTw" name="LossComms-6"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_lh24EJtuEeuEs63bdP9wEQ" name="Move_Under_SR_Authorisation">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80Zapo_Eeuv2oAWFJQOTw" name="MovSR-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80Za5o_Eeuv2oAWFJQOTw" name="MovSR-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZbJo_Eeuv2oAWFJQOTw" name="MovSR-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80ZbZo_Eeuv2oAWFJQOTw" name="MovSR-4"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C80Zbpo_Eeuv2oAWFJQOTw" name="MovSR-5"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_1glbAJwxEeuEs63bdP9wEQ" name="Recovery_Management">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81AdJo_Eeuv2oAWFJQOTw" name="RecoveryMgmt-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81AdZo_Eeuv2oAWFJQOTw" name="RecoveryMgmt-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81Adpo_Eeuv2oAWFJQOTw" name="RecoveryMgmt-3"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_8ePwsJwxEeuEs63bdP9wEQ" name="Radio_Hole">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81Ad5o_Eeuv2oAWFJQOTw" name="RadioHole-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81AeJo_Eeuv2oAWFJQOTw" name="RadioHole-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81AeZo_Eeuv2oAWFJQOTw" name="RadioHole-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81Aepo_Eeuv2oAWFJQOTw" name="RadioHole-4"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81Ae5o_Eeuv2oAWFJQOTw" name="RadioHole-5"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81AfJo_Eeuv2oAWFJQOTw" name="RadioHole-6"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81AfZo_Eeuv2oAWFJQOTw" name="RadioHole-7"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81Afpo_Eeuv2oAWFJQOTw" name="RadioHole-8"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_E9MS8JwyEeuEs63bdP9wEQ" name="Reverse">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81Af5o_Eeuv2oAWFJQOTw" name="Rev-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81AgJo_Eeuv2oAWFJQOTw" name="Rev-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81ngJo_Eeuv2oAWFJQOTw" name="Rev-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81ngZo_Eeuv2oAWFJQOTw" name="Rev-4"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81ngpo_Eeuv2oAWFJQOTw" name="Rev-5"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_LvSR0JwyEeuEs63bdP9wEQ" name="End_of_Mission">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81ng5o_Eeuv2oAWFJQOTw" name="EoM-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81nhJo_Eeuv2oAWFJQOTw" name="EoM-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81nhZo_Eeuv2oAWFJQOTw" name="EoM-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81nhpo_Eeuv2oAWFJQOTw" name="EoM-4"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_SnGeMJwyEeuEs63bdP9wEQ" name="Loss_Train_Integrity">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81nh5o_Eeuv2oAWFJQOTw" name="LossTI-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81niJo_Eeuv2oAWFJQOTw" name="LossTI-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81niZo_Eeuv2oAWFJQOTw" name="LossTI-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C81nipo_Eeuv2oAWFJQOTw" name="LossTI-4"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82OkJo_Eeuv2oAWFJQOTw" name="LossTI-5"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82OkZo_Eeuv2oAWFJQOTw" name="LossTI-6"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82Okpo_Eeuv2oAWFJQOTw" name="LossTI-7"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82Ok5o_Eeuv2oAWFJQOTw" name="LossTI-8"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82OlJo_Eeuv2oAWFJQOTw" name="LossTI-9"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82OlZo_Eeuv2oAWFJQOTw" name="LossTI-10"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_nhueAJwyEeuEs63bdP9wEQ" name="Level_Transition">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82Olpo_Eeuv2oAWFJQOTw" name="LevelTrans-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82Ol5o_Eeuv2oAWFJQOTw" name="LevelTrans-2"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_vjEeQJwyEeuEs63bdP9wEQ" name="Track_Initialisation">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82OmJo_Eeuv2oAWFJQOTw" name="TrackInit-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82OmZo_Eeuv2oAWFJQOTw" name="TrackInit-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82Ompo_Eeuv2oAWFJQOTw" name="TrackInit-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82Om5o_Eeuv2oAWFJQOTw" name="TrackInit-4"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82OnJo_Eeuv2oAWFJQOTw" name="TrackInit-5"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_4SPN0JwyEeuEs63bdP9wEQ" name="Handover">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82OnZo_Eeuv2oAWFJQOTw" name="HO-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82Onpo_Eeuv2oAWFJQOTw" name="HO-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82On5o_Eeuv2oAWFJQOTw" name="HO-3"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_-o7qIJwyEeuEs63bdP9wEQ" name="Shunting">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82OoJo_Eeuv2oAWFJQOTw" name="SH-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82OoZo_Eeuv2oAWFJQOTw" name="SH-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82Oopo_Eeuv2oAWFJQOTw" name="SH-3"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C82Oo5o_Eeuv2oAWFJQOTw" name="SH-4"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_EsaPgJwzEeuEs63bdP9wEQ" name="Joining">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C821oJo_Eeuv2oAWFJQOTw" name="Join-1"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C821oZo_Eeuv2oAWFJQOTw" name="Join-2"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C821opo_Eeuv2oAWFJQOTw" name="Join-3"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_N7ZHkJwzEeuEs63bdP9wEQ" name="Splitting">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C821o5o_Eeuv2oAWFJQOTw" name="Split-1"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_UPuzcJwzEeuEs63bdP9wEQ" name="Traffic_Management_System">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_C83csJo_Eeuv2oAWFJQOTw" name="TMS-1"/>
+        </nestedClassifier>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_zQi10J4EEeuEs63bdP9wEQ" name="Main_Requirements">
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_fTYXwKafEeu438NAqBxT8g" name="Refine19" client="_7oYDQJtuEeuEs63bdP9wEQ" supplier="_w0bbMJo_EeuEs63bdP9wEQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_ffZlgJxiEeuEs63bdP9wEQ" name="Timed_Requirements">
+        <packagedElement xmi:type="uml:Class" xmi:id="_tDlt0JxjEeuEs63bdP9wEQ" name="Timestamp" visibility="public"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_CAwJgJ3_EeuEs63bdP9wEQ" name="Timeout_No_Validated_Train_Data"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_E8B88J4BEeuEs63bdP9wEQ" name="Timeout_Mute_Timer"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_fiafMKHyEeu_UJ1KxnEfIw" name="Timeout_Session_Timer"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_AYhIkKKuEeuQh5MKDl_z6Q" name="Timeout_Radio_Hole_Timer"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_GK36AKK0EeuQh5MKDl_z6Q" name="Timeout_Integrity_Wait_Timer"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_A_kP0D5REeyJ25Vvm3IYug" name="Refine1" client="_tDlt0JxjEeuEs63bdP9wEQ" supplier="_C8x9Kpo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_FD1WgD5REeyJ25Vvm3IYug" name="Refine2" client="_CAwJgJ3_EeuEs63bdP9wEQ" supplier="_C80ZaZo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_eiILQD5QEeyJ25Vvm3IYug" name="Refine3" client="_E8B88J4BEeuEs63bdP9wEQ" supplier="_C80ZcZo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_0_jakD5QEeyJ25Vvm3IYug" name="Refine4" client="_E8B88J4BEeuEs63bdP9wEQ" supplier="_C80Zcpo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Rkvu0D5QEeyJ25Vvm3IYug" name="Refine5" client="_E8B88J4BEeuEs63bdP9wEQ" supplier="_C81AcZo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_cxI5UD5REeyJ25Vvm3IYug" name="Refine6" client="_fiafMKHyEeu_UJ1KxnEfIw" supplier="_C81AcJo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_jxOQ4D5REeyJ25Vvm3IYug" name="Refine7" client="_fiafMKHyEeu_UJ1KxnEfIw" supplier="_C81Acpo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_rUMTED5REeyJ25Vvm3IYug" name="Refine8" client="_AYhIkKKuEeuQh5MKDl_z6Q" supplier="_C81Aepo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_PWerAD5REeyJ25Vvm3IYug" name="Refine9" client="_E8B88J4BEeuEs63bdP9wEQ" supplier="_C81Ae5o_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_YtW60D5REeyJ25Vvm3IYug" name="Refine10" client="_fiafMKHyEeu_UJ1KxnEfIw" supplier="_C81Ae5o_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_U9HRcD5TEeyJ25Vvm3IYug" name="Refine11" client="_GK36AKK0EeuQh5MKDl_z6Q" supplier="_C81nipo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_P1FAoD5TEeyJ25Vvm3IYug" name="Refine12" client="_GK36AKK0EeuQh5MKDl_z6Q" supplier="_C81Ae5o_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_xIS_sD5REeyJ25Vvm3IYug" name="Refine13" client="_AYhIkKKuEeuQh5MKDl_z6Q" supplier="_C81AfJo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Al7LUD5SEeyJ25Vvm3IYug" name="Refine14" client="_ffZlgJxiEeuEs63bdP9wEQ" supplier="_C81AfZo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_FAw-8D5SEeyJ25Vvm3IYug" name="Refine15" client="_AYhIkKKuEeuQh5MKDl_z6Q" supplier="_C81Afpo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_qOd2kD5QEeyJ25Vvm3IYug" name="Refine16" client="_E8B88J4BEeuEs63bdP9wEQ" supplier="_C81ngpo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Xvf5gD5TEeyJ25Vvm3IYug" name="Refine17" client="_GK36AKK0EeuQh5MKDl_z6Q" supplier="_C82OkJo_Eeuv2oAWFJQOTw"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_bXFEMD5TEeyJ25Vvm3IYug" name="Refine18" client="_GK36AKK0EeuQh5MKDl_z6Q" supplier="_C82OkZo_Eeuv2oAWFJQOTw"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-JtzkJo6EeuUNNO3sHn44g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-J0hQJo6EeuUNNO3sHn44g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-J6A0Jo6EeuUNNO3sHn44g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-J6n4Jo6EeuUNNO3sHn44g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-J-SQJo6EeuUNNO3sHn44g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-J-5UJo6EeuUNNO3sHn44g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-J_gYJo6EeuUNNO3sHn44g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-J_gYZo6EeuUNNO3sHn44g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-J_gYpo6EeuUNNO3sHn44g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-KAHcJo6EeuUNNO3sHn44g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-KAugJo6EeuUNNO3sHn44g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-KAugZo6EeuUNNO3sHn44g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-KBVkJo6EeuUNNO3sHn44g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-KBVkZo6EeuUNNO3sHn44g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-KB8oJo6EeuUNNO3sHn44g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-KB8oZo6EeuUNNO3sHn44g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-KB8opo6EeuUNNO3sHn44g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-KCjsJo6EeuUNNO3sHn44g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_-KDKwJo6EeuUNNO3sHn44g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-KDKwZo6EeuUNNO3sHn44g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_R-jksD5KEeyJ25Vvm3IYug">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R-odMD5KEeyJ25Vvm3IYug" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_R-odMT5KEeyJ25Vvm3IYug" key="Version" value="0.0.3"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_R-odMj5KEeyJ25Vvm3IYug" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_R-odMz5KEeyJ25Vvm3IYug" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_R-odND5KEeyJ25Vvm3IYug" key="Date" value="2021-04-26"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_R-odNT5KEeyJ25Vvm3IYug" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_R-lZ4D5KEeyJ25Vvm3IYug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Timed_Requirement_profile/TimedRequirement.profile.uml#_Ks7mQKahEeu438NAqBxT8g"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="Timed_Requirement_profile/TimedRequirement.profile.uml#_6Gz8kJ1gEeuEs63bdP9wEQ"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_C8vg4Jo_Eeuv2oAWFJQOTw" base_NamedElement="_C8xWEJo_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-1" text="The L3 Trackside shall determine and retain the location of all trains within its Area of Control" base_Class="_C8xWEJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg4Zo_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9IJo_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-2" text="The L3 Trackside shall report the Train Location and status for all trains within its Area of Control to the Traffic Management System." base_Class="_C8x9IJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg4po_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9IZo_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-3" text="The L3 Trackside shall consider the Train Location to be from the Max Safe Front End to the Confirmed Rear End of the train." base_Class="_C8x9IZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg45o_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9Ipo_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-4" text="When receiving a position report from a train, then the L3 Trackside shall update the Max Safe Front End for this train from the information in that position report." base_Class="_C8x9Ipo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg5Jo_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9I5o_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-5" text="When receiving a position report from a train in FS/OS mode where the Train Integrity is confirmed by external device, then the L3 Trackside shall update the Confirmed Rear End for this train from the information in that position report." base_Class="_C8x9I5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg5Zo_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9JJo_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-6" text="When receiving a position report from a train in FS/OS mode where the Train Integrity is confirmed by driver, then the L3 Trackside shall, if configured for this, update the Confirmed Rear End for this train from the information in that position report." base_Class="_C8x9JJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg5po_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9JZo_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-7" text="The L3 Trackside shall be able to request the ETCS On-board to report train position as soon as its Confirmed Rear End is in advance of a specified location." base_Class="_C8x9JZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg55o_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9Jpo_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-8" text="If a train reports a position that is unexpected or in conflict with other train movements, the L3 Trackside shall react to transition the system to a safe state." base_Class="_C8x9Jpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg6Jo_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9J5o_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-9" text="If a train reports a position that is unexpected or in conflict with other train movements, the L3 Trackside shall alert the TMS to the situation." base_Class="_C8x9J5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg6Zo_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9KJo_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-10" text="The L3 Trackside shall ignore Train Position Reports from Non-Leading or Sleeping engines to establish Train Location." base_Class="_C8x9KJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg6po_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9KZo_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-11" text="The L3 Trackside shall store valid information for all trains within its Area of Control. The following information shall be stored:&#xA;    a) Train ID (NID_ENGINE)&#xA;    b) Train length (L_TRAIN)&#xA;    c) Most recent Train Position Report&#xA;    d) Most recent Confirmed Rear End" base_Class="_C8x9KZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg65o_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9Kpo_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-12" text="The L3 Trackside shall store information together with a timestamp." base_Class="_C8x9Kpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg7Jo_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9K5o_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-13" text="When after Start of Mission receiving a new set Validated Train Data from a train where the train length is longer than the train length which is stored for this train, the L3 Trackside shall adjust the extent of the Track Status Area associated with the location of this train accordingly." base_Class="_C8x9K5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg7Zo_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9LJo_Eeuv2oAWFJQOTw" id="REQ-TrainLoc-14" text="When receiving new Validated Train Data from a train where the train length is longer than the train length which is stored for this train, and the new location established for this train extends into a previously Clear area of track by more than the L3 Margin, the L3 Trackside shall alert the TMS to the situation." base_Class="_C8x9LJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg7po_Eeuv2oAWFJQOTw" base_NamedElement="_C8x9LZo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-1" text="The L3 Trackside shall determine the Consolidated Track Status of the entire track within the Area of Control." base_Class="_C8x9LZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg75o_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykMJo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-2" text="The L3 Trackside shall construct Consolidated Track Status for the complete Area of Control from the separate Track Status Areas. The algorithm for creating Consolidated Track Status shall give precedence to Occupied over Unknown." base_Class="_C8ykMJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg8Jo_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykMZo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-3" text="When receiving a message from a train with the information ?Train integrity confirmed by external device? for which the area associated with the location of this train has Track Status Unknown, the L3 Trackside shall change the Track Status for that area to Occupied." base_Class="_C8ykMZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg8Zo_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykMpo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-4" text="When receiving a report from a train with the information ?Train integrity confirmed by driver? for which the Track Status Area associated with the location of the train has Track Status Unknown, if configured for this, the L3 Trackside shall change the Status for that area to Occupied." base_Class="_C8ykMpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg8po_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykM5o_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-5" text="When receiving a position report from a train with the Min Safe Front End in an Unknown Track Status Area that can be swept, then the L3 Trackside shall reduce that Unknown Track Status Area for the part of it up to the Min Safe Front End of that train." base_Class="_C8ykM5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg85o_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykNJo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-6" text="On request from the TMS, the L3 Trackside shall create an Unknown Track Status Area flagged as Sweepable provided the area is longer than the configurable minimum length." base_Class="_C8ykNJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg9Jo_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykNZo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-7" text="On request from the TMS, the L3 Trackside shall create an Unknown Track Status Area flagged as Non-Sweepable." base_Class="_C8ykNZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg9Zo_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykNpo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-8" text="Unknown Track Status Areas created by L3 Trackside without being requested by TMS shall be flagged as Sweepable, or Non-Sweepable." base_Class="_C8ykNpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg9po_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykN5o_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-9" text="If an Unknown Track Status Area is created that is in conflict with other train movements, the L3 Trackside shall react to transition the system to a safe state." base_Class="_C8ykN5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg95o_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykOJo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-10" text="On request from the TMS, the L3 Trackside shall remove or reduce Unknown Track Status Areas." base_Class="_C8ykOJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg-Jo_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykOZo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-11" text="The L3 Trackside shall manage the overlap of multiple Unknown Track Status Areas and only remove them when it is safe to do so." base_Class="_C8ykOZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg-Zo_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykOpo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-12" text="The L3 Trackside shall automatically clear Sweepable Unknown Track Status Areas that are shorter than a configurable minimum length, except if this Unknown Track Status Area has been created to protect the front end of a train at Start of Mission." base_Class="_C8ykOpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg-po_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykO5o_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-13" text="The L3 Trackside shall report the Track Status for all track within its Area of Control to the TMS." base_Class="_C8ykO5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg-5o_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykPJo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-14" text="The L3 Trackside shall store and update data for all the Track Status Areas within its Area of Control in accordance with the following conditions:&#xD;&#xA;- Status: Occupied or Unknown&#xD;&#xA;- Extent: Definition of the extent of the Track Status Area. This will consist of a start point, and end point, and the path from start point to end point. It may contain additional information to relate Extent to Train Location.&#xD;&#xA;- TrainLength: As for L_TRAIN, the length of train associated with this Track Status Area, if any. Note this is not the same as the length of the extent of the area.&#xD;&#xA;- Train ID: As for NID_ENGINE, the NID_ENGINE of the train associated with this area, if any.&#xD;&#xA;- ReasonUnknown: From enumerated list, if the Track Status Area is Unknown, then the reason why it is Unknown.&#xD;&#xA;- Sweepable: Boolean, whether an Unknown Track Statua Area is Sweepable or Non-Sweepable." base_Class="_C8ykPJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg_Jo_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykPZo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-15" text="After receiving a position report with integrity confirmed from a train located inside an Unknown Track Status Area, following reception of new Validated Train Data, the L3 Trackside shall remove the Unknown Track Status Area if the train reports an L_TRAIN which is equal to the stored train length associated with the Unknown Track Status Area, plus or minus a tolerance." base_Class="_C8ykPZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg_Zo_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykPpo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-16" text="After receiving a position report with integrity confirmed from a train located inside an Unknown Track Status Area, following reception of new Validated Train Data, the L3 Trackside shall remove the area with Track Status Unknown between the train?s Max Safe Rear End and its Min Safe Front End if the train reports an L_TRAIN which is not equal to the stored train length associated with the Unknown Track Status Area, plus or minus a tolerance." base_Class="_C8ykPpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg_po_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykP5o_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-17" text="After receiving a position report with integrity confirmed from a train located inside an Unknown Track Status Area, following reception of new Validated Train Data, the L3 Trackside shall subtract the length of the train from the length stored for the remaining Unknown Track Status Area if the train reports an L_TRAIN which is not equal to the stored train length associated with the Unknown Track Status Area, plus or minus a tolerance." base_Class="_C8ykP5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vg_5o_Eeuv2oAWFJQOTw" base_NamedElement="_C8ykQJo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-18" text="When the L3 Trackside considers the communication session with a train is terminated, the L3 Trackside shall change the Track Status Area associated with this train from Occupied to Unknown, except if the train is completely located inside an Active Shunting Area." base_Class="_C8ykQJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhAJo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLQJo_Eeuv2oAWFJQOTw" id="REQ-TrackStatus-19" text="When the L3 Trackside considers the communication session is terminated with a train completely located inside an Active Shunting Area, then the L3 Trackside shall remove the Occupied area of track associated with this train." base_Class="_C8zLQJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhAZo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLQZo_Eeuv2oAWFJQOTw" id="REQ-Reserved-1" text="The L3 Trackside shall establish or extend a Reserved Status Area for the area where a train will be authorised to run." base_Class="_C8zLQZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhApo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLQpo_Eeuv2oAWFJQOTw" id="REQ-Reserved-2" text="Following a request from the TMS, the L3 Trackside shall be able to reduce or remove an existing Reserved Status Area of track only after adjusting any given autorisation accordingly." base_Class="_C8zLQpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhA5o_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLQ5o_Eeuv2oAWFJQOTw" id="REQ-Reserved-3" text="The L3 Trackside shall report the Reserved Status for all track within its Area of Control to the TMS." base_Class="_C8zLQ5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhBJo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLRJo_Eeuv2oAWFJQOTw" id="REQ-Reserved-4" text="The L3 Trackside shall update the Reserved Status Area for a communicating train when a new Train Position Report is received." base_Class="_C8zLRJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhBZo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLRZo_Eeuv2oAWFJQOTw" id="REQ-Reserved-5" text="The L3 Trackside shall ensure an area of track is only Reserved for a single train." base_Class="_C8zLRZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhBpo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLRpo_Eeuv2oAWFJQOTw" id="REQ-Reserved-6" text="The L3 Trackside shall update the stored data associated with the Reserved Status Areas in its Area of Control." base_Class="_C8zLRpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhB5o_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLR5o_Eeuv2oAWFJQOTw" id="REQ-FVB-1" text="For a system using Fixed Virtual Blocks, the L3 Trackside shall determine the Status of all the Fixed Virtual Blocks within the Area of Control by applying the following algorithm:&#xA;    If there is any part of the Consolidated Track Status which is Occupied within the FVB&#xA;    Then&#xA;        The FVB has Status Occupied&#xA;    Elseif there is any part of the Consolidated Track Status which is Unknown within the FVB&#xA;        the FVB has Status Unknown&#xA;    Else&#xA;        the FVB has Status Clear&#xA;    Endif" base_Class="_C8zLR5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhCJo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLSJo_Eeuv2oAWFJQOTw" id="REQ-TTD-1" text="For a system using Trackside Train Detection, the L3 Trackside shall be able to manage the lack of synchronisation between TTD occupancy and Train Position Reports for a train during normal operation." base_Class="_C8zLSJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhCZo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLSZo_Eeuv2oAWFJQOTw" id="REQ-TTD-2" text="For a system using TTD, if the Max Safe Front End reported by a train is located in a clear TTD section while the Min Safe Front End is in an occupied TTD, then the L3 Trackside shall clear the Track Status for this train inside this clear TTD section." base_Class="_C8zLSZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhCpo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLSpo_Eeuv2oAWFJQOTw" id="REQ-TTD-3" text="For a system using TTD, if the min Safe Rear End reported by a train is located in a clear TTD section while the max Safe Rear End is in an occupied TTD, then the L3 Trackside shall clear the Track Status for this train inside this clear TTD section." base_Class="_C8zLSpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhC5o_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLS5o_Eeuv2oAWFJQOTw" id="REQ-TTD-4" text="When using TTD to clear Occupied parts of Track Status, the L3 Trackside shall ensure the resulting Occupied Track Status Area is not shorter than L_TRAIN for the train located in this area of track." base_Class="_C8zLS5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhDJo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLTJo_Eeuv2oAWFJQOTw" id="REQ-TTD-5" text="For a system using TTD, the L3 Trackside shall be able to remove all or part of an Unknown Track Status Area corresponding to a TTD section which is Clear. The following situations will act as exceptions to this mechanism:&#xA;    a) the Unknown area has been created at the request of the TMS and marked as Non-Sweepable&#xA;    b) the Unknown area is due to an Active Shunting Area&#xA;    c) if the train is reporting with its Min Safe Front End in the TTD section" base_Class="_C8zLTJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhDZo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLTZo_Eeuv2oAWFJQOTw" id="REQ-TTD-6" text="The L3 Trackside shall be able to remove an Unknown Track Status Area caused by a faulty TTD, if it can be sure that no train is located over it and the TMS has authorised the operation." base_Class="_C8zLTZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhDpo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLTpo_Eeuv2oAWFJQOTw" id="REQ-TTD-7" text="For a system using Trackside Train Detection, the L3 Trackside shall be able to detect an unexpected TTD occupancy and change the Track Status to Unknown for that area of the track." base_Class="_C8zLTpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhD5o_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLT5o_Eeuv2oAWFJQOTw" id="REQ-PTS-1" text="The L3 Trackside shall prevent movement of points within an Unknown or Occupied Track Status Area, or within a Reserved Status Area, unless using an operational procedure." base_Class="_C8zLT5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhEJo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLUJo_Eeuv2oAWFJQOTw" id="REQ-PTS-2" text="The L3 Trackside shall be configured with Release Points to enable Points to be moved when the area of track containing the Points has Consolidated Track Status Clear and does not contain any part of a Reserved Status Area." base_Class="_C8zLUJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhEZo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLUZo_Eeuv2oAWFJQOTw" id="REQ-PTS-3" text="On request from the TMS, the L3 Trackside shall be able to move points for which all or parts of it is in an area with Track Status Unknown or Occupied, or both." base_Class="_C8zLUZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhEpo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zLUpo_Eeuv2oAWFJQOTw" id="REQ-PTS-4" text="When a train is sweeping a set of points, the L3 Trackside shall remove or reduce a Sweepable Unknown Track Status Area from the alternate leg of the points as far as the Fouling Point, in addition to the path that the train takes." base_Class="_C8zLUpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhE5o_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyUJo_Eeuv2oAWFJQOTw" id="REQ-MA-1" text="The L3 Trackside shall only issue Movement Authorities to trains which have a known location." base_Class="_C8zyUJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhFJo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyUZo_Eeuv2oAWFJQOTw" id="REQ-MA-2" text="The L3 Trackside shall be able to issue a Movement Authority without a mode profile for a train up to the next obstruction." base_Class="_C8zyUZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhFZo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyUpo_Eeuv2oAWFJQOTw" id="REQ-MA-3" text="When providing a Movement Authority without a mode profile to a train following another train, the L3 Trackside shall use the following rules for the Movement Authority:&#xA;    1) Danger Point should should be at or in rear of the CRE of the preceding train&#xA;    2) There should be at least the distance of the L3 Margin between the EoA and the CRE" base_Class="_C8zyUpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhFpo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyU5o_Eeuv2oAWFJQOTw" id="REQ-MA-4" text="When providing a Movement Authority without a mode profile for a train up to the boundary of an Unknown area, the L3 Trackside shall use the following rules for the Movement Authority:&#xA;    1) Danger Point should Point should be at or in rear of the CRE of the preceding train&#xA;    2) There should be at least the distance of the L3 Margin between the EoA and the CRE" base_Class="_C8zyU5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhF5o_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyVJo_Eeuv2oAWFJQOTw" id="REQ-MA-5" text="The L3 Trackside shall be able to issue Movement Authorities with mode profile On Sight over Unknown or Occupied Track Status Areas." base_Class="_C8zyVJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhGJo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyVZo_Eeuv2oAWFJQOTw" id="REQ-MA-6" text="When providing a Movement Authority with an On-Sight mode profile to a train entering&#xA;an Unknown or Occupied area, the L3 Trackside shall provide an On-Sight Mode Profile&#xA;from a minimum distance of the L3 Margin from the CRE of the preceding train." base_Class="_C8zyVZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhGZo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyVpo_Eeuv2oAWFJQOTw" id="REQ-MA-7" text="The L3 Trackside shall be able to issue a FS Movement Authority for a train to follow another train along the same path." base_Class="_C8zyVpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhGpo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyV5o_Eeuv2oAWFJQOTw" id="REQ-MA-8" text="For a system using Trackside Train Detection, the L3 Trackside shall allow multiple trains to enter in the same Trackside Train Detection section." base_Class="_C8zyV5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhG5o_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyWJo_Eeuv2oAWFJQOTw" id="REQ-MA-9" text="The L3 Trackside shall be configurable to only issue Movement Authority updates relevant for operation of the railway." base_Class="_C8zyWJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhHJo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyWZo_Eeuv2oAWFJQOTw" id="REQ-MA-10" text="The L3 Trackside shall report the Movement Authorities issued to trains to the Traffic Management System." base_Class="_C8zyWZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhHZo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyWpo_Eeuv2oAWFJQOTw" id="REQ-MA-11" text="The L3 Trackside shall include Linking Information in Movement Authorities issued to trains." base_Class="_C8zyWpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhHpo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyW5o_Eeuv2oAWFJQOTw" id="REQ-MA-12" text="If an area of track within a Reserved Status Area becomes Unknown before the L3 Trackside has authorised a train to proceed into that area, the L3 Trackside shall either:&#xA;    a)  include an OS mode profile for the Unknown Track Status Area&#xA;    or&#xA;    b) restrict the Authorisation to the start of the Unknown area&#xA;    or&#xA;    c) do not send the authorisation to the train&#xA;In addition, or alternately, the L3 Trackside shall inform the Traffic Management System of the situation." base_Class="_C8zyW5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhH5o_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyXJo_Eeuv2oAWFJQOTw" id="REQ-EoAExclusionArea-1+" text="The L3 Trackside shall use End of Authority Exclusion Areas defined in configuration data." base_Class="_C8zyXJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhIJo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyXZo_Eeuv2oAWFJQOTw" id="REQ-EoAExclusionArea-2" text="For a train approaching an EoA Exclusion Area, the L3 Trackside shall only issue an MA such that the train can proceed beyond the EoA Exclusion Area and stop with its rear end clear of the area, taking into account the length of the train and the defined L3 Margin distance." base_Class="_C8zyXZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhIZo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyXpo_Eeuv2oAWFJQOTw" id="REQ-StartTrain-1" text="The L3 Trackside shall always accept a train during Start of Mission." base_Class="_C8zyXpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhIpo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyX5o_Eeuv2oAWFJQOTw" id="REQ-StartTrain-2" text="The L3 Trackside shall alert the TMS of a train that, in the Start of Mission position report, is reporting an invalid or unknown position, or a valid position from an NID_BG not known to the L3 Trackside." base_Class="_C8zyX5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhI5o_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyYJo_Eeuv2oAWFJQOTw" id="REQ-StartTrain-3" text="The L3 Trackside shall accept from the TMS a position assigned by the Dispatcher for a train which is reporting an invalid or unknown position, if this position lies within an existing Unknown Track Status Area." base_Class="_C8zyYJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhJJo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyYZo_Eeuv2oAWFJQOTw" id="REQ-StartTrain-4" text="The L3 Trackside shall alert the Dispatcher via the TMS about an approximate position assigned by the Dispatcher for a train which is reporting an invalid or unknown position, if this position lies outside an existing Unknown Track Status Area." base_Class="_C8zyYZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhJZo_Eeuv2oAWFJQOTw" base_NamedElement="_C8zyYpo_Eeuv2oAWFJQOTw" id="REQ-StartTrain-5" text="When accepting a position assigned for a train from the TMS, the L3 Trackside shall associate the train with the Unknown Track Status Area in which the train is positioned." base_Class="_C8zyYpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhJpo_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZYJo_Eeuv2oAWFJQOTw" id="REQ-StartTrain-6" text="The L3 Trackside shall compare the new train data and train location information reported by a train performing Start of Mission against the information stored for the same location for a previous train." base_Class="_C80ZYJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhJ5o_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZYZo_Eeuv2oAWFJQOTw" id="REQ-StartTrain-7" text="If the L3 Trackside determines that the train location information from a train after performing Start of Mission does not match the stored information associated with the Unknown Track Status Area in which the train is located, then the L3 Trackside shall remove the Unknown corresponding to the area from the Min Safe Front End to the Max Safe Rear End of that train." base_Class="_C80ZYZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhKJo_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZYpo_Eeuv2oAWFJQOTw" id="REQ-StartTrain-8" text="If a train, which has not yet sent Validated Train data, reports a position with both the Min Safe Front End and the Max Safe Front End in an area of track considered Clear, then the L3 Trackside shall create an Unknown Track Status Area for the front end of this train from the reported Min Safe Front End to Max Safe Front End." base_Class="_C80ZYpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhKZo_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZY5o_Eeuv2oAWFJQOTw" id="REQ-StartTrain-9" text="If a train, which has not yet sent Validated Train data, reports a position with a Confidence Interval which is partly in an Unknown Track Status Area and the Estimated Front End outside this Unknown Track Status Area, then the L3 Trackside shall extend this Unknown Track Status Area to the boundary of the reported Confidence Interval for the Estimated Front End of this train." base_Class="_C80ZY5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhKpo_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZZJo_Eeuv2oAWFJQOTw" id="REQ-StartTrain-10" text="When receiving Validated Train Data from a train which is not associated with an Unknown Track Status Area except for the Estimated Front End of this train, then the L3 Trackside shall extend this Unknown Track Status Area with the reported Train Length to the Min Safe Rear End." base_Class="_C80ZZJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhK5o_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZZZo_Eeuv2oAWFJQOTw" id="REQ-StartTrain-11" text="If the L3 Trackside receives Validated Train Data from a train with a position within an Unknown Track Status Area for which the stored train length is less than what was reported by this train, then the L3 Trackside shall alert the TMS to the situation." base_Class="_C80ZZZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhLJo_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZZpo_Eeuv2oAWFJQOTw" id="REQ-StartTrain-12" text="The L3 Trackside shall maintain the communication session with a train reporting an LRBG at Start of Mission with an ID set to ?unknown? or an ID which is not known to the L3 Trackside, unless requested by the TMS to terminate the session with this train." base_Class="_C80ZZpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhLZo_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZZ5o_Eeuv2oAWFJQOTw" id="REQ-StartTrain-13" text="On request from the TMS, the L3 Trackside shall order the train to terminate the communication session." base_Class="_C80ZZ5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhLpo_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZaJo_Eeuv2oAWFJQOTw" id="REQ-StartTrain-14" text="The L3 Trackside shall, if configured, alert the TMS of a train which terminated its communication session without sending Validated Train Data to the L3 Trackside." base_Class="_C80ZaJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhL5o_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZaZo_Eeuv2oAWFJQOTw" id="REQ-StartTrain-15" text="The L3 Trackside shall, if configured, alert the TMS about communicating trains for which the L3 Trackside has not received Validated Train Data after a defined timeout." base_Class="_C80ZaZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhMJo_Eeuv2oAWFJQOTw" base_NamedElement="_C80Zapo_Eeuv2oAWFJQOTw" id="REQ-MovSR-1" text="Following an MA Request from a train located in rear of an adjacent Unknown Track Status Area created by the TMS and not used for another train, the L3 Trackside shall be able to provide an SR Authorisation to this train with the distance to run limited to the Unknown Track Status Area." base_Class="_C80Zapo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhMZo_Eeuv2oAWFJQOTw" base_NamedElement="_C80Za5o_Eeuv2oAWFJQOTw" id="REQ-MovSR-2" text="For a train with a known location, the L3 Trackside shall maintain the previous CRE of a train in SR mode from when the train reports in SR until the train transitions out of SR to FS/OS mode and reports with Train Integrity confirmed." base_Class="_C80Za5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhMpo_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZbJo_Eeuv2oAWFJQOTw" id="REQ-MovSR-3" text="Following an MA Request from a train with a position given by the Dispatcher in rear of an adjacent Reserved Status Area, the L3 Trackside shall be able to provide an SR Authorisation to this train with the distance to run within the Reserved Status Area." base_Class="_C80ZbJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhM5o_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZbZo_Eeuv2oAWFJQOTw" id="REQ-MovSR-4" text="When giving an SR Authorisation to a train with a position given by the Dispatcher, the L3 Trackside shall, if possible, include a list of balise groups the train is allowed to pass in the given authorisation." base_Class="_C80ZbZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhNJo_Eeuv2oAWFJQOTw" base_NamedElement="_C80Zbpo_Eeuv2oAWFJQOTw" id="REQ-MovSR-5" text="When giving an SR Authorisation for a Reserved Status Area to a train with a position given by the Dispatcher, the L3 Trackside shall extend the Unknown Track Status Area associated with this train to the end of the Reserved Status Area." base_Class="_C80Zbpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhNZo_Eeuv2oAWFJQOTw" base_NamedElement="_C80Zb5o_Eeuv2oAWFJQOTw" id="REQ-FirstMA-1" text="The L3 Trackside shall be able to send a first FS Movement Authority to a train anywhere in the Area of Control, so long as the conditions for sending a Movement Authority are fulfilled." base_Class="_C80Zb5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhNpo_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZcJo_Eeuv2oAWFJQOTw" id="REQ-FirstMA-2" text="The L3 Trackside shall be able to, if configured, provide the first MA for a train even if there is no integrity information or the integrity is confirmed by driver." base_Class="_C80ZcJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhN5o_Eeuv2oAWFJQOTw" base_NamedElement="_C80ZcZo_Eeuv2oAWFJQOTw" id="REQ-LossComms-1" text="The L3 Trackside if configured, shall for each train with which it has an active communication session be able to supervise a defined timeout (a Mute Timer) after which the communication with this train is considered lost." base_Class="_C80ZcZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhOJo_Eeuv2oAWFJQOTw" base_NamedElement="_C80Zcpo_Eeuv2oAWFJQOTw" id="REQ-LossComms-2" text="When receiving a message from a train and if the use of a Mute Timer is configured, the L3 Trackside shall (re-)start the Mute Timer for this train." base_Class="_C80Zcpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhOZo_Eeuv2oAWFJQOTw" base_NamedElement="_C81AcJo_Eeuv2oAWFJQOTw" id="REQ-LossComms-3" text="The L3 Trackside will maintain the communication session with ETCS On-board as active even when the Mute timer has expired until the maximum time to maintain a communication session as specified in SUBSET-026 [BL3 R2] has elapsed." base_Class="_C81AcJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhOpo_Eeuv2oAWFJQOTw" base_NamedElement="_C81AcZo_Eeuv2oAWFJQOTw" id="REQ-LossComms-4" text="When the Mute timer expires for a train which has not been sent Reversing Area Information, nor entered an announced Radio Hole, then the L3 Trackside shall change the Track Status Area associated with the train to Unknown and extend this Area until the end of the Reserved Status Area for the train." base_Class="_C81AcZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhO5o_Eeuv2oAWFJQOTw" base_NamedElement="_C81Acpo_Eeuv2oAWFJQOTw" id="REQ-LossComms-5" text="If the Mute timer is not considered for use on a particular application, the L3 Trackside shall react when the session timer expires by setting the Track Status Area associated with the train to Unknown and extend this Area until the end of the Reserved Status Area for that train." base_Class="_C81Acpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhPJo_Eeuv2oAWFJQOTw" base_NamedElement="_C81Ac5o_Eeuv2oAWFJQOTw" id="REQ-LossComms-6" text="When the L3 Trackside considers the communication session with a train is terminated, then the L3 Trackside shall remove any Reserved Status Area associated with this train." base_Class="_C81Ac5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhPZo_Eeuv2oAWFJQOTw" base_NamedElement="_C81AdJo_Eeuv2oAWFJQOTw" id="REQ-RecoveryMgmt-1" text="The L3 Trackside shall consider a train which starts communicating with the L3 Trackside within the same communications session as previously used for the train as the same train, so long as no change in train data has occurred." base_Class="_C81AdJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhPpo_Eeuv2oAWFJQOTw" base_NamedElement="_C81AdZo_Eeuv2oAWFJQOTw" id="REQ-RecoveryMgmt-2" text="The L3 Trackside shall consider a train reconnecting with a new communications session as the same train after passing the following checks: a) the train has the same ID (NID_ENGINE) AND b) the train has the same length (L_TRAIN)." base_Class="_C81AdZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhP5o_Eeuv2oAWFJQOTw" base_NamedElement="_C81Adpo_Eeuv2oAWFJQOTw" id="REQ-RecoveryMgmt-3" text="If the L3 Trackside determines that the same train has reconnected and confirmed Integrity, the L3 Trackside shall update the Unknown Track Status Area associated with this train, resulting from the Loss of Communications to an Occupied Track Status Area with an extent corresponding to the new train location." base_Class="_C81Adpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhQJo_Eeuv2oAWFJQOTw" base_NamedElement="_C81Ad5o_Eeuv2oAWFJQOTw" id="REQ-RadioHole-1" text="On request from the TMS, the L3 Trackside shall activate or deactivate predefined Temporary Radio Holes." base_Class="_C81Ad5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8vhQZo_Eeuv2oAWFJQOTw" base_NamedElement="_C81AeJo_Eeuv2oAWFJQOTw" id="REQ-RadioHole-2" text="The L3 Trackside shall establish an End of Authority Exclusion Area for each Radio Hole." base_Class="_C81AeJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH8Jo_Eeuv2oAWFJQOTw" base_NamedElement="_C81AeZo_Eeuv2oAWFJQOTw" id="REQ-RadioHole-3" text="The L3 Trackside shall remove the End of Authority Exclusion Area created for a Temporary Radio Hole if the Radio Hole is deactivated." base_Class="_C81AeZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH8Zo_Eeuv2oAWFJQOTw" base_NamedElement="_C81Aepo_Eeuv2oAWFJQOTw" id="REQ-RadioHole-4" text="The L3 Trackside shall start the Radio Hole timer when a train enters a Radio Hole." base_Class="_C81Aepo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH8po_Eeuv2oAWFJQOTw" base_NamedElement="_C81Ae5o_Eeuv2oAWFJQOTw" id="REQ-RadioHole-5" text="While the L3 Trackside considers that a train is inside a Radio Hole, the L3 Trackside shall stop supervising the following timers:&#xD;&#xA;- Mute Timer&#xD;&#xA;- Integrity Wait Timer&#xD;&#xA;- ETCS Session Timer" base_Class="_C81Ae5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH85o_Eeuv2oAWFJQOTw" base_NamedElement="_C81AfJo_Eeuv2oAWFJQOTw" id="REQ-RadioHole-6" text="Upon expiry of the Radio Hole timer, the L3 Trackside shall treat the train the same as for loss of communications." base_Class="_C81AfJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH9Jo_Eeuv2oAWFJQOTw" base_NamedElement="_C81AfZo_Eeuv2oAWFJQOTw" id="REQ-RadioHole-7" text="Upon expiry of the Radio Hole timer, the L3 Trackside shall inform the TMS that a train has not emerged from a Radio Hole." base_Class="_C81AfZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH9Zo_Eeuv2oAWFJQOTw" base_NamedElement="_C81Afpo_Eeuv2oAWFJQOTw" id="REQ-RadioHole-8" text="The L3 Trackside shall stop the Radio Hole timer when a train has left a Radio Hole." base_Class="_C81Afpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH9po_Eeuv2oAWFJQOTw" base_NamedElement="_C81Af5o_Eeuv2oAWFJQOTw" id="REQ-Rev-1" text="When a train has been given Reversing Area information, the L3 Trackside shall prevent authorising other trains into the area where the train may reverse." base_Class="_C81Af5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH95o_Eeuv2oAWFJQOTw" base_NamedElement="_C81AgJo_Eeuv2oAWFJQOTw" id="REQ-Rev-2" text="The L3 Trackside shall only extend the permission to reverse (by increasing the Reversing Distance) when the extension is already covered by the Reserved Status Area in rear of the train." base_Class="_C81AgJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH-Jo_Eeuv2oAWFJQOTw" base_NamedElement="_C81ngJo_Eeuv2oAWFJQOTw" id="REQ-Rev-3" text="When a train has proceeded beyond the Reversing Area, the L3 Trackside shall release the Reserved Status Area behind the train." base_Class="_C81ngJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH-Zo_Eeuv2oAWFJQOTw" base_NamedElement="_C81ngZo_Eeuv2oAWFJQOTw" id="REQ-Rev-4" text="When receiving a position report from a train in RV mode, the L3 Trackside shall change the Track Status to Unknown for the area from the Max Safe Front End to the Boundary for Reversing." base_Class="_C81ngZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH-po_Eeuv2oAWFJQOTw" base_NamedElement="_C81ngpo_Eeuv2oAWFJQOTw" id="REQ-Rev-5" text="When the mute timer expires for a train which has received Reversing Area Information, has reported beyond the Boundary for Reversing but not reported with its Estimated Front End beyond the Reversing Area, then the L3 Trackside shall change the Track Status to Unknown for the location associated with the train and extend this area until to the Boundary for Reversing." base_Class="_C81ngpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH-5o_Eeuv2oAWFJQOTw" base_NamedElement="_C81ng5o_Eeuv2oAWFJQOTw" id="REQ-EoM-1" text="The L3 Trackside shall update the stored information of the train performing the EoM." base_Class="_C81ng5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH_Jo_Eeuv2oAWFJQOTw" base_NamedElement="_C81nhJo_Eeuv2oAWFJQOTw" id="REQ-EoM-2" text="When receiving an End of Mission message from a train which is completely located inside an Active Shunting Area, then the L3 Trackside shall remove the Track Status Area associated with this train." base_Class="_C81nhJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH_Zo_Eeuv2oAWFJQOTw" base_NamedElement="_C81nhZo_Eeuv2oAWFJQOTw" id="REQ-EoM-3" text="When the L3 Trackside receives an End of Mission message, then the L3 Trackside shall remove any associated Reserved Status Area associated with this train." base_Class="_C81nhZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH_po_Eeuv2oAWFJQOTw" base_NamedElement="_C81nhpo_Eeuv2oAWFJQOTw" id="REQ-EoM-4" text="The L3 Trackside shall be able to cope with differences in the confidence interval provided in the position report of a train that reported End of Mission even when related to the same train position." base_Class="_C81nhpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wH_5o_Eeuv2oAWFJQOTw" base_NamedElement="_C81nh5o_Eeuv2oAWFJQOTw" id="REQ-LossTI-1" text="When receiving a position report from a train with the information 'Train integrity lost', the L3 Trackside shall change the Track Status Area associated with this train to Unknown." base_Class="_C81nh5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIAJo_Eeuv2oAWFJQOTw" base_NamedElement="_C81niJo_Eeuv2oAWFJQOTw" id="REQ-LossTI-2" text="When the L3 Trackside considers that the integrity is lost for a train, the L3 Trackside shall change the Track Status Area associated with this train to Unknown." base_Class="_C81niJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIAZo_Eeuv2oAWFJQOTw" base_NamedElement="_C81niZo_Eeuv2oAWFJQOTw" id="REQ-LossTI-3" text="When the L3 Trackside considers that the Train Irentegrity is lost for a train, the L3 Trackside shall react as configured." base_Class="_C81niZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIApo_Eeuv2oAWFJQOTw" base_NamedElement="_C81nipo_Eeuv2oAWFJQOTw" id="REQ-LossTI-4" text="The L3 Trackside shall consider the Train Integrity as lost when 'No train integrity information' is reported longer than a configurable time (Integrity Wait Timer)." base_Class="_C81nipo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIA5o_Eeuv2oAWFJQOTw" base_NamedElement="_C82OkJo_Eeuv2oAWFJQOTw" id="REQ-LossTI-5" text="When receiving a message from a train with the information 'Train integrity confirmed by external device', the L3 Trackside shall start/restart the Integrity Wait Timer." base_Class="_C82OkJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIBJo_Eeuv2oAWFJQOTw" base_NamedElement="_C82OkZo_Eeuv2oAWFJQOTw" id="REQ-LossTI-6" text="When receiving a message from a train with the information 'Train integrity confirmed by Driver', if the L3 Trackside is configured to accept confirmation by Driver and the Integrity Wait Timer is running, then the L3 Trackside shall stop the Integrity Wait Timer." base_Class="_C82OkZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIBZo_Eeuv2oAWFJQOTw" base_NamedElement="_C82Okpo_Eeuv2oAWFJQOTw" id="REQ-LossTI-7" text="After a loss of integrity, the driver shall be made aware of the situation via an indication in the cab." base_Class="_C82Okpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIBpo_Eeuv2oAWFJQOTw" base_NamedElement="_C82Ok5o_Eeuv2oAWFJQOTw" id="REQ-LossTI-8" text="The L3 Trackside shall be able to be configured whether to accept Train Integrity confirmation by the driver." base_Class="_C82Ok5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIB5o_Eeuv2oAWFJQOTw" base_NamedElement="_C82OlJo_Eeuv2oAWFJQOTw" id="REQ-LossTI-9" text="The L3 Trackside shall be configurable as to whether it authorises a Movement Authority for a train that has lost Integrity." base_Class="_C82OlJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wICJo_Eeuv2oAWFJQOTw" base_NamedElement="_C82OlZo_Eeuv2oAWFJQOTw" id="REQ-LossTI-10" text="If the L3 Trackside receives Validated Train Data for a train with a train length different from previously reported within the same communication session, then the L3 Trackside shall consider the train as having lost Integrity." base_Class="_C82OlZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wICZo_Eeuv2oAWFJQOTw" base_NamedElement="_C82Olpo_Eeuv2oAWFJQOTw" id="REQ-LevelTrans-1" text="The L3 Trackside shall have means to detect non-communicating trains about to enter the L3 area." base_Class="_C82Olpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wICpo_Eeuv2oAWFJQOTw" base_NamedElement="_C82Ol5o_Eeuv2oAWFJQOTw" id="REQ-LevelTrans-2" text="For a train that has been authorised to leave the L3 Area, the L3 Trackside shall maintain the communication session with a train reporting a position with an LRBG which is not known to the L3 Trackside, while the CRE of this train is still located in the L3 Area, or until the L3 Trackside decides that it is suitable to terminate the session with this train, or until requested by the TMS to terminate the session with this train." base_Class="_C82Ol5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIC5o_Eeuv2oAWFJQOTw" base_NamedElement="_C82OmJo_Eeuv2oAWFJQOTw" id="REQ-TrackInit-1" text="The L3 Trackside shall consider the entire L3 Area of Control to be in Track Status Unknown when the L3 Trackside initialisation starts." base_Class="_C82OmJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIDJo_Eeuv2oAWFJQOTw" base_NamedElement="_C82OmZo_Eeuv2oAWFJQOTw" id="REQ-TrackInit-2" text="The L3 Trackside shall utilise valid Stored Information to enable faster initialisation." base_Class="_C82OmZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIDZo_Eeuv2oAWFJQOTw" base_NamedElement="_C82Ompo_Eeuv2oAWFJQOTw" id="REQ-TrackInit-3" text="The L3 Trackside, if configured, shall provide a means for the person responsible for the Trackside Initialisation to confirm that the procedure is completed." base_Class="_C82Ompo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIDpo_Eeuv2oAWFJQOTw" base_NamedElement="_C82Om5o_Eeuv2oAWFJQOTw" id="REQ-TrackInit-4" text="The L3 Trackside shall clear the remaining Unknown Track Status Areas created at the start of the Trackside Initialisation procedure and consider the Trackside Initialisation process as completed either:&#xD;&#xA;- upon receiving confirmation of completion of the Initialisation procedure from the responsible person&#xD;&#xA;- after Stored Information has been used and confirmation from the responsible person is not required." base_Class="_C82Om5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wID5o_Eeuv2oAWFJQOTw" base_NamedElement="_C82OnJo_Eeuv2oAWFJQOTw" id="REQ-TrackInit-5" text="The L3 Trackside shall send Authorisations to trains in the Area of Control only after the Trackside Initialisation procedure has been completed." base_Class="_C82OnJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIEJo_Eeuv2oAWFJQOTw" base_NamedElement="_C82OnZo_Eeuv2oAWFJQOTw" id="REQ-HO-1" text="When acting as an Accepting L3 Trackside, the L3 Trackside shall consider the area sent as part of a Route Related Information message to an adjacent L3 Trackside as a Reserved Status Area." base_Class="_C82OnZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIEZo_Eeuv2oAWFJQOTw" base_NamedElement="_C82Onpo_Eeuv2oAWFJQOTw" id="REQ-HO-2" text="When the Handing Over L3 Trackside receives a position report and detects that the Confirmed Rear End of the train has crossed the border, it shall send a session termination order to the ETCS On-Board equipment." base_Class="_C82Onpo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIEpo_Eeuv2oAWFJQOTw" base_NamedElement="_C82On5o_Eeuv2oAWFJQOTw" id="REQ-HO-3" text="If the L3 Trackside considers communication session is terminated with a train approaching the L3 Area, then the L3 Trackside shall set the Track Status to Unknown for any area that is Reserved for this train, unless this area is already Unknown." base_Class="_C82On5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIE5o_Eeuv2oAWFJQOTw" base_NamedElement="_C82OoJo_Eeuv2oAWFJQOTw" id="REQ-SH-1" text="The L3 Trackside shall be configurable with predefined Permanent and Temporary Shunting Areas." base_Class="_C82OoJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIFJo_Eeuv2oAWFJQOTw" base_NamedElement="_C82OoZo_Eeuv2oAWFJQOTw" id="REQ-SH-2" text="On request from the TMS, the L3 Trackside shall be able to activate and deactivate a Temporary Shunting Area." base_Class="_C82OoZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIFZo_Eeuv2oAWFJQOTw" base_NamedElement="_C82Oopo_Eeuv2oAWFJQOTw" id="REQ-SH-3" text="The L3 Trackside shall consider the Track Status of an Active Shunting Area to be Unknown and Non-Sweepable." base_Class="_C82Oopo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIFpo_Eeuv2oAWFJQOTw" base_NamedElement="_C82Oo5o_Eeuv2oAWFJQOTw" id="REQ-SH-4" text="The L3 Trackside shall perform specific checks before activating a Temporary Shunting Area." base_Class="_C82Oo5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIF5o_Eeuv2oAWFJQOTw" base_NamedElement="_C821oJo_Eeuv2oAWFJQOTw" id="REQ-Join-1" text="When there is Joining without End of Mission, the L3 Trackside shall remove the Unknown Track Status Area corresponding to the Train to be Joined and the Joining Train if the Joined Train meets the following conditions:&#xD;&#xA;a) The Joined Train has a new L_TRAIN which is equal to the sum of the L_TRAIN for the Train to be Joined and the L_TRAIN for the Joining Train, plus or minus a tolerance&#xD;&#xA;b) The Joined Train has confirmed Train Integrity." base_Class="_C821oJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIGJo_Eeuv2oAWFJQOTw" base_NamedElement="_C821oZo_Eeuv2oAWFJQOTw" id="REQ-Join-2" text="If the Joined Train leaves the Unknown Track Status Area, and the Joined Train has L_TRAIN less than the sum of the L_TRAIN of the Train to be Joined and the L_TRAIN of the Joining Train, then the L3 Trackside shall reduce the length of the Unknown Track Status Area by L_TRAIN of the Joined Train." base_Class="_C821oZo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIGZo_Eeuv2oAWFJQOTw" base_NamedElement="_C821opo_Eeuv2oAWFJQOTw" id="REQ-Join-3" text="If the Joined Train leaves the Unknown Track Status Area, and the Joined Train has L_TRAIN less than the sum of the L_TRAIN of the Train to be Joined and the L_TRAIN of the Joining Train, then the L3 Trackside shall subtract the Length of the Joined Train from the length stored for the remaining Unknown Track Status Area." base_Class="_C821opo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIGpo_Eeuv2oAWFJQOTw" base_NamedElement="_C821o5o_Eeuv2oAWFJQOTw" id="REQ-Split-1" text="The L3 Trackside shall be able to reduce the length of the Unknown Track Status Area due to loss of Train Integrity or reception of new Validated Train Data when a train confirms integrity reporting within the Unknown Track Status Area." base_Class="_C821o5o_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_C8wIG5o_Eeuv2oAWFJQOTw" base_NamedElement="_C83csJo_Eeuv2oAWFJQOTw" id="REQ-TMS-1" text="The TMS shall provide means for the Dispatcher to assign a position to a train that is reporting unknown or invalid position." base_Class="_C83csJo_Eeuv2oAWFJQOTw"/>
+  <Requirements:Requirement xmi:id="_hpKrUJrWEeuEs63bdP9wEQ" base_NamedElement="_hpA6UJrWEeuEs63bdP9wEQ" id="REQ-TrainLoc" text="The L3 system shall locate trains on the track in a safe manner." base_Class="_hpA6UJrWEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_LHvboJtsEeuEs63bdP9wEQ" base_NamedElement="_LHrKMJtsEeuEs63bdP9wEQ" id="REQ_TrackStatus" text="The L3 system shall determine whether track areas are occupied, clear or unknown." base_Class="_LHrKMJtsEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_QSQ_wJtsEeuEs63bdP9wEQ" base_NamedElement="_QSNVYJtsEeuEs63bdP9wEQ" id="REQ-all" text="The L3 system must safely control trains using moving block principles" base_Class="_QSNVYJtsEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_-JdK0JtsEeuEs63bdP9wEQ" base_NamedElement="_-JZgcJtsEeuEs63bdP9wEQ" id="REQ-Reserved" text="The L3 system shall reserve areas of track for each train." base_Class="_-JZgcJtsEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_Ic04EJttEeuEs63bdP9wEQ" base_NamedElement="_Icyb0JttEeuEs63bdP9wEQ" id="REQ-FVB" text="The L3 system may be configured to use virtual predefined areas of track for determining track status areas and establishing reserved areas." base_Class="_Icyb0JttEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_KZs0cJttEeuEs63bdP9wEQ" base_NamedElement="_KZpxIJttEeuEs63bdP9wEQ" id="REQ-TTD" text="The L3 system may be configured to support Trackside Train Detection in specific locations or throughout the L3 area of control." base_Class="_KZpxIJttEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_4y78oJttEeuEs63bdP9wEQ" base_NamedElement="_4y45UJttEeuEs63bdP9wEQ" id="REQ-PTS" text="Points shall be safely controlled by the L3 system both in normal conditions and during the override procedure allowing to move points if they are locked." base_Class="_4y45UJttEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_B4UMwJtuEeuEs63bdP9wEQ" base_NamedElement="_B4SXkJtuEeuEs63bdP9wEQ" id="REQ-MA" text="The L3 system shall issue Movement Authority to a train, up to the next obstruction, which can be a fixed or a dynamic location." base_Class="_B4SXkJtuEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_VQDdgJtuEeuEs63bdP9wEQ" base_NamedElement="_VQBBQJtuEeuEs63bdP9wEQ" id="REQ-EoAExclusionArea" text="The L3 system may include areas of track where it is desirable that trains are not stopped by the authorisation from the L3 Trackside." base_Class="_VQBBQJtuEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_dDT-cJtuEeuEs63bdP9wEQ" base_NamedElement="_dDQ7IJtuEeuEs63bdP9wEQ" id="REQ-StartTrain" text="A train under the supervision of the L3 system has to start a mission with a SoM procedure to reach FS, OS, LS, SH, or SR." base_Class="_dDQ7IJtuEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_lh4tQJtuEeuEs63bdP9wEQ" base_NamedElement="_lh24EJtuEeuEs63bdP9wEQ" id="REQ-MovSR" text="Trains may move under the Staff Responsible (SR) mode of the L3 system allowing non-communicating trains or communicating trains without a known location to move." base_Class="_lh24EJtuEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_7oafgJtuEeuEs63bdP9wEQ" base_NamedElement="_7oYDQJtuEeuEs63bdP9wEQ" id="REQ-FirstMA" text="The first Movement Authority is associated to specific conditions." base_Class="_7oYDQJtuEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_gMf0wJuhEeuEs63bdP9wEQ" base_NamedElement="_gMdYgJuhEeuEs63bdP9wEQ" id="REQ-LossComms" text="The L3 system shall manage loss of communication between trackside and on-board sub-systems." base_Class="_gMdYgJuhEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_1gn3QJwxEeuEs63bdP9wEQ" base_NamedElement="_1glbAJwxEeuEs63bdP9wEQ" id="REQ-RecoveryMgmt" text="The L3 system shall allow a fast recovery of the track state after a train has lost communication." base_Class="_1glbAJwxEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_8eSM8JwxEeuEs63bdP9wEQ" base_NamedElement="_8ePwsJwxEeuEs63bdP9wEQ" id="REQ-RadioHole" text="The L3 system shall manage the issue of Radio Holes in a safe manner." base_Class="_8ePwsJwxEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_E9OvMJwyEeuEs63bdP9wEQ" base_NamedElement="_E9MS8JwyEeuEs63bdP9wEQ" id="REQ-REV" text="The L3 system shall manage reversing manoeuvre in a safe manner." base_Class="_E9MS8JwyEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_LvUHAJwyEeuEs63bdP9wEQ" base_NamedElement="_LvSR0JwyEeuEs63bdP9wEQ" id="REQ-EoM" text="The L3 system shall safely store the location of a train that has issued an End of Mission (EoM) request. " base_Class="_LvSR0JwyEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_SnITYJwyEeuEs63bdP9wEQ" base_NamedElement="_SnGeMJwyEeuEs63bdP9wEQ" id="REQ-LossTI" text="The L3 system shall manage the loss of train integrity in a safe manner." base_Class="_SnGeMJwyEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_nhwTMJwyEeuEs63bdP9wEQ" base_NamedElement="_nhueAJwyEeuEs63bdP9wEQ" id="REQ-LevelTrans" text="The L3 system shall manage the level transition functionality in the same way as with the L2 system by solving issues related to L3 system." base_Class="_nhueAJwyEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_vjG6gJwyEeuEs63bdP9wEQ" base_NamedElement="_vjEeQJwyEeuEs63bdP9wEQ" id="REQ-TrackInit" text="The L3 system shall manage the initialisation of the L3 Trackside in a safe manner." base_Class="_vjEeQJwyEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_4SRqEJwyEeuEs63bdP9wEQ" base_NamedElement="_4SPN0JwyEeuEs63bdP9wEQ" id="REQ-HO" text="The L3 system shall manage the Handover procedure in the same way as with L2 system except for termination of the communication session with the Handing Over L3 Trackside." base_Class="_4SPN0JwyEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_-o9fUJwyEeuEs63bdP9wEQ" base_NamedElement="_-o7qIJwyEeuEs63bdP9wEQ" id="REQ-SH" text="The L3 system shall manage shunting movement in a safe manner." base_Class="_-o7qIJwyEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_EsdS0JwzEeuEs63bdP9wEQ" base_NamedElement="_EsaPgJwzEeuEs63bdP9wEQ" id="REQ-Join" text="The L3 system shall manage the Joining procedure in the same way as with L2 system with some additional conditions." base_Class="_EsaPgJwzEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_N7cK4JwzEeuEs63bdP9wEQ" base_NamedElement="_N7ZHkJwzEeuEs63bdP9wEQ" id="REQ-Split" text="The L3 system shall manage the Splitting procedure in the same way as with L2 system with some additional conditions." base_Class="_N7ZHkJwzEeuEs63bdP9wEQ"/>
+  <Requirements:Requirement xmi:id="_UPwBkJwzEeuEs63bdP9wEQ" base_NamedElement="_UPuzcJwzEeuEs63bdP9wEQ" id="REQ-TMS" text="The TMS shall be in interaction with the Trackside of the L3 system." base_Class="_UPuzcJwzEeuEs63bdP9wEQ"/>
+  <TimedRequirement:TimedRequirement xmi:id="_zDxQQJ1jEeuEs63bdP9wEQ" base_NamedElement="_tDlt0JxjEeuEs63bdP9wEQ" id="REQ-Timestamp" text="ETCS-L3 information shall be associated to a timestamp." base_Class="_tDlt0JxjEeuEs63bdP9wEQ"/>
+  <TimedRequirement:TimedRequirement xmi:id="_i0S4EJ3_EeuEs63bdP9wEQ" base_NamedElement="_CAwJgJ3_EeuEs63bdP9wEQ" id="REQ-Timeout-No-Validated-Train-Data" text="If configured, the L3 Trackside shall supervise a timeout for communicating train with No Validated Train Data." base_Class="_CAwJgJ3_EeuEs63bdP9wEQ"/>
+  <TimedRequirement:TimedRequirement xmi:id="_YHsgkJ4BEeuEs63bdP9wEQ" base_NamedElement="_E8B88J4BEeuEs63bdP9wEQ" id="REQ-Timeout-Mute-Timer" text="If configured, the L3 Trackside shall supervise a timeout with a Mute Timer, for each train with an active communication session that does not communicate with the L3 Trackside within a configured time." base_Class="_E8B88J4BEeuEs63bdP9wEQ"/>
+  <TimedRequirement:TimedRequirement xmi:id="_jTgyQKHyEeu_UJ1KxnEfIw" base_NamedElement="_fiafMKHyEeu_UJ1KxnEfIw" id="REQ-Timeout-Session-Timer" text="When a communication session is established, in case of a loss of the safe radio connection, the involved entities shall consider the communication session still established for a defined time (SS026 3.5.4.1). A session timer shall supervise this timeout and if it expires, both on-board and trackside shall consider the session as terminated." base_Class="_fiafMKHyEeu_UJ1KxnEfIw"/>
+  <TimedRequirement:TimedRequirement xmi:id="_C4RIgKKuEeuQh5MKDl_z6Q" base_NamedElement="_AYhIkKKuEeuQh5MKDl_z6Q" id="REQ-Timeout-Radio-Hole-Timer" text="The L3 Trackside shall supervise a timeout fixed with the maximum time for a train to pass a radio hole, for this purpose, a Radio Hole Timer shall be used." base_Class="_AYhIkKKuEeuQh5MKDl_z6Q"/>
+  <TimedRequirement:TimedRequirement xmi:id="_IE4voKK0EeuQh5MKDl_z6Q" base_NamedElement="_GK36AKK0EeuQh5MKDl_z6Q" id="REQ-Timeout-Integrity-Wait-Timer" text="The L3 Trackside shall supervise a timeout fixed with the maximum time the trackside can wait for integrity information before considering the loss of train integrity. For this purpose, an Integrity Wait Timer shall be used." base_Class="_GK36AKK0EeuQh5MKDl_z6Q"/>
+  <Requirements:Refine xmi:id="_fTmaMKafEeu438NAqBxT8g" base_DirectedRelationship="_fTYXwKafEeu438NAqBxT8g" base_Abstraction="_fTYXwKafEeu438NAqBxT8g"/>
+  <Requirements:Refine xmi:id="_RkyyID5QEeyJ25Vvm3IYug" base_DirectedRelationship="_Rkvu0D5QEeyJ25Vvm3IYug" base_Abstraction="_Rkvu0D5QEeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_eiLOkD5QEeyJ25Vvm3IYug" base_DirectedRelationship="_eiILQD5QEeyJ25Vvm3IYug" base_Abstraction="_eiILQD5QEeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_qOivED5QEeyJ25Vvm3IYug" base_DirectedRelationship="_qOd2kD5QEeyJ25Vvm3IYug" base_Abstraction="_qOd2kD5QEeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_0_qIQD5QEeyJ25Vvm3IYug" base_DirectedRelationship="_0_jakD5QEeyJ25Vvm3IYug" base_Abstraction="_0_jakD5QEeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_A_mFAD5REeyJ25Vvm3IYug" base_DirectedRelationship="_A_kP0D5REeyJ25Vvm3IYug" base_Abstraction="_A_kP0D5REeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_FD5n8D5REeyJ25Vvm3IYug" base_DirectedRelationship="_FD1WgD5REeyJ25Vvm3IYug" base_Abstraction="_FD1WgD5REeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_PWhHQD5REeyJ25Vvm3IYug" base_DirectedRelationship="_PWerAD5REeyJ25Vvm3IYug" base_Abstraction="_PWerAD5REeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_YtalMD5REeyJ25Vvm3IYug" base_DirectedRelationship="_YtW60D5REeyJ25Vvm3IYug" base_Abstraction="_YtW60D5REeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_cxL8oD5REeyJ25Vvm3IYug" base_DirectedRelationship="_cxI5UD5REeyJ25Vvm3IYug" base_Abstraction="_cxI5UD5REeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_jxR7QD5REeyJ25Vvm3IYug" base_DirectedRelationship="_jxOQ4D5REeyJ25Vvm3IYug" base_Abstraction="_jxOQ4D5REeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_rUOvUD5REeyJ25Vvm3IYug" base_DirectedRelationship="_rUMTED5REeyJ25Vvm3IYug" base_Abstraction="_rUMTED5REeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_xIWqED5REeyJ25Vvm3IYug" base_DirectedRelationship="_xIS_sD5REeyJ25Vvm3IYug" base_Abstraction="_xIS_sD5REeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_Al-1sD5SEeyJ25Vvm3IYug" base_DirectedRelationship="_Al7LUD5SEeyJ25Vvm3IYug" base_Abstraction="_Al7LUD5SEeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_FA1QYD5SEeyJ25Vvm3IYug" base_DirectedRelationship="_FAw-8D5SEeyJ25Vvm3IYug" base_Abstraction="_FAw-8D5SEeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_P1ID8D5TEeyJ25Vvm3IYug" base_DirectedRelationship="_P1FAoD5TEeyJ25Vvm3IYug" base_Abstraction="_P1FAoD5TEeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_U9KUwD5TEeyJ25Vvm3IYug" base_DirectedRelationship="_U9HRcD5TEeyJ25Vvm3IYug" base_Abstraction="_U9HRcD5TEeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_Xvjj4D5TEeyJ25Vvm3IYug" base_DirectedRelationship="_Xvf5gD5TEeyJ25Vvm3IYug" base_Abstraction="_Xvf5gD5TEeyJ25Vvm3IYug"/>
+  <Requirements:Refine xmi:id="_bXIukD5TEeyJ25Vvm3IYug" base_DirectedRelationship="_bXFEMD5TEeyJ25Vvm3IYug" base_Abstraction="_bXFEMD5TEeyJ25Vvm3IYug"/>
+</xmi:XMI>
