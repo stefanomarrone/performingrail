@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"/>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ogBmIELiEey918Uu6sA7CQ" type="PapyrusUMLStateMachineDiagram" name="Speed_And_Distance_Supervision_on_Board" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_ogBmIULiEey918Uu6sA7CQ" type="StateMachine_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ogBmIkLiEey918Uu6sA7CQ" type="StateMachine_NameLabel">
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ogBmI0LiEey918Uu6sA7CQ" width="700" height="20"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ogBmJELiEey918Uu6sA7CQ" type="StateMachine_RegionCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_ogBmJULiEey918Uu6sA7CQ" type="Region_Shape">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ogBmJkLiEey918Uu6sA7CQ" source="RegionAnnotationKey">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ogBmJ0LiEey918Uu6sA7CQ" key="RegionZoneKey" value=""/>
+        </eAnnotations>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_ogBmKELiEey918Uu6sA7CQ" type="Region_SubvertexCompartment">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ogBmKULiEey918Uu6sA7CQ"/>
+        </children>
+        <element xmi:type="uml:Region" href="Speed_and_Distance_Supervision.uml#_ogA_EELiEey918Uu6sA7CQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ogBmKkLiEey918Uu6sA7CQ" width="700" height="280"/>
+      </children>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ogBmK0LiEey918Uu6sA7CQ" y="20" width="700" height="280"/>
+    </children>
+    <element xmi:type="uml:StateMachine" href="Speed_and_Distance_Supervision.uml#_kI7qEELiEey918Uu6sA7CQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ogBmLELiEey918Uu6sA7CQ" x="30" y="30" width="700" height="300"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_ogBmLULiEey918Uu6sA7CQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_ogBmLkLiEey918Uu6sA7CQ"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_ogBmL0LiEey918Uu6sA7CQ" diagramKindId="org.eclipse.papyrus.sysml16.diagram.stateMachine">
+    <owner xmi:type="uml:UseCase" href="Speed_and_Distance_Supervision.uml#_lQKlQDjZEeyQeMlHlxk6EA"/>
+  </styles>
+  <element xmi:type="uml:StateMachine" href="Speed_and_Distance_Supervision.uml#_kI7qEELiEey918Uu6sA7CQ"/>
+</notation:Diagram>
