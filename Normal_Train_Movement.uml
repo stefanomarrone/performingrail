@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_TpGzgDjPEeyQeMlHlxk6EA" name="Normal Train Movement">
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_36a5kBRpEeyQN9odROAPWw" name="Normal Train Movement"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_36a5kBRpEeyQN9odROAPWw" name="Normal Train Movement" classifierBehavior="_r7SXwEPBEeyfxpX2v6RnCw">
+    <ownedBehavior xmi:type="uml:Interaction" xmi:id="_r7SXwEPBEeyfxpX2v6RnCw" name="NormalTrainMovement">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Ao9gsEPCEeyfxpX2v6RnCw" name="">
+        <type xmi:type="uml:UseCase" href="Train_Position_Reporting.uml#_hQC-wDjZEeyQeMlHlxk6EA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-ys3wEPDEeyfxpX2v6RnCw" name="">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_zC8n8BIyEeyVOZB09kZL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_AmB2kEPEEeyfxpX2v6RnCw" name="">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_M__c8BIsEeyVOZB09kZL2w"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_bDUNsUPEEeyfxpX2v6RnCw" name="">
+        <type xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
+      </ownedAttribute>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_Ao8SkEPCEeyfxpX2v6RnCw" name="" represents="_Ao9gsEPCEeyfxpX2v6RnCw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_-yrpoEPDEeyfxpX2v6RnCw" name="" represents="_-ys3wEPDEeyfxpX2v6RnCw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_AmBPgEPEEeyfxpX2v6RnCw" name="" represents="_AmB2kEPEEeyfxpX2v6RnCw"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_bDUNsEPEEeyfxpX2v6RnCw" name="" represents="_bDUNsUPEEeyfxpX2v6RnCw"/>
+    </ownedBehavior>
+  </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_pNDRkDjZEeyQeMlHlxk6EA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pNDRkTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
