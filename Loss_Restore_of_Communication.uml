@@ -24,6 +24,7 @@
     <ownedAttribute xmi:type="uml:Property" xmi:id="_P0SL8D__EeyT1-wGwFMmXA" name="id" visibility="public">
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
     </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_A-1LQEU8EeyZtbJhfCGG_g" type="_HronoD_wEeyT1-wGwFMmXA"/>
     <ownedOperation xmi:type="uml:Operation" xmi:id="_z9jDsEAAEeyT1-wGwFMmXA" name="sendTPR" method="_AMmU0EFREeycnNenlsExoQ">
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_5UX-cEAAEeyT1-wGwFMmXA" name="tpr" type="_XVjzkEJFEeyMHbcdK_rm1g"/>
       <ownedParameter xmi:type="uml:Parameter" xmi:id="_cn1oUERwEeyvUK2YzQuWUA" direction="return">
@@ -385,7 +386,12 @@
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rGMVAESAEeyvUK2YzQuWUA" source="org.eclipse.papyrus">
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rGMVAUSAEeyvUK2YzQuWUA" key="nature" value="UML_Nature"/>
     </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_rGMVAkSAEeyvUK2YzQuWUA" type="_HronoD_wEeyT1-wGwFMmXA" association="_rGLt8ESAEeyvUK2YzQuWUA"/>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_rGNjIESAEeyvUK2YzQuWUA" type="_wLbl8ER_EeyvUK2YzQuWUA" association="_rGLt8ESAEeyvUK2YzQuWUA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rGMVAkSAEeyvUK2YzQuWUA" type="_HronoD_wEeyT1-wGwFMmXA" association="_rGLt8ESAEeyvUK2YzQuWUA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_F88ycEU5EeyZtbJhfCGG_g"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HZ9jAEU5EeyZtbJhfCGG_g" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_rGNjIESAEeyvUK2YzQuWUA" type="_wLbl8ER_EeyvUK2YzQuWUA" association="_rGLt8ESAEeyvUK2YzQuWUA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ImDisEU5EeyZtbJhfCGG_g"/>
+    </ownedEnd>
   </packagedElement>
 </uml:Model>
