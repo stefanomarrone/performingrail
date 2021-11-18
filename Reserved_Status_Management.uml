@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Ez5woBRuEeyQN9odROAPWw" name="Reserved Status Management">
+<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Ez5woBRuEeyQN9odROAPWw" name="Reserved Status Management" classifierBehavior="_cCRfAEhTEey8MuzJdwuxUg">
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iA7ekDjYEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
   </eAnnotations>
+  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_cCRfAEhTEey8MuzJdwuxUg" name="ReservedStatusManagement">
+    <region xmi:type="uml:Region" xmi:id="_fhafYEhTEey8MuzJdwuxUg" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_36NPMEhTEey8MuzJdwuxUg" source="_sKm0gEhTEey8MuzJdwuxUg" target="_yoBj4EhTEey8MuzJdwuxUg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5ieNgEhTEey8MuzJdwuxUg" name="free2reserved" source="_yoBj4EhTEey8MuzJdwuxUg" target="_tKmR4EhTEey8MuzJdwuxUg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_G5rfMEhUEey8MuzJdwuxUg" name="MovementAuthorization"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_6KG1QEhTEey8MuzJdwuxUg" name="reserved2free" source="_tKmR4EhTEey8MuzJdwuxUg" target="_yoBj4EhTEey8MuzJdwuxUg">
+        <trigger xmi:type="uml:Trigger" xmi:id="_otoh4EhUEey8MuzJdwuxUg" name="removeReservedStatusArea (from TMS)"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_KqvWAEhUEey8MuzJdwuxUg" name="reserved2reserved" source="_tKmR4EhTEey8MuzJdwuxUg" target="_tKmR4EhTEey8MuzJdwuxUg">
+        <effect xmi:type="uml:OpaqueBehavior" xmi:id="_NUvBoEhVEey8MuzJdwuxUg" name="ExtendArea"/>
+        <trigger xmi:type="uml:Trigger" xmi:id="_O_qH0EhUEey8MuzJdwuxUg" name="MovementAuthorithy or TrainPositionReport"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_rBRYcEhUEey8MuzJdwuxUg" name="reserved2reserved(2)" source="_tKmR4EhTEey8MuzJdwuxUg" target="_tKmR4EhTEey8MuzJdwuxUg">
+        <effect xmi:type="uml:OpaqueBehavior" xmi:id="_3CpDIEhVEey8MuzJdwuxUg" name="reaudceArea"/>
+        <trigger xmi:type="uml:Trigger" xmi:id="_-PwmkEhUEey8MuzJdwuxUg" name="reduceReservedStatusArea (from TMS)"/>
+      </transition>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_sKm0gEhTEey8MuzJdwuxUg" name="initial"/>
+      <subvertex xmi:type="uml:State" xmi:id="_tKmR4EhTEey8MuzJdwuxUg" name="Reserved"/>
+      <subvertex xmi:type="uml:State" xmi:id="_yoBj4EhTEey8MuzJdwuxUg" name="Free - Clear"/>
+    </region>
+  </ownedBehavior>
 </uml:UseCase>
