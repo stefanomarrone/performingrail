@@ -143,6 +143,16 @@
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_DB_gYBRpEeyQN9odROAPWw" name="ERTMS Use cases">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_xA9_cEbzEeyDdsL-2jTuug">
+        <body>External Device corresponds to TIMS</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_UhBYUEeIEeyV8I3YXCWeCQ">
+        <body>X2R3 ENG rules</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_hm2N8EhrEeyBhenFSEKB3w">
+        <body>REQ_TrackStatus-5&#xD;
+</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_1m7M8BRpEeyQN9odROAPWw" name="Start of Mission"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_36bgoBRpEeyQN9odROAPWw" name="Level Transition"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_5iUEcBRpEeyQN9odROAPWw" name="Handover"/>
@@ -222,6 +232,12 @@
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mzhkcEDnEeyLdbHgJe05jQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mzvm4EDnEeyLdbHgJe05jQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
     </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_K2wcYBIoEeyVOZB09kZL2w" base_Class="_K2rj4BIoEeyVOZB09kZL2w"/>

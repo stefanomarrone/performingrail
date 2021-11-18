@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_jD9zcDjZEeyQeMlHlxk6EA" name="Integration Information Management">
+<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_jD9zcDjZEeyQeMlHlxk6EA" name="Integrity Information Management" classifierBehavior="_k_KCUEIwEey5-bfWf6TPtQ">
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MoeL4DjbEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_fF5jUBI1EeyVOZB09kZL2w"/>
   </eAnnotations>
+  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_k_KCUEIwEey5-bfWf6TPtQ" name="TIM_SM">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_hUriYEI1Eey5-bfWf6TPtQ" annotatedElement="_k_KCUEIwEey5-bfWf6TPtQ">
+      <body>see  X2R2, D4.1, page 54</body>
+    </ownedComment>
+    <region xmi:type="uml:Region" xmi:id="_nZsyIEIwEey5-bfWf6TPtQ" name="Region1">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_7yDUkEiBEeyBhenFSEKB3w">
+        <body>page 3,4 ERA_CR940_160420&#xD;
+</body>
+      </ownedComment>
+      <transition xmi:type="uml:Transition" xmi:id="_x0azUEhsEeyBhenFSEKB3w" name="after[Timer expired] send Integrity status, reset timer" source="_dwvaMEI4Eey5-bfWf6TPtQ" target="_ho9RUEhsEeyBhenFSEKB3w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_7wdlsEhsEeyBhenFSEKB3w" source="_woKFwEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_0_uFIEiBEeyBhenFSEKB3w" name="EoM" source="_dwvaMEI4Eey5-bfWf6TPtQ" target="_5Hle8EhsEeyBhenFSEKB3w"/>
+      <subvertex xmi:type="uml:State" xmi:id="_dwvaMEI4Eey5-bfWf6TPtQ" name="Train integrity status information management">
+        <region xmi:type="uml:Region" xmi:id="_L69ZgEI6Eey5-bfWf6TPtQ" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_mLtUsEh1EeyBhenFSEKB3w" name="TI_confirmed by TMS" source="_1HmskEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w"/>
+          <transition xmi:type="uml:Transition" xmi:id="_8A6GYEh1EeyBhenFSEKB3w" name="TI_lost" source="_FLH6kEhzEeyBhenFSEKB3w" target="_1HmskEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_iO4jsEh-EeyBhenFSEKB3w" source="_FLH6kEhzEeyBhenFSEKB3w" target="_xJppQEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_mSlCoEh-EeyBhenFSEKB3w" source="_xJppQEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w"/>
+          <transition xmi:type="uml:Transition" xmi:id="_s452YEh-EeyBhenFSEKB3w" source="_1HmskEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_t-gMgEh-EeyBhenFSEKB3w" source="_xJppQEIwEey5-bfWf6TPtQ" target="_1HmskEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_wV0pMEh-EeyBhenFSEKB3w" source="_FLH6kEhzEeyBhenFSEKB3w" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_xgsg4Eh-EeyBhenFSEKB3w" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w"/>
+          <transition xmi:type="uml:Transition" xmi:id="_yYiu4Eh-EeyBhenFSEKB3w" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_zSa9MEh-EeyBhenFSEKB3w" source="_xJppQEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
+          <subvertex xmi:type="uml:State" xmi:id="_1HmskEIwEey5-bfWf6TPtQ" name="Train Integrity Lost"/>
+          <subvertex xmi:type="uml:State" xmi:id="_7FdLEEIwEey5-bfWf6TPtQ" name="No train integrity information">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_dw-LEEI1Eey5-bfWf6TPtQ" annotatedElement="_7FdLEEIwEey5-bfWf6TPtQ">
+              <body></body>
+            </ownedComment>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_xJppQEIwEey5-bfWf6TPtQ" name="Train integrity confirmed by driver"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_ho9RUEhsEeyBhenFSEKB3w" kind="shallowHistory"/>
+          <subvertex xmi:type="uml:State" xmi:id="_FLH6kEhzEeyBhenFSEKB3w" name="Train integrity confirmed by external device "/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_woKFwEIwEey5-bfWf6TPtQ" name="Idle"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_5Hle8EhsEeyBhenFSEKB3w" name="FinalState7"/>
+    </region>
+  </ownedBehavior>
 </uml:UseCase>
