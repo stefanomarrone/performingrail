@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_BCR5IBRuEeyQN9odROAPWw" name="TTD Management">
+<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_BCR5IBRuEeyQN9odROAPWw" name="TTD Management" classifierBehavior="_HtKesE1DEey51db6W6sgyA">
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bXhFIDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
   </eAnnotations>
+  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_HtKesE1DEey51db6W6sgyA" name="SM_TTD">
+    <region xmi:type="uml:Region" xmi:id="_I58a4E1DEey51db6W6sgyA" name="Region1">
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_WYGCEE1DEey51db6W6sgyA" name="Init"/>
+      <subvertex xmi:type="uml:State" xmi:id="_voQpUE1EEey51db6W6sgyA" name="Compute TTD report">
+        <region xmi:type="uml:Region" xmi:id="_wIUpcE1EEey51db6W6sgyA" name="Region1">
+          <subvertex xmi:type="uml:State" xmi:id="_ZHPI4E1DEey51db6W6sgyA" name="Free"/>
+          <subvertex xmi:type="uml:State" xmi:id="_teze8E1DEey51db6W6sgyA" name="Occupied"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_9x9u8E1EEey51db6W6sgyA" name="Send TTD report"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_O3lMEE1FEey51db6W6sgyA" name="Terminate4" kind="terminate"/>
+    </region>
+  </ownedBehavior>
 </uml:UseCase>
