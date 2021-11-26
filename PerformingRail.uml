@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
   <uml:Model xmi:id="_JYaFgBIcEeyVOZB09kZL2w" name="PerformingRail">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_JblVUBIcEeyVOZB09kZL2w">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -130,6 +130,25 @@
 [ss037]</body>
         </ownedComment>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_KmTioE6OEeyaL75nPQZQGA" name="trackside_data">
+        <packagedElement xmi:type="uml:Class" xmi:id="_QVt8gE6OEeyaL75nPQZQGA" name="TrackStatusArea">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZzpkoE6QEeyaL75nPQZQGA" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ErWYYE6UEeyaL75nPQZQGA" name="status" type="_YNRHkE6OEeyaL75nPQZQGA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_YNRHkE6OEeyaL75nPQZQGA" name="AreaStatus">
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bedLgE6OEeyaL75nPQZQGA" name="Occupied"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cyuPwE6OEeyaL75nPQZQGA" name="Unknown"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_G8Qn4E6QEeyaL75nPQZQGA" name="AreaExtent">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_PvpwIE6QEeyaL75nPQZQGA" name="start">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TTMIUE6QEeyaL75nPQZQGA" name="end">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UdfYQE6QEeyaL75nPQZQGA" name="route"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_nsyrMBI2EeyVOZB09kZL2w" name="References">
       <ownedComment xmi:type="uml:Comment" xmi:id="_R8JCUBI2EeyVOZB09kZL2w">
@@ -255,4 +274,6 @@
   <Blocks:Block xmi:id="_UMVDoBIzEeyVOZB09kZL2w" base_Class="_UMMgwBIzEeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_av9IsBIzEeyVOZB09kZL2w" base_Class="_av43QBIzEeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_fF9NsBI1EeyVOZB09kZL2w" base_Class="_fF5jUBI1EeyVOZB09kZL2w"/>
+  <Blocks:Block xmi:id="_QV-bME6OEeyaL75nPQZQGA" base_Class="_QVt8gE6OEeyaL75nPQZQGA"/>
+  <standard:Type xmi:id="_K7alEE6QEeyaL75nPQZQGA" base_Class="_G8Qn4E6QEeyaL75nPQZQGA"/>
 </xmi:XMI>
