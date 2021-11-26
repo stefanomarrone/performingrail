@@ -8,6 +8,10 @@
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_GDhW4BIoEeyVOZB09kZL2w" name="SystemArchitecture">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_eWhXcE7TEeyTe5jLSF3Q6g" annotatedElement="_u3-cUBIyEeyVOZB09kZL2w _zq1uYBIyEeyVOZB09kZL2w">
+        <body>bja: it would be preferable to introduce a controller class. See attached hyperlink&#xD;
+</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:Class" xmi:id="_K2rj4BIoEeyVOZB09kZL2w" name="ETCS-L3 System"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_s3WM4BIoEeyVOZB09kZL2w" name="Driver">
         <generalization xmi:type="uml:Generalization" xmi:id="_Mym5gBIyEeyVOZB09kZL2w" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
@@ -16,6 +20,9 @@
         <generalization xmi:type="uml:Generalization" xmi:id="_N-qc8BIyEeyVOZB09kZL2w" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_wEHq4BIoEeyVOZB09kZL2w" name="Dispatcher">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_yV0M4E7SEeyTe5jLSF3Q6g">
+          <body>The dispatcher organises train traffic. For the intents and purposes of the present model, this equates to the role of the signaller.</body>
+        </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_NYi4IBIyEeyVOZB09kZL2w" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_wtbtoBIoEeyVOZB09kZL2w" name="External Interfaces"/>
@@ -25,15 +32,32 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_9n0ZEBIrEeyVOZB09kZL2w" name="ETCS-L3 External Users" visibility="protected"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_M__c8BIsEeyVOZB09kZL2w" name="TMS">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_qjjuUE7OEeyTe5jLSF3Q6g">
+          <body>Traffic Management System&#xD;
+&#xD;
+EULYNX: Traffic Control System&#xD;
+https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA6/EA954.htm</body>
+        </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="__FKVQBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_u3-cUBIyEeyVOZB09kZL2w" name="Adjacent Signalling System">
         <generalization xmi:type="uml:Generalization" xmi:id="_04IgkBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_zC8n8BIyEeyVOZB09kZL2w" name="TTD">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_9l9dsE7NEeyTe5jLSF3Q6g">
+          <body>Trackside Train Detection&#xD;
+EULYNX: Train Detection Section&#xD;
+A logical section of the train detection system.&#xD;
+The section is associated with a TVP section.&#xD;
+&#xD;
+https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
+        </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_45ZWkBI1EeyVOZB09kZL2w" general="_zq1uYBIyEeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_zq1uYBIyEeyVOZB09kZL2w" name="Object Controller">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ifCPgE7UEeyTe5jLSF3Q6g">
+          <body>https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA6/EA954.htm</body>
+        </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_1jMPwBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_UMMgwBIzEeyVOZB09kZL2w" name="ETCS L3">
@@ -143,6 +167,16 @@
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_DB_gYBRpEeyQN9odROAPWw" name="ERTMS Use cases">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_xA9_cEbzEeyDdsL-2jTuug">
+        <body>External Device corresponds to TIMS</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_UhBYUEeIEeyV8I3YXCWeCQ">
+        <body>X2R3 ENG rules</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_hm2N8EhrEeyBhenFSEKB3w">
+        <body>REQ_TrackStatus-5&#xD;
+</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_1m7M8BRpEeyQN9odROAPWw" name="Start of Mission"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_36bgoBRpEeyQN9odROAPWw" name="Level Transition"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_5iUEcBRpEeyQN9odROAPWw" name="Handover"/>
@@ -157,11 +191,17 @@
       <packagedElement xmi:type="uml:Package" href="Trackside_Initialization.uml#_sKH5QBVDEeyMXOG2LrUsxQ"/>
       <packagedElement xmi:type="uml:Package" href="Normal_Train_Movement.uml#_TpGzgDjPEeyQeMlHlxk6EA"/>
       <packagedElement xmi:type="uml:Package" href="OnSight_Movement.uml#_GFnqQDjYEeyQeMlHlxk6EA"/>
-      <packagedElement xmi:type="uml:Package" href="Loss_Restore_of_Communication.uml#_I_v5EDjYEeyQeMlHlxk6EA"/>
       <packagedElement xmi:type="uml:Package" href="Loss_of_Train_Integrity.uml#_LClTgDjYEeyQeMlHlxk6EA"/>
       <packagedElement xmi:type="uml:Package" href="Staff_Responsible_Movement.uml#_M74-gDjYEeyQeMlHlxk6EA"/>
       <packagedElement xmi:type="uml:Package" href="Points_Control.uml#_O_-9MDjYEeyQeMlHlxk6EA"/>
       <packagedElement xmi:type="uml:Package" href="Sweeping.uml#_Qjy5UDjYEeyQeMlHlxk6EA"/>
+      <packagedElement xmi:type="uml:Package" href="LossOfCommunication.uml#_WHY2YEfOEeydXZgDYCfwSw"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_Rn83QE7MEeyTe5jLSF3Q6g" name="Signaller">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_gQWEAE7MEeyTe5jLSF3Q6g">
+          <body>The signaller monitors and controls train movements.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_Vw4esE7QEeyTe5jLSF3Q6g" name="train driver"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JZjVABIcEeyVOZB09kZL2w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JZnmcBIcEeyVOZB09kZL2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -222,6 +262,12 @@
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_mzhkcEDnEeyLdbHgJe05jQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mzvm4EDnEeyLdbHgJe05jQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
     </profileApplication>
   </uml:Model>
   <Blocks:Block xmi:id="_K2wcYBIoEeyVOZB09kZL2w" base_Class="_K2rj4BIoEeyVOZB09kZL2w"/>
