@@ -5,20 +5,17 @@
   </eAnnotations>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_HtKesE1DEey51db6W6sgyA" name="SM_TTD">
     <region xmi:type="uml:Region" xmi:id="_I58a4E1DEey51db6W6sgyA" name="Region1">
-      <transition xmi:type="uml:Transition" xmi:id="_P-07AE3UEeyZ9oag9282Eg" name="after(TTD_Timer)/send TTD_PR and reset (TTD_Timer)" source="_voQpUE1EEey51db6W6sgyA" target="_gjo4gE3REeyZ9oag9282Eg"/>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_tVgZwFK5EeyODuBwckM_-w">
+        <body>TTD Timer reflechir&#xD;
+</body>
+      </ownedComment>
       <transition xmi:type="uml:Transition" xmi:id="_rFxTIE3UEeyZ9oag9282Eg" source="_WYGCEE1DEey51db6W6sgyA" target="_ZHPI4E1DEey51db6W6sgyA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_0UklAE3UEeyZ9oag9282Eg" name="L3_Trackside_System_Off" source="_voQpUE1EEey51db6W6sgyA" target="_m7OFoE3REeyZ9oag9282Eg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_EOp4kE3UEeyZ9oag9282Eg" name="Detect_Train_Movement" source="_ZHPI4E1DEey51db6W6sgyA" target="_teze8E1DEey51db6W6sgyA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_C9bEwE3VEeyZ9oag9282Eg" name="No_Train_Movement" source="_teze8E1DEey51db6W6sgyA" target="_ZHPI4E1DEey51db6W6sgyA"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_WYGCEE1DEey51db6W6sgyA" name="Init"/>
-      <subvertex xmi:type="uml:State" xmi:id="_voQpUE1EEey51db6W6sgyA" name="Compute TTD status">
-        <region xmi:type="uml:Region" xmi:id="_wIUpcE1EEey51db6W6sgyA" name="Region1">
-          <transition xmi:type="uml:Transition" xmi:id="_EOp4kE3UEeyZ9oag9282Eg" name="Detect movement" source="_ZHPI4E1DEey51db6W6sgyA" target="_teze8E1DEey51db6W6sgyA"/>
-          <transition xmi:type="uml:Transition" xmi:id="_C9bEwE3VEeyZ9oag9282Eg" name="TTD release" source="_teze8E1DEey51db6W6sgyA" target="_ZHPI4E1DEey51db6W6sgyA"/>
-          <subvertex xmi:type="uml:State" xmi:id="_ZHPI4E1DEey51db6W6sgyA" name="Free"/>
-          <subvertex xmi:type="uml:State" xmi:id="_teze8E1DEey51db6W6sgyA" name="Occupied"/>
-          <subvertex xmi:type="uml:Pseudostate" xmi:id="_gjo4gE3REeyZ9oag9282Eg" name="Status" kind="shallowHistory"/>
-        </region>
-      </subvertex>
       <subvertex xmi:type="uml:FinalState" xmi:id="_m7OFoE3REeyZ9oag9282Eg" name="Finish"/>
+      <subvertex xmi:type="uml:State" xmi:id="_ZHPI4E1DEey51db6W6sgyA" name="Clear"/>
+      <subvertex xmi:type="uml:State" xmi:id="_teze8E1DEey51db6W6sgyA" name="Occupied"/>
     </region>
   </ownedBehavior>
 </uml:UseCase>
