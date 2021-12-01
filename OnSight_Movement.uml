@@ -18,18 +18,18 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_-SNYsEfHEeyfHsZ5oNU26Q" name="">
           <type xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_SP8yIEfLEeyfHsZ5oNU26Q" name="">
-          <type xmi:type="uml:UseCase" href="MA_Management.uml#_INRgMBRuEeyQN9odROAPWw"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_fpipcEfLEeyfHsZ5oNU26Q" name="">
           <type xmi:type="uml:Class" href="PerformingRail.uml#_M__c8BIsEeyVOZB09kZL2w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_wgRh4FKTEeyODuBwckM_-w" name="">
+          <type xmi:type="uml:UseCase" href="Reserved_Status_Management.uml#_Ez5woBRuEeyQN9odROAPWw"/>
         </ownedAttribute>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_pXAxIEfHEeyfHsZ5oNU26Q" name="Driver" represents="_pXB_QEfHEeyfHsZ5oNU26Q" coveredBy="_rhq_8EfJEeyfHsZ5oNU26Q"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_rSveAEfHEeyfHsZ5oNU26Q" name="TIMS" represents="_rSwsIEfHEeyfHsZ5oNU26Q" coveredBy="_LciE8EfIEeyfHsZ5oNU26Q"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_1VcSAEfHEeyfHsZ5oNU26Q" name="OBU" represents="_1Vc5EEfHEeyfHsZ5oNU26Q" coveredBy="_LcisAEfIEeyfHsZ5oNU26Q _QQoGEEfIEeyfHsZ5oNU26Q _hdOfgEfJEeyfHsZ5oNU26Q _rhrnAEfJEeyfHsZ5oNU26Q _7o0CoEfJEeyfHsZ5oNU26Q"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_-SLjgEfHEeyfHsZ5oNU26Q" name="Trackside" represents="_-SNYsEfHEeyfHsZ5oNU26Q" coveredBy="_QQotIEfIEeyfHsZ5oNU26Q _lQa5wEfIEeyfHsZ5oNU26Q _lQcH4EfIEeyfHsZ5oNU26Q _hdN4cEfJEeyfHsZ5oNU26Q _7o0psEfJEeyfHsZ5oNU26Q _9-9aoEfJEeyfHsZ5oNU26Q _9--BsEfJEeyfHsZ5oNU26Q _kGGw0EfKEeyfHsZ5oNU26Q _kGHX4EfKEeyfHsZ5oNU26Q _ZfrvQEfLEeyfHsZ5oNU26Q _1Sa2YEfLEeyfHsZ5oNU26Q"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_SP7kAEfLEeyfHsZ5oNU26Q" name="" represents="_SP8yIEfLEeyfHsZ5oNU26Q" coveredBy="_ZfrIMEfLEeyfHsZ5oNU26Q"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_fpiCYEfLEeyfHsZ5oNU26Q" name="" represents="_fpipcEfLEeyfHsZ5oNU26Q" coveredBy="_1SbdcEfLEeyfHsZ5oNU26Q"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_fpiCYEfLEeyfHsZ5oNU26Q" name="TMS" represents="_fpipcEfLEeyfHsZ5oNU26Q" coveredBy="_1SbdcEfLEeyfHsZ5oNU26Q"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_wgPssFKTEeyODuBwckM_-w" name="RSM" represents="_wgRh4FKTEeyODuBwckM_-w" coveredBy="_ZfrIMEfLEeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LciE8EfIEeyfHsZ5oNU26Q" name="Message9SendEvent" covered="_rSveAEfHEeyfHsZ5oNU26Q" message="_LcgPwEfIEeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LcisAEfIEeyfHsZ5oNU26Q" name="Message9ReceiveEvent" covered="_1VcSAEfHEeyfHsZ5oNU26Q" message="_LcgPwEfIEeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_QQoGEEfIEeyfHsZ5oNU26Q" name="Message12SendEvent" covered="_1VcSAEfHEeyfHsZ5oNU26Q" message="_QQm38EfIEeyfHsZ5oNU26Q"/>
@@ -51,7 +51,7 @@
             </guard>
           </operand>
         </fragment>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZfrIMEfLEeyfHsZ5oNU26Q" name="Message33SendEvent" covered="_SP7kAEfLEeyfHsZ5oNU26Q" message="_Zfp6EEfLEeyfHsZ5oNU26Q"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZfrIMEfLEeyfHsZ5oNU26Q" name="Message33SendEvent" covered="_wgPssFKTEeyODuBwckM_-w" message="_Zfp6EEfLEeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZfrvQEfLEeyfHsZ5oNU26Q" name="Message33ReceiveEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_Zfp6EEfLEeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1Sa2YEfLEeyfHsZ5oNU26Q" name="Message36SendEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_1SZoQEfLEeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1SbdcEfLEeyfHsZ5oNU26Q" name="Message36ReceiveEvent" covered="_fpiCYEfLEeyfHsZ5oNU26Q" message="_1SZoQEfLEeyfHsZ5oNU26Q"/>
