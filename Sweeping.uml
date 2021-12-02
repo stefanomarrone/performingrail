@@ -2,7 +2,23 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
   <uml:Package xmi:id="_Qjy5UDjYEeyQeMlHlxk6EA" name="Sweeping">
     <packagedElement xmi:type="uml:UseCase" xmi:id="_8z5xARRpEeyQN9odROAPWw" name="Sweeping" classifierBehavior="_zor2wE3REeyZ9oag9282Eg">
-      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_zor2wE3REeyZ9oag9282Eg" name="Sweeping_SD"/>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_zor2wE3REeyZ9oag9282Eg" name="Sweeping_SD">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_VpreYFNNEeyT1rOLVdmr6A" name="">
+          <type xmi:type="uml:UseCase" href="TTD_Management.uml#_BCR5IBRuEeyQN9odROAPWw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_bAiOUFNNEeyT1rOLVdmr6A" name="">
+          <type xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_fjussFNNEeyT1rOLVdmr6A" name="">
+          <type xmi:type="uml:Class" href="PerformingRail.uml#_M__c8BIsEeyVOZB09kZL2w"/>
+        </ownedAttribute>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_VpppMFNNEeyT1rOLVdmr6A" name="TDD" represents="_VpreYFNNEeyT1rOLVdmr6A"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_bAhAMFNNEeyT1rOLVdmr6A" name="TSM" represents="_bAiOUFNNEeyT1rOLVdmr6A" coveredBy="_VNNdcFNQEeyT1rOLVdmr6A"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_fjtekFNNEeyT1rOLVdmr6A" name="" represents="_fjussFNNEeyT1rOLVdmr6A" coveredBy="_VNM2YFNQEeyT1rOLVdmr6A"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VNM2YFNQEeyT1rOLVdmr6A" name="Message7SendEvent" covered="_fjtekFNNEeyT1rOLVdmr6A" message="_VMkkQFNQEeyT1rOLVdmr6A"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VNNdcFNQEeyT1rOLVdmr6A" name="Message7ReceiveEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_VMkkQFNQEeyT1rOLVdmr6A"/>
+        <message xmi:type="uml:Message" xmi:id="_VMkkQFNQEeyT1rOLVdmr6A" name="Create UTSA as sweeptable" messageSort="asynchCall" receiveEvent="_VNNdcFNQEeyT1rOLVdmr6A" sendEvent="_VNM2YFNQEeyT1rOLVdmr6A"/>
+      </ownedBehavior>
       <include xmi:type="uml:Include" xmi:id="_b0DKYD1eEeyAv_UCn311nQ">
         <addition xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
       </include>
