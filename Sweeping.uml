@@ -13,7 +13,7 @@
           <type xmi:type="uml:Class" href="PerformingRail.uml#_M__c8BIsEeyVOZB09kZL2w"/>
         </ownedAttribute>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_VpppMFNNEeyT1rOLVdmr6A" name="TDD" represents="_VpreYFNNEeyT1rOLVdmr6A"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_bAhAMFNNEeyT1rOLVdmr6A" name="TSM" represents="_bAiOUFNNEeyT1rOLVdmr6A" coveredBy="_VNNdcFNQEeyT1rOLVdmr6A _RhYPcFNREeyIHpUPTS8dSg _RhZdkFNREeyIHpUPTS8dSg _ZFZagFNREeyIHpUPTS8dSg _ZFVJEFNREeyIHpUPTS8dSg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_bAhAMFNNEeyT1rOLVdmr6A" name="TSM" represents="_bAiOUFNNEeyT1rOLVdmr6A" coveredBy="_VNNdcFNQEeyT1rOLVdmr6A _RhYPcFNREeyIHpUPTS8dSg _RhZdkFNREeyIHpUPTS8dSg _ZFZagFNREeyIHpUPTS8dSg _ZFVJEFNREeyIHpUPTS8dSg _fRd7MFNREeyIHpUPTS8dSg _fRhlkFNREeyIHpUPTS8dSg _59nNsFNREeyIHpUPTS8dSg _59n0wFNREeyIHpUPTS8dSg _ENhXQFNSEeyIHpUPTS8dSg _ENe7AFNSEeyIHpUPTS8dSg"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_fjtekFNNEeyT1rOLVdmr6A" name="" represents="_fjussFNNEeyT1rOLVdmr6A" coveredBy="_VNM2YFNQEeyT1rOLVdmr6A"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VNM2YFNQEeyT1rOLVdmr6A" name="Message7SendEvent" covered="_fjtekFNNEeyT1rOLVdmr6A" message="_VMkkQFNQEeyT1rOLVdmr6A"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VNNdcFNQEeyT1rOLVdmr6A" name="Message7ReceiveEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_VMkkQFNQEeyT1rOLVdmr6A"/>
@@ -21,8 +21,20 @@
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ZFVJEFNREeyIHpUPTS8dSg" name="BehaviorExecutionSpecification13" covered="_bAhAMFNNEeyT1rOLVdmr6A" finish="_ZFZagFNREeyIHpUPTS8dSg" start="_RhYPcFNREeyIHpUPTS8dSg"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RhZdkFNREeyIHpUPTS8dSg" name="Message10ReceiveEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_RhK0EFNREeyIHpUPTS8dSg"/>
         <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ZFZagFNREeyIHpUPTS8dSg" name="BehaviorExecutionSpecification13Finish" covered="_bAhAMFNNEeyT1rOLVdmr6A" execution="_ZFVJEFNREeyIHpUPTS8dSg"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_fRd7MFNREeyIHpUPTS8dSg" name="CombinedFragment15" covered="_bAhAMFNNEeyT1rOLVdmr6A">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_fRhlkFNREeyIHpUPTS8dSg" name="InteractionOperand0" covered="_bAhAMFNNEeyT1rOLVdmr6A">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_59nNsFNREeyIHpUPTS8dSg" name="Message16SendEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_59lYgFNREeyIHpUPTS8dSg"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ENe7AFNSEeyIHpUPTS8dSg" name="BehaviorExecutionSpecification17" covered="_bAhAMFNNEeyT1rOLVdmr6A" finish="_ENhXQFNSEeyIHpUPTS8dSg" start="_59nNsFNREeyIHpUPTS8dSg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_59n0wFNREeyIHpUPTS8dSg" name="Message16ReceiveEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_59lYgFNREeyIHpUPTS8dSg"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_ENhXQFNSEeyIHpUPTS8dSg" name="BehaviorExecutionSpecification17Finish" covered="_bAhAMFNNEeyT1rOLVdmr6A" execution="_ENe7AFNSEeyIHpUPTS8dSg"/>
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_fRhlkVNREeyIHpUPTS8dSg" name="sizeConstraint">
+              <specification xmi:type="uml:LiteralString" xmi:id="_0GisoFNREeyIHpUPTS8dSg" value="sizeUTSA >= minimum_length"/>
+            </guard>
+          </operand>
+        </fragment>
         <message xmi:type="uml:Message" xmi:id="_VMkkQFNQEeyT1rOLVdmr6A" name="Create UTSA as sweeptable" messageSort="asynchCall" receiveEvent="_VNNdcFNQEeyT1rOLVdmr6A" sendEvent="_VNM2YFNQEeyT1rOLVdmr6A"/>
         <message xmi:type="uml:Message" xmi:id="_RhK0EFNREeyIHpUPTS8dSg" name="Verify length UTSA size" messageSort="asynchCall" receiveEvent="_RhZdkFNREeyIHpUPTS8dSg" sendEvent="_RhYPcFNREeyIHpUPTS8dSg"/>
+        <message xmi:type="uml:Message" xmi:id="_59lYgFNREeyIHpUPTS8dSg" name="Create UTSA" messageSort="asynchCall" receiveEvent="_59n0wFNREeyIHpUPTS8dSg" sendEvent="_59nNsFNREeyIHpUPTS8dSg"/>
       </ownedBehavior>
       <include xmi:type="uml:Include" xmi:id="_b0DKYD1eEeyAv_UCn311nQ">
         <addition xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
