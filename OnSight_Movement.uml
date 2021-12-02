@@ -44,13 +44,13 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7o0psEfJEeyfHsZ5oNU26Q" name="Message24ReceiveEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_7ozbkEfJEeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:CombinedFragment" xmi:id="_9-9aoEfJEeyfHsZ5oNU26Q" name="Accept confirmation Driver" covered="_-SLjgEfHEeyfHsZ5oNU26Q" interactionOperator="opt">
           <operand xmi:type="uml:InteractionOperand" xmi:id="_9--BsEfJEeyfHsZ5oNU26Q" name="InteractionOperand0" covered="_-SLjgEfHEeyfHsZ5oNU26Q">
-            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kGGw0EfKEeyfHsZ5oNU26Q" name="Message28SendEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_kGGJwEfKEeyfHsZ5oNU26Q"/>
-            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kGHX4EfKEeyfHsZ5oNU26Q" name="Message28ReceiveEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_kGGJwEfKEeyfHsZ5oNU26Q"/>
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_9--BsUfJEeyfHsZ5oNU26Q" name="Accept Driver confirmation">
               <specification xmi:type="uml:LiteralString" xmi:id="_OyJD8EfKEeyfHsZ5oNU26Q" value="Trackside is configured to accept Train Integrity confirmation by the driver"/>
             </guard>
           </operand>
         </fragment>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kGGw0EfKEeyfHsZ5oNU26Q" name="Message28SendEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_kGGJwEfKEeyfHsZ5oNU26Q"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kGHX4EfKEeyfHsZ5oNU26Q" name="Message28ReceiveEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_kGGJwEfKEeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZfrIMEfLEeyfHsZ5oNU26Q" name="Message33SendEvent" covered="_wgPssFKTEeyODuBwckM_-w" message="_Zfp6EEfLEeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZfrvQEfLEeyfHsZ5oNU26Q" name="Message33ReceiveEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_Zfp6EEfLEeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1Sa2YEfLEeyfHsZ5oNU26Q" name="Message36SendEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_1SZoQEfLEeyfHsZ5oNU26Q"/>
@@ -62,7 +62,7 @@
         <message xmi:type="uml:Message" xmi:id="_rhqY4EfJEeyfHsZ5oNU26Q" name="Integrity Confirmed" messageSort="asynchCall" receiveEvent="_rhrnAEfJEeyfHsZ5oNU26Q" sendEvent="_rhq_8EfJEeyfHsZ5oNU26Q"/>
         <message xmi:type="uml:Message" xmi:id="_7ozbkEfJEeyfHsZ5oNU26Q" name="TPR with Integrity Confirmed by Driver" messageSort="asynchCall" receiveEvent="_7o0psEfJEeyfHsZ5oNU26Q" sendEvent="_7o0CoEfJEeyfHsZ5oNU26Q"/>
         <message xmi:type="uml:Message" xmi:id="_kGGJwEfKEeyfHsZ5oNU26Q" name="Update CRE" messageSort="asynchCall" receiveEvent="_kGHX4EfKEeyfHsZ5oNU26Q" sendEvent="_kGGw0EfKEeyfHsZ5oNU26Q"/>
-        <message xmi:type="uml:Message" xmi:id="_Zfp6EEfLEeyfHsZ5oNU26Q" name="Reserved status Area Unknown" messageSort="asynchCall" receiveEvent="_ZfrvQEfLEeyfHsZ5oNU26Q" sendEvent="_ZfrIMEfLEeyfHsZ5oNU26Q"/>
+        <message xmi:type="uml:Message" xmi:id="_Zfp6EEfLEeyfHsZ5oNU26Q" name="Reserved area with track status Area Unknown" messageSort="asynchCall" receiveEvent="_ZfrvQEfLEeyfHsZ5oNU26Q" sendEvent="_ZfrIMEfLEeyfHsZ5oNU26Q"/>
         <message xmi:type="uml:Message" xmi:id="_1SZoQEfLEeyfHsZ5oNU26Q" name="Inform TMS" messageSort="asynchCall" receiveEvent="_1SbdcEfLEeyfHsZ5oNU26Q" sendEvent="_1Sa2YEfLEeyfHsZ5oNU26Q"/>
       </ownedBehavior>
       <include xmi:type="uml:Include" xmi:id="_zUE5gEFsEeyfxc1FgnjdUg">
