@@ -5,9 +5,12 @@
   </eAnnotations>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_HtKesE1DEey51db6W6sgyA" name="TTD_Status_SM">
     <region xmi:type="uml:Region" xmi:id="_I58a4E1DEey51db6W6sgyA" name="Region1">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_1FETIFONEey-6ZlVQ1gHJw">
+        <body>one TTD</body>
+      </ownedComment>
       <transition xmi:type="uml:Transition" xmi:id="_rFxTIE3UEeyZ9oag9282Eg" source="_WYGCEE1DEey51db6W6sgyA" target="_ZHPI4E1DEey51db6W6sgyA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_EOp4kE3UEeyZ9oag9282Eg" name="Detect_Train_Movement" source="_ZHPI4E1DEey51db6W6sgyA" target="_teze8E1DEey51db6W6sgyA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_C9bEwE3VEeyZ9oag9282Eg" name="No_Train_Movement" source="_teze8E1DEey51db6W6sgyA" target="_ZHPI4E1DEey51db6W6sgyA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_EOp4kE3UEeyZ9oag9282Eg" name="Detect_Train_Movement_inside_TTD_section" source="_ZHPI4E1DEey51db6W6sgyA" target="_teze8E1DEey51db6W6sgyA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_C9bEwE3VEeyZ9oag9282Eg" name="No_Train_Movement_inside_TTD_section" source="_teze8E1DEey51db6W6sgyA" target="_ZHPI4E1DEey51db6W6sgyA"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_WYGCEE1DEey51db6W6sgyA" name="Init"/>
       <subvertex xmi:type="uml:State" xmi:id="_ZHPI4E1DEey51db6W6sgyA" name="Clear"/>
       <subvertex xmi:type="uml:State" xmi:id="_teze8E1DEey51db6W6sgyA" name="Occupied"/>
@@ -15,6 +18,9 @@
   </ownedBehavior>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_ZyBkUFK_EeyODuBwckM_-w" name="TTD_Management">
     <region xmi:type="uml:Region" xmi:id="_cXFiEFK_EeyODuBwckM_-w" name="Region1">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_3KqGoFONEey-6ZlVQ1gHJw">
+        <body>all TTDs and all Position reports</body>
+      </ownedComment>
       <transition xmi:type="uml:Transition" xmi:id="_4-3lYFLAEeyODuBwckM_-w" source="_5uQQYFK_EeyODuBwckM_-w" target="_7zkFIFLBEeyODuBwckM_-w"/>
       <transition xmi:type="uml:Transition" xmi:id="_B1gO4FLBEeyODuBwckM_-w" source="_oDVGwFK_EeyODuBwckM_-w" target="_5uQQYFK_EeyODuBwckM_-w"/>
       <transition xmi:type="uml:Transition" xmi:id="_C0zIsFLBEeyODuBwckM_-w" source="_vs8jgFK_EeyODuBwckM_-w" target="_5uQQYFK_EeyODuBwckM_-w"/>
@@ -22,8 +28,8 @@
       <transition xmi:type="uml:Transition" xmi:id="_lg7JgFLBEeyODuBwckM_-w" source="_7zkFIFLBEeyODuBwckM_-w" target="_oDVGwFK_EeyODuBwckM_-w"/>
       <transition xmi:type="uml:Transition" xmi:id="_Moy84FLCEeyODuBwckM_-w" source="_i9CiYFK_EeyODuBwckM_-w" target="_7zkFIFLBEeyODuBwckM_-w"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_i9CiYFK_EeyODuBwckM_-w"/>
-      <subvertex xmi:type="uml:State" xmi:id="_oDVGwFK_EeyODuBwckM_-w" name="Receive Trackside Train Detection Report"/>
-      <subvertex xmi:type="uml:State" xmi:id="_vs8jgFK_EeyODuBwckM_-w" name="Receive Train Position Report"/>
+      <subvertex xmi:type="uml:State" xmi:id="_oDVGwFK_EeyODuBwckM_-w" name="Receive Trackside Train Detection Report of all TTD status"/>
+      <subvertex xmi:type="uml:State" xmi:id="_vs8jgFK_EeyODuBwckM_-w" name="Receive Train Position Reports"/>
       <subvertex xmi:type="uml:State" xmi:id="_5uQQYFK_EeyODuBwckM_-w" name="Synchronisation between TTD occupancy and TPR"/>
       <subvertex xmi:type="uml:State" xmi:id="_7zkFIFLBEeyODuBwckM_-w" name="Idle"/>
     </region>

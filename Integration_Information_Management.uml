@@ -47,17 +47,18 @@ X2R2 D4.1 page 56: Train Integrity refresh period</body>
         <region xmi:type="uml:Region" xmi:id="_L69ZgEI6Eey5-bfWf6TPtQ" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_mLtUsEh1EeyBhenFSEKB3w" name="Lost_to_TIMSConfirmed" source="_1HmskEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w"/>
           <transition xmi:type="uml:Transition" xmi:id="_8A6GYEh1EeyBhenFSEKB3w" name="TIMSConfirmed_to_Lost" source="_FLH6kEhzEeyBhenFSEKB3w" target="_1HmskEIwEey5-bfWf6TPtQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_iO4jsEh-EeyBhenFSEKB3w" name="TIMSConfirmed_to_DriverConfirmed" source="_FLH6kEhzEeyBhenFSEKB3w" target="_xJppQEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_iO4jsEh-EeyBhenFSEKB3w" name="TIMSConfirmed_to_DriverConfirmed" source="_FLH6kEhzEeyBhenFSEKB3w" target="_xJppQEIwEey5-bfWf6TPtQ">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_5nKgAFK2EeyODuBwckM_-w" name="[2]">
+              <specification xmi:type="uml:LiteralString" xmi:id="_BncJQFK3EeyODuBwckM_-w" name="[2]" value="(Train is at standstill) AND (valid Train Data is available and has been acknowledged by the RBC) AND (the train integrity is confirmed by the driver) "/>
+            </ownedRule>
+          </transition>
           <transition xmi:type="uml:Transition" xmi:id="_s452YEh-EeyBhenFSEKB3w" name="Lost_To_DriverConfirmed" source="_1HmskEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ"/>
           <transition xmi:type="uml:Transition" xmi:id="_wV0pMEh-EeyBhenFSEKB3w" name="TIMSConfirmed_to_NoIntegrity" source="_FLH6kEhzEeyBhenFSEKB3w" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
           <transition xmi:type="uml:Transition" xmi:id="_zSa9MEh-EeyBhenFSEKB3w" name="DriverConfirmed_To_NoIntegrity" source="_xJppQEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
           <transition xmi:type="uml:Transition" xmi:id="_0ErWkFKwEeyODuBwckM_-w" name="NoIntegrity_to_TIMSConfirmed" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w"/>
-          <transition xmi:type="uml:Transition" xmi:id="_3Q6pEFKwEeyODuBwckM_-w" name="NoIntegrity_to_DriverConfirmed" guard="_5nKgAFK2EeyODuBwckM_-w" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ">
+          <transition xmi:type="uml:Transition" xmi:id="_3Q6pEFKwEeyODuBwckM_-w" name="NoIntegrity_to_DriverConfirmed" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_FJJ4UFK-EeyODuBwckM_-w" name="[2]">
               <specification xmi:type="uml:LiteralString" xmi:id="_FJJ4UVK-EeyODuBwckM_-w" value="[2]"/>
-            </ownedRule>
-            <ownedRule xmi:type="uml:Constraint" xmi:id="_5nKgAFK2EeyODuBwckM_-w" name="[2]">
-              <specification xmi:type="uml:LiteralString" xmi:id="_BncJQFK3EeyODuBwckM_-w" name="[2]" value="(Train is at standstill) AND (valid Train Data is available and has been acknowledged by the RBC) AND (the train integrity is confirmed by the driver) "/>
             </ownedRule>
           </transition>
           <transition xmi:type="uml:Transition" xmi:id="_7CUBoFKxEeyODuBwckM_-w" name="NoIntegrity_to_Lost" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_1HmskEIwEey5-bfWf6TPtQ"/>
