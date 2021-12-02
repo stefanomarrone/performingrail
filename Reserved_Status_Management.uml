@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Ez5woBRuEeyQN9odROAPWw" name="Reserved Status Management" classifierBehavior="_m-2ksEh8Eey8MuzJdwuxUg">
+<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Ez5woBRuEeyQN9odROAPWw" name="Reserved Status Management">
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iA7ekDjYEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
   </eAnnotations>
-  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_m-2ksEh8Eey8MuzJdwuxUg" name="ReservedStatusManagement (management of a single Area)">
-    <region xmi:type="uml:Region" xmi:id="_n9-fYEh8Eey8MuzJdwuxUg" name="Region1">
+  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_ViXAgFNwEeyTQoKzZjpjIQ" name="StateMachine3">
+    <region xmi:type="uml:Region" xmi:id="_WZxJoFNwEeyTQoKzZjpjIQ" name="Region1">
       <transition xmi:type="uml:Transition" xmi:id="_bDYbwEh9Eey8MuzJdwuxUg" source="_qQ2g8Eh8Eey8MuzJdwuxUg" target="_VHeeAEh9Eey8MuzJdwuxUg"/>
       <transition xmi:type="uml:Transition" xmi:id="_jgubgEh9Eey8MuzJdwuxUg" name="free2reserved" source="_VHeeAEh9Eey8MuzJdwuxUg" target="_cu6wgEh9Eey8MuzJdwuxUg">
         <trigger xmi:type="uml:Trigger" xmi:id="_p9aLEEh9Eey8MuzJdwuxUg" name="Movement Authorization"/>
