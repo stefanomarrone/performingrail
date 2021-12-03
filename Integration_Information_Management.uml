@@ -6,6 +6,9 @@
   <ownedRule xmi:type="uml:Constraint" xmi:id="_fd5AIFKtEeyODuBwckM_-w" name="[1]">
     <specification xmi:type="uml:LiteralString" xmi:id="_9IPJIFKtEeyODuBwckM_-w" name="[1]" value="No valid Train data is available"/>
   </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_bsJacFQ6EeyUCrs15sTmBw" name="[2]">
+    <specification xmi:type="uml:LiteralString" xmi:id="_hFe2oFQ6EeyUCrs15sTmBw" name="[2]" value="(Train is at standstill) AND (valid Train Data is available and has been acknowledged by the RBC) AND (the train integrity is confirmed by the driver) "/>
+  </ownedRule>
   <ownedRule xmi:type="uml:Constraint" xmi:id="_5pmCkFKuEeyODuBwckM_-w" name="[3]">
     <specification xmi:type="uml:LiteralString" xmi:id="_AMB00FKvEeyODuBwckM_-w" name="[3]" value="(The information &quot;Train integrity confirmed&quot; is received from an external device) AND (valid Train Data is available and has been acknowledged by the RBC) AND (Train Data regarding train length has not changed since the time the train was last known to be integer) AND (the train position is valid and is referred to an LRBG) AND (the train position was valid and was referred to an LRBG at the time the train was last known to be integer) AND (no reverse movement is currently performed nor has been performed since the time the train was last known to be integer) AND (the distance between the min safe rear end at the time the train was last known to be integer and the current estimated train position does not exceed the range of the safe train length information)"/>
   </ownedRule>
@@ -26,6 +29,12 @@
   </ownedRule>
   <ownedRule xmi:type="uml:Constraint" xmi:id="_JeUpIFK7EeyODuBwckM_-w" name="[9]">
     <specification xmi:type="uml:LiteralString" xmi:id="_OMtq4FK7EeyODuBwckM_-w" name="[9]" value="The distance between the min safe rear end at the time the train was last known to be integer and the current estimated train position exceeds the range of the safe train length information"/>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_pjryAFQ6EeyUCrs15sTmBw" name="NoIntegrity_to_DriverConfirmed">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_pjtAIFQ6EeyUCrs15sTmBw" name="constraintSpec">
+      <language>OCL</language>
+      <body>true</body>
+    </specification>
   </ownedRule>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_k_KCUEIwEey5-bfWf6TPtQ" name="TIM_SM">
     <ownedComment xmi:type="uml:Comment" xmi:id="_hUriYEI1Eey5-bfWf6TPtQ" annotatedElement="_k_KCUEIwEey5-bfWf6TPtQ">
