@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
   <uml:Package xmi:id="_WHY2YEfOEeydXZgDYCfwSw" name="LossOfCommunication">
+    <packagedElement xmi:type="uml:Association" xmi:id="_IjXjEFOHEey_C_Ag3Ure7Q" memberEnd="_IjZYQFOHEey_C_Ag3Ure7Q _IjZYQVOHEey_C_Ag3Ure7Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IjYKIFOHEey_C_Ag3Ure7Q" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IjYxMFOHEey_C_Ag3Ure7Q" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_IjZYQFOHEey_C_Ag3Ure7Q" name="ttd" association="_IjXjEFOHEey_C_Ag3Ure7Q">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_zC8n8BIyEeyVOZB09kZL2w"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_IjZYQVOHEey_C_Ag3Ure7Q" name="loss/restore of communication" type="_VnnR8FOGEey_C_Ag3Ure7Q" association="_IjXjEFOHEey_C_Ag3Ure7Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_JbA8wFOHEey_C_Ag3Ure7Q" memberEnd="_JbBj0lOHEey_C_Ag3Ure7Q _JbBj01OHEey_C_Ag3Ure7Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JbBj0FOHEey_C_Ag3Ure7Q" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JbBj0VOHEey_C_Ag3Ure7Q" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JbBj0lOHEey_C_Ag3Ure7Q" name="tms" association="_JbA8wFOHEey_C_Ag3Ure7Q">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_M__c8BIsEeyVOZB09kZL2w"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_JbBj01OHEey_C_Ag3Ure7Q" name="loss/restore of communication" type="_VnnR8FOGEey_C_Ag3Ure7Q" association="_JbA8wFOHEey_C_Ag3Ure7Q"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EPk9MFOIEey_C_Ag3Ure7Q" memberEnd="_EPlkQlOIEey_C_Ag3Ure7Q _EPlkQ1OIEey_C_Ag3Ure7Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EPlkQFOIEey_C_Ag3Ure7Q" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EPlkQVOIEey_C_Ag3Ure7Q" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_EPlkQlOIEey_C_Ag3Ure7Q" name="infrastructure manager" association="_EPk9MFOIEey_C_Ag3Ure7Q">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_uVu2cBIoEeyVOZB09kZL2w"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_EPlkQ1OIEey_C_Ag3Ure7Q" name="loss/restore of communication" type="_VnnR8FOGEey_C_Ag3Ure7Q" association="_EPk9MFOIEey_C_Ag3Ure7Q"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_XkvocEcOEeyynby17BgQOQ" name="Classi">
       <packagedElement xmi:type="uml:Class" xmi:id="_wLbl8ER_EeyvUK2YzQuWUA" name="RadioHole">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_yjDkoER_EeyvUK2YzQuWUA" name="start"/>
@@ -437,6 +464,14 @@
       <nestedClassifier xmi:type="uml:Class" xmi:id="_77vRUE-uEey239YQVA8-rw" name="REQ-RecoveryMgmt-1"/>
       <nestedClassifier xmi:type="uml:Class" xmi:id="__mwKgE-uEey239YQVA8-rw" name="REQ-RecoveryMgmt-2"/>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Ez0sUE-vEey239YQVA8-rw" name="REQ-RecoveryMgmt-3"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_VnnR8FOGEey_C_Ag3Ure7Q" name="Loss/Restore of Communication">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_59L80FOGEey_C_Ag3Ure7Q" name="Communication Management"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_-3CAoFOGEey_C_Ag3Ure7Q" name="Track Status Management"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_BXE7gFOHEey_C_Ag3Ure7Q" name="Reserved Status Management"/>
+      <include xmi:type="uml:Include" xmi:id="_59UfsFOGEey_C_Ag3Ure7Q" addition="_59L80FOGEey_C_Ag3Ure7Q"/>
+      <include xmi:type="uml:Include" xmi:id="_-3MYsFOGEey_C_Ag3Ure7Q" addition="_-3CAoFOGEey_C_Ag3Ure7Q"/>
+      <include xmi:type="uml:Include" xmi:id="_VMtpMFOHEey_C_Ag3Ure7Q" addition="_BXE7gFOHEey_C_Ag3Ure7Q"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dwoDMEfPEeydXZgDYCfwSw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dwoDMUfPEeydXZgDYCfwSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
