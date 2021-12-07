@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Njev4BRuEeyQN9odROAPWw" name="Communication Management">
+<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Njev4BRuEeyQN9odROAPWw" name="Communication Management" classifierBehavior="_4ZQJ8FdtEeywoqg6iQBZCQ">
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kQbcADjYEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
   </eAnnotations>
+  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_4ZQJ8FdtEeywoqg6iQBZCQ" name="StateMachine2">
+    <region xmi:type="uml:Region" xmi:id="_45JyAFdtEeywoqg6iQBZCQ" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_Go-_EFduEeywoqg6iQBZCQ" name="[!equals(tpr); ; endSession()]" source="_GpCCa1duEeywoqg6iQBZCQ" target="_GpCCb1duEeywoqg6iQBZCQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Go_mIFduEeywoqg6iQBZCQ" source="_GpBbUFduEeywoqg6iQBZCQ" target="_GpCCYFduEeywoqg6iQBZCQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_GpANMFduEeywoqg6iQBZCQ" source="_GpCCYFduEeywoqg6iQBZCQ" target="_GpBbUVduEeywoqg6iQBZCQ"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_GpA0QFduEeywoqg6iQBZCQ" name="exit 2"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_GpA0QVduEeywoqg6iQBZCQ" name="exit 1"/>
+      <subvertex xmi:type="uml:State" xmi:id="_GpBbUFduEeywoqg6iQBZCQ" name="Enter"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_GpBbUVduEeywoqg6iQBZCQ" name="Terminate" kind="terminate"/>
+      <subvertex xmi:type="uml:State" xmi:id="_GpCCYFduEeywoqg6iQBZCQ" name="Loss/Restore of Communication">
+        <region xmi:type="uml:Region" xmi:id="_GpCCYVduEeywoqg6iQBZCQ" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_GpCCYlduEeywoqg6iQBZCQ" name="[muteTimer >= 0; ; receiveTPR()]" source="_GpCCalduEeywoqg6iQBZCQ" target="_GpCCa1duEeywoqg6iQBZCQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_GpCCY1duEeywoqg6iQBZCQ" name="[equals(tpr); ; updateTSA(), resetMuteTimer(), resetSessionTimer()]" source="_GpCCa1duEeywoqg6iQBZCQ" target="_GpCCalduEeywoqg6iQBZCQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_GpCCZFduEeywoqg6iQBZCQ" name="[muteTimer &lt; 0; ; updateTSA()]" source="_GpCCalduEeywoqg6iQBZCQ" target="_GpCCbFduEeywoqg6iQBZCQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_GpCCZVduEeywoqg6iQBZCQ" name="[sessionTimer >= 0; ; receiveTPR()]" source="_GpCCbFduEeywoqg6iQBZCQ" target="_GpCCbVduEeywoqg6iQBZCQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_GpCCZlduEeywoqg6iQBZCQ" name="[ equals(tpr); ; updateTSA(), resetMuteTimer(), resetSessionTimer() ]" source="_GpCCbVduEeywoqg6iQBZCQ" target="_GpCCalduEeywoqg6iQBZCQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_GpCCZ1duEeywoqg6iQBZCQ" name="[sessionTimer &lt; 0; ; endSession()]" source="_GpCCbFduEeywoqg6iQBZCQ" target="_GpCCblduEeywoqg6iQBZCQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_GpCCaFduEeywoqg6iQBZCQ" name="[!equals(tpr); ; endSession()]" source="_GpCCbVduEeywoqg6iQBZCQ" target="_GpCCb1duEeywoqg6iQBZCQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_GpCCaVduEeywoqg6iQBZCQ" source="_GpCCcFduEeywoqg6iQBZCQ" target="_GpCCalduEeywoqg6iQBZCQ"/>
+          <subvertex xmi:type="uml:State" xmi:id="_GpCCalduEeywoqg6iQBZCQ" name="Wait TPR"/>
+          <subvertex xmi:type="uml:State" xmi:id="_GpCCa1duEeywoqg6iQBZCQ" name="Check TPR"/>
+          <subvertex xmi:type="uml:State" xmi:id="_GpCCbFduEeywoqg6iQBZCQ" name="MT Expired"/>
+          <subvertex xmi:type="uml:State" xmi:id="_GpCCbVduEeywoqg6iQBZCQ" name="Check Reconnect"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_GpCCblduEeywoqg6iQBZCQ" name="Exit 2"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_GpCCb1duEeywoqg6iQBZCQ" name="Exit 1"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_GpCCcFduEeywoqg6iQBZCQ" name="Start"/>
+        </region>
+      </subvertex>
+    </region>
+  </ownedBehavior>
 </uml:UseCase>

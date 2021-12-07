@@ -255,37 +255,6 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_t9QfwEABEeyT1-wGwFMmXA" name="Unknown"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:StateMachine" xmi:id="_rRDbAEcOEeyynby17BgQOQ" name="State Machine">
-      <region xmi:type="uml:Region" xmi:id="_rvUEUEcOEeyynby17BgQOQ" name="Region1">
-        <transition xmi:type="uml:Transition" xmi:id="_Xg5ToE-oEeyG6bM8J6mBZQ" name="[!equals(tpr); ; endSession()]" source="_3GcagE-nEeyG6bM8J6mBZQ" target="_QeExIE-oEeyG6bM8J6mBZQ"/>
-        <transition xmi:type="uml:Transition" xmi:id="_bffQIE-oEeyG6bM8J6mBZQ" source="_L-8l0EcVEeyynby17BgQOQ" target="_TeC-sE-nEeyG6bM8J6mBZQ"/>
-        <transition xmi:type="uml:Transition" xmi:id="_cRNoAE-oEeyG6bM8J6mBZQ" source="_TeC-sE-nEeyG6bM8J6mBZQ" target="_V75XIEcVEeyynby17BgQOQ"/>
-        <subvertex xmi:type="uml:Pseudostate" xmi:id="_5ZKlMEcOEeyynby17BgQOQ" name="Start"/>
-        <subvertex xmi:type="uml:FinalState" xmi:id="_bk9gIEcPEeyynby17BgQOQ" name="exit 2"/>
-        <subvertex xmi:type="uml:FinalState" xmi:id="_dG0UcEcPEeyynby17BgQOQ" name="exit 1"/>
-        <subvertex xmi:type="uml:State" xmi:id="_L-8l0EcVEeyynby17BgQOQ" name="Enter"/>
-        <subvertex xmi:type="uml:Pseudostate" xmi:id="_V75XIEcVEeyynby17BgQOQ" name="Terminate" kind="terminate"/>
-        <subvertex xmi:type="uml:State" xmi:id="_TeC-sE-nEeyG6bM8J6mBZQ" name="Loss/Restore of Communication">
-          <region xmi:type="uml:Region" xmi:id="_2Wm5AE-nEeyG6bM8J6mBZQ" name="Region1">
-            <transition xmi:type="uml:Transition" xmi:id="_GX-D0E-oEeyG6bM8J6mBZQ" name="[muteTimer >= 0; ; receiveTPR()]" source="_2WngF0-nEeyG6bM8J6mBZQ" target="_3GcagE-nEeyG6bM8J6mBZQ"/>
-            <transition xmi:type="uml:Transition" xmi:id="_G-4S0E-oEeyG6bM8J6mBZQ" name="[equals(tpr); ; updateTSA(), resetMuteTimer(), resetSessionTimer()]" source="_3GcagE-nEeyG6bM8J6mBZQ" target="_2WngF0-nEeyG6bM8J6mBZQ"/>
-            <transition xmi:type="uml:Transition" xmi:id="_Hd4jAE-oEeyG6bM8J6mBZQ" name="[muteTimer &lt; 0; ; updateTSA()]" source="_2WngF0-nEeyG6bM8J6mBZQ" target="_4JrZIE-nEeyG6bM8J6mBZQ"/>
-            <transition xmi:type="uml:Transition" xmi:id="_H7pdEE-oEeyG6bM8J6mBZQ" name="[sessionTimer >= 0; ; receiveTPR()]" source="_4JrZIE-nEeyG6bM8J6mBZQ" target="_4zyGEE-nEeyG6bM8J6mBZQ"/>
-            <transition xmi:type="uml:Transition" xmi:id="_IlY9oE-oEeyG6bM8J6mBZQ" name="[ equals(tpr); ; updateTSA(), resetMuteTimer(), resetSessionTimer() ]" source="_4zyGEE-nEeyG6bM8J6mBZQ" target="_2WngF0-nEeyG6bM8J6mBZQ"/>
-            <transition xmi:type="uml:Transition" xmi:id="_VmLTYE-oEeyG6bM8J6mBZQ" name="[sessionTimer &lt; 0; ; endSession()]" source="_4JrZIE-nEeyG6bM8J6mBZQ" target="_OzO_8E-oEeyG6bM8J6mBZQ"/>
-            <transition xmi:type="uml:Transition" xmi:id="_WRpSQE-oEeyG6bM8J6mBZQ" name="[!equals(tpr); ; endSession()]" source="_4zyGEE-nEeyG6bM8J6mBZQ" target="_QeExIE-oEeyG6bM8J6mBZQ"/>
-            <transition xmi:type="uml:Transition" xmi:id="_5j77ME-oEeyG6bM8J6mBZQ" source="_4kFnwE-oEeyG6bM8J6mBZQ" target="_2WngF0-nEeyG6bM8J6mBZQ"/>
-            <subvertex xmi:type="uml:State" xmi:id="_2WngF0-nEeyG6bM8J6mBZQ" name="Wait TPR"/>
-            <subvertex xmi:type="uml:State" xmi:id="_3GcagE-nEeyG6bM8J6mBZQ" name="Check TPR"/>
-            <subvertex xmi:type="uml:State" xmi:id="_4JrZIE-nEeyG6bM8J6mBZQ" name="MT Expired"/>
-            <subvertex xmi:type="uml:State" xmi:id="_4zyGEE-nEeyG6bM8J6mBZQ" name="Check Reconnect"/>
-            <subvertex xmi:type="uml:FinalState" xmi:id="_OzO_8E-oEeyG6bM8J6mBZQ" name="Exit 2"/>
-            <subvertex xmi:type="uml:FinalState" xmi:id="_QeExIE-oEeyG6bM8J6mBZQ" name="Exit 1"/>
-            <subvertex xmi:type="uml:Pseudostate" xmi:id="_4kFnwE-oEeyG6bM8J6mBZQ" name="Start"/>
-          </region>
-        </subvertex>
-      </region>
-    </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_mSmEQEfPEeydXZgDYCfwSw" name="LossOfCommunication">
       <ownedBehavior xmi:type="uml:Interaction" xmi:id="_TqK1gEXrEeyeQJ2soJxkSA" name="Interaction23">
         <lifeline xmi:type="uml:Lifeline" xmi:id="_amzQcEXrEeyeQJ2soJxkSA" name="train" represents="_hFGwoEXrEeyeQJ2soJxkSA" coveredBy="_eSBdoEXuEeyeQJ2soJxkSA _eSCEsEXuEeyeQJ2soJxkSA _RkWbsEXvEeyeQJ2soJxkSA _RkXp0EXvEeyeQJ2soJxkSA _4v_RkEXrEeyeQJ2soJxkSA _4v_RkUXrEeyeQJ2soJxkSA _YM75QEXvEeyeQJ2soJxkSA _YM8gUEXvEeyeQJ2soJxkSA _IhxIQUXsEeyeQJ2soJxkSA _372e4EXrEeyeQJ2soJxkSA"/>
