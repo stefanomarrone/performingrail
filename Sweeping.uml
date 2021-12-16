@@ -10,10 +10,13 @@ REQ_TS_7</body>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_bAiOUFNNEeyT1rOLVdmr6A" name="">
           <type xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_fjussFNNEeyT1rOLVdmr6A" name="">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mseFIF5-Eey3X8JiS_0juA" name="">
           <type xmi:type="uml:Class" href="PerformingRail.uml#_M__c8BIsEeyVOZB09kZL2w"/>
         </ownedAttribute>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_bAhAMFNNEeyT1rOLVdmr6A" name="TSM" represents="_bAiOUFNNEeyT1rOLVdmr6A" coveredBy="_RhYPcFNREeyIHpUPTS8dSg _RhZdkFNREeyIHpUPTS8dSg _ZFZagFNREeyIHpUPTS8dSg _ZFVJEFNREeyIHpUPTS8dSg _fRd7MFNREeyIHpUPTS8dSg _fRhlkFNREeyIHpUPTS8dSg _59nNsFNREeyIHpUPTS8dSg _59n0wFNREeyIHpUPTS8dSg _ENhXQFNSEeyIHpUPTS8dSg _ENe7AFNSEeyIHpUPTS8dSg _lLaUoFNSEeyIHpUPTS8dSg _88fkMFNSEeyIHpUPTS8dSg _88dH8FNSEeyIHpUPTS8dSg _lLa7sFNSEeyIHpUPTS8dSg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_bAhAMFNNEeyT1rOLVdmr6A" name="TSM" represents="_bAiOUFNNEeyT1rOLVdmr6A" coveredBy="_undlwF5-Eey3X8JiS_0juA _RhYPcFNREeyIHpUPTS8dSg _RhZdkFNREeyIHpUPTS8dSg _ZFZagFNREeyIHpUPTS8dSg _ZFVJEFNREeyIHpUPTS8dSg _fRd7MFNREeyIHpUPTS8dSg _fRhlkFNREeyIHpUPTS8dSg _59nNsFNREeyIHpUPTS8dSg _59n0wFNREeyIHpUPTS8dSg _ENhXQFNSEeyIHpUPTS8dSg _ENe7AFNSEeyIHpUPTS8dSg _3Ky4wF5-Eey3X8JiS_0juA _lLaUoFNSEeyIHpUPTS8dSg _88fkMFNSEeyIHpUPTS8dSg _88dH8FNSEeyIHpUPTS8dSg _lLa7sFNSEeyIHpUPTS8dSg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_msdeEF5-Eey3X8JiS_0juA" name="TMS" represents="_mseFIF5-Eey3X8JiS_0juA" coveredBy="_unc-sF5-Eey3X8JiS_0juA _3KyRsF5-Eey3X8JiS_0juA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_unc-sF5-Eey3X8JiS_0juA" name="Message18SendEvent" covered="_msdeEF5-Eey3X8JiS_0juA" message="_uncXoF5-Eey3X8JiS_0juA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_undlwF5-Eey3X8JiS_0juA" name="Message18ReceiveEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_uncXoF5-Eey3X8JiS_0juA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RhYPcFNREeyIHpUPTS8dSg" name="Message10SendEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_RhK0EFNREeyIHpUPTS8dSg"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ZFVJEFNREeyIHpUPTS8dSg" name="BehaviorExecutionSpecification13" covered="_bAhAMFNNEeyT1rOLVdmr6A" finish="_ZFZagFNREeyIHpUPTS8dSg" start="_RhYPcFNREeyIHpUPTS8dSg"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RhZdkFNREeyIHpUPTS8dSg" name="Message10ReceiveEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_RhK0EFNREeyIHpUPTS8dSg"/>
@@ -29,6 +32,8 @@ REQ_TS_7</body>
             </guard>
           </operand>
         </fragment>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3KyRsF5-Eey3X8JiS_0juA" name="Message21SendEvent" covered="_msdeEF5-Eey3X8JiS_0juA" message="_3KxqoF5-Eey3X8JiS_0juA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3Ky4wF5-Eey3X8JiS_0juA" name="Message21ReceiveEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_3KxqoF5-Eey3X8JiS_0juA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lLaUoFNSEeyIHpUPTS8dSg" name="Message20SendEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_lLYfcFNSEeyIHpUPTS8dSg"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_88dH8FNSEeyIHpUPTS8dSg" name="BehaviorExecutionSpecification23" covered="_bAhAMFNNEeyT1rOLVdmr6A" finish="_88fkMFNSEeyIHpUPTS8dSg" start="_lLaUoFNSEeyIHpUPTS8dSg"/>
         <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_88fkMFNSEeyIHpUPTS8dSg" name="BehaviorExecutionSpecification23Finish" covered="_bAhAMFNNEeyT1rOLVdmr6A" execution="_88dH8FNSEeyIHpUPTS8dSg"/>
@@ -36,6 +41,8 @@ REQ_TS_7</body>
         <message xmi:type="uml:Message" xmi:id="_RhK0EFNREeyIHpUPTS8dSg" name="Verify length UTSA size" messageSort="asynchCall" receiveEvent="_RhZdkFNREeyIHpUPTS8dSg" sendEvent="_RhYPcFNREeyIHpUPTS8dSg"/>
         <message xmi:type="uml:Message" xmi:id="_59lYgFNREeyIHpUPTS8dSg" name="Create UTSA  as Sweeptable" messageSort="asynchCall" receiveEvent="_59n0wFNREeyIHpUPTS8dSg" sendEvent="_59nNsFNREeyIHpUPTS8dSg"/>
         <message xmi:type="uml:Message" xmi:id="_lLYfcFNSEeyIHpUPTS8dSg" name="Create UTSA as Non-Sweeptable" messageSort="asynchCall" receiveEvent="_lLa7sFNSEeyIHpUPTS8dSg" sendEvent="_lLaUoFNSEeyIHpUPTS8dSg"/>
+        <message xmi:type="uml:Message" xmi:id="_uncXoF5-Eey3X8JiS_0juA" name="Request to create UTSA as Sweeptable" messageSort="asynchCall" receiveEvent="_undlwF5-Eey3X8JiS_0juA" sendEvent="_unc-sF5-Eey3X8JiS_0juA"/>
+        <message xmi:type="uml:Message" xmi:id="_3KxqoF5-Eey3X8JiS_0juA" name="Request to create UTSA as Non-Sweeptable" messageSort="asynchCall" receiveEvent="_3Ky4wF5-Eey3X8JiS_0juA" sendEvent="_3KyRsF5-Eey3X8JiS_0juA"/>
       </ownedBehavior>
       <include xmi:type="uml:Include" xmi:id="_b0DKYD1eEeyAv_UCn311nQ">
         <addition xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
