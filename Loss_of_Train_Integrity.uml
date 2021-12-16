@@ -55,8 +55,8 @@ REQ-LossTI-8&#xD;
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_iJlmUUe1EeyfHsZ5oNU26Q" name="Message27ReceiveEvent" covered="_PLoBIEetEeyfHsZ5oNU26Q" message="_iJkYMEe1EeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8_AJkEe1EeyfHsZ5oNU26Q" name="Message28SendEvent" covered="_PLoBIEetEeyfHsZ5oNU26Q" message="_8-_igEe1EeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8_AwoEe1EeyfHsZ5oNU26Q" name="Message28ReceiveEvent" covered="_NgfVAEetEeyfHsZ5oNU26Q" message="_8-_igEe1EeyfHsZ5oNU26Q"/>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_A42hQEe8EeyfHsZ5oNU26Q" name="CombinedFragment25" covered="_PLoBIEetEeyfHsZ5oNU26Q _NgfVAEetEeyfHsZ5oNU26Q" interactionOperator="alt">
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_A44WcEe8EeyfHsZ5oNU26Q" name="InteractionOperand0" covered="_PLoBIEetEeyfHsZ5oNU26Q _NgfVAEetEeyfHsZ5oNU26Q">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_A42hQEe8EeyfHsZ5oNU26Q" name="CombinedFragment25" covered="_NgfVAEetEeyfHsZ5oNU26Q _PLoBIEetEeyfHsZ5oNU26Q" interactionOperator="alt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_A44WcEe8EeyfHsZ5oNU26Q" name="InteractionOperand0" covered="_NgfVAEetEeyfHsZ5oNU26Q _PLoBIEetEeyfHsZ5oNU26Q">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_U4rFsEe8EeyfHsZ5oNU26Q" name="Message25SendEvent" covered="_NgfVAEetEeyfHsZ5oNU26Q" message="_U4qeoEe8EeyfHsZ5oNU26Q"/>
             <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Lw2t0Ek2Eeyh4oFA3tP0HA" name="BehaviorExecutionSpecification61" covered="_NgfVAEetEeyfHsZ5oNU26Q" finish="_Lw3U4Ek2Eeyh4oFA3tP0HA" start="_U4rFsEe8EeyfHsZ5oNU26Q"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_U4rswEe8EeyfHsZ5oNU26Q" name="Message25ReceiveEvent" covered="_NgfVAEetEeyfHsZ5oNU26Q" message="_U4qeoEe8EeyfHsZ5oNU26Q"/>
@@ -65,7 +65,7 @@ REQ-LossTI-8&#xD;
               <specification xmi:type="uml:LiteralString" xmi:id="_QrR4MEe8EeyfHsZ5oNU26Q" value="Trackside is configured to accept Train Integrity confirmation by the driver"/>
             </guard>
           </operand>
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_-kcsAEk3Eeyh4oFA3tP0HA" name="InteractionOperand2" covered="_PLoBIEetEeyfHsZ5oNU26Q _NgfVAEetEeyfHsZ5oNU26Q">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_-kcsAEk3Eeyh4oFA3tP0HA" name="InteractionOperand2" covered="_NgfVAEetEeyfHsZ5oNU26Q _PLoBIEetEeyfHsZ5oNU26Q">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kpRG8Ek4Eeyh4oFA3tP0HA" name="Message66SendEvent" covered="_NgfVAEetEeyfHsZ5oNU26Q" message="_kpQf4Ek4Eeyh4oFA3tP0HA"/>
             <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_eTzZsEk4Eeyh4oFA3tP0HA" name="BehaviorExecutionSpecification63" covered="_NgfVAEetEeyfHsZ5oNU26Q" finish="_eT0n0Ek4Eeyh4oFA3tP0HA" start="_kpRG8Ek4Eeyh4oFA3tP0HA"/>
             <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_eT0n0Ek4Eeyh4oFA3tP0HA" name="BehaviorExecutionSpecification63Finish" covered="_NgfVAEetEeyfHsZ5oNU26Q" execution="_eTzZsEk4Eeyh4oFA3tP0HA"/>
@@ -253,7 +253,7 @@ REQ-LossTI-8&#xD;
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
   </uml:Package>
-  <Requirements:Requirement xmi:id="_zitQsD1hEeyAv_UCn311nQ" base_NamedElement="_zihDcD1hEeyAv_UCn311nQ" id="REQ-LossTI" base_Class="_zihDcD1hEeyAv_UCn311nQ"/>
+  <Requirements:Requirement xmi:id="_zitQsD1hEeyAv_UCn311nQ" base_NamedElement="_zihDcD1hEeyAv_UCn311nQ" id="REQ-LossTI" text="The L3 system shall manage the loss of train integrity in a safe manner&#xD;&#xA;" base_Class="_zihDcD1hEeyAv_UCn311nQ"/>
   <Requirements:Requirement xmi:id="_c3sb4D1iEeyAv_UCn311nQ" base_NamedElement="_c3m8UD1iEeyAv_UCn311nQ" id="REQ-LossTI-1" text="When receiving a position report from a train with the information 'Train integrity lost', the L3 Trackside shall change the Track Status Area associated with this train to Unknown." base_Class="_c3m8UD1iEeyAv_UCn311nQ"/>
   <Requirements:Requirement xmi:id="_c3yigD1iEeyAv_UCn311nQ" base_NamedElement="_c3njYD1iEeyAv_UCn311nQ" id="REQ-LossTI-2" text="When the L3 Trackside considers that the integrity is lost for a train, the L3 Trackside shall change the Track Status Area associated with this train to Unknown." base_Class="_c3njYD1iEeyAv_UCn311nQ"/>
   <Requirements:Requirement xmi:id="_c3zJkD1iEeyAv_UCn311nQ" base_NamedElement="_c3oKcD1iEeyAv_UCn311nQ" id="REQ-LossTI-3" text="When the L3 Trackside considers that the Train Integrity is lost for a train, the L3 Trackside shall react as configured." base_Class="_c3oKcD1iEeyAv_UCn311nQ"/>
