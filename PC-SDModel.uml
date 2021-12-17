@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_sEDAAEbTEeyQp7faGAjDgg" name="PC-SDModel">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_wGHZcFJnEeyXmJUbHj2PIg">
+    <body>REQ-PTS</body>
+  </ownedComment>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_iQ1foEd6EeyQp7faGAjDgg" name="Locked Points if defined area has reserved status">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_iQ1foUd6EeyQp7faGAjDgg" name="constraintSpec">
+      <language>OCL</language>
+      <body>true</body>
+    </specification>
+  </ownedRule>
+  <ownedRule xmi:type="uml:Constraint" xmi:id="_w2ikwEd6EeyQp7faGAjDgg" name="Locked Point if defined area has unknown or occupied status">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_w2rusEd6EeyQp7faGAjDgg" name="constraintSpec">
+      <language>OCL</language>
+      <body>true</body>
+    </specification>
+  </ownedRule>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_sEiIMEbTEeyQp7faGAjDgg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_M5tcMEbZEeyQp7faGAjDgg" name="Interaction2">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NTRvUUd0EeyQp7faGAjDgg" name="" type="_M5tcMEbZEeyQp7faGAjDgg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_OXlvcEbZEeyQp7faGAjDgg" name="L3Trackside" coveredBy="_2s3YkEdyEeyQp7faGAjDgg _2tgRwUdyEeyQp7faGAjDgg _3EDJsUeXEeyQp7faGAjDgg _3EDJskeXEeyQp7faGAjDgg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_R7PcYEbZEeyQp7faGAjDgg" name="ECTSOnboard" coveredBy="_2s4msEdyEeyQp7faGAjDgg _2tgRwEdyEeyQp7faGAjDgg _mdApgUeYEeyQp7faGAjDgg _mdApgkeYEeyQp7faGAjDgg _2tcnYEdyEeyQp7faGAjDgg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_p7AaMEdzEeyQp7faGAjDgg" name="H-Points-001" coveredBy="_zgd4kEdzEeyQp7faGAjDgg _zgfGsEdzEeyQp7faGAjDgg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_NTRvUEd0EeyQp7faGAjDgg" name="" represents="_NTRvUUd0EeyQp7faGAjDgg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2s3YkEdyEeyQp7faGAjDgg" name="Message6SendEvent" covered="_OXlvcEbZEeyQp7faGAjDgg" message="_2szuMEdyEeyQp7faGAjDgg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2s4msEdyEeyQp7faGAjDgg" name="Message6ReceiveEvent" covered="_R7PcYEbZEeyQp7faGAjDgg" message="_2szuMEdyEeyQp7faGAjDgg"/>
+    <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_2tcnYEdyEeyQp7faGAjDgg" name="BehaviorExecutionSpecification9" covered="_R7PcYEbZEeyQp7faGAjDgg" finish="_2tgRwEdyEeyQp7faGAjDgg" start="_2s4msEdyEeyQp7faGAjDgg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2tgRwEdyEeyQp7faGAjDgg" name="Message11SendEvent" covered="_R7PcYEbZEeyQp7faGAjDgg" message="_2tfDoEdyEeyQp7faGAjDgg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2tgRwUdyEeyQp7faGAjDgg" name="Message11ReceiveEvent" covered="_OXlvcEbZEeyQp7faGAjDgg" message="_2tfDoEdyEeyQp7faGAjDgg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3EDJsUeXEeyQp7faGAjDgg" name="Message16SendEvent" covered="_OXlvcEbZEeyQp7faGAjDgg" message="_3EDJsEeXEeyQp7faGAjDgg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mdApgUeYEeyQp7faGAjDgg" name="Message19SendEvent" covered="_R7PcYEbZEeyQp7faGAjDgg" message="_mdApgEeYEeyQp7faGAjDgg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zgd4kEdzEeyQp7faGAjDgg" name="Message11SendEvent" covered="_p7AaMEdzEeyQp7faGAjDgg" message="_zgZnIEdzEeyQp7faGAjDgg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3EDJskeXEeyQp7faGAjDgg" name="Message16ReceiveEvent" covered="_OXlvcEbZEeyQp7faGAjDgg" message="_3EDJsEeXEeyQp7faGAjDgg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mdApgkeYEeyQp7faGAjDgg" name="Message19ReceiveEvent" covered="_R7PcYEbZEeyQp7faGAjDgg" message="_mdApgEeYEeyQp7faGAjDgg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zgfGsEdzEeyQp7faGAjDgg" name="Message11ReceiveEvent" covered="_p7AaMEdzEeyQp7faGAjDgg" message="_zgZnIEdzEeyQp7faGAjDgg"/>
+    <message xmi:type="uml:Message" xmi:id="_2szuMEdyEeyQp7faGAjDgg" name="Points are locked by track status if defined area has unknown or occupied status" receiveEvent="_2s4msEdyEeyQp7faGAjDgg" sendEvent="_2s3YkEdyEeyQp7faGAjDgg"/>
+    <message xmi:type="uml:Message" xmi:id="_2tfDoEdyEeyQp7faGAjDgg" name="Points are locked by reserved status if associated release points has reserved status" messageSort="reply" receiveEvent="_2tgRwUdyEeyQp7faGAjDgg" sendEvent="_2tgRwEdyEeyQp7faGAjDgg"/>
+    <message xmi:type="uml:Message" xmi:id="_zgZnIEdzEeyQp7faGAjDgg" name="Unknown/Occupied/Reserved Track Status Area" messageSort="reply" receiveEvent="_zgfGsEdzEeyQp7faGAjDgg" sendEvent="_zgd4kEdzEeyQp7faGAjDgg"/>
+    <message xmi:type="uml:Message" xmi:id="_3EDJsEeXEeyQp7faGAjDgg" name="When routes are set points are controlled by trackside" messageSort="reply" receiveEvent="_3EDJskeXEeyQp7faGAjDgg" sendEvent="_3EDJsUeXEeyQp7faGAjDgg"/>
+    <message xmi:type="uml:Message" xmi:id="_mdApgEeYEeyQp7faGAjDgg" name="No train movement while there is a train over it" messageSort="reply" receiveEvent="_mdApgkeYEeyQp7faGAjDgg" sendEvent="_mdApgUeYEeyQp7faGAjDgg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_rxDgYEd0EeyQp7faGAjDgg" name="PointToe"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_xDCsgEd2EeyQp7faGAjDgg" name="TrackStatus"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_zdlcUEd2EeyQp7faGAjDgg" name="ReservedStatus"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ArmVwEd3EeyQp7faGAjDgg" name="FoulingPoint"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_W1PtcEd3EeyQp7faGAjDgg" memberEnd="_W1Y3YUd3EeyQp7faGAjDgg _W1Y3Ykd3EeyQp7faGAjDgg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_W1PtcUd3EeyQp7faGAjDgg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_W1Y3YEd3EeyQp7faGAjDgg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_W1Y3YUd3EeyQp7faGAjDgg" name="trackstatus" type="_xDCsgEd2EeyQp7faGAjDgg" association="_W1PtcEd3EeyQp7faGAjDgg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_W1Y3Ykd3EeyQp7faGAjDgg" name="pointtoe" type="_rxDgYEd0EeyQp7faGAjDgg" association="_W1PtcEd3EeyQp7faGAjDgg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YX7oMEd3EeyQp7faGAjDgg" memberEnd="_YX7oM0d3EeyQp7faGAjDgg _YX7oNEd3EeyQp7faGAjDgg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YX7oMUd3EeyQp7faGAjDgg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YX7oMkd3EeyQp7faGAjDgg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YX7oM0d3EeyQp7faGAjDgg" name="trackstatus" type="_xDCsgEd2EeyQp7faGAjDgg" association="_YX7oMEd3EeyQp7faGAjDgg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_YX7oNEd3EeyQp7faGAjDgg" name="foulingpoint" type="_ArmVwEd3EeyQp7faGAjDgg" association="_YX7oMEd3EeyQp7faGAjDgg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_U5u7oEd6EeyQp7faGAjDgg" memberEnd="_U5u7o0d6EeyQp7faGAjDgg _U5u7pEd6EeyQp7faGAjDgg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_U5u7oUd6EeyQp7faGAjDgg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_U5u7okd6EeyQp7faGAjDgg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_U5u7o0d6EeyQp7faGAjDgg" name="reservedstatus" type="_zdlcUEd2EeyQp7faGAjDgg" association="_U5u7oEd6EeyQp7faGAjDgg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_U5u7pEd6EeyQp7faGAjDgg" name="pointtoe" type="_rxDgYEd0EeyQp7faGAjDgg" association="_U5u7oEd6EeyQp7faGAjDgg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_f3ykoEd6EeyQp7faGAjDgg" memberEnd="_f3yko0d6EeyQp7faGAjDgg _f3ykpEd6EeyQp7faGAjDgg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_f3ykoUd6EeyQp7faGAjDgg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_f3ykokd6EeyQp7faGAjDgg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_f3yko0d6EeyQp7faGAjDgg" name="foulingpoint" type="_ArmVwEd3EeyQp7faGAjDgg" association="_f3ykoEd6EeyQp7faGAjDgg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_f3ykpEd6EeyQp7faGAjDgg" type="_zdlcUEd2EeyQp7faGAjDgg" association="_f3ykoEd6EeyQp7faGAjDgg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_Z1wbsE4HEeyXmJUbHj2PIg" name="Points Management">
+    <region xmi:type="uml:Region" xmi:id="_aU510E4HEeyXmJUbHj2PIg" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_FWsxYE5mEeyXmJUbHj2PIg" source="_9JT5ME5lEeyXmJUbHj2PIg" target="_DAUI0E5mEeyXmJUbHj2PIg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Lo02wE5mEeyXmJUbHj2PIg" source="_DAUI0E5mEeyXmJUbHj2PIg" target="_I2_BQE5mEeyXmJUbHj2PIg"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_1k1bIE5lEeyXmJUbHj2PIg" name="Initial1"/>
+      <subvertex xmi:type="uml:State" xmi:id="_9JT5ME5lEeyXmJUbHj2PIg" name="Points Management"/>
+      <subvertex xmi:type="uml:State" xmi:id="_DAUI0E5mEeyXmJUbHj2PIg" name="State4"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_I2_BQE5mEeyXmJUbHj2PIg" name="FinalState6"/>
+      <subvertex xmi:type="uml:State" xmi:id="_16WLgFGvEeyXmJUbHj2PIg" name="Point Position"/>
+      <subvertex xmi:type="uml:State" xmi:id="_M75bkFGwEeyXmJUbHj2PIg" name="Route Management"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_i9IBoFGxEeyXmJUbHj2PIg" name="Points Management">
+    <region xmi:type="uml:Region" xmi:id="_kfi2oFGxEeyXmJUbHj2PIg" name="locked point reported">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_HpuagFG0EeyXmJUbHj2PIg">
+        <body>PointsPosition_Request&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_2T2eYFG0EeyXmJUbHj2PIg">
+        <body>TrackStatus_Request&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_OIIy8FG1EeyXmJUbHj2PIg">
+        <body>Clear/Not Reserved&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_JGbokFfUEeyXmJUbHj2PIg">
+        <body>Locked point reported&#xD;
+</body>
+      </ownedComment>
+      <transition xmi:type="uml:Transition" xmi:id="_TKKNQFGzEeyXmJUbHj2PIg" source="_s9ky4FGxEeyXmJUbHj2PIg" target="_-Mxp0FGxEeyXmJUbHj2PIg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Gw2RwFG0EeyXmJUbHj2PIg" source="_-Mxp0FGxEeyXmJUbHj2PIg" target="_xrLxgFGxEeyXmJUbHj2PIg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_wjELgFG0EeyXmJUbHj2PIg" source="_xrLxgFGxEeyXmJUbHj2PIg" target="_Xd-9cFG0EeyXmJUbHj2PIg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Jnl_8FG1EeyXmJUbHj2PIg" source="_Xd-9cFG0EeyXmJUbHj2PIg" target="_xrLxgFGxEeyXmJUbHj2PIg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_hBI5QFG1EeyXmJUbHj2PIg" source="_Xd-9cFG0EeyXmJUbHj2PIg" target="_eBIr8FG1EeyXmJUbHj2PIg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_35ZDYFG1EeyXmJUbHj2PIg" source="_xrLxgFGxEeyXmJUbHj2PIg" target="_uglg8FG1EeyXmJUbHj2PIg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_tbKbYFfTEeyXmJUbHj2PIg" source="_xrLxgFGxEeyXmJUbHj2PIg" target="_lJ2sgFfTEeyXmJUbHj2PIg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_7Kc14FfTEeyXmJUbHj2PIg" source="_xrLxgFGxEeyXmJUbHj2PIg" target="_-Mxp0FGxEeyXmJUbHj2PIg"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_s9ky4FGxEeyXmJUbHj2PIg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_xrLxgFGxEeyXmJUbHj2PIg" name="Points Management"/>
+      <subvertex xmi:type="uml:State" xmi:id="_-Mxp0FGxEeyXmJUbHj2PIg" name="Route Management"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Xd-9cFG0EeyXmJUbHj2PIg" name="Reserved Status Management"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_eBIr8FG1EeyXmJUbHj2PIg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_uglg8FG1EeyXmJUbHj2PIg" name="Point Position Locked"/>
+      <subvertex xmi:type="uml:State" xmi:id="_lJ2sgFfTEeyXmJUbHj2PIg" name="Moving Point"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Wb930FJZEeyXmJUbHj2PIg" name="Points Control">
+    <include xmi:type="uml:Include" xmi:id="_r_RBMFJZEeyXmJUbHj2PIg" addition="_hMrBUFJZEeyXmJUbHj2PIg"/>
+    <include xmi:type="uml:Include" xmi:id="_eJq3cFJmEeyXmJUbHj2PIg" addition="_TzMdwFJkEeyXmJUbHj2PIg"/>
+    <include xmi:type="uml:Include" xmi:id="_mwJlEFJmEeyXmJUbHj2PIg" addition="_g3dTYFJmEeyXmJUbHj2PIg"/>
+    <include xmi:type="uml:Include" xmi:id="_o5rA4FJnEeyXmJUbHj2PIg" addition="_jjWccFJnEeyXmJUbHj2PIg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_hMrBUFJZEeyXmJUbHj2PIg" name="Points Management"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_P0C54FJfEeyXmJUbHj2PIg" name="Block"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_TePTsFJfEeyXmJUbHj2PIg" name="Point Toe"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6yhOkFJjEeyXmJUbHj2PIg" memberEnd="_6yk48FJjEeyXmJUbHj2PIg _6ymHEFJjEeyXmJUbHj2PIg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6yjDwFJjEeyXmJUbHj2PIg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6yjq0FJjEeyXmJUbHj2PIg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6yk48FJjEeyXmJUbHj2PIg" name="class18" type="_P0C54FJfEeyXmJUbHj2PIg" association="_6yhOkFJjEeyXmJUbHj2PIg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_6ymHEFJjEeyXmJUbHj2PIg" name="points control" type="_Wb930FJZEeyXmJUbHj2PIg" association="_6yhOkFJjEeyXmJUbHj2PIg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_9GSA8FJjEeyXmJUbHj2PIg" memberEnd="_9GSoAVJjEeyXmJUbHj2PIg _9GSoAlJjEeyXmJUbHj2PIg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9GSA8VJjEeyXmJUbHj2PIg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9GSoAFJjEeyXmJUbHj2PIg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9GSoAVJjEeyXmJUbHj2PIg" name="copyof_class18_18" type="_TePTsFJfEeyXmJUbHj2PIg" association="_9GSA8FJjEeyXmJUbHj2PIg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_9GSoAlJjEeyXmJUbHj2PIg" name="points control" type="_Wb930FJZEeyXmJUbHj2PIg" association="_9GSA8FJjEeyXmJUbHj2PIg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_TzMdwFJkEeyXmJUbHj2PIg" name="Occupied Track Status Area"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_g3dTYFJmEeyXmJUbHj2PIg" name="Reserved Staus Area"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_xQld8FJmEeyXmJUbHj2PIg" name="Dispatcher"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8EgTgFJmEeyXmJUbHj2PIg" memberEnd="_8EjW0lJmEeyXmJUbHj2PIg _8Ej94FJmEeyXmJUbHj2PIg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8EjW0FJmEeyXmJUbHj2PIg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8EjW0VJmEeyXmJUbHj2PIg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8EjW0lJmEeyXmJUbHj2PIg" name="tms" type="_xQld8FJmEeyXmJUbHj2PIg" association="_8EgTgFJmEeyXmJUbHj2PIg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8Ej94FJmEeyXmJUbHj2PIg" name="points control" type="_Wb930FJZEeyXmJUbHj2PIg" association="_8EgTgFJmEeyXmJUbHj2PIg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_jjWccFJnEeyXmJUbHj2PIg" name="TMS"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_0gZIIFMyEeyXmJUbHj2PIg" name="Manage Low Adhesion Area">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_FVdV4FM1EeyXmJUbHj2PIg">
+      <body>Adhesion factor can be updated from &#xD;
+trackside if permited by driver</body>
+    </ownedComment>
+    <region xmi:type="uml:Region" xmi:id="_4iUFcFMyEeyXmJUbHj2PIg" name="Slippery train">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_XwJlAFM0EeyXmJUbHj2PIg">
+        <body>emergency braked model adjusted&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_D34IIFM2EeyXmJUbHj2PIg">
+        <body>Adhseion factor sent as &#xD;
+a profile date if needed&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_p2gbgFM2EeyXmJUbHj2PIg">
+        <body>inform updated calue &#xD;
+of adhesion factor&#xD;
+</body>
+      </ownedComment>
+      <transition xmi:type="uml:Transition" xmi:id="_1bXGIFMzEeyXmJUbHj2PIg" source="_LnTZUFMzEeyXmJUbHj2PIg" target="_N81GQFMzEeyXmJUbHj2PIg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_OOUCYFM0EeyXmJUbHj2PIg" source="_N81GQFMzEeyXmJUbHj2PIg" target="_J4fRoFM0EeyXmJUbHj2PIg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_0Jn8AFM0EeyXmJUbHj2PIg" source="_N81GQFMzEeyXmJUbHj2PIg" target="_u3YmUFM0EeyXmJUbHj2PIg"/>
+      <transition xmi:type="uml:Transition" xmi:id="__-y9wFM1EeyXmJUbHj2PIg" source="_N81GQFMzEeyXmJUbHj2PIg" target="_68RfEFM1EeyXmJUbHj2PIg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_kvEAkFM2EeyXmJUbHj2PIg" source="_J4fRoFM0EeyXmJUbHj2PIg" target="_u3YmUFM0EeyXmJUbHj2PIg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_VuPQQFM3EeyXmJUbHj2PIg" source="_68RfEFM1EeyXmJUbHj2PIg" target="_RigPoFM3EeyXmJUbHj2PIg"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_LnTZUFMzEeyXmJUbHj2PIg"/>
+      <subvertex xmi:type="uml:State" xmi:id="_N81GQFMzEeyXmJUbHj2PIg" name="Adhesion factor"/>
+      <subvertex xmi:type="uml:State" xmi:id="_J4fRoFM0EeyXmJUbHj2PIg" name="Train"/>
+      <subvertex xmi:type="uml:State" xmi:id="_u3YmUFM0EeyXmJUbHj2PIg" name="Driver"/>
+      <subvertex xmi:type="uml:State" xmi:id="_68RfEFM1EeyXmJUbHj2PIg" name="Trackside"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_RigPoFM3EeyXmJUbHj2PIg"/>
+    </region>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_v6rvIFGvEeyXmJUbHj2PIg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_v6tkUFGvEeyXmJUbHj2PIg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
