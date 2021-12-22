@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Njev4BRuEeyQN9odROAPWw" name="Communication Management">
+<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Njev4BRuEeyQN9odROAPWw" name="Communication Management" classifierBehavior="_4ZQJ8FdtEeywoqg6iQBZCQ">
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_kQbcADjYEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
   </eAnnotations>
+  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_4ZQJ8FdtEeywoqg6iQBZCQ" name="CommunicationManagement">
+    <region xmi:type="uml:Region" xmi:id="_45JyAFdtEeywoqg6iQBZCQ" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_e3OKEFeBEeyQ_vcjz509Xg" source="_Yce7QFeBEeyQ_vcjz509Xg" target="_bOzR4FeBEeyQ_vcjz509Xg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_fb2hIFeBEeyQ_vcjz509Xg" name="TrainPositionReport [SessionTimer not expired &amp;&amp; MuteTimer not expired] /reset MuteTimer; reset SessionTimer" source="_bOzR4FeBEeyQ_vcjz509Xg" target="_bOzR4FeBEeyQ_vcjz509Xg">
+        <ownedRule xmi:type="uml:TimeConstraint" xmi:id="_r2k8cFeBEeyQ_vcjz509Xg" name="SessionTimer not expired &amp;&amp; MuteTimer not expired"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_EUGbQFeCEeyQ_vcjz509Xg" name="SessionTimer expires || MuteTimer expires / set TSA Unknown;" source="_bOzR4FeBEeyQ_vcjz509Xg" target="__kAJUFeBEeyQ_vcjz509Xg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_UqNHAFeCEeyQ_vcjz509Xg" name="TrainPositionReport [NID_ENGINE confirmed &amp;&amp; L_TRAIN confirmed] / set TSA Occupied;" source="__kAJUFeBEeyQ_vcjz509Xg" target="_bOzR4FeBEeyQ_vcjz509Xg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_iqJMoFeCEeyQ_vcjz509Xg" name="TrainPositionReport [NID_ENGINE not confirmed || L_TRAIN not confirmed];" source="__kAJUFeBEeyQ_vcjz509Xg" target="_gHLgoFeCEeyQ_vcjz509Xg"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_Yce7QFeBEeyQ_vcjz509Xg" name="initial"/>
+      <subvertex xmi:type="uml:State" xmi:id="_bOzR4FeBEeyQ_vcjz509Xg" name="waitForTPR"/>
+      <subvertex xmi:type="uml:State" xmi:id="__kAJUFeBEeyQ_vcjz509Xg" name="session expired"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_gHLgoFeCEeyQ_vcjz509Xg" name="exit"/>
+    </region>
+  </ownedBehavior>
 </uml:UseCase>
