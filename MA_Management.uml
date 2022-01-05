@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_INRgMBRuEeyQN9odROAPWw" name="MA Management">
+<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_INRgMBRuEeyQN9odROAPWw" name="MA Management" classifierBehavior="_ffRiAEPMEey8WPmtkrbobw">
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dTS1UDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
   </eAnnotations>
+  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_ffRiAEPMEey8WPmtkrbobw" name="MA_Management">
+    <region xmi:type="uml:Region" xmi:id="_gTfNMEPMEey8WPmtkrbobw" name="Region1">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_vgUuUEPNEey8WPmtkrbobw">
+        <body>Transition triggered by the invocation of some requestMA(trainid,location, integrity) method on L3 Trackside.</body>
+      </ownedComment>
+      <transition xmi:type="uml:Transition" xmi:id="_Na3E4EPNEey8WPmtkrbobw" source="_oH8A8EPMEey8WPmtkrbobw" target="_uAtyMEPMEey8WPmtkrbobw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_zTv8oEPNEey8WPmtkrbobw" source="_lEooAEPMEey8WPmtkrbobw" target="_oH8A8EPMEey8WPmtkrbobw"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_lEooAEPMEey8WPmtkrbobw" name="Initial_MA_Management"/>
+      <subvertex xmi:type="uml:State" xmi:id="_oH8A8EPMEey8WPmtkrbobw" name="Idle"/>
+      <subvertex xmi:type="uml:State" xmi:id="_uAtyMEPMEey8WPmtkrbobw" name="Managing_MA_Request">
+        <region xmi:type="uml:Region" xmi:id="_10pBgEPMEey8WPmtkrbobw" name="Region1">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_jiyu4EPZEey8WPmtkrbobw">
+            <body>Boundaries are computed according to the requirements in 3.7, 3.8 EoA exclusion areas</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_8IwYAEPZEey8WPmtkrbobw">
+            <body>Validity is checked according to requirements in 3.7 and 3.11 (First MA)</body>
+          </ownedComment>
+          <ownedComment xmi:type="uml:Comment" xmi:id="_GUoWIEPaEey8WPmtkrbobw">
+            <body>Issues the MA and sends a message to the train?</body>
+          </ownedComment>
+          <transition xmi:type="uml:Transition" xmi:id="_YBr5oEPNEey8WPmtkrbobw" source="_2Z_KQEPMEey8WPmtkrbobw" target="_FMy3QEPNEey8WPmtkrbobw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Y_GkIEPNEey8WPmtkrbobw" name="success" source="_FMy3QEPNEey8WPmtkrbobw" target="_Fpuq4EPNEey8WPmtkrbobw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_aKbu0EPNEey8WPmtkrbobw" name="done" source="_Fpuq4EPNEey8WPmtkrbobw" target="_GJQfgEPNEey8WPmtkrbobw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_b3tI8EPNEey8WPmtkrbobw" name="fail" source="_FMy3QEPNEey8WPmtkrbobw" target="_oH8A8EPMEey8WPmtkrbobw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_dLzXoEPZEey8WPmtkrbobw" name="done" source="_GJQfgEPNEey8WPmtkrbobw" target="_oH8A8EPMEey8WPmtkrbobw"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_2Z_KQEPMEey8WPmtkrbobw" name="initial_Managing_MA_Request"/>
+          <subvertex xmi:type="uml:State" xmi:id="_FMy3QEPNEey8WPmtkrbobw" name="Check_Validity"/>
+          <subvertex xmi:type="uml:State" xmi:id="_Fpuq4EPNEey8WPmtkrbobw" name="Computing_MA_Boundaries"/>
+          <subvertex xmi:type="uml:State" xmi:id="_GJQfgEPNEey8WPmtkrbobw" name="Issuing_MA"/>
+        </region>
+      </subvertex>
+    </region>
+  </ownedBehavior>
 </uml:UseCase>

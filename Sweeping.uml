@@ -1,120 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Qjy5UDjYEeyQeMlHlxk6EA" name="Sweeping">
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_8z5xARRpEeyQN9odROAPWw" name="Sweeping">
-    <include xmi:type="uml:Include" xmi:id="_b0DKYD1eEeyAv_UCn311nQ">
-      <addition xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
-    </include>
-    <include xmi:type="uml:Include" xmi:id="_hOjrQD1eEeyAv_UCn311nQ">
-      <addition xmi:type="uml:UseCase" href="TTD_Management.uml#_BCR5IBRuEeyQN9odROAPWw"/>
-    </include>
-    <include xmi:type="uml:Include" xmi:id="_lW4ykD1eEeyAv_UCn311nQ">
-      <addition xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
-    </include>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_ASFqMD1eEeyAv_UCn311nQ" memberEnd="_ASiWID1eEeyAv_UCn311nQ _ASiWIT1eEeyAv_UCn311nQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ASIGcD1eEeyAv_UCn311nQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ASIGcT1eEeyAv_UCn311nQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_ASiWID1eEeyAv_UCn311nQ" name="tms" association="_ASFqMD1eEeyAv_UCn311nQ">
-      <type xmi:type="uml:Class" href="PerformingRail.uml#_M__c8BIsEeyVOZB09kZL2w"/>
-    </ownedEnd>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_ASiWIT1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_ASFqMD1eEeyAv_UCn311nQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_NM1pYD1eEeyAv_UCn311nQ" memberEnd="_NM2Qcj1eEeyAv_UCn311nQ _NM23gD1eEeyAv_UCn311nQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NM2QcD1eEeyAv_UCn311nQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NM2QcT1eEeyAv_UCn311nQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_NM2Qcj1eEeyAv_UCn311nQ" name="driver" association="_NM1pYD1eEeyAv_UCn311nQ">
-      <type xmi:type="uml:Class" href="PerformingRail.uml#_s3WM4BIoEeyVOZB09kZL2w"/>
-    </ownedEnd>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_NM23gD1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_NM1pYD1eEeyAv_UCn311nQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_QSPUED1eEeyAv_UCn311nQ" memberEnd="_QSP7Ij1eEeyAv_UCn311nQ _QSP7Iz1eEeyAv_UCn311nQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QSP7ID1eEeyAv_UCn311nQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QSP7IT1eEeyAv_UCn311nQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_QSP7Ij1eEeyAv_UCn311nQ" name="ttd" association="_QSPUED1eEeyAv_UCn311nQ">
-      <type xmi:type="uml:Class" href="PerformingRail.uml#_zC8n8BIyEeyVOZB09kZL2w"/>
-    </ownedEnd>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_QSP7Iz1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_QSPUED1eEeyAv_UCn311nQ"/>
-  </packagedElement>
-  <packagedElement xmi:type="uml:Association" xmi:id="_RfcuED1eEeyAv_UCn311nQ" memberEnd="_RfdVIj1eEeyAv_UCn311nQ _RfdVIz1eEeyAv_UCn311nQ">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RfdVID1eEeyAv_UCn311nQ" source="org.eclipse.papyrus">
-      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RfdVIT1eEeyAv_UCn311nQ" key="nature" value="UML_Nature"/>
-    </eAnnotations>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_RfdVIj1eEeyAv_UCn311nQ" name="dispatcher" association="_RfcuED1eEeyAv_UCn311nQ">
-      <type xmi:type="uml:Class" href="PerformingRail.uml#_wEHq4BIoEeyVOZB09kZL2w"/>
-    </ownedEnd>
-    <ownedEnd xmi:type="uml:Property" xmi:id="_RfdVIz1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_RfcuED1eEeyAv_UCn311nQ"/>
-  </packagedElement>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq21MDjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq21MTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq21MjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq21MzjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq21NDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq21NTjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq3cQDjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cQTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cQjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq3cQzjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cRDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cRTjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq3cRjjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cRzjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cSDjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq3cSTjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cSjjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cSzjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq3cTDjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cTTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cTjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq3cTzjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cUDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq4DUDjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq4DUTjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq4DUjjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq4DUzjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
-  </profileApplication>
-  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq4DVDjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq4DVTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
-      <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
-    </eAnnotations>
-    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq4DVjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
-  </profileApplication>
-</uml:Package>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Package xmi:id="_Qjy5UDjYEeyQeMlHlxk6EA" name="Sweeping">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_8z5xARRpEeyQN9odROAPWw" name="Sweeping">
+      <include xmi:type="uml:Include" xmi:id="_b0DKYD1eEeyAv_UCn311nQ">
+        <addition xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
+      </include>
+      <include xmi:type="uml:Include" xmi:id="_hOjrQD1eEeyAv_UCn311nQ">
+        <addition xmi:type="uml:UseCase" href="TTD_Management.uml#_BCR5IBRuEeyQN9odROAPWw"/>
+      </include>
+      <include xmi:type="uml:Include" xmi:id="_lW4ykD1eEeyAv_UCn311nQ">
+        <addition xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
+      </include>
+      <include xmi:type="uml:Include" xmi:id="_U8qaUEhrEeyBhenFSEKB3w">
+        <addition xmi:type="uml:UseCase" href="Train_Position_Reporting.uml#_hQC-wDjZEeyQeMlHlxk6EA"/>
+      </include>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ASFqMD1eEeyAv_UCn311nQ" memberEnd="_ASiWID1eEeyAv_UCn311nQ _ASiWIT1eEeyAv_UCn311nQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ASIGcD1eEeyAv_UCn311nQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ASIGcT1eEeyAv_UCn311nQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ASiWID1eEeyAv_UCn311nQ" name="tms" association="_ASFqMD1eEeyAv_UCn311nQ">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_M__c8BIsEeyVOZB09kZL2w"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ASiWIT1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_ASFqMD1eEeyAv_UCn311nQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_NM1pYD1eEeyAv_UCn311nQ" memberEnd="_NM2Qcj1eEeyAv_UCn311nQ _NM23gD1eEeyAv_UCn311nQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NM2QcD1eEeyAv_UCn311nQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NM2QcT1eEeyAv_UCn311nQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_NM2Qcj1eEeyAv_UCn311nQ" name="driver" association="_NM1pYD1eEeyAv_UCn311nQ">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_s3WM4BIoEeyVOZB09kZL2w"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_NM23gD1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_NM1pYD1eEeyAv_UCn311nQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_QSPUED1eEeyAv_UCn311nQ" memberEnd="_QSP7Ij1eEeyAv_UCn311nQ _QSP7Iz1eEeyAv_UCn311nQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_QSP7ID1eEeyAv_UCn311nQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_QSP7IT1eEeyAv_UCn311nQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_QSP7Ij1eEeyAv_UCn311nQ" name="ttd" association="_QSPUED1eEeyAv_UCn311nQ">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_zC8n8BIyEeyVOZB09kZL2w"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_QSP7Iz1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_QSPUED1eEeyAv_UCn311nQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_RfcuED1eEeyAv_UCn311nQ" memberEnd="_RfdVIj1eEeyAv_UCn311nQ _RfdVIz1eEeyAv_UCn311nQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RfdVID1eEeyAv_UCn311nQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RfdVIT1eEeyAv_UCn311nQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RfdVIj1eEeyAv_UCn311nQ" name="dispatcher" association="_RfcuED1eEeyAv_UCn311nQ">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_wEHq4BIoEeyVOZB09kZL2w"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_RfdVIz1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_RfcuED1eEeyAv_UCn311nQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8nyXAEFgEeywTZC05_SuTw" name="REQ_Sweeping">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_bxey4EFhEeywTZC05_SuTw" name="SH-3"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_I47GkEFjEeyfxc1FgnjdUg" name="TrackStatus-5"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_I4_YAEFjEeyfxc1FgnjdUg" name="TrackStatus-6"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_I5AmIEFjEeyfxc1FgnjdUg" name="TrackStatus-7"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_I5B0QEFjEeyfxc1FgnjdUg" name="TrackStatus-8"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_I5DCYEFjEeyfxc1FgnjdUg" name="TrackStatus-12"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_RAcAQEFjEeyfxc1FgnjdUg" name="TTD-5"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_e9AQgEY_EeyqDu86LRL2NQ" name="PTS-4"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq21MDjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq21MTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq21MjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq21MzjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq21NDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq21NTjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq3cQDjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cQTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cQjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq3cQzjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cRDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cRTjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq3cRjjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cRzjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cSDjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq3cSTjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cSjjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cSzjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq3cTDjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cTTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cTjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq3cTzjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq3cUDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq4DUDjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq4DUTjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq4DUjjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq4DUzjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq4DVDjZEeyQeMlHlxk6EA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq4DVTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq4DVjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Package>
+  <Requirements:Requirement xmi:id="_8n5EsEFgEeywTZC05_SuTw" base_NamedElement="_8nyXAEFgEeywTZC05_SuTw" id="REQ_Sweeping" base_Class="_8nyXAEFgEeywTZC05_SuTw"/>
+  <Requirements:Requirement xmi:id="_bxgoEEFhEeywTZC05_SuTw" base_NamedElement="_bxey4EFhEeywTZC05_SuTw" id="REQ-SH-3" text="The L3 Trackside shall consider the Track Status of an Active Shunting Area to be Unknown and Non-Sweepable." base_Class="_bxey4EFhEeywTZC05_SuTw"/>
+  <Requirements:Requirement xmi:id="_I5FeoEFjEeyfxc1FgnjdUg" base_NamedElement="_I47GkEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-5" text="When receiving a position report from a train with the Min Safe Front End in an Unknown Track Status Area that can be swept, then the L3 Trackside shall reduce that Unknown Track Status Area for the part of it up to the Min Safe Front End of that train." base_Class="_I47GkEFjEeyfxc1FgnjdUg"/>
+  <Requirements:Requirement xmi:id="_I5l08EFjEeyfxc1FgnjdUg" base_NamedElement="_I4_YAEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-6" text="On request from the TMS, the L3 Trackside shall create an Unknown Track Status Area flagged as Sweepable provided the area is longer than the configurable minimum length." base_Class="_I4_YAEFjEeyfxc1FgnjdUg"/>
+  <Requirements:Requirement xmi:id="_I5pfUEFjEeyfxc1FgnjdUg" base_NamedElement="_I5AmIEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-7" text="On request from the TMS, the L3 Trackside shall create an Unknown Track Status Area flagged as Non-Sweepable." base_Class="_I5AmIEFjEeyfxc1FgnjdUg"/>
+  <Requirements:Requirement xmi:id="_I5rUgEFjEeyfxc1FgnjdUg" base_NamedElement="_I5B0QEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-8" text="Unknown Track Status Areas created by L3 Trackside without being requested by TMS shall be flagged as Sweepable, or Non-Sweepable." base_Class="_I5B0QEFjEeyfxc1FgnjdUg"/>
+  <Requirements:Requirement xmi:id="_I5xbIEFjEeyfxc1FgnjdUg" base_NamedElement="_I5DCYEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-12" text="The L3 Trackside shall automatically clear Sweepable Unknown Track Status Areas that are shorter than a configurable minimum length, except if this Unknown Track Status Area has been created to protect the front end of a train at Start of Mission." base_Class="_I5DCYEFjEeyfxc1FgnjdUg"/>
+  <Requirements:Requirement xmi:id="_RAdOYEFjEeyfxc1FgnjdUg" base_NamedElement="_RAcAQEFjEeyfxc1FgnjdUg" id="REQ-TTD-5" text="For a system using TTD, the L3 Trackside shall be able to remove all or part of an Unknown Track Status Area corresponding to a TTD section which is Clear. The following situations will act as exceptions to this mechanism:&#xA;    a) the Unknown area has been created at the request of the TMS and marked as Non-Sweepable&#xA;    b) the Unknown area is due to an Active Shunting Area&#xA;    c) if the train is reporting with its Min Safe Front End in the TTD section" base_Class="_RAcAQEFjEeyfxc1FgnjdUg"/>
+  <Requirements:Requirement xmi:id="_e9CFsEY_EeyqDu86LRL2NQ" base_NamedElement="_e9AQgEY_EeyqDu86LRL2NQ" id="REQ-PTS-4" text="When a train is sweeping a set of points, the L3 Trackside shall remove or reduce a Sweepable Unknown Track Status Area from the alternate leg of the points as far as the Fouling Point, in addition to the path that the train takes." base_Class="_e9AQgEY_EeyqDu86LRL2NQ"/>
+</xmi:XMI>

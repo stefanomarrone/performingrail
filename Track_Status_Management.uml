@@ -3,4 +3,27 @@
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ivoXoDjYEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
   </eAnnotations>
+  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_JLiMMFzQEeyXZOuflJ6RTA" name="TrackStatusManagement">
+    <region xmi:type="uml:Region" xmi:id="_KCnlMFzQEeyXZOuflJ6RTA" name="Region1">
+      <transition xmi:type="uml:Transition" xmi:id="_OGylQFzQEeyXZOuflJ6RTA" source="_OG1BglzQEeyXZOuflJ6RTA" target="_OG1BgFzQEeyXZOuflJ6RTA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_OGzMUFzQEeyXZOuflJ6RTA" name="free2unkown" source="_OG1BgFzQEeyXZOuflJ6RTA" target="_OG0aclzQEeyXZOuflJ6RTA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_OGzMUVzQEeyXZOuflJ6RTA" name="TMS creation request"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_OGzMUlzQEeyXZOuflJ6RTA" name="unkown2free" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1BgFzQEeyXZOuflJ6RTA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_OGzMU1zQEeyXZOuflJ6RTA" name="free2occupied" source="_OG1BgFzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_OGzzYFzQEeyXZOuflJ6RTA" name="occupied2free" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG1BgFzQEeyXZOuflJ6RTA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_OGzzYVzQEeyXZOuflJ6RTA" name="unknown2occupied" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_OGzzYlzQEeyXZOuflJ6RTA" name="train integrity confirmed by external device or train integroty confirmed by driver"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_OGzzY1zQEeyXZOuflJ6RTA" name="occupied2unknown" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG0aclzQEeyXZOuflJ6RTA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_OG0acFzQEeyXZOuflJ6RTA" name="occupied2final" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG1okFzQEeyXZOuflJ6RTA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_OG0acVzQEeyXZOuflJ6RTA" name="communication session terminated"/>
+      </transition>
+      <subvertex xmi:type="uml:State" xmi:id="_OG0aclzQEeyXZOuflJ6RTA" name="Unknown"/>
+      <subvertex xmi:type="uml:State" xmi:id="_OG1BgFzQEeyXZOuflJ6RTA" name="Free / Clear"/>
+      <subvertex xmi:type="uml:State" xmi:id="_OG1BgVzQEeyXZOuflJ6RTA" name="Occupied"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_OG1BglzQEeyXZOuflJ6RTA" name="initial"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_OG1okFzQEeyXZOuflJ6RTA" name="final state"/>
+    </region>
+  </ownedBehavior>
 </uml:UseCase>

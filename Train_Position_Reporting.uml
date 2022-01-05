@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_hQC-wDjZEeyQeMlHlxk6EA" name="Train Position Reporting">
+<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_hQC-wDjZEeyQeMlHlxk6EA" name="Train Position Reporting" classifierBehavior="_7iR84EcFEeyulrbFdhDRlw">
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_v5EoMDjaEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_fF5jUBI1EeyVOZB09kZL2w"/>
   </eAnnotations>
+  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_7iR84EcFEeyulrbFdhDRlw" name="Train Position Reporting">
+    <region xmi:type="uml:Region" xmi:id="_9d1DkEcFEeyulrbFdhDRlw" name="Region1">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_R1h6gEccEeyulrbFdhDRlw">
+        <body>Subset26-4 pp71-72 for data stored on-board</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_nhT48Ee1Eeyg8fpv7VrCwA">
+        <body>Q_STATUS ETCS variable can be assigned to Valid / Invalid /Unknown</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_0UdHUEiREey8Q6WFZJUagA">
+        <body>Integrity data to be added in TPR message (Integrity/position data can be generated with different frequencies)</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_IiJIoEiSEey8Q6WFZJUagA">
+        <body>Requested periodically or on demand</body>
+      </ownedComment>
+      <transition xmi:type="uml:Transition" xmi:id="_3AcucEcbEeyulrbFdhDRlw" source="_PpjNIEcGEeyulrbFdhDRlw" target="_hsOCMEcjEeyg8fpv7VrCwA">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="__raWoEcfEeyulrbFdhDRlw" name="PosStatus"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_CkjmoEcjEeyg8fpv7VrCwA" name="evt1/Q_STATUS=PosStatus" source="_xAIcsEcZEeyulrbFdhDRlw" target="_pwUjoEe0Eeyg8fpv7VrCwA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_yyBskEcjEeyg8fpv7VrCwA" name="SoM_request" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_xAIcsEcZEeyulrbFdhDRlw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_J75LIEckEeyg8fpv7VrCwA" name="evt2/SoM_TPR_transmitted" source="_pwUjoEe0Eeyg8fpv7VrCwA" target="_hsOCMEcjEeyg8fpv7VrCwA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_qVE48EckEeyg8fpv7VrCwA" name="On-board_PosRequest" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_f4a-wEciEeyg8fpv7VrCwA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_IW2qgEclEeyg8fpv7VrCwA" name="EoM_request" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_jUvNQEclEeyg8fpv7VrCwA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_QNFm8EclEeyg8fpv7VrCwA" name="evt3/TPR_transmitted" source="_4sG5gEiQEey8Q6WFZJUagA" target="_hsOCMEcjEeyg8fpv7VrCwA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_qrRV8EclEeyg8fpv7VrCwA" source="_jUvNQEclEeyg8fpv7VrCwA" target="_HGbkcEclEeyg8fpv7VrCwA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_E70-sEiREey8Q6WFZJUagA" name="SendLocationData" source="_f4a-wEciEeyg8fpv7VrCwA" target="_4sG5gEiQEey8Q6WFZJUagA"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_PpjNIEcGEeyulrbFdhDRlw"/>
+      <subvertex xmi:type="uml:State" xmi:id="_xAIcsEcZEeyulrbFdhDRlw" name="Verifying_PositionStatus"/>
+      <subvertex xmi:type="uml:State" xmi:id="_f4a-wEciEeyg8fpv7VrCwA" name="Wait_Localisation_Unit_Position"/>
+      <subvertex xmi:type="uml:State" xmi:id="_hsOCMEcjEeyg8fpv7VrCwA" name="Idle"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_HGbkcEclEeyg8fpv7VrCwA"/>
+      <subvertex xmi:type="uml:State" xmi:id="_jUvNQEclEeyg8fpv7VrCwA" name="Store_TPR_data"/>
+      <subvertex xmi:type="uml:State" xmi:id="_pwUjoEe0Eeyg8fpv7VrCwA" name="Aggregating_data_in_SoM_TPR_message"/>
+      <subvertex xmi:type="uml:State" xmi:id="_4sG5gEiQEey8Q6WFZJUagA" name="Aggregating_data_in_TPR_message"/>
+    </region>
+  </ownedBehavior>
 </uml:UseCase>
