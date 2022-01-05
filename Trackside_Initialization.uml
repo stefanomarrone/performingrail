@@ -38,12 +38,19 @@
       </ownedEnd>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_HAqVYBRpEeyQN9odROAPWw" name="Trackside Initialisation">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_4zUgAE7LEeyTe5jLSF3Q6g">
+        <body>Trackside initialisation is the process of detecting the state of track assets and the position of trains after reset or power-down of the system.&#xD;
+&#xD;
+The signaller checks that the system or parts of it can be safely reset. The prerequisite is the absence of train movement inside or towards areas under control of the system. She then requests the technician to reset the system.</body>
+      </ownedComment>
       <include xmi:type="uml:Include" xmi:id="_GT_akBVDEeyMXOG2LrUsxQ">
         <addition xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
       </include>
       <include xmi:type="uml:Include" xmi:id="_G-iMYBVDEeyMXOG2LrUsxQ">
         <addition xmi:type="uml:UseCase" href="Reserved_Status_Management.uml#_Ez5woBRuEeyQN9odROAPWw"/>
       </include>
+      <include xmi:type="uml:Include" xmi:id="_eJcMcE7NEeyTe5jLSF3Q6g" addition="_IvzVYE7NEeyTe5jLSF3Q6g"/>
+      <include xmi:type="uml:Include" xmi:id="_hglucE7NEeyTe5jLSF3Q6g" addition="_JCbL4E7MEeyTe5jLSF3Q6g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_6NxaMBVDEeyMXOG2LrUsxQ" name="REQ-TrackInit" isAbstract="true">
       <nestedClassifier xmi:type="uml:Class" xmi:id="_TU0-MBVEEeyMXOG2LrUsxQ" name="REQ-TrackInit-1"/>
@@ -52,6 +59,35 @@
       <nestedClassifier xmi:type="uml:Class" xmi:id="_LKEt0BVFEeyMXOG2LrUsxQ" name="REQ-TrackInit-4"/>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_LPn8MBVFEeyMXOG2LrUsxQ" name="REQ-TrackInit-5"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_JCbL4E7MEeyTe5jLSF3Q6g" name="Detect track assets">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_HCyZ8E7NEeyTe5jLSF3Q6g">
+        <body>The signalling systems detect the state of track assets, point positions, train detection sections.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_IvzVYE7NEeyTe5jLSF3Q6g" name="Initialise train positions">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_YV7VsE7NEeyTe5jLSF3Q6g">
+        <body>The RBC retrieves vital train positions as stored and transmitted by vital onboard units. This subsumes that EVCs, being vital devices, will not report stale or otherwise invalidated train positions.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_nA1gYE7MEeyTe5jLSF3Q6g" client="_hi2NsE7MEeyTe5jLSF3Q6g" supplier="_HAqVYBRpEeyQN9odROAPWw">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_r9yikE7MEeyTe5jLSF3Q6g">
+        <body>A signalling technician maintains signalling equipment. </body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_syBb4E7MEeyTe5jLSF3Q6g" name="consults" client="_hi2NsE7MEeyTe5jLSF3Q6g">
+      <supplier xmi:type="uml:Actor" href="PerformingRail.uml#_Rn83QE7MEeyTe5jLSF3Q6g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_T-iUIE7MEeyTe5jLSF3Q6g" supplier="_HAqVYBRpEeyQN9odROAPWw">
+      <client xmi:type="uml:Actor" href="PerformingRail.uml#_Rn83QE7MEeyTe5jLSF3Q6g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_hi2NsE7MEeyTe5jLSF3Q6g" name="Signalling technician"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_afuMYE7QEeyTe5jLSF3Q6g" name="consults driver"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_IXJLgE7SEeyTe5jLSF3Q6g" client="_IvzVYE7NEeyTe5jLSF3Q6g" supplier="_Jc-54BVFEeyMXOG2LrUsxQ"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_MVl-EE7SEeyTe5jLSF3Q6g" client="_HAqVYBRpEeyQN9odROAPWw" supplier="_6NxaMBVDEeyMXOG2LrUsxQ"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_RYcM4E7SEeyTe5jLSF3Q6g" client="_HAqVYBRpEeyQN9odROAPWw" supplier="_LPn8MBVFEeyMXOG2LrUsxQ"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_TpwIME7SEeyTe5jLSF3Q6g" client="_JCbL4E7MEeyTe5jLSF3Q6g" supplier="_TU0-MBVEEeyMXOG2LrUsxQ"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_Wkok8E7SEeyTe5jLSF3Q6g" client="_HAqVYBRpEeyQN9odROAPWw" supplier="_KADxwBVFEeyMXOG2LrUsxQ"/>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_Zn6vwE7SEeyTe5jLSF3Q6g" client="_JCbL4E7MEeyTe5jLSF3Q6g" supplier="_LKEt0BVFEeyMXOG2LrUsxQ"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oeficDjZEeyQeMlHlxk6EA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeficTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
