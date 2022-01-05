@@ -2,136 +2,136 @@
 <uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_M74-gDjYEeyQeMlHlxk6EA" name="Staff Responsible Movement">
   <packagedElement xmi:type="uml:UseCase" xmi:id="_6x1yoRRpEeyQN9odROAPWw" name="SR Movement">
     <ownedBehavior xmi:type="uml:Interaction" xmi:id="_rwkxwFzJEeyXZOuflJ6RTA" name="SRMovement">
-      <ownedAttribute xmi:id="_09AsIFzJEeyXZOuflJ6RTA" name="">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_09AsIFzJEeyXZOuflJ6RTA" name="">
         <type xmi:type="uml:UseCase" href="Speed_and_Distance_Supervision.uml#_lQKlQDjZEeyQeMlHlxk6EA"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_3K6uIVzJEeyXZOuflJ6RTA" name="">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_3K6uIVzJEeyXZOuflJ6RTA" name="">
         <type xmi:type="uml:UseCase" href="MA_Management.uml#_INRgMBRuEeyQN9odROAPWw"/>
       </ownedAttribute>
-      <ownedAttribute xmi:id="_4p08IFzJEeyXZOuflJ6RTA" name="">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_4p08IFzJEeyXZOuflJ6RTA" name="">
         <type xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
       </ownedAttribute>
-      <lifeline xmi:id="_09AFEFzJEeyXZOuflJ6RTA" name="" represents="_09AsIFzJEeyXZOuflJ6RTA" coveredBy="_8Gvu8FzJEeyXZOuflJ6RTA _AXADMFzKEeyXZOuflJ6RTA _AXAqQFzKEeyXZOuflJ6RTA _JwzEIVzKEeyXZOuflJ6RTA _CQ3u4FzKEeyXZOuflJ6RTA _PxmwAFzKEeyXZOuflJ6RTA _PxnXEFzKEeyXZOuflJ6RTA _VaymEVzKEeyXZOuflJ6RTA _Qsec0FzKEeyXZOuflJ6RTA _XHFv0VzKEeyXZOuflJ6RTA _CyPWkFzKEeyXZOuflJ6RTA _oJKJsVzKEeyXZOuflJ6RTA"/>
-      <lifeline xmi:id="_3K6uIFzJEeyXZOuflJ6RTA" name="" represents="_3K6uIVzJEeyXZOuflJ6RTA" coveredBy="_8GwWAFzJEeyXZOuflJ6RTA _AXADMFzKEeyXZOuflJ6RTA _AXAqQFzKEeyXZOuflJ6RTA _JwzEIFzKEeyXZOuflJ6RTA _CQ3u4FzKEeyXZOuflJ6RTA _PxmwAFzKEeyXZOuflJ6RTA _PxnXEFzKEeyXZOuflJ6RTA _VaymEFzKEeyXZOuflJ6RTA _Qsec0FzKEeyXZOuflJ6RTA _XHFv0FzKEeyXZOuflJ6RTA _CyPWkFzKEeyXZOuflJ6RTA _lV0fYVzKEeyXZOuflJ6RTA _lV1GcFzKEeyXZOuflJ6RTA _oJKJsFzKEeyXZOuflJ6RTA"/>
-      <lifeline xmi:id="_4p0VEFzJEeyXZOuflJ6RTA" name="" represents="_4p08IFzJEeyXZOuflJ6RTA" coveredBy="_AXADMFzKEeyXZOuflJ6RTA _AXAqQFzKEeyXZOuflJ6RTA _CQ3u4FzKEeyXZOuflJ6RTA _PxmwAFzKEeyXZOuflJ6RTA _PxnXEFzKEeyXZOuflJ6RTA _Qsec0FzKEeyXZOuflJ6RTA _bLD7kFzKEeyXZOuflJ6RTA _bLEioFzKEeyXZOuflJ6RTA _CyPWkFzKEeyXZOuflJ6RTA"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_09AFEFzJEeyXZOuflJ6RTA" name="" represents="_09AsIFzJEeyXZOuflJ6RTA" coveredBy="_8Gvu8FzJEeyXZOuflJ6RTA _AXADMFzKEeyXZOuflJ6RTA _AXAqQFzKEeyXZOuflJ6RTA _JwzEIVzKEeyXZOuflJ6RTA _CQ3u4FzKEeyXZOuflJ6RTA _PxmwAFzKEeyXZOuflJ6RTA _PxnXEFzKEeyXZOuflJ6RTA _VaymEVzKEeyXZOuflJ6RTA _Qsec0FzKEeyXZOuflJ6RTA _XHFv0VzKEeyXZOuflJ6RTA _CyPWkFzKEeyXZOuflJ6RTA _oJKJsVzKEeyXZOuflJ6RTA"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_3K6uIFzJEeyXZOuflJ6RTA" name="" represents="_3K6uIVzJEeyXZOuflJ6RTA" coveredBy="_8GwWAFzJEeyXZOuflJ6RTA _AXADMFzKEeyXZOuflJ6RTA _AXAqQFzKEeyXZOuflJ6RTA _JwzEIFzKEeyXZOuflJ6RTA _CQ3u4FzKEeyXZOuflJ6RTA _PxmwAFzKEeyXZOuflJ6RTA _PxnXEFzKEeyXZOuflJ6RTA _VaymEFzKEeyXZOuflJ6RTA _Qsec0FzKEeyXZOuflJ6RTA _XHFv0FzKEeyXZOuflJ6RTA _CyPWkFzKEeyXZOuflJ6RTA _lV0fYVzKEeyXZOuflJ6RTA _lV1GcFzKEeyXZOuflJ6RTA _oJKJsFzKEeyXZOuflJ6RTA"/>
+      <lifeline xmi:type="uml:Lifeline" xmi:id="_4p0VEFzJEeyXZOuflJ6RTA" name="" represents="_4p08IFzJEeyXZOuflJ6RTA" coveredBy="_AXADMFzKEeyXZOuflJ6RTA _AXAqQFzKEeyXZOuflJ6RTA _CQ3u4FzKEeyXZOuflJ6RTA _PxmwAFzKEeyXZOuflJ6RTA _PxnXEFzKEeyXZOuflJ6RTA _Qsec0FzKEeyXZOuflJ6RTA _bLD7kFzKEeyXZOuflJ6RTA _bLEioFzKEeyXZOuflJ6RTA _CyPWkFzKEeyXZOuflJ6RTA"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8Gvu8FzJEeyXZOuflJ6RTA" name="Message7SendEvent" covered="_09AFEFzJEeyXZOuflJ6RTA" message="_8GtSsFzJEeyXZOuflJ6RTA"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8GwWAFzJEeyXZOuflJ6RTA" name="Message7ReceiveEvent" covered="_3K6uIFzJEeyXZOuflJ6RTA" message="_8GtSsFzJEeyXZOuflJ6RTA"/>
-      <fragment xmi:type="uml:CombinedFragment" xmi:id="_AXADMFzKEeyXZOuflJ6RTA" name="CombinedFragment10" covered="_3K6uIFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA" interactionOperator="alt">
-        <operand xmi:id="_AXAqQFzKEeyXZOuflJ6RTA" name="InteractionOperand0" covered="_3K6uIFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA">
-          <guard xmi:id="_AXAqQVzKEeyXZOuflJ6RTA" name="guard">
+      <fragment xmi:type="uml:CombinedFragment" xmi:id="_AXADMFzKEeyXZOuflJ6RTA" name="CombinedFragment10" covered="_3K6uIFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA" interactionOperator="alt">
+        <operand xmi:type="uml:InteractionOperand" xmi:id="_AXAqQFzKEeyXZOuflJ6RTA" name="InteractionOperand0" covered="_3K6uIFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA">
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JwzEIFzKEeyXZOuflJ6RTA" name="Message11SendEvent" covered="_3K6uIFzJEeyXZOuflJ6RTA" message="_JwydEFzKEeyXZOuflJ6RTA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JwzEIVzKEeyXZOuflJ6RTA" name="Message11ReceiveEvent" covered="_09AFEFzJEeyXZOuflJ6RTA" message="_JwydEFzKEeyXZOuflJ6RTA"/>
+          <guard xmi:type="uml:InteractionConstraint" xmi:id="_AXAqQVzKEeyXZOuflJ6RTA" name="guard">
             <specification xmi:type="uml:LiteralString" xmi:id="_HQBwgFzKEeyXZOuflJ6RTA" value="train located in rear of an adjacent Unknown Track Status Area created by the TMS and not used for another train"/>
           </guard>
         </operand>
-        <operand xmi:id="_CQ3u4FzKEeyXZOuflJ6RTA" name="InteractionOperand2" covered="_3K6uIFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA">
-          <guard xmi:id="_CQ49AFzKEeyXZOuflJ6RTA" name="guard">
+        <operand xmi:type="uml:InteractionOperand" xmi:id="_CQ3u4FzKEeyXZOuflJ6RTA" name="InteractionOperand2" covered="_3K6uIFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA">
+          <guard xmi:type="uml:InteractionConstraint" xmi:id="_CQ49AFzKEeyXZOuflJ6RTA" name="guard">
             <specification xmi:type="uml:LiteralString" xmi:id="_NCQN0FzKEeyXZOuflJ6RTA" value="train with a position given by the Dispatcher in rear of an adjacent Reserved Status Area"/>
           </guard>
         </operand>
-        <operand xmi:id="_CyPWkFzKEeyXZOuflJ6RTA" name="InteractionOperand3" covered="_3K6uIFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA">
-          <guard xmi:id="_CyP9oFzKEeyXZOuflJ6RTA" name="guard">
+        <operand xmi:type="uml:InteractionOperand" xmi:id="_CyPWkFzKEeyXZOuflJ6RTA" name="InteractionOperand3" covered="_3K6uIFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA">
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lV0fYVzKEeyXZOuflJ6RTA" name="Message18SendEvent" covered="_3K6uIFzJEeyXZOuflJ6RTA" message="_lV0fYFzKEeyXZOuflJ6RTA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lV1GcFzKEeyXZOuflJ6RTA" name="Message18ReceiveEvent" covered="_3K6uIFzJEeyXZOuflJ6RTA" message="_lV0fYFzKEeyXZOuflJ6RTA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oJKJsFzKEeyXZOuflJ6RTA" name="Message19SendEvent" covered="_3K6uIFzJEeyXZOuflJ6RTA" message="_oJJioFzKEeyXZOuflJ6RTA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oJKJsVzKEeyXZOuflJ6RTA" name="Message19ReceiveEvent" covered="_09AFEFzJEeyXZOuflJ6RTA" message="_oJJioFzKEeyXZOuflJ6RTA"/>
+          <guard xmi:type="uml:InteractionConstraint" xmi:id="_CyP9oFzKEeyXZOuflJ6RTA" name="guard">
             <specification xmi:type="uml:LiteralString" xmi:id="_hjhScFzKEeyXZOuflJ6RTA" value="train with a known location"/>
           </guard>
         </operand>
       </fragment>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JwzEIFzKEeyXZOuflJ6RTA" name="Message11SendEvent" covered="_3K6uIFzJEeyXZOuflJ6RTA" message="_JwydEFzKEeyXZOuflJ6RTA"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JwzEIVzKEeyXZOuflJ6RTA" name="Message11ReceiveEvent" covered="_09AFEFzJEeyXZOuflJ6RTA" message="_JwydEFzKEeyXZOuflJ6RTA"/>
-      <fragment xmi:type="uml:CombinedFragment" xmi:id="_PxmwAFzKEeyXZOuflJ6RTA" name="CombinedFragment12" covered="_3K6uIFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA" interactionOperator="alt">
-        <operand xmi:id="_PxnXEFzKEeyXZOuflJ6RTA" name="InteractionOperand0" covered="_3K6uIFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA">
-          <guard xmi:id="_PxnXEVzKEeyXZOuflJ6RTA" name="guard">
+      <fragment xmi:type="uml:CombinedFragment" xmi:id="_PxmwAFzKEeyXZOuflJ6RTA" name="CombinedFragment12" covered="_3K6uIFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA" interactionOperator="alt">
+        <operand xmi:type="uml:InteractionOperand" xmi:id="_PxnXEFzKEeyXZOuflJ6RTA" name="InteractionOperand0" covered="_3K6uIFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA">
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VaymEFzKEeyXZOuflJ6RTA" name="Message13SendEvent" covered="_3K6uIFzJEeyXZOuflJ6RTA" message="_VaxX8FzKEeyXZOuflJ6RTA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VaymEVzKEeyXZOuflJ6RTA" name="Message13ReceiveEvent" covered="_09AFEFzJEeyXZOuflJ6RTA" message="_VaxX8FzKEeyXZOuflJ6RTA"/>
+          <guard xmi:type="uml:InteractionConstraint" xmi:id="_PxnXEVzKEeyXZOuflJ6RTA" name="guard">
             <specification xmi:type="uml:LiteralString" xmi:id="_TUK30FzKEeyXZOuflJ6RTA" value="Trackside can send a list of Balise Group"/>
           </guard>
         </operand>
-        <operand xmi:id="_Qsec0FzKEeyXZOuflJ6RTA" name="InteractionOperand2" covered="_3K6uIFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA">
-          <guard xmi:id="_QsfD4FzKEeyXZOuflJ6RTA" name="guard"/>
+        <operand xmi:type="uml:InteractionOperand" xmi:id="_Qsec0FzKEeyXZOuflJ6RTA" name="InteractionOperand2" covered="_3K6uIFzJEeyXZOuflJ6RTA _09AFEFzJEeyXZOuflJ6RTA _4p0VEFzJEeyXZOuflJ6RTA">
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XHFv0FzKEeyXZOuflJ6RTA" name="Message14SendEvent" covered="_3K6uIFzJEeyXZOuflJ6RTA" message="_XHFIwFzKEeyXZOuflJ6RTA"/>
+          <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XHFv0VzKEeyXZOuflJ6RTA" name="Message14ReceiveEvent" covered="_09AFEFzJEeyXZOuflJ6RTA" message="_XHFIwFzKEeyXZOuflJ6RTA"/>
+          <guard xmi:type="uml:InteractionConstraint" xmi:id="_QsfD4FzKEeyXZOuflJ6RTA" name="guard"/>
         </operand>
       </fragment>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VaymEFzKEeyXZOuflJ6RTA" name="Message13SendEvent" covered="_3K6uIFzJEeyXZOuflJ6RTA" message="_VaxX8FzKEeyXZOuflJ6RTA"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VaymEVzKEeyXZOuflJ6RTA" name="Message13ReceiveEvent" covered="_09AFEFzJEeyXZOuflJ6RTA" message="_VaxX8FzKEeyXZOuflJ6RTA"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XHFv0FzKEeyXZOuflJ6RTA" name="Message14SendEvent" covered="_3K6uIFzJEeyXZOuflJ6RTA" message="_XHFIwFzKEeyXZOuflJ6RTA"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_XHFv0VzKEeyXZOuflJ6RTA" name="Message14ReceiveEvent" covered="_09AFEFzJEeyXZOuflJ6RTA" message="_XHFIwFzKEeyXZOuflJ6RTA"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_bLD7kFzKEeyXZOuflJ6RTA" name="Message15SendEvent" covered="_4p0VEFzJEeyXZOuflJ6RTA" message="_bLDUgFzKEeyXZOuflJ6RTA"/>
       <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_bLEioFzKEeyXZOuflJ6RTA" name="Message15ReceiveEvent" covered="_4p0VEFzJEeyXZOuflJ6RTA" message="_bLDUgFzKEeyXZOuflJ6RTA"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lV0fYVzKEeyXZOuflJ6RTA" name="Message18SendEvent" covered="_3K6uIFzJEeyXZOuflJ6RTA" message="_lV0fYFzKEeyXZOuflJ6RTA"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lV1GcFzKEeyXZOuflJ6RTA" name="Message18ReceiveEvent" covered="_3K6uIFzJEeyXZOuflJ6RTA" message="_lV0fYFzKEeyXZOuflJ6RTA"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oJKJsFzKEeyXZOuflJ6RTA" name="Message19SendEvent" covered="_3K6uIFzJEeyXZOuflJ6RTA" message="_oJJioFzKEeyXZOuflJ6RTA"/>
-      <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_oJKJsVzKEeyXZOuflJ6RTA" name="Message19ReceiveEvent" covered="_09AFEFzJEeyXZOuflJ6RTA" message="_oJJioFzKEeyXZOuflJ6RTA"/>
-      <message xmi:id="_8GtSsFzJEeyXZOuflJ6RTA" name="MA request" messageSort="asynchCall" receiveEvent="_8GwWAFzJEeyXZOuflJ6RTA" sendEvent="_8Gvu8FzJEeyXZOuflJ6RTA"/>
-      <message xmi:id="_JwydEFzKEeyXZOuflJ6RTA" name="Movement Authorization" messageSort="asynchCall" receiveEvent="_JwzEIVzKEeyXZOuflJ6RTA" sendEvent="_JwzEIFzKEeyXZOuflJ6RTA"/>
-      <message xmi:id="_VaxX8FzKEeyXZOuflJ6RTA" name="Movement Authorization on a Balise group list" messageSort="asynchCall" receiveEvent="_VaymEVzKEeyXZOuflJ6RTA" sendEvent="_VaymEFzKEeyXZOuflJ6RTA"/>
-      <message xmi:id="_XHFIwFzKEeyXZOuflJ6RTA" name="Movement Authorization" messageSort="asynchCall" receiveEvent="_XHFv0VzKEeyXZOuflJ6RTA" sendEvent="_XHFv0FzKEeyXZOuflJ6RTA"/>
-      <message xmi:id="_bLDUgFzKEeyXZOuflJ6RTA" name="setTrackAreaUnknown" messageSort="asynchCall" receiveEvent="_bLEioFzKEeyXZOuflJ6RTA" sendEvent="_bLD7kFzKEeyXZOuflJ6RTA"/>
-      <message xmi:id="_lV0fYFzKEeyXZOuflJ6RTA" name="save CRE" messageSort="asynchCall" receiveEvent="_lV1GcFzKEeyXZOuflJ6RTA" sendEvent="_lV0fYVzKEeyXZOuflJ6RTA"/>
-      <message xmi:id="_oJJioFzKEeyXZOuflJ6RTA" name="Movement Authorization" messageSort="asynchCall" receiveEvent="_oJKJsVzKEeyXZOuflJ6RTA" sendEvent="_oJKJsFzKEeyXZOuflJ6RTA"/>
+      <message xmi:type="uml:Message" xmi:id="_8GtSsFzJEeyXZOuflJ6RTA" name="MA request" messageSort="asynchCall" receiveEvent="_8GwWAFzJEeyXZOuflJ6RTA" sendEvent="_8Gvu8FzJEeyXZOuflJ6RTA"/>
+      <message xmi:type="uml:Message" xmi:id="_JwydEFzKEeyXZOuflJ6RTA" name="Movement Authorization" messageSort="asynchCall" receiveEvent="_JwzEIVzKEeyXZOuflJ6RTA" sendEvent="_JwzEIFzKEeyXZOuflJ6RTA"/>
+      <message xmi:type="uml:Message" xmi:id="_VaxX8FzKEeyXZOuflJ6RTA" name="Movement Authorization on a Balise group list" messageSort="asynchCall" receiveEvent="_VaymEVzKEeyXZOuflJ6RTA" sendEvent="_VaymEFzKEeyXZOuflJ6RTA"/>
+      <message xmi:type="uml:Message" xmi:id="_XHFIwFzKEeyXZOuflJ6RTA" name="Movement Authorization" messageSort="asynchCall" receiveEvent="_XHFv0VzKEeyXZOuflJ6RTA" sendEvent="_XHFv0FzKEeyXZOuflJ6RTA"/>
+      <message xmi:type="uml:Message" xmi:id="_bLDUgFzKEeyXZOuflJ6RTA" name="setTrackAreaUnknown" messageSort="asynchCall" receiveEvent="_bLEioFzKEeyXZOuflJ6RTA" sendEvent="_bLD7kFzKEeyXZOuflJ6RTA"/>
+      <message xmi:type="uml:Message" xmi:id="_lV0fYFzKEeyXZOuflJ6RTA" name="save CRE" messageSort="asynchCall" receiveEvent="_lV1GcFzKEeyXZOuflJ6RTA" sendEvent="_lV0fYVzKEeyXZOuflJ6RTA"/>
+      <message xmi:type="uml:Message" xmi:id="_oJJioFzKEeyXZOuflJ6RTA" name="Movement Authorization" messageSort="asynchCall" receiveEvent="_oJKJsVzKEeyXZOuflJ6RTA" sendEvent="_oJKJsFzKEeyXZOuflJ6RTA"/>
     </ownedBehavior>
   </packagedElement>
-  <profileApplication xmi:id="_rjlrIDjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:id="_rjlrITjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rjlrIDjZEeyQeMlHlxk6EA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjlrITjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
     </eAnnotations>
-    <eAnnotations xmi:id="_rjmSMDjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjmSMDjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
   </profileApplication>
-  <profileApplication xmi:id="_rjmSMTjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:id="_rjmSMjjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rjmSMTjZEeyQeMlHlxk6EA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjmSMjjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
     </eAnnotations>
-    <eAnnotations xmi:id="_rjmSMzjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjmSMzjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
   </profileApplication>
-  <profileApplication xmi:id="_rjm5QDjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:id="_rjm5QTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rjm5QDjZEeyQeMlHlxk6EA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjm5QTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
     </eAnnotations>
-    <eAnnotations xmi:id="_rjm5QjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjm5QjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
   </profileApplication>
-  <profileApplication xmi:id="_rjm5QzjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:id="_rjm5RDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rjm5QzjZEeyQeMlHlxk6EA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjm5RDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
     </eAnnotations>
-    <eAnnotations xmi:id="_rjm5RTjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjm5RTjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
   </profileApplication>
-  <profileApplication xmi:id="_rjngUDjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:id="_rjngUTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rjngUDjZEeyQeMlHlxk6EA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjngUTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
     </eAnnotations>
-    <eAnnotations xmi:id="_rjngUjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjngUjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
   </profileApplication>
-  <profileApplication xmi:id="_rjngUzjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:id="_rjngVDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rjngUzjZEeyQeMlHlxk6EA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjngVDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
     </eAnnotations>
-    <eAnnotations xmi:id="_rjngVTjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjngVTjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
   </profileApplication>
-  <profileApplication xmi:id="_rjngVjjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:id="_rjngVzjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rjngVjjZEeyQeMlHlxk6EA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjngVzjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
     </eAnnotations>
-    <eAnnotations xmi:id="_rjngWDjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjngWDjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
   </profileApplication>
-  <profileApplication xmi:id="_rjoHYDjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:id="_rjoHYTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rjoHYDjZEeyQeMlHlxk6EA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjoHYTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
     </eAnnotations>
-    <eAnnotations xmi:id="_rjoHYjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjoHYjjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
   </profileApplication>
-  <profileApplication xmi:id="_rjoHYzjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:id="_rjoHZDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rjoHYzjZEeyQeMlHlxk6EA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjoHZDjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
     </eAnnotations>
-    <eAnnotations xmi:id="_rjoHZTjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjoHZTjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
   </profileApplication>
-  <profileApplication xmi:id="_rjoHZjjZEeyQeMlHlxk6EA">
-    <eAnnotations xmi:id="_rjoHZzjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_rjoHZjjZEeyQeMlHlxk6EA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjoHZzjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
     </eAnnotations>
-    <eAnnotations xmi:id="_rjoHaDjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
-    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rjoHaDjZEeyQeMlHlxk6EA" source="duplicatedProfile"/>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
   </profileApplication>
 </uml:Package>
