@@ -67,7 +67,7 @@ Movingrail D1.1</body>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_VMLqsHUmEeyc962K-4AASw" name="Verify Rear Train Occupancy"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_wjn1kHUpEeyc962K-4AASw" name="TTD_STATUS(TTD(MaxSRE(Train)))==OCCUPIED" kind="choice"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_x1d38HUpEeyc962K-4AASw" name="TTD_STATUS(TDD(MinSRE(Train)))==FREE" kind="choice"/>
-          <subvertex xmi:type="uml:State" xmi:id="_zXAjMHUpEeyc962K-4AASw" name="send(Track_Status_Management, Delete(Track_Status( TTD(MinSRE(Train) ), train) ) )"/>
+          <subvertex xmi:type="uml:State" xmi:id="_zXAjMHUpEeyc962K-4AASw" name="send(Track_Status_Management, Clear(Track_Status( TTD(MinSRE(Train) ), train) ) )"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_mmKRcHUqEeyc962K-4AASw" name="Track Area length >= train length" kind="choice"/>
         </region>
         <region xmi:type="uml:Region" xmi:id="_HiXR8HUZEeyO5v1ny_QVKg" name="Region2">
@@ -101,7 +101,7 @@ Movingrail D1.1</body>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_U7DU4HUaEeyO5v1ny_QVKg" name="TTD_STATUS(TTD(MaxSFE(Train)))==CLEAR" kind="choice"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_41-EEHUaEeyO5v1ny_QVKg" name="TTD_STATUS(TDD(MinSFE(Train)))==OCCUPIED" kind="choice"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_lyJ_cHUbEeyO5v1ny_QVKg" name="Verify Front Train Occupancy"/>
-          <subvertex xmi:type="uml:State" xmi:id="_z-SuAHUbEeyO5v1ny_QVKg" name="send(Track_Status_Management, Delete(Track_Status( TTD(MaxSFE(Train) ), train) ) )"/>
+          <subvertex xmi:type="uml:State" xmi:id="_z-SuAHUbEeyO5v1ny_QVKg" name="send(Track_Status_Management, Clear(Track_Status( TTD(MaxSFE(Train) ), train) ) )"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_C1ts4HUqEeyc962K-4AASw" name="Track Area length >= train length" kind="choice"/>
         </region>
       </subvertex>
