@@ -31,6 +31,7 @@ Movingrail D1.1</body>
       <transition xmi:type="uml:Transition" xmi:id="_x6i2YHSTEey70MNaFQKawQ" source="_ozKbIHSTEey70MNaFQKawQ" target="_FnNgMHSSEey70MNaFQKawQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_-cFEUHSTEey70MNaFQKawQ" name="SoM / Start (TTD_Management Timer)" source="_7zkFIFLBEeyODuBwckM_-w" target="_ozKbIHSTEey70MNaFQKawQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_guANsHSaEey70MNaFQKawQ" name="TTD_Management_Timer = DEFINED_VALUE" source="_2YzxcHSTEey70MNaFQKawQ" target="_5uQQYFK_EeyODuBwckM_-w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_o6nu8HVMEeyEscYo_klkzA" source="_ozKbIHSTEey70MNaFQKawQ" target="_hCXZQHVMEeyEscYo_klkzA"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_i9CiYFK_EeyODuBwckM_-w"/>
       <subvertex xmi:type="uml:State" xmi:id="_vs8jgFK_EeyODuBwckM_-w" name="Receive Report">
         <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_ozKbIHSTEey70MNaFQKawQ" kind="entryPoint"/>
@@ -42,6 +43,9 @@ Movingrail D1.1</body>
         <region xmi:type="uml:Region" xmi:id="_6PlgoHSREey70MNaFQKawQ" name="Region2">
           <transition xmi:type="uml:Transition" xmi:id="_Lt_XkHSaEey70MNaFQKawQ" name="TTDR_receipt (TTDR) / update (TTDR, timestamp, TTD_SATATUS)" source="_FnNgMHSSEey70MNaFQKawQ" target="_FnNgMHSSEey70MNaFQKawQ"/>
           <subvertex xmi:type="uml:State" xmi:id="_FnNgMHSSEey70MNaFQKawQ" name="Wait Trackside Train Detection Report"/>
+        </region>
+        <region xmi:type="uml:Region" xmi:id="_E5gRIHVMEeyEscYo_klkzA" name="Region5">
+          <subvertex xmi:type="uml:State" xmi:id="_hCXZQHVMEeyEscYo_klkzA" name="Monitor presence trains"/>
         </region>
       </subvertex>
       <subvertex xmi:type="uml:State" xmi:id="_5uQQYFK_EeyODuBwckM_-w" name="Synchronisation between TTD occupancy and TPR for each train">
@@ -71,6 +75,9 @@ Movingrail D1.1</body>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_mmKRcHUqEeyc962K-4AASw" name="Track Area length >= train length" kind="choice"/>
         </region>
         <region xmi:type="uml:Region" xmi:id="_HiXR8HUZEeyO5v1ny_QVKg" name="Region2">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_nAxmgHVOEeyEscYo_klkzA">
+            <body>Add Synch_TTD_TrainTPR TO TRAIN</body>
+          </ownedComment>
           <transition xmi:type="uml:Transition" xmi:id="_cXDW8HUbEeyO5v1ny_QVKg" guard="_joY2kHUbEeyO5v1ny_QVKg" source="_U7DU4HUaEeyO5v1ny_QVKg" target="_41-EEHUaEeyO5v1ny_QVKg">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_joY2kHUbEeyO5v1ny_QVKg">
               <specification xmi:type="uml:LiteralBoolean" xmi:id="_joY2kXUbEeyO5v1ny_QVKg" value="true"/>
@@ -83,7 +90,7 @@ Movingrail D1.1</body>
             </ownedRule>
           </transition>
           <transition xmi:type="uml:Transition" xmi:id="_lXlt4HUcEeyO5v1ny_QVKg" name=" next_train(train)" source="_z-SuAHUbEeyO5v1ny_QVKg" target="_U7DU4HUaEeyO5v1ny_QVKg"/>
-          <transition xmi:type="uml:Transition" xmi:id="_lpye4HUhEeyO5v1ny_QVKg" name="train ++" guard="_SHFe0HUiEeyO5v1ny_QVKg" source="_U7DU4HUaEeyO5v1ny_QVKg" target="_U7DU4HUaEeyO5v1ny_QVKg">
+          <transition xmi:type="uml:Transition" xmi:id="_lpye4HUhEeyO5v1ny_QVKg" name="train ++" guard="_SHFe0HUiEeyO5v1ny_QVKg" source="_U7DU4HUaEeyO5v1ny_QVKg" target="_lyJ_cHUbEeyO5v1ny_QVKg">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_SHFe0HUiEeyO5v1ny_QVKg">
               <specification xmi:type="uml:LiteralBoolean" xmi:id="_SHFe0XUiEeyO5v1ny_QVKg"/>
             </ownedRule>
@@ -103,6 +110,7 @@ Movingrail D1.1</body>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_lyJ_cHUbEeyO5v1ny_QVKg" name="Verify Front Train Occupancy"/>
           <subvertex xmi:type="uml:State" xmi:id="_z-SuAHUbEeyO5v1ny_QVKg" name="send(Track_Status_Management, Clear(Track_Status( TTD(MaxSFE(Train) ), train) ) )"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_C1ts4HUqEeyc962K-4AASw" name="Track Area length >= train length" kind="choice"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ZNWaQHVLEeyEscYo_klkzA" name="State13"/>
         </region>
       </subvertex>
       <subvertex xmi:type="uml:State" xmi:id="_7zkFIFLBEeyODuBwckM_-w" name="Idle"/>
