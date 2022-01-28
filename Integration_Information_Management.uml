@@ -1,80 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_jD9zcDjZEeyQeMlHlxk6EA" name="Integrity Information Management" classifierBehavior="_k_KCUEIwEey5-bfWf6TPtQ">
-  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MoeL4DjbEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
+<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_jD9zcDjZEeyQeMlHlxk6EA" name="Integrity Information Management" classifierBehavior="_k_KCUEIwEey5-bfWf6TPtQ">
+  <eAnnotations xmi:id="_MoeL4DjbEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_fF5jUBI1EeyVOZB09kZL2w"/>
   </eAnnotations>
-  <ownedRule xmi:type="uml:Constraint" xmi:id="_fd5AIFKtEeyODuBwckM_-w" name="[1]">
+  <ownedRule xmi:id="_fd5AIFKtEeyODuBwckM_-w" name="[1]">
     <specification xmi:type="uml:LiteralString" xmi:id="_9IPJIFKtEeyODuBwckM_-w" name="[1]" value="No valid Train data is available"/>
   </ownedRule>
-  <ownedRule xmi:type="uml:Constraint" xmi:id="_bsJacFQ6EeyUCrs15sTmBw" name="[2]">
+  <ownedRule xmi:id="_bsJacFQ6EeyUCrs15sTmBw" name="[2]">
     <specification xmi:type="uml:LiteralString" xmi:id="_hFe2oFQ6EeyUCrs15sTmBw" name="[2]" value="(Train is at standstill) AND (valid Train Data is available and has been acknowledged by the RBC) AND (the train integrity is confirmed by the driver) "/>
   </ownedRule>
-  <ownedRule xmi:type="uml:Constraint" xmi:id="_5pmCkFKuEeyODuBwckM_-w" name="[3]">
+  <ownedRule xmi:id="_5pmCkFKuEeyODuBwckM_-w" name="[3]">
     <specification xmi:type="uml:LiteralString" xmi:id="_AMB00FKvEeyODuBwckM_-w" name="[3]" value="(The information &quot;Train integrity confirmed&quot; is received from an external device) AND (valid Train Data is available and has been acknowledged by the RBC) AND (Train Data regarding train length has not changed since the time the train was last known to be integer) AND (the train position is valid and is referred to an LRBG) AND (the train position was valid and was referred to an LRBG at the time the train was last known to be integer) AND (no reverse movement is currently performed nor has been performed since the time the train was last known to be integer) AND (the distance between the min safe rear end at the time the train was last known to be integer and the current estimated train position does not exceed the range of the safe train length information)"/>
   </ownedRule>
-  <ownedRule xmi:type="uml:Constraint" xmi:id="_PxrTAFK6EeyODuBwckM_-w" name="[4]">
+  <ownedRule xmi:id="_PxrTAFK6EeyODuBwckM_-w" name="[4]">
     <specification xmi:type="uml:LiteralString" xmi:id="_XpLawFK6EeyODuBwckM_-w" name="[4]" value="(The information &quot;Train integrity lost&quot; is received from an external device) AND (valid Train Data is available since the time the train integrity was last known to be lost) "/>
   </ownedRule>
-  <ownedRule xmi:type="uml:Constraint" xmi:id="_fkbaEFK6EeyODuBwckM_-w" name="[5]">
+  <ownedRule xmi:id="_fkbaEFK6EeyODuBwckM_-w" name="[5]">
     <specification xmi:type="uml:LiteralString" xmi:id="_n7S-YFK6EeyODuBwckM_-w" name="[5]" value="A position report indicating that the train integrity is confirmed is sent to the RBC"/>
   </ownedRule>
-  <ownedRule xmi:type="uml:Constraint" xmi:id="_pQczcFK6EeyODuBwckM_-w" name="[6]">
+  <ownedRule xmi:id="_pQczcFK6EeyODuBwckM_-w" name="[6]">
     <specification xmi:type="uml:LiteralString" xmi:id="_03S6wFK6EeyODuBwckM_-w" name="[6]" value="The information &quot;Train integrity status unknown&quot; is received from an external device "/>
   </ownedRule>
-  <ownedRule xmi:type="uml:Constraint" xmi:id="_qS35wFK6EeyODuBwckM_-w" name="[7]">
+  <ownedRule xmi:id="_qS35wFK6EeyODuBwckM_-w" name="[7]">
     <specification xmi:type="uml:LiteralString" xmi:id="_7Ci8EFK6EeyODuBwckM_-w" name="[7]" value="Train Data regarding train length is changed"/>
   </ownedRule>
-  <ownedRule xmi:type="uml:Constraint" xmi:id="__pHekFK6EeyODuBwckM_-w" name="[8]">
+  <ownedRule xmi:id="__pHekFK6EeyODuBwckM_-w" name="[8]">
     <specification xmi:type="uml:LiteralString" xmi:id="_FEgwQFK7EeyODuBwckM_-w" name="[8]" value="A reverse movement is performed"/>
   </ownedRule>
-  <ownedRule xmi:type="uml:Constraint" xmi:id="_JeUpIFK7EeyODuBwckM_-w" name="[9]">
+  <ownedRule xmi:id="_JeUpIFK7EeyODuBwckM_-w" name="[9]">
     <specification xmi:type="uml:LiteralString" xmi:id="_OMtq4FK7EeyODuBwckM_-w" name="[9]" value="The distance between the min safe rear end at the time the train was last known to be integer and the current estimated train position exceeds the range of the safe train length information"/>
   </ownedRule>
-  <ownedRule xmi:type="uml:Constraint" xmi:id="_pjryAFQ6EeyUCrs15sTmBw" name="NoIntegrity_to_DriverConfirmed">
+  <ownedRule xmi:id="_pjryAFQ6EeyUCrs15sTmBw" name="NoIntegrity_to_DriverConfirmed">
     <specification xmi:type="uml:OpaqueExpression" xmi:id="_pjtAIFQ6EeyUCrs15sTmBw" name="constraintSpec">
       <language>OCL</language>
       <body>true</body>
     </specification>
   </ownedRule>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_k_KCUEIwEey5-bfWf6TPtQ" name="TIM_SM">
-    <ownedComment xmi:type="uml:Comment" xmi:id="_hUriYEI1Eey5-bfWf6TPtQ" annotatedElement="_k_KCUEIwEey5-bfWf6TPtQ">
+    <ownedComment xmi:id="_hUriYEI1Eey5-bfWf6TPtQ" annotatedElement="_k_KCUEIwEey5-bfWf6TPtQ">
       <body>see  X2R2, D4.1, page 54</body>
     </ownedComment>
-    <region xmi:type="uml:Region" xmi:id="_nZsyIEIwEey5-bfWf6TPtQ" name="Region1">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_7yDUkEiBEeyBhenFSEKB3w">
+    <region xmi:id="_nZsyIEIwEey5-bfWf6TPtQ" name="Region1">
+      <ownedComment xmi:id="_7yDUkEiBEeyBhenFSEKB3w">
         <body>ERA_CR940_160420, Table YY Transition conditions , page 3,4 &#xD;
 order priority: Subset 26-4-p 44 -> p1 higher priority than p2&#xD;
 X2R2 D4.1 page 56: Train Integrity refresh period</body>
       </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_cZJYkFK0EeyODuBwckM_-w">
+      <ownedComment xmi:id="_cZJYkFK0EeyODuBwckM_-w">
         <body>see X2R2 D4.1 P276</body>
       </ownedComment>
-      <transition xmi:type="uml:Transition" xmi:id="_x0azUEhsEeyBhenFSEKB3w" name="after [Train Integrity Refresh Period] send Integrity status, reset timer" source="_dwvaMEI4Eey5-bfWf6TPtQ" target="_ho9RUEhsEeyBhenFSEKB3w"/>
-      <transition xmi:type="uml:Transition" xmi:id="_7wdlsEhsEeyBhenFSEKB3w" name="SoM" source="_woKFwEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_0_uFIEiBEeyBhenFSEKB3w" name="EoM" source="_dwvaMEI4Eey5-bfWf6TPtQ" target="_5Hle8EhsEeyBhenFSEKB3w"/>
+      <transition xmi:id="_x0azUEhsEeyBhenFSEKB3w" name="after [Train Integrity Refresh Period] send Integrity status, reset timer" source="_dwvaMEI4Eey5-bfWf6TPtQ" target="_ho9RUEhsEeyBhenFSEKB3w"/>
+      <transition xmi:id="_7wdlsEhsEeyBhenFSEKB3w" name="SoM" source="_woKFwEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
+      <transition xmi:id="_0_uFIEiBEeyBhenFSEKB3w" name="EoM" source="_dwvaMEI4Eey5-bfWf6TPtQ" target="_5Hle8EhsEeyBhenFSEKB3w"/>
       <subvertex xmi:type="uml:State" xmi:id="_dwvaMEI4Eey5-bfWf6TPtQ" name="Train integrity status information management">
-        <region xmi:type="uml:Region" xmi:id="_L69ZgEI6Eey5-bfWf6TPtQ" name="Region1">
-          <transition xmi:type="uml:Transition" xmi:id="_mLtUsEh1EeyBhenFSEKB3w" name="Lost_to_TIMSConfirmed" source="_1HmskEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w"/>
-          <transition xmi:type="uml:Transition" xmi:id="_8A6GYEh1EeyBhenFSEKB3w" name="TIMSConfirmed_to_Lost" source="_FLH6kEhzEeyBhenFSEKB3w" target="_1HmskEIwEey5-bfWf6TPtQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_iO4jsEh-EeyBhenFSEKB3w" name="TIMSConfirmed_to_DriverConfirmed" source="_FLH6kEhzEeyBhenFSEKB3w" target="_xJppQEIwEey5-bfWf6TPtQ">
-            <ownedRule xmi:type="uml:Constraint" xmi:id="_5nKgAFK2EeyODuBwckM_-w" name="[2]">
+        <region xmi:id="_L69ZgEI6Eey5-bfWf6TPtQ" name="Region1">
+          <transition xmi:id="_mLtUsEh1EeyBhenFSEKB3w" name="Lost_to_TIMSConfirmed" source="_1HmskEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w"/>
+          <transition xmi:id="_8A6GYEh1EeyBhenFSEKB3w" name="TIMSConfirmed_to_Lost" source="_FLH6kEhzEeyBhenFSEKB3w" target="_1HmskEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:id="_iO4jsEh-EeyBhenFSEKB3w" name="TIMSConfirmed_to_DriverConfirmed" source="_FLH6kEhzEeyBhenFSEKB3w" target="_xJppQEIwEey5-bfWf6TPtQ">
+            <ownedRule xmi:id="_5nKgAFK2EeyODuBwckM_-w" name="[2]">
               <specification xmi:type="uml:LiteralString" xmi:id="_BncJQFK3EeyODuBwckM_-w" name="[2]" value="(Train is at standstill) AND (valid Train Data is available and has been acknowledged by the RBC) AND (the train integrity is confirmed by the driver) "/>
             </ownedRule>
           </transition>
-          <transition xmi:type="uml:Transition" xmi:id="_s452YEh-EeyBhenFSEKB3w" name="Lost_To_DriverConfirmed" source="_1HmskEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_wV0pMEh-EeyBhenFSEKB3w" name="TIMSConfirmed_to_NoIntegrity" source="_FLH6kEhzEeyBhenFSEKB3w" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_zSa9MEh-EeyBhenFSEKB3w" name="DriverConfirmed_To_NoIntegrity" source="_xJppQEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_0ErWkFKwEeyODuBwckM_-w" name="NoIntegrity_to_TIMSConfirmed" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w"/>
-          <transition xmi:type="uml:Transition" xmi:id="_3Q6pEFKwEeyODuBwckM_-w" name="NoIntegrity_to_DriverConfirmed" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ">
-            <ownedRule xmi:type="uml:Constraint" xmi:id="_FJJ4UFK-EeyODuBwckM_-w" name="[2]">
+          <transition xmi:id="_s452YEh-EeyBhenFSEKB3w" name="Lost_To_DriverConfirmed" source="_1HmskEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:id="_wV0pMEh-EeyBhenFSEKB3w" name="TIMSConfirmed_to_NoIntegrity" source="_FLH6kEhzEeyBhenFSEKB3w" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:id="_zSa9MEh-EeyBhenFSEKB3w" name="DriverConfirmed_To_NoIntegrity" source="_xJppQEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:id="_0ErWkFKwEeyODuBwckM_-w" name="NoIntegrity_to_TIMSConfirmed" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w"/>
+          <transition xmi:id="_3Q6pEFKwEeyODuBwckM_-w" name="NoIntegrity_to_DriverConfirmed" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ">
+            <ownedRule xmi:id="_FJJ4UFK-EeyODuBwckM_-w" name="[2]">
               <specification xmi:type="uml:LiteralString" xmi:id="_FJJ4UVK-EeyODuBwckM_-w" value="[2]"/>
             </ownedRule>
           </transition>
-          <transition xmi:type="uml:Transition" xmi:id="_7CUBoFKxEeyODuBwckM_-w" name="NoIntegrity_to_Lost" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_1HmskEIwEey5-bfWf6TPtQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_6rfAkFKyEeyODuBwckM_-w" name="Lost_to_NoIntegrity" source="_1HmskEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:id="_7CUBoFKxEeyODuBwckM_-w" name="NoIntegrity_to_Lost" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_1HmskEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:id="_6rfAkFKyEeyODuBwckM_-w" name="Lost_to_NoIntegrity" source="_1HmskEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
           <subvertex xmi:type="uml:State" xmi:id="_1HmskEIwEey5-bfWf6TPtQ" name="Train Integrity Lost"/>
           <subvertex xmi:type="uml:State" xmi:id="_7FdLEEIwEey5-bfWf6TPtQ" name="No train integrity information">
-            <ownedComment xmi:type="uml:Comment" xmi:id="_dw-LEEI1Eey5-bfWf6TPtQ" annotatedElement="_7FdLEEIwEey5-bfWf6TPtQ">
+            <ownedComment xmi:id="_dw-LEEI1Eey5-bfWf6TPtQ" annotatedElement="_7FdLEEIwEey5-bfWf6TPtQ">
               <body></body>
             </ownedComment>
           </subvertex>

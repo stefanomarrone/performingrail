@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_DwLp0BRuEeyQN9odROAPWw" name="Manage Temporary Speed Restrictions">
-  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cx2G0CwwEey2avjLWh7Mbg" source="http://www.eclipse.org/papyrus/2016/resource/shard">
+<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_DwLp0BRuEeyQN9odROAPWw" name="Manage Temporary Speed Restrictions">
+  <eAnnotations xmi:id="_cx2G0CwwEey2avjLWh7Mbg" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
   </eAnnotations>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_22yS8FOOEeyTQoKzZjpjIQ" name="StateMachine3">
-    <region xmi:type="uml:Region" xmi:id="_3YOMEFOOEeyTQoKzZjpjIQ" name="Region1">
-      <ownedComment xmi:type="uml:Comment" xmi:id="__wCpkEiAEeyRbplaRb-Ecw">
+    <region xmi:id="_3YOMEFOOEeyTQoKzZjpjIQ" name="Region1">
+      <ownedComment xmi:id="__wCpkEiAEeyRbplaRb-Ecw">
         <body>from X2R2</body>
       </ownedComment>
-      <transition xmi:type="uml:Transition" xmi:id="_X6_AEEiAEeyRbplaRb-Ecw" source="_KY5UEEiAEeyRbplaRb-Ecw" target="_LY2VMEiAEeyRbplaRb-Ecw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_YhPHwEiAEeyRbplaRb-Ecw" source="_LY2VMEiAEeyRbplaRb-Ecw" target="_N4yiYEiAEeyRbplaRb-Ecw">
-        <trigger xmi:type="uml:Trigger" xmi:id="_j8YVYEiAEeyRbplaRb-Ecw" name="Establish a TSR"/>
+      <transition xmi:id="_X6_AEEiAEeyRbplaRb-Ecw" source="_KY5UEEiAEeyRbplaRb-Ecw" target="_LY2VMEiAEeyRbplaRb-Ecw"/>
+      <transition xmi:id="_YhPHwEiAEeyRbplaRb-Ecw" source="_LY2VMEiAEeyRbplaRb-Ecw" target="_N4yiYEiAEeyRbplaRb-Ecw">
+        <trigger xmi:id="_j8YVYEiAEeyRbplaRb-Ecw" name="Establish a TSR"/>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_Y7bJYEiAEeyRbplaRb-Ecw" source="_N4yiYEiAEeyRbplaRb-Ecw" target="_RmtloEiAEeyRbplaRb-Ecw">
-        <trigger xmi:type="uml:Trigger" xmi:id="_mEJ6MEiAEeyRbplaRb-Ecw" name="Activate a TSR"/>
+      <transition xmi:id="_Y7bJYEiAEeyRbplaRb-Ecw" source="_N4yiYEiAEeyRbplaRb-Ecw" target="_RmtloEiAEeyRbplaRb-Ecw">
+        <trigger xmi:id="_mEJ6MEiAEeyRbplaRb-Ecw" name="Activate a TSR"/>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_ZeahsEiAEeyRbplaRb-Ecw" source="_RmtloEiAEeyRbplaRb-Ecw" target="_UcguEEiAEeyRbplaRb-Ecw">
-        <trigger xmi:type="uml:Trigger" xmi:id="_oA8XAEiAEeyRbplaRb-Ecw" name="Deactivate a TSR"/>
+      <transition xmi:id="_ZeahsEiAEeyRbplaRb-Ecw" source="_RmtloEiAEeyRbplaRb-Ecw" target="_UcguEEiAEeyRbplaRb-Ecw">
+        <trigger xmi:id="_oA8XAEiAEeyRbplaRb-Ecw" name="Deactivate a TSR"/>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_Z3PRYEiAEeyRbplaRb-Ecw" source="_UcguEEiAEeyRbplaRb-Ecw" target="_bRsdMEiAEeyRbplaRb-Ecw">
-        <trigger xmi:type="uml:Trigger" xmi:id="_pth0oEiAEeyRbplaRb-Ecw" name="Remove a TSR"/>
+      <transition xmi:id="_Z3PRYEiAEeyRbplaRb-Ecw" source="_UcguEEiAEeyRbplaRb-Ecw" target="_bRsdMEiAEeyRbplaRb-Ecw">
+        <trigger xmi:id="_pth0oEiAEeyRbplaRb-Ecw" name="Remove a TSR"/>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_dL11sEiAEeyRbplaRb-Ecw" source="_bRsdMEiAEeyRbplaRb-Ecw" target="_LY2VMEiAEeyRbplaRb-Ecw">
-        <trigger xmi:type="uml:Trigger" xmi:id="_rlHBUEiAEeyRbplaRb-Ecw" name="Purge a TSR"/>
+      <transition xmi:id="_dL11sEiAEeyRbplaRb-Ecw" source="_bRsdMEiAEeyRbplaRb-Ecw" target="_LY2VMEiAEeyRbplaRb-Ecw">
+        <trigger xmi:id="_rlHBUEiAEeyRbplaRb-Ecw" name="Purge a TSR"/>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_dktBoEiAEeyRbplaRb-Ecw" source="_bRsdMEiAEeyRbplaRb-Ecw" target="_RmtloEiAEeyRbplaRb-Ecw">
-        <trigger xmi:type="uml:Trigger" xmi:id="_-pOLcEiAEeyRbplaRb-Ecw" name="Cancel the purge of a TSR"/>
+      <transition xmi:id="_dktBoEiAEeyRbplaRb-Ecw" source="_bRsdMEiAEeyRbplaRb-Ecw" target="_RmtloEiAEeyRbplaRb-Ecw">
+        <trigger xmi:id="_-pOLcEiAEeyRbplaRb-Ecw" name="Cancel the purge of a TSR"/>
       </transition>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_KY5UEEiAEeyRbplaRb-Ecw" name="initial"/>
       <subvertex xmi:type="uml:State" xmi:id="_LY2VMEiAEeyRbplaRb-Ecw" name="idle"/>
