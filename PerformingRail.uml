@@ -202,6 +202,15 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_Vw4esE7QEeyTe5jLSF3Q6g" name="train driver"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_4FFn8IAWEeyQU45H8VK-zg" memberEnd="_4FJSUIAWEeyQU45H8VK-zg _4FJ5YIAWEeyQU45H8VK-zg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4FIrQIAWEeyQU45H8VK-zg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4FIrQYAWEeyQU45H8VK-zg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_4FJSUIAWEeyQU45H8VK-zg" name="trackside initialisation" association="_4FFn8IAWEeyQU45H8VK-zg">
+          <type xmi:type="uml:UseCase" href="Trackside_Initialization.uml#_HAqVYBRpEeyQN9odROAPWw"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_4FJ5YIAWEeyQU45H8VK-zg" name="infrastructure manager" type="_8YVhsHzoEeyMX6xfbLFcdw" association="_4FFn8IAWEeyQU45H8VK-zg"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JZjVABIcEeyVOZB09kZL2w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JZnmcBIcEeyVOZB09kZL2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
