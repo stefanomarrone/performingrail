@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_lQKlQDjZEeyQeMlHlxk6EA" name="Speed and Distance Supervision" classifierBehavior="_8P-6AFdkEeyqYqxAVG6cRg">
-  <eAnnotations xmi:id="_N6lUADjbEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
+<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_lQKlQDjZEeyQeMlHlxk6EA" name="Speed and Distance Supervision" classifierBehavior="_8P-6AFdkEeyqYqxAVG6cRg">
+  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N6lUADjbEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_fF5jUBI1EeyVOZB09kZL2w"/>
   </eAnnotations>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_8P-6AFdkEeyqYqxAVG6cRg" name="Speed_and_Distance_Supervision">
-    <region xmi:id="_-ZTW8FdkEeyqYqxAVG6cRg" name="Speed_and_Distance_Supervision_Update_MA_Region">
-      <ownedComment xmi:id="_GMXqoFdlEeyqYqxAVG6cRg">
+    <region xmi:type="uml:Region" xmi:id="_-ZTW8FdkEeyqYqxAVG6cRg" name="Speed_and_Distance_Supervision_Update_MA_Region">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_GMXqoFdlEeyqYqxAVG6cRg">
         <body>Based on ASTRAIL D4.3-Validation Report. &#xD;
 &#xD;
 The L3 &quot;On-board&quot; component seems to correspond to the OBU and ATO components in ASTRAIL.&#xD;
 &#xD;
 Section 3.3.4 describes how ATO (Automated Train Operations) controls the Train Speed.</body>
       </ownedComment>
-      <transition xmi:id="_Whq9wFdoEeyqYqxAVG6cRg" source="_H9rI0FdoEeyqYqxAVG6cRg" target="_6lz6YFdoEeyqYqxAVG6cRg"/>
-      <transition xmi:id="_CuLIoFdpEeyqYqxAVG6cRg" name="MA_Received(MA)" kind="local" source="_6lz6YFdoEeyqYqxAVG6cRg" target="_NJbcAFdoEeyqYqxAVG6cRg"/>
-      <transition xmi:id="_IN0BIFdpEeyqYqxAVG6cRg" name="done()" source="_NJbcAFdoEeyqYqxAVG6cRg" target="_6lz6YFdoEeyqYqxAVG6cRg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Whq9wFdoEeyqYqxAVG6cRg" source="_H9rI0FdoEeyqYqxAVG6cRg" target="_6lz6YFdoEeyqYqxAVG6cRg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_CuLIoFdpEeyqYqxAVG6cRg" name="MA_Received(MA)" kind="local" source="_6lz6YFdoEeyqYqxAVG6cRg" target="_NJbcAFdoEeyqYqxAVG6cRg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_IN0BIFdpEeyqYqxAVG6cRg" name="done()" source="_NJbcAFdoEeyqYqxAVG6cRg" target="_6lz6YFdoEeyqYqxAVG6cRg"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_H9rI0FdoEeyqYqxAVG6cRg" name="Initial_Update_MA"/>
       <subvertex xmi:type="uml:State" xmi:id="_NJbcAFdoEeyqYqxAVG6cRg" name="MA_Received">
         <entry xmi:type="uml:Activity" xmi:id="_1aynAFdoEeyqYqxAVG6cRg" name="Update_EoA(MA)"/>
       </subvertex>
       <subvertex xmi:type="uml:State" xmi:id="_6lz6YFdoEeyqYqxAVG6cRg" name="Waiting_for_next_MA"/>
     </region>
-    <region xmi:id="_9x_X8FdnEeyqYqxAVG6cRg" name="Speed_and_Distance_Supervision_Drive_Train_Region">
-      <transition xmi:id="_JDVpAFdrEeyqYqxAVG6cRg" source="_KZE0QFdoEeyqYqxAVG6cRg" target="_Nszj8FdqEeyqYqxAVG6cRg"/>
+    <region xmi:type="uml:Region" xmi:id="_9x_X8FdnEeyqYqxAVG6cRg" name="Speed_and_Distance_Supervision_Drive_Train_Region">
+      <transition xmi:type="uml:Transition" xmi:id="_JDVpAFdrEeyqYqxAVG6cRg" source="_KZE0QFdoEeyqYqxAVG6cRg" target="_Nszj8FdqEeyqYqxAVG6cRg"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_KZE0QFdoEeyqYqxAVG6cRg" name="Initial_Drive_Train"/>
       <subvertex xmi:type="uml:State" xmi:id="_Nszj8FdqEeyqYqxAVG6cRg" name="Driving_Train">
         <doActivity xmi:type="uml:Activity" xmi:id="_squNoFdqEeyqYqxAVG6cRg" name="dist_to_EoA = compute_distance_to_EoA(MA,current_location)"/>
         <entry xmi:type="uml:Activity" xmi:id="_njHaoFdqEeyqYqxAVG6cRg" name="dist_to_EoA = compute_distance_to_EoA(MA,current_location)"/>
         <exit xmi:type="uml:Activity" xmi:id="_v3tHAFdqEeyqYqxAVG6cRg" name="dist_to_EoA = 0"/>
-        <region xmi:id="_SkuVIFdqEeyqYqxAVG6cRg" name="Region1">
-          <ownedComment xmi:id="_vWLcYFdsEeyqYqxAVG6cRg" annotatedElement="_Auy1YFdqEeyqYqxAVG6cRg">
+        <region xmi:type="uml:Region" xmi:id="_SkuVIFdqEeyqYqxAVG6cRg" name="Region1">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_vWLcYFdsEeyqYqxAVG6cRg" annotatedElement="_Auy1YFdqEeyqYqxAVG6cRg">
             <body>Standing is the final&#xD;
 state, reached when the &#xD;
 mission is finished&#xD;
 (from ASTRAIL 4.3, 3.3.4)</body>
           </ownedComment>
-          <transition xmi:id="_RuolMFdrEeyqYqxAVG6cRg" source="_QIsiIFdrEeyqYqxAVG6cRg" target="_7I0EUFdpEeyqYqxAVG6cRg"/>
-          <transition xmi:id="_TWPcMFdrEeyqYqxAVG6cRg" name="[current_speed &lt; target_speed]" source="_7I0EUFdpEeyqYqxAVG6cRg" target="_9NhuEFdpEeyqYqxAVG6cRg"/>
-          <transition xmi:id="_VZE2oFdrEeyqYqxAVG6cRg" name="[current_speed >= target_speed]" source="_9NhuEFdpEeyqYqxAVG6cRg" target="_7I0EUFdpEeyqYqxAVG6cRg"/>
-          <transition xmi:id="_boJA8FdrEeyqYqxAVG6cRg" name="[dist_to_EoA &lt; dist_to_EoA * CONST_START_BRAKING]" source="_9NhuEFdpEeyqYqxAVG6cRg" target="__eqDMFdpEeyqYqxAVG6cRg"/>
-          <transition xmi:id="_rVttEFdrEeyqYqxAVG6cRg" name="[dist_to_EoA &lt; dist_to_EoA * CONST_START_BRAKING]" source="_7I0EUFdpEeyqYqxAVG6cRg" target="__eqDMFdpEeyqYqxAVG6cRg"/>
-          <transition xmi:id="_sFEGYFdrEeyqYqxAVG6cRg" name="[dist_to_EoA >= dist_to_EoA * CONST_START_BRAKING]" source="__eqDMFdpEeyqYqxAVG6cRg" target="_7I0EUFdpEeyqYqxAVG6cRg"/>
-          <transition xmi:id="_c2Kd0FdsEeyqYqxAVG6cRg" name="EoM()" source="__eqDMFdpEeyqYqxAVG6cRg" target="_Auy1YFdqEeyqYqxAVG6cRg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_RuolMFdrEeyqYqxAVG6cRg" source="_QIsiIFdrEeyqYqxAVG6cRg" target="_7I0EUFdpEeyqYqxAVG6cRg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_TWPcMFdrEeyqYqxAVG6cRg" name="[current_speed &lt; target_speed]" source="_7I0EUFdpEeyqYqxAVG6cRg" target="_9NhuEFdpEeyqYqxAVG6cRg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_VZE2oFdrEeyqYqxAVG6cRg" name="[current_speed >= target_speed]" source="_9NhuEFdpEeyqYqxAVG6cRg" target="_7I0EUFdpEeyqYqxAVG6cRg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_boJA8FdrEeyqYqxAVG6cRg" name="[dist_to_EoA &lt; dist_to_EoA * CONST_START_BRAKING]" source="_9NhuEFdpEeyqYqxAVG6cRg" target="__eqDMFdpEeyqYqxAVG6cRg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_rVttEFdrEeyqYqxAVG6cRg" name="[dist_to_EoA &lt; dist_to_EoA * CONST_START_BRAKING]" source="_7I0EUFdpEeyqYqxAVG6cRg" target="__eqDMFdpEeyqYqxAVG6cRg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_sFEGYFdrEeyqYqxAVG6cRg" name="[dist_to_EoA >= dist_to_EoA * CONST_START_BRAKING]" source="__eqDMFdpEeyqYqxAVG6cRg" target="_7I0EUFdpEeyqYqxAVG6cRg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_c2Kd0FdsEeyqYqxAVG6cRg" name="EoM()" source="__eqDMFdpEeyqYqxAVG6cRg" target="_Auy1YFdqEeyqYqxAVG6cRg"/>
           <subvertex xmi:type="uml:State" xmi:id="_7I0EUFdpEeyqYqxAVG6cRg" name="No_Acceleration"/>
           <subvertex xmi:type="uml:State" xmi:id="_9NhuEFdpEeyqYqxAVG6cRg" name="Accelerating"/>
           <subvertex xmi:type="uml:State" xmi:id="__eqDMFdpEeyqYqxAVG6cRg" name="Braking"/>
