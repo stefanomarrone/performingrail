@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Ez5woBRuEeyQN9odROAPWw" name="Reserved Status Management" classifierBehavior="_0m7qQFzQEeyXZOuflJ6RTA">
-  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_iA7ekDjYEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
+<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Ez5woBRuEeyQN9odROAPWw" name="Reserved Status Management" classifierBehavior="_0m7qQFzQEeyXZOuflJ6RTA">
+  <eAnnotations xmi:id="_iA7ekDjYEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
   </eAnnotations>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_0m7qQFzQEeyXZOuflJ6RTA" name="ReservedStatusManagement">
-    <region xmi:type="uml:Region" xmi:id="_11WlMFzQEeyXZOuflJ6RTA" name="Region1">
-      <transition xmi:type="uml:Transition" xmi:id="_gTXN8FzREeyXZOuflJ6RTA" source="_5ZjrwFzQEeyXZOuflJ6RTA" target="_dFyesFzREeyXZOuflJ6RTA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_p8lK8FzREeyXZOuflJ6RTA" name="removeArea (from TMS) /adjust MAs;" source="_dFyesFzREeyXZOuflJ6RTA" target="_ondLEFzREeyXZOuflJ6RTA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_tLORMFzREeyXZOuflJ6RTA" name="reduceArea (from TMS) /adjust MAs;" source="_dFyesFzREeyXZOuflJ6RTA" target="_dFyesFzREeyXZOuflJ6RTA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_-M0J8FzREeyXZOuflJ6RTA" name="TrainPositionReport [new Area reserved for the same train] /updateReservedArea; reportToTMS;" source="_dFyesFzREeyXZOuflJ6RTA" target="_dFyesFzREeyXZOuflJ6RTA"/>
+    <region xmi:id="_11WlMFzQEeyXZOuflJ6RTA" name="Region1">
+      <transition xmi:id="_gTXN8FzREeyXZOuflJ6RTA" source="_5ZjrwFzQEeyXZOuflJ6RTA" target="_dFyesFzREeyXZOuflJ6RTA"/>
+      <transition xmi:id="_p8lK8FzREeyXZOuflJ6RTA" name="removeArea (from TMS) /adjust MAs;" source="_dFyesFzREeyXZOuflJ6RTA" target="_ondLEFzREeyXZOuflJ6RTA"/>
+      <transition xmi:id="_tLORMFzREeyXZOuflJ6RTA" name="reduceArea (from TMS) /adjust MAs;" source="_dFyesFzREeyXZOuflJ6RTA" target="_dFyesFzREeyXZOuflJ6RTA"/>
+      <transition xmi:id="_-M0J8FzREeyXZOuflJ6RTA" name="TrainPositionReport [new Area reserved for the same train] /updateReservedArea; reportToTMS;" source="_dFyesFzREeyXZOuflJ6RTA" target="_dFyesFzREeyXZOuflJ6RTA"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_5ZjrwFzQEeyXZOuflJ6RTA" name="initial"/>
       <subvertex xmi:type="uml:State" xmi:id="_dFyesFzREeyXZOuflJ6RTA" name="ReservedArea"/>
       <subvertex xmi:type="uml:FinalState" xmi:id="_ondLEFzREeyXZOuflJ6RTA" name="final"/>
