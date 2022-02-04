@@ -35,23 +35,23 @@ Movingrail D1.1</body>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_i9CiYFK_EeyODuBwckM_-w"/>
       <subvertex xmi:type="uml:State" xmi:id="_vs8jgFK_EeyODuBwckM_-w" name="Receive Report">
         <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_ozKbIHSTEey70MNaFQKawQ" kind="entryPoint"/>
-        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_2YzxcHSTEey70MNaFQKawQ" name="ExitPoint4" kind="exitPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_2YzxcHSTEey70MNaFQKawQ" kind="exitPoint"/>
         <region xmi:type="uml:Region" xmi:id="_wgu1sHSREey70MNaFQKawQ" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_1bTDgHSXEey70MNaFQKawQ" name="TPR_receipt (TPR) / Update (TPR, timestamp)" source="_Ap21YHSSEey70MNaFQKawQ" target="_Ap21YHSSEey70MNaFQKawQ"/>
           <subvertex xmi:type="uml:State" xmi:id="_Ap21YHSSEey70MNaFQKawQ" name="Wait Train Position Report"/>
         </region>
         <region xmi:type="uml:Region" xmi:id="_6PlgoHSREey70MNaFQKawQ" name="Region2">
-          <transition xmi:type="uml:Transition" xmi:id="_Lt_XkHSaEey70MNaFQKawQ" name="TTDR_receipt (TTDR) / update (TTDR, timestamp, TTD_SATATUS)" source="_FnNgMHSSEey70MNaFQKawQ" target="_FnNgMHSSEey70MNaFQKawQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Lt_XkHSaEey70MNaFQKawQ" name="TTDR_receipt (TTDR) / update (TTDR, timestamp, TTD_STATUS)" source="_FnNgMHSSEey70MNaFQKawQ" target="_FnNgMHSSEey70MNaFQKawQ"/>
           <subvertex xmi:type="uml:State" xmi:id="_FnNgMHSSEey70MNaFQKawQ" name="Wait Trackside Train Detection Report"/>
         </region>
         <region xmi:type="uml:Region" xmi:id="_E5gRIHVMEeyEscYo_klkzA" name="Region5">
-          <subvertex xmi:type="uml:State" xmi:id="_hCXZQHVMEeyEscYo_klkzA" name="Monitor presence trains"/>
+          <subvertex xmi:type="uml:State" xmi:id="_hCXZQHVMEeyEscYo_klkzA" name="Monitor presence trains within area of control"/>
         </region>
       </subvertex>
       <subvertex xmi:type="uml:State" xmi:id="_5uQQYFK_EeyODuBwckM_-w" name="Synchronisation between TTD occupancy and TPR for each train">
-        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_tAXHAHUlEeyc962K-4AASw" name="EntryPoint3" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_tAXHAHUlEeyc962K-4AASw" kind="entryPoint"/>
         <region xmi:type="uml:Region" xmi:id="_ZLexEHSSEey70MNaFQKawQ" name="Region1">
-          <transition xmi:type="uml:Transition" xmi:id="_2EtqIHUqEeyc962K-4AASw" source="_VMLqsHUmEeyc962K-4AASw" target="_wjn1kHUpEeyc962K-4AASw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_2EtqIHUqEeyc962K-4AASw" source="_VMLqsHUmEeyc962K-4AASw" target="_OTlJkITcEeycc8_s_B-Sng"/>
           <transition xmi:type="uml:Transition" xmi:id="_6eCa0HUqEeyc962K-4AASw" guard="_I3vrUHUrEeyc962K-4AASw" source="_wjn1kHUpEeyc962K-4AASw" target="_x1d38HUpEeyc962K-4AASw">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_I3vrUHUrEeyc962K-4AASw">
               <specification xmi:type="uml:LiteralBoolean" xmi:id="_I3vrUXUrEeyc962K-4AASw" value="true"/>
@@ -67,12 +67,39 @@ Movingrail D1.1</body>
               <specification xmi:type="uml:LiteralBoolean" xmi:id="_hGdwwXU5Eeyc962K-4AASw" value="true"/>
             </ownedRule>
           </transition>
-          <transition xmi:type="uml:Transition" xmi:id="_MljG4HU4Eeyc962K-4AASw" name="train = following(train)" source="_zXAjMHUpEeyc962K-4AASw" target="_wjn1kHUpEeyc962K-4AASw"/>
-          <subvertex xmi:type="uml:Pseudostate" xmi:id="_VMLqsHUmEeyc962K-4AASw" name="Verify Rear Train Occupancy"/>
+          <transition xmi:type="uml:Transition" xmi:id="_MljG4HU4Eeyc962K-4AASw" name="check for following train" source="_zXAjMHUpEeyc962K-4AASw" target="_OTlJkITcEeycc8_s_B-Sng"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Vt1UoITcEeycc8_s_B-Sng" source="_OTlJkITcEeycc8_s_B-Sng" target="_wjn1kHUpEeyc962K-4AASw"/>
+          <transition xmi:type="uml:Transition" xmi:id="_9JjwwITfEeycc8_s_B-Sng" guard="_BML4sITgEeycc8_s_B-Sng" source="_wjn1kHUpEeyc962K-4AASw" target="_Z5XZkITfEeycc8_s_B-Sng">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_BML4sITgEeycc8_s_B-Sng">
+              <specification xmi:type="uml:LiteralBoolean" xmi:id="_BML4sYTgEeycc8_s_B-Sng"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_RefpkITgEeycc8_s_B-Sng" guard="_Up4ngITgEeycc8_s_B-Sng" source="_Z5XZkITfEeycc8_s_B-Sng" target="_r0_4sITfEeycc8_s_B-Sng">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_Up4ngITgEeycc8_s_B-Sng">
+              <specification xmi:type="uml:LiteralBoolean" xmi:id="_Up4ngYTgEeycc8_s_B-Sng"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_uJ9IcITgEeycc8_s_B-Sng" guard="_5gQ5YITgEeycc8_s_B-Sng" source="_x1d38HUpEeyc962K-4AASw" target="_OTlJkITcEeycc8_s_B-Sng">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_5gQ5YITgEeycc8_s_B-Sng">
+              <specification xmi:type="uml:LiteralBoolean" xmi:id="_5gQ5YYTgEeycc8_s_B-Sng"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_5wGtYIT6Eeycc8_s_B-Sng" source="_r0_4sITfEeycc8_s_B-Sng" target="_OTlJkITcEeycc8_s_B-Sng"/>
+          <transition xmi:type="uml:Transition" xmi:id="_JNjD0IWgEeyRBaFsEufRiA" guard="_ZikKcIWgEeyRBaFsEufRiA" source="_Z5XZkITfEeycc8_s_B-Sng" target="_Pa-r4IWfEeyRBaFsEufRiA">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_ZikKcIWgEeyRBaFsEufRiA">
+              <specification xmi:type="uml:LiteralBoolean" xmi:id="_ZikKcYWgEeyRBaFsEufRiA" value="true"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_c_ouQIWgEeyRBaFsEufRiA" source="_Pa-r4IWfEeyRBaFsEufRiA" target="_OTlJkITcEeycc8_s_B-Sng"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_VMLqsHUmEeyc962K-4AASw"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_wjn1kHUpEeyc962K-4AASw" name="TTD_STATUS(TTD(MaxSRE(Train)))==OCCUPIED" kind="choice"/>
-          <subvertex xmi:type="uml:Pseudostate" xmi:id="_x1d38HUpEeyc962K-4AASw" name="TTD_STATUS(TDD(MinSRE(Train)))==FREE" kind="choice"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_x1d38HUpEeyc962K-4AASw" name="TTD_STATUS(TDD(MinSRE(Train)))==CLEAR" kind="choice"/>
           <subvertex xmi:type="uml:State" xmi:id="_zXAjMHUpEeyc962K-4AASw" name="send(Track_Status_Management, Clear(Track_Status( TTD(MinSRE(Train) ), train) ) )"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_mmKRcHUqEeyc962K-4AASw" name="Track Area length >= train length" kind="choice"/>
+          <subvertex xmi:type="uml:State" xmi:id="_OTlJkITcEeycc8_s_B-Sng" name="Verify Rear Train Occupancy"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_Z5XZkITfEeycc8_s_B-Sng" name="TTD_STATUS(TDD(MinSRE(Train)))==OCCUPIED" kind="choice"/>
+          <subvertex xmi:type="uml:State" xmi:id="_r0_4sITfEeycc8_s_B-Sng" name="correlate TTD occupancy to TPR"/>
+          <subvertex xmi:type="uml:State" xmi:id="_Pa-r4IWfEeyRBaFsEufRiA" name="contact TMS Rear End prb"/>
         </region>
         <region xmi:type="uml:Region" xmi:id="_HiXR8HUZEeyO5v1ny_QVKg" name="Region2">
           <ownedComment xmi:type="uml:Comment" xmi:id="_nAxmgHVOEeyEscYo_klkzA">
@@ -83,21 +110,16 @@ Movingrail D1.1</body>
               <specification xmi:type="uml:LiteralBoolean" xmi:id="_joY2kXUbEeyO5v1ny_QVKg" value="true"/>
             </ownedRule>
           </transition>
-          <transition xmi:type="uml:Transition" xmi:id="_q6Rv0HUbEeyO5v1ny_QVKg" source="_lyJ_cHUbEeyO5v1ny_QVKg" target="_U7DU4HUaEeyO5v1ny_QVKg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_q6Rv0HUbEeyO5v1ny_QVKg" source="_lyJ_cHUbEeyO5v1ny_QVKg" target="_ZNWaQHVLEeyEscYo_klkzA"/>
           <transition xmi:type="uml:Transition" xmi:id="_j-yH4HUcEeyO5v1ny_QVKg" guard="_6Pr2wHUfEeyO5v1ny_QVKg" source="_41-EEHUaEeyO5v1ny_QVKg" target="_C1ts4HUqEeyc962K-4AASw">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_6Pr2wHUfEeyO5v1ny_QVKg">
               <specification xmi:type="uml:LiteralBoolean" xmi:id="_6Pr2wXUfEeyO5v1ny_QVKg" value="true"/>
             </ownedRule>
           </transition>
-          <transition xmi:type="uml:Transition" xmi:id="_lXlt4HUcEeyO5v1ny_QVKg" name=" next_train(train)" source="_z-SuAHUbEeyO5v1ny_QVKg" target="_U7DU4HUaEeyO5v1ny_QVKg"/>
-          <transition xmi:type="uml:Transition" xmi:id="_lpye4HUhEeyO5v1ny_QVKg" name="train ++" guard="_SHFe0HUiEeyO5v1ny_QVKg" source="_U7DU4HUaEeyO5v1ny_QVKg" target="_lyJ_cHUbEeyO5v1ny_QVKg">
+          <transition xmi:type="uml:Transition" xmi:id="_lXlt4HUcEeyO5v1ny_QVKg" name="check for next train" source="_z-SuAHUbEeyO5v1ny_QVKg" target="_ZNWaQHVLEeyEscYo_klkzA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_lpye4HUhEeyO5v1ny_QVKg" guard="_SHFe0HUiEeyO5v1ny_QVKg" source="_U7DU4HUaEeyO5v1ny_QVKg" target="_dy-QwITREeycc8_s_B-Sng">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_SHFe0HUiEeyO5v1ny_QVKg">
               <specification xmi:type="uml:LiteralBoolean" xmi:id="_SHFe0XUiEeyO5v1ny_QVKg"/>
-            </ownedRule>
-          </transition>
-          <transition xmi:type="uml:Transition" xmi:id="_pCPzAHUiEeyO5v1ny_QVKg" name="train = next_train(train)" guard="_tPTCQHUiEeyO5v1ny_QVKg" source="_41-EEHUaEeyO5v1ny_QVKg" target="_U7DU4HUaEeyO5v1ny_QVKg">
-            <ownedRule xmi:type="uml:Constraint" xmi:id="_tPTCQHUiEeyO5v1ny_QVKg">
-              <specification xmi:type="uml:LiteralBoolean" xmi:id="_tPTCQXUiEeyO5v1ny_QVKg"/>
             </ownedRule>
           </transition>
           <transition xmi:type="uml:Transition" xmi:id="_P_FW4HUqEeyc962K-4AASw" guard="_Va3DEHUqEeyc962K-4AASw" source="_C1ts4HUqEeyc962K-4AASw" target="_z-SuAHUbEeyO5v1ny_QVKg">
@@ -105,12 +127,33 @@ Movingrail D1.1</body>
               <specification xmi:type="uml:LiteralBoolean" xmi:id="_Va3DEXUqEeyc962K-4AASw" value="true"/>
             </ownedRule>
           </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_YGyPoIRFEeyPWpeywnpeXQ" source="_ZNWaQHVLEeyEscYo_klkzA" target="_U7DU4HUaEeyO5v1ny_QVKg"/>
+          <transition xmi:type="uml:Transition" xmi:id="_1IMOQITSEeycc8_s_B-Sng" guard="_RAN2UITZEeycc8_s_B-Sng" source="_dy-QwITREeycc8_s_B-Sng" target="_ZNWaQHVLEeyEscYo_klkzA">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_RAN2UITZEeycc8_s_B-Sng">
+              <specification xmi:type="uml:LiteralBoolean" xmi:id="_RAN2UYTZEeycc8_s_B-Sng"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_1gEpIITaEeycc8_s_B-Sng" guard="_6ukuUITaEeycc8_s_B-Sng" source="_41-EEHUaEeyO5v1ny_QVKg" target="_3MUacITYEeycc8_s_B-Sng">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_6ukuUITaEeycc8_s_B-Sng">
+              <specification xmi:type="uml:LiteralBoolean" xmi:id="_6ukuUYTaEeycc8_s_B-Sng"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="__ax-wITaEeycc8_s_B-Sng" source="_3MUacITYEeycc8_s_B-Sng" target="_ZNWaQHVLEeyEscYo_klkzA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_cr4qEIUXEey_eKw8VkXsEg" guard="_iqzfkIUXEey_eKw8VkXsEg" source="_dy-QwITREeycc8_s_B-Sng" target="_KO6_gIUXEey_eKw8VkXsEg">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_iqzfkIUXEey_eKw8VkXsEg">
+              <specification xmi:type="uml:LiteralBoolean" xmi:id="_iqzfkYUXEey_eKw8VkXsEg" value="true"/>
+            </ownedRule>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_nLfcgIUXEey_eKw8VkXsEg" source="_KO6_gIUXEey_eKw8VkXsEg" target="_ZNWaQHVLEeyEscYo_klkzA"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_U7DU4HUaEeyO5v1ny_QVKg" name="TTD_STATUS(TTD(MaxSFE(Train)))==CLEAR" kind="choice"/>
-          <subvertex xmi:type="uml:Pseudostate" xmi:id="_41-EEHUaEeyO5v1ny_QVKg" name="TTD_STATUS(TDD(MinSFE(Train)))==OCCUPIED" kind="choice"/>
-          <subvertex xmi:type="uml:Pseudostate" xmi:id="_lyJ_cHUbEeyO5v1ny_QVKg" name="Verify Front Train Occupancy"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_41-EEHUaEeyO5v1ny_QVKg" name="TTD_STATUS(TTD(MinSFE(Train)))==OCCUPIED" kind="choice"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_lyJ_cHUbEeyO5v1ny_QVKg"/>
           <subvertex xmi:type="uml:State" xmi:id="_z-SuAHUbEeyO5v1ny_QVKg" name="send(Track_Status_Management, Clear(Track_Status( TTD(MaxSFE(Train) ), train) ) )"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_C1ts4HUqEeyc962K-4AASw" name="Track Area length >= train length" kind="choice"/>
-          <subvertex xmi:type="uml:State" xmi:id="_ZNWaQHVLEeyEscYo_klkzA" name="State13"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ZNWaQHVLEeyEscYo_klkzA" name="Verify Front Train Occupancy"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_dy-QwITREeycc8_s_B-Sng" name="TTD_STATUS(TDD(MinSFE(Train)))==CLEAR" kind="choice"/>
+          <subvertex xmi:type="uml:State" xmi:id="_3MUacITYEeycc8_s_B-Sng" name="correlate TTD occupancy to TPR: delay timer"/>
+          <subvertex xmi:type="uml:State" xmi:id="_KO6_gIUXEey_eKw8VkXsEg" name="Contact TMS Front End prb "/>
         </region>
       </subvertex>
       <subvertex xmi:type="uml:State" xmi:id="_7zkFIFLBEeyODuBwckM_-w" name="Idle"/>
