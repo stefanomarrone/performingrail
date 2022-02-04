@@ -131,22 +131,44 @@
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_KmTioE6OEeyaL75nPQZQGA" name="trackside_data">
-        <packagedElement xmi:type="uml:Class" xmi:id="_QVt8gE6OEeyaL75nPQZQGA" name="TrackStatusArea">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ZzpkoE6QEeyaL75nPQZQGA" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_ErWYYE6UEeyaL75nPQZQGA" name="status" type="_YNRHkE6OEeyaL75nPQZQGA"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_7RlhcIWuEeyWqMvyxp-iUQ" name="data types">
+          <packagedElement xmi:type="uml:Enumeration" xmi:id="_YNRHkE6OEeyaL75nPQZQGA" name="AreaStatus">
+            <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bedLgE6OEeyaL75nPQZQGA" name="Occupied"/>
+            <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cyuPwE6OEeyaL75nPQZQGA" name="Unknown"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_G8Qn4E6QEeyaL75nPQZQGA" name="AreaExtent">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_PvpwIE6QEeyaL75nPQZQGA" name="start">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_TTMIUE6QEeyaL75nPQZQGA" name="end">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UdfYQE6QEeyaL75nPQZQGA" name="route"/>
+          </packagedElement>
         </packagedElement>
-        <packagedElement xmi:type="uml:Enumeration" xmi:id="_YNRHkE6OEeyaL75nPQZQGA" name="AreaStatus">
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bedLgE6OEeyaL75nPQZQGA" name="Occupied"/>
-          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cyuPwE6OEeyaL75nPQZQGA" name="Unknown"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_G8Qn4E6QEeyaL75nPQZQGA" name="AreaExtent">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_PvpwIE6QEeyaL75nPQZQGA" name="start">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_TTMIUE6QEeyaL75nPQZQGA" name="end">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_UdfYQE6QEeyaL75nPQZQGA" name="route"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="trackside_core">
+          <packagedElement xmi:type="uml:Class" xmi:id="_QVt8gE6OEeyaL75nPQZQGA" name="TrackStatusArea">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_ZzpkoE6QEeyaL75nPQZQGA" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_ErWYYE6UEeyaL75nPQZQGA" name="status" type="_YNRHkE6OEeyaL75nPQZQGA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_PMgNMIWuEeyWqMvyxp-iUQ" name="RBCProperties">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_hjjdAIWuEeyWqMvyxp-iUQ" name="nid_rbc">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_l2D0AIWuEeyWqMvyxp-iUQ" name="nid_c">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_qLlCwIWuEeyWqMvyxp-iUQ" name="srsVersion">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_tXLcEIWuEeyWqMvyxp-iUQ" name="minUserDataRate">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_vKnIkIWuEeyWqMvyxp-iUQ" name="nid_radio">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Dependency" xmi:id="_jHKIUIWvEeyWqMvyxp-iUQ" client="_H7N7cIWvEeyWqMvyxp-iUQ" supplier="_7RlhcIWuEeyWqMvyxp-iUQ"/>
         </packagedElement>
       </packagedElement>
     </packagedElement>
@@ -276,4 +298,5 @@
   <Blocks:Block xmi:id="_fF9NsBI1EeyVOZB09kZL2w" base_Class="_fF5jUBI1EeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_QV-bME6OEeyaL75nPQZQGA" base_Class="_QVt8gE6OEeyaL75nPQZQGA"/>
   <standard:Type xmi:id="_K7alEE6QEeyaL75nPQZQGA" base_Class="_G8Qn4E6QEeyaL75nPQZQGA"/>
+  <Blocks:Block xmi:id="_PM09UIWuEeyWqMvyxp-iUQ" base_Class="_PMgNMIWuEeyWqMvyxp-iUQ"/>
 </xmi:XMI>
