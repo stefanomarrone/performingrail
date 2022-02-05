@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
   <uml:Model xmi:id="_JYaFgBIcEeyVOZB09kZL2w" name="PerformingRail">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_JblVUBIcEeyVOZB09kZL2w">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -8,14 +8,18 @@
       <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
     </packageImport>
     <packagedElement xmi:type="uml:Package" xmi:id="_GDhW4BIoEeyVOZB09kZL2w" name="SystemArchitecture">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_eWhXcE7TEeyTe5jLSF3Q6g" annotatedElement="_u3-cUBIyEeyVOZB09kZL2w _zq1uYBIyEeyVOZB09kZL2w">
+        <body>bja: it would be preferable to introduce a controller class. See attached hyperlink&#xD;
+</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:Class" xmi:id="_K2rj4BIoEeyVOZB09kZL2w" name="ETCS-L3 System"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_s3WM4BIoEeyVOZB09kZL2w" name="Driver">
         <generalization xmi:type="uml:Generalization" xmi:id="_Mym5gBIyEeyVOZB09kZL2w" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_uVu2cBIoEeyVOZB09kZL2w" name="Infrastructure Manager">
-        <generalization xmi:type="uml:Generalization" xmi:id="_N-qc8BIyEeyVOZB09kZL2w" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_wEHq4BIoEeyVOZB09kZL2w" name="Dispatcher">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_yV0M4E7SEeyTe5jLSF3Q6g">
+          <body>The dispatcher organises train traffic. For the intents and purposes of the present model, this equates to the role of the signaller.</body>
+        </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_NYi4IBIyEeyVOZB09kZL2w" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_wtbtoBIoEeyVOZB09kZL2w" name="External Interfaces"/>
@@ -25,15 +29,32 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_9n0ZEBIrEeyVOZB09kZL2w" name="ETCS-L3 External Users" visibility="protected"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_M__c8BIsEeyVOZB09kZL2w" name="TMS">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_qjjuUE7OEeyTe5jLSF3Q6g">
+          <body>Traffic Management System&#xD;
+&#xD;
+EULYNX: Traffic Control System&#xD;
+https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA6/EA954.htm</body>
+        </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="__FKVQBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_u3-cUBIyEeyVOZB09kZL2w" name="Adjacent Signalling System">
         <generalization xmi:type="uml:Generalization" xmi:id="_04IgkBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_zC8n8BIyEeyVOZB09kZL2w" name="TTD">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_9l9dsE7NEeyTe5jLSF3Q6g">
+          <body>Trackside Train Detection&#xD;
+EULYNX: Train Detection Section&#xD;
+A logical section of the train detection system.&#xD;
+The section is associated with a TVP section.&#xD;
+&#xD;
+https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
+        </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_45ZWkBI1EeyVOZB09kZL2w" general="_zq1uYBIyEeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_zq1uYBIyEeyVOZB09kZL2w" name="Object Controller">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ifCPgE7UEeyTe5jLSF3Q6g">
+          <body>https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA6/EA954.htm</body>
+        </ownedComment>
         <generalization xmi:type="uml:Generalization" xmi:id="_1jMPwBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_UMMgwBIzEeyVOZB09kZL2w" name="ETCS L3">
@@ -130,46 +151,9 @@
 [ss037]</body>
         </ownedComment>
       </packagedElement>
-      <packagedElement xmi:type="uml:Package" xmi:id="_KmTioE6OEeyaL75nPQZQGA" name="trackside_data">
-        <packagedElement xmi:type="uml:Package" xmi:id="_7RlhcIWuEeyWqMvyxp-iUQ" name="data types">
-          <packagedElement xmi:type="uml:Enumeration" xmi:id="_YNRHkE6OEeyaL75nPQZQGA" name="AreaStatus">
-            <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bedLgE6OEeyaL75nPQZQGA" name="Occupied"/>
-            <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cyuPwE6OEeyaL75nPQZQGA" name="Unknown"/>
-          </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_G8Qn4E6QEeyaL75nPQZQGA" name="AreaExtent">
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_PvpwIE6QEeyaL75nPQZQGA" name="start">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_TTMIUE6QEeyaL75nPQZQGA" name="end">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_UdfYQE6QEeyaL75nPQZQGA" name="route"/>
-          </packagedElement>
-        </packagedElement>
-        <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="trackside_core">
-          <packagedElement xmi:type="uml:Class" xmi:id="_QVt8gE6OEeyaL75nPQZQGA" name="TrackStatusArea">
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_ZzpkoE6QEeyaL75nPQZQGA" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA"/>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_ErWYYE6UEeyaL75nPQZQGA" name="status" type="_YNRHkE6OEeyaL75nPQZQGA"/>
-          </packagedElement>
-          <packagedElement xmi:type="uml:Class" xmi:id="_PMgNMIWuEeyWqMvyxp-iUQ" name="RBCProperties">
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_hjjdAIWuEeyWqMvyxp-iUQ" name="nid_rbc">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_l2D0AIWuEeyWqMvyxp-iUQ" name="nid_c">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_qLlCwIWuEeyWqMvyxp-iUQ" name="srsVersion">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_tXLcEIWuEeyWqMvyxp-iUQ" name="minUserDataRate">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Property" xmi:id="_vKnIkIWuEeyWqMvyxp-iUQ" name="nid_radio">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-            </ownedAttribute>
-          </packagedElement>
-          <packagedElement xmi:type="uml:Dependency" xmi:id="_jHKIUIWvEeyWqMvyxp-iUQ" client="_H7N7cIWvEeyWqMvyxp-iUQ" supplier="_7RlhcIWuEeyWqMvyxp-iUQ"/>
-        </packagedElement>
+      <packagedElement xmi:type="uml:Package" href="trackside_data.uml#_KmTioE6OEeyaL75nPQZQGA"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_8YVhsHzoEeyMX6xfbLFcdw" name="Infrastructure Manager">
+        <generalization xmi:type="uml:Generalization" xmi:id="_BJjN8HzpEeyMX6xfbLFcdw" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_nsyrMBI2EeyVOZB09kZL2w" name="References">
@@ -187,12 +171,12 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="_xA9_cEbzEeyDdsL-2jTuug">
         <body>External Device corresponds to TIMS</body>
       </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_UhBYUEeIEeyV8I3YXCWeCQ">
-        <body>X2R3 ENG rules</body>
-      </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_hm2N8EhrEeyBhenFSEKB3w">
         <body>REQ_TrackStatus-5&#xD;
 </body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_fsh8QE3PEeyTKpdRngNeaw">
+        <body>REQ_LTI_9</body>
       </ownedComment>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_1m7M8BRpEeyQN9odROAPWw" name="Start of Mission"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_36bgoBRpEeyQN9odROAPWw" name="Level Transition"/>
@@ -213,6 +197,21 @@
       <packagedElement xmi:type="uml:Package" href="Points_Control.uml#_O_-9MDjYEeyQeMlHlxk6EA"/>
       <packagedElement xmi:type="uml:Package" href="Sweeping.uml#_Qjy5UDjYEeyQeMlHlxk6EA"/>
       <packagedElement xmi:type="uml:Package" href="LossOfCommunication.uml#_WHY2YEfOEeydXZgDYCfwSw"/>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_Rn83QE7MEeyTe5jLSF3Q6g" name="Signaller">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_gQWEAE7MEeyTe5jLSF3Q6g">
+          <body>The signaller monitors and controls train movements.</body>
+        </ownedComment>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_Vw4esE7QEeyTe5jLSF3Q6g" name="train driver"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_4FFn8IAWEeyQU45H8VK-zg" memberEnd="_4FJSUIAWEeyQU45H8VK-zg _4FJ5YIAWEeyQU45H8VK-zg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4FIrQIAWEeyQU45H8VK-zg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4FIrQYAWEeyQU45H8VK-zg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_4FJSUIAWEeyQU45H8VK-zg" name="trackside initialisation" association="_4FFn8IAWEeyQU45H8VK-zg">
+          <type xmi:type="uml:UseCase" href="Trackside_Initialization.uml#_HAqVYBRpEeyQN9odROAPWw"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_4FJ5YIAWEeyQU45H8VK-zg" name="infrastructure manager" type="_8YVhsHzoEeyMX6xfbLFcdw" association="_4FFn8IAWEeyQU45H8VK-zg"/>
+      </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JZjVABIcEeyVOZB09kZL2w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JZnmcBIcEeyVOZB09kZL2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -283,7 +282,6 @@
   </uml:Model>
   <Blocks:Block xmi:id="_K2wcYBIoEeyVOZB09kZL2w" base_Class="_K2rj4BIoEeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_s3aeUBIoEeyVOZB09kZL2w" base_Class="_s3WM4BIoEeyVOZB09kZL2w"/>
-  <Blocks:Block xmi:id="_uVyg0BIoEeyVOZB09kZL2w" base_Class="_uVu2cBIoEeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_wEKuMBIoEeyVOZB09kZL2w" base_Class="_wEHq4BIoEeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_wtew8BIoEeyVOZB09kZL2w" base_Class="_wtbtoBIoEeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_0Wh7QBIoEeyVOZB09kZL2w" base_Class="_0WffABIoEeyVOZB09kZL2w"/>
@@ -296,7 +294,5 @@
   <Blocks:Block xmi:id="_UMVDoBIzEeyVOZB09kZL2w" base_Class="_UMMgwBIzEeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_av9IsBIzEeyVOZB09kZL2w" base_Class="_av43QBIzEeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_fF9NsBI1EeyVOZB09kZL2w" base_Class="_fF5jUBI1EeyVOZB09kZL2w"/>
-  <Blocks:Block xmi:id="_QV-bME6OEeyaL75nPQZQGA" base_Class="_QVt8gE6OEeyaL75nPQZQGA"/>
-  <standard:Type xmi:id="_K7alEE6QEeyaL75nPQZQGA" base_Class="_G8Qn4E6QEeyaL75nPQZQGA"/>
-  <Blocks:Block xmi:id="_PM09UIWuEeyWqMvyxp-iUQ" base_Class="_PMgNMIWuEeyWqMvyxp-iUQ"/>
+  <Blocks:Block xmi:id="_8YsuEHzoEeyMX6xfbLFcdw" base_Class="_8YVhsHzoEeyMX6xfbLFcdw"/>
 </xmi:XMI>
