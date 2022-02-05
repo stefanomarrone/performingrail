@@ -118,6 +118,7 @@
       <subvertex xmi:type="uml:FinalState" xmi:id="_eBIr8FG1EeyXmJUbHj2PIg"/>
       <subvertex xmi:type="uml:State" xmi:id="_uglg8FG1EeyXmJUbHj2PIg" name="Point Position Locked"/>
       <subvertex xmi:type="uml:State" xmi:id="_lJ2sgFfTEeyXmJUbHj2PIg" name="Moving Point"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_N6m2kIWlEeyApfE5VoGQ4g" name="Initial20"/>
     </region>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_Wb930FJZEeyXmJUbHj2PIg" name="Points Control">
@@ -187,6 +188,138 @@ of adhesion factor&#xD;
       <subvertex xmi:type="uml:State" xmi:id="_68RfEFM1EeyXmJUbHj2PIg" name="Trackside"/>
       <subvertex xmi:type="uml:FinalState" xmi:id="_RigPoFM3EeyXmJUbHj2PIg"/>
     </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_pGlfsIWlEeyApfE5VoGQ4g" name="StateMachine29">
+    <region xmi:type="uml:Region" xmi:id="_r4F-AIWlEeyApfE5VoGQ4g" name="Region1">
+      <ownedRule xmi:type="uml:Constraint" xmi:id="_iX75kIWpEeyApfE5VoGQ4g">
+        <specification xmi:type="uml:OpaqueExpression" xmi:id="_iX-V0IWpEeyApfE5VoGQ4g" name="constraintSpec">
+          <language>OCL</language>
+          <body>Interfaces with Route section management and track status management / Release Report Status := FALSE</body>
+        </specification>
+      </ownedRule>
+      <transition xmi:type="uml:Transition" xmi:id="_msEvoIWmEeyApfE5VoGQ4g" source="_jgPs0IWmEeyApfE5VoGQ4g" target="_dk_2YIWmEeyApfE5VoGQ4g"/>
+      <transition xmi:type="uml:Transition" xmi:id="_U5gMQIWuEeyApfE5VoGQ4g" source="_dk_2YIWmEeyApfE5VoGQ4g" target="_yCOrYIWtEeyApfE5VoGQ4g"/>
+      <transition xmi:type="uml:Transition" xmi:id="_dqhV8IWuEeyApfE5VoGQ4g" source="_dk_2YIWmEeyApfE5VoGQ4g" target="_dk_2YIWmEeyApfE5VoGQ4g"/>
+      <subvertex xmi:type="uml:State" xmi:id="_dk_2YIWmEeyApfE5VoGQ4g" name="Point Position">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_dDy74IWoEeyApfE5VoGQ4g" name="contraint1"/>
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_DWVpwIWpEeyApfE5VoGQ4g" name="Constraint1">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_DWVpwYWpEeyApfE5VoGQ4g">
+            <language>C</language>
+            <body>Interface with Rounte management and Track Status Management / Release Report Status := FALSE</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_yZ85wIWrEeyApfE5VoGQ4g" name="Constraint31">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_yZ9g0IWrEeyApfE5VoGQ4g" name="constraintSpec">
+            <language>OCL</language>
+            <body>End Position deteced and Position In =End Position &#xD;
+and Track status = &quot;Clear&quot;/&#xD;
+Lock Position In := false&#xD;
+</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_36q64IWsEeyApfE5VoGQ4g" name="Constraint32">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_36rh8IWsEeyApfE5VoGQ4g" name="constraintSpec">
+            <language>OCL</language>
+            <body>[Track Status = &quot;Clear&quot; and Auth Release Point]/ &#xD;
+Lock Position := false</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_YVUYkIW-EeyApfE5VoGQ4g" name="Constraint34">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_YVU_oIW-EeyApfE5VoGQ4g" name="constraintSpec">
+            <language>OCL</language>
+            <body>not end position detected&#xD;
+</body>
+          </specification>
+        </ownedRule>
+        <region xmi:type="uml:Region" xmi:id="_XvHgwIWpEeyApfE5VoGQ4g" name="Release Point">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_AR7RAIW-EeyApfE5VoGQ4g" name="Constraint35">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_AR8fIIW-EeyApfE5VoGQ4g" name="constraintSpec">
+              <language>OCL</language>
+              <body>End Position := &quot;Left&quot;</body>
+            </specification>
+          </ownedRule>
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_kHkUEIW9EeyApfE5VoGQ4g" name="Constraint34">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_kHnXYIW9EeyApfE5VoGQ4g" name="constraintSpec">
+              <language>OCL</language>
+              <body>End Position := &quot;Right&quot;</body>
+            </specification>
+          </ownedRule>
+          <transition xmi:type="uml:Transition" xmi:id="_CwxCEIWqEeyApfE5VoGQ4g" source="_XvLLIIWpEeyApfE5VoGQ4g" target="_9GTZoIWpEeyApfE5VoGQ4g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Fw8OgIWqEeyApfE5VoGQ4g" source="_XvLLIIWpEeyApfE5VoGQ4g" target="_9xOl8IWpEeyApfE5VoGQ4g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_X6yv0IWqEeyApfE5VoGQ4g" source="_9GTZoIWpEeyApfE5VoGQ4g" target="_SBO7cIWqEeyApfE5VoGQ4g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_jHbAUIWqEeyApfE5VoGQ4g" source="_9xOl8IWpEeyApfE5VoGQ4g" target="_TU7_AIWqEeyApfE5VoGQ4g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_jC3lkIWsEeyApfE5VoGQ4g" source="_9GTZoIWpEeyApfE5VoGQ4g" target="_9xOl8IWpEeyApfE5VoGQ4g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_1OOGQIWtEeyApfE5VoGQ4g" source="_TU7_AIWqEeyApfE5VoGQ4g" target="_yCOrYIWtEeyApfE5VoGQ4g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Z4iSEIWuEeyApfE5VoGQ4g" source="_yCOrYIWtEeyApfE5VoGQ4g" target="_QXNs0IWuEeyApfE5VoGQ4g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_i60x8IWuEeyApfE5VoGQ4g" source="_QXNs0IWuEeyApfE5VoGQ4g" target="_DtzVQIWuEeyApfE5VoGQ4g"/>
+          <transition xmi:type="uml:Transition" xmi:id="_kWk-QIWuEeyApfE5VoGQ4g" source="_QXNs0IWuEeyApfE5VoGQ4g" target="_FiCTAIWuEeyApfE5VoGQ4g"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_XvLLIIWpEeyApfE5VoGQ4g" name="Initial2"/>
+          <subvertex xmi:type="uml:State" xmi:id="_9GTZoIWpEeyApfE5VoGQ4g" name="Lock Point"/>
+          <subvertex xmi:type="uml:State" xmi:id="_9xOl8IWpEeyApfE5VoGQ4g" name="Release Point"/>
+          <subvertex xmi:type="uml:State" xmi:id="_SBO7cIWqEeyApfE5VoGQ4g" name="Report Point Locked "/>
+          <subvertex xmi:type="uml:State" xmi:id="_TU7_AIWqEeyApfE5VoGQ4g" name="Report Point Released"/>
+          <subvertex xmi:type="uml:State" xmi:id="_sbm2kIWsEeyApfE5VoGQ4g" name="State1Request Track Status"/>
+          <subvertex xmi:type="uml:State" xmi:id="_yGze0IWsEeyApfE5VoGQ4g" name="Request Route Section Authorization"/>
+          <subvertex xmi:type="uml:State" xmi:id="_yCOrYIWtEeyApfE5VoGQ4g" name="End Position">
+            <region xmi:type="uml:Region" xmi:id="_AbwVsIWuEeyApfE5VoGQ4g" name="Region1">
+              <transition xmi:type="uml:Transition" xmi:id="_MlNa0IWuEeyApfE5VoGQ4g" source="_Abxj0IWuEeyApfE5VoGQ4g" target="_DtzVQIWuEeyApfE5VoGQ4g"/>
+              <transition xmi:type="uml:Transition" xmi:id="_N6_iAIWuEeyApfE5VoGQ4g" source="_Abxj0IWuEeyApfE5VoGQ4g" target="_FiCTAIWuEeyApfE5VoGQ4g"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_Abxj0IWuEeyApfE5VoGQ4g" name="Initial3"/>
+              <subvertex xmi:type="uml:State" xmi:id="_DtzVQIWuEeyApfE5VoGQ4g" name="Left"/>
+              <subvertex xmi:type="uml:State" xmi:id="_FiCTAIWuEeyApfE5VoGQ4g" name="Right"/>
+            </region>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_QXNs0IWuEeyApfE5VoGQ4g" name="No End Position"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_jgPs0IWmEeyApfE5VoGQ4g" name="Request Point Position"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Constraint" xmi:id="_gHjgcIWrEeyApfE5VoGQ4g">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_gHkHgIWrEeyApfE5VoGQ4g" name="constraintSpec">
+      <language>OCL</language>
+      <body>not request track status&#xD;
+</body>
+    </specification>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Constraint" xmi:id="_LfRYYIWsEeyApfE5VoGQ4g" name="Constraint31">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_LfR_cIWsEeyApfE5VoGQ4g" name="constraintSpec">
+      <language>OCL</language>
+      <body>End Position Detected &#xD;
+and Position In = End Position&#xD;
+and Track Status = Unknown or Occupied or Reserved /&#xD;
+Lock Position In := true&#xD;
+</body>
+    </specification>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Constraint" xmi:id="_La-40IWtEeyApfE5VoGQ4g" name="Constraint32">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_LbAG8IWtEeyApfE5VoGQ4g" name="constraintSpec">
+      <language>OCL</language>
+      <body>Lock Position In and not Release Report Status/&#xD;
+Lock Report Status := True</body>
+    </specification>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Constraint" xmi:id="_WSVc4IWtEeyApfE5VoGQ4g" name="Constraint33">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_WSWD8IWtEeyApfE5VoGQ4g" name="constraintSpec">
+      <language>OCL</language>
+      <body>not Lock Position In and&#xD;
+ not Lock Report Status/&#xD;
+Release Report Status := true&#xD;
+Lock Report Status := false</body>
+    </specification>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Constraint" xmi:id="_5oMugIW-EeyApfE5VoGQ4g" name="Constraint34">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_5oNVkIW-EeyApfE5VoGQ4g" name="constraintSpec">
+      <language>OCL</language>
+      <body>Detected Position Left Reached / Position Out := End Position</body>
+    </specification>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Constraint" xmi:id="_EeGhEIW_EeyApfE5VoGQ4g" name="Constraint35">
+    <specification xmi:type="uml:OpaqueExpression" xmi:id="_EeHIIIW_EeyApfE5VoGQ4g" name="constraintSpec">
+      <language>OCL</language>
+      <body>Detected Position Right Reached / Position Out := End Position&#xD;
+</body>
+    </specification>
   </packagedElement>
   <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_v6rvIFGvEeyXmJUbHj2PIg">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_v6tkUFGvEeyXmJUbHj2PIg" source="http://www.eclipse.org/uml2/2.0.0/UML">
