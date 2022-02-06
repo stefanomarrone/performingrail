@@ -61,10 +61,6 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_av43QBIzEeyVOZB09kZL2w" name="Trackside">
           <ownedUseCase xmi:type="uml:UseCase" href="Trains_Management.uml#_INQ5IBRuEeyQN9odROAPWw"/>
           <ownedUseCase xmi:type="uml:UseCase" href="MA_Management.uml#_INRgMBRuEeyQN9odROAPWw"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_g39hIBVGEeyMXOG2LrUsxQ" name="tracksideInitialitated" visibility="public">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_u2IFIBVGEeyMXOG2LrUsxQ"/>
-          </ownedAttribute>
           <nestedClassifier xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
           <nestedClassifier xmi:type="uml:UseCase" href="TTD_Management.uml#_BCR5IBRuEeyQN9odROAPWw"/>
           <nestedClassifier xmi:type="uml:UseCase" href="Manage_Low_Adhesion_Areas.uml#_CTlwABRuEeyQN9odROAPWw"/>
@@ -85,7 +81,9 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cLBUURI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cLBUUhI6EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_cLBUUxI6EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_cLBUUBI6EeyVOZB09kZL2w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_cLBUUxI6EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_cLBUUBI6EeyVOZB09kZL2w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ACMWgIdsEey4_osI_wqoMQ" value="*"/>
+        </ownedEnd>
         <ownedEnd xmi:type="uml:Property" xmi:id="_cLB7YBI6EeyVOZB09kZL2w" name="tms" type="_M__c8BIsEeyVOZB09kZL2w" association="_cLBUUBI6EeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_c5x3wBI6EeyVOZB09kZL2w" memberEnd="_c5ye0hI6EeyVOZB09kZL2w _c5ye0xI6EeyVOZB09kZL2w">
@@ -99,15 +97,24 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k54h4BI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k54h4RI6EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_k54h4hI6EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_k5360BI6EeyVOZB09kZL2w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_k54h4xI6EeyVOZB09kZL2w" name="adjacent signalling system" type="_u3-cUBIyEeyVOZB09kZL2w" association="_k5360BI6EeyVOZB09kZL2w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_k54h4hI6EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_k5360BI6EeyVOZB09kZL2w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BjGvoIdsEey4_osI_wqoMQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BjKaAIdsEey4_osI_wqoMQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_k54h4xI6EeyVOZB09kZL2w" name="adjacent signalling system" type="_u3-cUBIyEeyVOZB09kZL2w" association="_k5360BI6EeyVOZB09kZL2w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B6hxIIdsEey4_osI_wqoMQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B6mCkIdsEey4_osI_wqoMQ" value="*"/>
+        </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_zPEewBI6EeyVOZB09kZL2w" memberEnd="_zPEewxI6EeyVOZB09kZL2w _zPEexBI6EeyVOZB09kZL2w">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zPEewRI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zPEewhI6EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_zPEewxI6EeyVOZB09kZL2w" name="on board" type="_fF5jUBI1EeyVOZB09kZL2w" association="_zPEewBI6EeyVOZB09kZL2w"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_zPEexBI6EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_zPEewBI6EeyVOZB09kZL2w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_zPEewxI6EeyVOZB09kZL2w" name="on board" type="_fF5jUBI1EeyVOZB09kZL2w" association="_zPEewBI6EeyVOZB09kZL2w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ERC8kIdsEey4_osI_wqoMQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ERHOAIdsEey4_osI_wqoMQ" value="*"/>
+        </ownedEnd>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_-FLFoBI6EeyVOZB09kZL2w" memberEnd="_-FLsshI6EeyVOZB09kZL2w _-FLssxI6EeyVOZB09kZL2w">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-FLssBI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
@@ -120,14 +127,17 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AswL4RI7EeyVOZB09kZL2w" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AswL4hI7EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_AswL4xI7EeyVOZB09kZL2w" name="object controller" type="_zq1uYBIyEeyVOZB09kZL2w" association="_AswL4BI7EeyVOZB09kZL2w"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_AswL4xI7EeyVOZB09kZL2w" name="object controller" type="_zq1uYBIyEeyVOZB09kZL2w" association="_AswL4BI7EeyVOZB09kZL2w">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9fIj4IdrEey4_osI_wqoMQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9fLAIIdrEey4_osI_wqoMQ" value="*"/>
+        </ownedEnd>
         <ownedEnd xmi:type="uml:Property" xmi:id="_Aswy8BI7EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_AswL4BI7EeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_9FQHEBRmEeyQN9odROAPWw" memberEnd="_9FafIBRmEeyQN9odROAPWw _9FbtQBRmEeyQN9odROAPWw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9FZRABRmEeyQN9odROAPWw" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9FZRARRmEeyQN9odROAPWw" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_9FafIBRmEeyQN9odROAPWw" name="on board" type="_fF5jUBI1EeyVOZB09kZL2w" association="_9FQHEBRmEeyQN9odROAPWw"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_9FafIBRmEeyQN9odROAPWw" name="onboard" type="_fF5jUBI1EeyVOZB09kZL2w" association="_9FQHEBRmEeyQN9odROAPWw"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_9FbtQBRmEeyQN9odROAPWw" name="driver" type="_s3WM4BIoEeyVOZB09kZL2w" association="_9FQHEBRmEeyQN9odROAPWw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_SbFKQBRpEeyQN9odROAPWw" name="annotations">
@@ -154,6 +164,17 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
       <packagedElement xmi:type="uml:Package" href="trackside_data.uml#_KmTioE6OEeyaL75nPQZQGA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_8YVhsHzoEeyMX6xfbLFcdw" name="Infrastructure Manager">
         <generalization xmi:type="uml:Generalization" xmi:id="_BJjN8HzpEeyMX6xfbLFcdw" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ASi5AIajEey7P_gWH-mwEA" name="Point"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_69OcUIaxEey7P_gWH-mwEA" memberEnd="_69QRgoaxEey7P_gWH-mwEA _69SGsIaxEey7P_gWH-mwEA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_69QRgIaxEey7P_gWH-mwEA" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_69QRgYaxEey7P_gWH-mwEA" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_69QRgoaxEey7P_gWH-mwEA" name="point" type="_ASi5AIajEey7P_gWH-mwEA" aggregation="composite" association="_69OcUIaxEey7P_gWH-mwEA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Nyu8IdrEey4_osI_wqoMQ"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6N5coIdrEey4_osI_wqoMQ" value="*"/>
+        </ownedEnd>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_69SGsIaxEey7P_gWH-mwEA" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_69OcUIaxEey7P_gWH-mwEA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_nsyrMBI2EeyVOZB09kZL2w" name="References">
@@ -295,4 +316,5 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
   <Blocks:Block xmi:id="_av9IsBIzEeyVOZB09kZL2w" base_Class="_av43QBIzEeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_fF9NsBI1EeyVOZB09kZL2w" base_Class="_fF5jUBI1EeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_8YsuEHzoEeyMX6xfbLFcdw" base_Class="_8YVhsHzoEeyMX6xfbLFcdw"/>
+  <Blocks:Block xmi:id="_ATMZQIajEey7P_gWH-mwEA" base_Class="_ASi5AIajEey7P_gWH-mwEA"/>
 </xmi:XMI>

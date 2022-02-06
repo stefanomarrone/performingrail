@@ -1,2 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"/>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/gmfdiag/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_zRyXYIdxEey4_osI_wqoMQ" type="PapyrusUMLStateMachineDiagram" name="PointsManagement_SMD" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_zRyXYYdxEey4_osI_wqoMQ" type="StateMachine_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_zRyXYodxEey4_osI_wqoMQ" type="StateMachine_NameLabel">
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zRyXY4dxEey4_osI_wqoMQ" width="700" height="20"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_zRyXZIdxEey4_osI_wqoMQ" type="StateMachine_RegionCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_zRyXZYdxEey4_osI_wqoMQ" type="Region_Shape">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zRyXZodxEey4_osI_wqoMQ" source="RegionAnnotationKey">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zRyXZ4dxEey4_osI_wqoMQ" key="RegionZoneKey" value=""/>
+        </eAnnotations>
+        <children xmi:type="notation:BasicCompartment" xmi:id="_zRyXaIdxEey4_osI_wqoMQ" type="Region_SubvertexCompartment">
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zRyXaYdxEey4_osI_wqoMQ"/>
+        </children>
+        <element xmi:type="uml:Region" href="Points_Management.uml#_zRxwUIdxEey4_osI_wqoMQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zRyXaodxEey4_osI_wqoMQ" width="700" height="280"/>
+      </children>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zRyXa4dxEey4_osI_wqoMQ" y="20" width="700" height="280"/>
+    </children>
+    <element xmi:type="uml:StateMachine" href="Points_Management.uml#_xPvAEIdxEey4_osI_wqoMQ"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zRyXbIdxEey4_osI_wqoMQ" x="30" y="30" width="700" height="300"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_zRyXbYdxEey4_osI_wqoMQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_zRyXbodxEey4_osI_wqoMQ"/>
+  <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_zRyXb4dxEey4_osI_wqoMQ" diagramKindId="org.eclipse.papyrus.sysml16.diagram.stateMachine">
+    <owner xmi:type="uml:UseCase" href="Points_Management.uml#_MMzQ0BRuEeyQN9odROAPWw"/>
+  </styles>
+  <element xmi:type="uml:StateMachine" href="Points_Management.uml#_xPvAEIdxEey4_osI_wqoMQ"/>
+</notation:Diagram>
