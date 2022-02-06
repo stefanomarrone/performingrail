@@ -146,6 +146,15 @@
       <nestedClassifier xmi:type="uml:Class" xmi:id="__mwKgE-uEey239YQVA8-rw" name="REQ-RecoveryMgmt-2"/>
       <nestedClassifier xmi:type="uml:Class" xmi:id="_Ez0sUE-vEey239YQVA8-rw" name="REQ-RecoveryMgmt-3"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HPJQIIeSEey56bruZv-o5g" memberEnd="_HPOvsIeSEey56bruZv-o5g _HPP90IeSEey56bruZv-o5g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_HPOIoIeSEey56bruZv-o5g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_HPOIoYeSEey56bruZv-o5g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_HPOvsIeSEey56bruZv-o5g" name="lossofcommunication" type="_mSmEQEfPEeydXZgDYCfwSw" association="_HPJQIIeSEey56bruZv-o5g"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_HPP90IeSEey56bruZv-o5g" name="infrastructure manager" association="_HPJQIIeSEey56bruZv-o5g">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_8YVhsHzoEeyMX6xfbLFcdw"/>
+      </ownedEnd>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dwoDMEfPEeydXZgDYCfwSw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dwoDMUfPEeydXZgDYCfwSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
