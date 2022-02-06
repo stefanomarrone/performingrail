@@ -4,6 +4,136 @@
     <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
   </eAnnotations>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_xPvAEIdxEey4_osI_wqoMQ" name="PointManagement">
-    <region xmi:type="uml:Region" xmi:id="_zRxwUIdxEey4_osI_wqoMQ" name="Region1"/>
+    <region xmi:type="uml:Region" xmi:id="_zRxwUIdxEey4_osI_wqoMQ" name="main">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_9P6-AId9Eey27pNP-5yExQ" annotatedElement="_f8zCMId9Eey27pNP-5yExQ">
+        <body>triggered by setRoute()</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_CuXNkIeHEey27pNP-5yExQ" annotatedElement="_aaResIeGEey27pNP-5yExQ">
+        <body>triggered by forceMovement()</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_DXOkYIeHEey27pNP-5yExQ" annotatedElement="_xK_dcIeGEey27pNP-5yExQ">
+        <body>triggered by sweepPoints()</body>
+      </ownedComment>
+      <transition xmi:type="uml:Transition" xmi:id="_3REPYId8Eey27pNP-5yExQ" source="_hBdZoId8Eey27pNP-5yExQ" target="_jDC24Id8Eey27pNP-5yExQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_f8zCMId9Eey27pNP-5yExQ" name="Nominal" source="_jDC24Id8Eey27pNP-5yExQ" target="_RCqPEIeGEey27pNP-5yExQ">
+        <trigger xmi:type="uml:Trigger" xmi:id="_ow0ckId9Eey27pNP-5yExQ" name="setRoute()"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_aaResIeGEey27pNP-5yExQ" source="_jDC24Id8Eey27pNP-5yExQ" target="_dUfNEIeGEey27pNP-5yExQ">
+        <trigger xmi:type="uml:Trigger" xmi:id="_kSjV8IeHEey27pNP-5yExQ" name="forceMovement()"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_5cvRMIeGEey27pNP-5yExQ" source="_jDC24Id8Eey27pNP-5yExQ" target="_xK_dcIeGEey27pNP-5yExQ">
+        <trigger xmi:type="uml:Trigger" xmi:id="_KU_nwIeHEey27pNP-5yExQ" name="sweepPoints()"/>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_AFj_UIeHEey27pNP-5yExQ" source="_xK_dcIeGEey27pNP-5yExQ" target="_jDC24Id8Eey27pNP-5yExQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_qEAXMIeHEey27pNP-5yExQ" source="_pkJn4IeGEey27pNP-5yExQ" target="_jDC24Id8Eey27pNP-5yExQ"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_hBdZoId8Eey27pNP-5yExQ" name="init"/>
+      <subvertex xmi:type="uml:State" xmi:id="_jDC24Id8Eey27pNP-5yExQ" name="waiting"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Pk600Id9Eey27pNP-5yExQ" name="CreatingRoute">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_RCqPEIeGEey27pNP-5yExQ" name="mainentry" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_dUfNEIeGEey27pNP-5yExQ" name="forcedentry" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_pkJn4IeGEey27pNP-5yExQ" name="exit" kind="exitPoint"/>
+        <doActivity xmi:type="uml:StateMachine" xmi:id="_bYja8Id9Eey27pNP-5yExQ" name="CreateRoute">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_QgrLEIeAEey27pNP-5yExQ" name="retval"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_f6O5kIeBEey27pNP-5yExQ" name="continueFlag"/>
+          <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_KWD4YId_Eey27pNP-5yExQ" name="mainentry" kind="entryPoint"/>
+          <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_K_geAId_Eey27pNP-5yExQ" name="exit" kind="exitPoint"/>
+          <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_5rD2gIeFEey27pNP-5yExQ" name="forcedentry" kind="entryPoint"/>
+          <region xmi:type="uml:Region" xmi:id="_BiQgcId_Eey27pNP-5yExQ" name="body">
+            <ownedComment xmi:type="uml:Comment" xmi:id="_6JNH4IeBEey27pNP-5yExQ" annotatedElement="_kmMSYIeBEey27pNP-5yExQ">
+              <body>set retval (completion of the operation) to false and cntinueFlag (to cycle over points in route) to true</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_KQjekIeFEey27pNP-5yExQ" annotatedElement="_-bljEIeBEey27pNP-5yExQ">
+              <body>It sets again continueFlag to true</body>
+            </ownedComment>
+            <ownedComment xmi:type="uml:Comment" xmi:id="_bd7JgIeFEey27pNP-5yExQ" annotatedElement="_JzOJsIeCEey27pNP-5yExQ">
+              <body>It sets the point to its now position</body>
+            </ownedComment>
+            <transition xmi:type="uml:Transition" xmi:id="_-qbiQId_Eey27pNP-5yExQ" guard="_Hja00IeDEey27pNP-5yExQ" source="_wWN1wId_Eey27pNP-5yExQ" target="_13r6QId_Eey27pNP-5yExQ">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_Hja00IeDEey27pNP-5yExQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_Hja00YeDEey27pNP-5yExQ" value="retval == true"/>
+              </ownedRule>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_q28UMIeAEey27pNP-5yExQ" guard="_ca6BEIeDEey27pNP-5yExQ" source="_13r6QId_Eey27pNP-5yExQ" target="_DJFe4IeAEey27pNP-5yExQ">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_ca6BEIeDEey27pNP-5yExQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_ca6BEYeDEey27pNP-5yExQ" value="retval == true"/>
+              </ownedRule>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_kmMSYIeBEey27pNP-5yExQ" source="_KWD4YId_Eey27pNP-5yExQ" target="_wWN1wId_Eey27pNP-5yExQ">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_2fa9wIeBEey27pNP-5yExQ">
+                <language>Natural language</language>
+                <body>retval = true&#xD;
+continueFlag = true</body>
+              </effect>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_8QQ7AIeBEey27pNP-5yExQ" guard="_xxXoUIeDEey27pNP-5yExQ" source="_DJFe4IeAEey27pNP-5yExQ" target="_wWN1wId_Eey27pNP-5yExQ">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_xxXoUIeDEey27pNP-5yExQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_xxXoUYeDEey27pNP-5yExQ" value="continueFlag == true"/>
+              </ownedRule>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_-bljEIeBEey27pNP-5yExQ" guard="_7VYVMIeDEey27pNP-5yExQ" source="_DJFe4IeAEey27pNP-5yExQ" target="_XOlNgIeAEey27pNP-5yExQ">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_7VYVMIeDEey27pNP-5yExQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_7VYVMYeDEey27pNP-5yExQ" value="continueFlag == false"/>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_IbZ60IeFEey27pNP-5yExQ">
+                <language>Natural language</language>
+                <body>continueFlag = true</body>
+              </effect>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="__Ki60IeBEey27pNP-5yExQ" guard="_KzrrsIeDEey27pNP-5yExQ" source="_wWN1wId_Eey27pNP-5yExQ" target="_K_geAId_Eey27pNP-5yExQ">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_KzrrsIeDEey27pNP-5yExQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_KzrrsYeDEey27pNP-5yExQ" value="retval == false"/>
+              </ownedRule>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_ATaAUIeCEey27pNP-5yExQ" guard="_jVIBMIeDEey27pNP-5yExQ" source="_13r6QId_Eey27pNP-5yExQ" target="_K_geAId_Eey27pNP-5yExQ">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_jVIBMIeDEey27pNP-5yExQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_jVIBMYeDEey27pNP-5yExQ" value="retval == false"/>
+              </ownedRule>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_JzOJsIeCEey27pNP-5yExQ" guard="_E0NxsIeFEey27pNP-5yExQ" source="_XOlNgIeAEey27pNP-5yExQ" target="_XOlNgIeAEey27pNP-5yExQ">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_E0NxsIeFEey27pNP-5yExQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_E0NxsYeFEey27pNP-5yExQ" value="continueFlag == true"/>
+              </ownedRule>
+              <effect xmi:type="uml:FunctionBehavior" xmi:id="_T527IIeFEey27pNP-5yExQ">
+                <language>Natural language</language>
+                <body>setPoint()</body>
+              </effect>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_KrgckIeCEey27pNP-5yExQ" guard="_jgkxUIeFEey27pNP-5yExQ" source="_XOlNgIeAEey27pNP-5yExQ" target="_K_geAId_Eey27pNP-5yExQ">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_jgkxUIeFEey27pNP-5yExQ">
+                <specification xmi:type="uml:LiteralString" xmi:id="_jgkxUYeFEey27pNP-5yExQ" value="continueFlag == false"/>
+              </ownedRule>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_8wD4kIeFEey27pNP-5yExQ" source="_5rD2gIeFEey27pNP-5yExQ" target="_XOlNgIeAEey27pNP-5yExQ">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_EYvhMIeGEey27pNP-5yExQ">
+                <language>Natural language</language>
+                <body>continueFlag = true</body>
+              </effect>
+            </transition>
+            <subvertex xmi:type="uml:State" xmi:id="_wWN1wId_Eey27pNP-5yExQ" name="checkTrackStatus">
+              <doActivity xmi:type="uml:OpaqueBehavior" xmi:id="_ybMIwIeAEey27pNP-5yExQ" name="setPointStatus()">
+                <language>Natural language</language>
+                <body>retval = setPointStatus()</body>
+              </doActivity>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_13r6QId_Eey27pNP-5yExQ" name="checkReservedStatus">
+              <doActivity xmi:type="uml:OpaqueBehavior" xmi:id="_Q3EcYIeBEey27pNP-5yExQ" name="getPointReservation()">
+                <language>Natural language</language>
+                <body>retval = getPointReservation()</body>
+              </doActivity>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_DJFe4IeAEey27pNP-5yExQ" name="PointsInRoute">
+              <doActivity xmi:type="uml:OpaqueBehavior" xmi:id="_V43iUIeBEey27pNP-5yExQ" name="areThereOtherPoints?">
+                <language>Natural language</language>
+                <body>continueFlag is true if there are other points in the route</body>
+              </doActivity>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_XOlNgIeAEey27pNP-5yExQ" name="unlockPoints"/>
+          </region>
+        </doActivity>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_xK_dcIeGEey27pNP-5yExQ" name="Sweepable">
+        <doActivity xmi:type="uml:OpaqueBehavior" xmi:id="_VJH4sIeHEey27pNP-5yExQ" name="remove/reduce_Sweepable_Unknown"/>
+      </subvertex>
+    </region>
   </ownedBehavior>
 </uml:UseCase>
