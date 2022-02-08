@@ -11,7 +11,7 @@
       </transition>
       <transition xmi:type="uml:Transition" xmi:id="_EUGbQFeCEeyQ_vcjz509Xg" name="SessionTimer expires || MuteTimer expires / set TSA Unknown;" source="_bOzR4FeBEeyQ_vcjz509Xg" target="__kAJUFeBEeyQ_vcjz509Xg"/>
       <transition xmi:type="uml:Transition" xmi:id="_UqNHAFeCEeyQ_vcjz509Xg" name="TrainPositionReport [NID_ENGINE confirmed &amp;&amp; L_TRAIN confirmed] / set TSA Occupied;" source="__kAJUFeBEeyQ_vcjz509Xg" target="_bOzR4FeBEeyQ_vcjz509Xg"/>
-      <transition xmi:type="uml:Transition" xmi:id="_iqJMoFeCEeyQ_vcjz509Xg" name="TrainPositionReport [NID_ENGINE not confirmed || L_TRAIN not confirmed];" source="__kAJUFeBEeyQ_vcjz509Xg" target="_gHLgoFeCEeyQ_vcjz509Xg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_iqJMoFeCEeyQ_vcjz509Xg" name="TrainPositionReport [NID_ENGINE not confirmed || L_TRAIN not confirmed]" source="__kAJUFeBEeyQ_vcjz509Xg" target="_gHLgoFeCEeyQ_vcjz509Xg"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_Yce7QFeBEeyQ_vcjz509Xg" name="initial"/>
       <subvertex xmi:type="uml:State" xmi:id="_bOzR4FeBEeyQ_vcjz509Xg" name="waitForTPR"/>
       <subvertex xmi:type="uml:State" xmi:id="__kAJUFeBEeyQ_vcjz509Xg" name="session expired"/>
