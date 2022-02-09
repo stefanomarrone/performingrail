@@ -1,29 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:UseCase xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_F6flQBRuEeyQN9odROAPWw" name="Track Status Management">
-  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ivoXoDjYEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
-    <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
-  </eAnnotations>
-  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_JLiMMFzQEeyXZOuflJ6RTA" name="TrackStatusManagement">
-    <region xmi:type="uml:Region" xmi:id="_KCnlMFzQEeyXZOuflJ6RTA" name="Region1">
-      <transition xmi:type="uml:Transition" xmi:id="_OGylQFzQEeyXZOuflJ6RTA" source="_OG1BglzQEeyXZOuflJ6RTA" target="_OG1BgFzQEeyXZOuflJ6RTA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_OGzMUFzQEeyXZOuflJ6RTA" name="free2unkown" source="_OG1BgFzQEeyXZOuflJ6RTA" target="_OG0aclzQEeyXZOuflJ6RTA">
-        <trigger xmi:type="uml:Trigger" xmi:id="_OGzMUVzQEeyXZOuflJ6RTA" name="TMS creation request"/>
-      </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_OGzMUlzQEeyXZOuflJ6RTA" name="unkown2free" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1BgFzQEeyXZOuflJ6RTA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_OGzMU1zQEeyXZOuflJ6RTA" name="free2occupied" source="_OG1BgFzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_OGzzYFzQEeyXZOuflJ6RTA" name="occupied2free" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG1BgFzQEeyXZOuflJ6RTA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_OGzzYVzQEeyXZOuflJ6RTA" name="unknown2occupied" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA">
-        <trigger xmi:type="uml:Trigger" xmi:id="_OGzzYlzQEeyXZOuflJ6RTA" name="train integrity confirmed by external device or train integroty confirmed by driver"/>
-      </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_OGzzY1zQEeyXZOuflJ6RTA" name="occupied2unknown" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG0aclzQEeyXZOuflJ6RTA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_OG0acFzQEeyXZOuflJ6RTA" name="occupied2final" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG1okFzQEeyXZOuflJ6RTA">
-        <trigger xmi:type="uml:Trigger" xmi:id="_OG0acVzQEeyXZOuflJ6RTA" name="communication session terminated"/>
-      </transition>
-      <subvertex xmi:type="uml:State" xmi:id="_OG0aclzQEeyXZOuflJ6RTA" name="Unknown"/>
-      <subvertex xmi:type="uml:State" xmi:id="_OG1BgFzQEeyXZOuflJ6RTA" name="Free / Clear"/>
-      <subvertex xmi:type="uml:State" xmi:id="_OG1BgVzQEeyXZOuflJ6RTA" name="Occupied"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_OG1BglzQEeyXZOuflJ6RTA" name="initial"/>
-      <subvertex xmi:type="uml:FinalState" xmi:id="_OG1okFzQEeyXZOuflJ6RTA" name="final state"/>
-    </region>
-  </ownedBehavior>
-</uml:UseCase>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
+  <uml:UseCase xmi:id="_F6flQBRuEeyQN9odROAPWw" name="Track Status Management" classifierBehavior="_oazG8Ij2Eey-9qgVoods9A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ivoXoDjYEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
+      <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
+    </eAnnotations>
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_JLiMMFzQEeyXZOuflJ6RTA" name="TrackStatusManagement">
+      <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_GAWvMIj6Eey-9qgVoods9A" name="unknown sweepable" kind="entryPoint"/>
+      <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_MtbrMIj6Eey-9qgVoods9A" name="unknown non-sweepable" kind="entryPoint"/>
+      <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_uqNSsIj6Eey-9qgVoods9A" name="train integrity confirmed" kind="entryPoint"/>
+      <region xmi:type="uml:Region" xmi:id="_KCnlMFzQEeyXZOuflJ6RTA" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_OGzMUFzQEeyXZOuflJ6RTA" source="_GAWvMIj6Eey-9qgVoods9A" target="_CkWDsIjsEey-9qgVoods9A"/>
+        <transition xmi:type="uml:Transition" xmi:id="_OGzzYVzQEeyXZOuflJ6RTA" name="Train integrity confirmed by external device" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_hL58gIjkEey-9qgVoods9A" name="Train integrity confirmed by driver [system configured for this]" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_cKMnEIjtEey-9qgVoods9A" name="conflict with other train movements detected" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1okFzQEeyXZOuflJ6RTA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_rDbFIIjtEey-9qgVoods9A" name="remove request from TMS" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1okFzQEeyXZOuflJ6RTA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_zRX-AIjtEey-9qgVoods9A" name="reduce request from TMS" source="_OG0aclzQEeyXZOuflJ6RTA" target="_x1sqMIjtEey-9qgVoods9A"/>
+        <transition xmi:type="uml:Transition" xmi:id="_lAyX0IjuEey-9qgVoods9A" source="_MtbrMIj6Eey-9qgVoods9A" target="_IlBMsIjsEey-9qgVoods9A"/>
+        <transition xmi:type="uml:Transition" xmi:id="_0hfQIIjvEey-9qgVoods9A" name="Train Position Report [L_TRAIN == stored train length]" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_LcD5AIjxEey-9qgVoods9A" name="communication session terminated [train is not completely located inside an Active Shuting Area]" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG0aclzQEeyXZOuflJ6RTA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_e8vDUIjxEey-9qgVoods9A" name="communication session terminated [train is completely located inside an Active Shuting Area]" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG1okFzQEeyXZOuflJ6RTA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_xNGtQIj6Eey-9qgVoods9A" source="_uqNSsIj6Eey-9qgVoods9A" target="_OG1BgVzQEeyXZOuflJ6RTA"/>
+        <subvertex xmi:type="uml:State" xmi:id="_OG0aclzQEeyXZOuflJ6RTA" name="Unknown">
+          <region xmi:type="uml:Region" xmi:id="_CkRLMIjsEey-9qgVoods9A" name="Region1">
+            <transition xmi:type="uml:Transition" xmi:id="_ucUeIIjuEey-9qgVoods9A" name="Area shorter than a configurable minimum length [Area does not protect the front end of a train at Start of Mission]" source="_CkWDsIjsEey-9qgVoods9A" target="_OG1okFzQEeyXZOuflJ6RTA"/>
+            <subvertex xmi:type="uml:State" xmi:id="_CkWDsIjsEey-9qgVoods9A" name="Sweepable"/>
+            <subvertex xmi:type="uml:State" xmi:id="_IlBMsIjsEey-9qgVoods9A" name="Non-Sweepable">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_JtDLwIjsEey-9qgVoods9A">
+                <body></body>
+              </ownedComment>
+            </subvertex>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_x1sqMIjtEey-9qgVoods9A" name="" kind="shallowHistory"/>
+          </region>
+        </subvertex>
+        <subvertex xmi:type="uml:State" xmi:id="_OG1BgVzQEeyXZOuflJ6RTA" name="Occupied"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_OG1okFzQEeyXZOuflJ6RTA" name="final state"/>
+      </region>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_oazG8Ij2Eey-9qgVoods9A" name="Track Status Management">
+      <region xmi:type="uml:Region" xmi:id="_qtFSoIj2Eey-9qgVoods9A" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_Rjq20Ij5Eey-9qgVoods9A" source="_MAaUgIj3Eey-9qgVoods9A" target="_NUB4gIj3Eey-9qgVoods9A"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_MAaUgIj3Eey-9qgVoods9A" name="initial"/>
+        <subvertex xmi:type="uml:State" xmi:id="_NUB4gIj3Eey-9qgVoods9A" name="idle"/>
+      </region>
+    </ownedBehavior>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_ZH1L0Ij5Eey-9qgVoods9A" name="Track Status Management" node="_dw7d4Ij5Eey-9qgVoods9A">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_eyMtoIj5Eey-9qgVoods9A" name="idle"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_dw7d4Ij5Eey-9qgVoods9A" name="initial"/>
+    </ownedBehavior>
+  </uml:UseCase>
+  <ActionLanguage:TextualRepresentation xmi:id="_JtG2IIjsEey-9qgVoods9A" base_Comment="_JtDLwIjsEey-9qgVoods9A" language="org.eclipse.papyrus.uml.textedit.state.xtext.UmlState"/>
+</xmi:XMI>
