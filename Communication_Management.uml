@@ -9,12 +9,14 @@
       <transition xmi:type="uml:Transition" xmi:id="_fb2hIFeBEeyQ_vcjz509Xg" name="TrainPositionReport [SessionTimer not expired &amp;&amp; MuteTimer not expired] /reset MuteTimer; reset SessionTimer" source="_bOzR4FeBEeyQ_vcjz509Xg" target="_bOzR4FeBEeyQ_vcjz509Xg">
         <ownedRule xmi:type="uml:TimeConstraint" xmi:id="_r2k8cFeBEeyQ_vcjz509Xg" name="SessionTimer not expired &amp;&amp; MuteTimer not expired"/>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_EUGbQFeCEeyQ_vcjz509Xg" name="SessionTimer expires || MuteTimer expires / set TSA Unknown;" source="_bOzR4FeBEeyQ_vcjz509Xg" target="__kAJUFeBEeyQ_vcjz509Xg"/>
-      <transition xmi:type="uml:Transition" xmi:id="_UqNHAFeCEeyQ_vcjz509Xg" name="TrainPositionReport [NID_ENGINE confirmed &amp;&amp; L_TRAIN confirmed] / set TSA Occupied;" source="__kAJUFeBEeyQ_vcjz509Xg" target="_bOzR4FeBEeyQ_vcjz509Xg"/>
-      <transition xmi:type="uml:Transition" xmi:id="_iqJMoFeCEeyQ_vcjz509Xg" name="TrainPositionReport [NID_ENGINE not confirmed || L_TRAIN not confirmed];" source="__kAJUFeBEeyQ_vcjz509Xg" target="_gHLgoFeCEeyQ_vcjz509Xg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_EUGbQFeCEeyQ_vcjz509Xg" name="MuteTimer expires [SessionTimer not expired] / set TSA Unknown;" source="_bOzR4FeBEeyQ_vcjz509Xg" target="__kAJUFeBEeyQ_vcjz509Xg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_UqNHAFeCEeyQ_vcjz509Xg" name="TrainPositionReport [SessionTimer not expired &amp;&amp; NID_ENGINE confirmed &amp;&amp; L_TRAIN confirmed] / set TSA Occupied; reset MuteTimer; reset SessionTimer" source="__kAJUFeBEeyQ_vcjz509Xg" target="_bOzR4FeBEeyQ_vcjz509Xg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_iqJMoFeCEeyQ_vcjz509Xg" name="TrainPositionReport [NID_ENGINE not confirmed || L_TRAIN not confirmed]" source="__kAJUFeBEeyQ_vcjz509Xg" target="_gHLgoFeCEeyQ_vcjz509Xg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_LbIeYIkREey6cZ-dxBkuQg" name="SessionTimer expires / set TSA Unknown" source="_bOzR4FeBEeyQ_vcjz509Xg" target="_gHLgoFeCEeyQ_vcjz509Xg"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Vp5_gIkREey6cZ-dxBkuQg" name="SessionTimer expires" source="__kAJUFeBEeyQ_vcjz509Xg" target="_gHLgoFeCEeyQ_vcjz509Xg"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_Yce7QFeBEeyQ_vcjz509Xg" name="initial"/>
-      <subvertex xmi:type="uml:State" xmi:id="_bOzR4FeBEeyQ_vcjz509Xg" name="waitForTPR"/>
-      <subvertex xmi:type="uml:State" xmi:id="__kAJUFeBEeyQ_vcjz509Xg" name="session expired"/>
+      <subvertex xmi:type="uml:State" xmi:id="_bOzR4FeBEeyQ_vcjz509Xg" name="WaitForTPR"/>
+      <subvertex xmi:type="uml:State" xmi:id="__kAJUFeBEeyQ_vcjz509Xg" name="MuteTimer expired"/>
       <subvertex xmi:type="uml:FinalState" xmi:id="_gHLgoFeCEeyQ_vcjz509Xg" name="exit"/>
     </region>
   </ownedBehavior>
