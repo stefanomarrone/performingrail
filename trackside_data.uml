@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
-  <uml:Package xmi:id="_KmTioE6OEeyaL75nPQZQGA" name="trackside_data">
+  <uml:Package xmi:id="_KmTioE6OEeyaL75nPQZQGA" name="data">
     <packagedElement xmi:type="uml:Package" xmi:id="_7RlhcIWuEeyWqMvyxp-iUQ" name="data types">
       <ownedComment xmi:type="uml:Comment" xmi:id="_dMgtYIsWEeyti_Bx9Y2PIg" annotatedElement="_AV-m8IsWEeyti_Bx9Y2PIg">
         <body>See 7.5.1.104 of Subset 026-7 v3.00</body>
@@ -46,7 +46,7 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YfH7wIsXEeyti_Bx9Y2PIg" name="Lost"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="core">
+    <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="trackside">
       <ownedComment xmi:type="uml:Comment" xmi:id="_R4dDYIsPEeyti_Bx9Y2PIg" annotatedElement="_R4aY4InXEeywtu03ZyCfsg">
         <body>See 7.4.3.5 of Subset-026-7 v3.00</body>
       </ownedComment>
@@ -370,6 +370,7 @@ Assumption:&#xD;
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_AUrZ4osrEeyti_Bx9Y2PIg" name="infrastructure" type="_j51sEInZEeywtu03ZyCfsg" association="_AUqLwIsrEeyti_Bx9Y2PIg"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_8XKxEIxfEey50dBW49CUCg" client="_rANpEIquEey_E5TpwM1pKA" supplier="_7RlhcIWuEeyWqMvyxp-iUQ"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lG4ScIWxEeyjW475vB6H-g">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lG4ScYWxEeyjW475vB6H-g" source="http://www.eclipse.org/uml2/2.0.0/UML">
