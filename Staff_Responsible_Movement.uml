@@ -79,20 +79,20 @@
         <lifeline xmi:type="uml:Lifeline" xmi:id="_wEU2QG-eEeyJQIE-ZQxtjg" name="" represents="_wEWEYG-eEeyJQIE-ZQxtjg" coveredBy="_4Rj9cG-eEeyJQIE-ZQxtjg _4RlyoG-eEeyJQIE-ZQxtjg _uayQIG-fEeyJQIE-ZQxtjg _nXloQG-hEeyJQIE-ZQxtjg _nXloQW-hEeyJQIE-ZQxtjg _BJoKUG-fEeyJQIE-ZQxtjg"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1oBvYG-eEeyJQIE-ZQxtjg" name="Message7SendEvent" covered="_q6w7cG-eEeyJQIE-ZQxtjg" message="_1n824G-eEeyJQIE-ZQxtjg"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1oCWcG-eEeyJQIE-ZQxtjg" name="Message7ReceiveEvent" covered="_til5UG-eEeyJQIE-ZQxtjg" message="_1n824G-eEeyJQIE-ZQxtjg"/>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_4Rj9cG-eEeyJQIE-ZQxtjg" name="CombinedFragment10" covered="_til5UG-eEeyJQIE-ZQxtjg _wEU2QG-eEeyJQIE-ZQxtjg _q6w7cG-eEeyJQIE-ZQxtjg" interactionOperator="alt">
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_4RlyoG-eEeyJQIE-ZQxtjg" name="InteractionOperand0" covered="_til5UG-eEeyJQIE-ZQxtjg _wEU2QG-eEeyJQIE-ZQxtjg _q6w7cG-eEeyJQIE-ZQxtjg">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_4Rj9cG-eEeyJQIE-ZQxtjg" name="CombinedFragment10" covered="_q6w7cG-eEeyJQIE-ZQxtjg _wEU2QG-eEeyJQIE-ZQxtjg _til5UG-eEeyJQIE-ZQxtjg" interactionOperator="alt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_4RlyoG-eEeyJQIE-ZQxtjg" name="InteractionOperand0" covered="_q6w7cG-eEeyJQIE-ZQxtjg _wEU2QG-eEeyJQIE-ZQxtjg _til5UG-eEeyJQIE-ZQxtjg">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DVR3oG-hEeyJQIE-ZQxtjg" name="Message12SendEvent" covered="_til5UG-eEeyJQIE-ZQxtjg" message="_DVRQkG-hEeyJQIE-ZQxtjg"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DVR3oW-hEeyJQIE-ZQxtjg" name="Message12ReceiveEvent" covered="_q6w7cG-eEeyJQIE-ZQxtjg" message="_DVRQkG-hEeyJQIE-ZQxtjg"/>
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_4RlyoW-eEeyJQIE-ZQxtjg" name="guard">
               <specification xmi:type="uml:LiteralString" xmi:id="_bgaQ0G-fEeyJQIE-ZQxtjg" value="train located in rear of an adjacent Unknown Track Status Area created by TMS and not used for another train"/>
             </guard>
           </operand>
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_uayQIG-fEeyJQIE-ZQxtjg" name="InteractionOperand3" covered="_til5UG-eEeyJQIE-ZQxtjg _wEU2QG-eEeyJQIE-ZQxtjg _q6w7cG-eEeyJQIE-ZQxtjg">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_uayQIG-fEeyJQIE-ZQxtjg" name="InteractionOperand3" covered="_q6w7cG-eEeyJQIE-ZQxtjg _wEU2QG-eEeyJQIE-ZQxtjg _til5UG-eEeyJQIE-ZQxtjg">
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_uayQIW-fEeyJQIE-ZQxtjg" name="guard">
               <specification xmi:type="uml:LiteralString" xmi:id="_3UeNoG-fEeyJQIE-ZQxtjg" value="train with a position given by the Dispatcher in rear of an adjacent Reserved Status Area"/>
             </guard>
           </operand>
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_BJoKUG-fEeyJQIE-ZQxtjg" name="InteractionOperand2" covered="_til5UG-eEeyJQIE-ZQxtjg _wEU2QG-eEeyJQIE-ZQxtjg _q6w7cG-eEeyJQIE-ZQxtjg">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_BJoKUG-fEeyJQIE-ZQxtjg" name="InteractionOperand2" covered="_q6w7cG-eEeyJQIE-ZQxtjg _wEU2QG-eEeyJQIE-ZQxtjg _til5UG-eEeyJQIE-ZQxtjg">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4VfT0G-hEeyJQIE-ZQxtjg" name="Message18SendEvent" covered="_til5UG-eEeyJQIE-ZQxtjg" message="_4VeswG-hEeyJQIE-ZQxtjg"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_4VfT0W-hEeyJQIE-ZQxtjg" name="Message18ReceiveEvent" covered="_til5UG-eEeyJQIE-ZQxtjg" message="_4VeswG-hEeyJQIE-ZQxtjg"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6wAOcG-hEeyJQIE-ZQxtjg" name="Message19SendEvent" covered="_til5UG-eEeyJQIE-ZQxtjg" message="_6v_nYG-hEeyJQIE-ZQxtjg"/>
