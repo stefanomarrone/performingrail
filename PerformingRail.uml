@@ -27,7 +27,7 @@
         <generalization xmi:type="uml:Generalization" xmi:id="_0RqWcBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_P1DlkBIsEeyVOZB09kZL2w" name="TIMS"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_9n0ZEBIrEeyVOZB09kZL2w" name="ETCS-L3 External Users" visibility="protected"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_9n0ZEBIrEeyVOZB09kZL2w" name="ETCS-L3 External User" visibility="protected"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_M__c8BIsEeyVOZB09kZL2w" name="TMS">
         <ownedComment xmi:type="uml:Comment" xmi:id="_qjjuUE7OEeyTe5jLSF3Q6g">
           <body>Traffic Management System&#xD;
@@ -58,7 +58,7 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
         <generalization xmi:type="uml:Generalization" xmi:id="_1jMPwBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_UMMgwBIzEeyVOZB09kZL2w" name="ETCS L3">
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_av43QBIzEeyVOZB09kZL2w" name="Trackside">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_av43QBIzEeyVOZB09kZL2w" name="ETCS Trackside">
           <ownedUseCase xmi:type="uml:UseCase" href="Trains_Management.uml#_INQ5IBRuEeyQN9odROAPWw"/>
           <ownedUseCase xmi:type="uml:UseCase" href="MA_Management.uml#_INRgMBRuEeyQN9odROAPWw"/>
           <nestedClassifier xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
@@ -70,7 +70,7 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
           <nestedClassifier xmi:type="uml:UseCase" href="Points_Management.uml#_MMzQ0BRuEeyQN9odROAPWw"/>
           <nestedClassifier xmi:type="uml:UseCase" href="Communication_Management.uml#_Njev4BRuEeyQN9odROAPWw"/>
         </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_fF5jUBI1EeyVOZB09kZL2w" name="On board">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_fF5jUBI1EeyVOZB09kZL2w" name="ETCS On board">
           <ownedUseCase xmi:type="uml:UseCase" href="Train_Position_Reporting.uml#_hQC-wDjZEeyQeMlHlxk6EA"/>
           <ownedUseCase xmi:type="uml:UseCase" href="Integration_Information_Management.uml#_jD9zcDjZEeyQeMlHlxk6EA"/>
           <ownedUseCase xmi:type="uml:UseCase" href="Manage_Dynamic_Speed_Profile.uml#_kQKg0DjZEeyQeMlHlxk6EA"/>
@@ -165,16 +165,22 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
       <packagedElement xmi:type="uml:Class" xmi:id="_8YVhsHzoEeyMX6xfbLFcdw" name="Infrastructure Manager">
         <generalization xmi:type="uml:Generalization" xmi:id="_BJjN8HzpEeyMX6xfbLFcdw" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_ASi5AIajEey7P_gWH-mwEA" name="Point"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="_69OcUIaxEey7P_gWH-mwEA" memberEnd="_69QRgoaxEey7P_gWH-mwEA _69SGsIaxEey7P_gWH-mwEA">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_69QRgIaxEey7P_gWH-mwEA" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_69QRgYaxEey7P_gWH-mwEA" key="nature" value="UML_Nature"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_ASi5AIajEey7P_gWH-mwEA" name="Point">
+        <generalization xmi:type="uml:Generalization" xmi:id="_KVt2cI2bEey24PjZ-DFd-A" general="_zq1uYBIyEeyVOZB09kZL2w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_xi19QI2bEey24PjZ-DFd-A" memberEnd="_xi5AkI2bEey24PjZ-DFd-A _xi5noI2bEey24PjZ-DFd-A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xi4ZgI2bEey24PjZ-DFd-A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xi4ZgY2bEey24PjZ-DFd-A" key="nature" value="UML_Nature"/>
         </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_69QRgoaxEey7P_gWH-mwEA" name="point" type="_ASi5AIajEey7P_gWH-mwEA" aggregation="composite" association="_69OcUIaxEey7P_gWH-mwEA">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6Nyu8IdrEey4_osI_wqoMQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6N5coIdrEey4_osI_wqoMQ" value="*"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_69SGsIaxEey7P_gWH-mwEA" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_69OcUIaxEey7P_gWH-mwEA"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_xi5AkI2bEey24PjZ-DFd-A" name="tims" type="_P1DlkBIsEeyVOZB09kZL2w" association="_xi19QI2bEey24PjZ-DFd-A"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_xi5noI2bEey24PjZ-DFd-A" name="etcs on board" type="_fF5jUBI1EeyVOZB09kZL2w" association="_xi19QI2bEey24PjZ-DFd-A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_GGhcsI2cEey24PjZ-DFd-A" memberEnd="_GGiDwY2cEey24PjZ-DFd-A _GGiDwo2cEey24PjZ-DFd-A">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GGhcsY2cEey24PjZ-DFd-A" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GGiDwI2cEey24PjZ-DFd-A" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_GGiDwY2cEey24PjZ-DFd-A" name="tims" type="_P1DlkBIsEeyVOZB09kZL2w" aggregation="composite" association="_GGhcsI2cEey24PjZ-DFd-A"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_GGiDwo2cEey24PjZ-DFd-A" name="train/engine" type="_0WffABIoEeyVOZB09kZL2w" association="_GGhcsI2cEey24PjZ-DFd-A"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_nsyrMBI2EeyVOZB09kZL2w" name="References">
@@ -182,9 +188,6 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
         <body>References&#xD;
 [X2R3a] X2R3 D4.2 part 2&#xD;
 [ERA] ERA_ERTMS_015560&#xD;
-[SS026] Subset 026&#xD;
-[SS026] Subset 026&#xD;
-[SS026] Subset 026&#xD;
 [SS026] Subset 026</body>
       </ownedComment>
     </packagedElement>
@@ -193,6 +196,7 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
         <body>External Device corresponds to TIMS</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_hm2N8EhrEeyBhenFSEKB3w">
+        <annotatedElement xmi:type="uml:UseCase" href="Train_Position_Reporting.uml#_hQC-wDjZEeyQeMlHlxk6EA"/>
         <body>REQ_TrackStatus-5&#xD;
 </body>
       </ownedComment>
