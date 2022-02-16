@@ -258,9 +258,6 @@ Assumption:&#xD;
       <ownedComment xmi:type="uml:Comment" xmi:id="_D5GG0IqyEey_E5TpwM1pKA" annotatedElement="_yziUEIqxEey_E5TpwM1pKA">
         <body>Constraints on communication parameters to set</body>
       </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_PCCYcIsmEeyti_Bx9Y2PIg" annotatedElement="_wQ2jMIslEeyti_Bx9Y2PIg">
-        <body>Linking direction information to refine</body>
-      </ownedComment>
       <packagedElement xmi:type="uml:Class" xmi:id="_PMgNMIWuEeyWqMvyxp-iUQ" name="RBCProperties">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_hjjdAIWuEeyWqMvyxp-iUQ" name="nid_rbc">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
@@ -350,19 +347,12 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_osz_cIskEeyti_Bx9Y2PIg" name="position">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_wQ3KQoslEeyti_Bx9Y2PIg" name="next" type="_3fk7EIsiEeyti_Bx9Y2PIg" association="_wQ2jMIslEeyti_Bx9Y2PIg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_ulqCIIskEeyti_Bx9Y2PIg" name="PhysicalBG">
         <generalization xmi:type="uml:Generalization" xmi:id="_zlxGAIskEeyti_Bx9Y2PIg" general="_3fk7EIsiEeyti_Bx9Y2PIg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_vG01gIskEeyti_Bx9Y2PIg" name="VirtualBG">
         <generalization xmi:type="uml:Generalization" xmi:id="_0kxE4IskEeyti_Bx9Y2PIg" general="_3fk7EIsiEeyti_Bx9Y2PIg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_wQ2jMIslEeyti_Bx9Y2PIg" memberEnd="_wQ3KQoslEeyti_Bx9Y2PIg _wQ3KRYslEeyti_Bx9Y2PIg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wQ3KQIslEeyti_Bx9Y2PIg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wQ3KQYslEeyti_Bx9Y2PIg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_wQ3KRYslEeyti_Bx9Y2PIg" name="prev" type="_3fk7EIsiEeyti_Bx9Y2PIg" association="_wQ2jMIslEeyti_Bx9Y2PIg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_A4BJwIsmEeyti_Bx9Y2PIg" memberEnd="_A4Bw0osmEeyti_Bx9Y2PIg _A4CX4osmEeyti_Bx9Y2PIg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A4Bw0IsmEeyti_Bx9Y2PIg" source="org.eclipse.papyrus">
