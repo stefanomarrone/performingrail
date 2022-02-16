@@ -5,22 +5,20 @@
   </eAnnotations>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_BPGSMFLtEeyBXKjrAECXCw" name="RouteManagement">
     <region xmi:type="uml:Region" xmi:id="_DOkPkFLtEeyBXKjrAECXCw" name="Region1">
-      <transition xmi:type="uml:Transition" xmi:id="_HBeEAFLuEeyBXKjrAECXCw" source="_cYtj0FLtEeyBXKjrAECXCw" target="_QlRK8FLtEeyBXKjrAECXCw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_H8_4IFLuEeyBXKjrAECXCw" name="RouteSet" source="_QlRK8FLtEeyBXKjrAECXCw" target="_SlCqUFLtEeyBXKjrAECXCw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_NH4BkFLuEeyBXKjrAECXCw" name="RouteCancel" source="_SlCqUFLtEeyBXKjrAECXCw" target="_djO2MFLtEeyBXKjrAECXCw"/>
-      <subvertex xmi:type="uml:State" xmi:id="_QlRK8FLtEeyBXKjrAECXCw" name="idle"/>
-      <subvertex xmi:type="uml:State" xmi:id="_SlCqUFLtEeyBXKjrAECXCw" name="set">
-        <region xmi:type="uml:Region" xmi:id="_WZX3kFLtEeyBXKjrAECXCw" name="Region1">
-          <transition xmi:type="uml:Transition" xmi:id="_Kfeb8FLuEeyBXKjrAECXCw" source="_IvV7EFLuEeyBXKjrAECXCw" target="_WZZswFLtEeyBXKjrAECXCw"/>
-          <transition xmi:type="uml:Transition" xmi:id="_LJLgQFLuEeyBXKjrAECXCw" name="RouteRelease" source="_WZZswFLtEeyBXKjrAECXCw" target="_YGaoMFLtEeyBXKjrAECXCw"/>
-          <transition xmi:type="uml:Transition" xmi:id="_MMYCoFLuEeyBXKjrAECXCw" name="RouteLock" source="_YGaoMFLtEeyBXKjrAECXCw" target="_WZZswFLtEeyBXKjrAECXCw"/>
-          <subvertex xmi:type="uml:State" xmi:id="_WZZswFLtEeyBXKjrAECXCw" name="locked"/>
-          <subvertex xmi:type="uml:State" xmi:id="_YGaoMFLtEeyBXKjrAECXCw" name="released"/>
-          <subvertex xmi:type="uml:Pseudostate" xmi:id="_IvV7EFLuEeyBXKjrAECXCw" name="Initial3"/>
+      <transition xmi:type="uml:Transition" xmi:id="_HBeEAFLuEeyBXKjrAECXCw" source="_cYtj0FLtEeyBXKjrAECXCw" target="_YBdM0ImtEey1ZJA0OWh0IQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_LJLgQFLuEeyBXKjrAECXCw" name="Release Route" source="_ZF2pEImtEey1ZJA0OWh0IQ" target="_bESEoImtEey1ZJA0OWh0IQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_MMYCoFLuEeyBXKjrAECXCw" name="Lock Route" source="_bESEoImtEey1ZJA0OWh0IQ" target="_ZF2pEImtEey1ZJA0OWh0IQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_tLzDoImtEey1ZJA0OWh0IQ" name="Cancel Route" source="_YBdM0ImtEey1ZJA0OWh0IQ" target="_djO2MFLtEeyBXKjrAECXCw"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_cYtj0FLtEeyBXKjrAECXCw"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_djO2MFLtEeyBXKjrAECXCw"/>
+      <subvertex xmi:type="uml:State" xmi:id="_YBdM0ImtEey1ZJA0OWh0IQ" name="set">
+        <region xmi:type="uml:Region" xmi:id="_ZF2CAImtEey1ZJA0OWh0IQ" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_mFkLUImuEey1ZJA0OWh0IQ" source="_ihdLYImuEey1ZJA0OWh0IQ" target="_ZF2pEImtEey1ZJA0OWh0IQ"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ZF2pEImtEey1ZJA0OWh0IQ" name="locked"/>
+          <subvertex xmi:type="uml:State" xmi:id="_bESEoImtEey1ZJA0OWh0IQ" name="released"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_ihdLYImuEey1ZJA0OWh0IQ"/>
         </region>
       </subvertex>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_cYtj0FLtEeyBXKjrAECXCw" name="Initial3"/>
-      <subvertex xmi:type="uml:FinalState" xmi:id="_djO2MFLtEeyBXKjrAECXCw" name="FinalState4"/>
     </region>
   </ownedBehavior>
 </uml:UseCase>

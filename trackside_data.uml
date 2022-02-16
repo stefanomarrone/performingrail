@@ -2,11 +2,8 @@
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
   <uml:Package xmi:id="_KmTioE6OEeyaL75nPQZQGA" name="data">
     <packagedElement xmi:type="uml:Package" xmi:id="_7RlhcIWuEeyWqMvyxp-iUQ" name="DataType">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_dMgtYIsWEeyti_Bx9Y2PIg" annotatedElement="_AV-m8IsWEeyti_Bx9Y2PIg">
-        <body>See 7.5.1.104 of Subset 026-7 v3.00</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_bKEfEIsXEeyti_Bx9Y2PIg" annotatedElement="_M6mIoIsXEeyti_Bx9Y2PIg">
-        <body>See 7.5.1.112 of Subset 026-7 v3.00</body>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_dMgtYIsWEeyti_Bx9Y2PIg">
+        <body>Enumerative types are from Subset 026-7 v3.00 (L2) or from X2Rail-3 D4.2 part 3 (L3)</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_YNRHkE6OEeyaL75nPQZQGA" name="AreaStatus">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bedLgE6OEeyaL75nPQZQGA" name="Occupied"/>
@@ -29,12 +26,12 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ohjxIIq1Eey_E5TpwM1pKA" name="OccupiedTTDWithNoTrainPositionReport"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_pPf1MIq1Eey_E5TpwM1pKA" name="ActiveShuntingArea"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_uIiN0IsPEeyti_Bx9Y2PIg" name="Q_DIR_Kind">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_uIiN0IsPEeyti_Bx9Y2PIg" name="Q_DIR_Type">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Qq4nkIsQEeyti_Bx9Y2PIg" name="Reverse"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_RzdZMIsQEeyti_Bx9Y2PIg" name="Nominal"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_SsWJAIsQEeyti_Bx9Y2PIg" name="Both"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Enumeration" xmi:id="_AV-m8IsWEeyti_Bx9Y2PIg" name="TrainBaliseOrientation">
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_AV-m8IsWEeyti_Bx9Y2PIg" name="Orientation">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_TjlEQIsWEeyti_Bx9Y2PIg" name="Reverse"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_UphYoIsWEeyti_Bx9Y2PIg" name="Nominal"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_V6U5MIsWEeyti_Bx9Y2PIg" name="Unknown"/>
@@ -45,6 +42,31 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XLo6oIsXEeyti_Bx9Y2PIg" name="Driver"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YfH7wIsXEeyti_Bx9Y2PIg" name="Lost"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_nxQP0I86Eey4VuPEnnTzTg" name="M_MODE_Type">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_qnljwI86Eey4VuPEnnTzTg" name="FullSupervision"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_tDYQwI86Eey4VuPEnnTzTg" name="OnSight"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_usT9cI86Eey4VuPEnnTzTg" name="Staff Responsible"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_wcDcwI86Eey4VuPEnnTzTg" name="Shunting"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_hy7awI87Eey4VuPEnnTzTg" name="Unfitted"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_n1FxgI87Eey4VuPEnnTzTg" name="Sleeping"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rZdQII87Eey4VuPEnnTzTg" name="StandBy"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_s7UEcI87Eey4VuPEnnTzTg" name="Trip"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_uLDOAI87Eey4VuPEnnTzTg" name="PostTrip"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_vkTf8I87Eey4VuPEnnTzTg" name="SystemFailure"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_w8cXkI87Eey4VuPEnnTzTg" name="Isolation"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_yAWEkI87Eey4VuPEnnTzTg" name="NonLeading"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zn-wwI87Eey4VuPEnnTzTg" name="LimitedSupervision"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_1B1foI87Eey4VuPEnnTzTg" name="STMNational"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_2xNLgI87Eey4VuPEnnTzTg" name="Reversing"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_39FIwI87Eey4VuPEnnTzTg" name="spare"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ID40QI88Eey4VuPEnnTzTg" name="M_LEVEL_Type">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_jX0DAI89Eey4VuPEnnTzTg" name="Level0"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_kPBX0I89Eey4VuPEnnTzTg" name="LevelSTM"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_lDuLMI89Eey4VuPEnnTzTg" name="Level1"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_l5Z2AI89Eey4VuPEnnTzTg" name="Level2"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_mt51EI89Eey4VuPEnnTzTg" name="Level3"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="Trackside">
       <ownedComment xmi:type="uml:Comment" xmi:id="_R4dDYIsPEeyti_Bx9Y2PIg" annotatedElement="_R4aY4InXEeywtu03ZyCfsg">
@@ -54,9 +76,6 @@
         <body>See 7.4.2.4 of Subset -026-7 v3.00&#xD;
 Assumption:&#xD;
 1) one section in the MA</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_p-sfEIsZEeyti_Bx9Y2PIg" annotatedElement="_pDVx8InYEeywtu03ZyCfsg">
-        <body>Revise string-typed variables and create related enumeration types</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_EZ7tIIstEeyti_Bx9Y2PIg" annotatedElement="_OempwIquEey_E5TpwM1pKA">
         <body>My though: to validate</body>
@@ -114,7 +133,7 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_WI8BQIv4EeyIuMpgGOW6ag" name="isMuteTimerActive" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_ixcZ4Iv4EeyIuMpgGOW6ag" name="commTerminationTime" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ixcZ4Iv4EeyIuMpgGOW6ag" name="terminationTime" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_AY1VgIv5EeyIuMpgGOW6ag" name="connected" visibility="public">
@@ -137,25 +156,15 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_--_l4IsVEeyti_Bx9Y2PIg" name="last_D_LRBG" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_cnznYIsiEeyti_Bx9Y2PIg" name="M_MODE">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_gUTHQIsiEeyti_Bx9Y2PIg" name="M_LEVEL">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_cnznYIsiEeyti_Bx9Y2PIg" name="M_MODE" type="_nxQP0I86Eey4VuPEnnTzTg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_gUTHQIsiEeyti_Bx9Y2PIg" name="M_LEVEL" type="_ID40QI88Eey4VuPEnnTzTg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_jDAJMIsiEeyti_Bx9Y2PIg" name="V_TRAIN">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_mC4asIsiEeyti_Bx9Y2PIg" name="Q_DIRTRAIN">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_mC4asIsiEeyti_Bx9Y2PIg" name="Q_DIRTRAIN" type="_AV-m8IsWEeyti_Bx9Y2PIg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_rgiWMIsiEeyti_Bx9Y2PIg" name="Q_LENGTH" type="_M6mIoIsXEeyti_Bx9Y2PIg"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_N_FOAIsjEeyti_Bx9Y2PIg" name="Q_DIRLRBG">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_SIzccIsjEeyti_Bx9Y2PIg" name="Q_DLRBG">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_N_FOAIsjEeyti_Bx9Y2PIg" name="Q_DIRLRBG" type="_AV-m8IsWEeyti_Bx9Y2PIg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_SIzccIsjEeyti_Bx9Y2PIg" name="Q_DLRBG" type="_AV-m8IsWEeyti_Bx9Y2PIg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_bl8FQIsjEeyti_Bx9Y2PIg" name="L_TRAININT">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
@@ -249,9 +258,6 @@ Assumption:&#xD;
       <ownedComment xmi:type="uml:Comment" xmi:id="_D5GG0IqyEey_E5TpwM1pKA" annotatedElement="_yziUEIqxEey_E5TpwM1pKA">
         <body>Constraints on communication parameters to set</body>
       </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_PCCYcIsmEeyti_Bx9Y2PIg" annotatedElement="_wQ2jMIslEeyti_Bx9Y2PIg">
-        <body>Linking direction information to refine</body>
-      </ownedComment>
       <packagedElement xmi:type="uml:Class" xmi:id="_PMgNMIWuEeyWqMvyxp-iUQ" name="RBCProperties">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_hjjdAIWuEeyWqMvyxp-iUQ" name="nid_rbc">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
@@ -341,19 +347,12 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_osz_cIskEeyti_Bx9Y2PIg" name="position">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_wQ3KQoslEeyti_Bx9Y2PIg" name="next" type="_3fk7EIsiEeyti_Bx9Y2PIg" association="_wQ2jMIslEeyti_Bx9Y2PIg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_ulqCIIskEeyti_Bx9Y2PIg" name="PhysicalBG">
         <generalization xmi:type="uml:Generalization" xmi:id="_zlxGAIskEeyti_Bx9Y2PIg" general="_3fk7EIsiEeyti_Bx9Y2PIg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_vG01gIskEeyti_Bx9Y2PIg" name="VirtualBG">
         <generalization xmi:type="uml:Generalization" xmi:id="_0kxE4IskEeyti_Bx9Y2PIg" general="_3fk7EIsiEeyti_Bx9Y2PIg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_wQ2jMIslEeyti_Bx9Y2PIg" memberEnd="_wQ3KQoslEeyti_Bx9Y2PIg _wQ3KRYslEeyti_Bx9Y2PIg">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_wQ3KQIslEeyti_Bx9Y2PIg" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_wQ3KQYslEeyti_Bx9Y2PIg" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_wQ3KRYslEeyti_Bx9Y2PIg" name="prev" type="_3fk7EIsiEeyti_Bx9Y2PIg" association="_wQ2jMIslEeyti_Bx9Y2PIg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_A4BJwIsmEeyti_Bx9Y2PIg" memberEnd="_A4Bw0osmEeyti_Bx9Y2PIg _A4CX4osmEeyti_Bx9Y2PIg">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_A4Bw0IsmEeyti_Bx9Y2PIg" source="org.eclipse.papyrus">
