@@ -67,6 +67,10 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_l5Z2AI89Eey4VuPEnnTzTg" name="Level2"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_mt51EI89Eey4VuPEnnTzTg" name="Level3"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_Mj6JIJAIEeyJ-qH-XxM-4g" name="EndDirection_Type">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XGIKsJAIEeyJ-qH-XxM-4g" name="Left"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YJVUIJAIEeyJ-qH-XxM-4g" name="Right"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="Trackside">
       <ownedComment xmi:type="uml:Comment" xmi:id="_R4dDYIsPEeyti_Bx9Y2PIg" annotatedElement="_R4aY4InXEeywtu03ZyCfsg">
@@ -308,9 +312,6 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_7shkAJABEeyJ-qH-XxM-4g" name="point" type="_21OGkI_wEeyS0JpgfPwLfg" aggregation="shared" association="_7segsJABEeyJ-qH-XxM-4g">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7siLEJABEeyJ-qH-XxM-4g" value="*"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_uqK2EpADEeyJ-qH-XxM-4g" name="route" type="_0-nxUI_wEeyS0JpgfPwLfg" aggregation="shared" association="_uqJn8JADEeyJ-qH-XxM-4g">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uqLdIZADEeyJ-qH-XxM-4g" value="*"/>
-        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_b2jF0IqvEey_E5TpwM1pKA" name="ShuntingArea">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_kAnkQIqvEey_E5TpwM1pKA" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA"/>
@@ -367,12 +368,7 @@ Assumption:&#xD;
       </packagedElement>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_8XKxEIxfEey50dBW49CUCg" client="_rANpEIquEey_E5TpwM1pKA" supplier="_7RlhcIWuEeyWqMvyxp-iUQ"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_0-nxUI_wEeyS0JpgfPwLfg" name="Route">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_Y5hCoJACEeyJ-qH-XxM-4g" name="id">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_cI6W0JACEeyJ-qH-XxM-4g" name="lock">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
-        </ownedAttribute>
+        <generalization xmi:type="uml:Generalization" xmi:id="_1tZ2AJAIEeyJ-qH-XxM-4g" general="_21OGkI_wEeyS0JpgfPwLfg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_-49q0pABEeyJ-qH-XxM-4g" name="routesection" type="_8XhRgI_wEeyS0JpgfPwLfg" isOrdered="true" aggregation="shared" association="_-49DwJABEeyJ-qH-XxM-4g">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-4-R4JABEeyJ-qH-XxM-4g" value="*"/>
         </ownedAttribute>
@@ -381,22 +377,14 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_QY6TgJACEeyJ-qH-XxM-4g" name="id">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_0gwg4JABEeyJ-qH-XxM-4g" name="position">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_4_pHAJABEeyJ-qH-XxM-4g" name="lock">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_8XhRgI_wEeyS0JpgfPwLfg" name="RouteSection">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="__iDEEZABEeyJ-qH-XxM-4g" name="point" type="_21OGkI_wEeyS0JpgfPwLfg" aggregation="shared" association="__iB18JABEeyJ-qH-XxM-4g">
+        <generalization xmi:type="uml:Generalization" xmi:id="_2Q49kJAIEeyJ-qH-XxM-4g" general="_21OGkI_wEeyS0JpgfPwLfg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__iDEEZABEeyJ-qH-XxM-4g" name="point" type="_xDHRIJAIEeyJ-qH-XxM-4g" aggregation="shared" association="__iB18JABEeyJ-qH-XxM-4g">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__iDEE5ABEeyJ-qH-XxM-4g" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="__JDf0JACEeyJ-qH-XxM-4g" name="id">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_Bmw4YJADEeyJ-qH-XxM-4g" name="lock">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_7segsJABEeyJ-qH-XxM-4g" memberEnd="_7shkAJABEeyJ-qH-XxM-4g _7siLEZABEeyJ-qH-XxM-4g">
@@ -417,11 +405,12 @@ Assumption:&#xD;
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="__iDEFJABEeyJ-qH-XxM-4g" name="routesection" type="_8XhRgI_wEeyS0JpgfPwLfg" association="__iB18JABEeyJ-qH-XxM-4g"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_uqJn8JADEeyJ-qH-XxM-4g" memberEnd="_uqK2EpADEeyJ-qH-XxM-4g _uqMEMJADEeyJ-qH-XxM-4g">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uqK2EJADEeyJ-qH-XxM-4g" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uqK2EZADEeyJ-qH-XxM-4g" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_uqMEMJADEeyJ-qH-XxM-4g" name="infrastructure" type="_j51sEInZEeywtu03ZyCfsg" association="_uqJn8JADEeyJ-qH-XxM-4g"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_xDHRIJAIEeyJ-qH-XxM-4g" name="PhysicalPoint">
+        <generalization xmi:type="uml:Generalization" xmi:id="_0_QWkJAIEeyJ-qH-XxM-4g" general="_21OGkI_wEeyS0JpgfPwLfg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0gwg4JABEeyJ-qH-XxM-4g" name="position">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ObxNMJAJEeyJ-qH-XxM-4g" name="endDirection" type="_Mj6JIJAIEeyJ-qH-XxM-4g"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lG4ScIWxEeyjW475vB6H-g">
@@ -522,4 +511,5 @@ Assumption:&#xD;
   <Blocks:Block xmi:id="_0_kzkI_wEeyS0JpgfPwLfg" base_Class="_0-nxUI_wEeyS0JpgfPwLfg"/>
   <Blocks:Block xmi:id="_21XQgI_wEeyS0JpgfPwLfg" base_Class="_21OGkI_wEeyS0JpgfPwLfg"/>
   <Blocks:Block xmi:id="_8Xus4I_wEeyS0JpgfPwLfg" base_Class="_8XhRgI_wEeyS0JpgfPwLfg"/>
+  <Blocks:Block xmi:id="_xDN-0JAIEeyJ-qH-XxM-4g" base_Class="_xDHRIJAIEeyJ-qH-XxM-4g"/>
 </xmi:XMI>
