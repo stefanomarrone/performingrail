@@ -97,8 +97,8 @@
         <lifeline xmi:type="uml:Lifeline" xmi:id="_7cpzwF2zEeyCWIFnlKn16A" name="TIMS" represents="_7crB4F2zEeyCWIFnlKn16A" coveredBy="_8_Q2AF2zEeyCWIFnlKn16A"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7TAFUF2vEey40_sZxILusA" name="Message5SendEvent" covered="_f0pSwF2vEeykb-NWxgIwbw" message="_7SnDwF2vEey40_sZxILusA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7TAsYF2vEey40_sZxILusA" name="Message5ReceiveEvent" covered="_iBHxYF2vEeykb-NWxgIwbw" message="_7SnDwF2vEey40_sZxILusA"/>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_BBhuYF2wEey40_sZxILusA" name="CombinedFragment8" covered="_f0pSwF2vEeykb-NWxgIwbw _iBHxYF2vEeykb-NWxgIwbw" interactionOperator="opt">
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_BBkxsF2wEey40_sZxILusA" name="InteractionOperand0" covered="_f0pSwF2vEeykb-NWxgIwbw _iBHxYF2vEeykb-NWxgIwbw">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_BBhuYF2wEey40_sZxILusA" name="CombinedFragment8" covered="_iBHxYF2vEeykb-NWxgIwbw _f0pSwF2vEeykb-NWxgIwbw" interactionOperator="opt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_BBkxsF2wEey40_sZxILusA" name="InteractionOperand0" covered="_iBHxYF2vEeykb-NWxgIwbw _f0pSwF2vEeykb-NWxgIwbw">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__7wjsF2wEeyCWIFnlKn16A" name="Message9SendEvent" covered="_iBHxYF2vEeykb-NWxgIwbw" message="__7jvYF2wEeyCWIFnlKn16A"/>
             <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_QV2d8F25Eey_gKPac597Xw" name="BehaviorExecutionSpecification39" covered="_iBHxYF2vEeykb-NWxgIwbw" finish="_QV3sEF25Eey_gKPac597Xw" start="__7wjsF2wEeyCWIFnlKn16A"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__7xKwF2wEeyCWIFnlKn16A" name="Message9ReceiveEvent" covered="_iBHxYF2vEeykb-NWxgIwbw" message="__7jvYF2wEeyCWIFnlKn16A"/>
@@ -307,7 +307,7 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
   </uml:Package>
-  <Requirements:Requirement xmi:id="_KlICUEFmEeyfxc1FgnjdUg" base_NamedElement="_Kk7OAEFmEeyfxc1FgnjdUg" id="REQ_OS" base_Class="_Kk7OAEFmEeyfxc1FgnjdUg"/>
+  <Requirements:Requirement xmi:id="_KlICUEFmEeyfxc1FgnjdUg" base_NamedElement="_Kk7OAEFmEeyfxc1FgnjdUg" id="REQ_OS" text="On-Sight movement enables the trains to enter into an occupied line for the purposes of joining or to check for infrastructure defects." base_Class="_Kk7OAEFmEeyfxc1FgnjdUg"/>
   <Requirements:Requirement xmi:id="_ierxEEFpEeyfxc1FgnjdUg" base_NamedElement="_iepU0EFpEeyfxc1FgnjdUg" id="REQ-TrainLoc-5" text="When receiving a position report from a train in FS/OS mode where the Train Integrity is confirmed by external device, then the L3 Trackside shall update the Confirmed Rear End for this train from the information in that position report." base_Class="_iepU0EFpEeyfxc1FgnjdUg"/>
   <Requirements:Requirement xmi:id="_ieyewEFpEeyfxc1FgnjdUg" base_NamedElement="_ieqi8EFpEeyfxc1FgnjdUg" id="REQ-TrainLoc-6" text="When receiving a position report from a train in FS/OS mode where the Train Integrity is confirmed by driver, then the L3 Trackside shall, if configured for this, update the Confirmed Rear End for this train from the information in that position report." base_Class="_ieqi8EFpEeyfxc1FgnjdUg"/>
   <Requirements:Requirement xmi:id="_tYjdoEFpEeyfxc1FgnjdUg" base_NamedElement="_tYgaUEFpEeyfxc1FgnjdUg" id="REQ-MA-5" text="The L3 Trackside shall be able to issue Movement Authorities with mode profile On Sight over Unknown or Occupied Track Status Areas." base_Class="_tYgaUEFpEeyfxc1FgnjdUg"/>
