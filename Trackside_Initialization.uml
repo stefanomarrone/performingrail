@@ -233,13 +233,6 @@ adjacent systems prevent trains from approaching.</body>
     <packagedElement xmi:type="uml:TimeConstraint" xmi:id="_kvb7QHIHEeyxWaP3DuJUkw" name="TimeConstraint to stop" constrainedElement="_T1d_YXIFEeyxWaP3DuJUkw">
       <specification xmi:type="uml:TimeInterval" xmi:id="_kvgzwHIHEeyxWaP3DuJUkw"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_EZLvcIAaEeyReZuR5F228A" name="Req-TrackInit">
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_VeGpAIAaEeyReZuR5F228A" name="REQ-TrackInit_1"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_V7fIkIAaEeyReZuR5F228A" name="REQ-TrackInit_2"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_WPEy8IAaEeyReZuR5F228A" name="REQ-TrackInit_3"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_Wdj64IAaEeyReZuR5F228A" name="REQ-TrackInit_4"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_Wx_SwIAaEeyReZuR5F228A" name="REQ-TrackInit_5"/>
-    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oeficDjZEeyQeMlHlxk6EA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeficTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -311,10 +304,24 @@ adjacent systems prevent trains from approaching.</body>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
   </uml:Package>
-  <Requirements:Requirement xmi:id="_EZdcQIAaEeyReZuR5F228A" base_NamedElement="_EZLvcIAaEeyReZuR5F228A" id="REQ-TrackInit" text="In order to provide a safe initialisation, the L3 Trackside has to start in the most restrictive state." base_Class="_EZLvcIAaEeyReZuR5F228A"/>
-  <Requirements:Requirement xmi:id="_VeN9wIAaEeyReZuR5F228A" base_NamedElement="_VeGpAIAaEeyReZuR5F228A" id="REQ-TrackInit_1" text="The L3 Trackside shall consider the entire L3 Area of Control to be in Track Status Unknown when the L3 Trackside initialisation starts." base_Class="_VeGpAIAaEeyReZuR5F228A"/>
-  <Requirements:Requirement xmi:id="_V7lPMIAaEeyReZuR5F228A" base_NamedElement="_V7fIkIAaEeyReZuR5F228A" id="REQ-TrackInit_2" text="The L3 Trackside shall utilise valid Stored Information to enable faster initialisation." base_Class="_V7fIkIAaEeyReZuR5F228A"/>
-  <Requirements:Requirement xmi:id="_WPIdUIAaEeyReZuR5F228A" base_NamedElement="_WPEy8IAaEeyReZuR5F228A" id="REQ-TrackInit_3" text="The L3 Trackside, if configured, shall provide a means for the person responsible for the Trackside Initialisation to confirm that the procedure is completed." base_Class="_WPEy8IAaEeyReZuR5F228A"/>
-  <Requirements:Requirement xmi:id="_WdmXIIAaEeyReZuR5F228A" base_NamedElement="_Wdj64IAaEeyReZuR5F228A" id="REQ-TrackInit_4" text="The L3 Trackside shall clear the remaining Unknown Track Status Areas created at the start of the Trackside Initialisation procedure and consider the Trackside Initialisation process as completed either:&#xD;&#xA;• upon receiving confirmation of completion of the Initialisation procedure from the responsible person&#xD;&#xA;• after Stored Information has been used and confirmation from the responsible person is not required." base_Class="_Wdj64IAaEeyReZuR5F228A"/>
-  <Requirements:Requirement xmi:id="_WyCWEIAaEeyReZuR5F228A" base_NamedElement="_Wx_SwIAaEeyReZuR5F228A" id="REQ-TrackInit_5" text="The L3 Trackside shall send Authorisations to trains in the Area of Control only after the Trackside Initialisation procedure has been completed." base_Class="_Wx_SwIAaEeyReZuR5F228A"/>
+  <Requirements:Requirement xmi:id="_VeN9wIAaEeyReZuR5F228A" id="REQ-TrackInit_1" text="The L3 Trackside shall consider the entire L3 Area of Control to be in Track Status Unknown when the L3 Trackside initialisation starts.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_VeGpAIAaEeyReZuR5F228A"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_VeGpAIAaEeyReZuR5F228A"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_V7lPMIAaEeyReZuR5F228A" id="REQ-TrackInit_2" text="The L3 Trackside shall utilise valid Stored Information to enable faster initialisation.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_V7fIkIAaEeyReZuR5F228A"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_V7fIkIAaEeyReZuR5F228A"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_WPIdUIAaEeyReZuR5F228A" id="REQ-TrackInit_3" text="The L3 Trackside, if configured, shall provide a means for the person responsible for the Trackside Initialisation to confirm that the procedure is completed.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_WPEy8IAaEeyReZuR5F228A"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_WPEy8IAaEeyReZuR5F228A"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_WdmXIIAaEeyReZuR5F228A" id="REQ-TrackInit_4" text="The L3 Trackside shall clear the remaining Unknown Track Status Areas created at the start of the Trackside Initialisation procedure and consider the Trackside Initialisation process as completed either:&#xD;&#xA;• upon receiving confirmation of completion of the Initialisation procedure from the responsible person&#xD;&#xA;• after Stored Information has been used and confirmation from the responsible person is not required.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_Wdj64IAaEeyReZuR5F228A"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_Wdj64IAaEeyReZuR5F228A"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_WyCWEIAaEeyReZuR5F228A" id="REQ-TrackInit_5" text="The L3 Trackside shall send Authorisations to trains in the Area of Control only after the Trackside Initialisation procedure has been completed.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_Wx_SwIAaEeyReZuR5F228A"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_Wx_SwIAaEeyReZuR5F228A"/>
+  </Requirements:Requirement>
 </xmi:XMI>

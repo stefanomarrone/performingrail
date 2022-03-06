@@ -23,15 +23,15 @@ REQ_TS_7</body>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_RhZdkFNREeyIHpUPTS8dSg" name="Message10ReceiveEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_RhK0EFNREeyIHpUPTS8dSg"/>
         <fragment xmi:type="uml:CombinedFragment" xmi:id="_fRd7MFNREeyIHpUPTS8dSg" name="CombinedFragment15" covered="_bAhAMFNNEeyT1rOLVdmr6A" interactionOperator="opt">
           <operand xmi:type="uml:InteractionOperand" xmi:id="_fRhlkFNREeyIHpUPTS8dSg" name="InteractionOperand0" covered="_bAhAMFNNEeyT1rOLVdmr6A">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_59nNsFNREeyIHpUPTS8dSg" name="Message16SendEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_59lYgFNREeyIHpUPTS8dSg"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_DF2ysH0iEeyJTdWSBb-LMQ" name="BehaviorExecutionSpecification24" covered="_bAhAMFNNEeyT1rOLVdmr6A" finish="_DF4A0H0iEeyJTdWSBb-LMQ" start="_59nNsFNREeyIHpUPTS8dSg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_59n0wFNREeyIHpUPTS8dSg" name="Message16ReceiveEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_59lYgFNREeyIHpUPTS8dSg"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_DF4A0H0iEeyJTdWSBb-LMQ" name="BehaviorExecutionSpecification24Finish" covered="_bAhAMFNNEeyT1rOLVdmr6A" execution="_DF2ysH0iEeyJTdWSBb-LMQ"/>
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_fRhlkVNREeyIHpUPTS8dSg" name="sizeConstraint">
               <specification xmi:type="uml:LiteralString" xmi:id="_0GisoFNREeyIHpUPTS8dSg" value="sizeUTSA >= minimum_length"/>
             </guard>
           </operand>
         </fragment>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_59nNsFNREeyIHpUPTS8dSg" name="Message16SendEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_59lYgFNREeyIHpUPTS8dSg"/>
-        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_DF2ysH0iEeyJTdWSBb-LMQ" name="BehaviorExecutionSpecification24" covered="_bAhAMFNNEeyT1rOLVdmr6A" finish="_DF4A0H0iEeyJTdWSBb-LMQ" start="_59nNsFNREeyIHpUPTS8dSg"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_59n0wFNREeyIHpUPTS8dSg" name="Message16ReceiveEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_59lYgFNREeyIHpUPTS8dSg"/>
-        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_DF4A0H0iEeyJTdWSBb-LMQ" name="BehaviorExecutionSpecification24Finish" covered="_bAhAMFNNEeyT1rOLVdmr6A" execution="_DF2ysH0iEeyJTdWSBb-LMQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3KyRsF5-Eey3X8JiS_0juA" name="Message21SendEvent" covered="_msdeEF5-Eey3X8JiS_0juA" message="_3KxqoF5-Eey3X8JiS_0juA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3Ky4wF5-Eey3X8JiS_0juA" name="Message21ReceiveEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_3KxqoF5-Eey3X8JiS_0juA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lLaUoFNSEeyIHpUPTS8dSg" name="Message20SendEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_lLYfcFNSEeyIHpUPTS8dSg"/>
@@ -92,16 +92,6 @@ REQ_TS_7</body>
         <type xmi:type="uml:Class" href="PerformingRail.uml#_wEHq4BIoEeyVOZB09kZL2w"/>
       </ownedEnd>
       <ownedEnd xmi:type="uml:Property" xmi:id="_RfdVIz1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_RfcuED1eEeyAv_UCn311nQ"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_8nyXAEFgEeywTZC05_SuTw" name="REQ_Sweeping">
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_bxey4EFhEeywTZC05_SuTw" name="SH-3"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_I47GkEFjEeyfxc1FgnjdUg" name="TrackStatus-5"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_I4_YAEFjEeyfxc1FgnjdUg" name="TrackStatus-6"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_I5AmIEFjEeyfxc1FgnjdUg" name="TrackStatus-7"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_I5B0QEFjEeyfxc1FgnjdUg" name="TrackStatus-8"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_I5DCYEFjEeyfxc1FgnjdUg" name="TrackStatus-12"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_RAcAQEFjEeyfxc1FgnjdUg" name="TTD-5"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_e9AQgEY_EeyqDu86LRL2NQ" name="PTS-4"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq21MDjZEeyQeMlHlxk6EA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq21MTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -174,13 +164,36 @@ REQ_TS_7</body>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
   </uml:Package>
-  <Requirements:Requirement xmi:id="_8n5EsEFgEeywTZC05_SuTw" base_NamedElement="_8nyXAEFgEeywTZC05_SuTw" id="REQ_Sweeping" base_Class="_8nyXAEFgEeywTZC05_SuTw"/>
-  <Requirements:Requirement xmi:id="_bxgoEEFhEeywTZC05_SuTw" base_NamedElement="_bxey4EFhEeywTZC05_SuTw" id="REQ-SH-3" text="The L3 Trackside shall consider the Track Status of an Active Shunting Area to be Unknown and Non-Sweepable." base_Class="_bxey4EFhEeywTZC05_SuTw"/>
-  <Requirements:Requirement xmi:id="_I5FeoEFjEeyfxc1FgnjdUg" base_NamedElement="_I47GkEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-5" text="When receiving a position report from a train with the Min Safe Front End in an Unknown Track Status Area that can be swept, then the L3 Trackside shall reduce that Unknown Track Status Area for the part of it up to the Min Safe Front End of that train." base_Class="_I47GkEFjEeyfxc1FgnjdUg"/>
-  <Requirements:Requirement xmi:id="_I5l08EFjEeyfxc1FgnjdUg" base_NamedElement="_I4_YAEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-6" text="On request from the TMS, the L3 Trackside shall create an Unknown Track Status Area flagged as Sweepable provided the area is longer than the configurable minimum length." base_Class="_I4_YAEFjEeyfxc1FgnjdUg"/>
-  <Requirements:Requirement xmi:id="_I5pfUEFjEeyfxc1FgnjdUg" base_NamedElement="_I5AmIEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-7" text="On request from the TMS, the L3 Trackside shall create an Unknown Track Status Area flagged as Non-Sweepable." base_Class="_I5AmIEFjEeyfxc1FgnjdUg"/>
-  <Requirements:Requirement xmi:id="_I5rUgEFjEeyfxc1FgnjdUg" base_NamedElement="_I5B0QEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-8" text="Unknown Track Status Areas created by L3 Trackside without being requested by TMS shall be flagged as Sweepable, or Non-Sweepable." base_Class="_I5B0QEFjEeyfxc1FgnjdUg"/>
-  <Requirements:Requirement xmi:id="_I5xbIEFjEeyfxc1FgnjdUg" base_NamedElement="_I5DCYEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-12" text="The L3 Trackside shall automatically clear Sweepable Unknown Track Status Areas that are shorter than a configurable minimum length, except if this Unknown Track Status Area has been created to protect the front end of a train at Start of Mission." base_Class="_I5DCYEFjEeyfxc1FgnjdUg"/>
-  <Requirements:Requirement xmi:id="_RAdOYEFjEeyfxc1FgnjdUg" base_NamedElement="_RAcAQEFjEeyfxc1FgnjdUg" id="REQ-TTD-5" text="For a system using TTD, the L3 Trackside shall be able to remove all or part of an Unknown Track Status Area corresponding to a TTD section which is Clear. The following situations will act as exceptions to this mechanism:&#xA;    a) the Unknown area has been created at the request of the TMS and marked as Non-Sweepable&#xA;    b) the Unknown area is due to an Active Shunting Area&#xA;    c) if the train is reporting with its Min Safe Front End in the TTD section" base_Class="_RAcAQEFjEeyfxc1FgnjdUg"/>
-  <Requirements:Requirement xmi:id="_e9CFsEY_EeyqDu86LRL2NQ" base_NamedElement="_e9AQgEY_EeyqDu86LRL2NQ" id="REQ-PTS-4" text="When a train is sweeping a set of points, the L3 Trackside shall remove or reduce a Sweepable Unknown Track Status Area from the alternate leg of the points as far as the Fouling Point, in addition to the path that the train takes." base_Class="_e9AQgEY_EeyqDu86LRL2NQ"/>
+  <Requirements:Requirement xmi:id="_bxgoEEFhEeywTZC05_SuTw" id="REQ-SH-3" text="The L3 Trackside shall consider the Track Status of an Active Shunting Area to be Unknown and Non-Sweepable.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_bxey4EFhEeywTZC05_SuTw"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_bxey4EFhEeywTZC05_SuTw"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_I5FeoEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-5" text="When receiving a position report from a train with the Min Safe Front End in an Unknown Track Status Area that can be swept, then the L3 Trackside shall reduce that Unknown Track Status Area for the part of it up to the Min Safe Front End of that train.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_I47GkEFjEeyfxc1FgnjdUg"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_I47GkEFjEeyfxc1FgnjdUg"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_I5l08EFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-6" text="On request from the TMS, the L3 Trackside shall create an Unknown Track Status Area flagged as Sweepable provided the area is longer than the configurable minimum length.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_I4_YAEFjEeyfxc1FgnjdUg"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_I4_YAEFjEeyfxc1FgnjdUg"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_I5pfUEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-7" text="On request from the TMS, the L3 Trackside shall create an Unknown Track Status Area flagged as Non-Sweepable.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_I5AmIEFjEeyfxc1FgnjdUg"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_I5AmIEFjEeyfxc1FgnjdUg"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_I5rUgEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-8" text="Unknown Track Status Areas created by L3 Trackside without being requested by TMS shall be flagged as Sweepable, or Non-Sweepable.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_I5B0QEFjEeyfxc1FgnjdUg"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_I5B0QEFjEeyfxc1FgnjdUg"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_I5xbIEFjEeyfxc1FgnjdUg" id="REQ-TrackStatus-12" text="The L3 Trackside shall automatically clear Sweepable Unknown Track Status Areas that are shorter than a configurable minimum length, except if this Unknown Track Status Area has been created to protect the front end of a train at Start of Mission.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_I5DCYEFjEeyfxc1FgnjdUg"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_I5DCYEFjEeyfxc1FgnjdUg"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_RAdOYEFjEeyfxc1FgnjdUg" id="REQ-TTD-5" text="For a system using TTD, the L3 Trackside shall be able to remove all or part of an Unknown Track Status Area corresponding to a TTD section which is Clear. The following situations will act as exceptions to this mechanism:&#xA;    a) the Unknown area has been created at the request of the TMS and marked as Non-Sweepable&#xA;    b) the Unknown area is due to an Active Shunting Area&#xA;    c) if the train is reporting with its Min Safe Front End in the TTD section">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_RAcAQEFjEeyfxc1FgnjdUg"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_RAcAQEFjEeyfxc1FgnjdUg"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_e9CFsEY_EeyqDu86LRL2NQ" id="REQ-PTS-4" text="When a train is sweeping a set of points, the L3 Trackside shall remove or reduce a Sweepable Unknown Track Status Area from the alternate leg of the points as far as the Fouling Point, in addition to the path that the train takes.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_e9AQgEY_EeyqDu86LRL2NQ"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_e9AQgEY_EeyqDu86LRL2NQ"/>
+  </Requirements:Requirement>
 </xmi:XMI>

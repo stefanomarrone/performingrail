@@ -136,13 +136,6 @@
         <addition xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
       </include>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_FJsW4FEpEeypHNCzQhPY5A" name="REQ-MovSR">
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_SP4xEFEpEeypHNCzQhPY5A" name="MovSR-1"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_VoRCIFEpEeypHNCzQhPY5A" name="MovSR-2"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_VtAYMFEpEeypHNCzQhPY5A" name="MovSR-3"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_VwvosFEpEeypHNCzQhPY5A" name="MovSR-4"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_VzjsIFEpEeypHNCzQhPY5A" name="MovSR-5"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_LedjwFEtEeypHNCzQhPY5A" memberEnd="_Leex4FEtEeypHNCzQhPY5A _MNf0AFEtEeypHNCzQhPY5A">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_LeeK0FEtEeypHNCzQhPY5A" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_LeeK0VEtEeypHNCzQhPY5A" key="nature" value="UML_Nature"/>
@@ -232,10 +225,24 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
   </uml:Package>
-  <Requirements:Requirement xmi:id="_FJxPYFEpEeypHNCzQhPY5A" base_NamedElement="_FJsW4FEpEeypHNCzQhPY5A" id="REQ-MovSR" base_Class="_FJsW4FEpEeypHNCzQhPY5A"/>
-  <Requirements:Requirement xmi:id="_SP70YFEpEeypHNCzQhPY5A" base_NamedElement="_SP4xEFEpEeypHNCzQhPY5A" id="REQ-MovSR-1" text="Following an MA Request from a train located in rear of an adjacent Unknown Track&#xD;&#xA;Status Area created by the TMS and not used for another train, the L3 Trackside shall&#xD;&#xA;be able to provide an SR Authorisation to this train with the distance to run limited to&#xD;&#xA;the Unknown Track Status Area." base_Class="_SP4xEFEpEeypHNCzQhPY5A"/>
-  <Requirements:Requirement xmi:id="_VoRpMFEpEeypHNCzQhPY5A" base_NamedElement="_VoRCIFEpEeypHNCzQhPY5A" id="REQ-MovSR-2" text="For a train with a known location, the L3 Trackside shall maintain the previous CRE of&#xD;&#xA;a train in SR mode from when the train reports in SR until the train transitions out of SR&#xD;&#xA;to FS/OS mode and reports with Train Integrity confirmed" base_Class="_VoRCIFEpEeypHNCzQhPY5A"/>
-  <Requirements:Requirement xmi:id="_VtA_QFEpEeypHNCzQhPY5A" base_NamedElement="_VtAYMFEpEeypHNCzQhPY5A" id="REQ-MovSR-3" text="Following an MA Request from a train with a position given by the Dispatcher in rear of&#xD;&#xA;an adjacent Reserved Status Area, the L3 Trackside shall be able to provide an SR&#xD;&#xA;Authorisation to this train with the distance to run within the Reserved Status Area" base_Class="_VtAYMFEpEeypHNCzQhPY5A"/>
-  <Requirements:Requirement xmi:id="_VwvosVEpEeypHNCzQhPY5A" base_NamedElement="_VwvosFEpEeypHNCzQhPY5A" id="REQ-MovSR-4" text="When giving an SR Authorisation to a train with a position given by the Dispatcher, the&#xD;&#xA;L3 Trackside shall, if possible, include a list of balise groups the train is allowed to pass&#xD;&#xA;in the given authorisation." base_Class="_VwvosFEpEeypHNCzQhPY5A"/>
-  <Requirements:Requirement xmi:id="_VzkTMFEpEeypHNCzQhPY5A" base_NamedElement="_VzjsIFEpEeypHNCzQhPY5A" id="REQ-MovSR-5" text="When giving an SR Authorisation for a Reserved Status Area to a train with a position&#xD;&#xA;given by the Dispatcher, the L3 Trackside shall extend the Unknown Track Status Area&#xD;&#xA;associated with this train to the end of the Reserved Status Area" base_Class="_VzjsIFEpEeypHNCzQhPY5A"/>
+  <Requirements:Requirement xmi:id="_SP70YFEpEeypHNCzQhPY5A" id="REQ-MovSR-1" text="Following an MA Request from a train located in rear of an adjacent Unknown Track&#xD;&#xA;Status Area created by the TMS and not used for another train, the L3 Trackside shall&#xD;&#xA;be able to provide an SR Authorisation to this train with the distance to run limited to&#xD;&#xA;the Unknown Track Status Area.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_SP4xEFEpEeypHNCzQhPY5A"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_SP4xEFEpEeypHNCzQhPY5A"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_VoRpMFEpEeypHNCzQhPY5A" id="REQ-MovSR-2" text="For a train with a known location, the L3 Trackside shall maintain the previous CRE of&#xD;&#xA;a train in SR mode from when the train reports in SR until the train transitions out of SR&#xD;&#xA;to FS/OS mode and reports with Train Integrity confirmed">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_VoRCIFEpEeypHNCzQhPY5A"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_VoRCIFEpEeypHNCzQhPY5A"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_VtA_QFEpEeypHNCzQhPY5A" id="REQ-MovSR-3" text="Following an MA Request from a train with a position given by the Dispatcher in rear of&#xD;&#xA;an adjacent Reserved Status Area, the L3 Trackside shall be able to provide an SR&#xD;&#xA;Authorisation to this train with the distance to run within the Reserved Status Area">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_VtAYMFEpEeypHNCzQhPY5A"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_VtAYMFEpEeypHNCzQhPY5A"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_VwvosVEpEeypHNCzQhPY5A" id="REQ-MovSR-4" text="When giving an SR Authorisation to a train with a position given by the Dispatcher, the&#xD;&#xA;L3 Trackside shall, if possible, include a list of balise groups the train is allowed to pass&#xD;&#xA;in the given authorisation.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_VwvosFEpEeypHNCzQhPY5A"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_VwvosFEpEeypHNCzQhPY5A"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_VzkTMFEpEeypHNCzQhPY5A" id="REQ-MovSR-5" text="When giving an SR Authorisation for a Reserved Status Area to a train with a position&#xD;&#xA;given by the Dispatcher, the L3 Trackside shall extend the Unknown Track Status Area&#xD;&#xA;associated with this train to the end of the Reserved Status Area">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_VzjsIFEpEeypHNCzQhPY5A"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_VzjsIFEpEeypHNCzQhPY5A"/>
+  </Requirements:Requirement>
 </xmi:XMI>
