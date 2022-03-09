@@ -320,7 +320,7 @@
     <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_XxhuUFOSEeymBZkA5Ubaxw"/>
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_XxhuUFOSEeymBZkA5Ubaxw"/>
   </Requirements:Requirement>
-  <Requirements:Requirement xmi:id="_X0GhMVOSEeymBZkA5Ubaxw" id="REQ-TrainLoc-11" text="The L3 Trackside shall store valid information for all trains within its Area of Control.&#xD;&#xA;The following information shall be stored:&#xD;&#xA;a) Train ID (NID_ENGINE)&#xD;&#xA;b) Train length (L_TRAIN)&#xD;&#xA;c) Most recent Train Position Report&#xD;&#xA;d) Most recent Confirmed Rear End">
+  <Requirements:Requirement xmi:id="_X0GhMVOSEeymBZkA5Ubaxw" id="REQ-TrainLoc-11" text="The L3 Trackside shall store valid information for all trains within its Area of Control. The following information shall be stored:&#xD;&#xA;a) Train ID (NID_ENGINE)&#xD;&#xA;b) Train length (L_TRAIN)&#xD;&#xA;c) Most recent Train Position Report&#xD;&#xA;d) Most recent Confirmed Rear End">
     <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_X0GhMFOSEeymBZkA5Ubaxw"/>
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_X0GhMFOSEeymBZkA5Ubaxw"/>
   </Requirements:Requirement>
@@ -356,7 +356,7 @@
     <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_EU9LcFOTEeymBZkA5Ubaxw"/>
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_EU9LcFOTEeymBZkA5Ubaxw"/>
   </Requirements:Requirement>
-  <Requirements:Requirement xmi:id="_EYMFoFOTEeymBZkA5Ubaxw" id="REQ-TrackStatus-14" text="The L3 Trackside shall store and update data for all the Track Status Areas within its Area of Control in accordance with the following table:">
+  <Requirements:Requirement xmi:id="_EYMFoFOTEeymBZkA5Ubaxw" id="REQ-TrackStatus-14" text="The L3 Trackside shall store and update data for all the Track Status Areas within its Area of Control in accordance with the following table [see the source]">
     <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_EYLekFOTEeymBZkA5Ubaxw"/>
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_EYLekFOTEeymBZkA5Ubaxw"/>
   </Requirements:Requirement>
@@ -376,11 +376,11 @@
     <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_cuBLkFOUEeymBZkA5Ubaxw"/>
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_cuBLkFOUEeymBZkA5Ubaxw"/>
   </Requirements:Requirement>
-  <Requirements:Requirement xmi:id="_f1TsoFOUEeymBZkA5Ubaxw" id="REQ-ReservedStatus-3" text="The L3 Trackside shall report the Reserved Status for all track within its Area of Control to the TMS">
+  <Requirements:Requirement xmi:id="_f1TsoFOUEeymBZkA5Ubaxw" id="REQ-Reserved-3" text="The L3 Trackside shall report the Reserved Status for all track within its Area of Control to the TMS">
     <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_f1TFkFOUEeymBZkA5Ubaxw"/>
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_f1TFkFOUEeymBZkA5Ubaxw"/>
   </Requirements:Requirement>
-  <Requirements:Requirement xmi:id="_gDAxcFOUEeymBZkA5Ubaxw" id="REQ-ReservedStatus-4" text="The L3 Trackside shall update the Reserved Status Area for a communicating train when a new Train Position Report is received">
+  <Requirements:Requirement xmi:id="_gDAxcFOUEeymBZkA5Ubaxw" id="REQ-Reserved-4" text="The L3 Trackside shall update the Reserved Status Area for a communicating train when a new Train Position Report is received">
     <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_gDAKYFOUEeymBZkA5Ubaxw"/>
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_gDAKYFOUEeymBZkA5Ubaxw"/>
   </Requirements:Requirement>
@@ -404,7 +404,7 @@
     <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_68NogFOUEeymBZkA5Ubaxw"/>
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_68NogFOUEeymBZkA5Ubaxw"/>
   </Requirements:Requirement>
-  <Requirements:Requirement xmi:id="_7CkIIFOUEeymBZkA5Ubaxw" id="REQ-TTD-5" text="For a system using TTD, the L3 Trackside shall be able to remove all or part of an&#xD;&#xA;Unknown Track Status Area corresponding to a TTD section which is Clear. The&#xD;&#xA;following situations will act as exceptions to this mechanism:&#xD;&#xA;a) the Unknown area has been created at the request of the TMS and marked as&#xD;&#xA;Non-Sweepable&#xD;&#xA;b) the Unknown area is due to an Active Shunting Area&#xD;&#xA;c) if the train is reporting with its Min Safe Front End in the TTD section">
+  <Requirements:Requirement xmi:id="_7CkIIFOUEeymBZkA5Ubaxw" id="REQ-TTD-5" text="For a system using TTD, the L3 Trackside shall be able to remove all or part of an Unknown Track Status Area corresponding to a TTD section which is Clear. The following situations will act as exceptions to this mechanism:&#xD;&#xA;a) the Unknown area has been created at the request of the TMS and marked as Non-Sweepable&#xD;&#xA;b) the Unknown area is due to an Active Shunting Area&#xD;&#xA;c) if the train is reporting with its Min Safe Front End in the TTD section">
     <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_7CjhEFOUEeymBZkA5Ubaxw"/>
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_7CjhEFOUEeymBZkA5Ubaxw"/>
   </Requirements:Requirement>

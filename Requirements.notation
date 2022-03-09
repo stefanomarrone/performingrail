@@ -7,18 +7,15 @@
   <owner xmi:type="uml:Package" href="Requirements.uml#_tiag4JuVEey1k9qWv3EIDg"/>
   <tableConfiguration xmi:type="nattableconfiguration:TableConfiguration" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#PapyrusGenericTable_XMI_ID"/>
   <columnAxisProvidersHistory xmi:type="nattableaxisprovider:SlaveObjectAxisProvider" xmi:id="_8zbsgZuYEey1k9qWv3EIDg" description="This axis provider provides available columns according to the rows of the table (features of the object displayed on the other axis)" name="UML Feature axis provider">
+    <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_-LAjcZuYEey1k9qWv3EIDg" element="property_of_stereotype:/SysML::Requirements::AbstractRequirement::id">
+      <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
+    </axis>
     <axis xmi:type="nattableaxis:EStructuralFeatureAxis" xmi:id="_-KHLnpuYEey1k9qWv3EIDg">
       <styles xmi:type="nattablestyle:IntValueStyle" xmi:id="_Lt5gsJuZEey1k9qWv3EIDg" name="axisWidth" intValue="362"/>
       <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFDzQEei_1txcmoHe_A"/>
       <element xmi:type="ecore:EAttribute" href="http://www.eclipse.org/uml2/5.0.0/UML#//NamedElement/qualifiedName"/>
     </axis>
-    <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_-LAjcJuYEey1k9qWv3EIDg" element="property_of_stereotype:/SysML::Requirements::AbstractRequirement::verifiedBy">
-      <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
-    </axis>
-    <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_-LAjcZuYEey1k9qWv3EIDg" element="property_of_stereotype:/SysML::Requirements::AbstractRequirement::id">
-      <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
-    </axis>
-    <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_-LAjcpuYEey1k9qWv3EIDg" element="property_of_stereotype:/SysML::Requirements::AbstractRequirement::text">
+    <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_-LAjeJuYEey1k9qWv3EIDg" element="property_of_stereotype:/SysML::Requirements::AbstractRequirement::refinedBy">
       <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
     </axis>
     <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_-LAjc5uYEey1k9qWv3EIDg" element="property_of_stereotype:/SysML::Requirements::AbstractRequirement::derived">
@@ -36,7 +33,10 @@
     <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_-LAjd5uYEey1k9qWv3EIDg" element="property_of_stereotype:/SysML::Requirements::AbstractRequirement::tracedTo">
       <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
     </axis>
-    <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_-LAjeJuYEey1k9qWv3EIDg" element="property_of_stereotype:/SysML::Requirements::AbstractRequirement::refinedBy">
+    <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_-LAjcJuYEey1k9qWv3EIDg" element="property_of_stereotype:/SysML::Requirements::AbstractRequirement::verifiedBy">
+      <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
+    </axis>
+    <axis xmi:type="nattableaxis:FeatureIdAxis" xmi:id="_-LAjcpuYEey1k9qWv3EIDg" element="property_of_stereotype:/SysML::Requirements::AbstractRequirement::text">
       <manager xmi:type="nattableaxisconfiguration:AxisManagerRepresentation" href="platform:/plugin/org.eclipse.papyrus.uml.nattable.generic.config/configs/generic.nattableconfiguration#_P0EFFTzQEei_1txcmoHe_A"/>
     </axis>
   </columnAxisProvidersHistory>
