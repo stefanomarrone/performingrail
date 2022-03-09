@@ -180,14 +180,6 @@
         <addition xmi:type="uml:UseCase" href="Reserved_Status_Management.uml#_Ez5woBRuEeyQN9odROAPWw"/>
       </include>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_Kk7OAEFmEeyfxc1FgnjdUg" name="REQ_OS">
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_iepU0EFpEeyfxc1FgnjdUg" name="TrainLoc-5"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_ieqi8EFpEeyfxc1FgnjdUg" name="TrainLoc-6"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_tYgaUEFpEeyfxc1FgnjdUg" name="MA-5"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_tYhBYEFpEeyfxc1FgnjdUg" name="MA-6"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_tYiPgEFpEeyfxc1FgnjdUg" name="MA-12"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_F4z90EZAEeyqDu86LRL2NQ" name="MovSR-2"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_CK0gwEFsEeyfxc1FgnjdUg" memberEnd="_CNlg4EFsEeyfxc1FgnjdUg _CNmvAEFsEeyfxc1FgnjdUg">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CK2V8EFsEeyfxc1FgnjdUg" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CK2V8UFsEeyfxc1FgnjdUg" key="nature" value="UML_Nature"/>
@@ -304,11 +296,16 @@
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
   </uml:Package>
-  <Requirements:Requirement xmi:id="_KlICUEFmEeyfxc1FgnjdUg" base_NamedElement="_Kk7OAEFmEeyfxc1FgnjdUg" id="REQ_OS" text="On-Sight movement enables the trains to enter into an occupied line for the purposes of joining or to check for infrastructure defects." base_Class="_Kk7OAEFmEeyfxc1FgnjdUg"/>
-  <Requirements:Requirement xmi:id="_ierxEEFpEeyfxc1FgnjdUg" base_NamedElement="_iepU0EFpEeyfxc1FgnjdUg" id="REQ-TrainLoc-5" text="When receiving a position report from a train in FS/OS mode where the Train Integrity is confirmed by external device, then the L3 Trackside shall update the Confirmed Rear End for this train from the information in that position report." base_Class="_iepU0EFpEeyfxc1FgnjdUg"/>
-  <Requirements:Requirement xmi:id="_ieyewEFpEeyfxc1FgnjdUg" base_NamedElement="_ieqi8EFpEeyfxc1FgnjdUg" id="REQ-TrainLoc-6" text="When receiving a position report from a train in FS/OS mode where the Train Integrity is confirmed by driver, then the L3 Trackside shall, if configured for this, update the Confirmed Rear End for this train from the information in that position report." base_Class="_ieqi8EFpEeyfxc1FgnjdUg"/>
-  <Requirements:Requirement xmi:id="_tYjdoEFpEeyfxc1FgnjdUg" base_NamedElement="_tYgaUEFpEeyfxc1FgnjdUg" id="REQ-MA-5" text="The L3 Trackside shall be able to issue Movement Authorities with mode profile On Sight over Unknown or Occupied Track Status Areas." base_Class="_tYgaUEFpEeyfxc1FgnjdUg"/>
-  <Requirements:Requirement xmi:id="_tYtOoEFpEeyfxc1FgnjdUg" base_NamedElement="_tYhBYEFpEeyfxc1FgnjdUg" id="REQ-MA-6" text="When providing a Movement Authority with an On-Sight mode profile to a train entering&#xA;an Unknown or Occupied area, the L3 Trackside shall provide an On-Sight Mode Profile&#xA;from a minimum distance of the L3 Margin from the CRE of the preceding train." base_Class="_tYhBYEFpEeyfxc1FgnjdUg"/>
-  <Requirements:Requirement xmi:id="_tYucwEFpEeyfxc1FgnjdUg" base_NamedElement="_tYiPgEFpEeyfxc1FgnjdUg" id="REQ-MA-12" text="If an area of track within a Reserved Status Area becomes Unknown before the L3 Trackside has authorised a train to proceed into that area, the L3 Trackside shall either:&#xA;    a)  include an OS mode profile for the Unknown Track Status Area&#xA;    or&#xA;    b) restrict the Authorisation to the start of the Unknown area&#xA;    or&#xA;    c) do not send the authorisation to the train&#xA;In addition, or alternately, the L3 Trackside shall inform the Traffic Management System of the situation." base_Class="_tYiPgEFpEeyfxc1FgnjdUg"/>
-  <Requirements:Requirement xmi:id="_F41L8EZAEeyqDu86LRL2NQ" base_NamedElement="_F4z90EZAEeyqDu86LRL2NQ" id="REQ-MovSR-2" text="For a train with a known location, the L3 Trackside shall maintain the previous CRE of a train in SR mode from when the train reports in SR until the train transitions out of SR to FS/OS mode and reports with Train Integrity confirmed." base_Class="_F4z90EZAEeyqDu86LRL2NQ"/>
+  <Requirements:Requirement xmi:id="_tYjdoEFpEeyfxc1FgnjdUg" id="REQ-MA-5" text="The L3 Trackside shall be able to issue Movement Authorities with mode profile On Sight over Unknown or Occupied Track Status Areas.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_tYgaUEFpEeyfxc1FgnjdUg"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_tYgaUEFpEeyfxc1FgnjdUg"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_tYtOoEFpEeyfxc1FgnjdUg" id="REQ-MA-6" text="When providing a Movement Authority with an On-Sight mode profile to a train entering an Unknown or Occupied area, the L3 Trackside shall provide an On-Sight Mode Profile from a minimum distance of the L3 Margin from the CRE of the preceding train.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_tYhBYEFpEeyfxc1FgnjdUg"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_tYhBYEFpEeyfxc1FgnjdUg"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_tYucwEFpEeyfxc1FgnjdUg" id="REQ-MA-12" text="If an area of track within a Reserved Status Area becomes Unknown before the L3 Trackside has authorised a train to proceed into that area, the L3 Trackside shall either:&#xA;    a)  include an OS mode profile for the Unknown Track Status Area&#xA;    or&#xA;    b) restrict the Authorisation to the start of the Unknown area&#xA;    or&#xA;    c) do not send the authorisation to the train&#xA;In addition, or alternately, the L3 Trackside shall inform the Traffic Management System of the situation.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_tYiPgEFpEeyfxc1FgnjdUg"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_tYiPgEFpEeyfxc1FgnjdUg"/>
+  </Requirements:Requirement>
 </xmi:XMI>

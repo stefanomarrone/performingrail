@@ -136,12 +136,6 @@ point is not locked</body>
         <addition xmi:type="uml:UseCase" href="Points_Management.uml#_MMzQ0BRuEeyQN9odROAPWw"/>
       </include>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_A7aJoHz8EeyMX6xfbLFcdw" name="REQ-PTS">
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_QiDHUHz8EeyMX6xfbLFcdw" name="REQ-PTS-1"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_25yBwHz9EeyMX6xfbLFcdw" name="REQ-PTS-2"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_7-AJkHz9EeyMX6xfbLFcdw" name="REQ-PTS-3"/>
-      <nestedClassifier xmi:type="uml:Class" xmi:id="_Mjc44Hz-EeyMX6xfbLFcdw" name="REQ-PTS-4"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_rqxgwHz_EeyMX6xfbLFcdw" memberEnd="_rqyH0nz_EeyMX6xfbLFcdw _rqyu4Hz_EeyMX6xfbLFcdw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_rqyH0Hz_EeyMX6xfbLFcdw" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_rqyH0Xz_EeyMX6xfbLFcdw" key="nature" value="UML_Nature"/>
@@ -159,6 +153,18 @@ point is not locked</body>
       <ownedEnd xmi:type="uml:Property" xmi:id="_O5DgQIdwEey4_osI_wqoMQ" name="on board" association="_O4_14IdwEey4_osI_wqoMQ">
         <type xmi:type="uml:Class" href="PerformingRail.uml#_fF5jUBI1EeyVOZB09kZL2w"/>
       </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_hryw0JuYEey1k9qWv3EIDg" name="Refine14" client="_9ZViIIagEey7P_gWH-mwEA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_QiDHUHz8EeyMX6xfbLFcdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_rwtLUJuYEey1k9qWv3EIDg" name="Refine15" client="_9ZViIIagEey7P_gWH-mwEA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_25yBwHz9EeyMX6xfbLFcdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_vn6tcJuYEey1k9qWv3EIDg" name="Refine16" client="_AUNn8IbaEeylxdnZ9sgn6A">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_7-AJkHz9EeyMX6xfbLFcdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_TSR-sJvGEeyE7_P2Sptn9w" name="Refine17" client="_24ecIIdvEey4_osI_wqoMQ">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_Mjc44Hz-EeyMX6xfbLFcdw"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sHwvMDjZEeyQeMlHlxk6EA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sHwvMTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -231,9 +237,24 @@ point is not locked</body>
       <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
     </profileApplication>
   </uml:Package>
-  <Requirements:Requirement xmi:id="_A7heYHz8EeyMX6xfbLFcdw" base_NamedElement="_A7aJoHz8EeyMX6xfbLFcdw" id="REQ-PTS" text="Points will be controlled by the L3 Trackside in the normal way, for example by the setting of Routes.&#xD;&#xA;" base_Class="_A7aJoHz8EeyMX6xfbLFcdw"/>
-  <Requirements:Requirement xmi:id="_QiH_0Hz8EeyMX6xfbLFcdw" base_NamedElement="_QiDHUHz8EeyMX6xfbLFcdw" id="REQ-PTS-1" text="The L3 Trackside shall prevent movement of points within an Unknown or Occupied Track Status Area, or within a Reserved Status Area, unless using an operational procedure." base_Class="_QiDHUHz8EeyMX6xfbLFcdw"/>
-  <Requirements:Requirement xmi:id="_2559kHz9EeyMX6xfbLFcdw" base_NamedElement="_25yBwHz9EeyMX6xfbLFcdw" id="REQ-PTS-2" text="The L3 Trackside shall be configured with Release Points to enable Points to be moved when the area of track containing the Points has Consolidated Track Status Clear and does not contain any part of a Reserved Status Area." base_Class="_25yBwHz9EeyMX6xfbLFcdw"/>
-  <Requirements:Requirement xmi:id="_7-FpIHz9EeyMX6xfbLFcdw" base_NamedElement="_7-AJkHz9EeyMX6xfbLFcdw" id="REQ-PTS-3" text="On request from the TMS, the L3 Trackside shall be able to move points for which all or parts of it is in an area with Track Status Unknown or Occupied, or both." base_Class="_7-AJkHz9EeyMX6xfbLFcdw"/>
-  <Requirements:Requirement xmi:id="_Mjmp4Hz-EeyMX6xfbLFcdw" base_NamedElement="_Mjc44Hz-EeyMX6xfbLFcdw" id="REQ-PTS-4" text="When a train is sweeping a set of points, the L3 Trackside shall remove or reduce a Sweepable Unknown Track Status Area from the alternate leg of the points as far as the Fouling Point, in addition to the path that the train takes." base_Class="_Mjc44Hz-EeyMX6xfbLFcdw"/>
+  <Requirements:Requirement xmi:id="_QiH_0Hz8EeyMX6xfbLFcdw" id="REQ-PTS-1" text="The L3 Trackside shall prevent movement of points within an Unknown or Occupied Track Status Area, or within a Reserved Status Area, unless using an operational procedure.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_QiDHUHz8EeyMX6xfbLFcdw"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_QiDHUHz8EeyMX6xfbLFcdw"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_2559kHz9EeyMX6xfbLFcdw" id="REQ-PTS-2" text="The L3 Trackside shall be configured with Release Points to enable Points to be moved when the area of track containing the Points has Consolidated Track Status Clear and does not contain any part of a Reserved Status Area.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_25yBwHz9EeyMX6xfbLFcdw"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_25yBwHz9EeyMX6xfbLFcdw"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_7-FpIHz9EeyMX6xfbLFcdw" id="REQ-PTS-3" text="On request from the TMS, the L3 Trackside shall be able to move points for which all or parts of it is in an area with Track Status Unknown or Occupied, or both.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_7-AJkHz9EeyMX6xfbLFcdw"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_7-AJkHz9EeyMX6xfbLFcdw"/>
+  </Requirements:Requirement>
+  <Requirements:Requirement xmi:id="_Mjmp4Hz-EeyMX6xfbLFcdw" id="REQ-PTS-4" text="When a train is sweeping a set of points, the L3 Trackside shall remove or reduce a Sweepable Unknown Track Status Area from the alternate leg of the points as far as the Fouling Point, in addition to the path that the train takes.">
+    <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_Mjc44Hz-EeyMX6xfbLFcdw"/>
+    <base_Class xmi:type="uml:Class" href="Requirements.uml#_Mjc44Hz-EeyMX6xfbLFcdw"/>
+  </Requirements:Requirement>
+  <Requirements:Refine xmi:id="_hr9I4JuYEey1k9qWv3EIDg" base_DirectedRelationship="_hryw0JuYEey1k9qWv3EIDg" base_Abstraction="_hryw0JuYEey1k9qWv3EIDg"/>
+  <Requirements:Refine xmi:id="_rwvnkJuYEey1k9qWv3EIDg" base_DirectedRelationship="_rwtLUJuYEey1k9qWv3EIDg" base_Abstraction="_rwtLUJuYEey1k9qWv3EIDg"/>
+  <Requirements:Refine xmi:id="_vn8ioJuYEey1k9qWv3EIDg" base_DirectedRelationship="_vn6tcJuYEey1k9qWv3EIDg" base_Abstraction="_vn6tcJuYEey1k9qWv3EIDg"/>
+  <Requirements:Refine xmi:id="_TSgBIJvGEeyE7_P2Sptn9w" base_DirectedRelationship="_TSR-sJvGEeyE7_P2Sptn9w" base_Abstraction="_TSR-sJvGEeyE7_P2Sptn9w"/>
 </xmi:XMI>
