@@ -39,6 +39,12 @@ The signaller checks that the system or parts of it can be safely reset. The pre
           <body>trains have stopped, points are locked in a known position, TTD status is known.&#xD;
 adjacent systems prevent trains from approaching.</body>
         </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_9GAZIKBMEeykBbxhhftkxQ">
+          <body>TTD object controller (aka SCI-TDS)</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_Z-eZQKBNEeykBbxhhftkxQ">
+          <body>Other controller such as SCI_P or SCI-IO</body>
+        </ownedComment>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_5wN_sHICEeyxWaP3DuJUkw" name=""/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_768x4HICEeyxWaP3DuJUkw" name="">
           <type xmi:type="uml:Class" href="PerformingRail.uml#_wEHq4BIoEeyVOZB09kZL2w"/>
@@ -59,15 +65,26 @@ adjacent systems prevent trains from approaching.</body>
           <type xmi:type="uml:Class" href="PerformingRail.uml#_zq1uYBIyEeyVOZB09kZL2w"/>
         </ownedAttribute>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_5wMKgHICEeyxWaP3DuJUkw" name="" represents="_5wN_sHICEeyxWaP3DuJUkw"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_768K0HICEeyxWaP3DuJUkw" name="" represents="_768x4HICEeyxWaP3DuJUkw" coveredBy="_zyBGcHIDEeyxWaP3DuJUkw _RJvOYHIEEeyxWaP3DuJUkw _JT7y8HIIEeyxWaP3DuJUkw _PRYBwHIIEeyxWaP3DuJUkw _edu3MXIIEeyxWaP3DuJUkw _gvrEoHIIEeyxWaP3DuJUkw"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_9zPwQHICEeyxWaP3DuJUkw" name="" represents="_9zQXUHICEeyxWaP3DuJUkw" coveredBy="_xk1nwHIEEeyxWaP3DuJUkw _iO3jUHIEEeyxWaP3DuJUkw"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_-X-N8HICEeyxWaP3DuJUkw" name="" represents="_-X-N8XICEeyxWaP3DuJUkw" coveredBy="_g2eXkHIFEeyxWaP3DuJUkw _aWb8kXIGEeyxWaP3DuJUkw _liHf8XIIEeyxWaP3DuJUkw _uAjr4XIIEeyxWaP3DuJUkw _uBdDwHIIEeyxWaP3DuJUkw _ljFwUHIIEeyxWaP3DuJUkw _EAqGAHIJEeyxWaP3DuJUkw _1oqFsHIIEeyxWaP3DuJUkw _EBsn0HIJEeyxWaP3DuJUkw _1pgaQHIIEeyxWaP3DuJUkw _li_psHIIEeyxWaP3DuJUkw _1pdW8HIIEeyxWaP3DuJUkw"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_BUzygHIDEeyxWaP3DuJUkw" name="" represents="_BU1AoHIDEeyxWaP3DuJUkw" coveredBy="_g2eXkXIFEeyxWaP3DuJUkw _zyBtgHIDEeyxWaP3DuJUkw _RJunUHIEEeyxWaP3DuJUkw _iO28QHIEEeyxWaP3DuJUkw _xk2O0HIEEeyxWaP3DuJUkw _H08h4XIHEeyxWaP3DuJUkw _KZkssHIFEeyxWaP3DuJUkw _T1d_YnIFEeyxWaP3DuJUkw _wn_IgXIFEeyxWaP3DuJUkw _5AJtUHIFEeyxWaP3DuJUkw _JT7L4HIIEeyxWaP3DuJUkw _PRYBwXIIEeyxWaP3DuJUkw _edu3MHIIEeyxWaP3DuJUkw _gvrEoXIIEeyxWaP3DuJUkw _liHf8HIIEeyxWaP3DuJUkw _ljGXYHIIEeyxWaP3DuJUkw _1opeoHIIEeyxWaP3DuJUkw _1phBUHIIEeyxWaP3DuJUkw _TmX2oHIJEeyxWaP3DuJUkw _TnUR0HIJEeyxWaP3DuJUkw"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_HqiTkHIFEeyxWaP3DuJUkw" name="" represents="_Hqi6oHIFEeyxWaP3DuJUkw" coveredBy="_KZlTwHIFEeyxWaP3DuJUkw _T1d_YXIFEeyxWaP3DuJUkw _wn_IgHIFEeyxWaP3DuJUkw _5AJGQHIFEeyxWaP3DuJUkw _TmX2oXIJEeyxWaP3DuJUkw _TnTqwXIJEeyxWaP3DuJUkw _TnR1kHIJEeyxWaP3DuJUkw"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_XWxGcHIGEeyxWaP3DuJUkw" name="" represents="_XWxtgHIGEeyxWaP3DuJUkw" coveredBy="_aWb8kHIGEeyxWaP3DuJUkw _H08h4HIHEeyxWaP3DuJUkw _uAjr4nIIEeyxWaP3DuJUkw _uBccsXIIEeyxWaP3DuJUkw _EAqGAXIJEeyxWaP3DuJUkw _EBsAwHIJEeyxWaP3DuJUkw _uBaAcHIIEeyxWaP3DuJUkw _EBoWYHIJEeyxWaP3DuJUkw">
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_768K0HICEeyxWaP3DuJUkw" name="" coveredBy="_zyBGcHIDEeyxWaP3DuJUkw _RJvOYHIEEeyxWaP3DuJUkw _JT7y8HIIEeyxWaP3DuJUkw _PRYBwHIIEeyxWaP3DuJUkw _edu3MXIIEeyxWaP3DuJUkw _gvrEoHIIEeyxWaP3DuJUkw _1opeoHIIEeyxWaP3DuJUkw _1phBUHIIEeyxWaP3DuJUkw">
+          <represents xmi:type="uml:Property" href="PerformingRail.uml#_c5ye0xI6EeyVOZB09kZL2w"/>
+        </lifeline>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_9zPwQHICEeyxWaP3DuJUkw" name="" coveredBy="_xk1nwHIEEeyxWaP3DuJUkw _iO3jUHIEEeyxWaP3DuJUkw">
+          <represents xmi:type="uml:Property" href="PerformingRail.uml#_k54h4xI6EeyVOZB09kZL2w"/>
+        </lifeline>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_-X-N8HICEeyxWaP3DuJUkw" name="" coveredBy="_g2eXkHIFEeyxWaP3DuJUkw _aWb8kXIGEeyxWaP3DuJUkw _liHf8XIIEeyxWaP3DuJUkw _ljFwUHIIEeyxWaP3DuJUkw _li_psHIIEeyxWaP3DuJUkw">
+          <represents xmi:type="uml:Property" href="PerformingRail.uml#_AswL4xI7EeyVOZB09kZL2w"/>
+        </lifeline>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_BUzygHIDEeyxWaP3DuJUkw" name="" coveredBy="_g2eXkXIFEeyxWaP3DuJUkw _zyBtgHIDEeyxWaP3DuJUkw _RJunUHIEEeyxWaP3DuJUkw _iO28QHIEEeyxWaP3DuJUkw _xk2O0HIEEeyxWaP3DuJUkw _H08h4XIHEeyxWaP3DuJUkw _KZkssHIFEeyxWaP3DuJUkw _T1d_YnIFEeyxWaP3DuJUkw _wn_IgXIFEeyxWaP3DuJUkw _5AJtUHIFEeyxWaP3DuJUkw _JT7L4HIIEeyxWaP3DuJUkw _PRYBwXIIEeyxWaP3DuJUkw _edu3MHIIEeyxWaP3DuJUkw _gvrEoXIIEeyxWaP3DuJUkw _uAjr4XIIEeyxWaP3DuJUkw _liHf8HIIEeyxWaP3DuJUkw _ljGXYHIIEeyxWaP3DuJUkw _uBdDwHIIEeyxWaP3DuJUkw _1oqFsHIIEeyxWaP3DuJUkw _1pgaQHIIEeyxWaP3DuJUkw _EAqGAHIJEeyxWaP3DuJUkw _EBsn0HIJEeyxWaP3DuJUkw _TmX2oHIJEeyxWaP3DuJUkw">
+          <represents xmi:type="uml:Property" href="PerformingRail.uml#_cLBUUxI6EeyVOZB09kZL2w"/>
+        </lifeline>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_HqiTkHIFEeyxWaP3DuJUkw" name="" coveredBy="_KZlTwHIFEeyxWaP3DuJUkw _T1d_YXIFEeyxWaP3DuJUkw _wn_IgHIFEeyxWaP3DuJUkw _5AJGQHIFEeyxWaP3DuJUkw _TmX2oXIJEeyxWaP3DuJUkw">
+          <represents xmi:type="uml:Property" href="PerformingRail.uml#_-FLsshI6EeyVOZB09kZL2w"/>
+        </lifeline>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_XWxGcHIGEeyxWaP3DuJUkw" name="" coveredBy="_aWb8kHIGEeyxWaP3DuJUkw _H08h4HIHEeyxWaP3DuJUkw _uAjr4nIIEeyxWaP3DuJUkw _uBccsXIIEeyxWaP3DuJUkw _EAqGAXIJEeyxWaP3DuJUkw _EBsAwHIJEeyxWaP3DuJUkw">
           <ownedComment xmi:type="uml:Comment" xmi:id="_3Ky4wHIGEeyxWaP3DuJUkw" annotatedElement="_XWxGcHIGEeyxWaP3DuJUkw">
             <body>The SCI-TDS object controller reports vital vacancy status of individual sections</body>
           </ownedComment>
+          <represents xmi:type="uml:Property" href="PerformingRail.uml#_AswL4xI7EeyVOZB09kZL2w"/>
         </lifeline>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_g2eXkHIFEeyxWaP3DuJUkw" name="Message31SendEvent" covered="_-X-N8HICEeyxWaP3DuJUkw" message="_g2dwgHIFEeyxWaP3DuJUkw"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_g2eXkXIFEeyxWaP3DuJUkw" name="Message31ReceiveEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_g2dwgHIFEeyxWaP3DuJUkw"/>
@@ -99,31 +116,25 @@ adjacent systems prevent trains from approaching.</body>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_edu3MXIIEeyxWaP3DuJUkw" name="Message55ReceiveEvent" covered="_768K0HICEeyxWaP3DuJUkw" message="_edtpEHIIEeyxWaP3DuJUkw"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gvrEoHIIEeyxWaP3DuJUkw" name="Message58SendEvent" covered="_768K0HICEeyxWaP3DuJUkw" message="_gvqdkHIIEeyxWaP3DuJUkw"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_gvrEoXIIEeyxWaP3DuJUkw" name="Message58ReceiveEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_gvqdkHIIEeyxWaP3DuJUkw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uAjr4nIIEeyxWaP3DuJUkw" name="Message68ReceiveEvent" covered="_XWxGcHIGEeyxWaP3DuJUkw" message="_uAjr4HIIEeyxWaP3DuJUkw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uAjr4XIIEeyxWaP3DuJUkw" name="Message68SendEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_uAjr4HIIEeyxWaP3DuJUkw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_liHf8HIIEeyxWaP3DuJUkw" name="Message61SendEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_liGR0HIIEeyxWaP3DuJUkw"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_liHf8XIIEeyxWaP3DuJUkw" name="Message61ReceiveEvent" covered="_-X-N8HICEeyxWaP3DuJUkw" message="_liGR0HIIEeyxWaP3DuJUkw"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_li_psHIIEeyxWaP3DuJUkw" name="BehaviorExecutionSpecification64" covered="_-X-N8HICEeyxWaP3DuJUkw" finish="_ljFwUHIIEeyxWaP3DuJUkw" start="_liHf8XIIEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uAjr4XIIEeyxWaP3DuJUkw" name="Message68SendEvent" covered="_-X-N8HICEeyxWaP3DuJUkw" message="_uAjr4HIIEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_liHf8HIIEeyxWaP3DuJUkw" name="Message61SendEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_liGR0HIIEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uAjr4nIIEeyxWaP3DuJUkw" name="Message68ReceiveEvent" covered="_XWxGcHIGEeyxWaP3DuJUkw" message="_uAjr4HIIEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_uBaAcHIIEeyxWaP3DuJUkw" name="BehaviorExecutionSpecification71" covered="_XWxGcHIGEeyxWaP3DuJUkw" finish="_uBccsXIIEeyxWaP3DuJUkw" start="_uAjr4nIIEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uBccsXIIEeyxWaP3DuJUkw" name="Message73SendEvent" covered="_XWxGcHIGEeyxWaP3DuJUkw" message="_uBccsHIIEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uBdDwHIIEeyxWaP3DuJUkw" name="Message73ReceiveEvent" covered="_-X-N8HICEeyxWaP3DuJUkw" message="_uBccsHIIEeyxWaP3DuJUkw"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ljFwUHIIEeyxWaP3DuJUkw" name="Message66SendEvent" covered="_-X-N8HICEeyxWaP3DuJUkw" message="_ljFJQHIIEeyxWaP3DuJUkw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uBccsXIIEeyxWaP3DuJUkw" name="Message73SendEvent" covered="_XWxGcHIGEeyxWaP3DuJUkw" message="_uBccsHIIEeyxWaP3DuJUkw"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ljGXYHIIEeyxWaP3DuJUkw" name="Message66ReceiveEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_ljFJQHIIEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EAqGAHIJEeyxWaP3DuJUkw" name="Message82SendEvent" covered="_-X-N8HICEeyxWaP3DuJUkw" message="_EAo34HIJEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1opeoHIIEeyxWaP3DuJUkw" name="Message75SendEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_1oo3kHIIEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1oqFsHIIEeyxWaP3DuJUkw" name="Message75ReceiveEvent" covered="_-X-N8HICEeyxWaP3DuJUkw" message="_1oo3kHIIEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_1pdW8HIIEeyxWaP3DuJUkw" name="BehaviorExecutionSpecification78" covered="_-X-N8HICEeyxWaP3DuJUkw" finish="_1pgaQHIIEeyxWaP3DuJUkw" start="_1oqFsHIIEeyxWaP3DuJUkw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uBdDwHIIEeyxWaP3DuJUkw" name="Message73ReceiveEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_uBccsHIIEeyxWaP3DuJUkw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1oqFsHIIEeyxWaP3DuJUkw" name="Message75ReceiveEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_1oo3kHIIEeyxWaP3DuJUkw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1pgaQHIIEeyxWaP3DuJUkw" name="Message80SendEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_1pfzMHIIEeyxWaP3DuJUkw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EAqGAHIJEeyxWaP3DuJUkw" name="Message82SendEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_EAo34HIJEeyxWaP3DuJUkw"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EAqGAXIJEeyxWaP3DuJUkw" name="Message82ReceiveEvent" covered="_XWxGcHIGEeyxWaP3DuJUkw" message="_EAo34HIJEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_EBoWYHIJEeyxWaP3DuJUkw" name="BehaviorExecutionSpecification85" covered="_XWxGcHIGEeyxWaP3DuJUkw" finish="_EBsAwHIJEeyxWaP3DuJUkw" start="_EAqGAXIJEeyxWaP3DuJUkw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1opeoHIIEeyxWaP3DuJUkw" name="Message75SendEvent" covered="_768K0HICEeyxWaP3DuJUkw" message="_1oo3kHIIEeyxWaP3DuJUkw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1phBUHIIEeyxWaP3DuJUkw" name="Message80ReceiveEvent" covered="_768K0HICEeyxWaP3DuJUkw" message="_1pfzMHIIEeyxWaP3DuJUkw"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EBsAwHIJEeyxWaP3DuJUkw" name="Message87SendEvent" covered="_XWxGcHIGEeyxWaP3DuJUkw" message="_EBrZsHIJEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EBsn0HIJEeyxWaP3DuJUkw" name="Message87ReceiveEvent" covered="_-X-N8HICEeyxWaP3DuJUkw" message="_EBrZsHIJEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1pgaQHIIEeyxWaP3DuJUkw" name="Message80SendEvent" covered="_-X-N8HICEeyxWaP3DuJUkw" message="_1pfzMHIIEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_1phBUHIIEeyxWaP3DuJUkw" name="Message80ReceiveEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_1pfzMHIIEeyxWaP3DuJUkw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EBsn0HIJEeyxWaP3DuJUkw" name="Message87ReceiveEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_EBrZsHIJEeyxWaP3DuJUkw"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TmX2oHIJEeyxWaP3DuJUkw" name="Message89SendEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_TmWogHIJEeyxWaP3DuJUkw"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TmX2oXIJEeyxWaP3DuJUkw" name="Message89ReceiveEvent" covered="_HqiTkHIFEeyxWaP3DuJUkw" message="_TmWogHIJEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_TnR1kHIJEeyxWaP3DuJUkw" name="BehaviorExecutionSpecification92" covered="_HqiTkHIFEeyxWaP3DuJUkw" finish="_TnTqwXIJEeyxWaP3DuJUkw" start="_TmX2oXIJEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TnTqwXIJEeyxWaP3DuJUkw" name="Message94SendEvent" covered="_HqiTkHIFEeyxWaP3DuJUkw" message="_TnTqwHIJEeyxWaP3DuJUkw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TnUR0HIJEeyxWaP3DuJUkw" name="Message94ReceiveEvent" covered="_BUzygHIDEeyxWaP3DuJUkw" message="_TnTqwHIJEeyxWaP3DuJUkw"/>
         <message xmi:type="uml:Message" xmi:id="_zx6_0HIDEeyxWaP3DuJUkw" name="request reset" messageSort="asynchCall" receiveEvent="_zyBtgHIDEeyxWaP3DuJUkw" sendEvent="_zyBGcHIDEeyxWaP3DuJUkw">
           <ownedComment xmi:type="uml:Comment" xmi:id="_E1ICIHIEEeyxWaP3DuJUkw" annotatedElement="_zx6_0HIDEeyxWaP3DuJUkw">
             <body>The signal man (rather than the dispatcher), checks by procedure that no trains are moving and/or approaching the zone under control of the area under system control.</body>
@@ -156,7 +167,7 @@ adjacent systems prevent trains from approaching.</body>
         </message>
         <message xmi:type="uml:Message" xmi:id="_g2dwgHIFEeyxWaP3DuJUkw" name="report status" messageSort="asynchCall" receiveEvent="_g2eXkXIFEeyxWaP3DuJUkw" sendEvent="_g2eXkHIFEeyxWaP3DuJUkw">
           <ownedComment xmi:type="uml:Comment" xmi:id="_mhINQHIFEeyxWaP3DuJUkw" annotatedElement="_g2dwgHIFEeyxWaP3DuJUkw">
-            <body>The TTD controller report vacancy status</body>
+            <body>The TTD object controller report vacancy status at a regular interval and/or upon event interrupt </body>
           </ownedComment>
         </message>
         <message xmi:type="uml:Message" xmi:id="_wn-hcHIFEeyxWaP3DuJUkw" name="report position" messageSort="asynchCall" receiveEvent="_wn_IgXIFEeyxWaP3DuJUkw" sendEvent="_wn_IgHIFEeyxWaP3DuJUkw">
@@ -169,7 +180,11 @@ adjacent systems prevent trains from approaching.</body>
             <body>The train reports position and speed=0</body>
           </ownedComment>
         </message>
-        <message xmi:type="uml:Message" xmi:id="_aWbVgHIGEeyxWaP3DuJUkw" name="report status" messageSort="asynchCall" receiveEvent="_aWb8kXIGEeyxWaP3DuJUkw" sendEvent="_aWb8kHIGEeyxWaP3DuJUkw"/>
+        <message xmi:type="uml:Message" xmi:id="_aWbVgHIGEeyxWaP3DuJUkw" name="report status" messageSort="asynchCall" receiveEvent="_aWb8kXIGEeyxWaP3DuJUkw" sendEvent="_aWb8kHIGEeyxWaP3DuJUkw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_DXbwYKBMEeykBbxhhftkxQ" annotatedElement="_aWbVgHIGEeyxWaP3DuJUkw">
+            <body>point controllers and I/O controllers report status at regular interval or event driven</body>
+          </ownedComment>
+        </message>
         <message xmi:type="uml:Message" xmi:id="_H0760HIHEeyxWaP3DuJUkw" name="report status " messageSort="asynchCall" receiveEvent="_H08h4XIHEeyxWaP3DuJUkw" sendEvent="_H08h4HIHEeyxWaP3DuJUkw">
           <ownedComment xmi:type="uml:Comment" xmi:id="_RLPi4HIHEeyxWaP3DuJUkw" annotatedElement="_H0760HIHEeyxWaP3DuJUkw">
             <body>The SCI-P object controller reports point status</body>
@@ -186,17 +201,36 @@ adjacent systems prevent trains from approaching.</body>
           </ownedComment>
         </message>
         <message xmi:type="uml:Message" xmi:id="_edtpEHIIEeyxWaP3DuJUkw" name="confirm" messageSort="reply" receiveEvent="_edu3MXIIEeyxWaP3DuJUkw" sendEvent="_edu3MHIIEeyxWaP3DuJUkw"/>
-        <message xmi:type="uml:Message" xmi:id="_gvqdkHIIEeyxWaP3DuJUkw" name="call route" messageSort="asynchCall" receiveEvent="_gvrEoXIIEeyxWaP3DuJUkw" sendEvent="_gvrEoHIIEeyxWaP3DuJUkw"/>
-        <message xmi:type="uml:Message" xmi:id="_liGR0HIIEeyxWaP3DuJUkw" name="check TTD" receiveEvent="_liHf8XIIEeyxWaP3DuJUkw" sendEvent="_liHf8HIIEeyxWaP3DuJUkw"/>
+        <message xmi:type="uml:Message" xmi:id="_gvqdkHIIEeyxWaP3DuJUkw" name="call route" messageSort="asynchCall" receiveEvent="_gvrEoXIIEeyxWaP3DuJUkw" sendEvent="_gvrEoHIIEeyxWaP3DuJUkw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_rz7icKBOEeykBbxhhftkxQ" annotatedElement="_gvqdkHIIEeyxWaP3DuJUkw">
+            <body>procudures have been completed. The TMS calls a route</body>
+          </ownedComment>
+        </message>
+        <message xmi:type="uml:Message" xmi:id="_liGR0HIIEeyxWaP3DuJUkw" name="check TTD" receiveEvent="_liHf8XIIEeyxWaP3DuJUkw" sendEvent="_liHf8HIIEeyxWaP3DuJUkw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_VWAOwKBMEeykBbxhhftkxQ" annotatedElement="_liGR0HIIEeyxWaP3DuJUkw">
+            <body>Trackside polls TTD status</body>
+          </ownedComment>
+        </message>
         <message xmi:type="uml:Message" xmi:id="_ljFJQHIIEeyxWaP3DuJUkw" name="report TTD status" messageSort="reply" receiveEvent="_ljGXYHIIEeyxWaP3DuJUkw" sendEvent="_ljFwUHIIEeyxWaP3DuJUkw"/>
-        <message xmi:type="uml:Message" xmi:id="_uAjr4HIIEeyxWaP3DuJUkw" name="query status" receiveEvent="_uAjr4nIIEeyxWaP3DuJUkw" sendEvent="_uAjr4XIIEeyxWaP3DuJUkw"/>
-        <message xmi:type="uml:Message" xmi:id="_uBccsHIIEeyxWaP3DuJUkw" name="report status" messageSort="reply" receiveEvent="_uBdDwHIIEeyxWaP3DuJUkw" sendEvent="_uBccsXIIEeyxWaP3DuJUkw"/>
+        <message xmi:type="uml:Message" xmi:id="_uAjr4HIIEeyxWaP3DuJUkw" name="query status" receiveEvent="_uAjr4nIIEeyxWaP3DuJUkw" sendEvent="_uAjr4XIIEeyxWaP3DuJUkw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_du1h8KBMEeykBbxhhftkxQ" annotatedElement="_uAjr4HIIEeyxWaP3DuJUkw">
+            <body>trackside polls SCI-P and SCI-IO status</body>
+          </ownedComment>
+        </message>
+        <message xmi:type="uml:Message" xmi:id="_uBccsHIIEeyxWaP3DuJUkw" name="report status" messageSort="reply" receiveEvent="_uBdDwHIIEeyxWaP3DuJUkw" sendEvent="_uBccsXIIEeyxWaP3DuJUkw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_mET_IKBMEeykBbxhhftkxQ" annotatedElement="_uBccsHIIEeyxWaP3DuJUkw">
+            <body>SCI-P and SCI-IO report back status</body>
+          </ownedComment>
+        </message>
         <message xmi:type="uml:Message" xmi:id="_1oo3kHIIEeyxWaP3DuJUkw" name="control points" receiveEvent="_1oqFsHIIEeyxWaP3DuJUkw" sendEvent="_1opeoHIIEeyxWaP3DuJUkw"/>
         <message xmi:type="uml:Message" xmi:id="_1pfzMHIIEeyxWaP3DuJUkw" name="report point position" messageSort="reply" receiveEvent="_1phBUHIIEeyxWaP3DuJUkw" sendEvent="_1pgaQHIIEeyxWaP3DuJUkw"/>
-        <message xmi:type="uml:Message" xmi:id="_EAo34HIJEeyxWaP3DuJUkw" name="request point position" receiveEvent="_EAqGAXIJEeyxWaP3DuJUkw" sendEvent="_EAqGAHIJEeyxWaP3DuJUkw"/>
+        <message xmi:type="uml:Message" xmi:id="_EAo34HIJEeyxWaP3DuJUkw" name="request point position" receiveEvent="_EAqGAXIJEeyxWaP3DuJUkw" sendEvent="_EAqGAHIJEeyxWaP3DuJUkw">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_07rKEKBOEeykBbxhhftkxQ" annotatedElement="_EAo34HIJEeyxWaP3DuJUkw">
+            <body>Trackside requests point positions according to route</body>
+          </ownedComment>
+        </message>
         <message xmi:type="uml:Message" xmi:id="_EBrZsHIJEeyxWaP3DuJUkw" name="report detected point position" messageSort="reply" receiveEvent="_EBsn0HIJEeyxWaP3DuJUkw" sendEvent="_EBsAwHIJEeyxWaP3DuJUkw"/>
         <message xmi:type="uml:Message" xmi:id="_TmWogHIJEeyxWaP3DuJUkw" name="send MA" receiveEvent="_TmX2oXIJEeyxWaP3DuJUkw" sendEvent="_TmX2oHIJEeyxWaP3DuJUkw"/>
-        <message xmi:type="uml:Message" xmi:id="_TnTqwHIJEeyxWaP3DuJUkw" name="acknowledge" messageSort="reply" receiveEvent="_TnUR0HIJEeyxWaP3DuJUkw" sendEvent="_TnTqwXIJEeyxWaP3DuJUkw"/>
       </ownedBehavior>
       <include xmi:type="uml:Include" xmi:id="_GT_akBVDEeyMXOG2LrUsxQ">
         <addition xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
