@@ -46,15 +46,15 @@
         <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_PeHsEF22Eey_gKPac597Xw" name="BehaviorExecutionSpecification46Finish" covered="_-SLjgEfHEeyfHsZ5oNU26Q" execution="_PeBlcF22Eey_gKPac597Xw"/>
         <fragment xmi:type="uml:CombinedFragment" xmi:id="_9-9aoEfJEeyfHsZ5oNU26Q" name="Accept confirmation Driver" covered="_-SLjgEfHEeyfHsZ5oNU26Q" interactionOperator="alt">
           <operand xmi:type="uml:InteractionOperand" xmi:id="_9--BsEfJEeyfHsZ5oNU26Q" name="InteractionOperand0" covered="_-SLjgEfHEeyfHsZ5oNU26Q">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kGGw0EfKEeyfHsZ5oNU26Q" name="Message28SendEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_kGGJwEfKEeyfHsZ5oNU26Q"/>
+            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_XVmOwFQrEeyUCrs15sTmBw" name="BehaviorExecutionSpecification39" covered="_-SLjgEfHEeyfHsZ5oNU26Q" finish="_XWVOkFQrEeyUCrs15sTmBw" start="_kGGw0EfKEeyfHsZ5oNU26Q"/>
+            <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_XWVOkFQrEeyUCrs15sTmBw" name="BehaviorExecutionSpecification39Finish" covered="_-SLjgEfHEeyfHsZ5oNU26Q" execution="_XVmOwFQrEeyUCrs15sTmBw"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kGHX4EfKEeyfHsZ5oNU26Q" name="Message28ReceiveEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_kGGJwEfKEeyfHsZ5oNU26Q"/>
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_9--BsUfJEeyfHsZ5oNU26Q" name="Accept Driver confirmation">
               <specification xmi:type="uml:LiteralString" xmi:id="_OyJD8EfKEeyfHsZ5oNU26Q" value="Trackside is configured to accept Train Integrity confirmation by the driver"/>
             </guard>
           </operand>
         </fragment>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kGGw0EfKEeyfHsZ5oNU26Q" name="Message28SendEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_kGGJwEfKEeyfHsZ5oNU26Q"/>
-        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_XVmOwFQrEeyUCrs15sTmBw" name="BehaviorExecutionSpecification39" covered="_-SLjgEfHEeyfHsZ5oNU26Q" finish="_XWVOkFQrEeyUCrs15sTmBw" start="_kGGw0EfKEeyfHsZ5oNU26Q"/>
-        <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_XWVOkFQrEeyUCrs15sTmBw" name="BehaviorExecutionSpecification39Finish" covered="_-SLjgEfHEeyfHsZ5oNU26Q" execution="_XVmOwFQrEeyUCrs15sTmBw"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kGHX4EfKEeyfHsZ5oNU26Q" name="Message28ReceiveEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_kGGJwEfKEeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8oSqEFz7Eeykb-NWxgIwbw" name="Message43SendEvent" covered="_-SLjgEfHEeyfHsZ5oNU26Q" message="_8oRb8Fz7Eeykb-NWxgIwbw"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8oSqEVz7Eeykb-NWxgIwbw" name="Message43ReceiveEvent" covered="_1VcSAEfHEeyfHsZ5oNU26Q" message="_8oRb8Fz7Eeykb-NWxgIwbw"/>
         <message xmi:type="uml:Message" xmi:id="_LcgPwEfIEeyfHsZ5oNU26Q" name="S_Train_Integrity_TIMS(Confirmed)" messageSort="asynchCall" receiveEvent="_LcisAEfIEeyfHsZ5oNU26Q" sendEvent="_LciE8EfIEeyfHsZ5oNU26Q"/>
@@ -94,8 +94,8 @@
         <lifeline xmi:type="uml:Lifeline" xmi:id="_7cpzwF2zEeyCWIFnlKn16A" name="TIMS" represents="_7crB4F2zEeyCWIFnlKn16A" coveredBy="_8_Q2AF2zEeyCWIFnlKn16A"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7TAFUF2vEey40_sZxILusA" name="Message5SendEvent" covered="_f0pSwF2vEeykb-NWxgIwbw" message="_7SnDwF2vEey40_sZxILusA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7TAsYF2vEey40_sZxILusA" name="Message5ReceiveEvent" covered="_iBHxYF2vEeykb-NWxgIwbw" message="_7SnDwF2vEey40_sZxILusA"/>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_BBhuYF2wEey40_sZxILusA" name="CombinedFragment8" covered="_iBHxYF2vEeykb-NWxgIwbw _f0pSwF2vEeykb-NWxgIwbw" interactionOperator="opt">
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_BBkxsF2wEey40_sZxILusA" name="InteractionOperand0" covered="_iBHxYF2vEeykb-NWxgIwbw _f0pSwF2vEeykb-NWxgIwbw">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_BBhuYF2wEey40_sZxILusA" name="CombinedFragment8" covered="_f0pSwF2vEeykb-NWxgIwbw _iBHxYF2vEeykb-NWxgIwbw" interactionOperator="opt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_BBkxsF2wEey40_sZxILusA" name="InteractionOperand0" covered="_f0pSwF2vEeykb-NWxgIwbw _iBHxYF2vEeykb-NWxgIwbw">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__7wjsF2wEeyCWIFnlKn16A" name="Message9SendEvent" covered="_iBHxYF2vEeykb-NWxgIwbw" message="__7jvYF2wEeyCWIFnlKn16A"/>
             <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_QV2d8F25Eey_gKPac597Xw" name="BehaviorExecutionSpecification39" covered="_iBHxYF2vEeykb-NWxgIwbw" finish="_QV3sEF25Eey_gKPac597Xw" start="__7wjsF2wEeyCWIFnlKn16A"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__7xKwF2wEeyCWIFnlKn16A" name="Message9ReceiveEvent" covered="_iBHxYF2vEeykb-NWxgIwbw" message="__7jvYF2wEeyCWIFnlKn16A"/>
