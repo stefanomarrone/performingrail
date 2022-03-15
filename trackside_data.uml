@@ -129,7 +129,9 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_mdjZYIqyEey_E5TpwM1pKA" name="L_TRAIN">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_hQ88MYqzEey_E5TpwM1pKA" name="trainpositionreport" type="_pDVx8InYEeywtu03ZyCfsg" association="_hQ7uEIqzEey_E5TpwM1pKA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_hQ88MYqzEey_E5TpwM1pKA" name="trainpositionreport" type="_pDVx8InYEeywtu03ZyCfsg" association="_hQ7uEIqzEey_E5TpwM1pKA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mCO5YKRbEeyej7eNlp97ag"/>
+        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_iEeD0oqzEey_E5TpwM1pKA" name="movementauthority" type="_RCTlYInZEeywtu03ZyCfsg" association="_iEc1sIqzEey_E5TpwM1pKA">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iEeq4IqzEey_E5TpwM1pKA"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iEeq4YqzEey_E5TpwM1pKA" value="1"/>
@@ -342,6 +344,10 @@ Assumption:&#xD;
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_c0tDUJPHEeym_Y8iJLDdAA" name="trainintegrity" type="_I5TE0JPHEeym_Y8iJLDdAA" association="_c0qAAJPHEeym_Y8iJLDdAA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_dyCk0KRbEeyej7eNlp97ag" name="positionreport" type="_pDVx8InYEeywtu03ZyCfsg" association="_dx7QEKRbEeyej7eNlp97ag">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dyDy8KRbEeyej7eNlp97ag"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dyDy8aRbEeyej7eNlp97ag" value="1"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_O7bGQKLkEey9xcG6n6eidg" name="Position">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_IU8SIJSZEeyW24yVM5ADIg" name="D_LRBG">
@@ -379,6 +385,12 @@ Assumption:&#xD;
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__jLxIKMIEey8CrBFlQNT-w" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="__jNmUKMIEey8CrBFlQNT-w" name="trainintegrity" type="_I5TE0JPHEeym_Y8iJLDdAA" association="__jIt0KMIEey8CrBFlQNT-w"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_dx7QEKRbEeyej7eNlp97ag" memberEnd="_dyCk0KRbEeyej7eNlp97ag _dyEaAKRbEeyej7eNlp97ag">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dyBWsKRbEeyej7eNlp97ag" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_dyB9wKRbEeyej7eNlp97ag" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_dyEaAKRbEeyej7eNlp97ag" name="location" type="_IuXHEKLkEey9xcG6n6eidg" association="_dx7QEKRbEeyej7eNlp97ag"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_rANpEIquEey_E5TpwM1pKA" name="Configuration">
