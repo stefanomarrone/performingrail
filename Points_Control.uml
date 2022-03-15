@@ -154,6 +154,18 @@ point is not locked</body>
         <type xmi:type="uml:Class" href="PerformingRail.uml#_fF5jUBI1EeyVOZB09kZL2w"/>
       </ownedEnd>
     </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_re-SQKSEEeyPfv_3TqzDPA" name="Refine14" client="_9ZViIIagEey7P_gWH-mwEA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_QiDHUHz8EeyMX6xfbLFcdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_sGjPoKSEEeyPfv_3TqzDPA" name="Refine15" client="_9ZViIIagEey7P_gWH-mwEA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_25yBwHz9EeyMX6xfbLFcdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_skhlEKSEEeyPfv_3TqzDPA" name="Refine16" client="_AUNn8IbaEeylxdnZ9sgn6A">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_7-AJkHz9EeyMX6xfbLFcdw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_tEjwAKSEEeyPfv_3TqzDPA" name="Refine17" client="_24ecIIdvEey4_osI_wqoMQ">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_Mjc44Hz-EeyMX6xfbLFcdw"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sHwvMDjZEeyQeMlHlxk6EA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sHwvMTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -241,4 +253,8 @@ point is not locked</body>
     <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_Mjc44Hz-EeyMX6xfbLFcdw"/>
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_Mjc44Hz-EeyMX6xfbLFcdw"/>
   </Requirements:Requirement>
+  <Requirements:Refine xmi:id="_rfHcMKSEEeyPfv_3TqzDPA" base_DirectedRelationship="_re-SQKSEEeyPfv_3TqzDPA" base_Abstraction="_re-SQKSEEeyPfv_3TqzDPA"/>
+  <Requirements:Refine xmi:id="_sGmS8KSEEeyPfv_3TqzDPA" base_DirectedRelationship="_sGjPoKSEEeyPfv_3TqzDPA" base_Abstraction="_sGjPoKSEEeyPfv_3TqzDPA"/>
+  <Requirements:Refine xmi:id="_skkoYKSEEeyPfv_3TqzDPA" base_DirectedRelationship="_skhlEKSEEeyPfv_3TqzDPA" base_Abstraction="_skhlEKSEEeyPfv_3TqzDPA"/>
+  <Requirements:Refine xmi:id="_tEmMQKSEEeyPfv_3TqzDPA" base_DirectedRelationship="_tEjwAKSEEeyPfv_3TqzDPA" base_Abstraction="_tEjwAKSEEeyPfv_3TqzDPA"/>
 </xmi:XMI>
