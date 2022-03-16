@@ -4,12 +4,12 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_6x1yoBRpEeyQN9odROAPWw" name="Loss of Train Integrity" classifierBehavior="_6zwwIEesEeyfHsZ5oNU26Q">
       <ownedBehavior xmi:type="uml:Interaction" xmi:id="_6zwwIEesEeyfHsZ5oNU26Q" name="LTI_SD">
         <ownedComment xmi:type="uml:Comment" xmi:id="_T6ILEEfCEeyfHsZ5oNU26Q">
-          <body>REQ-LossTI-1&#xD;
-REQ-LossTI-2&#xD;
+          <body>REQ-LossTI-2&#xD;
 REQ-LossTI-3&#xD;
 REQ-LossTI-4&#xD;
 REQ-LossTI-5&#xD;
 REQ-LossTI-6&#xD;
+REQ-LossTI-7&#xD;
 REQ-LossTI-8&#xD;
 </body>
         </ownedComment>
@@ -55,8 +55,8 @@ REQ-LossTI-8&#xD;
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_iJlmUUe1EeyfHsZ5oNU26Q" name="Message27ReceiveEvent" covered="_PLoBIEetEeyfHsZ5oNU26Q" message="_iJkYMEe1EeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8_AJkEe1EeyfHsZ5oNU26Q" name="Message28SendEvent" covered="_PLoBIEetEeyfHsZ5oNU26Q" message="_8-_igEe1EeyfHsZ5oNU26Q"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8_AwoEe1EeyfHsZ5oNU26Q" name="Message28ReceiveEvent" covered="_NgfVAEetEeyfHsZ5oNU26Q" message="_8-_igEe1EeyfHsZ5oNU26Q"/>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_A42hQEe8EeyfHsZ5oNU26Q" name="CombinedFragment25" covered="_PLoBIEetEeyfHsZ5oNU26Q _NgfVAEetEeyfHsZ5oNU26Q" interactionOperator="alt">
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_A44WcEe8EeyfHsZ5oNU26Q" name="InteractionOperand0" covered="_PLoBIEetEeyfHsZ5oNU26Q _NgfVAEetEeyfHsZ5oNU26Q">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_A42hQEe8EeyfHsZ5oNU26Q" name="CombinedFragment25" covered="_NgfVAEetEeyfHsZ5oNU26Q _PLoBIEetEeyfHsZ5oNU26Q" interactionOperator="alt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_A44WcEe8EeyfHsZ5oNU26Q" name="InteractionOperand0" covered="_NgfVAEetEeyfHsZ5oNU26Q _PLoBIEetEeyfHsZ5oNU26Q">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kpRG8Ek4Eeyh4oFA3tP0HA" name="Message66SendEvent" covered="_NgfVAEetEeyfHsZ5oNU26Q" message="_kpQf4Ek4Eeyh4oFA3tP0HA"/>
             <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_d06gIJPoEeyk7ZT3MKZRPQ" name="BehaviorExecutionSpecification57" covered="_NgfVAEetEeyfHsZ5oNU26Q" finish="_d09jcJPoEeyk7ZT3MKZRPQ" start="_kpRG8Ek4Eeyh4oFA3tP0HA"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_kpRuAEk4Eeyh4oFA3tP0HA" name="Message66ReceiveEvent" covered="_NgfVAEetEeyfHsZ5oNU26Q" message="_kpQf4Ek4Eeyh4oFA3tP0HA"/>
@@ -69,7 +69,7 @@ REQ-LossTI-8&#xD;
               <specification xmi:type="uml:LiteralString" xmi:id="_QrR4MEe8EeyfHsZ5oNU26Q" value="isDriverIntegrityConfirmationAccepted = TRUE"/>
             </guard>
           </operand>
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_-kcsAEk3Eeyh4oFA3tP0HA" name="InteractionOperand2" covered="_PLoBIEetEeyfHsZ5oNU26Q _NgfVAEetEeyfHsZ5oNU26Q">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_-kcsAEk3Eeyh4oFA3tP0HA" name="InteractionOperand2" covered="_NgfVAEetEeyfHsZ5oNU26Q _PLoBIEetEeyfHsZ5oNU26Q">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LrWl8Ek6Eeyh4oFA3tP0HA" name="Message68SendEvent" covered="_NgfVAEetEeyfHsZ5oNU26Q" message="_Gy2l8Ek6Eeyh4oFA3tP0HA"/>
             <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_gAY5MJPoEeyk7ZT3MKZRPQ" name="BehaviorExecutionSpecification57" covered="_NgfVAEetEeyfHsZ5oNU26Q" finish="_gAZgQJPoEeyk7ZT3MKZRPQ" start="_LrWl8Ek6Eeyh4oFA3tP0HA"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LrWl8Uk6Eeyh4oFA3tP0HA" name="Message68ReceiveEvent" covered="_NgfVAEetEeyfHsZ5oNU26Q" message="_Gy2l8Ek6Eeyh4oFA3tP0HA"/>
@@ -110,7 +110,7 @@ REQ-LossTI-8&#xD;
         <message xmi:type="uml:Message" xmi:id="_U7j3kE3QEeyTKpdRngNeaw" name="waitIntegrityTime expired /assumed train integrity lost" messageSort="asynchCall" receiveEvent="_U7qlQU3QEeyTKpdRngNeaw" sendEvent="_U7qlQE3QEeyTKpdRngNeaw"/>
         <message xmi:type="uml:Message" xmi:id="_0rjecE3QEey2lvPAMGUuCQ" name="R_TracksideLossIntegrity" messageSort="asynchCall" sendEvent="_0rxg4E3QEey2lvPAMGUuCQ"/>
         <message xmi:type="uml:Message" xmi:id="_mYzesJPmEeyk7ZT3MKZRPQ" name="Occupy Track Status" messageSort="asynchCall" receiveEvent="_mY4XMZPmEeyk7ZT3MKZRPQ" sendEvent="_mY4XMJPmEeyk7ZT3MKZRPQ"/>
-        <message xmi:type="uml:Message" xmi:id="_gVcb0JPrEeydT4R2R7dp2g" name="Message75" messageSort="asynchCall" receiveEvent="_gVgGMJPrEeydT4R2R7dp2g" sendEvent="_gVffIJPrEeydT4R2R7dp2g"/>
+        <message xmi:type="uml:Message" xmi:id="_gVcb0JPrEeydT4R2R7dp2g" name="S_Train_Integrity_Lost" messageSort="asynchCall" receiveEvent="_gVgGMJPrEeydT4R2R7dp2g" sendEvent="_gVffIJPrEeydT4R2R7dp2g"/>
       </ownedBehavior>
       <include xmi:type="uml:Include" xmi:id="_DZnJ4D1gEeyAv_UCn311nQ">
         <addition xmi:type="uml:UseCase" href="TTD_Management.uml#_BCR5IBRuEeyQN9odROAPWw"/>
