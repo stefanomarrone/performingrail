@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
   <uml:Package xmi:id="_tiag4JuVEey1k9qWv3EIDg" name="Requirements">
-    <packagedElement xmi:type="uml:Class" xmi:id="_wcLjUJuVEey1k9qWv3EIDg" name="SUBSET 026"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wcLjUJuVEey1k9qWv3EIDg" name="SUBSET 026">
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_58qXsKUwEeykePlC7pxpcQ" name="Requirements Procedure On-Sight">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_BOFW4KUxEeykePlC7pxpcQ" name="Requirement 5.9.1.1"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_PfYSQKUxEeykePlC7pxpcQ" name="Requirement 5.9.1.2"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_b_uNYKUxEeykePlC7pxpcQ" name="Requirement 5.9.2.3"/>
+      </nestedClassifier>
+    </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_x4SU8JuVEey1k9qWv3EIDg" name="X2Rail-3">
       <nestedClassifier xmi:type="uml:Class" xmi:id="_ZaBMgJ2IEeyInc_PVJ5xIQ" name="REQ-TrainLoc">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_vbxLgFOREeymBZkA5Ubaxw" name="REQ-TrainLoc-1"/>
@@ -361,4 +367,8 @@
   <Requirements:Requirement xmi:id="_9ufhUJ7fEeyRVZ3rwv6m0A" base_NamedElement="_9uWXYJ7fEeyRVZ3rwv6m0A" id="REQ-Join-2" text="If the Joined Train leaves the Unknown Track Status Area, and the Joined Train has L_TRAIN less than the sum of the L_TRAIN of the Train to be Joined and the L_TRAIN of the Joining Train, then the L3 Trackside shall reduce the length of the Unknown Track Status Area by L_TRAIN of the Joined Train." base_Class="_9uWXYJ7fEeyRVZ3rwv6m0A"/>
   <Requirements:Requirement xmi:id="_9ugIYJ7fEeyRVZ3rwv6m0A" base_NamedElement="_9uWXYZ7fEeyRVZ3rwv6m0A" id="REQ-Join-3" text="If the Joined Train leaves the Unknown Track Status Area, and the Joined Train has L_TRAIN less than the sum of the L_TRAIN of the Train to be Joined and the L_TRAIN of the Joining Train, then the L3 Trackside shall subtract the Length of the Joined Train from the length stored for the remaining Unknown Track Status Area." base_Class="_9uWXYZ7fEeyRVZ3rwv6m0A"/>
   <Requirements:Requirement xmi:id="_93kk0p7fEeyRVZ3rwv6m0A" base_NamedElement="_93j9wJ7fEeyRVZ3rwv6m0A" id="REQ-Split-1" text="The L3 Trackside shall be able to reduce the length of the Unknown Track Status Area due to loss of Train Integrity or reception of new Validated Train Data when a train confirms integrity reporting within the Unknown Track Status Area." base_Class="_93j9wJ7fEeyRVZ3rwv6m0A"/>
+  <Requirements:Requirement xmi:id="_58sz8KUwEeykePlC7pxpcQ" base_NamedElement="_58qXsKUwEeykePlC7pxpcQ" base_Class="_58qXsKUwEeykePlC7pxpcQ"/>
+  <Requirements:Requirement xmi:id="_BOIaMKUxEeykePlC7pxpcQ" base_NamedElement="_BOFW4KUxEeykePlC7pxpcQ" text="The ERTMS/ETCS on-board equipment shall be in On Sight mode before the train reaches the beginning of the On Sight area or, at the latest, when the train reaches the beginning of the On Sight area." base_Class="_BOFW4KUxEeykePlC7pxpcQ"/>
+  <Requirements:Requirement xmi:id="_PfbVkKUxEeykePlC7pxpcQ" base_NamedElement="_PfYSQKUxEeykePlC7pxpcQ" text="An acknowledgement for running in On Sight mode is requested from the driver. The conditions of the acknowledgement are specified below." base_Class="_PfYSQKUxEeykePlC7pxpcQ"/>
+  <Requirements:Requirement xmi:id="_b_x3wKUxEeykePlC7pxpcQ" base_NamedElement="_b_uNYKUxEeykePlC7pxpcQ" text="The driver must acknowledge the On Sight mode. A request of acknowledgement shall be displayed to the driver." base_Class="_b_uNYKUxEeykePlC7pxpcQ"/>
 </xmi:XMI>

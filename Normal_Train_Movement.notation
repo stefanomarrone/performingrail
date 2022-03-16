@@ -2575,4 +2575,48 @@
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_9POtFKOuEey1NJ3H70mZ-A"/>
     </edges>
   </notation:Diagram>
+  <notation:Diagram xmi:id="_hMMPEKUtEeykePlC7pxpcQ" type="PapyrusUMLSequenceDiagram" name="New SD UGE" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_hMMPEaUtEeykePlC7pxpcQ" type="Interaction_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_hMMPEqUtEeykePlC7pxpcQ" type="Interaction_NameLabel"/>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_hMMPE6UtEeykePlC7pxpcQ" type="Interaction_SubfragmentCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_nzi9kKUtEeykePlC7pxpcQ" type="Lifeline_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_nzi9kqUtEeykePlC7pxpcQ" type="Lifeline_NameLabel"/>
+          <element xmi:type="uml:Lifeline" href="Normal_Train_Movement.uml#_nzf6QKUtEeykePlC7pxpcQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_nzi9kaUtEeykePlC7pxpcQ" x="83" y="10"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_uLORUaUtEeykePlC7pxpcQ" type="Lifeline_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_uLORU6UtEeykePlC7pxpcQ" type="Lifeline_NameLabel"/>
+          <element xmi:type="uml:Lifeline" href="Normal_Train_Movement.uml#_uLNqQKUtEeykePlC7pxpcQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uLORUqUtEeykePlC7pxpcQ" x="714" y="10" width="121"/>
+        </children>
+        <children xmi:type="notation:Shape" xmi:id="_u1k14KUtEeykePlC7pxpcQ" type="Lifeline_Shape">
+          <children xmi:type="notation:DecorationNode" xmi:id="_u1k14qUtEeykePlC7pxpcQ" type="Lifeline_NameLabel"/>
+          <element xmi:type="uml:Lifeline" href="Normal_Train_Movement.uml#_u1jnwKUtEeykePlC7pxpcQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_u1k14aUtEeykePlC7pxpcQ" x="594" y="10" width="101"/>
+        </children>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hMMPFKUtEeykePlC7pxpcQ"/>
+      </children>
+      <element xmi:type="uml:Interaction" href="Normal_Train_Movement.uml#_e3DjsKUtEeykePlC7pxpcQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hMMPFaUtEeykePlC7pxpcQ"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_hMMPFqUtEeykePlC7pxpcQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_hMMPF6UtEeykePlC7pxpcQ"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_hMMPGKUtEeykePlC7pxpcQ" diagramKindId="org.eclipse.papyrus.sysml16.diagram.sequence">
+      <owner xmi:type="uml:UseCase" href="Normal_Train_Movement.uml#_36a5kBRpEeyQN9odROAPWw"/>
+    </styles>
+    <element xmi:type="uml:Interaction" href="Normal_Train_Movement.uml#_e3DjsKUtEeykePlC7pxpcQ"/>
+    <edges xmi:type="notation:Connector" xmi:id="_49C1IKUtEeykePlC7pxpcQ" type="Message_AsynchEdge" source="_uLORUaUtEeykePlC7pxpcQ" target="_u1k14KUtEeykePlC7pxpcQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_49C1I6UtEeykePlC7pxpcQ" type="Message_AsynchNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_49C1JKUtEeykePlC7pxpcQ" x="1" y="-13"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_49C1JaUtEeykePlC7pxpcQ" type="Message_AsynchStereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_49C1JqUtEeykePlC7pxpcQ" x="1" y="-33"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_49C1IaUtEeykePlC7pxpcQ"/>
+      <element xmi:type="uml:Message" href="Normal_Train_Movement.uml#_482n4KUtEeykePlC7pxpcQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_49C1IqUtEeykePlC7pxpcQ" points="[0, 0, 130, 0]$[-130, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_49L_EKUtEeykePlC7pxpcQ" id="(0.5,0.06571428571428571)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_49L_EaUtEeykePlC7pxpcQ" id="(0.5,0.06571428571428571)"/>
+    </edges>
+  </notation:Diagram>
 </xmi:XMI>
