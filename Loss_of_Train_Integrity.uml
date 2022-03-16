@@ -4,12 +4,12 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_6x1yoBRpEeyQN9odROAPWw" name="Loss of Train Integrity" classifierBehavior="_6zwwIEesEeyfHsZ5oNU26Q">
       <ownedBehavior xmi:type="uml:Interaction" xmi:id="_6zwwIEesEeyfHsZ5oNU26Q" name="LTI_SD">
         <ownedComment xmi:type="uml:Comment" xmi:id="_T6ILEEfCEeyfHsZ5oNU26Q">
-          <body>REQ-LossTI-1&#xD;
-REQ-LossTI-2&#xD;
+          <body>REQ-LossTI-2&#xD;
 REQ-LossTI-3&#xD;
 REQ-LossTI-4&#xD;
 REQ-LossTI-5&#xD;
 REQ-LossTI-6&#xD;
+REQ-LossTI-7&#xD;
 REQ-LossTI-8&#xD;
 </body>
         </ownedComment>
@@ -176,6 +176,24 @@ REQ-LossTI-8&#xD;
     <packagedElement xmi:type="uml:Abstraction" xmi:id="_ZwvWsKUYEey2VJeaObTKrA" name="Refine17" client="_6zwwIEesEeyfHsZ5oNU26Q">
       <supplier xmi:type="uml:Class" href="Requirements.uml#_c3njYD1iEeyAv_UCn311nQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_9L4gAKUgEey2VJeaObTKrA" name="Refine18" client="_6zwwIEesEeyfHsZ5oNU26Q">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_c3oxgD1iEeyAv_UCn311nQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_Je6-8KUhEey2VJeaObTKrA" name="Refine19" client="_6zwwIEesEeyfHsZ5oNU26Q">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_c3oKcD1iEeyAv_UCn311nQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_MdN8EKUhEey2VJeaObTKrA" name="Refine20" client="_6zwwIEesEeyfHsZ5oNU26Q">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_c3oKcT1iEeyAv_UCn311nQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_QmrEwKUhEey2VJeaObTKrA" name="Refine21" client="_6zwwIEesEeyfHsZ5oNU26Q">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_c3pYkD1iEeyAv_UCn311nQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_UPMDkKUhEey2VJeaObTKrA" name="Refine22" client="_6zwwIEesEeyfHsZ5oNU26Q">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_c3qmsD1iEeyAv_UCn311nQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_YSC1AKUhEey2VJeaObTKrA" name="Refine23" client="_6zwwIEesEeyfHsZ5oNU26Q">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_c3p_oD1iEeyAv_UCn311nQ"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_q-RXkDjZEeyQeMlHlxk6EA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_q-RXkTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -284,4 +302,10 @@ REQ-LossTI-8&#xD;
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_c3r00D1iEeyAv_UCn311nQ"/>
   </Requirements:Requirement>
   <Requirements:Refine xmi:id="_Zw35kKUYEey2VJeaObTKrA" base_DirectedRelationship="_ZwvWsKUYEey2VJeaObTKrA" base_Abstraction="_ZwvWsKUYEey2VJeaObTKrA"/>
+  <Requirements:Refine xmi:id="_9L8xcKUgEey2VJeaObTKrA" base_DirectedRelationship="_9L4gAKUgEey2VJeaObTKrA" base_Abstraction="_9L4gAKUgEey2VJeaObTKrA"/>
+  <Requirements:Refine xmi:id="_Je-pUKUhEey2VJeaObTKrA" base_DirectedRelationship="_Je6-8KUhEey2VJeaObTKrA" base_Abstraction="_Je6-8KUhEey2VJeaObTKrA"/>
+  <Requirements:Refine xmi:id="_MdSNgKUhEey2VJeaObTKrA" base_DirectedRelationship="_MdN8EKUhEey2VJeaObTKrA" base_Abstraction="_MdN8EKUhEey2VJeaObTKrA"/>
+  <Requirements:Refine xmi:id="_QmthAKUhEey2VJeaObTKrA" base_DirectedRelationship="_QmrEwKUhEey2VJeaObTKrA" base_Abstraction="_QmrEwKUhEey2VJeaObTKrA"/>
+  <Requirements:Refine xmi:id="_UPPt8KUhEey2VJeaObTKrA" base_DirectedRelationship="_UPMDkKUhEey2VJeaObTKrA" base_Abstraction="_UPMDkKUhEey2VJeaObTKrA"/>
+  <Requirements:Refine xmi:id="_YSF4UKUhEey2VJeaObTKrA" base_DirectedRelationship="_YSC1AKUhEey2VJeaObTKrA" base_Abstraction="_YSC1AKUhEey2VJeaObTKrA"/>
 </xmi:XMI>
