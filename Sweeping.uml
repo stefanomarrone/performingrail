@@ -93,6 +93,12 @@ REQ_TS_7</body>
       </ownedEnd>
       <ownedEnd xmi:type="uml:Property" xmi:id="_RfdVIz1eEeyAv_UCn311nQ" name="sweeping" type="_8z5xARRpEeyQN9odROAPWw" association="_RfcuED1eEeyAv_UCn311nQ"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_HyBh0KUtEeykePlC7pxpcQ" name="Refine16" client="_zor2wE3REeyZ9oag9282Eg">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_I4_YAEFjEeyfxc1FgnjdUg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_IZlREKUtEeykePlC7pxpcQ" name="Refine17" client="_Qjy5UDjYEeyQeMlHlxk6EA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_I5AmIEFjEeyfxc1FgnjdUg"/>
+    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_sq21MDjZEeyQeMlHlxk6EA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_sq21MTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -184,4 +190,6 @@ REQ_TS_7</body>
     <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_I5DCYEFjEeyfxc1FgnjdUg"/>
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_I5DCYEFjEeyfxc1FgnjdUg"/>
   </Requirements:Requirement>
+  <Requirements:Refine xmi:id="_HyFMMKUtEeykePlC7pxpcQ" base_DirectedRelationship="_HyBh0KUtEeykePlC7pxpcQ" base_Abstraction="_HyBh0KUtEeykePlC7pxpcQ"/>
+  <Requirements:Refine xmi:id="_IZo7cKUtEeykePlC7pxpcQ" base_DirectedRelationship="_IZlREKUtEeykePlC7pxpcQ" base_Abstraction="_IZlREKUtEeykePlC7pxpcQ"/>
 </xmi:XMI>
