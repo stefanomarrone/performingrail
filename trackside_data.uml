@@ -304,7 +304,7 @@ Assumption:&#xD;
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_I5TE0JPHEeym_Y8iJLDdAA" name="TrainIntegrity">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_rgiWMIsiEeyti_Bx9Y2PIg" name="Q_LENGTH" type="_M6mIoIsXEeyti_Bx9Y2PIg"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_exDkQJNkEeycFb3H7bUBJg" name="IntegrityTimer" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_exDkQJNkEeycFb3H7bUBJg" name="integrityWaitTimer" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_kzkgUJNkEeycFb3H7bUBJg" name="INTEGRITY_WAIT_TIMEOUT" visibility="public">
@@ -621,10 +621,10 @@ Assumption:&#xD;
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_Pb-F0JQCEey49-7YVLx_Pw" name="integrity">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_j_rFkJNhEeycFb3H7bUBJg" name="status" type="_M6mIoIsXEeyti_Bx9Y2PIg"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_eH02QJQCEey49-7YVLx_Pw" name="integrityTimer">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_eH02QJQCEey49-7YVLx_Pw" name="integrityCheckTimer">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_X4DhUJQCEey49-7YVLx_Pw" name="INTEGRITY_CHECK_CYCLE" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_X4DhUJQCEey49-7YVLx_Pw" name="INTEGRITY_CHECK_TIMEOUT" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
       </packagedElement>
