@@ -257,8 +257,10 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_n8GI4KVqEeyy1pDKbt7g4A" name="B">
           <nestedClassifier xmi:type="uml:Class" xmi:id="_sfSAMKVqEeyy1pDKbt7g4A" name="W">
             <ownedUseCase xmi:type="uml:UseCase" xmi:id="_wWiloKVqEeyy1pDKbt7g4A" name="funW"/>
-            <ownedAttribute xmi:type="uml:Port" xmi:id="_v4BBIKVrEeyy1pDKbt7g4A" name="FullPort2" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_v4BBIKVrEeyy1pDKbt7g4A" name="FullPort2" type="_btTxIKbFEeye5NC2sDltiw" aggregation="composite"/>
             <ownedAttribute xmi:type="uml:Port" xmi:id="_ymic4KVrEeyy1pDKbt7g4A" name="FullPort3" aggregation="composite"/>
+            <nestedClassifier xmi:type="uml:Signal" xmi:id="__H8ugKapEey33oGih656uQ" name="lock"/>
+            <nestedClassifier xmi:type="uml:Signal" xmi:id="_btTxIKbFEeye5NC2sDltiw" name="dummysignal"/>
           </nestedClassifier>
           <nestedClassifier xmi:type="uml:Class" xmi:id="_s9j3oKVqEeyy1pDKbt7g4A" name="Z">
             <ownedUseCase xmi:type="uml:UseCase" xmi:id="_xVNNUKVqEeyy1pDKbt7g4A" name="funZ"/>
@@ -268,7 +270,9 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_pszRgKVqEeyy1pDKbt7g4A" name="External"/>
       </packagedElement>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_0JRa8KVrEeyy1pDKbt7g4A" name="ItemFlow2" informationSource="_y71-gKVrEeyy1pDKbt7g4A" informationTarget="_gptq8KVrEeyy1pDKbt7g4A"/>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_0-xfkKVrEeyy1pDKbt7g4A" name="ItemFlow3" informationSource="_gBqMcKVrEeyy1pDKbt7g4A" informationTarget="_v4BBIKVrEeyy1pDKbt7g4A"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_0-xfkKVrEeyy1pDKbt7g4A" name="ItemFlow3" informationSource="_gBqMcKVrEeyy1pDKbt7g4A" informationTarget="_v4BBIKVrEeyy1pDKbt7g4A">
+        <conveyed xmi:type="uml:Class" href="trackside_data.uml#_3fk7EIsiEeyti_Bx9Y2PIg"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_2G9PoKVrEeyy1pDKbt7g4A" name="ItemFlow4" informationSource="_ymic4KVrEeyy1pDKbt7g4A" informationTarget="_wNSGgKVrEeyy1pDKbt7g4A"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_WicDgKVsEeyy1pDKbt7g4A" name="solutionB">
