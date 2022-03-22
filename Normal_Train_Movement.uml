@@ -150,7 +150,7 @@
         <message xmi:type="uml:Message" xmi:id="_ezmf4IzrEey52LGJ5hvKwQ" name="Train integrity confirmed by external device" messageSort="asynchCall" receiveEvent="_eznG8YzrEey52LGJ5hvKwQ" sendEvent="_eznG8IzrEey52LGJ5hvKwQ"/>
         <message xmi:type="uml:Message" xmi:id="_k-EeEIzrEey52LGJ5hvKwQ" name="Train integrity confirmed by driver" messageSort="asynchCall" receiveEvent="_k-FsMIzrEey52LGJ5hvKwQ" sendEvent="_k-FFIIzrEey52LGJ5hvKwQ"/>
       </ownedBehavior>
-      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_e3DjsKUtEeykePlC7pxpcQ" name="Normal Train MV UGE">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_e3DjsKUtEeykePlC7pxpcQ" name="Normal Train MV UGE 1">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_nzhIYKUtEeykePlC7pxpcQ" name="">
           <type xmi:type="uml:Class" href="PerformingRail.uml#_M__c8BIsEeyVOZB09kZL2w"/>
         </ownedAttribute>
@@ -160,13 +160,81 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_u1kO0KUtEeykePlC7pxpcQ" name="">
           <type xmi:type="uml:UseCase" href="Train_Position_Reporting.uml#_hQC-wDjZEeyQeMlHlxk6EA"/>
         </ownedAttribute>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_nzf6QKUtEeykePlC7pxpcQ" name="" represents="_nzhIYKUtEeykePlC7pxpcQ"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_p2z10KUtEeykePlC7pxpcQ" name="Lifeline3"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_uLNqQKUtEeykePlC7pxpcQ" name="" represents="_uLORUKUtEeykePlC7pxpcQ" coveredBy="_488ugKUtEeykePlC7pxpcQ"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_u1jnwKUtEeykePlC7pxpcQ" name="" represents="_u1kO0KUtEeykePlC7pxpcQ" coveredBy="_489VkKUtEeykePlC7pxpcQ"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_D5lA0KYCEeyPK5Dc3WPbYg" name="">
+          <type xmi:type="uml:UseCase" href="Trains_Management.uml#_INQ5IBRuEeyQN9odROAPWw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_SCZVoKYCEeyPK5Dc3WPbYg" name="">
+          <type xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
+        </ownedAttribute>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_nzf6QKUtEeykePlC7pxpcQ" name="TMS" represents="_nzhIYKUtEeykePlC7pxpcQ" coveredBy="_4ra6gKkbEey_8NBTKNtbQQ _4rcIoKkbEey_8NBTKNtbQQ _q_zOYKYCEeyPK5Dc3WPbYg _M7uyQKYMEeyPK5Dc3WPbYg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_uLNqQKUtEeykePlC7pxpcQ" name="IIM" represents="_uLORUKUtEeykePlC7pxpcQ" coveredBy="_488ugKUtEeykePlC7pxpcQ"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_u1jnwKUtEeykePlC7pxpcQ" name="TPR" represents="_u1kO0KUtEeykePlC7pxpcQ" coveredBy="_489VkKUtEeykePlC7pxpcQ _8b2D8KYBEeyPK5Dc3WPbYg _8b2rAKYBEeyPK5Dc3WPbYg _FLbqQKYCEeyPK5Dc3WPbYg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_D5kZwKYCEeyPK5Dc3WPbYg" name="TM" represents="_D5lA0KYCEeyPK5Dc3WPbYg" coveredBy="_FLcRUKYCEeyPK5Dc3WPbYg _KVU8QKYCEeyPK5Dc3WPbYg _KVU8QaYCEeyPK5Dc3WPbYg _chUyoaYCEeyPK5Dc3WPbYg _f-y_EKYCEeyPK5Dc3WPbYg _4ra6gKkbEey_8NBTKNtbQQ _4rcIoKkbEey_8NBTKNtbQQ _TjO2QKYCEeyPK5Dc3WPbYg _G0g8IKkcEey_8NBTKNtbQQ _q_ynUKYCEeyPK5Dc3WPbYg _M7uyQKYMEeyPK5Dc3WPbYg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_SCYukKYCEeyPK5Dc3WPbYg" name="TSM" represents="_SCZVoKYCEeyPK5Dc3WPbYg" coveredBy="_M7uyQKYMEeyPK5Dc3WPbYg _M7vZUKYMEeyPK5Dc3WPbYg _chVZsKYCEeyPK5Dc3WPbYg _wnOkIKknEey_8NBTKNtbQQ _wnPLMKknEey_8NBTKNtbQQ _f-y_EaYCEeyPK5Dc3WPbYg _E5bSAKkoEey_8NBTKNtbQQ _E5b5EKkoEey_8NBTKNtbQQ _4ra6gKkbEey_8NBTKNtbQQ _4rcIoKkbEey_8NBTKNtbQQ _TjO2QaYCEeyPK5Dc3WPbYg _G0g8IKkcEey_8NBTKNtbQQ _G0hjMKkcEey_8NBTKNtbQQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_488ugKUtEeykePlC7pxpcQ" name="Message8SendEvent" covered="_uLNqQKUtEeykePlC7pxpcQ" message="_482n4KUtEeykePlC7pxpcQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_489VkKUtEeykePlC7pxpcQ" name="Message8ReceiveEvent" covered="_u1jnwKUtEeykePlC7pxpcQ" message="_482n4KUtEeykePlC7pxpcQ"/>
-        <message xmi:type="uml:Message" xmi:id="_482n4KUtEeykePlC7pxpcQ" name="Message8" messageSort="asynchCall" receiveEvent="_489VkKUtEeykePlC7pxpcQ" sendEvent="_488ugKUtEeykePlC7pxpcQ"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8b2D8KYBEeyPK5Dc3WPbYg" name="Message11SendEvent" covered="_u1jnwKUtEeykePlC7pxpcQ" message="_8bvWQKYBEeyPK5Dc3WPbYg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8b2rAKYBEeyPK5Dc3WPbYg" name="Message11ReceiveEvent" covered="_u1jnwKUtEeykePlC7pxpcQ" message="_8bvWQKYBEeyPK5Dc3WPbYg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FLbqQKYCEeyPK5Dc3WPbYg" name="Message16SendEvent" covered="_u1jnwKUtEeykePlC7pxpcQ" message="_FLbDMKYCEeyPK5Dc3WPbYg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_FLcRUKYCEeyPK5Dc3WPbYg" name="Message16ReceiveEvent" covered="_D5kZwKYCEeyPK5Dc3WPbYg" message="_FLbDMKYCEeyPK5Dc3WPbYg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_KVU8QKYCEeyPK5Dc3WPbYg" name="Message19SendEvent" covered="_D5kZwKYCEeyPK5Dc3WPbYg" message="_KVUVMKYCEeyPK5Dc3WPbYg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_KVU8QaYCEeyPK5Dc3WPbYg" name="Message19ReceiveEvent" covered="_D5kZwKYCEeyPK5Dc3WPbYg" message="_KVUVMKYCEeyPK5Dc3WPbYg"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_M7uyQKYMEeyPK5Dc3WPbYg" name="an unknown TSA and train integrity is confirmed" covered="_SCYukKYCEeyPK5Dc3WPbYg _D5kZwKYCEeyPK5Dc3WPbYg _nzf6QKUtEeykePlC7pxpcQ" interactionOperator="opt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_M7vZUKYMEeyPK5Dc3WPbYg" name="InteractionOperand0" covered="_SCYukKYCEeyPK5Dc3WPbYg">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_chUyoaYCEeyPK5Dc3WPbYg" name="Message27SendEvent" covered="_D5kZwKYCEeyPK5Dc3WPbYg" message="_chUyoKYCEeyPK5Dc3WPbYg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_chVZsKYCEeyPK5Dc3WPbYg" name="Message27ReceiveEvent" covered="_SCYukKYCEeyPK5Dc3WPbYg" message="_chUyoKYCEeyPK5Dc3WPbYg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wnOkIKknEey_8NBTKNtbQQ" name="Message35SendEvent" covered="_SCYukKYCEeyPK5Dc3WPbYg" message="_wnN9EKknEey_8NBTKNtbQQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wnPLMKknEey_8NBTKNtbQQ" name="Message35ReceiveEvent" covered="_SCYukKYCEeyPK5Dc3WPbYg" message="_wnN9EKknEey_8NBTKNtbQQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_f-y_EKYCEeyPK5Dc3WPbYg" name="Message30SendEvent" covered="_D5kZwKYCEeyPK5Dc3WPbYg" message="_f-yYAKYCEeyPK5Dc3WPbYg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_f-y_EaYCEeyPK5Dc3WPbYg" name="Message30ReceiveEvent" covered="_SCYukKYCEeyPK5Dc3WPbYg" message="_f-yYAKYCEeyPK5Dc3WPbYg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_E5bSAKkoEey_8NBTKNtbQQ" name="Message36SendEvent" covered="_SCYukKYCEeyPK5Dc3WPbYg" message="_E5aq8KkoEey_8NBTKNtbQQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_E5b5EKkoEey_8NBTKNtbQQ" name="Message36ReceiveEvent" covered="_SCYukKYCEeyPK5Dc3WPbYg" message="_E5aq8KkoEey_8NBTKNtbQQ"/>
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_4ra6gKkbEey_8NBTKNtbQQ" name="Interity confirmed" covered="_SCYukKYCEeyPK5Dc3WPbYg _D5kZwKYCEeyPK5Dc3WPbYg _nzf6QKUtEeykePlC7pxpcQ" interactionOperator="alt">
+              <operand xmi:type="uml:InteractionOperand" xmi:id="_4rcIoKkbEey_8NBTKNtbQQ" name="swweping an unknown Track status Area" covered="_SCYukKYCEeyPK5Dc3WPbYg _D5kZwKYCEeyPK5Dc3WPbYg _nzf6QKUtEeykePlC7pxpcQ">
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TjO2QKYCEeyPK5Dc3WPbYg" name="Message24SendEvent" covered="_D5kZwKYCEeyPK5Dc3WPbYg" message="_TjNoIKYCEeyPK5Dc3WPbYg"/>
+                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_TjO2QaYCEeyPK5Dc3WPbYg" name="Message24ReceiveEvent" covered="_SCYukKYCEeyPK5Dc3WPbYg" message="_TjNoIKYCEeyPK5Dc3WPbYg"/>
+                <guard xmi:type="uml:InteractionConstraint" xmi:id="_4rcIoakbEey_8NBTKNtbQQ" name="guard">
+                  <specification xmi:type="uml:LiteralString" xmi:id="_3_ttAKnJEeyp4Y1c7TNueg" value="MSFE ans MSRE are located in UTSA"/>
+                </guard>
+              </operand>
+            </fragment>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_G0g8IKkcEey_8NBTKNtbQQ" name="Message34SendEvent" covered="_SCYukKYCEeyPK5Dc3WPbYg _D5kZwKYCEeyPK5Dc3WPbYg" message="_G0ef4KkcEey_8NBTKNtbQQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_G0hjMKkcEey_8NBTKNtbQQ" name="Message34ReceiveEvent" covered="_SCYukKYCEeyPK5Dc3WPbYg" message="_G0ef4KkcEey_8NBTKNtbQQ"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_q_ynUKYCEeyPK5Dc3WPbYg" name="Message33SendEvent" covered="_D5kZwKYCEeyPK5Dc3WPbYg" message="_q_yAQKYCEeyPK5Dc3WPbYg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_q_zOYKYCEeyPK5Dc3WPbYg" name="Message33ReceiveEvent" covered="_nzf6QKUtEeykePlC7pxpcQ" message="_q_yAQKYCEeyPK5Dc3WPbYg"/>
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_M7vZUaYMEeyPK5Dc3WPbYg" name="guard">
+              <specification xmi:type="uml:LiteralString" xmi:id="_xniBAKkbEey_8NBTKNtbQQ" value="train integrity is confirmed"/>
+            </guard>
+          </operand>
+        </fragment>
+        <message xmi:type="uml:Message" xmi:id="_482n4KUtEeykePlC7pxpcQ" name="M_TRAIN_INTEGRITY_INFO" messageSort="asynchCall" receiveEvent="_489VkKUtEeykePlC7pxpcQ" sendEvent="_488ugKUtEeykePlC7pxpcQ"/>
+        <message xmi:type="uml:Message" xmi:id="_8bvWQKYBEeyPK5Dc3WPbYg" name="Compute location" messageSort="asynchCall" receiveEvent="_8b2rAKYBEeyPK5Dc3WPbYg" sendEvent="_8b2D8KYBEeyPK5Dc3WPbYg"/>
+        <message xmi:type="uml:Message" xmi:id="_FLbDMKYCEeyPK5Dc3WPbYg" name="Report Train Position" messageSort="asynchCall" receiveEvent="_FLcRUKYCEeyPK5Dc3WPbYg" sendEvent="_FLbqQKYCEeyPK5Dc3WPbYg"/>
+        <message xmi:type="uml:Message" xmi:id="_KVUVMKYCEeyPK5Dc3WPbYg" name="Compute Train Informations" messageSort="asynchCall" receiveEvent="_KVU8QaYCEeyPK5Dc3WPbYg" sendEvent="_KVU8QKYCEeyPK5Dc3WPbYg"/>
+        <message xmi:type="uml:Message" xmi:id="_TjNoIKYCEeyPK5Dc3WPbYg" name="Unknown Track Status Area" messageSort="asynchCall" receiveEvent="_TjO2QaYCEeyPK5Dc3WPbYg" sendEvent="_TjO2QKYCEeyPK5Dc3WPbYg"/>
+        <message xmi:type="uml:Message" xmi:id="_chUyoKYCEeyPK5Dc3WPbYg" name="Occupy Track Status Area" messageSort="asynchCall" receiveEvent="_chVZsKYCEeyPK5Dc3WPbYg" sendEvent="_chUyoaYCEeyPK5Dc3WPbYg"/>
+        <message xmi:type="uml:Message" xmi:id="_f-yYAKYCEeyPK5Dc3WPbYg" name="Release Track Status Area" messageSort="asynchCall" receiveEvent="_f-y_EaYCEeyPK5Dc3WPbYg" sendEvent="_f-y_EKYCEeyPK5Dc3WPbYg"/>
+        <message xmi:type="uml:Message" xmi:id="_q_yAQKYCEeyPK5Dc3WPbYg" name="Report Train Positions" messageSort="asynchCall" receiveEvent="_q_zOYKYCEeyPK5Dc3WPbYg" sendEvent="_q_ynUKYCEeyPK5Dc3WPbYg"/>
+        <message xmi:type="uml:Message" xmi:id="_G0ef4KkcEey_8NBTKNtbQQ" name="Update Track Status Area" messageSort="createMessage" receiveEvent="_G0hjMKkcEey_8NBTKNtbQQ" sendEvent="_G0g8IKkcEey_8NBTKNtbQQ"/>
+        <message xmi:type="uml:Message" xmi:id="_wnN9EKknEey_8NBTKNtbQQ" name="Create Track Status Area" messageSort="asynchCall" receiveEvent="_wnPLMKknEey_8NBTKNtbQQ" sendEvent="_wnOkIKknEey_8NBTKNtbQQ"/>
+        <message xmi:type="uml:Message" xmi:id="_E5aq8KkoEey_8NBTKNtbQQ" name="Delete Track Status Area / put clear track status" messageSort="asynchCall" receiveEvent="_E5b5EKkoEey_8NBTKNtbQQ" sendEvent="_E5bSAKkoEey_8NBTKNtbQQ"/>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_kWaA0KkpEey_8NBTKNtbQQ" name="Normal Train MV UGE 2">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_sJsggKk1Eey_8NBTKNtbQQ" name="">
+          <type xmi:type="uml:UseCase" href="Trains_Management.uml#_INQ5IBRuEeyQN9odROAPWw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_s2LMAKk1Eey_8NBTKNtbQQ" name="">
+          <type xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
+        </ownedAttribute>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_sJr5cKk1Eey_8NBTKNtbQQ" name="" represents="_sJsggKk1Eey_8NBTKNtbQQ" coveredBy="_vED_4Kk1Eey_8NBTKNtbQQ _vEEm8Kk1Eey_8NBTKNtbQQ"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_s2Kk8Kk1Eey_8NBTKNtbQQ" name="" represents="_s2LMAKk1Eey_8NBTKNtbQQ" coveredBy="_vED_4Kk1Eey_8NBTKNtbQQ _vEEm8Kk1Eey_8NBTKNtbQQ"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_vED_4Kk1Eey_8NBTKNtbQQ" name="CombinedFragment5" covered="_sJr5cKk1Eey_8NBTKNtbQQ _s2Kk8Kk1Eey_8NBTKNtbQQ" interactionOperator="opt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_vEEm8Kk1Eey_8NBTKNtbQQ" name="InteractionOperand0" covered="_sJr5cKk1Eey_8NBTKNtbQQ _s2Kk8Kk1Eey_8NBTKNtbQQ">
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_vEEm8ak1Eey_8NBTKNtbQQ" name="guard">
+              <specification xmi:type="uml:LiteralString" xmi:id="_GxamAKk2Eey_8NBTKNtbQQ" value="train not moving over an unknown TSA, integrity confirmed"/>
+            </guard>
+          </operand>
+        </fragment>
       </ownedBehavior>
       <include xmi:type="uml:Include" xmi:id="_6ut74FOQEeymBZkA5Ubaxw">
         <addition xmi:type="uml:UseCase" href="Train_Position_Reporting.uml#_hQC-wDjZEeyQeMlHlxk6EA"/>
