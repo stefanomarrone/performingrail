@@ -12,197 +12,234 @@
         <body>bja: it would be preferable to introduce a controller class. See attached hyperlink&#xD;
 </body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Class" xmi:id="_K2rj4BIoEeyVOZB09kZL2w" name="ETCS-L3 System"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_s3WM4BIoEeyVOZB09kZL2w" name="Driver">
-        <generalization xmi:type="uml:Generalization" xmi:id="_Mym5gBIyEeyVOZB09kZL2w" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_wEHq4BIoEeyVOZB09kZL2w" name="Dispatcher">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_yV0M4E7SEeyTe5jLSF3Q6g">
-          <body>The dispatcher organises train traffic. For the intents and purposes of the present model, this equates to the role of the signaller.</body>
+      <packagedElement xmi:type="uml:Class" xmi:id="_K2rj4BIoEeyVOZB09kZL2w" name="ETCS-L3 System">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_-rCpwKq_Eey95JqQZoaUKg" annotatedElement="_x2EicKq_Eey95JqQZoaUKg">
+          <body>Missing information</body>
         </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_NYi4IBIyEeyVOZB09kZL2w" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_wtbtoBIoEeyVOZB09kZL2w" name="External Interfaces"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_0WffABIoEeyVOZB09kZL2w" name="Train/Engine">
-        <generalization xmi:type="uml:Generalization" xmi:id="_0RqWcBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_P1DlkBIsEeyVOZB09kZL2w" name="TIMS"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_9n0ZEBIrEeyVOZB09kZL2w" name="ETCS-L3 External User" visibility="protected"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_M__c8BIsEeyVOZB09kZL2w" name="TMS">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_qjjuUE7OEeyTe5jLSF3Q6g">
-          <body>Traffic Management System&#xD;
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_s3WM4BIoEeyVOZB09kZL2w" name="Driver">
+          <generalization xmi:type="uml:Generalization" xmi:id="_Mym5gBIyEeyVOZB09kZL2w" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_wEHq4BIoEeyVOZB09kZL2w" name="Dispatcher">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_yV0M4E7SEeyTe5jLSF3Q6g">
+            <body>The dispatcher organises train traffic. For the intents and purposes of the present model, this equates to the role of the signaller.</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_NYi4IBIyEeyVOZB09kZL2w" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_wtbtoBIoEeyVOZB09kZL2w" name="External Interfaces"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_0WffABIoEeyVOZB09kZL2w" name="Train/Engine">
+          <generalization xmi:type="uml:Generalization" xmi:id="_0RqWcBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_P1DlkBIsEeyVOZB09kZL2w" name="TIMS"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_9n0ZEBIrEeyVOZB09kZL2w" name="ETCS-L3 External User" visibility="protected"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_M__c8BIsEeyVOZB09kZL2w" name="TMS">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_qjjuUE7OEeyTe5jLSF3Q6g">
+            <body>Traffic Management System&#xD;
 &#xD;
 EULYNX: Traffic Control System&#xD;
 https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA6/EA954.htm</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="__FKVQBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_u3-cUBIyEeyVOZB09kZL2w" name="Adjacent Signalling System">
-        <generalization xmi:type="uml:Generalization" xmi:id="_04IgkBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_zC8n8BIyEeyVOZB09kZL2w" name="TTD">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_9l9dsE7NEeyTe5jLSF3Q6g">
-          <body>Trackside Train Detection&#xD;
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="__FKVQBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_lsd-QKq9Eey95JqQZoaUKg" name="FullPort3" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_zTYqcKq-Eey95JqQZoaUKg" name="FullPort4" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_0o99UKq-Eey95JqQZoaUKg" name="FullPort5" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_2DASYKq-Eey95JqQZoaUKg" name="tsa" type="_u7IwcKrBEey95JqQZoaUKg" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_7LEYYKq-Eey95JqQZoaUKg" name="FullPort7" aggregation="composite"/>
+          <nestedClassifier xmi:type="uml:Signal" xmi:id="_u7IwcKrBEey95JqQZoaUKg" name="TSAreport"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_u3-cUBIyEeyVOZB09kZL2w" name="Adjacent Signalling System">
+          <generalization xmi:type="uml:Generalization" xmi:id="_04IgkBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_zC8n8BIyEeyVOZB09kZL2w" name="TTD">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_9l9dsE7NEeyTe5jLSF3Q6g">
+            <body>Trackside Train Detection&#xD;
 EULYNX: Train Detection Section&#xD;
 A logical section of the train detection system.&#xD;
 The section is associated with a TVP section.&#xD;
 &#xD;
 https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_45ZWkBI1EeyVOZB09kZL2w" general="_zq1uYBIyEeyVOZB09kZL2w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_zq1uYBIyEeyVOZB09kZL2w" name="Object Controller">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_ifCPgE7UEeyTe5jLSF3Q6g">
-          <body>https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA6/EA954.htm</body>
-        </ownedComment>
-        <generalization xmi:type="uml:Generalization" xmi:id="_1jMPwBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_UMMgwBIzEeyVOZB09kZL2w" name="ETCS L3">
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_av43QBIzEeyVOZB09kZL2w" name="ETCS Trackside">
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_IXsA8KqOEeyJ1d4TAHIvQg" name="Trains manager">
-            <ownedUseCase xmi:type="uml:UseCase" href="Trains_Management.uml#_INQ5IBRuEeyQN9odROAPWw"/>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_45ZWkBI1EeyVOZB09kZL2w" general="_zq1uYBIyEeyVOZB09kZL2w"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_zstwcKq-Eey95JqQZoaUKg" name="FullPort3" aggregation="composite"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_zq1uYBIyEeyVOZB09kZL2w" name="Object Controller">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_ifCPgE7UEeyTe5jLSF3Q6g">
+            <body>https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA6/EA954.htm</body>
+          </ownedComment>
+          <generalization xmi:type="uml:Generalization" xmi:id="_1jMPwBI1EeyVOZB09kZL2w" general="_wtbtoBIoEeyVOZB09kZL2w"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_UMMgwBIzEeyVOZB09kZL2w" name="ETCS L3">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_av43QBIzEeyVOZB09kZL2w" name="ETCS Trackside">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_IXsA8KqOEeyJ1d4TAHIvQg" name="Trains manager">
+              <ownedUseCase xmi:type="uml:UseCase" href="Trains_Management.uml#_INQ5IBRuEeyQN9odROAPWw"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_KC8o4KqOEeyJ1d4TAHIvQg" name="MA manager">
+              <ownedUseCase xmi:type="uml:UseCase" href="MA_Management.uml#_INRgMBRuEeyQN9odROAPWw"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_qE9M0KqOEeyJ1d4TAHIvQg" name="Route manager">
+              <ownedUseCase xmi:type="uml:UseCase" xmi:id="_qE9M0aqOEeyJ1d4TAHIvQg" name="MA Management" classifierBehavior="_qE9M06qOEeyJ1d4TAHIvQg">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qE9M0qqOEeyJ1d4TAHIvQg" source="http://www.eclipse.org/papyrus/2016/resource/shard" references="_av43QBIzEeyVOZB09kZL2w"/>
+                <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_qE9M06qOEeyJ1d4TAHIvQg" name="MA_Management">
+                  <region xmi:type="uml:Region" xmi:id="_qE9M1KqOEeyJ1d4TAHIvQg" name="Region1">
+                    <ownedComment xmi:type="uml:Comment" xmi:id="_qE9M1aqOEeyJ1d4TAHIvQg">
+                      <body>Transition triggered by the invocation of some requestMA(trainid,location, integrity) method on L3 Trackside.</body>
+                    </ownedComment>
+                    <transition xmi:type="uml:Transition" xmi:id="_qE9M1qqOEeyJ1d4TAHIvQg" source="_qE9M2aqOEeyJ1d4TAHIvQg" target="_qE9M2qqOEeyJ1d4TAHIvQg"/>
+                    <transition xmi:type="uml:Transition" xmi:id="_qE9M16qOEeyJ1d4TAHIvQg" source="_qE9M2KqOEeyJ1d4TAHIvQg" target="_qE9M2aqOEeyJ1d4TAHIvQg"/>
+                    <subvertex xmi:type="uml:Pseudostate" xmi:id="_qE9M2KqOEeyJ1d4TAHIvQg" name="Initial_MA_Management"/>
+                    <subvertex xmi:type="uml:State" xmi:id="_qE9M2aqOEeyJ1d4TAHIvQg" name="Idle"/>
+                    <subvertex xmi:type="uml:State" xmi:id="_qE9M2qqOEeyJ1d4TAHIvQg" name="Managing_MA_Request">
+                      <region xmi:type="uml:Region" xmi:id="_qE9M26qOEeyJ1d4TAHIvQg" name="Region1">
+                        <ownedComment xmi:type="uml:Comment" xmi:id="_qE9M3KqOEeyJ1d4TAHIvQg">
+                          <body>Boundaries are computed according to the requirements in 3.7, 3.8 EoA exclusion areas</body>
+                        </ownedComment>
+                        <ownedComment xmi:type="uml:Comment" xmi:id="_qE9M3aqOEeyJ1d4TAHIvQg">
+                          <body>Validity is checked according to requirements in 3.7 and 3.11 (First MA)</body>
+                        </ownedComment>
+                        <ownedComment xmi:type="uml:Comment" xmi:id="_qE9M3qqOEeyJ1d4TAHIvQg">
+                          <body>Issues the MA and sends a message to the train?</body>
+                        </ownedComment>
+                        <transition xmi:type="uml:Transition" xmi:id="_qE9M36qOEeyJ1d4TAHIvQg" source="_qE9M5KqOEeyJ1d4TAHIvQg" target="_qE9M5aqOEeyJ1d4TAHIvQg"/>
+                        <transition xmi:type="uml:Transition" xmi:id="_qE9M4KqOEeyJ1d4TAHIvQg" name="success" source="_qE9M5aqOEeyJ1d4TAHIvQg" target="_qE9M5qqOEeyJ1d4TAHIvQg"/>
+                        <transition xmi:type="uml:Transition" xmi:id="_qE9M4aqOEeyJ1d4TAHIvQg" name="done" source="_qE9M5qqOEeyJ1d4TAHIvQg" target="_qE9M56qOEeyJ1d4TAHIvQg"/>
+                        <transition xmi:type="uml:Transition" xmi:id="_qE9M4qqOEeyJ1d4TAHIvQg" name="fail" source="_qE9M5aqOEeyJ1d4TAHIvQg" target="_qE9M2aqOEeyJ1d4TAHIvQg"/>
+                        <transition xmi:type="uml:Transition" xmi:id="_qE9M46qOEeyJ1d4TAHIvQg" name="done" source="_qE9M56qOEeyJ1d4TAHIvQg" target="_qE9M2aqOEeyJ1d4TAHIvQg"/>
+                        <subvertex xmi:type="uml:Pseudostate" xmi:id="_qE9M5KqOEeyJ1d4TAHIvQg" name="initial_Managing_MA_Request"/>
+                        <subvertex xmi:type="uml:State" xmi:id="_qE9M5aqOEeyJ1d4TAHIvQg" name="Check_Validity"/>
+                        <subvertex xmi:type="uml:State" xmi:id="_qE9M5qqOEeyJ1d4TAHIvQg" name="Computing_MA_Boundaries"/>
+                        <subvertex xmi:type="uml:State" xmi:id="_qE9M56qOEeyJ1d4TAHIvQg" name="Issuing_MA"/>
+                      </region>
+                    </subvertex>
+                  </region>
+                </ownedBehavior>
+              </ownedUseCase>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_xN9y4Kq6Eey95JqQZoaUKg" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_1zuyMKq8Eey95JqQZoaUKg" name="reserved" visibility="private" type="_PkQxAKq9Eey95JqQZoaUKg" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_5kss8Kq9Eey95JqQZoaUKg" name="Port6" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_AP714Kq-Eey95JqQZoaUKg" name="MAreq" type="_c2PAkKrBEey95JqQZoaUKg" aggregation="composite"/>
+              <nestedClassifier xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
+              <nestedClassifier xmi:type="uml:Signal" xmi:id="_PkQxAKq9Eey95JqQZoaUKg" name="RSAaccept"/>
+              <nestedClassifier xmi:type="uml:Signal" xmi:id="_c2PAkKrBEey95JqQZoaUKg" name="MArequest"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_LneWsKqOEeyJ1d4TAHIvQg" name="TTD manager">
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_z-7h0Kq-Eey95JqQZoaUKg" name="FullPort2" type="_8xoREKq_Eey95JqQZoaUKg" aggregation="composite"/>
+              <nestedClassifier xmi:type="uml:UseCase" href="TTD_Management.uml#_BCR5IBRuEeyQN9odROAPWw"/>
+              <nestedClassifier xmi:type="uml:Signal" xmi:id="_8xoREKq_Eey95JqQZoaUKg" name="TTDReport"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_Lne9wKqOEeyJ1d4TAHIvQg" name="TSR manager">
+              <nestedClassifier xmi:type="uml:UseCase" href="Manage_Temporary_Speed_Restrictions.uml#_DwLp0BRuEeyQN9odROAPWw"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_MbMSoKqOEeyJ1d4TAHIvQg" name="Reserved Status manager">
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_wGZt4Kq6Eey95JqQZoaUKg" name="request" visibility="public" type="_aOa4gKq7Eey95JqQZoaUKg" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_0EoMEKq8Eey95JqQZoaUKg" name="FullPort4" aggregation="composite"/>
+              <nestedClassifier xmi:type="uml:UseCase" href="Reserved_Status_Management.uml#_Ez5woBRuEeyQN9odROAPWw"/>
+              <nestedClassifier xmi:type="uml:Signal" xmi:id="_aOa4gKq7Eey95JqQZoaUKg" name="RSArequest"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_MbMSoaqOEeyJ1d4TAHIvQg" name="Track Status manager">
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_2aHx4Kq-Eey95JqQZoaUKg" name="FullPort2" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_2spsUKq-Eey95JqQZoaUKg" name="FullPort3" aggregation="composite"/>
+              <nestedClassifier xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_MbMSoqqOEeyJ1d4TAHIvQg" name="Points manager">
+              <nestedClassifier xmi:type="uml:UseCase" href="Points_Management.uml#_MMzQ0BRuEeyQN9odROAPWw"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_MbM5sKqOEeyJ1d4TAHIvQg" name="Communication manager">
+              <nestedClassifier xmi:type="uml:UseCase" href="Communication_Management.uml#_Njev4BRuEeyQN9odROAPWw"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_vwHY0KqOEeyJ1d4TAHIvQg" name="Low Adhesion Area manager">
+              <nestedClassifier xmi:type="uml:UseCase" href="Manage_Low_Adhesion_Areas.uml#_CTlwABRuEeyQN9odROAPWw"/>
+            </nestedClassifier>
           </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_KC8o4KqOEeyJ1d4TAHIvQg" name="MA manager">
-            <ownedUseCase xmi:type="uml:UseCase" href="MA_Management.uml#_INRgMBRuEeyQN9odROAPWw"/>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_qE9M0KqOEeyJ1d4TAHIvQg" name="Route manager">
-            <ownedUseCase xmi:type="uml:UseCase" xmi:id="_qE9M0aqOEeyJ1d4TAHIvQg" name="MA Management" classifierBehavior="_qE9M06qOEeyJ1d4TAHIvQg">
-              <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qE9M0qqOEeyJ1d4TAHIvQg" source="http://www.eclipse.org/papyrus/2016/resource/shard" references="_av43QBIzEeyVOZB09kZL2w"/>
-              <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_qE9M06qOEeyJ1d4TAHIvQg" name="MA_Management">
-                <region xmi:type="uml:Region" xmi:id="_qE9M1KqOEeyJ1d4TAHIvQg" name="Region1">
-                  <ownedComment xmi:type="uml:Comment" xmi:id="_qE9M1aqOEeyJ1d4TAHIvQg">
-                    <body>Transition triggered by the invocation of some requestMA(trainid,location, integrity) method on L3 Trackside.</body>
-                  </ownedComment>
-                  <transition xmi:type="uml:Transition" xmi:id="_qE9M1qqOEeyJ1d4TAHIvQg" source="_qE9M2aqOEeyJ1d4TAHIvQg" target="_qE9M2qqOEeyJ1d4TAHIvQg"/>
-                  <transition xmi:type="uml:Transition" xmi:id="_qE9M16qOEeyJ1d4TAHIvQg" source="_qE9M2KqOEeyJ1d4TAHIvQg" target="_qE9M2aqOEeyJ1d4TAHIvQg"/>
-                  <subvertex xmi:type="uml:Pseudostate" xmi:id="_qE9M2KqOEeyJ1d4TAHIvQg" name="Initial_MA_Management"/>
-                  <subvertex xmi:type="uml:State" xmi:id="_qE9M2aqOEeyJ1d4TAHIvQg" name="Idle"/>
-                  <subvertex xmi:type="uml:State" xmi:id="_qE9M2qqOEeyJ1d4TAHIvQg" name="Managing_MA_Request">
-                    <region xmi:type="uml:Region" xmi:id="_qE9M26qOEeyJ1d4TAHIvQg" name="Region1">
-                      <ownedComment xmi:type="uml:Comment" xmi:id="_qE9M3KqOEeyJ1d4TAHIvQg">
-                        <body>Boundaries are computed according to the requirements in 3.7, 3.8 EoA exclusion areas</body>
-                      </ownedComment>
-                      <ownedComment xmi:type="uml:Comment" xmi:id="_qE9M3aqOEeyJ1d4TAHIvQg">
-                        <body>Validity is checked according to requirements in 3.7 and 3.11 (First MA)</body>
-                      </ownedComment>
-                      <ownedComment xmi:type="uml:Comment" xmi:id="_qE9M3qqOEeyJ1d4TAHIvQg">
-                        <body>Issues the MA and sends a message to the train?</body>
-                      </ownedComment>
-                      <transition xmi:type="uml:Transition" xmi:id="_qE9M36qOEeyJ1d4TAHIvQg" source="_qE9M5KqOEeyJ1d4TAHIvQg" target="_qE9M5aqOEeyJ1d4TAHIvQg"/>
-                      <transition xmi:type="uml:Transition" xmi:id="_qE9M4KqOEeyJ1d4TAHIvQg" name="success" source="_qE9M5aqOEeyJ1d4TAHIvQg" target="_qE9M5qqOEeyJ1d4TAHIvQg"/>
-                      <transition xmi:type="uml:Transition" xmi:id="_qE9M4aqOEeyJ1d4TAHIvQg" name="done" source="_qE9M5qqOEeyJ1d4TAHIvQg" target="_qE9M56qOEeyJ1d4TAHIvQg"/>
-                      <transition xmi:type="uml:Transition" xmi:id="_qE9M4qqOEeyJ1d4TAHIvQg" name="fail" source="_qE9M5aqOEeyJ1d4TAHIvQg" target="_qE9M2aqOEeyJ1d4TAHIvQg"/>
-                      <transition xmi:type="uml:Transition" xmi:id="_qE9M46qOEeyJ1d4TAHIvQg" name="done" source="_qE9M56qOEeyJ1d4TAHIvQg" target="_qE9M2aqOEeyJ1d4TAHIvQg"/>
-                      <subvertex xmi:type="uml:Pseudostate" xmi:id="_qE9M5KqOEeyJ1d4TAHIvQg" name="initial_Managing_MA_Request"/>
-                      <subvertex xmi:type="uml:State" xmi:id="_qE9M5aqOEeyJ1d4TAHIvQg" name="Check_Validity"/>
-                      <subvertex xmi:type="uml:State" xmi:id="_qE9M5qqOEeyJ1d4TAHIvQg" name="Computing_MA_Boundaries"/>
-                      <subvertex xmi:type="uml:State" xmi:id="_qE9M56qOEeyJ1d4TAHIvQg" name="Issuing_MA"/>
-                    </region>
-                  </subvertex>
-                </region>
-              </ownedBehavior>
-            </ownedUseCase>
-            <nestedClassifier xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_LneWsKqOEeyJ1d4TAHIvQg" name="TTD manager">
-            <nestedClassifier xmi:type="uml:UseCase" href="TTD_Management.uml#_BCR5IBRuEeyQN9odROAPWw"/>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_Lne9wKqOEeyJ1d4TAHIvQg" name="TSR manager">
-            <nestedClassifier xmi:type="uml:UseCase" href="Manage_Temporary_Speed_Restrictions.uml#_DwLp0BRuEeyQN9odROAPWw"/>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_MbMSoKqOEeyJ1d4TAHIvQg" name="Reserved Status manager">
-            <nestedClassifier xmi:type="uml:UseCase" href="Reserved_Status_Management.uml#_Ez5woBRuEeyQN9odROAPWw"/>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_MbMSoaqOEeyJ1d4TAHIvQg" name="Track Status manager">
-            <nestedClassifier xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_MbMSoqqOEeyJ1d4TAHIvQg" name="Points manager">
-            <nestedClassifier xmi:type="uml:UseCase" href="Points_Management.uml#_MMzQ0BRuEeyQN9odROAPWw"/>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_MbM5sKqOEeyJ1d4TAHIvQg" name="Communication manager">
-            <nestedClassifier xmi:type="uml:UseCase" href="Communication_Management.uml#_Njev4BRuEeyQN9odROAPWw"/>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_vwHY0KqOEeyJ1d4TAHIvQg" name="Low Adhesion Area manager">
-            <nestedClassifier xmi:type="uml:UseCase" href="Manage_Low_Adhesion_Areas.uml#_CTlwABRuEeyQN9odROAPWw"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_fF5jUBI1EeyVOZB09kZL2w" name="ETCS On board">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_Myuo4KqOEeyJ1d4TAHIvQg" name="TPR manager">
+              <ownedUseCase xmi:type="uml:UseCase" href="Train_Position_Reporting.uml#_hQC-wDjZEeyQeMlHlxk6EA"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_Myuo4aqOEeyJ1d4TAHIvQg" name="Speed Distance supervisor">
+              <ownedUseCase xmi:type="uml:UseCase" href="Speed_and_Distance_Supervision.uml#_lQKlQDjZEeyQeMlHlxk6EA"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_Myuo4qqOEeyJ1d4TAHIvQg" name="Integrity Information manager">
+              <ownedUseCase xmi:type="uml:UseCase" href="Integration_Information_Management.uml#_jD9zcDjZEeyQeMlHlxk6EA"/>
+            </nestedClassifier>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_yAFQUKqOEeyJ1d4TAHIvQg" name="Dynamic Speed Profile manager">
+              <ownedUseCase xmi:type="uml:UseCase" href="Manage_Dynamic_Speed_Profile.uml#_kQKg0DjZEeyQeMlHlxk6EA"/>
+            </nestedClassifier>
           </nestedClassifier>
         </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_fF5jUBI1EeyVOZB09kZL2w" name="ETCS On board">
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_Myuo4KqOEeyJ1d4TAHIvQg" name="TPR manager">
-            <ownedUseCase xmi:type="uml:UseCase" href="Train_Position_Reporting.uml#_hQC-wDjZEeyQeMlHlxk6EA"/>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_Myuo4aqOEeyJ1d4TAHIvQg" name="Speed Distance supervisor">
-            <ownedUseCase xmi:type="uml:UseCase" href="Speed_and_Distance_Supervision.uml#_lQKlQDjZEeyQeMlHlxk6EA"/>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_Myuo4qqOEeyJ1d4TAHIvQg" name="Integrity Information manager">
-            <ownedUseCase xmi:type="uml:UseCase" href="Integration_Information_Management.uml#_jD9zcDjZEeyQeMlHlxk6EA"/>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_yAFQUKqOEeyJ1d4TAHIvQg" name="Dynamic Speed Profile manager">
-            <ownedUseCase xmi:type="uml:UseCase" href="Manage_Dynamic_Speed_Profile.uml#_kQKg0DjZEeyQeMlHlxk6EA"/>
-          </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_cLBUUBI6EeyVOZB09kZL2w" memberEnd="_cLBUUxI6EeyVOZB09kZL2w _cLB7YBI6EeyVOZB09kZL2w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cLBUURI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cLBUUhI6EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_cLBUUxI6EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_cLBUUBI6EeyVOZB09kZL2w">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ACMWgIdsEey4_osI_wqoMQ" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_cLB7YBI6EeyVOZB09kZL2w" name="tms" type="_M__c8BIsEeyVOZB09kZL2w" association="_cLBUUBI6EeyVOZB09kZL2w"/>
         </nestedClassifier>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_cLBUUBI6EeyVOZB09kZL2w" memberEnd="_cLBUUxI6EeyVOZB09kZL2w _cLB7YBI6EeyVOZB09kZL2w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cLBUURI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_cLBUUhI6EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_cLBUUxI6EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_cLBUUBI6EeyVOZB09kZL2w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ACMWgIdsEey4_osI_wqoMQ" value="*"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_cLB7YBI6EeyVOZB09kZL2w" name="tms" type="_M__c8BIsEeyVOZB09kZL2w" association="_cLBUUBI6EeyVOZB09kZL2w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_c5x3wBI6EeyVOZB09kZL2w" memberEnd="_c5ye0hI6EeyVOZB09kZL2w _c5ye0xI6EeyVOZB09kZL2w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_c5ye0BI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_c5ye0RI6EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_c5ye0hI6EeyVOZB09kZL2w" name="dispatcher" type="_wEHq4BIoEeyVOZB09kZL2w" association="_c5x3wBI6EeyVOZB09kZL2w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_c5ye0xI6EeyVOZB09kZL2w" name="tms" type="_M__c8BIsEeyVOZB09kZL2w" association="_c5x3wBI6EeyVOZB09kZL2w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_k5360BI6EeyVOZB09kZL2w" memberEnd="_k54h4hI6EeyVOZB09kZL2w _k54h4xI6EeyVOZB09kZL2w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k54h4BI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k54h4RI6EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_k54h4hI6EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_k5360BI6EeyVOZB09kZL2w">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BjGvoIdsEey4_osI_wqoMQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BjKaAIdsEey4_osI_wqoMQ" value="*"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_k54h4xI6EeyVOZB09kZL2w" name="adjacent signalling system" type="_u3-cUBIyEeyVOZB09kZL2w" association="_k5360BI6EeyVOZB09kZL2w">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B6hxIIdsEey4_osI_wqoMQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B6mCkIdsEey4_osI_wqoMQ" value="*"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_zPEewBI6EeyVOZB09kZL2w" memberEnd="_zPEewxI6EeyVOZB09kZL2w _zPEexBI6EeyVOZB09kZL2w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zPEewRI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zPEewhI6EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_zPEexBI6EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_zPEewBI6EeyVOZB09kZL2w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_zPEewxI6EeyVOZB09kZL2w" name="on board" type="_fF5jUBI1EeyVOZB09kZL2w" association="_zPEewBI6EeyVOZB09kZL2w">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ERC8kIdsEey4_osI_wqoMQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ERHOAIdsEey4_osI_wqoMQ" value="*"/>
-        </ownedEnd>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_-FLFoBI6EeyVOZB09kZL2w" memberEnd="_-FLsshI6EeyVOZB09kZL2w _-FLssxI6EeyVOZB09kZL2w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-FLssBI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-FLssRI6EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_-FLsshI6EeyVOZB09kZL2w" name="on board" type="_fF5jUBI1EeyVOZB09kZL2w" association="_-FLFoBI6EeyVOZB09kZL2w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_-FLssxI6EeyVOZB09kZL2w" name="train/engine" type="_0WffABIoEeyVOZB09kZL2w" association="_-FLFoBI6EeyVOZB09kZL2w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_AswL4BI7EeyVOZB09kZL2w" memberEnd="_AswL4xI7EeyVOZB09kZL2w _Aswy8BI7EeyVOZB09kZL2w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AswL4RI7EeyVOZB09kZL2w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AswL4hI7EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_AswL4xI7EeyVOZB09kZL2w" name="object controller" type="_zq1uYBIyEeyVOZB09kZL2w" association="_AswL4BI7EeyVOZB09kZL2w">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9fIj4IdrEey4_osI_wqoMQ"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9fLAIIdrEey4_osI_wqoMQ" value="*"/>
-        </ownedEnd>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_Aswy8BI7EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_AswL4BI7EeyVOZB09kZL2w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_9FQHEBRmEeyQN9odROAPWw" memberEnd="_9FafIBRmEeyQN9odROAPWw _9FbtQBRmEeyQN9odROAPWw">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9FZRABRmEeyQN9odROAPWw" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9FZRARRmEeyQN9odROAPWw" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_9FafIBRmEeyQN9odROAPWw" name="onboard" type="_fF5jUBI1EeyVOZB09kZL2w" association="_9FQHEBRmEeyQN9odROAPWw"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_9FbtQBRmEeyQN9odROAPWw" name="driver" type="_s3WM4BIoEeyVOZB09kZL2w" association="_9FQHEBRmEeyQN9odROAPWw"/>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_c5x3wBI6EeyVOZB09kZL2w" memberEnd="_c5ye0hI6EeyVOZB09kZL2w _c5ye0xI6EeyVOZB09kZL2w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_c5ye0BI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_c5ye0RI6EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_c5ye0hI6EeyVOZB09kZL2w" name="dispatcher" type="_wEHq4BIoEeyVOZB09kZL2w" association="_c5x3wBI6EeyVOZB09kZL2w"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_c5ye0xI6EeyVOZB09kZL2w" name="tms" type="_M__c8BIsEeyVOZB09kZL2w" association="_c5x3wBI6EeyVOZB09kZL2w"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_k5360BI6EeyVOZB09kZL2w" memberEnd="_k54h4hI6EeyVOZB09kZL2w _k54h4xI6EeyVOZB09kZL2w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_k54h4BI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_k54h4RI6EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_k54h4hI6EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_k5360BI6EeyVOZB09kZL2w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BjGvoIdsEey4_osI_wqoMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BjKaAIdsEey4_osI_wqoMQ" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_k54h4xI6EeyVOZB09kZL2w" name="adjacent signalling system" type="_u3-cUBIyEeyVOZB09kZL2w" association="_k5360BI6EeyVOZB09kZL2w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_B6hxIIdsEey4_osI_wqoMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_B6mCkIdsEey4_osI_wqoMQ" value="*"/>
+          </ownedEnd>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_zPEewBI6EeyVOZB09kZL2w" memberEnd="_zPEewxI6EeyVOZB09kZL2w _zPEexBI6EeyVOZB09kZL2w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zPEewRI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zPEewhI6EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_zPEexBI6EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_zPEewBI6EeyVOZB09kZL2w"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_zPEewxI6EeyVOZB09kZL2w" name="on board" type="_fF5jUBI1EeyVOZB09kZL2w" association="_zPEewBI6EeyVOZB09kZL2w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ERC8kIdsEey4_osI_wqoMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ERHOAIdsEey4_osI_wqoMQ" value="*"/>
+          </ownedEnd>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_-FLFoBI6EeyVOZB09kZL2w" memberEnd="_-FLsshI6EeyVOZB09kZL2w _-FLssxI6EeyVOZB09kZL2w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-FLssBI6EeyVOZB09kZL2w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-FLssRI6EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_-FLsshI6EeyVOZB09kZL2w" name="on board" type="_fF5jUBI1EeyVOZB09kZL2w" association="_-FLFoBI6EeyVOZB09kZL2w"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_-FLssxI6EeyVOZB09kZL2w" name="train/engine" type="_0WffABIoEeyVOZB09kZL2w" association="_-FLFoBI6EeyVOZB09kZL2w"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_AswL4BI7EeyVOZB09kZL2w" memberEnd="_AswL4xI7EeyVOZB09kZL2w _Aswy8BI7EeyVOZB09kZL2w">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AswL4RI7EeyVOZB09kZL2w" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AswL4hI7EeyVOZB09kZL2w" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_AswL4xI7EeyVOZB09kZL2w" name="object controller" type="_zq1uYBIyEeyVOZB09kZL2w" association="_AswL4BI7EeyVOZB09kZL2w">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9fIj4IdrEey4_osI_wqoMQ"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9fLAIIdrEey4_osI_wqoMQ" value="*"/>
+          </ownedEnd>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Aswy8BI7EeyVOZB09kZL2w" name="trackside" type="_av43QBIzEeyVOZB09kZL2w" association="_AswL4BI7EeyVOZB09kZL2w"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_9FQHEBRmEeyQN9odROAPWw" memberEnd="_9FafIBRmEeyQN9odROAPWw _9FbtQBRmEeyQN9odROAPWw">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9FZRABRmEeyQN9odROAPWw" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_9FZRARRmEeyQN9odROAPWw" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_9FafIBRmEeyQN9odROAPWw" name="onboard" type="_fF5jUBI1EeyVOZB09kZL2w" association="_9FQHEBRmEeyQN9odROAPWw"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_9FbtQBRmEeyQN9odROAPWw" name="driver" type="_s3WM4BIoEeyVOZB09kZL2w" association="_9FQHEBRmEeyQN9odROAPWw"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_8YVhsHzoEeyMX6xfbLFcdw" name="Infrastructure Manager">
+          <generalization xmi:type="uml:Generalization" xmi:id="_BJjN8HzpEeyMX6xfbLFcdw" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_ASi5AIajEey7P_gWH-mwEA" name="Point">
+          <generalization xmi:type="uml:Generalization" xmi:id="_KVt2cI2bEey24PjZ-DFd-A" general="_zq1uYBIyEeyVOZB09kZL2w"/>
+        </nestedClassifier>
+        <nestedClassifier xmi:type="uml:Association" xmi:id="_xi19QI2bEey24PjZ-DFd-A" memberEnd="_xi5AkI2bEey24PjZ-DFd-A _xi5noI2bEey24PjZ-DFd-A">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xi4ZgI2bEey24PjZ-DFd-A" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xi4ZgY2bEey24PjZ-DFd-A" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_xi5AkI2bEey24PjZ-DFd-A" name="tims" type="_P1DlkBIsEeyVOZB09kZL2w" association="_xi19QI2bEey24PjZ-DFd-A"/>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_xi5noI2bEey24PjZ-DFd-A" name="etcs on board" type="_fF5jUBI1EeyVOZB09kZL2w" association="_xi19QI2bEey24PjZ-DFd-A"/>
+        </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_SbFKQBRpEeyQN9odROAPWw" name="annotations">
         <ownedComment xmi:type="uml:Comment" xmi:id="_8OPS0BIyEeyVOZB09kZL2w">
@@ -226,25 +263,26 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
         </ownedComment>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" href="trackside_data.uml#_KmTioE6OEeyaL75nPQZQGA"/>
-      <packagedElement xmi:type="uml:Class" xmi:id="_8YVhsHzoEeyMX6xfbLFcdw" name="Infrastructure Manager">
-        <generalization xmi:type="uml:Generalization" xmi:id="_BJjN8HzpEeyMX6xfbLFcdw" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_ASi5AIajEey7P_gWH-mwEA" name="Point">
-        <generalization xmi:type="uml:Generalization" xmi:id="_KVt2cI2bEey24PjZ-DFd-A" general="_zq1uYBIyEeyVOZB09kZL2w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_xi19QI2bEey24PjZ-DFd-A" memberEnd="_xi5AkI2bEey24PjZ-DFd-A _xi5noI2bEey24PjZ-DFd-A">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xi4ZgI2bEey24PjZ-DFd-A" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xi4ZgY2bEey24PjZ-DFd-A" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_xi5AkI2bEey24PjZ-DFd-A" name="tims" type="_P1DlkBIsEeyVOZB09kZL2w" association="_xi19QI2bEey24PjZ-DFd-A"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_xi5noI2bEey24PjZ-DFd-A" name="etcs on board" type="_fF5jUBI1EeyVOZB09kZL2w" association="_xi19QI2bEey24PjZ-DFd-A"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_GGhcsI2cEey24PjZ-DFd-A" memberEnd="_GGiDwY2cEey24PjZ-DFd-A _GGiDwo2cEey24PjZ-DFd-A">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GGhcsY2cEey24PjZ-DFd-A" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GGiDwI2cEey24PjZ-DFd-A" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_GGiDwY2cEey24PjZ-DFd-A" name="tims" type="_P1DlkBIsEeyVOZB09kZL2w" aggregation="composite" association="_GGhcsI2cEey24PjZ-DFd-A"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_GGiDwo2cEey24PjZ-DFd-A" name="train/engine" type="_0WffABIoEeyVOZB09kZL2w" association="_GGhcsI2cEey24PjZ-DFd-A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_-_Q_kKq6Eey95JqQZoaUKg" name="area request" informationSource="_xN9y4Kq6Eey95JqQZoaUKg" informationTarget="_wGZt4Kq6Eey95JqQZoaUKg">
+        <conveyed xmi:type="uml:Class" href="trackside_data.uml#_G8Qn4E6QEeyaL75nPQZQGA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_COMu0Kq9Eey95JqQZoaUKg" name="ItemFlow7" informationSource="_0EoMEKq8Eey95JqQZoaUKg" informationTarget="_1zuyMKq8Eey95JqQZoaUKg">
+        <conveyed xmi:type="uml:Class" href="trackside_data.uml#_KSN1wIqWEeyM8dFJdTQLEQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_GO_1UKq-Eey95JqQZoaUKg" name="ItemFlow8" informationSource="_lsd-QKq9Eey95JqQZoaUKg" informationTarget="_AP714Kq-Eey95JqQZoaUKg">
+        <conveyed xmi:type="uml:Class" href="trackside_data.uml#_R4aY4InXEeywtu03ZyCfsg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_bYMcoKq-Eey95JqQZoaUKg" name="ItemFlow9"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_x2EicKq_Eey95JqQZoaUKg" name="ItemFlow10" informationSource="_zstwcKq-Eey95JqQZoaUKg" informationTarget="_z-7h0Kq-Eey95JqQZoaUKg"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_9MS-YKrAEey95JqQZoaUKg" name="ItemFlow11" informationSource="_2aHx4Kq-Eey95JqQZoaUKg" informationTarget="_2DASYKq-Eey95JqQZoaUKg">
+        <conveyed xmi:type="uml:Class" href="trackside_data.uml#_QVt8gE6OEeyaL75nPQZQGA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_nsyrMBI2EeyVOZB09kZL2w" name="References">
@@ -480,4 +518,24 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
   <Blocks:Block xmi:id="_qE-a8KqOEeyJ1d4TAHIvQg" base_Class="_qE9M0KqOEeyJ1d4TAHIvQg"/>
   <Blocks:Block xmi:id="_vwJ1EKqOEeyJ1d4TAHIvQg" base_Class="_vwHY0KqOEeyJ1d4TAHIvQg"/>
   <Blocks:Block xmi:id="_yAHskKqOEeyJ1d4TAHIvQg" base_Class="_yAFQUKqOEeyJ1d4TAHIvQg"/>
+  <PortsAndFlows:FullPort xmi:id="_wGo-cKq6Eey95JqQZoaUKg" base_Port="_wGZt4Kq6Eey95JqQZoaUKg"/>
+  <PortsAndFlows:FullPort xmi:id="_xODScKq6Eey95JqQZoaUKg" base_Port="_xN9y4Kq6Eey95JqQZoaUKg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_-_XtQKq6Eey95JqQZoaUKg" base_InformationFlow="_-_Q_kKq6Eey95JqQZoaUKg"/>
+  <PortsAndFlows:FullPort xmi:id="_0ErPYKq8Eey95JqQZoaUKg" base_Port="_0EoMEKq8Eey95JqQZoaUKg"/>
+  <PortsAndFlows:FullPort xmi:id="_1zx1gKq8Eey95JqQZoaUKg" base_Port="_1zuyMKq8Eey95JqQZoaUKg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_COQZMKq9Eey95JqQZoaUKg" base_InformationFlow="_COMu0Kq9Eey95JqQZoaUKg"/>
+  <PortsAndFlows:FullPort xmi:id="_lsiPsKq9Eey95JqQZoaUKg" base_Port="_lsd-QKq9Eey95JqQZoaUKg"/>
+  <PortsAndFlows:FullPort xmi:id="_AP9rEKq-Eey95JqQZoaUKg" base_Port="_AP714Kq-Eey95JqQZoaUKg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_GPCRkKq-Eey95JqQZoaUKg" base_InformationFlow="_GO_1UKq-Eey95JqQZoaUKg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_bYOR0Kq-Eey95JqQZoaUKg" base_InformationFlow="_bYMcoKq-Eey95JqQZoaUKg"/>
+  <PortsAndFlows:FullPort xmi:id="_zTbGsKq-Eey95JqQZoaUKg" base_Port="_zTYqcKq-Eey95JqQZoaUKg"/>
+  <PortsAndFlows:FullPort xmi:id="_zswMsKq-Eey95JqQZoaUKg" base_Port="_zstwcKq-Eey95JqQZoaUKg"/>
+  <PortsAndFlows:FullPort xmi:id="_z-9-EKq-Eey95JqQZoaUKg" base_Port="_z-7h0Kq-Eey95JqQZoaUKg"/>
+  <PortsAndFlows:FullPort xmi:id="_0pAZkKq-Eey95JqQZoaUKg" base_Port="_0o99UKq-Eey95JqQZoaUKg"/>
+  <PortsAndFlows:FullPort xmi:id="_2DCHkKq-Eey95JqQZoaUKg" base_Port="_2DASYKq-Eey95JqQZoaUKg"/>
+  <PortsAndFlows:FullPort xmi:id="_2aK1MKq-Eey95JqQZoaUKg" base_Port="_2aHx4Kq-Eey95JqQZoaUKg"/>
+  <PortsAndFlows:FullPort xmi:id="_2ssIkKq-Eey95JqQZoaUKg" base_Port="_2spsUKq-Eey95JqQZoaUKg"/>
+  <PortsAndFlows:FullPort xmi:id="_7LGNkKq-Eey95JqQZoaUKg" base_Port="_7LEYYKq-Eey95JqQZoaUKg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_x2HlwKq_Eey95JqQZoaUKg" base_InformationFlow="_x2EicKq_Eey95JqQZoaUKg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_9MUMgKrAEey95JqQZoaUKg" base_InformationFlow="_9MS-YKrAEey95JqQZoaUKg"/>
 </xmi:XMI>
