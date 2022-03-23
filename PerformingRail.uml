@@ -341,62 +341,6 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" href="Requirements.uml#_tiag4JuVEey1k9qWv3EIDg"/>
-    <packagedElement xmi:type="uml:Package" xmi:id="_OgGzgKVmEeyy1pDKbt7g4A" name="solutionA">
-      <packagedElement xmi:type="uml:Class" xmi:id="_l_ZLoKVqEeyy1pDKbt7g4A" name="MainBlock">
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_naU4kKVqEeyy1pDKbt7g4A" name="A">
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_rPJ1EKVqEeyy1pDKbt7g4A" name="X">
-            <ownedUseCase xmi:type="uml:UseCase" xmi:id="_uYfkkKVqEeyy1pDKbt7g4A" name="funX"/>
-            <ownedAttribute xmi:type="uml:Port" xmi:id="_gBqMcKVrEeyy1pDKbt7g4A" name="FullPort2" aggregation="composite">
-              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
-            </ownedAttribute>
-            <ownedAttribute xmi:type="uml:Port" xmi:id="_y71-gKVrEeyy1pDKbt7g4A" name="FullPort3" aggregation="composite"/>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_r8p0QKVqEeyy1pDKbt7g4A" name="Y">
-            <ownedUseCase xmi:type="uml:UseCase" xmi:id="_vrI4MKVqEeyy1pDKbt7g4A" name="funY"/>
-            <ownedAttribute xmi:type="uml:Port" xmi:id="_gptq8KVrEeyy1pDKbt7g4A" name="FullPort2" aggregation="composite"/>
-          </nestedClassifier>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_n8GI4KVqEeyy1pDKbt7g4A" name="B">
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_sfSAMKVqEeyy1pDKbt7g4A" name="W">
-            <ownedUseCase xmi:type="uml:UseCase" xmi:id="_wWiloKVqEeyy1pDKbt7g4A" name="funW"/>
-            <ownedAttribute xmi:type="uml:Port" xmi:id="_v4BBIKVrEeyy1pDKbt7g4A" name="FullPort2" type="_btTxIKbFEeye5NC2sDltiw" aggregation="composite"/>
-            <ownedAttribute xmi:type="uml:Port" xmi:id="_ymic4KVrEeyy1pDKbt7g4A" name="FullPort3" aggregation="composite"/>
-            <nestedClassifier xmi:type="uml:Signal" xmi:id="__H8ugKapEey33oGih656uQ" name="lock"/>
-            <nestedClassifier xmi:type="uml:Signal" xmi:id="_btTxIKbFEeye5NC2sDltiw" name="dummysignal"/>
-          </nestedClassifier>
-          <nestedClassifier xmi:type="uml:Class" xmi:id="_s9j3oKVqEeyy1pDKbt7g4A" name="Z">
-            <ownedUseCase xmi:type="uml:UseCase" xmi:id="_xVNNUKVqEeyy1pDKbt7g4A" name="funZ"/>
-            <ownedAttribute xmi:type="uml:Port" xmi:id="_wNSGgKVrEeyy1pDKbt7g4A" name="FullPort2" aggregation="composite"/>
-          </nestedClassifier>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_pszRgKVqEeyy1pDKbt7g4A" name="External"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_0JRa8KVrEeyy1pDKbt7g4A" name="ItemFlow2" informationSource="_y71-gKVrEeyy1pDKbt7g4A" informationTarget="_gptq8KVrEeyy1pDKbt7g4A"/>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_0-xfkKVrEeyy1pDKbt7g4A" name="ItemFlow3" informationSource="_gBqMcKVrEeyy1pDKbt7g4A" informationTarget="_v4BBIKVrEeyy1pDKbt7g4A">
-        <conveyed xmi:type="uml:Class" href="trackside_data.uml#_3fk7EIsiEeyti_Bx9Y2PIg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_2G9PoKVrEeyy1pDKbt7g4A" name="ItemFlow4" informationSource="_ymic4KVrEeyy1pDKbt7g4A" informationTarget="_wNSGgKVrEeyy1pDKbt7g4A"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Package" xmi:id="_WicDgKVsEeyy1pDKbt7g4A" name="solutionB">
-      <packagedElement xmi:type="uml:Class" xmi:id="_YxacgKVsEeyy1pDKbt7g4A" name="MainBlock">
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_YxacgaVsEeyy1pDKbt7g4A" name="A">
-          <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Yxacg6VsEeyy1pDKbt7g4A" name="funX"/>
-          <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Yxach6VsEeyy1pDKbt7g4A" name="funY"/>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_YxaciaVsEeyy1pDKbt7g4A" name="B">
-          <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Yxacj6VsEeyy1pDKbt7g4A" name="funZ"/>
-          <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Yxaci6VsEeyy1pDKbt7g4A" name="funW"/>
-        </nestedClassifier>
-        <nestedClassifier xmi:type="uml:Class" xmi:id="_YxackaVsEeyy1pDKbt7g4A" name="External"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_pmQ5wKVsEeyy1pDKbt7g4A" client="_Yxacg6VsEeyy1pDKbt7g4A" supplier="_Yxacj6VsEeyy1pDKbt7g4A"/>
-      <packagedElement xmi:type="uml:Dependency" xmi:id="_q-Lu8KVsEeyy1pDKbt7g4A" client="_Yxacg6VsEeyy1pDKbt7g4A" supplier="_Yxach6VsEeyy1pDKbt7g4A"/>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_FtS14KVtEeyy1pDKbt7g4A" name="ItemFlow4" informationSource="_Yxach6VsEeyy1pDKbt7g4A" informationTarget="_Yxaci6VsEeyy1pDKbt7g4A">
-        <conveyed xmi:type="uml:Class" href="trackside_data.uml#_3fk7EIsiEeyti_Bx9Y2PIg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_ZRwUAKVtEeyy1pDKbt7g4A" name="ItemFlow5" informationSource="_Yxacj6VsEeyy1pDKbt7g4A" informationTarget="_Yxaci6VsEeyy1pDKbt7g4A"/>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_kjE3QKVtEeyy1pDKbt7g4A" name="ItemFlow6" informationSource="_YxackaVsEeyy1pDKbt7g4A" informationTarget="_Yxach6VsEeyy1pDKbt7g4A"/>
-    </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_JZjVABIcEeyVOZB09kZL2w">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JZnmcBIcEeyVOZB09kZL2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
@@ -480,30 +424,6 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
   <Blocks:Block xmi:id="_fF9NsBI1EeyVOZB09kZL2w" base_Class="_fF5jUBI1EeyVOZB09kZL2w"/>
   <Blocks:Block xmi:id="_8YsuEHzoEeyMX6xfbLFcdw" base_Class="_8YVhsHzoEeyMX6xfbLFcdw"/>
   <Blocks:Block xmi:id="_ATMZQIajEey7P_gWH-mwEA" base_Class="_ASi5AIajEey7P_gWH-mwEA"/>
-  <Blocks:Block xmi:id="_l_fSQKVqEeyy1pDKbt7g4A" base_Class="_l_ZLoKVqEeyy1pDKbt7g4A"/>
-  <Blocks:Block xmi:id="_naWtwKVqEeyy1pDKbt7g4A" base_Class="_naU4kKVqEeyy1pDKbt7g4A"/>
-  <Blocks:Block xmi:id="_n8HXAKVqEeyy1pDKbt7g4A" base_Class="_n8GI4KVqEeyy1pDKbt7g4A"/>
-  <Blocks:Block xmi:id="_ps2U0KVqEeyy1pDKbt7g4A" base_Class="_pszRgKVqEeyy1pDKbt7g4A"/>
-  <Blocks:Block xmi:id="_rPMRUKVqEeyy1pDKbt7g4A" base_Class="_rPJ1EKVqEeyy1pDKbt7g4A"/>
-  <Blocks:Block xmi:id="_r8rCYKVqEeyy1pDKbt7g4A" base_Class="_r8p0QKVqEeyy1pDKbt7g4A"/>
-  <Blocks:Block xmi:id="_sfTOUKVqEeyy1pDKbt7g4A" base_Class="_sfSAMKVqEeyy1pDKbt7g4A"/>
-  <Blocks:Block xmi:id="_s9mT4KVqEeyy1pDKbt7g4A" base_Class="_s9j3oKVqEeyy1pDKbt7g4A"/>
-  <PortsAndFlows:FullPort xmi:id="_gBsBoKVrEeyy1pDKbt7g4A" base_Port="_gBqMcKVrEeyy1pDKbt7g4A"/>
-  <PortsAndFlows:FullPort xmi:id="_gpvgIKVrEeyy1pDKbt7g4A" base_Port="_gptq8KVrEeyy1pDKbt7g4A"/>
-  <PortsAndFlows:FullPort xmi:id="_v4EEcKVrEeyy1pDKbt7g4A" base_Port="_v4BBIKVrEeyy1pDKbt7g4A"/>
-  <PortsAndFlows:FullPort xmi:id="_wNT7sKVrEeyy1pDKbt7g4A" base_Port="_wNSGgKVrEeyy1pDKbt7g4A"/>
-  <PortsAndFlows:FullPort xmi:id="_ymkSEKVrEeyy1pDKbt7g4A" base_Port="_ymic4KVrEeyy1pDKbt7g4A"/>
-  <PortsAndFlows:FullPort xmi:id="_y73zsKVrEeyy1pDKbt7g4A" base_Port="_y71-gKVrEeyy1pDKbt7g4A"/>
-  <PortsAndFlows:ItemFlow xmi:id="_0JVFUKVrEeyy1pDKbt7g4A" base_InformationFlow="_0JRa8KVrEeyy1pDKbt7g4A"/>
-  <PortsAndFlows:ItemFlow xmi:id="_0-0i4KVrEeyy1pDKbt7g4A" base_InformationFlow="_0-xfkKVrEeyy1pDKbt7g4A"/>
-  <PortsAndFlows:ItemFlow xmi:id="_2HAS8KVrEeyy1pDKbt7g4A" base_InformationFlow="_2G9PoKVrEeyy1pDKbt7g4A"/>
-  <Blocks:Block xmi:id="_YxgjIKVsEeyy1pDKbt7g4A" base_Class="_YxacgKVsEeyy1pDKbt7g4A"/>
-  <Blocks:Block xmi:id="_YxhKMKVsEeyy1pDKbt7g4A" base_Class="_YxacgaVsEeyy1pDKbt7g4A"/>
-  <Blocks:Block xmi:id="_Yxi_YKVsEeyy1pDKbt7g4A" base_Class="_YxaciaVsEeyy1pDKbt7g4A"/>
-  <Blocks:Block xmi:id="_Yxk0kaVsEeyy1pDKbt7g4A" base_Class="_YxackaVsEeyy1pDKbt7g4A"/>
-  <PortsAndFlows:ItemFlow xmi:id="_FtV5MKVtEeyy1pDKbt7g4A" base_InformationFlow="_FtS14KVtEeyy1pDKbt7g4A"/>
-  <PortsAndFlows:ItemFlow xmi:id="_ZRzXUKVtEeyy1pDKbt7g4A" base_InformationFlow="_ZRwUAKVtEeyy1pDKbt7g4A"/>
-  <PortsAndFlows:ItemFlow xmi:id="_kjHTgKVtEeyy1pDKbt7g4A" base_InformationFlow="_kjE3QKVtEeyy1pDKbt7g4A"/>
   <Blocks:Block xmi:id="_IX7RgKqOEeyJ1d4TAHIvQg" base_Class="_IXsA8KqOEeyJ1d4TAHIvQg"/>
   <Blocks:Block xmi:id="_KC8o4aqOEeyJ1d4TAHIvQg" base_Class="_KC8o4KqOEeyJ1d4TAHIvQg"/>
   <Blocks:Block xmi:id="_Lne9waqOEeyJ1d4TAHIvQg" base_Class="_LneWsKqOEeyJ1d4TAHIvQg"/>
