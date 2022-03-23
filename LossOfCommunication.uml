@@ -39,7 +39,7 @@
         <lifeline xmi:type="uml:Lifeline" xmi:id="_0_ILkJfbEey7HpH6u0AluA" name="" represents="_0_IyoJfbEey7HpH6u0AluA" coveredBy="_2jua4I8UEeyvkN3R6KPgGA _6uQhoI8UEeyvkN3R6KPgGA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_48bswI8WEeyvkN3R6KPgGA" name="Message30SendEvent" covered="_8BZYgFdxEeywoqg6iQBZCQ" message="_48bFsI8WEeyvkN3R6KPgGA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_48cT0I8WEeyvkN3R6KPgGA" name="Message30ReceiveEvent" covered="_lrLLIFd2Eeywoqg6iQBZCQ" message="_48bFsI8WEeyvkN3R6KPgGA"/>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_n4q1UI8MEeyvkN3R6KPgGA" name="CombinedFragment33" covered="_1FdhIFdxEeywoqg6iQBZCQ" interactionOperator="loop">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_n4q1UI8MEeyvkN3R6KPgGA" name="Loop" covered="_1FdhIFdxEeywoqg6iQBZCQ" interactionOperator="loop">
           <operand xmi:type="uml:InteractionOperand" xmi:id="_n4rcYI8MEeyvkN3R6KPgGA" name="InteractionOperand0" covered="_1FdhIFdxEeywoqg6iQBZCQ">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_WhOk8FeAEeyQ_vcjz509Xg" name="Message22SendEvent" covered="_8BZYgFdxEeywoqg6iQBZCQ"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_WhPMAFeAEeyQ_vcjz509Xg" name="Message22ReceiveEvent" covered="_8BZYgFdxEeywoqg6iQBZCQ"/>
@@ -48,7 +48,7 @@
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_n4rcYY8MEeyvkN3R6KPgGA" name="guard"/>
           </operand>
         </fragment>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_3p2PEI8MEeyvkN3R6KPgGA" name="CombinedFragment23" covered="_1FdhIFdxEeywoqg6iQBZCQ" interactionOperator="alt">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_3p2PEI8MEeyvkN3R6KPgGA" name="SessionTimer expiration (mute)" covered="_1FdhIFdxEeywoqg6iQBZCQ" interactionOperator="alt">
           <operand xmi:type="uml:InteractionOperand" xmi:id="_bMw4gI8OEeyvkN3R6KPgGA" name="InteractionOperand2" covered="_1FdhIFdxEeywoqg6iQBZCQ">
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_bMxfkI8OEeyvkN3R6KPgGA" name="guard">
               <specification xmi:type="uml:LiteralString" xmi:id="_uAI38I8OEeyvkN3R6KPgGA" value="SessionTimer not expired"/>
@@ -69,7 +69,7 @@
             </guard>
           </operand>
         </fragment>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_BKfsoI8SEeyvkN3R6KPgGA" name="CombinedFragment22" covered="_1FdhIFdxEeywoqg6iQBZCQ" interactionOperator="alt">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_BKfsoI8SEeyvkN3R6KPgGA" name="MuteTimer expiration" covered="_1FdhIFdxEeywoqg6iQBZCQ" interactionOperator="alt">
           <operand xmi:type="uml:InteractionOperand" xmi:id="_BKgTsI8SEeyvkN3R6KPgGA" name="InteractionOperand0" covered="_1FdhIFdxEeywoqg6iQBZCQ">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2jua4I8UEeyvkN3R6KPgGA" name="Message25SendEvent" covered="_0_ILkJfbEey7HpH6u0AluA" message="_2jtz0I8UEeyvkN3R6KPgGA"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_2jvB8I8UEeyvkN3R6KPgGA" name="Message25ReceiveEvent" covered="_8BZYgFdxEeywoqg6iQBZCQ" message="_2jtz0I8UEeyvkN3R6KPgGA"/>
@@ -103,7 +103,7 @@
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_TtWj0I8SEeyvkN3R6KPgGA" name="guard"/>
           </operand>
         </fragment>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_lrAKQI8UEeyvkN3R6KPgGA" name="CombinedFragment27" covered="_1FdhIFdxEeywoqg6iQBZCQ" interactionOperator="alt">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_lrAKQI8UEeyvkN3R6KPgGA" name="NID_ENGINE and L_TRAIN confirmation" covered="_1FdhIFdxEeywoqg6iQBZCQ" interactionOperator="alt">
           <operand xmi:type="uml:InteractionOperand" xmi:id="_lrAxUI8UEeyvkN3R6KPgGA" name="InteractionOperand0" covered="_1FdhIFdxEeywoqg6iQBZCQ">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Um_kwI8WEeyvkN3R6KPgGA" name="Message27SendEvent" covered="_8BZYgFdxEeywoqg6iQBZCQ" message="_Um-9sI8WEeyvkN3R6KPgGA"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_UnAL0I8WEeyvkN3R6KPgGA" name="Message27ReceiveEvent" covered="_lrLLIFd2Eeywoqg6iQBZCQ" message="_Um-9sI8WEeyvkN3R6KPgGA"/>
@@ -163,9 +163,9 @@
         <lifeline xmi:type="uml:Lifeline" xmi:id="_fo4HkI9HEeyPEJUYFyz_cA" name="Communication Management" coveredBy="_1vD7kI9HEeyPEJUYFyz_cA _1vEioI9HEeyPEJUYFyz_cA _4eFGkI9HEeyPEJUYFyz_cA _4eFtoI9HEeyPEJUYFyz_cA _9f1JMY9HEeyPEJUYFyz_cA __4qo0I9HEeyPEJUYFyz_cA __4qo0Y9HEeyPEJUYFyz_cA _6jWxAI9HEeyPEJUYFyz_cA _PnTE4I9IEeyPEJUYFyz_cA _PnTr8I9IEeyPEJUYFyz_cA _SB4Q8I9IEeyPEJUYFyz_cA _WF8jUI9IEeyPEJUYFyz_cA _DLpcgY9IEeyPEJUYFyz_cA"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_o6ZWQI9HEeyPEJUYFyz_cA" name="Track Status Management" coveredBy="_1vD7kI9HEeyPEJUYFyz_cA _1vEioI9HEeyPEJUYFyz_cA _4eFGkI9HEeyPEJUYFyz_cA _4eFtoI9HEeyPEJUYFyz_cA _6jWxAI9HEeyPEJUYFyz_cA _PnTE4I9IEeyPEJUYFyz_cA _PnTr8I9IEeyPEJUYFyz_cA _SB4Q8Y9IEeyPEJUYFyz_cA _WF8jUY9IEeyPEJUYFyz_cA _DLqDkI9IEeyPEJUYFyz_cA"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_Hjk-MJfcEey7HpH6u0AluA" name="" represents="_HjllQJfcEey7HpH6u0AluA" coveredBy="_9f1JMI9HEeyPEJUYFyz_cA"/>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_1vD7kI9HEeyPEJUYFyz_cA" name="CombinedFragment4" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA" interactionOperator="loop">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_1vD7kI9HEeyPEJUYFyz_cA" name="Loop" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA" interactionOperator="loop">
           <operand xmi:type="uml:InteractionOperand" xmi:id="_1vEioI9HEeyPEJUYFyz_cA" name="InteractionOperand0" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA">
-            <fragment xmi:type="uml:CombinedFragment" xmi:id="_4eFGkI9HEeyPEJUYFyz_cA" name="CombinedFragment5" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA" interactionOperator="alt">
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_4eFGkI9HEeyPEJUYFyz_cA" name="SessionTimer expiration (no mute)" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA" interactionOperator="alt">
               <operand xmi:type="uml:InteractionOperand" xmi:id="_4eFtoI9HEeyPEJUYFyz_cA" name="InteractionOperand0" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA">
                 <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9f1JMI9HEeyPEJUYFyz_cA" name="Message6SendEvent" covered="_Hjk-MJfcEey7HpH6u0AluA" message="_9fubgI9HEeyPEJUYFyz_cA"/>
                 <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9f1JMY9HEeyPEJUYFyz_cA" name="Message6ReceiveEvent" covered="_fo4HkI9HEeyPEJUYFyz_cA" message="_9fubgI9HEeyPEJUYFyz_cA"/>
@@ -176,14 +176,14 @@
                 </guard>
               </operand>
               <operand xmi:type="uml:InteractionOperand" xmi:id="_6jWxAI9HEeyPEJUYFyz_cA" name="InteractionOperand2" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA">
+                <fragment xmi:type="uml:CombinedFragment" xmi:id="_PnTE4I9IEeyPEJUYFyz_cA" name="CombinedFragment8" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA" interactionOperator="break">
+                  <operand xmi:type="uml:InteractionOperand" xmi:id="_PnTr8I9IEeyPEJUYFyz_cA" name="InteractionOperand0" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA">
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SB4Q8I9IEeyPEJUYFyz_cA" name="Message8SendEvent" covered="_fo4HkI9HEeyPEJUYFyz_cA" message="_SB3p4I9IEeyPEJUYFyz_cA"/>
+                    <guard xmi:type="uml:InteractionConstraint" xmi:id="_PnTr8Y9IEeyPEJUYFyz_cA" name="guard"/>
+                  </operand>
+                </fragment>
                 <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DLpcgY9IEeyPEJUYFyz_cA" name="Message8SendEvent" covered="_fo4HkI9HEeyPEJUYFyz_cA"/>
                 <guard xmi:type="uml:InteractionConstraint" xmi:id="_6jXYEI9HEeyPEJUYFyz_cA" name="guard"/>
-              </operand>
-            </fragment>
-            <fragment xmi:type="uml:CombinedFragment" xmi:id="_PnTE4I9IEeyPEJUYFyz_cA" name="CombinedFragment8" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA" interactionOperator="break">
-              <operand xmi:type="uml:InteractionOperand" xmi:id="_PnTr8I9IEeyPEJUYFyz_cA" name="InteractionOperand0" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA">
-                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SB4Q8I9IEeyPEJUYFyz_cA" name="Message8SendEvent" covered="_fo4HkI9HEeyPEJUYFyz_cA" message="_SB3p4I9IEeyPEJUYFyz_cA"/>
-                <guard xmi:type="uml:InteractionConstraint" xmi:id="_PnTr8Y9IEeyPEJUYFyz_cA" name="guard"/>
               </operand>
             </fragment>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SB4Q8Y9IEeyPEJUYFyz_cA" name="Message8ReceiveEvent" covered="_o6ZWQI9HEeyPEJUYFyz_cA" message="_SB3p4I9IEeyPEJUYFyz_cA"/>
@@ -219,6 +219,60 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_HPP90IeSEey56bruZv-o5g" name="infrastructure manager" association="_HPJQIIeSEey56bruZv-o5g">
         <type xmi:type="uml:Class" href="PerformingRail.uml#_8YVhsHzoEeyMX6xfbLFcdw"/>
       </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_3aL04KeWEeyP05sVpDi2hQ" name="Refine15" client="_3p2PEI8MEeyvkN3R6KPgGA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_UTcG4E-tEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_4JubcKeWEeyP05sVpDi2hQ" name="Refine16" client="_3p2PEI8MEeyvkN3R6KPgGA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_ZFUhgE-tEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_40wVcKeWEeyP05sVpDi2hQ" name="Refine17" client="_3p2PEI8MEeyvkN3R6KPgGA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_a-GoEE-tEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_6TqjcKeWEeyP05sVpDi2hQ" name="Refine18" client="_4eFGkI9HEeyPEJUYFyz_cA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_UTcG4E-tEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_63sdkKeWEeyP05sVpDi2hQ" name="Refine19" client="_4eFGkI9HEeyPEJUYFyz_cA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_ZFUhgE-tEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_7cWCwKeWEeyP05sVpDi2hQ" name="Refine20" client="_4eFGkI9HEeyPEJUYFyz_cA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_a-GoEE-tEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_8milAKeWEeyP05sVpDi2hQ" name="Refine21" client="_BKfsoI8SEeyvkN3R6KPgGA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_qan9QE-pEeyG6bM8J6mBZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_9YpXYKeWEeyP05sVpDi2hQ" name="Refine22" client="_BKfsoI8SEeyvkN3R6KPgGA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_x9gf4E-pEeyG6bM8J6mBZQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_-MBVEKeWEeyP05sVpDi2hQ" name="Refine23" client="_BKfsoI8SEeyvkN3R6KPgGA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_UTcG4E-tEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_-0-ygKeWEeyP05sVpDi2hQ" name="Refine24" client="_BKfsoI8SEeyvkN3R6KPgGA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_X3CJcE-tEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_OSWC8KeYEeyP05sVpDi2hQ" name="Refine25" client="_3p2PEI8MEeyvkN3R6KPgGA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_77vRUE-uEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_O5neUKeYEeyP05sVpDi2hQ" name="Refine26" client="_3p2PEI8MEeyvkN3R6KPgGA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_Ez0sUE-vEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_QRdbAKeYEeyP05sVpDi2hQ" name="Refine27" client="_4eFGkI9HEeyPEJUYFyz_cA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_77vRUE-uEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_RL5C8KeYEeyP05sVpDi2hQ" name="Refine28" client="_4eFGkI9HEeyPEJUYFyz_cA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_Ez0sUE-vEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_g7lZgKeZEeyP05sVpDi2hQ" name="Refine29" client="_BKfsoI8SEeyvkN3R6KPgGA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_77vRUE-uEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_mYmb0KeZEeyP05sVpDi2hQ" name="Refine30" client="_3p2PEI8MEeyvkN3R6KPgGA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#__mwKgE-uEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_pneyoKeZEeyP05sVpDi2hQ" name="Refine31" client="_4eFGkI9HEeyPEJUYFyz_cA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#__mwKgE-uEey239YQVA8-rw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_qcsjYKeZEeyP05sVpDi2hQ" name="Refine32" client="_lrAKQI8UEeyvkN3R6KPgGA">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#__mwKgE-uEey239YQVA8-rw"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_dwoDMEfPEeydXZgDYCfwSw">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_dwoDMUfPEeydXZgDYCfwSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -327,4 +381,22 @@
     <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_Ez0sUE-vEey239YQVA8-rw"/>
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_Ez0sUE-vEey239YQVA8-rw"/>
   </Requirements:Requirement>
+  <Requirements:Refine xmi:id="_3aORIKeWEeyP05sVpDi2hQ" base_DirectedRelationship="_3aL04KeWEeyP05sVpDi2hQ" base_Abstraction="_3aL04KeWEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_4JwQoKeWEeyP05sVpDi2hQ" base_DirectedRelationship="_4JubcKeWEeyP05sVpDi2hQ" base_Abstraction="_4JubcKeWEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_40yKoKeWEeyP05sVpDi2hQ" base_DirectedRelationship="_40wVcKeWEeyP05sVpDi2hQ" base_Abstraction="_40wVcKeWEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_6TsYoKeWEeyP05sVpDi2hQ" base_DirectedRelationship="_6TqjcKeWEeyP05sVpDi2hQ" base_Abstraction="_6TqjcKeWEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_63trsKeWEeyP05sVpDi2hQ" base_DirectedRelationship="_63sdkKeWEeyP05sVpDi2hQ" base_Abstraction="_63sdkKeWEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_7cXQ4KeWEeyP05sVpDi2hQ" base_DirectedRelationship="_7cWCwKeWEeyP05sVpDi2hQ" base_Abstraction="_7cWCwKeWEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_8mjzIKeWEeyP05sVpDi2hQ" base_DirectedRelationship="_8milAKeWEeyP05sVpDi2hQ" base_Abstraction="_8milAKeWEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_9YqlgKeWEeyP05sVpDi2hQ" base_DirectedRelationship="_9YpXYKeWEeyP05sVpDi2hQ" base_Abstraction="_9YpXYKeWEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_-MCjMKeWEeyP05sVpDi2hQ" base_DirectedRelationship="_-MBVEKeWEeyP05sVpDi2hQ" base_Abstraction="_-MBVEKeWEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_-1AAoKeWEeyP05sVpDi2hQ" base_DirectedRelationship="_-0-ygKeWEeyP05sVpDi2hQ" base_Abstraction="_-0-ygKeWEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_OSX4IKeYEeyP05sVpDi2hQ" base_DirectedRelationship="_OSWC8KeYEeyP05sVpDi2hQ" base_Abstraction="_OSWC8KeYEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_O5pTgKeYEeyP05sVpDi2hQ" base_DirectedRelationship="_O5neUKeYEeyP05sVpDi2hQ" base_Abstraction="_O5neUKeYEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_QRepIKeYEeyP05sVpDi2hQ" base_DirectedRelationship="_QRdbAKeYEeyP05sVpDi2hQ" base_Abstraction="_QRdbAKeYEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_RL6REKeYEeyP05sVpDi2hQ" base_DirectedRelationship="_RL5C8KeYEeyP05sVpDi2hQ" base_Abstraction="_RL5C8KeYEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_g7nOsKeZEeyP05sVpDi2hQ" base_DirectedRelationship="_g7lZgKeZEeyP05sVpDi2hQ" base_Abstraction="_g7lZgKeZEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_mYnp8KeZEeyP05sVpDi2hQ" base_DirectedRelationship="_mYmb0KeZEeyP05sVpDi2hQ" base_Abstraction="_mYmb0KeZEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_pngAwKeZEeyP05sVpDi2hQ" base_DirectedRelationship="_pneyoKeZEeyP05sVpDi2hQ" base_Abstraction="_pneyoKeZEeyP05sVpDi2hQ"/>
+  <Requirements:Refine xmi:id="_qctxgKeZEeyP05sVpDi2hQ" base_DirectedRelationship="_qcsjYKeZEeyP05sVpDi2hQ" base_Abstraction="_qcsjYKeZEeyP05sVpDi2hQ"/>
 </xmi:XMI>
