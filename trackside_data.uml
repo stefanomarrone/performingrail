@@ -218,6 +218,12 @@ Assumption:&#xD;
       <packagedElement xmi:type="uml:Class" xmi:id="_ldWKUIqWEeyM8dFJdTQLEQ" name="OS Mode Profile"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_OempwIquEey_E5TpwM1pKA" name="TTD">
         <generalization xmi:type="uml:Generalization" xmi:id="_wC3GUIssEeyti_Bx9Y2PIg" general="_QVt8gE6OEeyaL75nPQZQGA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_o8tpUKu1EeyzZf6WGdtVgQ" name="DESYNCHRONIZATION_TIMEOUT" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_vIZvgKu1EeyzZf6WGdtVgQ" name="desynchronizationTimer">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_4HC8cIquEey_E5TpwM1pKA" client="_H7N7cIWvEeyWqMvyxp-iUQ" supplier="_rANpEIquEey_E5TpwM1pKA"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_hQ7uEIqzEey_E5TpwM1pKA" memberEnd="_hQ88MYqzEey_E5TpwM1pKA _hRIiYIqzEey_E5TpwM1pKA">
