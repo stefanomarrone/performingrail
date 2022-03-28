@@ -115,6 +115,33 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EMlr4atyEey9lovFct_p0Q" name="train2trackside"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EMlr4qtyEey9lovFct_p0Q" name="trackside2train"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_MnJOYK6IEeyNmoFpmwcymA" name="TrainInterface">
+        <ownedComment xmi:type="uml:Comment" xmi:id="_yZCtUK6IEeyNmoFpmwcymA">
+          <body>The entire package is mapped on the SUBSET 034 (v3.2.0)</body>
+        </ownedComment>
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_RhIcIK6IEeyNmoFpmwcymA" name="TrainCommand" isAbstract="true"/>
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_g4g10K6IEeyNmoFpmwcymA" name="ModeControl" isAbstract="true">
+          <generalization xmi:type="uml:Generalization" xmi:id="_lPD_UK6IEeyNmoFpmwcymA" general="_RhIcIK6IEeyNmoFpmwcymA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_iJIJIK6IEeyNmoFpmwcymA" name="SleepingCommand">
+          <generalization xmi:type="uml:Generalization" xmi:id="_lxBc4K6IEeyNmoFpmwcymA" general="_g4g10K6IEeyNmoFpmwcymA"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rd1OsK6IEeyNmoFpmwcymA" name="Requested"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ssYFcK6IEeyNmoFpmwcymA" name="NotRequested"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_-ag7IK6IEeyNmoFpmwcymA" name="ControlOfBrakes" isAbstract="true">
+          <generalization xmi:type="uml:Generalization" xmi:id="_n8mHIK6JEeyNmoFpmwcymA" general="_RhIcIK6IEeyNmoFpmwcymA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_BuKdMK6JEeyNmoFpmwcymA" name="ServiceBrakeCommand">
+          <generalization xmi:type="uml:Generalization" xmi:id="_ms_gcK6JEeyNmoFpmwcymA" general="_-ag7IK6IEeyNmoFpmwcymA"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dJtzYK6JEeyNmoFpmwcymA" name="Commanded"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_eduY8K6JEeyNmoFpmwcymA" name="NotCommanded"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_VZszsK6JEeyNmoFpmwcymA" name="EmergencyBrakeCommand">
+          <generalization xmi:type="uml:Generalization" xmi:id="_nVdOoK6JEeyNmoFpmwcymA" general="_-ag7IK6IEeyNmoFpmwcymA"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_fbH1UK6JEeyNmoFpmwcymA" name="Commanded"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g1dsYK6JEeyNmoFpmwcymA" name="NotCommanded"/>
+        </packagedElement>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="Trackside">
       <ownedComment xmi:type="uml:Comment" xmi:id="_R4dDYIsPEeyti_Bx9Y2PIg" annotatedElement="_R4aY4InXEeywtu03ZyCfsg">
