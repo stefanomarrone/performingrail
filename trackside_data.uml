@@ -116,8 +116,11 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EMlr4qtyEey9lovFct_p0Q" name="trackside2train"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_MnJOYK6IEeyNmoFpmwcymA" name="TrainInterface">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_yZCtUK6IEeyNmoFpmwcymA">
-          <body>The entire package is mapped on the SUBSET 034 (v3.2.0)</body>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_yZCtUK6IEeyNmoFpmwcymA" annotatedElement="_RhIcIK6IEeyNmoFpmwcymA">
+          <body>The entire structure is mapped on the SUBSET 034 (v3.2.0)</body>
+        </ownedComment>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_6pXS0K6KEeyNmoFpmwcymA" annotatedElement="_3DbG4K6KEeyNmoFpmwcymA">
+          <body>The type comes from SUBSET27_CR940</body>
         </ownedComment>
         <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_RhIcIK6IEeyNmoFpmwcymA" name="TrainCommand" isAbstract="true"/>
         <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_g4g10K6IEeyNmoFpmwcymA" name="ModeControl" isAbstract="true">
@@ -141,6 +144,7 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_fbH1UK6JEeyNmoFpmwcymA" name="Commanded"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g1dsYK6JEeyNmoFpmwcymA" name="NotCommanded"/>
         </packagedElement>
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_3DbG4K6KEeyNmoFpmwcymA" name="TrainIntegrityInformation" isAbstract="true"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="Trackside">
