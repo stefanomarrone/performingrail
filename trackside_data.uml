@@ -116,8 +116,8 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_EMlr4qtyEey9lovFct_p0Q" name="trackside2train"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_MnJOYK6IEeyNmoFpmwcymA" name="TrainInterface">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_yZCtUK6IEeyNmoFpmwcymA" annotatedElement="_RhIcIK6IEeyNmoFpmwcymA">
-          <body>The entire structure is mapped on the SUBSET 034 (v3.2.0)</body>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_yZCtUK6IEeyNmoFpmwcymA" annotatedElement="_RhIcIK6IEeyNmoFpmwcymA _gQQBUK6bEeysMsIa0aUTrQ">
+          <body>The structures are mapped on the SUBSET 034 (v3.2.0). Data types are incomplete.</body>
         </ownedComment>
         <ownedComment xmi:type="uml:Comment" xmi:id="_6pXS0K6KEeyNmoFpmwcymA" annotatedElement="_3DbG4K6KEeyNmoFpmwcymA">
           <body>The type comes from SUBSET27_CR940</body>
@@ -145,6 +145,15 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_g1dsYK6JEeyNmoFpmwcymA" name="NotCommanded"/>
         </packagedElement>
         <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_3DbG4K6KEeyNmoFpmwcymA" name="TrainIntegrityInformation" isAbstract="true"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_gQQBUK6bEeysMsIa0aUTrQ" name="TrainData">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tGfT8K6bEeysMsIa0aUTrQ" name="category" type="_nolMwJLvEeymw95ncJwi5w"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_wYTqAK6bEeysMsIa0aUTrQ" name="lenght">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_yFasEK6bEeysMsIa0aUTrQ" name="maxSpeed">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedAttribute>
+        </packagedElement>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="Trackside">
@@ -864,4 +873,5 @@ Assumption:&#xD;
   <Blocks:Block xmi:id="_u20BIKtxEey9lovFct_p0Q" base_Class="_u2vvsKtxEey9lovFct_p0Q"/>
   <Blocks:Block xmi:id="_cwKIUKtyEey9lovFct_p0Q" base_Class="_cwHsEKtyEey9lovFct_p0Q"/>
   <Blocks:Block xmi:id="_7WUmEKuCEey9lovFct_p0Q" base_Class="_7WRiwKuCEey9lovFct_p0Q"/>
+  <standard:Type xmi:id="_gQQoYK6bEeysMsIa0aUTrQ" base_Class="_gQQBUK6bEeysMsIa0aUTrQ"/>
 </xmi:XMI>
