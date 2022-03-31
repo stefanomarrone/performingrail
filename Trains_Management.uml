@@ -5,12 +5,13 @@
   </eAnnotations>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Ydk70IRBEeywk-_Gar0q8A" name="Trains Management">
     <region xmi:type="uml:Region" xmi:id="_aoXYYIRBEeywk-_Gar0q8A" name="Region1">
-      <transition xmi:type="uml:Transition" xmi:id="_l_Ex8IRBEeywk-_Gar0q8A" name="Delete Train" source="_hu3hAIRBEeywk-_Gar0q8A" target="_i_eNQIRBEeywk-_Gar0q8A"/>
-      <transition xmi:type="uml:Transition" xmi:id="_n209wIRBEeywk-_Gar0q8A" name="Update Train" source="_hu3hAIRBEeywk-_Gar0q8A" target="_hu3hAIRBEeywk-_Gar0q8A"/>
       <transition xmi:type="uml:Transition" xmi:id="_ohfNcImpEey1ZJA0OWh0IQ" source="_fwRtYIRBEeywk-_Gar0q8A" target="_hu3hAIRBEeywk-_Gar0q8A"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_fwRtYIRBEeywk-_Gar0q8A" name="initial"/>
-      <subvertex xmi:type="uml:State" xmi:id="_hu3hAIRBEeywk-_Gar0q8A" name="created"/>
+      <subvertex xmi:type="uml:State" xmi:id="_hu3hAIRBEeywk-_Gar0q8A" name="idle"/>
       <subvertex xmi:type="uml:FinalState" xmi:id="_i_eNQIRBEeywk-_Gar0q8A" name="final"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Yg5KwLDREeyjCNJ57Fq-CA" name="CRE updated"/>
+      <subvertex xmi:type="uml:State" xmi:id="_a_xA8LDREeyjCNJ57Fq-CA" name="MSFE updated"/>
+      <subvertex xmi:type="uml:State" xmi:id="_hgT80LDREeyjCNJ57Fq-CA" name="wait for MA"/>
     </region>
   </ownedBehavior>
 </uml:UseCase>
