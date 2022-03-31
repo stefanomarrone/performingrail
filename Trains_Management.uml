@@ -37,6 +37,10 @@ REQ-TrainLoc-9</body>
       <ownedComment xmi:type="uml:Comment" xmi:id="_VBLB8LDZEeyjCNJ57Fq-CA" annotatedElement="_Pz1aYLDZEeyjCNJ57Fq-CA">
         <body>MovingRail D1.1 Sec.3.6</body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_AA2X4LDbEeyjCNJ57Fq-CA" annotatedElement="_5qKioLDaEeyjCNJ57Fq-CA _QvI6ILDbEeyjCNJ57Fq-CA">
+        <body>REQ-TrainLoc-13&#xD;
+REQ-TrainLoc-14</body>
+      </ownedComment>
       <transition xmi:type="uml:Transition" xmi:id="_ohfNcImpEey1ZJA0OWh0IQ" source="_fwRtYIRBEeywk-_Gar0q8A" target="_hu3hAIRBEeywk-_Gar0q8A"/>
       <transition xmi:type="uml:Transition" xmi:id="_6Y61ILDREeyjCNJ57Fq-CA" name="TrainPositionReport [active engine]/OccupyTSA" source="_hu3hAIRBEeywk-_Gar0q8A" target="_a_xA8LDREeyjCNJ57Fq-CA"/>
       <transition xmi:type="uml:Transition" xmi:id="_BuWxoLDSEeyjCNJ57Fq-CA" name="[integrity confirmed] /ReleaseTSA" source="_a_xA8LDREeyjCNJ57Fq-CA" target="_Yg5KwLDREeyjCNJ57Fq-CA"/>
@@ -48,12 +52,16 @@ REQ-TrainLoc-9</body>
       <transition xmi:type="uml:Transition" xmi:id="_b7ZUALDXEeyjCNJ57Fq-CA" name="[position unexpected or in conflict with other train movements] /Alert TMS" source="_Yg5KwLDREeyjCNJ57Fq-CA" target="_i_eNQIRBEeywk-_Gar0q8A"/>
       <transition xmi:type="uml:Transition" xmi:id="_j7Ob4LDYEeyjCNJ57Fq-CA" name="TrainPositionReport [Non-Leading or Sleeping engine]" source="_hu3hAIRBEeywk-_Gar0q8A" target="_hu3hAIRBEeywk-_Gar0q8A"/>
       <transition xmi:type="uml:Transition" xmi:id="_Pz1aYLDZEeyjCNJ57Fq-CA" name="Computed MA /send MA" source="_hgT80LDREeyjCNJ57Fq-CA" target="_hu3hAIRBEeywk-_Gar0q8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5qKioLDaEeyjCNJ57Fq-CA" name="Validated Train Data [train length > stored train length] /OccupyTSA" source="_hu3hAIRBEeywk-_Gar0q8A" target="_rWPKALDaEeyjCNJ57Fq-CA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_QvI6ILDbEeyjCNJ57Fq-CA" name="[extends into a previously Clear area by more than the L3 margin] /Alert TMS" source="_rWPKALDaEeyjCNJ57Fq-CA" target="_hu3hAIRBEeywk-_Gar0q8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_6hO4ELDbEeyjCNJ57Fq-CA" name="[extension ok]" source="_rWPKALDaEeyjCNJ57Fq-CA" target="_hu3hAIRBEeywk-_Gar0q8A"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_fwRtYIRBEeywk-_Gar0q8A" name="initial"/>
       <subvertex xmi:type="uml:State" xmi:id="_hu3hAIRBEeywk-_Gar0q8A" name="idle"/>
       <subvertex xmi:type="uml:FinalState" xmi:id="_i_eNQIRBEeywk-_Gar0q8A" name="go to a safe state"/>
       <subvertex xmi:type="uml:State" xmi:id="_Yg5KwLDREeyjCNJ57Fq-CA" name="CRE updated"/>
       <subvertex xmi:type="uml:State" xmi:id="_a_xA8LDREeyjCNJ57Fq-CA" name="MSFE updated"/>
       <subvertex xmi:type="uml:State" xmi:id="_hgT80LDREeyjCNJ57Fq-CA" name="wait for MA"/>
+      <subvertex xmi:type="uml:State" xmi:id="_rWPKALDaEeyjCNJ57Fq-CA" name="Train Data received"/>
     </region>
   </ownedBehavior>
 </uml:UseCase>
