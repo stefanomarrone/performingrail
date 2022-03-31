@@ -5,13 +5,37 @@
   </eAnnotations>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Ydk70IRBEeywk-_Gar0q8A" name="Trains Management">
     <region xmi:type="uml:Region" xmi:id="_aoXYYIRBEeywk-_Gar0q8A" name="Region1">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_5HInsLDSEeyjCNJ57Fq-CA">
+        <body>REQ-TrainLoc-1</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_8QT_ILDSEeyjCNJ57Fq-CA" annotatedElement="_6Y61ILDREeyjCNJ57Fq-CA _BuWxoLDSEeyjCNJ57Fq-CA">
+        <body>REQ-TrainLoc-3&#xD;
+REQ-TrainLoc-4</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_VsC9MLDUEeyjCNJ57Fq-CA" annotatedElement="_KNUiALDSEeyjCNJ57Fq-CA">
+        <body>REQ-TrainLoc-5</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_Z_V-YLDUEeyjCNJ57Fq-CA" annotatedElement="_R4TQsLDSEeyjCNJ57Fq-CA">
+        <body>REQ-TrainLoc-6&#xD;
+</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_13ctsLDUEeyjCNJ57Fq-CA" annotatedElement="_tpiRELDUEeyjCNJ57Fq-CA">
+        <body>REQ-TrainLoc-2</body>
+      </ownedComment>
       <transition xmi:type="uml:Transition" xmi:id="_ohfNcImpEey1ZJA0OWh0IQ" source="_fwRtYIRBEeywk-_Gar0q8A" target="_hu3hAIRBEeywk-_Gar0q8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_6Y61ILDREeyjCNJ57Fq-CA" name="TrainPositionReport /OccupyTSA" source="_hu3hAIRBEeywk-_Gar0q8A" target="_a_xA8LDREeyjCNJ57Fq-CA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_BuWxoLDSEeyjCNJ57Fq-CA" name="[integrity confirmed] /ReleaseTSA" source="_a_xA8LDREeyjCNJ57Fq-CA" target="_Yg5KwLDREeyjCNJ57Fq-CA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_KNUiALDSEeyjCNJ57Fq-CA" name="[train in FS/OS mode &amp;&amp; integrty confirmed by external device] /ReleaseTSA" source="_a_xA8LDREeyjCNJ57Fq-CA" target="_Yg5KwLDREeyjCNJ57Fq-CA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_R4TQsLDSEeyjCNJ57Fq-CA" name="[train in FS/OS mode &amp;&amp; integrity confirmed by driver &amp;&amp; accept TI from driver] /ReleaseTSA" source="_a_xA8LDREeyjCNJ57Fq-CA" target="_Yg5KwLDREeyjCNJ57Fq-CA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_t4PGULDSEeyjCNJ57Fq-CA" name="Communication Timeout /UnknownTSA" source="_hu3hAIRBEeywk-_Gar0q8A" target="_Yg5KwLDREeyjCNJ57Fq-CA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_tpiRELDUEeyjCNJ57Fq-CA" name="/Report Location and Status to TMS" source="_Yg5KwLDREeyjCNJ57Fq-CA" target="_hgT80LDREeyjCNJ57Fq-CA"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_fwRtYIRBEeywk-_Gar0q8A" name="initial"/>
       <subvertex xmi:type="uml:State" xmi:id="_hu3hAIRBEeywk-_Gar0q8A" name="idle"/>
       <subvertex xmi:type="uml:FinalState" xmi:id="_i_eNQIRBEeywk-_Gar0q8A" name="final"/>
       <subvertex xmi:type="uml:State" xmi:id="_Yg5KwLDREeyjCNJ57Fq-CA" name="CRE updated"/>
       <subvertex xmi:type="uml:State" xmi:id="_a_xA8LDREeyjCNJ57Fq-CA" name="MSFE updated"/>
       <subvertex xmi:type="uml:State" xmi:id="_hgT80LDREeyjCNJ57Fq-CA" name="wait for MA"/>
+      <subvertex xmi:type="uml:State" xmi:id="_mV5EULDUEeyjCNJ57Fq-CA" name="confirmation required by train"/>
     </region>
   </ownedBehavior>
 </uml:UseCase>
