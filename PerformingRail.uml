@@ -13,11 +13,8 @@
 </body>
       </ownedComment>
       <packagedElement xmi:type="uml:Class" xmi:id="_K2rj4BIoEeyVOZB09kZL2w" name="ETCS-L3 System">
-        <ownedComment xmi:type="uml:Comment" xmi:id="_M1x1ILGaEeyfjpe2nC8Faw" annotatedElement="_Lvtk8LGaEeyfjpe2nC8Faw">
-          <body>speed position information</body>
-        </ownedComment>
-        <ownedComment xmi:type="uml:Comment" xmi:id="__TxG0LGHEey0QOTMOj7Mdg" annotatedElement="_824dIKrCEey95JqQZoaUKg">
-          <body>to delelte</body>
+        <ownedComment xmi:type="uml:Comment" xmi:id="_ejLfcLGkEeyAy7hsZQgbmA" annotatedElement="_Jbnp0K4VEeym_qxcLUg2jw">
+          <body>discuss about release/occupancy or just release</body>
         </ownedComment>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_s3WM4BIoEeyVOZB09kZL2w" name="Driver">
           <generalization xmi:type="uml:Generalization" xmi:id="_Mym5gBIyEeyVOZB09kZL2w" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
@@ -82,6 +79,9 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_UMMgwBIzEeyVOZB09kZL2w" name="ETCS L3">
           <nestedClassifier xmi:type="uml:Class" xmi:id="_av43QBIzEeyVOZB09kZL2w" name="ETCS Trackside">
+            <ownedComment xmi:type="uml:Comment" xmi:id="__TxG0LGHEey0QOTMOj7Mdg" annotatedElement="_824dIKrCEey95JqQZoaUKg">
+              <body>to delete</body>
+            </ownedComment>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_IXsA8KqOEeyJ1d4TAHIvQg" name="Trains manager">
               <ownedUseCase xmi:type="uml:UseCase" href="Trains_Management.uml#_INQ5IBRuEeyQN9odROAPWw"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_hX03QKrTEeyYGNlEZZyTmg" name="FullPort3" aggregation="composite"/>
@@ -249,11 +249,12 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_adSz8K6KEeyNmoFpmwcymA" name="FullPort7" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_a8gfgK6KEeyNmoFpmwcymA" name="data" type="_hHVPwK6aEeysMsIa0aUTrQ" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_ZiDYoLGIEey0QOTMOj7Mdg" name="profile" type="_8WlcoLGKEey0QOTMOj7Mdg" aggregation="composite"/>
-              <ownedAttribute xmi:type="uml:Port" xmi:id="_H5ao0LGaEeyfjpe2nC8Faw" name="FullPort12" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_H5ao0LGaEeyfjpe2nC8Faw" name="recvPositionSpeed" type="_8qxlILGkEeyAy7hsZQgbmA" aggregation="composite"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_XZFwgKrDEey95JqQZoaUKg" name="MAupdate"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_lqbUcKtNEey01sp69YXD8w" name="VTDAcknowledged"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_hHVPwK6aEeysMsIa0aUTrQ" name="trainData"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_8WlcoLGKEey0QOTMOj7Mdg" name="newCurve"/>
+              <nestedClassifier xmi:type="uml:Signal" xmi:id="_8qxlILGkEeyAy7hsZQgbmA" name="receivingSpeedDistance"/>
             </nestedClassifier>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_Myuo4qqOEeyJ1d4TAHIvQg" name="Integrity Information manager">
               <ownedUseCase xmi:type="uml:UseCase" href="Integration_Information_Management.uml#_jD9zcDjZEeyQeMlHlxk6EA"/>
@@ -529,7 +530,9 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_fIL6sLGIEey0QOTMOj7Mdg" name="ItemFlow54" informationSource="_0v3qQLGHEey0QOTMOj7Mdg" informationTarget="_ZiDYoLGIEey0QOTMOj7Mdg">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_SeFxMLGJEey0QOTMOj7Mdg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Lvtk8LGaEeyfjpe2nC8Faw" name="ItemFlow55" informationSource="_JTR-wLGaEeyfjpe2nC8Faw" informationTarget="_H5ao0LGaEeyfjpe2nC8Faw"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Lvtk8LGaEeyfjpe2nC8Faw" name="ItemFlow55" informationSource="_JTR-wLGaEeyfjpe2nC8Faw" informationTarget="_H5ao0LGaEeyfjpe2nC8Faw">
+        <conveyed xmi:type="uml:Class" href="trackside_data.uml#_58RcAJLuEeymw95ncJwi5w"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_nsyrMBI2EeyVOZB09kZL2w" name="References">
       <ownedComment xmi:type="uml:Comment" xmi:id="_R8JCUBI2EeyVOZB09kZL2w">
