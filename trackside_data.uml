@@ -5,6 +5,9 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="_dMgtYIsWEeyti_Bx9Y2PIg">
         <body>Enumerative types are from Subset 026-7 v3.00 (L2) or from X2Rail-3 D4.2 part 3 (L3)</body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_0qwoILGEEey0QOTMOj7Mdg" annotatedElement="_vt5skLGEEey0QOTMOj7Mdg">
+        <body>Ongoing</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_YNRHkE6OEeyaL75nPQZQGA" name="AreaStatus">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bedLgE6OEeyaL75nPQZQGA" name="Occupied"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cyuPwE6OEeyaL75nPQZQGA" name="Unknown"/>
@@ -163,6 +166,7 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_p8C0YK6fEeysMsIa0aUTrQ" name="Train integrity confirmation"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vt5skLGEEey0QOTMOj7Mdg" name="VBTS_DATA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="Trackside">
       <ownedComment xmi:type="uml:Comment" xmi:id="_R4dDYIsPEeyti_Bx9Y2PIg" annotatedElement="_R4aY4InXEeywtu03ZyCfsg">
@@ -257,6 +261,10 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_iVMGQIv5EeyIuMpgGOW6ag" name="os mode profile" type="_ldWKUIqWEeyM8dFJdTQLEQ" association="_iUpTsIv5EeyIuMpgGOW6ag">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iVNUYIv5EeyIuMpgGOW6ag"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iVNUYYv5EeyIuMpgGOW6ag" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_DiW8QrGKEey0QOTMOj7Mdg" name="staticspeedprofilearea" type="_Re5FYLGGEey0QOTMOj7Mdg" association="_DiWVMLGKEey0QOTMOj7Mdg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_DiW8Q7GKEey0QOTMOj7Mdg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_DiW8RLGKEey0QOTMOj7Mdg" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_KSN1wIqWEeyM8dFJdTQLEQ" name="ReservedStatusArea">
@@ -447,6 +455,12 @@ Assumption:&#xD;
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_dyEaAKRbEeyej7eNlp97ag" name="location" type="_IuXHEKLkEey9xcG6n6eidg" association="_dx7QEKRbEeyej7eNlp97ag"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_DiWVMLGKEey0QOTMOj7Mdg" memberEnd="_DiW8QrGKEey0QOTMOj7Mdg _DiXjULGKEey0QOTMOj7Mdg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DiW8QLGKEey0QOTMOj7Mdg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DiW8QbGKEey0QOTMOj7Mdg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_DiXjULGKEey0QOTMOj7Mdg" name="movementauthority" type="_RCTlYInZEeywtu03ZyCfsg" association="_DiWVMLGKEey0QOTMOj7Mdg"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_rANpEIquEey_E5TpwM1pKA" name="Configuration">
       <packagedElement xmi:type="uml:Class" xmi:id="_PMgNMIWuEeyWqMvyxp-iUQ" name="RBC">
@@ -484,6 +498,10 @@ Assumption:&#xD;
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_eJ5TsJMOEeyEEqDYLr-O6w" name="rbc" type="_PMgNMIWuEeyWqMvyxp-iUQ" aggregation="shared" association="_eJ2QYJMOEeyEEqDYLr-O6w">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_eJ56wZMOEeyEEqDYLr-O6w" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jMuZErGGEey0QOTMOj7Mdg" name="staticspeedprofilearea" type="_Re5FYLGGEey0QOTMOj7Mdg" aggregation="shared" association="_jMtyALGGEey0QOTMOj7Mdg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jMvAILGGEey0QOTMOj7Mdg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jMvAIbGGEey0QOTMOj7Mdg" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_b2jF0IqvEey_E5TpwM1pKA" name="ShuntingArea">
@@ -597,8 +615,23 @@ Assumption:&#xD;
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_CiD4MpMSEeyEEqDYLr-O6w" name="preceding" type="_PMgNMIWuEeyWqMvyxp-iUQ" association="_CiCDAJMSEeyEEqDYLr-O6w"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_Re5FYLGGEey0QOTMOj7Mdg" name="StaticSpeedProfileArea">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_YG234LGGEey0QOTMOj7Mdg" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b4mEILGGEey0QOTMOj7Mdg" name="maxSpeed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_jMtyALGGEey0QOTMOj7Mdg" memberEnd="_jMuZErGGEey0QOTMOj7Mdg _jMvAIrGGEey0QOTMOj7Mdg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jMuZELGGEey0QOTMOj7Mdg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jMuZEbGGEey0QOTMOj7Mdg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_jMvAIrGGEey0QOTMOj7Mdg" name="infrastructure" type="_j51sEInZEeywtu03ZyCfsg" association="_jMtyALGGEey0QOTMOj7Mdg"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_aLg1kJLtEeymw95ncJwi5w" name="Onboard">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_lgH3sLGJEey0QOTMOj7Mdg" annotatedElement="_SeFxMLGJEey0QOTMOj7Mdg">
+        <body>maybe to refine</body>
+      </ownedComment>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_frkk0JLtEeymw95ncJwi5w" client="_aLg1kJLtEeymw95ncJwi5w" supplier="_7RlhcIWuEeyWqMvyxp-iUQ"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_gU_VQJLtEeymw95ncJwi5w" client="_aLg1kJLtEeymw95ncJwi5w" supplier="_rANpEIquEey_E5TpwM1pKA"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_58RcAJLuEeymw95ncJwi5w" name="ETCS Information">
@@ -614,9 +647,8 @@ Assumption:&#xD;
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wrS1g5MSEeyEEqDYLr-O6w"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wrS1hJMSEeyEEqDYLr-O6w" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_28dNgpQCEey49-7YVLx_Pw" name="movementauthority" type="_vHEbEJQBEey49-7YVLx_Pw" association="_28cmcJQCEey49-7YVLx_Pw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_28dNg5QCEey49-7YVLx_Pw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_28d0kJQCEey49-7YVLx_Pw" value="1"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_28dNgpQCEey49-7YVLx_Pw" name="speedprofile" type="_SeFxMLGJEey0QOTMOj7Mdg" association="_28cmcJQCEey49-7YVLx_Pw">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_28d0kJQCEey49-7YVLx_Pw" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_3Vib4JQCEey49-7YVLx_Pw" name="train" type="_0t5aMJMQEeyEEqDYLr-O6w" association="_3VhNwJQCEey49-7YVLx_Pw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3Vib4ZQCEey49-7YVLx_Pw"/>
@@ -677,6 +709,7 @@ Assumption:&#xD;
         <ownedEnd xmi:type="uml:Property" xmi:id="_qn12sZQBEey49-7YVLx_Pw" name="position" type="_Du_McJNhEeycFb3H7bUBJg" association="_qnreoJQBEey49-7YVLx_Pw"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_vHEbEJQBEey49-7YVLx_Pw" name="MovementAuthority">
+        <generalization xmi:type="uml:Generalization" xmi:id="_lMxocLGKEey0QOTMOj7Mdg" general="_u2vvsKtxEey9lovFct_p0Q"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_5-wiwJV0Eeygi4zaw5gOng" name="EoA" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
@@ -766,6 +799,12 @@ Assumption:&#xD;
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_7WRiwKuCEey9lovFct_p0Q" name="Acknowledgement">
         <generalization xmi:type="uml:Generalization" xmi:id="_90WuwKuCEey9lovFct_p0Q" general="_u2vvsKtxEey9lovFct_p0Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SeFxMLGJEey0QOTMOj7Mdg" name="BreakingCurve">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZgYvQLGJEey0QOTMOj7Mdg" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_cpU2ILGJEey0QOTMOj7Mdg" name="maxSpeed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lG4ScIWxEeyjW475vB6H-g">
@@ -882,4 +921,7 @@ Assumption:&#xD;
   <Blocks:Block xmi:id="_cwKIUKtyEey9lovFct_p0Q" base_Class="_cwHsEKtyEey9lovFct_p0Q"/>
   <Blocks:Block xmi:id="_7WUmEKuCEey9lovFct_p0Q" base_Class="_7WRiwKuCEey9lovFct_p0Q"/>
   <standard:Type xmi:id="_gQQoYK6bEeysMsIa0aUTrQ" base_Class="_gQQBUK6bEeysMsIa0aUTrQ"/>
+  <Blocks:Block xmi:id="_vt_MILGEEey0QOTMOj7Mdg" base_Class="_vt5skLGEEey0QOTMOj7Mdg"/>
+  <Blocks:Block xmi:id="_Re8IsLGGEey0QOTMOj7Mdg" base_Class="_Re5FYLGGEey0QOTMOj7Mdg"/>
+  <Blocks:Block xmi:id="_SeINcLGJEey0QOTMOj7Mdg" base_Class="_SeFxMLGJEey0QOTMOj7Mdg"/>
 </xmi:XMI>
