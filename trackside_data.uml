@@ -5,9 +5,6 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="_dMgtYIsWEeyti_Bx9Y2PIg">
         <body>Enumerative types are from Subset 026-7 v3.00 (L2) or from X2Rail-3 D4.2 part 3 (L3)</body>
       </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_0qwoILGEEey0QOTMOj7Mdg" annotatedElement="_vt5skLGEEey0QOTMOj7Mdg">
-        <body>Ongoing</body>
-      </ownedComment>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_YNRHkE6OEeyaL75nPQZQGA" name="AreaStatus">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_bedLgE6OEeyaL75nPQZQGA" name="Occupied"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_cyuPwE6OEeyaL75nPQZQGA" name="Unknown"/>
@@ -157,6 +154,20 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
           </ownedAttribute>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vt5skLGEEey0QOTMOj7Mdg" name="Location Raw Data">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_68BmwLOFEeyq06BeRRk88A" name="position">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9Ih6kLOFEeyq06BeRRk88A" name="lowerMargin">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__wCvYLOFEeyq06BeRRk88A" name="upperMargin">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_CK8EgLOGEeyq06BeRRk88A" name="confidenceLevel">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedAttribute>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_BZMQwK6fEeysMsIa0aUTrQ" name="DriverInterface">
         <ownedComment xmi:type="uml:Comment" xmi:id="_I3Ry8K6fEeysMsIa0aUTrQ" annotatedElement="_Eh9_kK6fEeysMsIa0aUTrQ">
@@ -166,7 +177,6 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_p8C0YK6fEeysMsIa0aUTrQ" name="Train integrity confirmation"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_vt5skLGEEey0QOTMOj7Mdg" name="VBTS_DATA"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="Trackside">
       <ownedComment xmi:type="uml:Comment" xmi:id="_R4dDYIsPEeyti_Bx9Y2PIg" annotatedElement="_R4aY4InXEeywtu03ZyCfsg">
@@ -800,7 +810,7 @@ Assumption:&#xD;
       <packagedElement xmi:type="uml:Class" xmi:id="_7WRiwKuCEey9lovFct_p0Q" name="Acknowledgement">
         <generalization xmi:type="uml:Generalization" xmi:id="_90WuwKuCEey9lovFct_p0Q" general="_u2vvsKtxEey9lovFct_p0Q"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_SeFxMLGJEey0QOTMOj7Mdg" name="BreakingCurve">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SeFxMLGJEey0QOTMOj7Mdg" name="BrakingCurve">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_ZgYvQLGJEey0QOTMOj7Mdg" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_cpU2ILGJEey0QOTMOj7Mdg" name="maxSpeed">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
