@@ -22,11 +22,15 @@ point is not locked</body>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_xfeQAIbTEeylxdnZ9sgn6A" name="">
           <type xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
         </ownedAttribute>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_fWXVkIbTEeylxdnZ9sgn6A" name="" represents="_fW79UIbTEeylxdnZ9sgn6A" coveredBy="_ZcfGMIbVEeylxdnZ9sgn6A _ZvIVYobVEeylxdnZ9sgn6A"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_CjQYcLQ3Eeyo1MMkfhvCbw" name="">
+          <type xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
+        </ownedAttribute>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_fWXVkIbTEeylxdnZ9sgn6A" name="" represents="_fW79UIbTEeylxdnZ9sgn6A"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_j5Zb4IbTEeylxdnZ9sgn6A" name="" represents="_j5aC8IbTEeylxdnZ9sgn6A" coveredBy="_ZcftQIbVEeylxdnZ9sgn6A _fjjAgIbUEeylxdnZ9sgn6A _fjmD0IbUEeylxdnZ9sgn6A _HEh3cIbVEeylxdnZ9sgn6A _HZXfAIbVEeylxdnZ9sgn6A _Qa0xEIbYEeylxdnZ9sgn6A _Qv-hsIbYEeylxdnZ9sgn6A _0tob0IbYEeylxdnZ9sgn6A _0tq4EIbYEeylxdnZ9sgn6A _BZ_ZsIbZEeylxdnZ9sgn6A _BaAAwIbZEeylxdnZ9sgn6A _ZvIVYYbVEeylxdnZ9sgn6A _ZvErAIbVEeylxdnZ9sgn6A"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_w5cx0IbTEeylxdnZ9sgn6A" name="" represents="_w5enAIbTEeylxdnZ9sgn6A" coveredBy="_Qa1YIIbYEeylxdnZ9sgn6A _Qv96oYbYEeylxdnZ9sgn6A _SGH8oYbVEeylxdnZ9sgn6A _Rwx-wIbVEeylxdnZ9sgn6A _Qv7eYIbYEeylxdnZ9sgn6A"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_xfdB4IbTEeylxdnZ9sgn6A" name="" represents="_xfeQAIbTEeylxdnZ9sgn6A" coveredBy="_HEjFkIbVEeylxdnZ9sgn6A _HZW38IbVEeylxdnZ9sgn6A _HZQKQIbVEeylxdnZ9sgn6A"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZcfGMIbVEeylxdnZ9sgn6A" name="Message24SendEvent" covered="_fWXVkIbTEeylxdnZ9sgn6A" message="_Zcd4EIbVEeylxdnZ9sgn6A"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_CjOjQLQ3Eeyo1MMkfhvCbw" name="" represents="_CjQYcLQ3Eeyo1MMkfhvCbw" coveredBy="_ZcfGMIbVEeylxdnZ9sgn6A _ZvIVYobVEeylxdnZ9sgn6A"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZcfGMIbVEeylxdnZ9sgn6A" name="Message24SendEvent" covered="_CjOjQLQ3Eeyo1MMkfhvCbw" message="_Zcd4EIbVEeylxdnZ9sgn6A"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZcftQIbVEeylxdnZ9sgn6A" name="Message24ReceiveEvent" covered="_j5Zb4IbTEeylxdnZ9sgn6A" message="_Zcd4EIbVEeylxdnZ9sgn6A"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ZvErAIbVEeylxdnZ9sgn6A" name="BehaviorExecutionSpecification27" covered="_j5Zb4IbTEeylxdnZ9sgn6A" finish="_ZvIVYYbVEeylxdnZ9sgn6A" start="_ZcftQIbVEeylxdnZ9sgn6A"/>
         <fragment xmi:type="uml:CombinedFragment" xmi:id="_fjjAgIbUEeylxdnZ9sgn6A" name="LoopOnPoints" covered="_j5Zb4IbTEeylxdnZ9sgn6A" interactionOperator="loop">
@@ -34,21 +38,26 @@ point is not locked</body>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HEh3cIbVEeylxdnZ9sgn6A" name="Message14SendEvent" covered="_j5Zb4IbTEeylxdnZ9sgn6A" message="_HEhQYIbVEeylxdnZ9sgn6A"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HZXfAIbVEeylxdnZ9sgn6A" name="Message19ReceiveEvent" covered="_j5Zb4IbTEeylxdnZ9sgn6A" message="_HZWQ4IbVEeylxdnZ9sgn6A"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Qa0xEIbYEeylxdnZ9sgn6A" name="Message21SendEvent" covered="_j5Zb4IbTEeylxdnZ9sgn6A" message="_Qa0KAIbYEeylxdnZ9sgn6A"/>
-            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Qa1YIIbYEeylxdnZ9sgn6A" name="Message21ReceiveEvent" covered="_w5cx0IbTEeylxdnZ9sgn6A" message="_Qa0KAIbYEeylxdnZ9sgn6A"/>
-            <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Qv7eYIbYEeylxdnZ9sgn6A" name="BehaviorExecutionSpecification24" covered="_w5cx0IbTEeylxdnZ9sgn6A" finish="_Qv96oYbYEeylxdnZ9sgn6A" start="_Qa1YIIbYEeylxdnZ9sgn6A"/>
-            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Qv96oYbYEeylxdnZ9sgn6A" name="Message26SendEvent" covered="_w5cx0IbTEeylxdnZ9sgn6A" message="_Qv96oIbYEeylxdnZ9sgn6A"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Qv-hsIbYEeylxdnZ9sgn6A" name="Message26ReceiveEvent" covered="_j5Zb4IbTEeylxdnZ9sgn6A" message="_Qv96oIbYEeylxdnZ9sgn6A"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SGH8oYbVEeylxdnZ9sgn6A" name="Message26SendEvent" covered="_w5cx0IbTEeylxdnZ9sgn6A"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Rwx-wIbVEeylxdnZ9sgn6A" name="Message21ReceiveEvent" covered="_w5cx0IbTEeylxdnZ9sgn6A"/>
             <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_9ZPzAIbWEeylxdnZ9sgn6A" name="BehaviorExecutionSpecification24" finish="_SGH8oYbVEeylxdnZ9sgn6A" start="_Rwx-wIbVEeylxdnZ9sgn6A"/>
-            <guard xmi:type="uml:InteractionConstraint" xmi:id="_fjmD0YbUEeylxdnZ9sgn6A" name="guard"/>
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_fjmD0YbUEeylxdnZ9sgn6A" name="guard">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_bFsMcLQ3Eeyo1MMkfhvCbw">
+                <language>Natural language</language>
+                <body>for each points conveyed by setPoints() message</body>
+              </specification>
+            </guard>
           </operand>
         </fragment>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HEjFkIbVEeylxdnZ9sgn6A" name="Message14ReceiveEvent" covered="_xfdB4IbTEeylxdnZ9sgn6A" message="_HEhQYIbVEeylxdnZ9sgn6A"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_HZQKQIbVEeylxdnZ9sgn6A" name="BehaviorExecutionSpecification17" covered="_xfdB4IbTEeylxdnZ9sgn6A" finish="_HZW38IbVEeylxdnZ9sgn6A" start="_HEjFkIbVEeylxdnZ9sgn6A"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HZW38IbVEeylxdnZ9sgn6A" name="Message19SendEvent" covered="_xfdB4IbTEeylxdnZ9sgn6A" message="_HZWQ4IbVEeylxdnZ9sgn6A"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Qa1YIIbYEeylxdnZ9sgn6A" name="Message21ReceiveEvent" covered="_w5cx0IbTEeylxdnZ9sgn6A" message="_Qa0KAIbYEeylxdnZ9sgn6A"/>
+        <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_Qv7eYIbYEeylxdnZ9sgn6A" name="BehaviorExecutionSpecification24" covered="_w5cx0IbTEeylxdnZ9sgn6A" finish="_Qv96oYbYEeylxdnZ9sgn6A" start="_Qa1YIIbYEeylxdnZ9sgn6A"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Qv96oYbYEeylxdnZ9sgn6A" name="Message26SendEvent" covered="_w5cx0IbTEeylxdnZ9sgn6A" message="_Qv96oIbYEeylxdnZ9sgn6A"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZvIVYYbVEeylxdnZ9sgn6A" name="Message29SendEvent" covered="_j5Zb4IbTEeylxdnZ9sgn6A" message="_ZvIVYIbVEeylxdnZ9sgn6A"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZvIVYobVEeylxdnZ9sgn6A" name="Message29ReceiveEvent" covered="_fWXVkIbTEeylxdnZ9sgn6A" message="_ZvIVYIbVEeylxdnZ9sgn6A"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZvIVYobVEeylxdnZ9sgn6A" name="Message29ReceiveEvent" covered="_CjOjQLQ3Eeyo1MMkfhvCbw" message="_ZvIVYIbVEeylxdnZ9sgn6A"/>
         <fragment xmi:type="uml:CombinedFragment" xmi:id="_rpo9sIbWEeylxdnZ9sgn6A" name="MovePoints" interactionOperator="opt">
           <operand xmi:type="uml:InteractionOperand" xmi:id="_rprZ8IbWEeylxdnZ9sgn6A" name="InteractionOperand0">
             <fragment xmi:type="uml:CombinedFragment" xmi:id="_0tob0IbYEeylxdnZ9sgn6A" name="CombinedFragment24" covered="_j5Zb4IbTEeylxdnZ9sgn6A">
