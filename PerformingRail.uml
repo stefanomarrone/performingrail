@@ -53,6 +53,7 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA6/EA954.htm</body>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_L43G0LHPEeyN2dZwXfzAUA" name="emergencyPoints" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_aPgcQLHPEeyN2dZwXfzAUA" name="recvRSA" type="_PNOhALOEEeyq06BeRRk88A" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_TnnFwLHQEeyN2dZwXfzAUA" name="recvMAs" type="_uq-90LODEeyq06BeRRk88A" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_jkY0sLQDEeye7ZKlraEFyg" name="TSRcommand" aggregation="composite"/>
           <nestedClassifier xmi:type="uml:Signal" xmi:id="_u7IwcKrBEey95JqQZoaUKg" name="TSAreport"/>
           <nestedClassifier xmi:type="uml:Signal" xmi:id="_av-cMK6GEeyNmoFpmwcymA" name="recvTrainLocation"/>
           <nestedClassifier xmi:type="uml:Signal" xmi:id="_uq-90LODEeyq06BeRRk88A" name="receivingMAs"/>
@@ -103,8 +104,10 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_sv06AKrCEey95JqQZoaUKg" name="extension" type="_bYtAsKrDEey95JqQZoaUKg" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_typo8KrCEey95JqQZoaUKg" name="sendMA" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_39__kK4YEeym_qxcLUg2jw" name="restriction" type="_g9s3QK4ZEeym_qxcLUg2jw" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_fm9V0LQDEeye7ZKlraEFyg" name="TSRinfo" type="_ENiRILQEEeye7ZKlraEFyg" aggregation="composite"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_bYtAsKrDEey95JqQZoaUKg" name="routeExtension"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_g9s3QK4ZEeym_qxcLUg2jw" name="routeRestriction"/>
+              <nestedClassifier xmi:type="uml:Signal" xmi:id="_ENiRILQEEeye7ZKlraEFyg" name="recvTSR"/>
             </nestedClassifier>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_qE9M0KqOEeyJ1d4TAHIvQg" name="Route manager">
               <ownedUseCase xmi:type="uml:UseCase" xmi:id="_qE9M0aqOEeyJ1d4TAHIvQg" name="MA Management" classifierBehavior="_qE9M06qOEeyJ1d4TAHIvQg">
@@ -170,7 +173,10 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_TzmEcK58EeyNmoFpmwcymA" name="setLocation"/>
             </nestedClassifier>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_Lne9wKqOEeyJ1d4TAHIvQg" name="TSR manager">
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_dE8FALQDEeye7ZKlraEFyg" name="TSRinfo" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_d1Sj4LQDEeye7ZKlraEFyg" name="TSRcommand" type="_HhRSwLQEEeye7ZKlraEFyg" aggregation="composite"/>
               <nestedClassifier xmi:type="uml:UseCase" href="Manage_Temporary_Speed_Restrictions.uml#_DwLp0BRuEeyQN9odROAPWw"/>
+              <nestedClassifier xmi:type="uml:Signal" xmi:id="_HhRSwLQEEeye7ZKlraEFyg" name="recvTSRCommand"/>
             </nestedClassifier>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_MbMSoKqOEeyJ1d4TAHIvQg" name="Reserved Status manager">
               <ownedAttribute xmi:type="uml:Port" xmi:id="_wGZt4Kq6Eey95JqQZoaUKg" name="requestFromRoute" visibility="public" type="_aOa4gKq7Eey95JqQZoaUKg" aggregation="composite"/>
@@ -540,6 +546,8 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_QV-40LOEEeyq06BeRRk88A" name="ItemFlow57" informationSource="_0EoMEKq8Eey95JqQZoaUKg" informationTarget="_aPgcQLHPEeyN2dZwXfzAUA">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_KSN1wIqWEeyM8dFJdTQLEQ"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_ovzJoLQDEeye7ZKlraEFyg" name="ItemFlow58" informationSource="_jkY0sLQDEeye7ZKlraEFyg" informationTarget="_d1Sj4LQDEeye7ZKlraEFyg"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_pvqEILQDEeye7ZKlraEFyg" name="ItemFlow59" informationSource="_dE8FALQDEeye7ZKlraEFyg" informationTarget="_fm9V0LQDEeye7ZKlraEFyg"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_nsyrMBI2EeyVOZB09kZL2w" name="References">
       <ownedComment xmi:type="uml:Comment" xmi:id="_R8JCUBI2EeyVOZB09kZL2w">
@@ -830,4 +838,10 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
   <PortsAndFlows:FullPort xmi:id="_TnqwILHQEeyN2dZwXfzAUA" base_Port="_TnnFwLHQEeyN2dZwXfzAUA"/>
   <PortsAndFlows:ItemFlow xmi:id="_wsZb8LODEeyq06BeRRk88A" base_InformationFlow="_wsCPkLODEeyq06BeRRk88A"/>
   <PortsAndFlows:ItemFlow xmi:id="_QWLtILOEEeyq06BeRRk88A" base_InformationFlow="_QV-40LOEEeyq06BeRRk88A"/>
+  <PortsAndFlows:FullPort xmi:id="_dFO_8LQDEeye7ZKlraEFyg" base_Port="_dE8FALQDEeye7ZKlraEFyg"/>
+  <PortsAndFlows:FullPort xmi:id="_d1YqgLQDEeye7ZKlraEFyg" base_Port="_d1Sj4LQDEeye7ZKlraEFyg"/>
+  <PortsAndFlows:FullPort xmi:id="_fm_yELQDEeye7ZKlraEFyg" base_Port="_fm9V0LQDEeye7ZKlraEFyg"/>
+  <PortsAndFlows:FullPort xmi:id="_jkbQ8LQDEeye7ZKlraEFyg" base_Port="_jkY0sLQDEeye7ZKlraEFyg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_ov1l4LQDEeye7ZKlraEFyg" base_InformationFlow="_ovzJoLQDEeye7ZKlraEFyg"/>
+  <PortsAndFlows:ItemFlow xmi:id="_pvtHcLQDEeye7ZKlraEFyg" base_InformationFlow="_pvqEILQDEeye7ZKlraEFyg"/>
 </xmi:XMI>
