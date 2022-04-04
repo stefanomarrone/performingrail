@@ -131,8 +131,8 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_E3aaIFd2Eeywoqg6iQBZCQ" name="Message7SendEvent" covered="_1FdhIFdxEeywoqg6iQBZCQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_E3bBMFd2Eeywoqg6iQBZCQ" name="Message7ReceiveEvent" covered="_8BZYgFdxEeywoqg6iQBZCQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_sLREUI2KEeyjcr1spVXNhw" name="Message27ReceiveEvent" covered="_8BZYgFdxEeywoqg6iQBZCQ"/>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_LRY-gFd3Eeywoqg6iQBZCQ" name="CombinedFragment12" covered="_lrLLIFd2Eeywoqg6iQBZCQ _8BZYgFdxEeywoqg6iQBZCQ">
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_LRaMoFd3Eeywoqg6iQBZCQ" name="InteractionOperand0" covered="_lrLLIFd2Eeywoqg6iQBZCQ _8BZYgFdxEeywoqg6iQBZCQ">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_LRY-gFd3Eeywoqg6iQBZCQ" name="CombinedFragment12" covered="_8BZYgFdxEeywoqg6iQBZCQ _lrLLIFd2Eeywoqg6iQBZCQ">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_LRaMoFd3Eeywoqg6iQBZCQ" name="InteractionOperand0" covered="_8BZYgFdxEeywoqg6iQBZCQ _lrLLIFd2Eeywoqg6iQBZCQ">
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_LRaMoVd3Eeywoqg6iQBZCQ" name="guard">
               <specification xmi:type="uml:LiteralString" xmi:id="_MnQlQFd3Eeywoqg6iQBZCQ" value="Reversing Area Information not received &amp;&amp; Radio Hole not announced"/>
             </guard>
@@ -163,10 +163,10 @@
         <lifeline xmi:type="uml:Lifeline" xmi:id="_fo4HkI9HEeyPEJUYFyz_cA" name="Communication Management" coveredBy="_1vD7kI9HEeyPEJUYFyz_cA _1vEioI9HEeyPEJUYFyz_cA _4eFGkI9HEeyPEJUYFyz_cA _4eFtoI9HEeyPEJUYFyz_cA _9f1JMY9HEeyPEJUYFyz_cA __4qo0I9HEeyPEJUYFyz_cA __4qo0Y9HEeyPEJUYFyz_cA _6jWxAI9HEeyPEJUYFyz_cA _PnTE4I9IEeyPEJUYFyz_cA _PnTr8I9IEeyPEJUYFyz_cA _SB4Q8I9IEeyPEJUYFyz_cA _WF8jUI9IEeyPEJUYFyz_cA _DLpcgY9IEeyPEJUYFyz_cA"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_o6ZWQI9HEeyPEJUYFyz_cA" name="Track Status Management" coveredBy="_1vD7kI9HEeyPEJUYFyz_cA _1vEioI9HEeyPEJUYFyz_cA _4eFGkI9HEeyPEJUYFyz_cA _4eFtoI9HEeyPEJUYFyz_cA _6jWxAI9HEeyPEJUYFyz_cA _PnTE4I9IEeyPEJUYFyz_cA _PnTr8I9IEeyPEJUYFyz_cA _SB4Q8Y9IEeyPEJUYFyz_cA _WF8jUY9IEeyPEJUYFyz_cA _DLqDkI9IEeyPEJUYFyz_cA"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_Hjk-MJfcEey7HpH6u0AluA" name="" represents="_HjllQJfcEey7HpH6u0AluA" coveredBy="_9f1JMI9HEeyPEJUYFyz_cA"/>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_1vD7kI9HEeyPEJUYFyz_cA" name="CombinedFragment4" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA" interactionOperator="loop">
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_1vEioI9HEeyPEJUYFyz_cA" name="InteractionOperand0" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA">
-            <fragment xmi:type="uml:CombinedFragment" xmi:id="_4eFGkI9HEeyPEJUYFyz_cA" name="CombinedFragment5" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA" interactionOperator="alt">
-              <operand xmi:type="uml:InteractionOperand" xmi:id="_4eFtoI9HEeyPEJUYFyz_cA" name="InteractionOperand0" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_1vD7kI9HEeyPEJUYFyz_cA" name="CombinedFragment4" covered="_aaxrAI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA" interactionOperator="loop">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_1vEioI9HEeyPEJUYFyz_cA" name="InteractionOperand0" covered="_aaxrAI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA">
+            <fragment xmi:type="uml:CombinedFragment" xmi:id="_4eFGkI9HEeyPEJUYFyz_cA" name="CombinedFragment5" covered="_aaxrAI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA" interactionOperator="alt">
+              <operand xmi:type="uml:InteractionOperand" xmi:id="_4eFtoI9HEeyPEJUYFyz_cA" name="InteractionOperand0" covered="_aaxrAI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA">
                 <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9f1JMI9HEeyPEJUYFyz_cA" name="Message6SendEvent" covered="_Hjk-MJfcEey7HpH6u0AluA" message="_9fubgI9HEeyPEJUYFyz_cA"/>
                 <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9f1JMY9HEeyPEJUYFyz_cA" name="Message6ReceiveEvent" covered="_fo4HkI9HEeyPEJUYFyz_cA" message="_9fubgI9HEeyPEJUYFyz_cA"/>
                 <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="__4qo0I9HEeyPEJUYFyz_cA" name="Message7SendEvent" covered="_fo4HkI9HEeyPEJUYFyz_cA" message="__4qBwI9HEeyPEJUYFyz_cA"/>
@@ -175,15 +175,15 @@
                   <specification xmi:type="uml:LiteralString" xmi:id="_8HF0oI9HEeyPEJUYFyz_cA" value="SessionTimer not expired"/>
                 </guard>
               </operand>
-              <operand xmi:type="uml:InteractionOperand" xmi:id="_6jWxAI9HEeyPEJUYFyz_cA" name="InteractionOperand2" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA">
+              <operand xmi:type="uml:InteractionOperand" xmi:id="_6jWxAI9HEeyPEJUYFyz_cA" name="InteractionOperand2" covered="_aaxrAI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA">
+                <fragment xmi:type="uml:CombinedFragment" xmi:id="_PnTE4I9IEeyPEJUYFyz_cA" name="CombinedFragment8" covered="_aaxrAI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA" interactionOperator="break">
+                  <operand xmi:type="uml:InteractionOperand" xmi:id="_PnTr8I9IEeyPEJUYFyz_cA" name="InteractionOperand0" covered="_aaxrAI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA">
+                    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SB4Q8I9IEeyPEJUYFyz_cA" name="Message8SendEvent" covered="_fo4HkI9HEeyPEJUYFyz_cA" message="_SB3p4I9IEeyPEJUYFyz_cA"/>
+                    <guard xmi:type="uml:InteractionConstraint" xmi:id="_PnTr8Y9IEeyPEJUYFyz_cA" name="guard"/>
+                  </operand>
+                </fragment>
                 <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DLpcgY9IEeyPEJUYFyz_cA" name="Message8SendEvent" covered="_fo4HkI9HEeyPEJUYFyz_cA"/>
                 <guard xmi:type="uml:InteractionConstraint" xmi:id="_6jXYEI9HEeyPEJUYFyz_cA" name="guard"/>
-              </operand>
-            </fragment>
-            <fragment xmi:type="uml:CombinedFragment" xmi:id="_PnTE4I9IEeyPEJUYFyz_cA" name="CombinedFragment8" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA" interactionOperator="break">
-              <operand xmi:type="uml:InteractionOperand" xmi:id="_PnTr8I9IEeyPEJUYFyz_cA" name="InteractionOperand0" covered="_aaxrAI9HEeyPEJUYFyz_cA _fo4HkI9HEeyPEJUYFyz_cA _o6ZWQI9HEeyPEJUYFyz_cA">
-                <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SB4Q8I9IEeyPEJUYFyz_cA" name="Message8SendEvent" covered="_fo4HkI9HEeyPEJUYFyz_cA" message="_SB3p4I9IEeyPEJUYFyz_cA"/>
-                <guard xmi:type="uml:InteractionConstraint" xmi:id="_PnTr8Y9IEeyPEJUYFyz_cA" name="guard"/>
               </operand>
             </fragment>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_SB4Q8Y9IEeyPEJUYFyz_cA" name="Message8ReceiveEvent" covered="_o6ZWQI9HEeyPEJUYFyz_cA" message="_SB3p4I9IEeyPEJUYFyz_cA"/>
