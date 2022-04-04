@@ -177,6 +177,19 @@
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_p8C0YK6fEeysMsIa0aUTrQ" name="Train integrity confirmation"/>
         </packagedElement>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_v1yKULQCEeye7ZKlraEFyg" name="TSR_Status">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_75KcoLQCEeye7ZKlraEFyg" name="Activated"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_93PS4LQCEeye7ZKlraEFyg" name="Established"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="__6N3QLQCEeye7ZKlraEFyg" name="Deactivated"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Bk86wLQDEeye7ZKlraEFyg" name="Removed"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_wRBU0LQCEeye7ZKlraEFyg" name="TSR_Command">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_D6_lELQDEeye7ZKlraEFyg" name="Activate"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_E0TLoLQDEeye7ZKlraEFyg" name="Deactivate"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_FnqiQLQDEeye7ZKlraEFyg" name="Remove"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Gfb3wLQDEeye7ZKlraEFyg" name="Purge"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_He2tYLQDEeye7ZKlraEFyg" name="Cancel"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="Trackside">
       <ownedComment xmi:type="uml:Comment" xmi:id="_R4dDYIsPEeyti_Bx9Y2PIg" annotatedElement="_R4aY4InXEeywtu03ZyCfsg">
@@ -513,6 +526,10 @@ Assumption:&#xD;
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_jMvAILGGEey0QOTMOj7Mdg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_jMvAIbGGEey0QOTMOj7Mdg" value="*"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_WZ9NALP-Eeye7ZKlraEFyg" name="tsrarea" type="_QRwfsLP-Eeye7ZKlraEFyg" aggregation="shared" association="_WZ7X0LP-Eeye7ZKlraEFyg">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WZ90ELP-Eeye7ZKlraEFyg"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_WZ90EbP-Eeye7ZKlraEFyg" value="*"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_b2jF0IqvEey_E5TpwM1pKA" name="ShuntingArea">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_kAnkQIqvEey_E5TpwM1pKA" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA"/>
@@ -636,6 +653,16 @@ Assumption:&#xD;
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jMuZEbGGEey0QOTMOj7Mdg" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_jMvAIrGGEey0QOTMOj7Mdg" name="infrastructure" type="_j51sEInZEeywtu03ZyCfsg" association="_jMtyALGGEey0QOTMOj7Mdg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_QRwfsLP-Eeye7ZKlraEFyg" name="TSRArea">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_TXCZILP_Eeye7ZKlraEFyg" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_OtAWILQDEeye7ZKlraEFyg" name="status" type="_v1yKULQCEeye7ZKlraEFyg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_WZ7X0LP-Eeye7ZKlraEFyg" memberEnd="_WZ9NALP-Eeye7ZKlraEFyg _WZ-bILP-Eeye7ZKlraEFyg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_WZ8l8LP-Eeye7ZKlraEFyg" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_WZ8l8bP-Eeye7ZKlraEFyg" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_WZ-bILP-Eeye7ZKlraEFyg" name="infrastructure" type="_j51sEInZEeywtu03ZyCfsg" association="_WZ7X0LP-Eeye7ZKlraEFyg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_aLg1kJLtEeymw95ncJwi5w" name="Onboard">
@@ -934,4 +961,5 @@ Assumption:&#xD;
   <Blocks:Block xmi:id="_vt_MILGEEey0QOTMOj7Mdg" base_Class="_vt5skLGEEey0QOTMOj7Mdg"/>
   <Blocks:Block xmi:id="_Re8IsLGGEey0QOTMOj7Mdg" base_Class="_Re5FYLGGEey0QOTMOj7Mdg"/>
   <Blocks:Block xmi:id="_SeINcLGJEey0QOTMOj7Mdg" base_Class="_SeFxMLGJEey0QOTMOj7Mdg"/>
+  <Blocks:Block xmi:id="_QR8s8LP-Eeye7ZKlraEFyg" base_Class="_QRwfsLP-Eeye7ZKlraEFyg"/>
 </xmi:XMI>
