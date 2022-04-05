@@ -73,12 +73,24 @@
             </guard>
           </operand>
         </fragment>
-        <message xmi:type="uml:Message" xmi:id="_HEhQYIbVEeylxdnZ9sgn6A" name="getPointStatus()" messageSort="asynchCall" receiveEvent="_HEjFkIbVEeylxdnZ9sgn6A" sendEvent="_HEh3cIbVEeylxdnZ9sgn6A"/>
-        <message xmi:type="uml:Message" xmi:id="_HZWQ4IbVEeylxdnZ9sgn6A" name="Point_Occupancy" messageSort="reply" receiveEvent="_HZXfAIbVEeylxdnZ9sgn6A" sendEvent="_HZW38IbVEeylxdnZ9sgn6A"/>
-        <message xmi:type="uml:Message" xmi:id="_Zcd4EIbVEeylxdnZ9sgn6A" name="setRoute()" messageSort="asynchCall" receiveEvent="_ZcftQIbVEeylxdnZ9sgn6A" sendEvent="_ZcfGMIbVEeylxdnZ9sgn6A"/>
-        <message xmi:type="uml:Message" xmi:id="_ZvIVYIbVEeylxdnZ9sgn6A" name="routeResponse" messageSort="reply" receiveEvent="_ZvIVYobVEeylxdnZ9sgn6A" sendEvent="_ZvIVYYbVEeylxdnZ9sgn6A"/>
-        <message xmi:type="uml:Message" xmi:id="_Qa0KAIbYEeylxdnZ9sgn6A" name="getPointReservation()" messageSort="asynchCall" receiveEvent="_Qa1YIIbYEeylxdnZ9sgn6A" sendEvent="_Qa0xEIbYEeylxdnZ9sgn6A"/>
-        <message xmi:type="uml:Message" xmi:id="_Qv96oIbYEeylxdnZ9sgn6A" name="Point_Reservation" messageSort="reply" receiveEvent="_Qv-hsIbYEeylxdnZ9sgn6A" sendEvent="_Qv96oYbYEeylxdnZ9sgn6A"/>
+        <message xmi:type="uml:Message" xmi:id="_HEhQYIbVEeylxdnZ9sgn6A" name="getPointStatus()" messageSort="asynchCall" receiveEvent="_HEjFkIbVEeylxdnZ9sgn6A" sendEvent="_HEh3cIbVEeylxdnZ9sgn6A">
+          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_elJ60K6CEeyNmoFpmwcymA"/>
+        </message>
+        <message xmi:type="uml:Message" xmi:id="_HZWQ4IbVEeylxdnZ9sgn6A" name="Point_Occupancy" messageSort="reply" receiveEvent="_HZXfAIbVEeylxdnZ9sgn6A" sendEvent="_HZW38IbVEeylxdnZ9sgn6A">
+          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_jiBdcK6CEeyNmoFpmwcymA"/>
+        </message>
+        <message xmi:type="uml:Message" xmi:id="_Zcd4EIbVEeylxdnZ9sgn6A" name="setRoute()" messageSort="asynchCall" receiveEvent="_ZcftQIbVEeylxdnZ9sgn6A" sendEvent="_ZcfGMIbVEeylxdnZ9sgn6A">
+          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_UyhDcK5_EeyNmoFpmwcymA"/>
+        </message>
+        <message xmi:type="uml:Message" xmi:id="_ZvIVYIbVEeylxdnZ9sgn6A" name="routeResponse" messageSort="reply" receiveEvent="_ZvIVYobVEeylxdnZ9sgn6A" sendEvent="_ZvIVYYbVEeylxdnZ9sgn6A">
+          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_qzUTEK59EeyNmoFpmwcymA"/>
+        </message>
+        <message xmi:type="uml:Message" xmi:id="_Qa0KAIbYEeylxdnZ9sgn6A" name="getPointReservation()" messageSort="asynchCall" receiveEvent="_Qa1YIIbYEeylxdnZ9sgn6A" sendEvent="_Qa0xEIbYEeylxdnZ9sgn6A">
+          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_e6S_IK9YEeykxuC-paboug"/>
+        </message>
+        <message xmi:type="uml:Message" xmi:id="_Qv96oIbYEeylxdnZ9sgn6A" name="Point_Reservation" messageSort="reply" receiveEvent="_Qv-hsIbYEeylxdnZ9sgn6A" sendEvent="_Qv96oYbYEeylxdnZ9sgn6A">
+          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_VMHpoK9YEeykxuC-paboug"/>
+        </message>
         <message xmi:type="uml:Message" xmi:id="_BZ-LkIbZEeylxdnZ9sgn6A" name="setPoint()" receiveEvent="_BaAAwIbZEeylxdnZ9sgn6A" sendEvent="_BZ_ZsIbZEeylxdnZ9sgn6A"/>
       </ownedBehavior>
       <ownedBehavior xmi:type="uml:Interaction" xmi:id="_AUNn8IbaEeylxdnZ9sgn6A" name="Degraded_SD">
