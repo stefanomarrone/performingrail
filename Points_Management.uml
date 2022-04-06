@@ -6,7 +6,7 @@
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_xPvAEIdxEey4_osI_wqoMQ" name="PointManagement">
     <region xmi:type="uml:Region" xmi:id="_zRxwUIdxEey4_osI_wqoMQ" name="main">
       <transition xmi:type="uml:Transition" xmi:id="_3REPYId8Eey27pNP-5yExQ" source="_hBdZoId8Eey27pNP-5yExQ" target="_jDC24Id8Eey27pNP-5yExQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_f8zCMId9Eey27pNP-5yExQ" name="Nominal" source="_jDC24Id8Eey27pNP-5yExQ" target="_RCqPEIeGEey27pNP-5yExQ">
+      <transition xmi:type="uml:Transition" xmi:id="_f8zCMId9Eey27pNP-5yExQ" name="setPoints()" source="_jDC24Id8Eey27pNP-5yExQ" target="_RCqPEIeGEey27pNP-5yExQ">
         <trigger xmi:type="uml:Trigger" xmi:id="_8tww8LWEEey3stEDm9u2bQ" name="setPoints()">
           <port xmi:type="uml:Port" href="PerformingRail.uml#_GztYgK56EeyNmoFpmwcymA"/>
         </trigger>
