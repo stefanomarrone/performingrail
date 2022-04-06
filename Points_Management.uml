@@ -5,26 +5,42 @@
   </eAnnotations>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_xPvAEIdxEey4_osI_wqoMQ" name="PointManagement">
     <region xmi:type="uml:Region" xmi:id="_zRxwUIdxEey4_osI_wqoMQ" name="main">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_9P6-AId9Eey27pNP-5yExQ" annotatedElement="_f8zCMId9Eey27pNP-5yExQ">
-        <body>triggered by setRoute()</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_CuXNkIeHEey27pNP-5yExQ" annotatedElement="_aaResIeGEey27pNP-5yExQ">
-        <body>triggered by forceMovement()</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_DXOkYIeHEey27pNP-5yExQ" annotatedElement="_5cvRMIeGEey27pNP-5yExQ">
-        <body>triggered by sweepPoints()</body>
-      </ownedComment>
       <transition xmi:type="uml:Transition" xmi:id="_3REPYId8Eey27pNP-5yExQ" source="_hBdZoId8Eey27pNP-5yExQ" target="_jDC24Id8Eey27pNP-5yExQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_f8zCMId9Eey27pNP-5yExQ" name="Nominal" source="_jDC24Id8Eey27pNP-5yExQ" target="_RCqPEIeGEey27pNP-5yExQ">
-        <trigger xmi:type="uml:Trigger" xmi:id="_ow0ckId9Eey27pNP-5yExQ" name="setRoute()"/>
+        <trigger xmi:type="uml:Trigger" xmi:id="_8tww8LWEEey3stEDm9u2bQ" name="setPoints()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_GztYgK56EeyNmoFpmwcymA"/>
+        </trigger>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_aaResIeGEey27pNP-5yExQ" name="degraded" source="_jDC24Id8Eey27pNP-5yExQ" target="_dUfNEIeGEey27pNP-5yExQ">
-        <trigger xmi:type="uml:Trigger" xmi:id="_kSjV8IeHEey27pNP-5yExQ" name="forceMovement()"/>
+      <transition xmi:type="uml:Transition" xmi:id="_aaResIeGEey27pNP-5yExQ" name="emergencyMovmement()" source="_jDC24Id8Eey27pNP-5yExQ" target="_dUfNEIeGEey27pNP-5yExQ">
+        <trigger xmi:type="uml:Trigger" xmi:id="_j3YbULWGEey3stEDm9u2bQ" name="emergencyMovement()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_tZSmALHOEeyN2dZwXfzAUA"/>
+        </trigger>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_5cvRMIeGEey27pNP-5yExQ" name="sweepable" source="_jDC24Id8Eey27pNP-5yExQ" target="_xK_dcIeGEey27pNP-5yExQ">
-        <trigger xmi:type="uml:Trigger" xmi:id="_KU_nwIeHEey27pNP-5yExQ" name="sweepPoints()"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5cvRMIeGEey27pNP-5yExQ" name="sweepPoint() / snd: reportPointClear() to Track Status Management" source="_jDC24Id8Eey27pNP-5yExQ" target="_xK_dcIeGEey27pNP-5yExQ">
+        <effect xmi:type="uml:Activity" xmi:id="_oJwIELWJEey3stEDm9u2bQ" name="sendSignal" node="_rXB8YLWJEey3stEDm9u2bQ _5XcjILWJEey3stEDm9u2bQ _6SAt8LWJEey3stEDm9u2bQ">
+          <edge xmi:type="uml:ControlFlow" xmi:id="_8AgQELWJEey3stEDm9u2bQ" target="_rXB8YLWJEey3stEDm9u2bQ" source="_5XcjILWJEey3stEDm9u2bQ"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_82cZkLWJEey3stEDm9u2bQ" target="_6SAt8LWJEey3stEDm9u2bQ" source="_rXB8YLWJEey3stEDm9u2bQ"/>
+          <node xmi:type="uml:SendSignalAction" xmi:id="_rXB8YLWJEey3stEDm9u2bQ" name="reportPointClear" incoming="_8AgQELWJEey3stEDm9u2bQ" outgoing="_82cZkLWJEey3stEDm9u2bQ">
+            <onPort xmi:type="uml:Port" href="PerformingRail.uml#_C3jhELWCEey3stEDm9u2bQ"/>
+            <signal xmi:type="uml:Signal" href="PerformingRail.uml#_4iFiELWBEey3stEDm9u2bQ"/>
+            <target xmi:type="uml:InputPin" xmi:id="_0PLBwLWJEey3stEDm9u2bQ" name="target">
+              <type xmi:type="uml:Signal" href="PerformingRail.uml#_4iFiELWBEey3stEDm9u2bQ"/>
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0PLBwbWJEey3stEDm9u2bQ" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0PLBwrWJEey3stEDm9u2bQ" value="1"/>
+            </target>
+          </node>
+          <node xmi:type="uml:InitialNode" xmi:id="_5XcjILWJEey3stEDm9u2bQ" name="init" outgoing="_8AgQELWJEey3stEDm9u2bQ"/>
+          <node xmi:type="uml:FlowFinalNode" xmi:id="_6SAt8LWJEey3stEDm9u2bQ" name="close" incoming="_82cZkLWJEey3stEDm9u2bQ"/>
+        </effect>
+        <trigger xmi:type="uml:Trigger" xmi:id="_qBZtkLWGEey3stEDm9u2bQ" name="sweepPoint()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_XpZbgLWGEey3stEDm9u2bQ"/>
+        </trigger>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_AFj_UIeHEey27pNP-5yExQ" source="_xK_dcIeGEey27pNP-5yExQ" target="_jDC24Id8Eey27pNP-5yExQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_AFj_UIeHEey27pNP-5yExQ" name="reportPointClear()" source="_xK_dcIeGEey27pNP-5yExQ" target="_jDC24Id8Eey27pNP-5yExQ">
+        <trigger xmi:type="uml:Trigger" xmi:id="_3z2w0LWGEey3stEDm9u2bQ" name="reportPointClear()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_GDutEK56EeyNmoFpmwcymA"/>
+        </trigger>
+      </transition>
       <transition xmi:type="uml:Transition" xmi:id="_qEAXMIeHEey27pNP-5yExQ" source="_pkJn4IeGEey27pNP-5yExQ" target="_jDC24Id8Eey27pNP-5yExQ"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_hBdZoId8Eey27pNP-5yExQ" name="init"/>
       <subvertex xmi:type="uml:State" xmi:id="_jDC24Id8Eey27pNP-5yExQ" name="waiting"/>
@@ -52,15 +68,21 @@
             <ownedComment xmi:type="uml:Comment" xmi:id="_bd7JgIeFEey27pNP-5yExQ" annotatedElement="_JzOJsIeCEey27pNP-5yExQ">
               <body>It sets the point to its now position</body>
             </ownedComment>
-            <transition xmi:type="uml:Transition" xmi:id="_-qbiQId_Eey27pNP-5yExQ" guard="_Hja00IeDEey27pNP-5yExQ" source="_wWN1wId_Eey27pNP-5yExQ" target="_13r6QId_Eey27pNP-5yExQ">
+            <transition xmi:type="uml:Transition" xmi:id="_-qbiQId_Eey27pNP-5yExQ" name="reportPointClear [retval == True]" guard="_Hja00IeDEey27pNP-5yExQ" source="_wWN1wId_Eey27pNP-5yExQ" target="_13r6QId_Eey27pNP-5yExQ">
               <ownedRule xmi:type="uml:Constraint" xmi:id="_Hja00IeDEey27pNP-5yExQ">
                 <specification xmi:type="uml:LiteralString" xmi:id="_Hja00YeDEey27pNP-5yExQ" value="retval == true"/>
               </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_-hKHkLWMEey3stEDm9u2bQ" name="reportPointClear()">
+                <port xmi:type="uml:Port" href="PerformingRail.uml#_GDutEK56EeyNmoFpmwcymA"/>
+              </trigger>
             </transition>
-            <transition xmi:type="uml:Transition" xmi:id="_q28UMIeAEey27pNP-5yExQ" guard="_ca6BEIeDEey27pNP-5yExQ" source="_13r6QId_Eey27pNP-5yExQ" target="_DJFe4IeAEey27pNP-5yExQ">
+            <transition xmi:type="uml:Transition" xmi:id="_q28UMIeAEey27pNP-5yExQ" name="reportPointNotReserved [retval == true]" guard="_ca6BEIeDEey27pNP-5yExQ" source="_13r6QId_Eey27pNP-5yExQ" target="_DJFe4IeAEey27pNP-5yExQ">
               <ownedRule xmi:type="uml:Constraint" xmi:id="_ca6BEIeDEey27pNP-5yExQ">
                 <specification xmi:type="uml:LiteralString" xmi:id="_ca6BEYeDEey27pNP-5yExQ" value="retval == true"/>
               </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_llUfoLWNEey3stEDm9u2bQ" name="reportPointNotReserved">
+                <port xmi:type="uml:Port" href="PerformingRail.uml#_RhQBwK9VEeykxuC-paboug"/>
+              </trigger>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_kmMSYIeBEey27pNP-5yExQ" source="_KWD4YId_Eey27pNP-5yExQ" target="_wWN1wId_Eey27pNP-5yExQ">
               <effect xmi:type="uml:OpaqueBehavior" xmi:id="_2fa9wIeBEey27pNP-5yExQ">
@@ -83,15 +105,19 @@ continueFlag = true</body>
                 <body>continueFlag = true</body>
               </effect>
             </transition>
-            <transition xmi:type="uml:Transition" xmi:id="__Ki60IeBEey27pNP-5yExQ" guard="_KzrrsIeDEey27pNP-5yExQ" source="_wWN1wId_Eey27pNP-5yExQ" target="_K_geAId_Eey27pNP-5yExQ">
+            <transition xmi:type="uml:Transition" xmi:id="__Ki60IeBEey27pNP-5yExQ" name="reportPointClear [retval == False" guard="_KzrrsIeDEey27pNP-5yExQ" source="_wWN1wId_Eey27pNP-5yExQ" target="_K_geAId_Eey27pNP-5yExQ">
               <ownedRule xmi:type="uml:Constraint" xmi:id="_KzrrsIeDEey27pNP-5yExQ">
                 <specification xmi:type="uml:LiteralString" xmi:id="_KzrrsYeDEey27pNP-5yExQ" value="retval == false"/>
               </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_I4YaELWNEey3stEDm9u2bQ" name="reportPointClear()"/>
             </transition>
-            <transition xmi:type="uml:Transition" xmi:id="_ATaAUIeCEey27pNP-5yExQ" guard="_jVIBMIeDEey27pNP-5yExQ" source="_13r6QId_Eey27pNP-5yExQ" target="_K_geAId_Eey27pNP-5yExQ">
+            <transition xmi:type="uml:Transition" xmi:id="_ATaAUIeCEey27pNP-5yExQ" name="reportPointNotReserved [retval == false" guard="_jVIBMIeDEey27pNP-5yExQ" source="_13r6QId_Eey27pNP-5yExQ" target="_K_geAId_Eey27pNP-5yExQ">
               <ownedRule xmi:type="uml:Constraint" xmi:id="_jVIBMIeDEey27pNP-5yExQ">
                 <specification xmi:type="uml:LiteralString" xmi:id="_jVIBMYeDEey27pNP-5yExQ" value="retval == false"/>
               </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_sY-kwLWNEey3stEDm9u2bQ" name="reportPointNotReserved">
+                <port xmi:type="uml:Port" href="PerformingRail.uml#_RhQBwK9VEeykxuC-paboug"/>
+              </trigger>
             </transition>
             <transition xmi:type="uml:Transition" xmi:id="_JzOJsIeCEey27pNP-5yExQ" name="/nextPoint();" source="_jBhvQJAUEeyJ-qH-XxM-4g" target="_AX44MJAIEeyJ-qH-XxM-4g">
               <ownedRule xmi:type="uml:Constraint" xmi:id="_E0NxsIeFEey27pNP-5yExQ">
@@ -102,7 +128,7 @@ continueFlag = true</body>
                 <body>nextPoint()</body>
               </effect>
             </transition>
-            <transition xmi:type="uml:Transition" xmi:id="_KrgckIeCEey27pNP-5yExQ" guard="_jgkxUIeFEey27pNP-5yExQ" source="_ElGwcJAREeyJ-qH-XxM-4g" target="_K_geAId_Eey27pNP-5yExQ">
+            <transition xmi:type="uml:Transition" xmi:id="_KrgckIeCEey27pNP-5yExQ" name="[continueFlag == true] / snd: reportPointStatus() to Route Management" guard="_jgkxUIeFEey27pNP-5yExQ" source="_ElGwcJAREeyJ-qH-XxM-4g" target="_K_geAId_Eey27pNP-5yExQ">
               <ownedRule xmi:type="uml:Constraint" xmi:id="_jgkxUIeFEey27pNP-5yExQ">
                 <specification xmi:type="uml:LiteralString" xmi:id="_jgkxUYeFEey27pNP-5yExQ" value="continueFlag == false"/>
               </ownedRule>
@@ -123,14 +149,22 @@ continueFlag = true</body>
             <subvertex xmi:type="uml:State" xmi:id="_wWN1wId_Eey27pNP-5yExQ" name="checkTrackStatus">
               <doActivity xmi:type="uml:OpaqueBehavior" xmi:id="_ybMIwIeAEey27pNP-5yExQ" name="setPointStatus()">
                 <language>Natural language</language>
-                <body>retval = setPointStatus()</body>
+                <body>retval &lt;- value returned by the Track Status Management interaction</body>
               </doActivity>
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_yMX8MLWMEey3stEDm9u2bQ">
+                <language>Natural language</language>
+                <body>sending requestPointClear to Track Status Management</body>
+              </entry>
             </subvertex>
             <subvertex xmi:type="uml:State" xmi:id="_13r6QId_Eey27pNP-5yExQ" name="checkReservedStatus">
               <doActivity xmi:type="uml:OpaqueBehavior" xmi:id="_Q3EcYIeBEey27pNP-5yExQ" name="getPointReservation()">
                 <language>Natural language</language>
-                <body>retval = getPointReservation()</body>
+                <body>retval &lt;- value returned by the Reserved Status Management interaction</body>
               </doActivity>
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_cbcKALWNEey3stEDm9u2bQ">
+                <language>Natural language</language>
+                <body>sending reportPointNotReserved to Reserved Status Management</body>
+              </entry>
             </subvertex>
             <subvertex xmi:type="uml:State" xmi:id="_DJFe4IeAEey27pNP-5yExQ" name="PointsInRoute">
               <doActivity xmi:type="uml:OpaqueBehavior" xmi:id="_V43iUIeBEey27pNP-5yExQ" name="areThereOtherPoints?">
@@ -177,9 +211,7 @@ continueFlag = true</body>
           </region>
         </doActivity>
       </subvertex>
-      <subvertex xmi:type="uml:State" xmi:id="_xK_dcIeGEey27pNP-5yExQ" name="Sweepable">
-        <doActivity xmi:type="uml:OpaqueBehavior" xmi:id="_VJH4sIeHEey27pNP-5yExQ" name="remove/reduce_Sweepable_Unknown"/>
-      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_xK_dcIeGEey27pNP-5yExQ" name="Sweepable"/>
     </region>
   </ownedBehavior>
 </uml:UseCase>

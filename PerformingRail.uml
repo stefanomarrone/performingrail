@@ -15,7 +15,7 @@
       <packagedElement xmi:type="uml:Class" xmi:id="_K2rj4BIoEeyVOZB09kZL2w" name="ETCS-L3 System">
         <nestedClassifier xmi:type="uml:Class" xmi:id="_s3WM4BIoEeyVOZB09kZL2w" name="Driver">
           <generalization xmi:type="uml:Generalization" xmi:id="_Mym5gBIyEeyVOZB09kZL2w" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
-          <ownedAttribute xmi:type="uml:Port" xmi:id="_loElIK6cEeysMsIa0aUTrQ" name="FullPort2" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_loElIK6cEeysMsIa0aUTrQ" name="sendingActions" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_l9W4oK6cEeysMsIa0aUTrQ" name="integrity" type="_HGZ1wK6gEeysMsIa0aUTrQ" aggregation="composite"/>
           <nestedClassifier xmi:type="uml:Signal" xmi:id="_HGZ1wK6gEeysMsIa0aUTrQ" name="integrityInfoRecv"/>
         </nestedClassifier>
@@ -186,6 +186,7 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_RhQBwK9VEeykxuC-paboug" name="reportPointNotRes" type="_VMHpoK9YEeykxuC-paboug" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_tZSmALHOEeyN2dZwXfzAUA" name="movePoint" type="_4uM5wLOEEeyq06BeRRk88A" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_C3jhELWCEey3stEDm9u2bQ" name="sendPointStatus" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_XpZbgLWGEey3stEDm9u2bQ" name="sweep" type="_DRCsULQHEeyqLsNUAhm-tA" aggregation="composite"/>
               <nestedClassifier xmi:type="uml:UseCase" href="Points_Management.uml#_MMzQ0BRuEeyQN9odROAPWw"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_UyhDcK5_EeyNmoFpmwcymA" name="setPoints"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_cepBoK5_EeyNmoFpmwcymA" name="reqPointsStatus"/>
@@ -822,4 +823,5 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
   <PortsAndFlows:FullPort xmi:id="_vI1TsLWBEey3stEDm9u2bQ" base_Port="_vIqUkLWBEey3stEDm9u2bQ"/>
   <PortsAndFlows:FullPort xmi:id="_C3mkYLWCEey3stEDm9u2bQ" base_Port="_C3jhELWCEey3stEDm9u2bQ"/>
   <PortsAndFlows:ItemFlow xmi:id="_GFn_kLWCEey3stEDm9u2bQ" base_InformationFlow="_GFh48LWCEey3stEDm9u2bQ"/>
+  <PortsAndFlows:FullPort xmi:id="_XpeUALWGEey3stEDm9u2bQ" base_Port="_XpZbgLWGEey3stEDm9u2bQ"/>
 </xmi:XMI>
