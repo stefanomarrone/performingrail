@@ -155,6 +155,71 @@
         <message xmi:type="uml:Message" xmi:id="_B5I8sF59EeyF-MT3_lWeIQ" name="ACK by driver" messageSort="reply" receiveEvent="_B5KK0F59EeyF-MT3_lWeIQ" sendEvent="_B5JjwF59EeyF-MT3_lWeIQ"/>
         <message xmi:type="uml:Message" xmi:id="_fI_iEF59Eey3X8JiS_0juA" name="Transition to OS mode" messageSort="asynchCall" receiveEvent="_fJQAwF59Eey3X8JiS_0juA" sendEvent="_fJOyoF59Eey3X8JiS_0juA"/>
       </ownedBehavior>
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_pKdrcLW7EeyhTtGKJTe9cg" name="Interaction11">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_zGnykLW7EeyhTtGKJTe9cg" name="">
+          <type xmi:type="uml:Class" href="PerformingRail.uml#_s3WM4BIoEeyVOZB09kZL2w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_4JAHULW7EeyhTtGKJTe9cg" name="">
+          <type xmi:type="uml:Class" href="PerformingRail.uml#_P1DlkBIsEeyVOZB09kZL2w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FAORYLW8EeyhTtGKJTe9cg" name="">
+          <type xmi:type="uml:UseCase" href="Integration_Information_Management.uml#_jD9zcDjZEeyQeMlHlxk6EA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Sx-xELW8EeyhTtGKJTe9cg" name="">
+          <type xmi:type="uml:UseCase" href="Train_Position_Reporting.uml#_hQC-wDjZEeyQeMlHlxk6EA"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_quDIoLW8EeyhTtGKJTe9cg" name="">
+          <type xmi:type="uml:Class" href="PerformingRail.uml#_SyI2YLEMEeyVGPyNAHP5Cw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__-vfEbW8EeyhTtGKJTe9cg" name="">
+          <type xmi:type="uml:UseCase" href="Trains_Management.uml#_INQ5IBRuEeyQN9odROAPWw"/>
+        </ownedAttribute>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_zGmkcLW7EeyhTtGKJTe9cg" name="" represents="_zGnykLW7EeyhTtGKJTe9cg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_4I_gQLW7EeyhTtGKJTe9cg" name="" represents="_4JAHULW7EeyhTtGKJTe9cg" coveredBy="_G1o64LW8EeyhTtGKJTe9cg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_FANqULW8EeyhTtGKJTe9cg" name="" represents="_FAORYLW8EeyhTtGKJTe9cg" coveredBy="_G1o64bW8EeyhTtGKJTe9cg _T_1EQbW8EeyhTtGKJTe9cg _vHx3ELW-EeyhTtGKJTe9cg _vHyeILW-EeyhTtGKJTe9cg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_Sx-KALW8EeyhTtGKJTe9cg" name="" represents="_Sx-xELW8EeyhTtGKJTe9cg" coveredBy="_T_1rULW8EeyhTtGKJTe9cg _tGtpILW8EeyhTtGKJTe9cg _zK-4sbW8EeyhTtGKJTe9cg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_quChkLW8EeyhTtGKJTe9cg" name="" represents="_quDIoLW8EeyhTtGKJTe9cg" coveredBy="_tGuQMLW8EeyhTtGKJTe9cg _zK-4sLW8EeyhTtGKJTe9cg _CfrKwLW9EeyhTtGKJTe9cg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="__-vfELW8EeyhTtGKJTe9cg" name="" represents="__-vfEbW8EeyhTtGKJTe9cg" coveredBy="_CfrKwbW9EeyhTtGKJTe9cg _LZymEbW9EeyhTtGKJTe9cg _LZymErW9EeyhTtGKJTe9cg _k_IokLW9EeyhTtGKJTe9cg _k_IokbW9EeyhTtGKJTe9cg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_G1o64LW8EeyhTtGKJTe9cg" name="Message7SendEvent" covered="_4I_gQLW7EeyhTtGKJTe9cg" message="_G1meoLW8EeyhTtGKJTe9cg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_G1o64bW8EeyhTtGKJTe9cg" name="Message7ReceiveEvent" covered="_FANqULW8EeyhTtGKJTe9cg" message="_G1meoLW8EeyhTtGKJTe9cg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T_1EQbW8EeyhTtGKJTe9cg" name="Message12SendEvent" covered="_FANqULW8EeyhTtGKJTe9cg" message="_T_1EQLW8EeyhTtGKJTe9cg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_T_1rULW8EeyhTtGKJTe9cg" name="Message12ReceiveEvent" covered="_Sx-KALW8EeyhTtGKJTe9cg" message="_T_1EQLW8EeyhTtGKJTe9cg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tGtpILW8EeyhTtGKJTe9cg" name="Message17SendEvent" covered="_Sx-KALW8EeyhTtGKJTe9cg" message="_tGtCELW8EeyhTtGKJTe9cg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tGuQMLW8EeyhTtGKJTe9cg" name="Message17ReceiveEvent" covered="_quChkLW8EeyhTtGKJTe9cg" message="_tGtCELW8EeyhTtGKJTe9cg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zK-4sLW8EeyhTtGKJTe9cg" name="Message20SendEvent" covered="_quChkLW8EeyhTtGKJTe9cg" message="_zK-RoLW8EeyhTtGKJTe9cg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zK-4sbW8EeyhTtGKJTe9cg" name="Message20ReceiveEvent" covered="_Sx-KALW8EeyhTtGKJTe9cg" message="_zK-RoLW8EeyhTtGKJTe9cg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_CfrKwLW9EeyhTtGKJTe9cg" name="Message25SendEvent" covered="_quChkLW8EeyhTtGKJTe9cg" message="_CfqjsLW9EeyhTtGKJTe9cg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_CfrKwbW9EeyhTtGKJTe9cg" name="Message25ReceiveEvent" covered="__-vfELW8EeyhTtGKJTe9cg" message="_CfqjsLW9EeyhTtGKJTe9cg"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_vHx3ELW-EeyhTtGKJTe9cg" name="CombinedFragment34" covered="_FANqULW8EeyhTtGKJTe9cg">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_vHyeILW-EeyhTtGKJTe9cg" name="InteractionOperand0" covered="_FANqULW8EeyhTtGKJTe9cg">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LZymEbW9EeyhTtGKJTe9cg" name="Message28SendEvent" covered="__-vfELW8EeyhTtGKJTe9cg" message="_LZymELW9EeyhTtGKJTe9cg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_LZymErW9EeyhTtGKJTe9cg" name="Message28ReceiveEvent" covered="__-vfELW8EeyhTtGKJTe9cg" message="_LZymELW9EeyhTtGKJTe9cg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_k_IokLW9EeyhTtGKJTe9cg" name="Message31SendEvent" covered="__-vfELW8EeyhTtGKJTe9cg" message="_k_IBgLW9EeyhTtGKJTe9cg"/>
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_k_IokbW9EeyhTtGKJTe9cg" name="Message31ReceiveEvent" covered="__-vfELW8EeyhTtGKJTe9cg" message="_k_IBgLW9EeyhTtGKJTe9cg"/>
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_vHyeIbW-EeyhTtGKJTe9cg" name="guard">
+              <constrainedElement xmi:type="uml:Property" href="trackside_data.uml#_rgiWMIsiEeyti_Bx9Y2PIg"/>
+              <constrainedElement xmi:type="uml:Property" href="trackside_data.uml#_cnznYIsiEeyti_Bx9Y2PIg"/>
+            </guard>
+          </operand>
+        </fragment>
+        <message xmi:type="uml:Message" xmi:id="_G1meoLW8EeyhTtGKJTe9cg" name="Message7" messageSort="asynchCall" receiveEvent="_G1o64bW8EeyhTtGKJTe9cg" sendEvent="_G1o64LW8EeyhTtGKJTe9cg">
+          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_dWHlwK6LEeyNmoFpmwcymA"/>
+        </message>
+        <message xmi:type="uml:Message" xmi:id="_T_1EQLW8EeyhTtGKJTe9cg" name="Message12" messageSort="asynchCall" receiveEvent="_T_1rULW8EeyhTtGKJTe9cg" sendEvent="_T_1EQbW8EeyhTtGKJTe9cg">
+          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_kLpN8K6dEeysMsIa0aUTrQ"/>
+        </message>
+        <message xmi:type="uml:Message" xmi:id="_tGtCELW8EeyhTtGKJTe9cg" name="Message17" messageSort="asynchCall" receiveEvent="_tGuQMLW8EeyhTtGKJTe9cg" sendEvent="_tGtpILW8EeyhTtGKJTe9cg">
+          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_N45rkLGFEey0QOTMOj7Mdg"/>
+        </message>
+        <message xmi:type="uml:Message" xmi:id="_zK-RoLW8EeyhTtGKJTe9cg" name="Message20" messageSort="asynchCall" receiveEvent="_zK-4sbW8EeyhTtGKJTe9cg" sendEvent="_zK-4sLW8EeyhTtGKJTe9cg">
+          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_TyvMwLGFEey0QOTMOj7Mdg"/>
+        </message>
+        <message xmi:type="uml:Message" xmi:id="_CfqjsLW9EeyhTtGKJTe9cg" name="Message25" messageSort="asynchCall" receiveEvent="_CfrKwbW9EeyhTtGKJTe9cg" sendEvent="_CfrKwLW9EeyhTtGKJTe9cg">
+          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_QURPMKtNEey01sp69YXD8w"/>
+        </message>
+        <message xmi:type="uml:Message" xmi:id="_LZymELW9EeyhTtGKJTe9cg" name="Update CRE" messageSort="asynchCall" receiveEvent="_LZymErW9EeyhTtGKJTe9cg" sendEvent="_LZymEbW9EeyhTtGKJTe9cg"/>
+        <message xmi:type="uml:Message" xmi:id="_k_IBgLW9EeyhTtGKJTe9cg" name="Update MaxSFE" messageSort="asynchCall" receiveEvent="_k_IokbW9EeyhTtGKJTe9cg" sendEvent="_k_IokLW9EeyhTtGKJTe9cg"/>
+      </ownedBehavior>
       <include xmi:type="uml:Include" xmi:id="_zUE5gEFsEeyfxc1FgnjdUg">
         <addition xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
       </include>
