@@ -247,7 +247,7 @@ Assumption:&#xD;
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_mC4asIsiEeyti_Bx9Y2PIg" name="Q_DIRTRAIN" type="_AV-m8IsWEeyti_Bx9Y2PIg"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_rgiWMIsiEeyti_Bx9Y2PIg" name="Q_LENGTH" type="_M6mIoIsXEeyti_Bx9Y2PIg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rgiWMIsiEeyti_Bx9Y2PIg" name="Q_LENGTH" type="_M6mIoIsXEeyti_Bx9Y2PIg" subsettedProperty="_E0ZIMqtxEey9lovFct_p0Q"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_N_FOAIsjEeyti_Bx9Y2PIg" name="Q_DIRLRBG" type="_AV-m8IsWEeyti_Bx9Y2PIg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_SIzccIsjEeyti_Bx9Y2PIg" name="Q_DLRBG" type="_AV-m8IsWEeyti_Bx9Y2PIg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_4HHPcIsSEeyti_Bx9Y2PIg" name="T_CYCLOC" visibility="public">
@@ -436,6 +436,9 @@ Assumption:&#xD;
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_O7bGQKLkEey9xcG6n6eidg" name="Position">
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_FtW3YbZwEeyjzpg8hNaQkQ" name="guard">
+          <specification xmi:type="uml:LiteralString" xmi:id="_r_6PgLZ0Eeyjzpg8hNaQkQ" value="lost"/>
+        </ownedRule>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_IU8SIJSZEeyW24yVM5ADIg" name="D_LRBG">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
