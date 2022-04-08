@@ -143,7 +143,6 @@ REQ-LossTI-8&#xD;
         <lifeline xmi:type="uml:Lifeline" xmi:id="_M5sI8LZ1Eeyjzpg8hNaQkQ" name="driver" represents="_M5swALZ1Eeyjzpg8hNaQkQ" coveredBy="_OVfYkLZ1Eeyjzpg8hNaQkQ _SyFDMLZ2Eeyjzpg8hNaQkQ _SyFqQLZ2Eeyjzpg8hNaQkQ _fqpRELZ2Eeyjzpg8hNaQkQ"/>
         <fragment xmi:type="uml:CombinedFragment" xmi:id="_Zym8ILZ1Eeyjzpg8hNaQkQ" name="CombinedFragment33" covered="_d8CeYLZvEeyjzpg8hNaQkQ" interactionOperator="alt">
           <operand xmi:type="uml:InteractionOperand" xmi:id="_ZyoKQLZ1Eeyjzpg8hNaQkQ" name="InteractionOperand0" covered="_d8CeYLZvEeyjzpg8hNaQkQ">
-            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OVfYkLZ1Eeyjzpg8hNaQkQ" name="Message30SendEvent" covered="_M5sI8LZ1Eeyjzpg8hNaQkQ" message="_OVeKcLZ1Eeyjzpg8hNaQkQ"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OVf_oLZ1Eeyjzpg8hNaQkQ" name="Message30ReceiveEvent" covered="_d8CeYLZvEeyjzpg8hNaQkQ" message="_OVeKcLZ1Eeyjzpg8hNaQkQ"/>
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_ZyoKQbZ1Eeyjzpg8hNaQkQ" name="guard">
               <specification xmi:type="uml:LiteralString" xmi:id="_2qH6ALZ1Eeyjzpg8hNaQkQ" value="Driver integrity confirmation"/>
@@ -157,6 +156,7 @@ REQ-LossTI-8&#xD;
             </guard>
           </operand>
         </fragment>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_OVfYkLZ1Eeyjzpg8hNaQkQ" name="Message30SendEvent" covered="_M5sI8LZ1Eeyjzpg8hNaQkQ" message="_OVeKcLZ1Eeyjzpg8hNaQkQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pFI5wLZvEeyjzpg8hNaQkQ" name="Message10SendEvent" covered="_d8CeYLZvEeyjzpg8hNaQkQ" message="_pFISsLZvEeyjzpg8hNaQkQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pFJg0LZvEeyjzpg8hNaQkQ" name="Message10ReceiveEvent" covered="_niCIQLZvEeyjzpg8hNaQkQ" message="_pFISsLZvEeyjzpg8hNaQkQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_yKVjsLZvEeyjzpg8hNaQkQ" name="Message15SendEvent" covered="_niCIQLZvEeyjzpg8hNaQkQ" message="_yKU8oLZvEeyjzpg8hNaQkQ"/>
@@ -165,15 +165,15 @@ REQ-LossTI-8&#xD;
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_zTzGILZvEeyjzpg8hNaQkQ" name="Message18ReceiveEvent" covered="_niCIQLZvEeyjzpg8hNaQkQ" message="_zTxQ8LZvEeyjzpg8hNaQkQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Av6F8LZwEeyjzpg8hNaQkQ" name="Message23SendEvent" covered="_xIKVALZvEeyjzpg8hNaQkQ" message="_Av5e4LZwEeyjzpg8hNaQkQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Av6tALZwEeyjzpg8hNaQkQ" name="Message23ReceiveEvent" covered="_ADVT0LZwEeyjzpg8hNaQkQ" message="_Av5e4LZwEeyjzpg8hNaQkQ"/>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_SyFDMLZ2Eeyjzpg8hNaQkQ" name="CombinedFragment30" covered="_niCIQLZvEeyjzpg8hNaQkQ _M5sI8LZ1Eeyjzpg8hNaQkQ _ADVT0LZwEeyjzpg8hNaQkQ _a9oMgLZvEeyjzpg8hNaQkQ _d8CeYLZvEeyjzpg8hNaQkQ _xIKVALZvEeyjzpg8hNaQkQ" interactionOperator="alt">
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_SyFqQLZ2Eeyjzpg8hNaQkQ" name="InteractionOperand0" covered="_niCIQLZvEeyjzpg8hNaQkQ _M5sI8LZ1Eeyjzpg8hNaQkQ _ADVT0LZwEeyjzpg8hNaQkQ _a9oMgLZvEeyjzpg8hNaQkQ _d8CeYLZvEeyjzpg8hNaQkQ _xIKVALZvEeyjzpg8hNaQkQ">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_SyFDMLZ2Eeyjzpg8hNaQkQ" name="CombinedFragment30" covered="_d8CeYLZvEeyjzpg8hNaQkQ _ADVT0LZwEeyjzpg8hNaQkQ _niCIQLZvEeyjzpg8hNaQkQ _a9oMgLZvEeyjzpg8hNaQkQ _xIKVALZvEeyjzpg8hNaQkQ _M5sI8LZ1Eeyjzpg8hNaQkQ" interactionOperator="alt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_SyFqQLZ2Eeyjzpg8hNaQkQ" name="InteractionOperand0" covered="_d8CeYLZvEeyjzpg8hNaQkQ _ADVT0LZwEeyjzpg8hNaQkQ _niCIQLZvEeyjzpg8hNaQkQ _a9oMgLZvEeyjzpg8hNaQkQ _xIKVALZvEeyjzpg8hNaQkQ _M5sI8LZ1Eeyjzpg8hNaQkQ">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6NJfYLZ2Eeyjzpg8hNaQkQ" name="Message31SendEvent" covered="_ADVT0LZwEeyjzpg8hNaQkQ" message="_6NI4ULZ2Eeyjzpg8hNaQkQ"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_6NKGcLZ2Eeyjzpg8hNaQkQ" name="Message31ReceiveEvent" covered="_ADVT0LZwEeyjzpg8hNaQkQ" message="_6NI4ULZ2Eeyjzpg8hNaQkQ"/>
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_SyFqQbZ2Eeyjzpg8hNaQkQ" name="guard">
               <specification xmi:type="uml:LiteralString" xmi:id="_jXEfgLZ2Eeyjzpg8hNaQkQ" value="Q_LENGTH = MonitoringDevice"/>
             </guard>
           </operand>
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_fqpRELZ2Eeyjzpg8hNaQkQ" name="InteractionOperand2" covered="_niCIQLZvEeyjzpg8hNaQkQ _M5sI8LZ1Eeyjzpg8hNaQkQ _ADVT0LZwEeyjzpg8hNaQkQ _a9oMgLZvEeyjzpg8hNaQkQ _d8CeYLZvEeyjzpg8hNaQkQ _xIKVALZvEeyjzpg8hNaQkQ">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_fqpRELZ2Eeyjzpg8hNaQkQ" name="InteractionOperand2" covered="_d8CeYLZvEeyjzpg8hNaQkQ _ADVT0LZwEeyjzpg8hNaQkQ _niCIQLZvEeyjzpg8hNaQkQ _a9oMgLZvEeyjzpg8hNaQkQ _xIKVALZvEeyjzpg8hNaQkQ _M5sI8LZ1Eeyjzpg8hNaQkQ">
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_fqp4ILZ2Eeyjzpg8hNaQkQ" name="guard"/>
           </operand>
         </fragment>
