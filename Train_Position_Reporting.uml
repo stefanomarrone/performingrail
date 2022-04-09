@@ -27,10 +27,10 @@
       <transition xmi:type="uml:Transition" xmi:id="_IW2qgEclEeyg8fpv7VrCwA" name="EoM_request/EoM_TRP_transmitted" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_jUvNQEclEeyg8fpv7VrCwA"/>
       <transition xmi:type="uml:Transition" xmi:id="_QNFm8EclEeyg8fpv7VrCwA" name="evt3/TPR_transmitted" source="_4sG5gEiQEey8Q6WFZJUagA" target="_hsOCMEcjEeyg8fpv7VrCwA"/>
       <transition xmi:type="uml:Transition" xmi:id="_qrRV8EclEeyg8fpv7VrCwA" source="_jUvNQEclEeyg8fpv7VrCwA" target="_HGbkcEclEeyg8fpv7VrCwA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_E70-sEiREey8Q6WFZJUagA" name="SendLocationData" source="_f4a-wEciEeyg8fpv7VrCwA" target="_4sG5gEiQEey8Q6WFZJUagA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_E70-sEiREey8Q6WFZJUagA" name="SendPositionData" source="_f4a-wEciEeyg8fpv7VrCwA" target="_4sG5gEiQEey8Q6WFZJUagA"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_PpjNIEcGEeyulrbFdhDRlw"/>
       <subvertex xmi:type="uml:State" xmi:id="_xAIcsEcZEeyulrbFdhDRlw" name="Verifying_PositionStatus"/>
-      <subvertex xmi:type="uml:State" xmi:id="_f4a-wEciEeyg8fpv7VrCwA" name="Wait_Localisation_Unit_Position"/>
+      <subvertex xmi:type="uml:State" xmi:id="_f4a-wEciEeyg8fpv7VrCwA" name="Wait_Train_Localization_Unit_Position"/>
       <subvertex xmi:type="uml:State" xmi:id="_hsOCMEcjEeyg8fpv7VrCwA" name="Idle"/>
       <subvertex xmi:type="uml:FinalState" xmi:id="_HGbkcEclEeyg8fpv7VrCwA"/>
       <subvertex xmi:type="uml:State" xmi:id="_jUvNQEclEeyg8fpv7VrCwA" name="TPR_data_stored_onboard"/>
