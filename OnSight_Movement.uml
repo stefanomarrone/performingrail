@@ -75,9 +75,7 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_f0p50F2vEeykb-NWxgIwbw" name="">
           <type xmi:type="uml:Class" href="PerformingRail.uml#_fF5jUBI1EeyVOZB09kZL2w"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_iBIYcF2vEeykb-NWxgIwbw" name="">
-          <type xmi:type="uml:UseCase" href="MA_Management.uml#_INRgMBRuEeyQN9odROAPWw"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_iBIYcF2vEeykb-NWxgIwbw" name=""/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_TrucUF2zEeyCWIFnlKn16A" name="">
           <type xmi:type="uml:Class" href="PerformingRail.uml#_s3WM4BIoEeyVOZB09kZL2w"/>
         </ownedAttribute>
@@ -155,7 +153,7 @@
         <message xmi:type="uml:Message" xmi:id="_B5I8sF59EeyF-MT3_lWeIQ" name="ACK by driver" messageSort="reply" receiveEvent="_B5KK0F59EeyF-MT3_lWeIQ" sendEvent="_B5JjwF59EeyF-MT3_lWeIQ"/>
         <message xmi:type="uml:Message" xmi:id="_fI_iEF59Eey3X8JiS_0juA" name="Transition to OS mode" messageSort="asynchCall" receiveEvent="_fJQAwF59Eey3X8JiS_0juA" sendEvent="_fJOyoF59Eey3X8JiS_0juA"/>
       </ownedBehavior>
-      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_pKdrcLW7EeyhTtGKJTe9cg" name="Interaction11">
+      <ownedBehavior xmi:type="uml:Interaction" xmi:id="_pKdrcLW7EeyhTtGKJTe9cg" name="OS_SD">
         <ownedComment xmi:type="uml:Comment" xmi:id="_XbpIwLZJEeyjzpg8hNaQkQ">
           <body>REQ-TrainLoc-5</body>
         </ownedComment>
@@ -276,9 +274,6 @@
       </include>
       <include xmi:type="uml:Include" xmi:id="_bpSSUEfGEeyfHsZ5oNU26Q">
         <addition xmi:type="uml:UseCase" href="Train_Position_Reporting.uml#_hQC-wDjZEeyQeMlHlxk6EA"/>
-      </include>
-      <include xmi:type="uml:Include" xmi:id="_erdp4EfGEeyfHsZ5oNU26Q">
-        <addition xmi:type="uml:UseCase" href="MA_Management.uml#_INRgMBRuEeyQN9odROAPWw"/>
       </include>
       <include xmi:type="uml:Include" xmi:id="_oSw7UEfGEeyfHsZ5oNU26Q">
         <addition xmi:type="uml:UseCase" href="Reserved_Status_Management.uml#_Ez5woBRuEeyQN9odROAPWw"/>
