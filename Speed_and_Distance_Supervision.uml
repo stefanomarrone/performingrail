@@ -59,16 +59,20 @@ mission is finished&#xD;
       <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
     </ownedAttribute>
     <region xmi:type="uml:Region" xmi:id="_kAhxkLj6EeyqrNq3t4JVFQ" name="ManagingTrainData">
-      <transition xmi:type="uml:Transition" xmi:id="_eMvqALo3EeyWSIa_zeRUyQ" source="_SnO6ULmFEeyA0Z0sTgI9gw" target="_GqAYcLo3EeyWSIa_zeRUyQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_fh4Q8Lo3EeyWSIa_zeRUyQ" source="_MnMdsLo5EeyWSIa_zeRUyQ" target="_T2qnALo3EeyWSIa_zeRUyQ">
-        <effect xmi:type="uml:Activity" xmi:id="_sui30Lo9EeyWSIa_zeRUyQ" name="sendingVTD" node="_5XJ-ILo9EeyWSIa_zeRUyQ _92bl0Lo9EeyWSIa_zeRUyQ _H7WnYLo-EeyWSIa_zeRUyQ _NeVu0Lo-EeyWSIa_zeRUyQ _TYYrYLo-EeyWSIa_zeRUyQ _T5plYLo-EeyWSIa_zeRUyQ">
-          <ownedBehavior xmi:type="uml:Activity" xmi:id="_XMDqILpmEeyn0dkWvQX0_A" name="Activity13"/>
-          <edge xmi:type="uml:ControlFlow" xmi:id="_QHhXkLo-EeyWSIa_zeRUyQ" target="_T5plYLo-EeyWSIa_zeRUyQ" source="_5XJ-ILo9EeyWSIa_zeRUyQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_eMvqALo3EeyWSIa_zeRUyQ" name="initTransition" source="_SnO6ULmFEeyA0Z0sTgI9gw" target="_GqAYcLo3EeyWSIa_zeRUyQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_fh4Q8Lo3EeyWSIa_zeRUyQ" name="sendingVTD" source="_MnMdsLo5EeyWSIa_zeRUyQ" target="_T2qnALo3EeyWSIa_zeRUyQ">
+        <effect xmi:type="uml:Activity" xmi:id="_sui30Lo9EeyWSIa_zeRUyQ" name="sendingVTD" node="_T5plYLo-EeyWSIa_zeRUyQ _TYYrYLo-EeyWSIa_zeRUyQ _NeVu0Lo-EeyWSIa_zeRUyQ _H7WnYLo-EeyWSIa_zeRUyQ _92bl0Lo9EeyWSIa_zeRUyQ _5XJ-ILo9EeyWSIa_zeRUyQ _TYsNwLqIEeyN6NDvsFJR1w">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_VWEgcLqIEeyN6NDvsFJR1w" name="resetTimer" visibility="package">
+            <language>Natural language</language>
+            <body>timerAck := T_ACKWAITING</body>
+          </ownedBehavior>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_QHhXkLo-EeyWSIa_zeRUyQ" target="_TYsNwLqIEeyN6NDvsFJR1w" source="_5XJ-ILo9EeyWSIa_zeRUyQ"/>
           <edge xmi:type="uml:ControlFlow" xmi:id="_Q54ooLo-EeyWSIa_zeRUyQ" target="_H7WnYLo-EeyWSIa_zeRUyQ" source="_T5plYLo-EeyWSIa_zeRUyQ"/>
           <edge xmi:type="uml:ControlFlow" xmi:id="_RpPB8Lo-EeyWSIa_zeRUyQ" target="_NeVu0Lo-EeyWSIa_zeRUyQ" source="_TYYrYLo-EeyWSIa_zeRUyQ"/>
           <edge xmi:type="uml:ControlFlow" xmi:id="_Y0HUQLo-EeyWSIa_zeRUyQ" target="_92bl0Lo9EeyWSIa_zeRUyQ" source="_T5plYLo-EeyWSIa_zeRUyQ"/>
           <edge xmi:type="uml:ControlFlow" xmi:id="_ZsqF0Lo-EeyWSIa_zeRUyQ" target="_TYYrYLo-EeyWSIa_zeRUyQ" source="_92bl0Lo9EeyWSIa_zeRUyQ"/>
           <edge xmi:type="uml:ControlFlow" xmi:id="_avhRALo-EeyWSIa_zeRUyQ" target="_TYYrYLo-EeyWSIa_zeRUyQ" source="_H7WnYLo-EeyWSIa_zeRUyQ"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_ZpuG8LqIEeyN6NDvsFJR1w" target="_T5plYLo-EeyWSIa_zeRUyQ" source="_TYsNwLqIEeyN6NDvsFJR1w"/>
           <node xmi:type="uml:InitialNode" xmi:id="_5XJ-ILo9EeyWSIa_zeRUyQ" name="init" outgoing="_QHhXkLo-EeyWSIa_zeRUyQ"/>
           <node xmi:type="uml:SendSignalAction" xmi:id="_92bl0Lo9EeyWSIa_zeRUyQ" name="SendVTDReceived" incoming="_Y0HUQLo-EeyWSIa_zeRUyQ" outgoing="_ZsqF0Lo-EeyWSIa_zeRUyQ">
             <signal xmi:type="uml:Signal" href="PerformingRail.uml#_e0O4sKtNEey01sp69YXD8w"/>
@@ -78,7 +82,8 @@ mission is finished&#xD;
           </node>
           <node xmi:type="uml:FlowFinalNode" xmi:id="_NeVu0Lo-EeyWSIa_zeRUyQ" name="final" incoming="_RpPB8Lo-EeyWSIa_zeRUyQ"/>
           <node xmi:type="uml:JoinNode" xmi:id="_TYYrYLo-EeyWSIa_zeRUyQ" name="join" incoming="_ZsqF0Lo-EeyWSIa_zeRUyQ _avhRALo-EeyWSIa_zeRUyQ" outgoing="_RpPB8Lo-EeyWSIa_zeRUyQ"/>
-          <node xmi:type="uml:ForkNode" xmi:id="_T5plYLo-EeyWSIa_zeRUyQ" name="fork" incoming="_QHhXkLo-EeyWSIa_zeRUyQ" outgoing="_Q54ooLo-EeyWSIa_zeRUyQ _Y0HUQLo-EeyWSIa_zeRUyQ"/>
+          <node xmi:type="uml:ForkNode" xmi:id="_T5plYLo-EeyWSIa_zeRUyQ" name="fork" incoming="_ZpuG8LqIEeyN6NDvsFJR1w" outgoing="_Q54ooLo-EeyWSIa_zeRUyQ _Y0HUQLo-EeyWSIa_zeRUyQ"/>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_TYsNwLqIEeyN6NDvsFJR1w" name="resetTimer" incoming="_QHhXkLo-EeyWSIa_zeRUyQ" outgoing="_ZpuG8LqIEeyN6NDvsFJR1w" behavior="_VWEgcLqIEeyN6NDvsFJR1w"/>
         </effect>
       </transition>
       <transition xmi:type="uml:Transition" xmi:id="_gE1NALo3EeyWSIa_zeRUyQ" name="VTDAcknowledged" source="_T2qnALo3EeyWSIa_zeRUyQ" target="_GqAYcLo3EeyWSIa_zeRUyQ">
@@ -86,13 +91,16 @@ mission is finished&#xD;
           <port xmi:type="uml:Port" href="PerformingRail.uml#_tZerQKrTEeyYGNlEZZyTmg"/>
         </trigger>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_OspHQLo5EeyWSIa_zeRUyQ" source="_T2qnALo3EeyWSIa_zeRUyQ" target="_MnMdsLo5EeyWSIa_zeRUyQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_OspHQLo5EeyWSIa_zeRUyQ" name="[timerAck == 0.0]" guard="_yBSHsLqIEeyN6NDvsFJR1w" source="_T2qnALo3EeyWSIa_zeRUyQ" target="_MnMdsLo5EeyWSIa_zeRUyQ">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_yBSHsLqIEeyN6NDvsFJR1w" constrainedElement="_hmIHALo_EeyWSIa_zeRUyQ">
+          <specification xmi:type="uml:LiteralReal" xmi:id="_HUZgALqJEeyN6NDvsFJR1w"/>
+        </ownedRule>
+      </transition>
       <transition xmi:type="uml:Transition" xmi:id="_PfhVsLo5EeyWSIa_zeRUyQ" name="trainData" source="_GqAYcLo3EeyWSIa_zeRUyQ" target="_MnMdsLo5EeyWSIa_zeRUyQ">
         <trigger xmi:type="uml:Trigger" xmi:id="_kYl5gLo9EeyWSIa_zeRUyQ">
           <port xmi:type="uml:Port" href="PerformingRail.uml#_a8gfgK6KEeyNmoFpmwcymA"/>
         </trigger>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_0LHO4LpwEeyn0dkWvQX0_A" source="_T2qnALo3EeyWSIa_zeRUyQ" target="_T2qnALo3EeyWSIa_zeRUyQ"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_SnO6ULmFEeyA0Z0sTgI9gw" name="init"/>
       <subvertex xmi:type="uml:State" xmi:id="_GqAYcLo3EeyWSIa_zeRUyQ" name="waiting"/>
       <subvertex xmi:type="uml:State" xmi:id="_T2qnALo3EeyWSIa_zeRUyQ" name="ackWaiting"/>
