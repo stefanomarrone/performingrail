@@ -41,6 +41,7 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_V1SywIsXEeyti_Bx9Y2PIg" name="MonitoringDevice"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XLo6oIsXEeyti_Bx9Y2PIg" name="Driver"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YfH7wIsXEeyti_Bx9Y2PIg" name="Lost"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zu9zgLpyEeyn0dkWvQX0_A" name="ExternalDevice"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_nxQP0I86Eey4VuPEnnTzTg" name="M_MODE_Type">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_qnljwI86Eey4VuPEnnTzTg" name="FullSupervision"/>
@@ -245,7 +246,7 @@ Assumption:&#xD;
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0xdeEYsZEeyti_Bx9Y2PIg" value="*"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_pDVx8InYEeywtu03ZyCfsg" name="PositionReport" visibility="private">
+      <packagedElement xmi:type="uml:Class" xmi:id="_pDVx8InYEeywtu03ZyCfsg" name="PositionReport" visibility="protected">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_-FZSYKLlEey9xcG6n6eidg" name="T_TRAIN" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
@@ -280,6 +281,7 @@ Assumption:&#xD;
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_keE38KL7Eey8CrBFlQNT-w"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_keE38aL7Eey8CrBFlQNT-w" value="1"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_atDOMLpyEeyn0dkWvQX0_A" name="integrityConfSource" type="_M6mIoIsXEeyti_Bx9Y2PIg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_RCTlYInZEeywtu03ZyCfsg" name="MovementAuthority">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_qYaLIIsPEeyti_Bx9Y2PIg" name="Q_DIR" type="_uIiN0IsPEeyti_Bx9Y2PIg"/>
@@ -392,7 +394,7 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_WI8BQIv4EeyIuMpgGOW6ag" name="isMuteTimerActive" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_ixcZ4Iv4EeyIuMpgGOW6ag" name="terminationTimer" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ixcZ4Iv4EeyIuMpgGOW6ag" name="sessionTimer" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_AY1VgIv5EeyIuMpgGOW6ag" name="connected" visibility="public">
