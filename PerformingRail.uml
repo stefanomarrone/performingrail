@@ -97,6 +97,7 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_F_5pgK4YEeym_qxcLUg2jw" name="commTimeout"/>
             </nestedClassifier>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_KC8o4KqOEeyJ1d4TAHIvQg" name="MA manager">
+              <ownedUseCase xmi:type="uml:UseCase" href="MA_Management.uml#_INRgMBRuEeyQN9odROAPWw"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_sv06AKrCEey95JqQZoaUKg" name="extension" type="_bYtAsKrDEey95JqQZoaUKg" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_typo8KrCEey95JqQZoaUKg" name="sendMA" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_39__kK4YEeym_qxcLUg2jw" name="restriction" type="_g9s3QK4ZEeym_qxcLUg2jw" aggregation="composite"/>
@@ -535,13 +536,15 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_DB_gYBRpEeyQN9odROAPWw" name="ERTMS Use cases">
       <ownedComment xmi:type="uml:Comment" xmi:id="_xA9_cEbzEeyDdsL-2jTuug">
-        <body>External Device &#xD;
-corresponds to TIMS</body>
+        <body>External Device corresponds to TIMS</body>
       </ownedComment>
       <ownedComment xmi:type="uml:Comment" xmi:id="_hm2N8EhrEeyBhenFSEKB3w">
         <annotatedElement xmi:type="uml:UseCase" href="Train_Position_Reporting.uml#_hQC-wDjZEeyQeMlHlxk6EA"/>
         <body>REQ_TrackStatus-5&#xD;
 </body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_fsh8QE3PEeyTKpdRngNeaw">
+        <body>REQ_LTI_9</body>
       </ownedComment>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_1m7M8BRpEeyQN9odROAPWw" name="Start of Mission"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_36bgoBRpEeyQN9odROAPWw" name="Level Transition"/>

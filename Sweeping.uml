@@ -32,7 +32,9 @@ REQ_TS_7</body>
             <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_EDtqsLl-EeyqoK4HVL7mRA" name="BehaviorExecutionSpecification14" covered="_bAhAMFNNEeyT1rOLVdmr6A" finish="_EDuRwLl-EeyqoK4HVL7mRA" start="_lLaUoFNSEeyIHpUPTS8dSg"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lLa7sFNSEeyIHpUPTS8dSg" name="Message20ReceiveEvent" covered="_bAhAMFNNEeyT1rOLVdmr6A" message="_lLYfcFNSEeyIHpUPTS8dSg"/>
             <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_EDuRwLl-EeyqoK4HVL7mRA" name="BehaviorExecutionSpecification14Finish" covered="_bAhAMFNNEeyT1rOLVdmr6A" execution="_EDtqsLl-EeyqoK4HVL7mRA"/>
-            <guard xmi:type="uml:InteractionConstraint" xmi:id="_30swILl9EeyqoK4HVL7mRA" name="guard"/>
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_30swILl9EeyqoK4HVL7mRA" name="guard">
+              <specification xmi:type="uml:LiteralString" xmi:id="_A3IiQLo0Eeyav9I0cqK3YA" value="TSA.sweepable = false"/>
+            </guard>
           </operand>
         </fragment>
         <fragment xmi:type="uml:CombinedFragment" xmi:id="_Wwd6MLl9EeyqoK4HVL7mRA" name="CombinedFragment14" interactionOperator="opt">
@@ -88,8 +90,8 @@ REQ_TS_7</body>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_YKPMsLmBEeyqoK4HVL7mRA" name="BehaviorExecutionSpecification25" covered="_ioB2sLmAEeyqoK4HVL7mRA" finish="_YKPzwLmBEeyqoK4HVL7mRA" start="_S6P5wLmBEeyqoK4HVL7mRA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_S6Qg0LmBEeyqoK4HVL7mRA" name="Message22ReceiveEvent" covered="_ioB2sLmAEeyqoK4HVL7mRA" message="_S6PSsLmBEeyqoK4HVL7mRA"/>
         <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_YKPzwLmBEeyqoK4HVL7mRA" name="BehaviorExecutionSpecification25Finish" covered="_ioB2sLmAEeyqoK4HVL7mRA" execution="_YKPMsLmBEeyqoK4HVL7mRA"/>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_271uILmAEeyqoK4HVL7mRA" name="CombinedFragment21" covered="_8Gnb0Ll-EeyqoK4HVL7mRA _YtmqYLl_EeyqoK4HVL7mRA _feAKsLmAEeyqoK4HVL7mRA _ioB2sLmAEeyqoK4HVL7mRA" interactionOperator="opt">
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_272VMLmAEeyqoK4HVL7mRA" name="InteractionOperand0" covered="_8Gnb0Ll-EeyqoK4HVL7mRA _YtmqYLl_EeyqoK4HVL7mRA _feAKsLmAEeyqoK4HVL7mRA _ioB2sLmAEeyqoK4HVL7mRA">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_271uILmAEeyqoK4HVL7mRA" name="CombinedFragment21" covered="_8Gnb0Ll-EeyqoK4HVL7mRA _feAKsLmAEeyqoK4HVL7mRA _YtmqYLl_EeyqoK4HVL7mRA _ioB2sLmAEeyqoK4HVL7mRA" interactionOperator="opt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_272VMLmAEeyqoK4HVL7mRA" name="InteractionOperand0" covered="_8Gnb0Ll-EeyqoK4HVL7mRA _feAKsLmAEeyqoK4HVL7mRA _YtmqYLl_EeyqoK4HVL7mRA _ioB2sLmAEeyqoK4HVL7mRA">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_axtlQLmBEeyqoK4HVL7mRA" name="Message27SendEvent" covered="_ioB2sLmAEeyqoK4HVL7mRA" message="_axs-MLmBEeyqoK4HVL7mRA"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_axuMULmBEeyqoK4HVL7mRA" name="Message27ReceiveEvent" covered="_YtmqYLl_EeyqoK4HVL7mRA" message="_axs-MLmBEeyqoK4HVL7mRA"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mPIq0bmBEeyqoK4HVL7mRA" name="Message30SendEvent" covered="_YtmqYLl_EeyqoK4HVL7mRA" message="_mPIq0LmBEeyqoK4HVL7mRA"/>
