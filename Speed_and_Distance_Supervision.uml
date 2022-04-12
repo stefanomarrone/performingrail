@@ -108,19 +108,44 @@ mission is finished&#xD;
     </region>
     <region xmi:type="uml:Region" xmi:id="_qyB6kLj6EeyqrNq3t4JVFQ" name="Superivision">
       <transition xmi:type="uml:Transition" xmi:id="_-GfB0Ll-EeyA0Z0sTgI9gw" source="_2DxIkLl-EeyA0Z0sTgI9gw" target="_6ntN0Ll-EeyA0Z0sTgI9gw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_5OE5sLmEEeyA0Z0sTgI9gw" source="_6ntN0Ll-EeyA0Z0sTgI9gw" target="_pewhILmEEeyA0Z0sTgI9gw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_7EGAILmEEeyA0Z0sTgI9gw" source="_qL_akLmEEeyA0Z0sTgI9gw" target="_i9mhQLmEEeyA0Z0sTgI9gw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_8WifcLmEEeyA0Z0sTgI9gw" source="_i9mhQLmEEeyA0Z0sTgI9gw" target="_pewhILmEEeyA0Z0sTgI9gw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5OE5sLmEEeyA0Z0sTgI9gw" source="_6ntN0Ll-EeyA0Z0sTgI9gw" target="_6XwRILqNEeyN6NDvsFJR1w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_7EGAILmEEeyA0Z0sTgI9gw" source="_EdZrcLqOEeyN6NDvsFJR1w" target="_i9mhQLmEEeyA0Z0sTgI9gw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_8WifcLmEEeyA0Z0sTgI9gw" source="_i9mhQLmEEeyA0Z0sTgI9gw" target="_6XwRILqNEeyN6NDvsFJR1w"/>
       <transition xmi:type="uml:Transition" xmi:id="_9e7D0LmEEeyA0Z0sTgI9gw" source="_i9mhQLmEEeyA0Z0sTgI9gw" target="_6ntN0Ll-EeyA0Z0sTgI9gw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_-lFaoLmEEeyA0Z0sTgI9gw" source="_qyidMLmEEeyA0Z0sTgI9gw" target="_6ntN0Ll-EeyA0Z0sTgI9gw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_-lFaoLmEEeyA0Z0sTgI9gw" source="_E7mDULqOEeyN6NDvsFJR1w" target="_6ntN0Ll-EeyA0Z0sTgI9gw"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_2DxIkLl-EeyA0Z0sTgI9gw" name="init"/>
       <subvertex xmi:type="uml:State" xmi:id="_6ntN0Ll-EeyA0Z0sTgI9gw" name="noSupervision"/>
-      <subvertex xmi:type="uml:State" xmi:id="_XqsCkLmEEeyA0Z0sTgI9gw" name="supervision">
-        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_pewhILmEEeyA0Z0sTgI9gw" name="entry" kind="entryPoint"/>
-        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_qL_akLmEEeyA0Z0sTgI9gw" name="stopped" kind="exitPoint"/>
-        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_qyidMLmEEeyA0Z0sTgI9gw" name="exit" kind="exitPoint"/>
-      </subvertex>
       <subvertex xmi:type="uml:State" xmi:id="_i9mhQLmEEeyA0Z0sTgI9gw" name="standstill"/>
+      <subvertex xmi:type="uml:State" xmi:id="_FcDzcLqLEeyN6NDvsFJR1w" name="supervision">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_6XwRILqNEeyN6NDvsFJR1w" name="entry" kind="entryPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_EdZrcLqOEeyN6NDvsFJR1w" name="stopped" kind="exitPoint"/>
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_E7mDULqOEeyN6NDvsFJR1w" name="exit" kind="exitPoint"/>
+        <doActivity xmi:type="uml:StateMachine" xmi:id="_MZ9u0LqNEeyN6NDvsFJR1w" name="body">
+          <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_QvZBgLqOEeyN6NDvsFJR1w" name="entry" kind="entryPoint"/>
+          <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_RFhCgLqOEeyN6NDvsFJR1w" name="exit" kind="exitPoint"/>
+          <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_Recf4LqOEeyN6NDvsFJR1w" name="stopped" kind="exitPoint"/>
+          <region xmi:type="uml:Region" xmi:id="_XKAxALqNEeyN6NDvsFJR1w" name="main"/>
+        </doActivity>
+      </subvertex>
+    </region>
+    <region xmi:type="uml:Region" xmi:id="_ChiUULqREeyN6NDvsFJR1w" name="Localization">
+      <transition xmi:type="uml:Transition" xmi:id="_AXTb8LqSEeyN6NDvsFJR1w" name="initTransition" source="_1W-iELqREeyN6NDvsFJR1w" target="_9cvvULqREeyN6NDvsFJR1w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_BQ9AwLqSEeyN6NDvsFJR1w" name="receivingSpeedDistance" source="_9cvvULqREeyN6NDvsFJR1w" target="_9cvvULqREeyN6NDvsFJR1w">
+        <effect xmi:type="uml:Activity" xmi:id="_PuLC0LqTEeyN6NDvsFJR1w" name="settIngData" node="_gJDg4LqTEeyN6NDvsFJR1w _n_Oy8LqTEeyN6NDvsFJR1w _4tnb0LqTEeyN6NDvsFJR1w _5p1zgLqTEeyN6NDvsFJR1w">
+          <edge xmi:type="uml:ControlFlow" xmi:id="_9Ms2QLqTEeyN6NDvsFJR1w" target="_gJDg4LqTEeyN6NDvsFJR1w" source="_4tnb0LqTEeyN6NDvsFJR1w"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_-q888LqTEeyN6NDvsFJR1w" target="_n_Oy8LqTEeyN6NDvsFJR1w" source="_gJDg4LqTEeyN6NDvsFJR1w"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="__xPPkLqTEeyN6NDvsFJR1w" target="_5p1zgLqTEeyN6NDvsFJR1w" source="_n_Oy8LqTEeyN6NDvsFJR1w"/>
+          <node xmi:type="uml:ValueSpecificationAction" xmi:id="_gJDg4LqTEeyN6NDvsFJR1w" name="setDistance" incoming="_9Ms2QLqTEeyN6NDvsFJR1w" outgoing="_-q888LqTEeyN6NDvsFJR1w"/>
+          <node xmi:type="uml:ValueSpecificationAction" xmi:id="_n_Oy8LqTEeyN6NDvsFJR1w" name="setSpeed" incoming="_-q888LqTEeyN6NDvsFJR1w" outgoing="__xPPkLqTEeyN6NDvsFJR1w"/>
+          <node xmi:type="uml:InitialNode" xmi:id="_4tnb0LqTEeyN6NDvsFJR1w" name="entry" outgoing="_9Ms2QLqTEeyN6NDvsFJR1w"/>
+          <node xmi:type="uml:FlowFinalNode" xmi:id="_5p1zgLqTEeyN6NDvsFJR1w" name="exit" incoming="__xPPkLqTEeyN6NDvsFJR1w"/>
+        </effect>
+        <trigger xmi:type="uml:Trigger" xmi:id="_cFzjULqSEeyN6NDvsFJR1w" name="receivingSpeedDistance">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_H5ao0LGaEeyfjpe2nC8Faw"/>
+        </trigger>
+      </transition>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_1W-iELqREeyN6NDvsFJR1w" name="init"/>
+      <subvertex xmi:type="uml:State" xmi:id="_9cvvULqREeyN6NDvsFJR1w" name="waiting"/>
     </region>
   </ownedBehavior>
 </uml:UseCase>
