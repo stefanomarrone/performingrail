@@ -41,6 +41,7 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_V1SywIsXEeyti_Bx9Y2PIg" name="MonitoringDevice"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_XLo6oIsXEeyti_Bx9Y2PIg" name="Driver"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_YfH7wIsXEeyti_Bx9Y2PIg" name="Lost"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_zu9zgLpyEeyn0dkWvQX0_A" name="ExternalDevice"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_nxQP0I86Eey4VuPEnnTzTg" name="M_MODE_Type">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_qnljwI86Eey4VuPEnnTzTg" name="FullSupervision"/>
@@ -92,14 +93,6 @@
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_FmAHIJMOEeyEEqDYLr-O6w" name="NID_RADIO">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-        </ownedAttribute>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_8plwUJMOEeyEEqDYLr-O6w" name="BrakeInfo">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_JMmTAJMREeyEEqDYLr-O6w" name="name">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EString"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_UO14cJMREeyEEqDYLr-O6w" name="deceleration">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_ngWQwKLoEey9xcG6n6eidg" name="TPR_Kind">
@@ -168,13 +161,27 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
           </ownedAttribute>
         </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_8plwUJMOEeyEEqDYLr-O6w" name="BrakeStep">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JMmTAJMREeyEEqDYLr-O6w" name="lowSpeed">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="__qeIoLl0EeyA0Z0sTgI9gw"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_UO14cJMREeyEEqDYLr-O6w" name="deceleration">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tMe8oLlvEeyA0Z0sTgI9gw" name="hiSpeed">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5yeagLl0EeyA0Z0sTgI9gw"/>
+          </ownedAttribute>
+        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_BZMQwK6fEeysMsIa0aUTrQ" name="DriverInterface">
         <ownedComment xmi:type="uml:Comment" xmi:id="_I3Ry8K6fEeysMsIa0aUTrQ" annotatedElement="_Eh9_kK6fEeysMsIa0aUTrQ">
-          <body>This data type is extracted from the JRU document (SUBSET 027 v3.3.0). It is incomplete since it just focuses on integrity commands.</body>
+          <body>This data type is extracted from the JRU document (SUBSET 027 v3.3.0). It is incomplete since it just focuses on integrity commands and EoM (just a simple case)</body>
         </ownedComment>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_Eh9_kK6fEeysMsIa0aUTrQ" name="DriversActions">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_p8C0YK6fEeysMsIa0aUTrQ" name="Train integrity confirmation"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dNEB0LmLEeyA0Z0sTgI9gw" name="Level NTC selected"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_v1yKULQCEeye7ZKlraEFyg" name="TSR_Status">
@@ -231,13 +238,15 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_j_ISUIq2Eey_E5TpwM1pKA" name="sweepable">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_37vxwoq2Eey_E5TpwM1pKA" name="traindata" type="_R4aY4InXEeywtu03ZyCfsg" association="_37ujoIq2Eey_E5TpwM1pKA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_37vxwoq2Eey_E5TpwM1pKA" name="traindata" type="_R4aY4InXEeywtu03ZyCfsg" association="_37ujoIq2Eey_E5TpwM1pKA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_LeKtYLprEeyn0dkWvQX0_A"/>
+        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_0xc3AIsZEeyti_Bx9Y2PIg" name="ttd" type="_OempwIquEey_E5TpwM1pKA" association="_0w-V4IsZEeyti_Bx9Y2PIg">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0xdeEIsZEeyti_Bx9Y2PIg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0xdeEYsZEeyti_Bx9Y2PIg" value="*"/>
         </ownedAttribute>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_pDVx8InYEeywtu03ZyCfsg" name="PositionReport" visibility="private">
+      <packagedElement xmi:type="uml:Class" xmi:id="_pDVx8InYEeywtu03ZyCfsg" name="PositionReport" visibility="protected">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_-FZSYKLlEey9xcG6n6eidg" name="T_TRAIN" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
@@ -272,6 +281,7 @@ Assumption:&#xD;
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_keE38KL7Eey8CrBFlQNT-w"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_keE38aL7Eey8CrBFlQNT-w" value="1"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_atDOMLpyEeyn0dkWvQX0_A" name="integrityConfSource" type="_M6mIoIsXEeyti_Bx9Y2PIg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_RCTlYInZEeywtu03ZyCfsg" name="MovementAuthority">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_qYaLIIsPEeyti_Bx9Y2PIg" name="Q_DIR" type="_uIiN0IsPEeyti_Bx9Y2PIg"/>
@@ -384,7 +394,7 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_WI8BQIv4EeyIuMpgGOW6ag" name="isMuteTimerActive" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_ixcZ4Iv4EeyIuMpgGOW6ag" name="terminationTimer" visibility="public">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ixcZ4Iv4EeyIuMpgGOW6ag" name="sessionTimer" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_AY1VgIv5EeyIuMpgGOW6ag" name="connected" visibility="public">
@@ -669,8 +679,8 @@ Assumption:&#xD;
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_aLg1kJLtEeymw95ncJwi5w" name="Onboard">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_lgH3sLGJEey0QOTMOj7Mdg" annotatedElement="_SeFxMLGJEey0QOTMOj7Mdg">
-        <body>maybe to refine</body>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_J054ULmhEeyZl7uuf1TJBA" annotatedElement="_0t5aMJMQEeyEEqDYLr-O6w">
+        <body>Rolling stock correction factors are not considered.</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_frkk0JLtEeymw95ncJwi5w" client="_aLg1kJLtEeymw95ncJwi5w" supplier="_7RlhcIWuEeyWqMvyxp-iUQ"/>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_gU_VQJLtEeymw95ncJwi5w" client="_aLg1kJLtEeymw95ncJwi5w" supplier="_rANpEIquEey_E5TpwM1pKA"/>
@@ -690,10 +700,7 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_28dNgpQCEey49-7YVLx_Pw" name="speedprofile" type="_SeFxMLGJEey0QOTMOj7Mdg" association="_28cmcJQCEey49-7YVLx_Pw">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_28d0kJQCEey49-7YVLx_Pw" value="*"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_3Vib4JQCEey49-7YVLx_Pw" name="train" type="_0t5aMJMQEeyEEqDYLr-O6w" association="_3VhNwJQCEey49-7YVLx_Pw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3Vib4ZQCEey49-7YVLx_Pw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3Vib4pQCEey49-7YVLx_Pw" value="1"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_3Vib4JQCEey49-7YVLx_Pw" name="train" type="_0t5aMJMQEeyEEqDYLr-O6w" association="_3VhNwJQCEey49-7YVLx_Pw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_5kb8YJQCEey49-7YVLx_Pw" name="position" type="_Du_McJNhEeycFb3H7bUBJg" association="_5kbVUJQCEey49-7YVLx_Pw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5kb8YZQCEey49-7YVLx_Pw"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5kb8YpQCEey49-7YVLx_Pw" value="1"/>
@@ -704,19 +711,10 @@ Assumption:&#xD;
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_0t5aMJMQEeyEEqDYLr-O6w" name="Train">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_vWATAJMREeyEEqDYLr-O6w" name="brakes" type="_8plwUJMOEeyEEqDYLr-O6w">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1NqC4JMREeyEEqDYLr-O6w" value="*"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_pwX8sJMQEeyEEqDYLr-O6w" name="targetSpeed">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
-        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_AnceEJLwEeymw95ncJwi5w" name="currentSpeed">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_FRZEsJLwEeymw95ncJwi5w" name="accelerationEngine">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
-        </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_ue6IYJMQEeyEEqDYLr-O6w" name="decelerationNoEngine">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_6JiNg5QCEey49-7YVLx_Pw" name="integrity" type="_Pb-F0JQCEey49-7YVLx_Pw" association="_6JiNgJQCEey49-7YVLx_Pw">
@@ -725,6 +723,27 @@ Assumption:&#xD;
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="__7G-gJVKEeyqMJhR62G7UA" name="L_TRAIN" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_NY650LluEeyA0Z0sTgI9gw" name="T_traction_cut_off" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Tw_2MLluEeyA0Z0sTgI9gw" name="A_traction" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_K9JMMLl0EeyA0Z0sTgI9gw" name="normalService" type="_TKKqQLlvEeyA0Z0sTgI9gw" aggregation="composite" association="_K9HXALl0EeyA0Z0sTgI9gw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K9JzQLl0EeyA0Z0sTgI9gw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K9KaULl0EeyA0Z0sTgI9gw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_NEM_Ubl0EeyA0Z0sTgI9gw" name="emergency" type="_TKKqQLlvEeyA0Z0sTgI9gw" aggregation="composite" association="_NEKjELl0EeyA0Z0sTgI9gw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NEONcLl0EeyA0Z0sTgI9gw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NEO0gLl0EeyA0Z0sTgI9gw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_g94DAbl1EeyA0Z0sTgI9gw" name="fullService" type="_TKKqQLlvEeyA0Z0sTgI9gw" aggregation="composite" association="_g92N0Ll1EeyA0Z0sTgI9gw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_g94qELl1EeyA0Z0sTgI9gw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_g95RILl1EeyA0Z0sTgI9gw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_g4HuYLl3EeyA0Z0sTgI9gw" name="deceleration" visibility="public" type="_8plwUJMOEeyEEqDYLr-O6w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kEJlgLl3EeyA0Z0sTgI9gw" value="*"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_wrSOcJMSEeyEEqDYLr-O6w" memberEnd="_wrS1gpMSEeyEEqDYLr-O6w _wrS1hZMSEeyEEqDYLr-O6w">
@@ -751,6 +770,9 @@ Assumption:&#xD;
       <packagedElement xmi:type="uml:Class" xmi:id="_vHEbEJQBEey49-7YVLx_Pw" name="MovementAuthority">
         <generalization xmi:type="uml:Generalization" xmi:id="_lMxocLGKEey0QOTMOj7Mdg" general="_u2vvsKtxEey9lovFct_p0Q"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_5-wiwJV0Eeygi4zaw5gOng" name="EoA" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UuXZkLm_EeyUhoVAOG20IA" name="V_LoA">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
       </packagedElement>
@@ -842,9 +864,59 @@ Assumption:&#xD;
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_SeFxMLGJEey0QOTMOj7Mdg" name="BrakingCurve">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_ZgYvQLGJEey0QOTMOj7Mdg" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_cpU2ILGJEey0QOTMOj7Mdg" name="maxSpeed">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_cpU2ILGJEey0QOTMOj7Mdg" name="EBISpeed">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FaxeQLnAEeyUhoVAOG20IA" name="SBISpeed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_IgpDALnAEeyUhoVAOG20IA" name="WarningSpeed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_MrG4ULnAEeyUhoVAOG20IA" name="PermittedSpeed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_b-kbULnAEeyUhoVAOG20IA" name="IndicationSpeed">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_TKKqQLlvEeyA0Z0sTgI9gw" name="Brake">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_5gIfkLlvEeyA0Z0sTgI9gw" name="active">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Mi1swLl2EeyA0Z0sTgI9gw" name="T_brake_react" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Qr3-sLl2EeyA0Z0sTgI9gw" name="T_brake_increase" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_RXZn8Ll2EeyA0Z0sTgI9gw" name="T_brake_build_up" visibility="public" isDerived="true">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_cJ5hMLl2EeyA0Z0sTgI9gw">
+            <body>T_brake_react + 0.5*T_brake_increase.</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Rzj_gLl2EeyA0Z0sTgI9gw" name="steps" visibility="public" type="_8plwUJMOEeyEEqDYLr-O6w">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l9h-cLl2EeyA0Z0sTgI9gw" value="*"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_K9HXALl0EeyA0Z0sTgI9gw" memberEnd="_K9JMMLl0EeyA0Z0sTgI9gw _K9LBYLl0EeyA0Z0sTgI9gw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K9IlILl0EeyA0Z0sTgI9gw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K9IlIbl0EeyA0Z0sTgI9gw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_K9LBYLl0EeyA0Z0sTgI9gw" name="train" type="_0t5aMJMQEeyEEqDYLr-O6w" association="_K9HXALl0EeyA0Z0sTgI9gw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_NEKjELl0EeyA0Z0sTgI9gw" memberEnd="_NEM_Ubl0EeyA0Z0sTgI9gw _NEO0gbl0EeyA0Z0sTgI9gw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NEMYQLl0EeyA0Z0sTgI9gw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NEM_ULl0EeyA0Z0sTgI9gw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_NEO0gbl0EeyA0Z0sTgI9gw" name="train" type="_0t5aMJMQEeyEEqDYLr-O6w" association="_NEKjELl0EeyA0Z0sTgI9gw"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_g92N0Ll1EeyA0Z0sTgI9gw" memberEnd="_g94DAbl1EeyA0Z0sTgI9gw _g95RIbl1EeyA0Z0sTgI9gw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_g93b8Ll1EeyA0Z0sTgI9gw" source="org.eclipse.papyrus">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_g94DALl1EeyA0Z0sTgI9gw" key="nature" value="UML_Nature"/>
+        </eAnnotations>
+        <ownedEnd xmi:type="uml:Property" xmi:id="_g95RIbl1EeyA0Z0sTgI9gw" name="train" type="_0t5aMJMQEeyEEqDYLr-O6w" association="_g92N0Ll1EeyA0Z0sTgI9gw"/>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lG4ScIWxEeyjW475vB6H-g">
@@ -965,4 +1037,5 @@ Assumption:&#xD;
   <Blocks:Block xmi:id="_Re8IsLGGEey0QOTMOj7Mdg" base_Class="_Re5FYLGGEey0QOTMOj7Mdg"/>
   <Blocks:Block xmi:id="_SeINcLGJEey0QOTMOj7Mdg" base_Class="_SeFxMLGJEey0QOTMOj7Mdg"/>
   <Blocks:Block xmi:id="_QR8s8LP-Eeye7ZKlraEFyg" base_Class="_QRwfsLP-Eeye7ZKlraEFyg"/>
+  <Blocks:Block xmi:id="_TKO7sLlvEeyA0Z0sTgI9gw" base_Class="_TKKqQLlvEeyA0Z0sTgI9gw"/>
 </xmi:XMI>
