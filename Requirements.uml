@@ -7,6 +7,10 @@
         <nestedClassifier xmi:type="uml:Class" xmi:id="_PfYSQKUxEeykePlC7pxpcQ" name="Requirement 5.9.1.2"/>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_b_uNYKUxEeykePlC7pxpcQ" name="Requirement 5.9.2.3"/>
       </nestedClassifier>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_4ifEoLj4EeyqrNq3t4JVFQ" name="Speed and Distance Monitoring">
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_9CXwULj4EeyqrNq3t4JVFQ" name="REQ-3.13.1.1"/>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_1MlT0Ll8EeyA0Z0sTgI9gw" name="REQ-3.13.9.3.1.1"/>
+      </nestedClassifier>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_x4SU8JuVEey1k9qWv3EIDg" name="X2Rail-3">
       <nestedClassifier xmi:type="uml:Class" xmi:id="_ZaBMgJ2IEeyInc_PVJ5xIQ" name="REQ-TrainLoc">
@@ -366,4 +370,7 @@
   <Requirements:Requirement xmi:id="_BOIaMKUxEeykePlC7pxpcQ" base_NamedElement="_BOFW4KUxEeykePlC7pxpcQ" text="The ERTMS/ETCS on-board equipment shall be in On Sight mode before the train reaches the beginning of the On Sight area or, at the latest, when the train reaches the beginning of the On Sight area." base_Class="_BOFW4KUxEeykePlC7pxpcQ"/>
   <Requirements:Requirement xmi:id="_PfbVkKUxEeykePlC7pxpcQ" base_NamedElement="_PfYSQKUxEeykePlC7pxpcQ" text="An acknowledgement for running in On Sight mode is requested from the driver. The conditions of the acknowledgement are specified below." base_Class="_PfYSQKUxEeykePlC7pxpcQ"/>
   <Requirements:Requirement xmi:id="_b_x3wKUxEeykePlC7pxpcQ" base_NamedElement="_b_uNYKUxEeykePlC7pxpcQ" text="The driver must acknowledge the On Sight mode. A request of acknowledgement shall be displayed to the driver." base_Class="_b_uNYKUxEeykePlC7pxpcQ"/>
+  <Requirements:Requirement xmi:id="_4jRHwLj4EeyqrNq3t4JVFQ" base_NamedElement="_4ifEoLj4EeyqrNq3t4JVFQ" base_Class="_4ifEoLj4EeyqrNq3t4JVFQ"/>
+  <Requirements:Requirement xmi:id="_9CqEMLj4EeyqrNq3t4JVFQ" base_NamedElement="_9CXwULj4EeyqrNq3t4JVFQ" id="REQ-3.13.1.1" text="The speed and distance monitoring is the supervision of the speed of the train versus its position, in order to assure that the train remains within the given speed and distance limits." base_Class="_9CXwULj4EeyqrNq3t4JVFQ"/>
+  <Requirements:Requirement xmi:id="_1MqMULl8EeyA0Z0sTgI9gw" base_NamedElement="_1MlT0Ll8EeyA0Z0sTgI9gw" id="REQ-3.13.9.3.1.1" text="The braking to target supervision limits are derived from the EBD, SBD and GUI curves." base_Class="_1MlT0Ll8EeyA0Z0sTgI9gw"/>
 </xmi:XMI>

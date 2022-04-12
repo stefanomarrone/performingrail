@@ -153,9 +153,21 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_XoqfQIdxEey4_osI_wqoMQ" name="">
           <type xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_maLn4LprEeyn0dkWvQX0_A" name="">
+          <type xmi:type="uml:UseCase" href="Trains_Management.uml#_INQ5IBRuEeyQN9odROAPWw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_pCz3ALprEeyn0dkWvQX0_A" name="">
+          <type xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_h5_kwLpsEeyn0dkWvQX0_A" name="" type="_24ecIIdvEey4_osI_wqoMQ"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_UMw1kIdwEey4_osI_wqoMQ" name="" represents="_UMxcoIdwEey4_osI_wqoMQ"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_WXiEAIdwEey4_osI_wqoMQ" name="" represents="_WXirEIdwEey4_osI_wqoMQ" coveredBy="_Zk7XoIdxEey4_osI_wqoMQ _0p_ZsLWCEey3stEDm9u2bQ _ZlTyIYdxEey4_osI_wqoMQ _GffX0IdxEey4_osI_wqoMQ _KVcVsIdxEey4_osI_wqoMQ"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_WXiEAIdwEey4_osI_wqoMQ" name="" represents="_WXirEIdwEey4_osI_wqoMQ" coveredBy="_w2P-ILprEeyn0dkWvQX0_A _Zk7XoIdxEey4_osI_wqoMQ _0p_ZsLWCEey3stEDm9u2bQ _ZlTyIYdxEey4_osI_wqoMQ _KVcVsIdxEey4_osI_wqoMQ"/>
         <lifeline xmi:type="uml:Lifeline" xmi:id="_Xop4MIdxEey4_osI_wqoMQ" name="" represents="_XoqfQIdxEey4_osI_wqoMQ" coveredBy="_Zk7-sIdxEey4_osI_wqoMQ _0p-yoLWCEey3stEDm9u2bQ _ZlTyIIdxEey4_osI_wqoMQ _ZlRV4IdxEey4_osI_wqoMQ"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_maLA0LprEeyn0dkWvQX0_A" name="" represents="_maLn4LprEeyn0dkWvQX0_A"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_pCzP8LprEeyn0dkWvQX0_A" name="" represents="_pCz3ALprEeyn0dkWvQX0_A" coveredBy="_w2OwALprEeyn0dkWvQX0_A"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_h5-9sLpsEeyn0dkWvQX0_A" name="" represents="_h5_kwLpsEeyn0dkWvQX0_A"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_w2OwALprEeyn0dkWvQX0_A" name="Message25SendEvent" covered="_pCzP8LprEeyn0dkWvQX0_A" message="_w2LssLprEeyn0dkWvQX0_A"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_w2P-ILprEeyn0dkWvQX0_A" name="Message25ReceiveEvent" covered="_WXiEAIdwEey4_osI_wqoMQ" message="_w2LssLprEeyn0dkWvQX0_A"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Zk7XoIdxEey4_osI_wqoMQ" name="Message11SendEvent" covered="_WXiEAIdwEey4_osI_wqoMQ" message="_Zk6wkIdxEey4_osI_wqoMQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Zk7-sIdxEey4_osI_wqoMQ" name="Message11ReceiveEvent" covered="_Xop4MIdxEey4_osI_wqoMQ" message="_Zk6wkIdxEey4_osI_wqoMQ"/>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_ZlRV4IdxEey4_osI_wqoMQ" name="BehaviorExecutionSpecification14" covered="_Xop4MIdxEey4_osI_wqoMQ" finish="_ZlTyIIdxEey4_osI_wqoMQ" start="_Zk7-sIdxEey4_osI_wqoMQ"/>
@@ -163,17 +175,16 @@
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0p_ZsLWCEey3stEDm9u2bQ" name="Message18ReceiveEvent" covered="_WXiEAIdwEey4_osI_wqoMQ" message="_0p-LkLWCEey3stEDm9u2bQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZlTyIIdxEey4_osI_wqoMQ" name="Message16SendEvent" covered="_Xop4MIdxEey4_osI_wqoMQ" message="_ZlTLEIdxEey4_osI_wqoMQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ZlTyIYdxEey4_osI_wqoMQ" name="Message16ReceiveEvent" covered="_WXiEAIdwEey4_osI_wqoMQ" message="_ZlTLEIdxEey4_osI_wqoMQ"/>
-        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_GffX0IdxEey4_osI_wqoMQ" name="Message7ReceiveEvent" covered="_WXiEAIdwEey4_osI_wqoMQ" message="_GfewwIdxEey4_osI_wqoMQ"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_KVcVsIdxEey4_osI_wqoMQ" name="Message15SendEvent" covered="_WXiEAIdwEey4_osI_wqoMQ"/>
-        <message xmi:type="uml:Message" xmi:id="_GfewwIdxEey4_osI_wqoMQ" name="sweepPoint()" messageSort="asynchCall" receiveEvent="_GffX0IdxEey4_osI_wqoMQ">
-          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_DRCsULQHEeyqLsNUAhm-tA"/>
-        </message>
         <message xmi:type="uml:Message" xmi:id="_Zk6wkIdxEey4_osI_wqoMQ" name="remove/reduce_Sweepable_Unknown" messageSort="asynchCall" receiveEvent="_Zk7-sIdxEey4_osI_wqoMQ" sendEvent="_Zk7XoIdxEey4_osI_wqoMQ">
           <signature xmi:type="uml:Signal" href="PerformingRail.uml#_4iFiELWBEey3stEDm9u2bQ"/>
         </message>
         <message xmi:type="uml:Message" xmi:id="_ZlTLEIdxEey4_osI_wqoMQ" name="" messageSort="reply" receiveEvent="_ZlTyIYdxEey4_osI_wqoMQ" sendEvent="_ZlTyIIdxEey4_osI_wqoMQ"/>
         <message xmi:type="uml:Message" xmi:id="_0p-LkLWCEey3stEDm9u2bQ" name="Message18" messageSort="asynchCall" receiveEvent="_0p_ZsLWCEey3stEDm9u2bQ" sendEvent="_0p-yoLWCEey3stEDm9u2bQ">
           <signature xmi:type="uml:Signal" href="PerformingRail.uml#_jiBdcK6CEeyNmoFpmwcymA"/>
+        </message>
+        <message xmi:type="uml:Message" xmi:id="_w2LssLprEeyn0dkWvQX0_A" name="Message25" messageSort="asynchCall" receiveEvent="_w2P-ILprEeyn0dkWvQX0_A" sendEvent="_w2OwALprEeyn0dkWvQX0_A">
+          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_DRCsULQHEeyqLsNUAhm-tA"/>
         </message>
       </ownedBehavior>
       <include xmi:type="uml:Include" xmi:id="_jtaBkHz_EeyMX6xfbLFcdw">
