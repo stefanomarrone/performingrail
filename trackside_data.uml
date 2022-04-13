@@ -711,10 +711,10 @@ Assumption:&#xD;
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_0t5aMJMQEeyEEqDYLr-O6w" name="Train">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_AnceEJLwEeymw95ncJwi5w" name="currentSpeed">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AnceEJLwEeymw95ncJwi5w" name="estimatedSpeed">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_FRZEsJLwEeymw95ncJwi5w" name="accelerationEngine">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_FRZEsJLwEeymw95ncJwi5w" name="estimatedAcceleration">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_6JiNg5QCEey49-7YVLx_Pw" name="integrity" type="_Pb-F0JQCEey49-7YVLx_Pw" association="_6JiNgJQCEey49-7YVLx_Pw">
@@ -744,6 +744,9 @@ Assumption:&#xD;
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_g4HuYLl3EeyA0Z0sTgI9gw" name="deceleration" visibility="public" type="_8plwUJMOEeyEEqDYLr-O6w">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kEJlgLl3EeyA0Z0sTgI9gw" value="*"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_oTTxoLr4Eey6s-y4-zslsg" name="estimatedPosition">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_wrSOcJMSEeyEEqDYLr-O6w" memberEnd="_wrS1gpMSEeyEEqDYLr-O6w _wrS1hZMSEeyEEqDYLr-O6w">
@@ -877,6 +880,7 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_b-kbULnAEeyUhoVAOG20IA" name="IndicationSpeed">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_xnC_ILr-Eey6s-y4-zslsg" name="getLimit"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_TKKqQLlvEeyA0Z0sTgI9gw" name="Brake">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_5gIfkLlvEeyA0Z0sTgI9gw" name="active">
