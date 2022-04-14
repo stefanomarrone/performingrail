@@ -697,9 +697,7 @@ Assumption:&#xD;
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_wrS1g5MSEeyEEqDYLr-O6w"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_wrS1hJMSEeyEEqDYLr-O6w" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_28dNgpQCEey49-7YVLx_Pw" name="speedprofile" type="_SeFxMLGJEey0QOTMOj7Mdg" association="_28cmcJQCEey49-7YVLx_Pw">
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_28d0kJQCEey49-7YVLx_Pw" value="*"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_28dNgpQCEey49-7YVLx_Pw" name="speedprofile" type="_SeFxMLGJEey0QOTMOj7Mdg" association="_28cmcJQCEey49-7YVLx_Pw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_3Vib4JQCEey49-7YVLx_Pw" name="train" type="_0t5aMJMQEeyEEqDYLr-O6w" association="_3VhNwJQCEey49-7YVLx_Pw"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_5kb8YJQCEey49-7YVLx_Pw" name="position" type="_Du_McJNhEeycFb3H7bUBJg" association="_5kbVUJQCEey49-7YVLx_Pw">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5kb8YZQCEey49-7YVLx_Pw"/>
@@ -864,21 +862,28 @@ Assumption:&#xD;
         <generalization xmi:type="uml:Generalization" xmi:id="_90WuwKuCEey9lovFct_p0Q" general="_u2vvsKtxEey9lovFct_p0Q"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_SeFxMLGJEey0QOTMOj7Mdg" name="BrakingCurve">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZgYvQLGJEey0QOTMOj7Mdg" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ZgYvQLGJEey0QOTMOj7Mdg" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA">
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QN5sULsCEey6s-y4-zslsg" value="*"/>
+        </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_cpU2ILGJEey0QOTMOj7Mdg" name="EBISpeed">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q9q8YLsCEey6s-y4-zslsg" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_FaxeQLnAEeyUhoVAOG20IA" name="SBISpeed">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RqpXILsCEey6s-y4-zslsg" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_IgpDALnAEeyUhoVAOG20IA" name="WarningSpeed">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SSIN4LsCEey6s-y4-zslsg" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_MrG4ULnAEeyUhoVAOG20IA" name="PermittedSpeed">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S38QsLsCEey6s-y4-zslsg" value="*"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_b-kbULnAEeyUhoVAOG20IA" name="IndicationSpeed">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tc0fYLsCEey6s-y4-zslsg" value="*"/>
         </ownedAttribute>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_xnC_ILr-Eey6s-y4-zslsg" name="getLimit"/>
       </packagedElement>
