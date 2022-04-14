@@ -49,7 +49,12 @@ X2R2 D4.1 page 56: Train Integrity refresh period</body>
       <ownedComment xmi:type="uml:Comment" xmi:id="_cZJYkFK0EeyODuBwckM_-w">
         <body>see X2R2 D4.1 P276</body>
       </ownedComment>
-      <transition xmi:type="uml:Transition" xmi:id="_x0azUEhsEeyBhenFSEKB3w" name="after [Train Integrity Refresh Period] send Integrity status, reset timer" source="_dwvaMEI4Eey5-bfWf6TPtQ" target="_ho9RUEhsEeyBhenFSEKB3w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_x0azUEhsEeyBhenFSEKB3w" name="integrityCheckTimer = INTEGRITY_CHECK_TIMEOUT / sendIntegrityInfo()" kind="local" source="_dwvaMEI4Eey5-bfWf6TPtQ" target="_ho9RUEhsEeyBhenFSEKB3w">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_BqFYULvYEeypSKK8Y-1Esw" name="integrityCheckTimer = TIMEOUT"/>
+        <trigger xmi:type="uml:Trigger" xmi:id="___ukwLvWEeypSKK8Y-1Esw" name="sendIntegrityInfo()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_lR8kIK6cEeysMsIa0aUTrQ"/>
+        </trigger>
+      </transition>
       <transition xmi:type="uml:Transition" xmi:id="_7wdlsEhsEeyBhenFSEKB3w" name="SoM" source="_woKFwEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_0_uFIEiBEeyBhenFSEKB3w" name="EoM" source="_dwvaMEI4Eey5-bfWf6TPtQ" target="_5Hle8EhsEeyBhenFSEKB3w"/>
       <subvertex xmi:type="uml:State" xmi:id="_dwvaMEI4Eey5-bfWf6TPtQ" name="Train integrity status information management">
@@ -63,7 +68,20 @@ X2R2 D4.1 page 56: Train Integrity refresh period</body>
           </transition>
           <transition xmi:type="uml:Transition" xmi:id="_s452YEh-EeyBhenFSEKB3w" name="Lost_To_DriverConfirmed" source="_1HmskEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ"/>
           <transition xmi:type="uml:Transition" xmi:id="_wV0pMEh-EeyBhenFSEKB3w" name="TIMSConfirmed_to_NoIntegrity" source="_FLH6kEhzEeyBhenFSEKB3w" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_zSa9MEh-EeyBhenFSEKB3w" name="DriverConfirmed_To_NoIntegrity" source="_xJppQEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_zSa9MEh-EeyBhenFSEKB3w" name="sendTPR()" guard="_PTPY0LvcEeypSKK8Y-1Esw" kind="local" source="_xJppQEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_PTPY0LvcEeypSKK8Y-1Esw" name="Q_LENGTH = MonitoringDevice">
+              <specification xmi:type="uml:InstanceValue" xmi:id="_XfC8oLvcEeypSKK8Y-1Esw" name="Q_LENGTH">
+                <instance xmi:type="uml:EnumerationLiteral" href="trackside_data.uml#_V1SywIsXEeyti_Bx9Y2PIg"/>
+              </specification>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_9c7pILvcEeypSKK8Y-1Esw" name="status = NoInformation">
+              <language>C</language>
+              <body>status = NoInformation</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_94M0YLvSEeypSKK8Y-1Esw" name="sendTPR()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_hQVdQKrVEeyYGNlEZZyTmg"/>
+            </trigger>
+          </transition>
           <transition xmi:type="uml:Transition" xmi:id="_0ErWkFKwEeyODuBwckM_-w" name="NoIntegrity_to_TIMSConfirmed" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w"/>
           <transition xmi:type="uml:Transition" xmi:id="_3Q6pEFKwEeyODuBwckM_-w" name="NoIntegrity_to_DriverConfirmed" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_FJJ4UFK-EeyODuBwckM_-w" name="[2]">

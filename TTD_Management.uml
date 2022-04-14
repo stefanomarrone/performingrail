@@ -37,8 +37,16 @@ Movingrail D1.1</body>
         <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_ozKbIHSTEey70MNaFQKawQ" kind="entryPoint"/>
         <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_2YzxcHSTEey70MNaFQKawQ" kind="exitPoint"/>
         <region xmi:type="uml:Region" xmi:id="_wgu1sHSREey70MNaFQKawQ" name="Region1">
-          <transition xmi:type="uml:Transition" xmi:id="_1bTDgHSXEey70MNaFQKawQ" name="TPR_receipt (TPR) / Update (TPR, timestamp)" source="_Ap21YHSSEey70MNaFQKawQ" target="_Ap21YHSSEey70MNaFQKawQ"/>
-          <subvertex xmi:type="uml:State" xmi:id="_Ap21YHSSEey70MNaFQKawQ" name="Wait Train Position Report"/>
+          <transition xmi:type="uml:Transition" xmi:id="_1bTDgHSXEey70MNaFQKawQ" name="ReceiveTrainInformation()" source="_Ap21YHSSEey70MNaFQKawQ" target="_Ap21YHSSEey70MNaFQKawQ">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_hVtnILvZEeypSKK8Y-1Esw" name="Update train Information with timestamp">
+              <language>Natural language</language>
+              <body>Update train Information with timestamp</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_SwuTsLvZEeypSKK8Y-1Esw" name="ReceiveTrainInformation()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_dwMWQK4VEeym_qxcLUg2jw"/>
+            </trigger>
+          </transition>
+          <subvertex xmi:type="uml:State" xmi:id="_Ap21YHSSEey70MNaFQKawQ" name="Wait Train Information"/>
         </region>
         <region xmi:type="uml:Region" xmi:id="_6PlgoHSREey70MNaFQKawQ" name="Region2">
           <transition xmi:type="uml:Transition" xmi:id="_Lt_XkHSaEey70MNaFQKawQ" name="TTDR_receipt (TTDR) / update (TTDR, timestamp, TTD_STATUS)" source="_FnNgMHSSEey70MNaFQKawQ" target="_FnNgMHSSEey70MNaFQKawQ"/>
