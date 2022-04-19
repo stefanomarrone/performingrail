@@ -35,7 +35,7 @@
       </transition>
       <transition xmi:type="uml:Transition" xmi:id="_yyBskEcjEeyg8fpv7VrCwA" name="SoM_request" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_xAIcsEcZEeyulrbFdhDRlw"/>
       <transition xmi:type="uml:Transition" xmi:id="_J75LIEckEeyg8fpv7VrCwA" name="sendSoMTPR()" guard="_uDAksLvPEeypSKK8Y-1Esw" source="_pwUjoEe0Eeyg8fpv7VrCwA" target="_hsOCMEcjEeyg8fpv7VrCwA">
-        <ownedRule xmi:type="uml:Constraint" xmi:id="_uDAksLvPEeypSKK8Y-1Esw" name="TPR_Kind = SoM">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_uDAksLvPEeypSKK8Y-1Esw" name="TPR_Kind == SoM">
           <specification xmi:type="uml:InstanceValue" xmi:id="_z8e5gLvPEeypSKK8Y-1Esw" name="TPR_Kind = SoM">
             <type xmi:type="uml:Enumeration" href="trackside_data.uml#_ngWQwKLoEey9xcG6n6eidg"/>
             <instance xmi:type="uml:EnumerationLiteral" href="trackside_data.uml#_ngWQwaLoEey9xcG6n6eidg"/>
@@ -58,7 +58,7 @@
         </trigger>
       </transition>
       <transition xmi:type="uml:Transition" xmi:id="_QNFm8EclEeyg8fpv7VrCwA" name="sendNormalTPR()" guard="_ffn7ILvMEeypSKK8Y-1Esw" kind="local" source="_4sG5gEiQEey8Q6WFZJUagA" target="_hsOCMEcjEeyg8fpv7VrCwA">
-        <ownedRule xmi:type="uml:Constraint" xmi:id="_ffn7ILvMEeypSKK8Y-1Esw" name="TPR_Kind = Normal">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_ffn7ILvMEeypSKK8Y-1Esw" name="TPR_Kind == Normal">
           <specification xmi:type="uml:InstanceValue" xmi:id="_n3p9ELvMEeypSKK8Y-1Esw" name="TPR_Kind = Normal">
             <type xmi:type="uml:Enumeration" href="trackside_data.uml#_ngWQwKLoEey9xcG6n6eidg"/>
             <instance xmi:type="uml:EnumerationLiteral" href="trackside_data.uml#_ngWQwqLoEey9xcG6n6eidg"/>
