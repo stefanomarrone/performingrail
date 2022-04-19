@@ -30,7 +30,7 @@
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_lAyX0IjuEey-9qgVoods9A" source="_MtbrMIj6Eey-9qgVoods9A" target="_IlBMsIjsEey-9qgVoods9A"/>
         <transition xmi:type="uml:Transition" xmi:id="_0hfQIIjvEey-9qgVoods9A" name="TSAoccupy() [TrainData.L_TRAIN==TrainLength (+-tolerance)]" source="_OG0aclzQEeyXZOuflJ6RTA" target="_kxFJYL_MEeyuSf-2jiPPcA"/>
-        <transition xmi:type="uml:Transition" xmi:id="_LcD5AIjxEey-9qgVoods9A" name="TSAunknown() [CommunicationSession.sessionTimer==0 &amp;&amp; train is not completely located inside an Active Shuting Area]" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG0aclzQEeyXZOuflJ6RTA">
+        <transition xmi:type="uml:Transition" xmi:id="_LcD5AIjxEey-9qgVoods9A" name="TSAunknown() [CommunicationSession.sessionTimer==0 &amp;&amp; train is not completely located inside an Active Shuting Area]" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_1IrBEMAHEeyuSf-2jiPPcA">
           <trigger xmi:type="uml:Trigger" xmi:id="_eOqEkL_UEeyuSf-2jiPPcA" name="TSAunknown()">
             <port xmi:type="uml:Port" href="PerformingRail.uml#_kUmecK4VEeym_qxcLUg2jw"/>
           </trigger>
@@ -57,9 +57,12 @@
           </trigger>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_cS6rcL_mEeyuSf-2jiPPcA" name="releaseTSA() (from TMS) [extent==0] / snd: TSArelease() to Route manager" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1okFzQEeyXZOuflJ6RTA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_4yPv0MAHEeyuSf-2jiPPcA" name="[sweepable==true]" source="_1IrBEMAHEeyuSf-2jiPPcA" target="_CkWDsIjsEey-9qgVoods9A"/>
+        <transition xmi:type="uml:Transition" xmi:id="_7QPcQMAHEeyuSf-2jiPPcA" name="[sweepable==false]" source="_1IrBEMAHEeyuSf-2jiPPcA" target="_IlBMsIjsEey-9qgVoods9A"/>
         <subvertex xmi:type="uml:State" xmi:id="_OG0aclzQEeyXZOuflJ6RTA" name="Unknown">
+          <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_1IrBEMAHEeyuSf-2jiPPcA" kind="entryPoint"/>
           <region xmi:type="uml:Region" xmi:id="_CkRLMIjsEey-9qgVoods9A" name="Region1">
-            <transition xmi:type="uml:Transition" xmi:id="_ucUeIIjuEey-9qgVoods9A" name="extent&lt;Configurable_Minimum_Length [the area does not protect the front end of a train at Start of Mission]" source="_CkWDsIjsEey-9qgVoods9A" target="_OG1okFzQEeyXZOuflJ6RTA"/>
+            <transition xmi:type="uml:Transition" xmi:id="_ucUeIIjuEey-9qgVoods9A" name="[extent&lt;Configurable_Minimum_Length &amp;&amp; TSA does not protect the front end of a train at Start of Mission]" source="_CkWDsIjsEey-9qgVoods9A" target="_OG1okFzQEeyXZOuflJ6RTA"/>
             <subvertex xmi:type="uml:State" xmi:id="_CkWDsIjsEey-9qgVoods9A" name="Sweepable"/>
             <subvertex xmi:type="uml:State" xmi:id="_IlBMsIjsEey-9qgVoods9A" name="Non-Sweepable">
               <ownedComment xmi:type="uml:Comment" xmi:id="_JtDLwIjsEey-9qgVoods9A">
@@ -77,9 +80,9 @@
     <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_s-QN4L_GEeyuSf-2jiPPcA" name="TrackStatusManagement_global">
       <region xmi:type="uml:Region" xmi:id="_u6db4L_GEeyuSf-2jiPPcA" name="Region1">
         <transition xmi:type="uml:Transition" xmi:id="_5pl4EL_GEeyuSf-2jiPPcA" source="_zqdnML_GEeyuSf-2jiPPcA" target="_1J-5ML_GEeyuSf-2jiPPcA"/>
-        <transition xmi:type="uml:Transition" xmi:id="_jP1V4L_IEeyuSf-2jiPPcA" name="reportPointClear()" source="_1J-5ML_GEeyuSf-2jiPPcA" target="_Zjz8gL_IEeyuSf-2jiPPcA">
-          <trigger xmi:type="uml:Trigger" xmi:id="_w5Y70L_IEeyuSf-2jiPPcA" name="reportPointClear()">
-            <port xmi:type="uml:Port" href="PerformingRail.uml#_vIqUkLWBEey3stEDm9u2bQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_jP1V4L_IEeyuSf-2jiPPcA" name="requestPointClear()" source="_1J-5ML_GEeyuSf-2jiPPcA" target="_Zjz8gL_IEeyuSf-2jiPPcA">
+          <trigger xmi:type="uml:Trigger" xmi:id="_w5Y70L_IEeyuSf-2jiPPcA" name="requestPointClear()">
+            <port xmi:type="uml:Port" href="PerformingRail.uml#_2spsUKq-Eey95JqQZoaUKg"/>
           </trigger>
         </transition>
         <transition xmi:type="uml:Transition" xmi:id="_mIVKAL_pEeyuSf-2jiPPcA" name="/snd: ReportPointClear() to Points manager" source="_Zjz8gL_IEeyuSf-2jiPPcA" target="_1J-5ML_GEeyuSf-2jiPPcA"/>
