@@ -25,12 +25,12 @@ X2R3_Part 2 _ page 15&#xD;
 X2R3 REQ TTD&#xD;
 Movingrail D1.1</body>
       </ownedComment>
-      <transition xmi:type="uml:Transition" xmi:id="_4-3lYFLAEeyODuBwckM_-w" name="Reset (TTD_Management Timer)" source="_5uQQYFK_EeyODuBwckM_-w" target="_vs8jgFK_EeyODuBwckM_-w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_4-3lYFLAEeyODuBwckM_-w" name="Reset (synchronizationTimer )" source="_5uQQYFK_EeyODuBwckM_-w" target="_vs8jgFK_EeyODuBwckM_-w"/>
       <transition xmi:type="uml:Transition" xmi:id="_Moy84FLCEeyODuBwckM_-w" source="_i9CiYFK_EeyODuBwckM_-w" target="_7zkFIFLBEeyODuBwckM_-w"/>
       <transition xmi:type="uml:Transition" xmi:id="_wTQIcHSTEey70MNaFQKawQ" source="_ozKbIHSTEey70MNaFQKawQ" target="_Ap21YHSSEey70MNaFQKawQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_x6i2YHSTEey70MNaFQKawQ" source="_ozKbIHSTEey70MNaFQKawQ" target="_FnNgMHSSEey70MNaFQKawQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_-cFEUHSTEey70MNaFQKawQ" name="SoM / Start (TTD_Management Timer)" source="_7zkFIFLBEeyODuBwckM_-w" target="_ozKbIHSTEey70MNaFQKawQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_guANsHSaEey70MNaFQKawQ" name="TTD_Management_Timer = DEFINED_VALUE" source="_2YzxcHSTEey70MNaFQKawQ" target="_5uQQYFK_EeyODuBwckM_-w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_-cFEUHSTEey70MNaFQKawQ" name="SoM / Start (synchronizationTimer )" source="_7zkFIFLBEeyODuBwckM_-w" target="_ozKbIHSTEey70MNaFQKawQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_guANsHSaEey70MNaFQKawQ" name="synchronizationTimer  = SYNCHRONIZATION_TIMEOUT" source="_2YzxcHSTEey70MNaFQKawQ" target="_5uQQYFK_EeyODuBwckM_-w"/>
       <transition xmi:type="uml:Transition" xmi:id="_o6nu8HVMEeyEscYo_klkzA" source="_ozKbIHSTEey70MNaFQKawQ" target="_hCXZQHVMEeyEscYo_klkzA"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_i9CiYFK_EeyODuBwckM_-w"/>
       <subvertex xmi:type="uml:State" xmi:id="_vs8jgFK_EeyODuBwckM_-w" name="Receive Report">
@@ -49,7 +49,15 @@ Movingrail D1.1</body>
           <subvertex xmi:type="uml:State" xmi:id="_Ap21YHSSEey70MNaFQKawQ" name="Wait Train Information"/>
         </region>
         <region xmi:type="uml:Region" xmi:id="_6PlgoHSREey70MNaFQKawQ" name="Region2">
-          <transition xmi:type="uml:Transition" xmi:id="_Lt_XkHSaEey70MNaFQKawQ" name="TTDR_receipt (TTDR) / update (TTDR, timestamp, TTD_STATUS)" source="_FnNgMHSSEey70MNaFQKawQ" target="_FnNgMHSSEey70MNaFQKawQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Lt_XkHSaEey70MNaFQKawQ" name="ReceiveTTDReport()" source="_FnNgMHSSEey70MNaFQKawQ" target="_FnNgMHSSEey70MNaFQKawQ">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_IkZRcLy8EeyuIvqmknW6pA" name="update TTDStatus  with timestamp">
+              <language>Natural language</language>
+              <body>update TTDStatus  with timestamp</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_AuqrULy8EeyuIvqmknW6pA" name="ReceiveTTDReport()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_z-7h0Kq-Eey95JqQZoaUKg"/>
+            </trigger>
+          </transition>
           <subvertex xmi:type="uml:State" xmi:id="_FnNgMHSSEey70MNaFQKawQ" name="Wait Trackside Train Detection Report"/>
         </region>
         <region xmi:type="uml:Region" xmi:id="_E5gRIHVMEeyEscYo_klkzA" name="Region5">
@@ -75,7 +83,11 @@ Movingrail D1.1</body>
               <specification xmi:type="uml:LiteralBoolean" xmi:id="_hGdwwXU5Eeyc962K-4AASw" value="true"/>
             </ownedRule>
           </transition>
-          <transition xmi:type="uml:Transition" xmi:id="_MljG4HU4Eeyc962K-4AASw" name="check for following train" source="_zXAjMHUpEeyc962K-4AASw" target="_OTlJkITcEeycc8_s_B-Sng"/>
+          <transition xmi:type="uml:Transition" xmi:id="_MljG4HU4Eeyc962K-4AASw" name="ReleaseTSA()" source="_zXAjMHUpEeyc962K-4AASw" target="_OTlJkITcEeycc8_s_B-Sng">
+            <trigger xmi:type="uml:Trigger" xmi:id="_bxQDsLzDEeyuIvqmknW6pA" name="ReleaseTSA()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_Gc9gUK4VEeym_qxcLUg2jw"/>
+            </trigger>
+          </transition>
           <transition xmi:type="uml:Transition" xmi:id="_Vt1UoITcEeycc8_s_B-Sng" source="_OTlJkITcEeycc8_s_B-Sng" target="_wjn1kHUpEeyc962K-4AASw"/>
           <transition xmi:type="uml:Transition" xmi:id="_9JjwwITfEeycc8_s_B-Sng" guard="_BML4sITgEeycc8_s_B-Sng" source="_wjn1kHUpEeyc962K-4AASw" target="_Z5XZkITfEeycc8_s_B-Sng">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_BML4sITgEeycc8_s_B-Sng">
@@ -124,7 +136,11 @@ Movingrail D1.1</body>
               <specification xmi:type="uml:LiteralBoolean" xmi:id="_6Pr2wXUfEeyO5v1ny_QVKg" value="true"/>
             </ownedRule>
           </transition>
-          <transition xmi:type="uml:Transition" xmi:id="_lXlt4HUcEeyO5v1ny_QVKg" name="check for next train" source="_z-SuAHUbEeyO5v1ny_QVKg" target="_ZNWaQHVLEeyEscYo_klkzA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_lXlt4HUcEeyO5v1ny_QVKg" name="ReleaseTSA()" source="_z-SuAHUbEeyO5v1ny_QVKg" target="_ZNWaQHVLEeyEscYo_klkzA">
+            <trigger xmi:type="uml:Trigger" xmi:id="_HxLAkLzDEeyuIvqmknW6pA" name="ReleaseTSA()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_Gc9gUK4VEeym_qxcLUg2jw"/>
+            </trigger>
+          </transition>
           <transition xmi:type="uml:Transition" xmi:id="_lpye4HUhEeyO5v1ny_QVKg" guard="_SHFe0HUiEeyO5v1ny_QVKg" source="_U7DU4HUaEeyO5v1ny_QVKg" target="_dy-QwITREeycc8_s_B-Sng">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_SHFe0HUiEeyO5v1ny_QVKg">
               <specification xmi:type="uml:LiteralBoolean" xmi:id="_SHFe0XUiEeyO5v1ny_QVKg"/>
@@ -160,7 +176,7 @@ Movingrail D1.1</body>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_C1ts4HUqEeyc962K-4AASw" name="Track Area length >= train length" kind="choice"/>
           <subvertex xmi:type="uml:State" xmi:id="_ZNWaQHVLEeyEscYo_klkzA" name="Verify Front Train Occupancy"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_dy-QwITREeycc8_s_B-Sng" name="TTD_STATUS(TDD(MinSFE(Train)))==CLEAR" kind="choice"/>
-          <subvertex xmi:type="uml:State" xmi:id="_3MUacITYEeycc8_s_B-Sng" name="correlate TTD occupancy to TPR: delay timer"/>
+          <subvertex xmi:type="uml:State" xmi:id="_3MUacITYEeycc8_s_B-Sng" name="add a desynchronizationTimer for TTD"/>
           <subvertex xmi:type="uml:State" xmi:id="_KO6_gIUXEey_eKw8VkXsEg" name="Contact TMS Front End prb "/>
         </region>
       </subvertex>

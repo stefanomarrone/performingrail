@@ -20,9 +20,15 @@
       <transition xmi:type="uml:Transition" xmi:id="_3AcucEcbEeyulrbFdhDRlw" source="_PpjNIEcGEeyulrbFdhDRlw" target="_hsOCMEcjEeyg8fpv7VrCwA">
         <ownedRule xmi:type="uml:Constraint" xmi:id="__raWoEcfEeyulrbFdhDRlw" name="PosStatus"/>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_CkjmoEcjEeyg8fpv7VrCwA" name="evt1/Q_STATUS=PosStatus" guard="_Jc2OMLvREeypSKK8Y-1Esw" source="_xAIcsEcZEeyulrbFdhDRlw" target="_pwUjoEe0Eeyg8fpv7VrCwA">
+      <transition xmi:type="uml:Transition" xmi:id="_CkjmoEcjEeyg8fpv7VrCwA" name="evt1/Q_STATUS=PosStatus" guard="_tON4kLpMEeyav9I0cqK3YA" source="_xAIcsEcZEeyulrbFdhDRlw" target="_pwUjoEe0Eeyg8fpv7VrCwA">
         <ownedRule xmi:type="uml:Constraint" xmi:id="_Jc2OMLvREeypSKK8Y-1Esw" name="Q_Status">
           <specification xmi:type="uml:InstanceValue" xmi:id="_S5FfILvREeypSKK8Y-1Esw">
+            <instance xmi:type="uml:EnumerationLiteral" href="trackside_data.uml#_8zO0AKLyEey8CrBFlQNT-w"/>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_tON4kLpMEeyav9I0cqK3YA">
+          <specification xmi:type="uml:InstanceValue" xmi:id="_zoQj0LpMEeyav9I0cqK3YA">
+            <type xmi:type="uml:Enumeration" href="trackside_data.uml#_neDmMKLyEey8CrBFlQNT-w"/>
             <instance xmi:type="uml:EnumerationLiteral" href="trackside_data.uml#_8zO0AKLyEey8CrBFlQNT-w"/>
           </specification>
         </ownedRule>
@@ -45,13 +51,7 @@
           <port xmi:type="uml:Port" href="PerformingRail.uml#_SeUQkLEOEeyVGPyNAHP5Cw"/>
         </trigger>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_IW2qgEclEeyg8fpv7VrCwA" name="sendEoMTPR()" guard="_tON4kLpMEeyav9I0cqK3YA" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_jUvNQEclEeyg8fpv7VrCwA">
-        <ownedRule xmi:type="uml:Constraint" xmi:id="_tON4kLpMEeyav9I0cqK3YA">
-          <specification xmi:type="uml:InstanceValue" xmi:id="_zoQj0LpMEeyav9I0cqK3YA" name="TPR_Kind">
-            <type xmi:type="uml:Enumeration" href="trackside_data.uml#_ngWQwKLoEey9xcG6n6eidg"/>
-            <instance xmi:type="uml:EnumerationLiteral" href="trackside_data.uml#_ngWQwqLoEey9xcG6n6eidg"/>
-          </specification>
-        </ownedRule>
+      <transition xmi:type="uml:Transition" xmi:id="_IW2qgEclEeyg8fpv7VrCwA" name="sendEoMTPR()" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_jUvNQEclEeyg8fpv7VrCwA">
         <trigger xmi:type="uml:Trigger" xmi:id="_1MLKULvQEeypSKK8Y-1Esw" name="sendEoMTPR()">
           <port xmi:type="uml:Port" href="PerformingRail.uml#_WzsxMKrTEeyYGNlEZZyTmg"/>
           <port xmi:type="uml:Port" href="PerformingRail.uml#_hQVdQKrVEeyYGNlEZZyTmg"/>
