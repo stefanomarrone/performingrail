@@ -1,29 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ActionLanguage="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.omg.org/spec/ALF/20120827/ActionLanguage-Profile pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ">
-  <uml:UseCase xmi:id="_F6flQBRuEeyQN9odROAPWw" name="Track Status Management" classifierBehavior="_FhbK4LDjEeyjCNJ57Fq-CA">
+  <uml:UseCase xmi:id="_F6flQBRuEeyQN9odROAPWw" name="Track Status Management" classifierBehavior="_s-QN4L_GEeyuSf-2jiPPcA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ivoXoDjYEeyQeMlHlxk6EA" source="http://www.eclipse.org/papyrus/2016/resource/shard">
       <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
     </eAnnotations>
-    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_JLiMMFzQEeyXZOuflJ6RTA" name="TrackStatusManagement_specificArea">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_JLiMMFzQEeyXZOuflJ6RTA" name="TrackStatusManagement">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Wj808L_PEeyuSf-2jiPPcA" name="Extent" visibility="public"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_p2k00L_SEeyuSf-2jiPPcA" name="TrainLength" visibility="public"/>
       <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_GAWvMIj6Eey-9qgVoods9A" name="unknown sweepable" kind="entryPoint"/>
       <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_MtbrMIj6Eey-9qgVoods9A" name="unknown non-sweepable" kind="entryPoint"/>
       <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_uqNSsIj6Eey-9qgVoods9A" name="occupied" kind="entryPoint"/>
       <region xmi:type="uml:Region" xmi:id="_KCnlMFzQEeyXZOuflJ6RTA" name="Region1">
         <transition xmi:type="uml:Transition" xmi:id="_OGzMUFzQEeyXZOuflJ6RTA" source="_GAWvMIj6Eey-9qgVoods9A" target="_CkWDsIjsEey-9qgVoods9A"/>
-        <transition xmi:type="uml:Transition" xmi:id="_OGzzYVzQEeyXZOuflJ6RTA" name="OccupyTSA [train integrity confirmed by external device]" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA"/>
-        <transition xmi:type="uml:Transition" xmi:id="_hL58gIjkEey-9qgVoods9A" name="OccupyTSA [train integrity confirmed by driver &amp;&amp; accept TI from driver]" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA"/>
-        <transition xmi:type="uml:Transition" xmi:id="_cKMnEIjtEey-9qgVoods9A" name="[conflict with other train movements detected]" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1okFzQEeyXZOuflJ6RTA"/>
-        <transition xmi:type="uml:Transition" xmi:id="_rDbFIIjtEey-9qgVoods9A" name="ReleaseTSA" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1okFzQEeyXZOuflJ6RTA"/>
-        <transition xmi:type="uml:Transition" xmi:id="_zRX-AIjtEey-9qgVoods9A" name="reduce request from TMS" source="_OG0aclzQEeyXZOuflJ6RTA" target="_x1sqMIjtEey-9qgVoods9A"/>
+        <transition xmi:type="uml:Transition" xmi:id="_OGzzYVzQEeyXZOuflJ6RTA" name="TSAoccupy() [PositionReport.integrityConfSource==ExternalDevice]" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA">
+          <trigger xmi:type="uml:Trigger" xmi:id="_8vxCAL_KEeyuSf-2jiPPcA" name="TSAoccupy()">
+            <port xmi:type="uml:Port" href="PerformingRail.uml#_lF8b0K4VEeym_qxcLUg2jw"/>
+          </trigger>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_hL58gIjkEey-9qgVoods9A" name="TSAoccupy() [PositionReport.integrityConfSource==Driver &amp;&amp; accept TI from driver]" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA">
+          <trigger xmi:type="uml:Trigger" xmi:id="_lFOp4L_LEeyuSf-2jiPPcA" name="TSAoccupy()">
+            <port xmi:type="uml:Port" href="PerformingRail.uml#_lF8b0K4VEeym_qxcLUg2jw"/>
+          </trigger>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_cKMnEIjtEey-9qgVoods9A" name="[conflict with other train movements]" source="_OG0aclzQEeyXZOuflJ6RTA" target="_kxFJYL_MEeyuSf-2jiPPcA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_zRX-AIjtEey-9qgVoods9A" name="releaseTSA() (from TMS) [extent>0] / snd: TSArelease() to Route manager" source="_OG0aclzQEeyXZOuflJ6RTA" target="_x1sqMIjtEey-9qgVoods9A">
+          <trigger xmi:type="uml:Trigger" xmi:id="_R7MWkL_OEeyuSf-2jiPPcA" name="releaseTSA()">
+            <port xmi:type="uml:Port" href="PerformingRail.uml#_0zxAIK6EEeyNmoFpmwcymA"/>
+          </trigger>
+        </transition>
         <transition xmi:type="uml:Transition" xmi:id="_lAyX0IjuEey-9qgVoods9A" source="_MtbrMIj6Eey-9qgVoods9A" target="_IlBMsIjsEey-9qgVoods9A"/>
-        <transition xmi:type="uml:Transition" xmi:id="_0hfQIIjvEey-9qgVoods9A" name="OccupyTSA [L_TRAIN == stored train length]" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA"/>
-        <transition xmi:type="uml:Transition" xmi:id="_LcD5AIjxEey-9qgVoods9A" name="Unknown TSA [train is not completely located inside an Active Shuting Area]" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG0aclzQEeyXZOuflJ6RTA"/>
-        <transition xmi:type="uml:Transition" xmi:id="_e8vDUIjxEey-9qgVoods9A" name="communication session terminated [train is completely located inside an Active Shuting Area]" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG1okFzQEeyXZOuflJ6RTA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_0hfQIIjvEey-9qgVoods9A" name="TSAoccupy() [TrainData.L_TRAIN==TrainLength (+-tolerance)]" source="_OG0aclzQEeyXZOuflJ6RTA" target="_kxFJYL_MEeyuSf-2jiPPcA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_LcD5AIjxEey-9qgVoods9A" name="TSAunknown() [CommunicationSession.sessionTimer==0 &amp;&amp; train is not completely located inside an Active Shuting Area]" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG0aclzQEeyXZOuflJ6RTA">
+          <trigger xmi:type="uml:Trigger" xmi:id="_eOqEkL_UEeyuSf-2jiPPcA" name="TSAunknown()">
+            <port xmi:type="uml:Port" href="PerformingRail.uml#_kUmecK4VEeym_qxcLUg2jw"/>
+          </trigger>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_e8vDUIjxEey-9qgVoods9A" name="TSAunknown() [CommunicationSession.sessionTimer==0 &amp;&amp; train is completely located inside an Active Shuting Area]" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG1okFzQEeyXZOuflJ6RTA">
+          <trigger xmi:type="uml:Trigger" xmi:id="_ipGPkL_UEeyuSf-2jiPPcA" name="TSAunknown()">
+            <port xmi:type="uml:Port" href="PerformingRail.uml#_kUmecK4VEeym_qxcLUg2jw"/>
+          </trigger>
+        </transition>
         <transition xmi:type="uml:Transition" xmi:id="_xNGtQIj6Eey-9qgVoods9A" source="_uqNSsIj6Eey-9qgVoods9A" target="_OG1BgVzQEeyXZOuflJ6RTA"/>
-        <transition xmi:type="uml:Transition" xmi:id="_L8WjwLDfEeyjCNJ57Fq-CA" name="ReleaseTSA" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_L8WjwLDfEeyjCNJ57Fq-CA" name="TSArelease() / snd: TSArelease() to Route manager" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA">
+          <trigger xmi:type="uml:Trigger" xmi:id="_6wjWwL_fEeyuSf-2jiPPcA" name="TSArelease()">
+            <port xmi:type="uml:Port" href="PerformingRail.uml#_lsEnsK4VEeym_qxcLUg2jw"/>
+          </trigger>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_RHGHgL_LEeyuSf-2jiPPcA" name="TSAoccupy()" source="_OG1BgVzQEeyXZOuflJ6RTA" target="_OG1BgVzQEeyXZOuflJ6RTA">
+          <trigger xmi:type="uml:Trigger" xmi:id="_XxbRgL_LEeyuSf-2jiPPcA" name="TSAoccupy()">
+            <port xmi:type="uml:Port" href="PerformingRail.uml#_lF8b0K4VEeym_qxcLUg2jw"/>
+          </trigger>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_WnXYgL_TEeyuSf-2jiPPcA" name="TSAoccupy() [TrainData.L_TRAIN!=TrainLength (+-tolerance)] /update extent" source="_OG0aclzQEeyXZOuflJ6RTA" target="_x1sqMIjtEey-9qgVoods9A">
+          <trigger xmi:type="uml:Trigger" xmi:id="_adsw4L_TEeyuSf-2jiPPcA" name="TSAoccupy()">
+            <port xmi:type="uml:Port" href="PerformingRail.uml#_lF8b0K4VEeym_qxcLUg2jw"/>
+          </trigger>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_cS6rcL_mEeyuSf-2jiPPcA" name="releaseTSA() (from TMS) [extent==0] / snd: TSArelease() to Route manager" source="_OG0aclzQEeyXZOuflJ6RTA" target="_OG1okFzQEeyXZOuflJ6RTA"/>
         <subvertex xmi:type="uml:State" xmi:id="_OG0aclzQEeyXZOuflJ6RTA" name="Unknown">
           <region xmi:type="uml:Region" xmi:id="_CkRLMIjsEey-9qgVoods9A" name="Region1">
-            <transition xmi:type="uml:Transition" xmi:id="_ucUeIIjuEey-9qgVoods9A" name="Area shorter than a configurable minimum length [Area does not protect the front end of a train at Start of Mission]" source="_CkWDsIjsEey-9qgVoods9A" target="_OG1okFzQEeyXZOuflJ6RTA"/>
+            <transition xmi:type="uml:Transition" xmi:id="_ucUeIIjuEey-9qgVoods9A" name="extent&lt;Configurable_Minimum_Length [the area does not protect the front end of a train at Start of Mission]" source="_CkWDsIjsEey-9qgVoods9A" target="_OG1okFzQEeyXZOuflJ6RTA"/>
             <subvertex xmi:type="uml:State" xmi:id="_CkWDsIjsEey-9qgVoods9A" name="Sweepable"/>
             <subvertex xmi:type="uml:State" xmi:id="_IlBMsIjsEey-9qgVoods9A" name="Non-Sweepable">
               <ownedComment xmi:type="uml:Comment" xmi:id="_JtDLwIjsEey-9qgVoods9A">
@@ -34,17 +70,24 @@
           </region>
         </subvertex>
         <subvertex xmi:type="uml:State" xmi:id="_OG1BgVzQEeyXZOuflJ6RTA" name="Occupied"/>
-        <subvertex xmi:type="uml:FinalState" xmi:id="_OG1okFzQEeyXZOuflJ6RTA" name="final state"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_OG1okFzQEeyXZOuflJ6RTA" name="removed"/>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_kxFJYL_MEeyuSf-2jiPPcA" name="go to a safe state"/>
       </region>
     </ownedBehavior>
-    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_FhbK4LDjEeyjCNJ57Fq-CA" name="StateMachine3">
-      <region xmi:type="uml:Region" xmi:id="_GzOxALDjEeyjCNJ57Fq-CA" name="Region1">
-        <transition xmi:type="uml:Transition" xmi:id="_LaSbsLDjEeyjCNJ57Fq-CA" source="_HlsIsLDjEeyjCNJ57Fq-CA" target="_IxhCoLDjEeyjCNJ57Fq-CA"/>
-        <transition xmi:type="uml:Transition" xmi:id="_MjuwALDjEeyjCNJ57Fq-CA" name="ReleaseTSA" source="_IxhCoLDjEeyjCNJ57Fq-CA" target="_IxhCoLDjEeyjCNJ57Fq-CA"/>
-        <transition xmi:type="uml:Transition" xmi:id="_OrEP8LDjEeyjCNJ57Fq-CA" name="OccupyTSA" source="_IxhCoLDjEeyjCNJ57Fq-CA" target="_IxhCoLDjEeyjCNJ57Fq-CA"/>
-        <transition xmi:type="uml:Transition" xmi:id="_VkQVULDjEeyjCNJ57Fq-CA" name="UnknownTSA" source="_IxhCoLDjEeyjCNJ57Fq-CA" target="_IxhCoLDjEeyjCNJ57Fq-CA"/>
-        <subvertex xmi:type="uml:Pseudostate" xmi:id="_HlsIsLDjEeyjCNJ57Fq-CA" name="initial"/>
-        <subvertex xmi:type="uml:State" xmi:id="_IxhCoLDjEeyjCNJ57Fq-CA" name="idle"/>
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_s-QN4L_GEeyuSf-2jiPPcA" name="TrackStatusManagement_global">
+      <region xmi:type="uml:Region" xmi:id="_u6db4L_GEeyuSf-2jiPPcA" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_5pl4EL_GEeyuSf-2jiPPcA" source="_zqdnML_GEeyuSf-2jiPPcA" target="_1J-5ML_GEeyuSf-2jiPPcA"/>
+        <transition xmi:type="uml:Transition" xmi:id="_jP1V4L_IEeyuSf-2jiPPcA" name="reportPointClear()" source="_1J-5ML_GEeyuSf-2jiPPcA" target="_Zjz8gL_IEeyuSf-2jiPPcA">
+          <trigger xmi:type="uml:Trigger" xmi:id="_w5Y70L_IEeyuSf-2jiPPcA" name="reportPointClear()">
+            <port xmi:type="uml:Port" href="PerformingRail.uml#_vIqUkLWBEey3stEDm9u2bQ"/>
+          </trigger>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_mIVKAL_pEeyuSf-2jiPPcA" name="/snd: ReportPointClear() to Points manager" source="_Zjz8gL_IEeyuSf-2jiPPcA" target="_1J-5ML_GEeyuSf-2jiPPcA"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_zqdnML_GEeyuSf-2jiPPcA" name="init"/>
+        <subvertex xmi:type="uml:State" xmi:id="_1J-5ML_GEeyuSf-2jiPPcA" name="idle">
+          <doActivity xmi:type="uml:Activity" xmi:id="_b_RAYL_KEeyuSf-2jiPPcA" name="construct Consolidated Track Status, snd: TSAreport() to TMS"/>
+        </subvertex>
+        <subvertex xmi:type="uml:State" xmi:id="_Zjz8gL_IEeyuSf-2jiPPcA" name="building Point Clear Report"/>
       </region>
     </ownedBehavior>
   </uml:UseCase>
