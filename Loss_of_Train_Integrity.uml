@@ -378,6 +378,15 @@ REQ-LossTI-8</body>
       </ownedEnd>
       <ownedEnd xmi:type="uml:Property" xmi:id="_Z3L3sbl2Eey4c63EuqrIcg" name="loss of train integrity" type="_6x1yoBRpEeyQN9odROAPWw" association="_Z3KCgLl2Eey4c63EuqrIcg"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_qoYVIL_mEeymoeQH_MWpfw" memberEnd="_qobYcL_mEeymoeQH_MWpfw _qob_gL_mEeymoeQH_MWpfw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_qoaxYL_mEeymoeQH_MWpfw" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_qoaxYb_mEeymoeQH_MWpfw" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_qobYcL_mEeymoeQH_MWpfw" name="train localization unit" association="_qoYVIL_mEeymoeQH_MWpfw">
+        <type xmi:type="uml:Class" href="PerformingRail.uml#_SyI2YLEMEeyVGPyNAHP5Cw"/>
+      </ownedEnd>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_qob_gL_mEeymoeQH_MWpfw" name="loss of train integrity" type="_6x1yoBRpEeyQN9odROAPWw" association="_qoYVIL_mEeymoeQH_MWpfw"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Dependency" xmi:id="_7aUVsKO1EeyTZIGOC0eHNg" client="_6zwwIEesEeyfHsZ5oNU26Q">
       <supplier xmi:type="uml:Class" href="Requirements.uml#_c3m8UD1iEeyAv_UCn311nQ"/>
     </packagedElement>
