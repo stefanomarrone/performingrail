@@ -887,11 +887,43 @@ Assumption:&#xD;
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S38QsLsCEey6s-y4-zslsg" value="*"/>
         </ownedAttribute>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_xnC_ILr-Eey6s-y4-zslsg" name="getLimit"/>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_gzbCcLzWEeyoZZgr56Leuw" name="getPermitted"/>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_pOETgLzWEeyoZZgr56Leuw" name="getWarning"/>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_rJEnoLzWEeyoZZgr56Leuw" name="getService"/>
-        <ownedOperation xmi:type="uml:Operation" xmi:id="_tefm4LzWEeyoZZgr56Leuw" name="getEmergency"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_xnC_ILr-Eey6s-y4-zslsg" name="isLimit">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_TtB0cMB6EeyXl9rAGjiEJA" name="position" effect="read">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_gzbCcLzWEeyoZZgr56Leuw" name="isPermitted">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_UPA_0MB9EeyXl9rAGjiEJA" name="speed" effect="read">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_c-q3kMB9EeyXl9rAGjiEJA" name="position" effect="read">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_pOETgLzWEeyoZZgr56Leuw" name="isWarning">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_QoWigMB6EeyXl9rAGjiEJA" name="speed" effect="read">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_vuXQ4MB9EeyXl9rAGjiEJA" name="position" effect="read">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_rJEnoLzWEeyoZZgr56Leuw" name="isService">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_WWaKIMB9EeyXl9rAGjiEJA" name="speed" effect="read">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_zNS14MB9EeyXl9rAGjiEJA" name="position" effect="read">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_tefm4LzWEeyoZZgr56Leuw" name="isEmergency">
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_YmIKAMB9EeyXl9rAGjiEJA" name="speed" effect="read">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+          <ownedParameter xmi:type="uml:Parameter" xmi:id="_1zgqMMB9EeyXl9rAGjiEJA" name="position" effect="read">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedParameter>
+        </ownedOperation>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_TKKqQLlvEeyA0Z0sTgI9gw" name="Brake">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_5gIfkLlvEeyA0Z0sTgI9gw" name="active">
