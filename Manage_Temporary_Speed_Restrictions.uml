@@ -6,11 +6,15 @@
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_22yS8FOOEeyTQoKzZjpjIQ" name="Manage Temporary Speed Restrictions">
     <region xmi:type="uml:Region" xmi:id="_3YOMEFOOEeyTQoKzZjpjIQ" name="Region1">
       <transition xmi:type="uml:Transition" xmi:id="_X6_AEEiAEeyRbplaRb-Ecw" source="_KY5UEEiAEeyRbplaRb-Ecw" target="_N4yiYEiAEeyRbplaRb-Ecw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_Y7bJYEiAEeyRbplaRb-Ecw" name="Activate a TSR" source="_N4yiYEiAEeyRbplaRb-Ecw" target="_RmtloEiAEeyRbplaRb-Ecw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_ZeahsEiAEeyRbplaRb-Ecw" name="Deactivate a TSR" source="_RmtloEiAEeyRbplaRb-Ecw" target="_UcguEEiAEeyRbplaRb-Ecw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_Z3PRYEiAEeyRbplaRb-Ecw" name="Remove a TSR" source="_UcguEEiAEeyRbplaRb-Ecw" target="_bRsdMEiAEeyRbplaRb-Ecw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_dL11sEiAEeyRbplaRb-Ecw" name="Purge a TSR" source="_bRsdMEiAEeyRbplaRb-Ecw" target="_IESSkIm6Eey1ZJA0OWh0IQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_dktBoEiAEeyRbplaRb-Ecw" name="Cancel the purge of a TSR" source="_bRsdMEiAEeyRbplaRb-Ecw" target="_RmtloEiAEeyRbplaRb-Ecw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Y7bJYEiAEeyRbplaRb-Ecw" name="recvTSRCommand() [command==Activate] /snd: TSRinfo() to MA manager" source="_N4yiYEiAEeyRbplaRb-Ecw" target="_RmtloEiAEeyRbplaRb-Ecw">
+        <trigger xmi:type="uml:Trigger" xmi:id="_ZFaQAMAaEeyQGIg0cG7TVw" name="recvTSRCommand()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_d1Sj4LQDEeye7ZKlraEFyg"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_ZeahsEiAEeyRbplaRb-Ecw" name="recvTSRCommand() [command==Deactivate] /snd: TSRinfo() to MA manager" source="_RmtloEiAEeyRbplaRb-Ecw" target="_UcguEEiAEeyRbplaRb-Ecw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Z3PRYEiAEeyRbplaRb-Ecw" name="recvTSRCommand() [command==Remove] /snd: TSRinfo() to MA manager" source="_UcguEEiAEeyRbplaRb-Ecw" target="_bRsdMEiAEeyRbplaRb-Ecw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_dL11sEiAEeyRbplaRb-Ecw" name="recvTSRCommand() [command==Purge] /snd: TSRinfo() to MA manager" source="_bRsdMEiAEeyRbplaRb-Ecw" target="_IESSkIm6Eey1ZJA0OWh0IQ"/>
+      <transition xmi:type="uml:Transition" xmi:id="_dktBoEiAEeyRbplaRb-Ecw" name="recvTSRCommand() [command==Cancel] /snd: TSRinfo() to MA manager" source="_bRsdMEiAEeyRbplaRb-Ecw" target="_RmtloEiAEeyRbplaRb-Ecw"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_KY5UEEiAEeyRbplaRb-Ecw"/>
       <subvertex xmi:type="uml:State" xmi:id="_N4yiYEiAEeyRbplaRb-Ecw" name="established"/>
       <subvertex xmi:type="uml:State" xmi:id="_RmtloEiAEeyRbplaRb-Ecw" name="activated"/>
