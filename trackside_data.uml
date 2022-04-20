@@ -197,6 +197,12 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Gfb3wLQDEeye7ZKlraEFyg" name="Purge"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_He2tYLQDEeye7ZKlraEFyg" name="Cancel"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_rlGuwMB4EeyXl9rAGjiEJA" name="InformationToDriver">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rlGuwcB4EeyXl9rAGjiEJA" name="Warning"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rlGuwsB4EeyXl9rAGjiEJA" name="TractionCutoff"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rlGuw8B4EeyXl9rAGjiEJA" name="ServiceBrake"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_0E6zsMB4EeyXl9rAGjiEJA" name="EmergencyBrake"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="Trackside">
       <ownedComment xmi:type="uml:Comment" xmi:id="_R4dDYIsPEeyti_Bx9Y2PIg" annotatedElement="_R4aY4InXEeywtu03ZyCfsg">
@@ -861,7 +867,7 @@ Assumption:&#xD;
       <packagedElement xmi:type="uml:Class" xmi:id="_7WRiwKuCEey9lovFct_p0Q" name="Acknowledgement">
         <generalization xmi:type="uml:Generalization" xmi:id="_90WuwKuCEey9lovFct_p0Q" general="_u2vvsKtxEey9lovFct_p0Q"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_SeFxMLGJEey0QOTMOj7Mdg" name="BrakingCurve">
+      <packagedElement xmi:type="uml:Class" xmi:id="_SeFxMLGJEey0QOTMOj7Mdg" name="BrakingCurve" visibility="private">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_ZgYvQLGJEey0QOTMOj7Mdg" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA">
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QN5sULsCEey6s-y4-zslsg" value="*"/>
         </ownedAttribute>
@@ -881,11 +887,11 @@ Assumption:&#xD;
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S38QsLsCEey6s-y4-zslsg" value="*"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_b-kbULnAEeyUhoVAOG20IA" name="IndicationSpeed">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Tc0fYLsCEey6s-y4-zslsg" value="*"/>
-        </ownedAttribute>
         <ownedOperation xmi:type="uml:Operation" xmi:id="_xnC_ILr-Eey6s-y4-zslsg" name="getLimit"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_gzbCcLzWEeyoZZgr56Leuw" name="getPermitted"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_pOETgLzWEeyoZZgr56Leuw" name="getWarning"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_rJEnoLzWEeyoZZgr56Leuw" name="getService"/>
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_tefm4LzWEeyoZZgr56Leuw" name="getEmergency"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_TKKqQLlvEeyA0Z0sTgI9gw" name="Brake">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_5gIfkLlvEeyA0Z0sTgI9gw" name="active">
