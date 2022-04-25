@@ -118,7 +118,7 @@ Movingrail D1.1</body>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_mmKRcHUqEeyc962K-4AASw" name="Track Area length >= train length" kind="choice"/>
           <subvertex xmi:type="uml:State" xmi:id="_OTlJkITcEeycc8_s_B-Sng" name="Verify Rear Train Occupancy"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_Z5XZkITfEeycc8_s_B-Sng" name="TTD_STATUS(TDD(MinSRE(Train)))==OCCUPIED" kind="choice"/>
-          <subvertex xmi:type="uml:State" xmi:id="_r0_4sITfEeycc8_s_B-Sng" name="correlate TTD occupancy to TPR"/>
+          <subvertex xmi:type="uml:State" xmi:id="_r0_4sITfEeycc8_s_B-Sng" name="add a desynchronizationTimer for TTD"/>
           <subvertex xmi:type="uml:State" xmi:id="_Pa-r4IWfEeyRBaFsEufRiA" name="contact TMS Rear End prb"/>
         </region>
         <region xmi:type="uml:Region" xmi:id="_HiXR8HUZEeyO5v1ny_QVKg" name="Region2">
