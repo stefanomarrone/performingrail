@@ -20,14 +20,60 @@
       <transition xmi:type="uml:Transition" xmi:id="_3AcucEcbEeyulrbFdhDRlw" source="_PpjNIEcGEeyulrbFdhDRlw" target="_hsOCMEcjEeyg8fpv7VrCwA">
         <ownedRule xmi:type="uml:Constraint" xmi:id="__raWoEcfEeyulrbFdhDRlw" name="PosStatus"/>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_CkjmoEcjEeyg8fpv7VrCwA" name="evt1/Q_STATUS=PosStatus" source="_xAIcsEcZEeyulrbFdhDRlw" target="_pwUjoEe0Eeyg8fpv7VrCwA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_CkjmoEcjEeyg8fpv7VrCwA" name="evt1/Q_STATUS=PosStatus" guard="_tON4kLpMEeyav9I0cqK3YA" source="_xAIcsEcZEeyulrbFdhDRlw" target="_pwUjoEe0Eeyg8fpv7VrCwA">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_Jc2OMLvREeypSKK8Y-1Esw" name="Q_Status">
+          <specification xmi:type="uml:InstanceValue" xmi:id="_S5FfILvREeypSKK8Y-1Esw">
+            <instance xmi:type="uml:EnumerationLiteral" href="trackside_data.uml#_8zO0AKLyEey8CrBFlQNT-w"/>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_tON4kLpMEeyav9I0cqK3YA">
+          <specification xmi:type="uml:InstanceValue" xmi:id="_zoQj0LpMEeyav9I0cqK3YA">
+            <type xmi:type="uml:Enumeration" href="trackside_data.uml#_neDmMKLyEey8CrBFlQNT-w"/>
+            <instance xmi:type="uml:EnumerationLiteral" href="trackside_data.uml#_8zO0AKLyEey8CrBFlQNT-w"/>
+          </specification>
+        </ownedRule>
+      </transition>
       <transition xmi:type="uml:Transition" xmi:id="_yyBskEcjEeyg8fpv7VrCwA" name="SoM_request" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_xAIcsEcZEeyulrbFdhDRlw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_J75LIEckEeyg8fpv7VrCwA" name="evt2/SoM_TPR_transmitted" source="_pwUjoEe0Eeyg8fpv7VrCwA" target="_hsOCMEcjEeyg8fpv7VrCwA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_qVE48EckEeyg8fpv7VrCwA" name="On-board_PosRequest" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_f4a-wEciEeyg8fpv7VrCwA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_IW2qgEclEeyg8fpv7VrCwA" name="EoM_request/EoM_TRP_transmitted" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_jUvNQEclEeyg8fpv7VrCwA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_QNFm8EclEeyg8fpv7VrCwA" name="evt3/TPR_transmitted" source="_4sG5gEiQEey8Q6WFZJUagA" target="_hsOCMEcjEeyg8fpv7VrCwA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_qrRV8EclEeyg8fpv7VrCwA" source="_jUvNQEclEeyg8fpv7VrCwA" target="_HGbkcEclEeyg8fpv7VrCwA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_E70-sEiREey8Q6WFZJUagA" name="SendPositionData" source="_f4a-wEciEeyg8fpv7VrCwA" target="_4sG5gEiQEey8Q6WFZJUagA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_J75LIEckEeyg8fpv7VrCwA" name="sendSoMTPR()" guard="_uDAksLvPEeypSKK8Y-1Esw" source="_pwUjoEe0Eeyg8fpv7VrCwA" target="_hsOCMEcjEeyg8fpv7VrCwA">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_uDAksLvPEeypSKK8Y-1Esw" name="TPR_Kind == SoM">
+          <specification xmi:type="uml:InstanceValue" xmi:id="_z8e5gLvPEeypSKK8Y-1Esw" name="TPR_Kind = SoM">
+            <type xmi:type="uml:Enumeration" href="trackside_data.uml#_ngWQwKLoEey9xcG6n6eidg"/>
+            <instance xmi:type="uml:EnumerationLiteral" href="trackside_data.uml#_ngWQwaLoEey9xcG6n6eidg"/>
+          </specification>
+        </ownedRule>
+        <trigger xmi:type="uml:Trigger" xmi:id="_kjtYsLvPEeypSKK8Y-1Esw" name="sendTPR()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_WzsxMKrTEeyYGNlEZZyTmg"/>
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_hQVdQKrVEeyYGNlEZZyTmg"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_qVE48EckEeyg8fpv7VrCwA" name="positionRequest()" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_f4a-wEciEeyg8fpv7VrCwA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_45L80LpKEeyav9I0cqK3YA" name="positionRequest()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_SeUQkLEOEeyVGPyNAHP5Cw"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_IW2qgEclEeyg8fpv7VrCwA" name="sendEoMTPR()" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_jUvNQEclEeyg8fpv7VrCwA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_1MLKULvQEeypSKK8Y-1Esw" name="sendEoMTPR()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_WzsxMKrTEeyYGNlEZZyTmg"/>
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_hQVdQKrVEeyYGNlEZZyTmg"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_QNFm8EclEeyg8fpv7VrCwA" name="sendNormalTPR()" guard="_ffn7ILvMEeypSKK8Y-1Esw" kind="local" source="_4sG5gEiQEey8Q6WFZJUagA" target="_hsOCMEcjEeyg8fpv7VrCwA">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_ffn7ILvMEeypSKK8Y-1Esw" name="TPR_Kind == Normal">
+          <specification xmi:type="uml:InstanceValue" xmi:id="_n3p9ELvMEeypSKK8Y-1Esw" name="TPR_Kind = Normal">
+            <type xmi:type="uml:Enumeration" href="trackside_data.uml#_ngWQwKLoEey9xcG6n6eidg"/>
+            <instance xmi:type="uml:EnumerationLiteral" href="trackside_data.uml#_ngWQwqLoEey9xcG6n6eidg"/>
+          </specification>
+        </ownedRule>
+        <trigger xmi:type="uml:Trigger" xmi:id="__cHB0LpLEeyav9I0cqK3YA" name="sendTPR()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_WzsxMKrTEeyYGNlEZZyTmg"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_qrRV8EclEeyg8fpv7VrCwA" name="M_MODE= StandBy" source="_jUvNQEclEeyg8fpv7VrCwA" target="_HGbkcEclEeyg8fpv7VrCwA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_E70-sEiREey8Q6WFZJUagA" name="positionRecv()" source="_f4a-wEciEeyg8fpv7VrCwA" target="_4sG5gEiQEey8Q6WFZJUagA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_lFrgoLpLEeyav9I0cqK3YA" name="positionRecv()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_VE_X4LEOEeyVGPyNAHP5Cw"/>
+        </trigger>
+      </transition>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_PpjNIEcGEeyulrbFdhDRlw"/>
       <subvertex xmi:type="uml:State" xmi:id="_xAIcsEcZEeyulrbFdhDRlw" name="Verifying_PositionStatus"/>
       <subvertex xmi:type="uml:State" xmi:id="_f4a-wEciEeyg8fpv7VrCwA" name="Wait_Train_Localization_Unit_Position"/>

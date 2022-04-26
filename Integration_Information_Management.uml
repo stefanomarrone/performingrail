@@ -49,29 +49,147 @@ X2R2 D4.1 page 56: Train Integrity refresh period</body>
       <ownedComment xmi:type="uml:Comment" xmi:id="_cZJYkFK0EeyODuBwckM_-w">
         <body>see X2R2 D4.1 P276</body>
       </ownedComment>
-      <transition xmi:type="uml:Transition" xmi:id="_x0azUEhsEeyBhenFSEKB3w" name="after [Train Integrity Refresh Period] send Integrity status, reset timer" source="_dwvaMEI4Eey5-bfWf6TPtQ" target="_ho9RUEhsEeyBhenFSEKB3w"/>
+      <transition xmi:type="uml:Transition" xmi:id="_x0azUEhsEeyBhenFSEKB3w" name="integrityCheckTimer = INTEGRITY_CHECK_TIMEOUT / sendIntegrityInfo()" kind="local" source="_dwvaMEI4Eey5-bfWf6TPtQ" target="_ho9RUEhsEeyBhenFSEKB3w">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_BqFYULvYEeypSKK8Y-1Esw" name="integrityCheckTimer = TIMEOUT"/>
+        <trigger xmi:type="uml:Trigger" xmi:id="___ukwLvWEeypSKK8Y-1Esw" name="sendIntegrityInfo()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_lR8kIK6cEeysMsIa0aUTrQ"/>
+        </trigger>
+      </transition>
       <transition xmi:type="uml:Transition" xmi:id="_7wdlsEhsEeyBhenFSEKB3w" name="SoM" source="_woKFwEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_0_uFIEiBEeyBhenFSEKB3w" name="EoM" source="_dwvaMEI4Eey5-bfWf6TPtQ" target="_5Hle8EhsEeyBhenFSEKB3w"/>
       <subvertex xmi:type="uml:State" xmi:id="_dwvaMEI4Eey5-bfWf6TPtQ" name="Train integrity status information management">
         <region xmi:type="uml:Region" xmi:id="_L69ZgEI6Eey5-bfWf6TPtQ" name="Region1">
-          <transition xmi:type="uml:Transition" xmi:id="_mLtUsEh1EeyBhenFSEKB3w" name="Lost_to_TIMSConfirmed" source="_1HmskEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w"/>
-          <transition xmi:type="uml:Transition" xmi:id="_8A6GYEh1EeyBhenFSEKB3w" name="TIMSConfirmed_to_Lost" source="_FLH6kEhzEeyBhenFSEKB3w" target="_1HmskEIwEey5-bfWf6TPtQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_iO4jsEh-EeyBhenFSEKB3w" name="TIMSConfirmed_to_DriverConfirmed" source="_FLH6kEhzEeyBhenFSEKB3w" target="_xJppQEIwEey5-bfWf6TPtQ">
+          <transition xmi:type="uml:Transition" xmi:id="_mLtUsEh1EeyBhenFSEKB3w" name="IntegrityConfirmedByTIMS()" guard="_TZvD4MR-EeyuyfCVbG_SxA" source="_1HmskEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_TZvD4MR-EeyuyfCVbG_SxA" name="[3]">
+              <specification xmi:type="uml:LiteralString" xmi:id="_XXcPkMR-EeyuyfCVbG_SxA" value="(The information &quot;Train integrity confirmed&quot; is received from an external device) AND (valid Train Data is available and has been acknowledged by the RBC) AND (Train Data regarding train length has not changed since the time the train was last known to be integer) AND (the train position is valid and is referred to an LRBG) AND (the train position was valid and was referred to an LRBG at the time the train was last known to be integer) AND (no reverse movement is currently performed nor has been performed since the time the train was last known to be integer) AND (the distance between the min safe rear end at the time the train was last known to be integer and the current estimated train position does not exceed the range of the safe train length information)"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_CEBVQMR-EeyuyfCVbG_SxA" name="status = MonitoringDevice">
+              <language>C</language>
+              <body>status = MonitoringDevice;</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_P5TqEMR-EeyuyfCVbG_SxA" name="integrityConfirmedByTIMS()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_pDMGUK6KEeyNmoFpmwcymA"/>
+            </trigger>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_8A6GYEh1EeyBhenFSEKB3w" name="IntegrityLostByTIMS()" guard="_4GfxoMR8EeyuyfCVbG_SxA" source="_FLH6kEhzEeyBhenFSEKB3w" target="_1HmskEIwEey5-bfWf6TPtQ">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_4GfxoMR8EeyuyfCVbG_SxA" name="VTD is available since the time the train integrity was last known to be lost">
+              <specification xmi:type="uml:LiteralString" xmi:id="_4GfxocR8EeyuyfCVbG_SxA" value="VTD is available since the time the train integrity was last known to be lost"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_A0mjsL-7EeymoeQH_MWpfw" name="status = Lost">
+              <language>C</language>
+              <body>status = Lost ;</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_tv8nAL-6EeymoeQH_MWpfw" name="integrityLostByTIMS ()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_pDMGUK6KEeyNmoFpmwcymA"/>
+            </trigger>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_iO4jsEh-EeyBhenFSEKB3w" name="IntegrityConfirmedByDriver()" guard="_P9IGML-0EeymoeQH_MWpfw" source="_FLH6kEhzEeyBhenFSEKB3w" target="_xJppQEIwEey5-bfWf6TPtQ">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_5nKgAFK2EeyODuBwckM_-w" name="[2]">
               <specification xmi:type="uml:LiteralString" xmi:id="_BncJQFK3EeyODuBwckM_-w" name="[2]" value="(Train is at standstill) AND (valid Train Data is available and has been acknowledged by the RBC) AND (the train integrity is confirmed by the driver) "/>
             </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_P9IGML-0EeymoeQH_MWpfw" name="VTDAcknowledged and  speed = 0">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_P9ItQL-0EeymoeQH_MWpfw" name="VTDstatus">
+                <language>Natural language</language>
+                <body>VTDAcknowledged</body>
+              </specification>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_vMkLcL-5EeymoeQH_MWpfw" name="status = Driver ">
+              <language>C</language>
+              <body>status = Driver ;</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_3FUQYL-5EeymoeQH_MWpfw" name="IntegrityConfirmedByDriver()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_2Bj8EK6cEeysMsIa0aUTrQ"/>
+            </trigger>
           </transition>
-          <transition xmi:type="uml:Transition" xmi:id="_s452YEh-EeyBhenFSEKB3w" name="Lost_To_DriverConfirmed" source="_1HmskEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_wV0pMEh-EeyBhenFSEKB3w" name="TIMSConfirmed_to_NoIntegrity" source="_FLH6kEhzEeyBhenFSEKB3w" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_zSa9MEh-EeyBhenFSEKB3w" name="DriverConfirmed_To_NoIntegrity" source="_xJppQEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_0ErWkFKwEeyODuBwckM_-w" name="NoIntegrity_to_TIMSConfirmed" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w"/>
-          <transition xmi:type="uml:Transition" xmi:id="_3Q6pEFKwEeyODuBwckM_-w" name="NoIntegrity_to_DriverConfirmed" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ">
+          <transition xmi:type="uml:Transition" xmi:id="_s452YEh-EeyBhenFSEKB3w" name="integrityConfirmedByDriver ()" guard="_mXBHEL-5EeymoeQH_MWpfw" source="_1HmskEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_mXBHEL-5EeymoeQH_MWpfw" name="VTDAcknowledged AND speed = 0">
+              <specification xmi:type="uml:LiteralString" xmi:id="_mXBHEb-5EeymoeQH_MWpfw" value="VTDAcknowledged and  speed = 0"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_rrkJ4L-5EeymoeQH_MWpfw" name="status = Driver ">
+              <language>C</language>
+              <body>status = Driver ;</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_4ou10L-3EeymoeQH_MWpfw" name="integrityConfirmedByDriver()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_2Bj8EK6cEeysMsIa0aUTrQ"/>
+            </trigger>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_wV0pMEh-EeyBhenFSEKB3w" name="integrityUnknownCondition()" guard="_yEhZYMSCEeyuyfCVbG_SxA" source="_FLH6kEhzEeyBhenFSEKB3w" target="_7FdLEEIwEey5-bfWf6TPtQ">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_yEhZYMSCEeyuyfCVbG_SxA" name="[1, 5, 7, 8, 9]">
+              <specification xmi:type="uml:LiteralString" xmi:id="_yEhZYcSCEeyuyfCVbG_SxA" value="(No VTD  is available) OR (distance exceeds range) OR (reverse mouvement) OR (Train length changed) OR (TRIGGER)"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_OriZ8MR_EeyuyfCVbG_SxA" name="status = NoInformation ">
+              <language>C</language>
+              <body>status = NoInformation ;</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_TwzjQMSCEeyuyfCVbG_SxA" name="IntegrityUnknownByTIMS()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_pDMGUK6KEeyNmoFpmwcymA"/>
+            </trigger>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_zSa9MEh-EeyBhenFSEKB3w" name="sendTPR()" guard="_PTPY0LvcEeypSKK8Y-1Esw" kind="local" source="_xJppQEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_PTPY0LvcEeypSKK8Y-1Esw" name="Q_LENGTH = MonitoringDevice">
+              <specification xmi:type="uml:InstanceValue" xmi:id="_XfC8oLvcEeypSKK8Y-1Esw" name="Q_LENGTH">
+                <instance xmi:type="uml:EnumerationLiteral" href="trackside_data.uml#_V1SywIsXEeyti_Bx9Y2PIg"/>
+              </specification>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_9c7pILvcEeypSKK8Y-1Esw" name="status = NoInformation">
+              <language>C</language>
+              <body>status = NoInformation ;</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_94M0YLvSEeypSKK8Y-1Esw" name="sendTPR()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_hQVdQKrVEeyYGNlEZZyTmg"/>
+            </trigger>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_0ErWkFKwEeyODuBwckM_-w" name="integrityConfirmedByTIMS()" guard="_pbPosMR9EeyuyfCVbG_SxA" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_pbPosMR9EeyuyfCVbG_SxA" name="[3]">
+              <specification xmi:type="uml:LiteralString" xmi:id="_vqDUUMR9EeyuyfCVbG_SxA" value="(The information &quot;Train integrity confirmed&quot; is received from an external device) AND (valid Train Data is available and has been acknowledged by the RBC) AND (Train Data regarding train length has not changed since the time the train was last known to be integer) AND (the train position is valid and is referred to an LRBG) AND (the train position was valid and was referred to an LRBG at the time the train was last known to be integer) AND (no reverse movement is currently performed nor has been performed since the time the train was last known to be integer) AND (the distance between the min safe rear end at the time the train was last known to be integer and the current estimated train position does not exceed the range of the safe train length information)"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_4tr4AMR9EeyuyfCVbG_SxA" name="status = MonitoringDevice;">
+              <language>C</language>
+              <body>status = MonitoringDevice;</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_QTjykMR9EeyuyfCVbG_SxA" name="integrityConfirmedByTIMS()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_pDMGUK6KEeyNmoFpmwcymA"/>
+            </trigger>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_3Q6pEFKwEeyODuBwckM_-w" name="integrityConfirmedByDriver()" guard="_KG2AkL-6EeymoeQH_MWpfw" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_xJppQEIwEey5-bfWf6TPtQ">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_FJJ4UFK-EeyODuBwckM_-w" name="[2]">
               <specification xmi:type="uml:LiteralString" xmi:id="_FJJ4UVK-EeyODuBwckM_-w" value="[2]"/>
             </ownedRule>
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_KG2AkL-6EeymoeQH_MWpfw" name="VTDAcknowledged and speed = 0">
+              <specification xmi:type="uml:LiteralString" xmi:id="_KG2Akb-6EeymoeQH_MWpfw" value="VTDAcknowledged and  speed = 0"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_dyc3QL-0EeymoeQH_MWpfw" name="status = Driver">
+              <language>C</language>
+              <body>status = Driver ;</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_Hlgl4L-yEeymoeQH_MWpfw" name="integrityConfirmedByDriver()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_2Bj8EK6cEeysMsIa0aUTrQ"/>
+            </trigger>
           </transition>
-          <transition xmi:type="uml:Transition" xmi:id="_7CUBoFKxEeyODuBwckM_-w" name="NoIntegrity_to_Lost" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_1HmskEIwEey5-bfWf6TPtQ"/>
-          <transition xmi:type="uml:Transition" xmi:id="_6rfAkFKyEeyODuBwckM_-w" name="Lost_to_NoIntegrity" source="_1HmskEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
+          <transition xmi:type="uml:Transition" xmi:id="_7CUBoFKxEeyODuBwckM_-w" name="integrityLostByTIMS()" guard="_xVc7oMR8EeyuyfCVbG_SxA" source="_7FdLEEIwEey5-bfWf6TPtQ" target="_1HmskEIwEey5-bfWf6TPtQ">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_xVc7oMR8EeyuyfCVbG_SxA" name="VTD  is available since the time the train integrity was last known to be lost">
+              <specification xmi:type="uml:LiteralString" xmi:id="_xVc7ocR8EeyuyfCVbG_SxA" value="VTD  is available since the time the train integrity was last known to be lost"/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_8nGogL-6EeymoeQH_MWpfw" name="status = Lost">
+              <language>C</language>
+              <body>status = Lost ;</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_pKIScL-6EeymoeQH_MWpfw" name="integrityLostByTIMS()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_pDMGUK6KEeyNmoFpmwcymA"/>
+            </trigger>
+          </transition>
+          <transition xmi:type="uml:Transition" xmi:id="_6rfAkFKyEeyODuBwckM_-w" name="IntegrityUnknownByTIMS()" guard="_6kpkMMR-EeyuyfCVbG_SxA" source="_1HmskEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ">
+            <ownedRule xmi:type="uml:Constraint" xmi:id="_6kpkMMR-EeyuyfCVbG_SxA" name="( No VTD  is available ) OR Trigger">
+              <specification xmi:type="uml:LiteralString" xmi:id="_6kpkMcR-EeyuyfCVbG_SxA" value="No VTD  is available "/>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_EivlAMR_EeyuyfCVbG_SxA" name="status = NoInformation">
+              <language>C</language>
+              <body>status = NoInformation ;</body>
+            </effect>
+            <trigger xmi:type="uml:Trigger" xmi:id="_lXbjEMR_EeyuyfCVbG_SxA" name="IntegrityUnknownByTIMS()">
+              <port xmi:type="uml:Port" href="PerformingRail.uml#_pDMGUK6KEeyNmoFpmwcymA"/>
+            </trigger>
+          </transition>
           <subvertex xmi:type="uml:State" xmi:id="_1HmskEIwEey5-bfWf6TPtQ" name="Train Integrity Lost"/>
           <subvertex xmi:type="uml:State" xmi:id="_7FdLEEIwEey5-bfWf6TPtQ" name="No train integrity information">
             <ownedComment xmi:type="uml:Comment" xmi:id="_dw-LEEI1Eey5-bfWf6TPtQ" annotatedElement="_7FdLEEIwEey5-bfWf6TPtQ">
