@@ -214,6 +214,10 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Gfb3wLQDEeye7ZKlraEFyg" name="Purge"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_He2tYLQDEeye7ZKlraEFyg" name="Cancel"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_QXJGoMVwEey5rJ-BghwSjA" name="ConnectionStatus_Type">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QXJGocVwEey5rJ-BghwSjA" name="connected"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QXJtsMVwEey5rJ-BghwSjA" name="notConnected"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="Trackside">
       <ownedComment xmi:type="uml:Comment" xmi:id="_R4dDYIsPEeyti_Bx9Y2PIg" annotatedElement="_R4aY4InXEeywtu03ZyCfsg">
@@ -431,9 +435,7 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_ixcZ4Iv4EeyIuMpgGOW6ag" name="sessionTimer" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_AY1VgIv5EeyIuMpgGOW6ag" name="connected" visibility="public">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AY1VgIv5EeyIuMpgGOW6ag" name="connections_status" visibility="public" type="_QXJGoMVwEey5rJ-BghwSjA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_I5TE0JPHEeym_Y8iJLDdAA" name="TrainIntegrity">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_rgiWMIsiEeyti_Bx9Y2PIg" name="Q_LENGTH" type="_M6mIoIsXEeyti_Bx9Y2PIg"/>
