@@ -34,6 +34,10 @@
 &#xD;
 The signaller checks that the system or parts of it can be safely reset. The prerequisite is the absence of train movement inside or towards areas under control of the system. She then requests the technician to reset the system.</body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_c5dbIL_zEeyLFuwTX2Xqlg" annotatedElement="_HAqVYBRpEeyQN9odROAPWw">
+        <body>The signaller boots or resets the trackside system with a view to restoring the default, fail-safe state and detecting the field elements.&#xD;
+The reason for initialisation is normally a power cut or other major failure.</body>
+      </ownedComment>
       <ownedBehavior xmi:type="uml:Interaction" xmi:id="_to0JAHICEeyxWaP3DuJUkw" name="TracksideInitialisation_Sequence">
         <ownedComment xmi:type="uml:Comment" xmi:id="_5TP9kHIHEeyxWaP3DuJUkw">
           <body>trains have stopped, points are locked in a known position, TTD status is known.&#xD;
@@ -240,15 +244,22 @@ adjacent systems prevent trains from approaching.</body>
       </include>
       <include xmi:type="uml:Include" xmi:id="_eJcMcE7NEeyTe5jLSF3Q6g" addition="_IvzVYE7NEeyTe5jLSF3Q6g"/>
       <include xmi:type="uml:Include" xmi:id="_hglucE7NEeyTe5jLSF3Q6g" addition="_JCbL4E7MEeyTe5jLSF3Q6g"/>
+      <include xmi:type="uml:Include" xmi:id="_1MtVMLdDEeyRcuh0dwvOFQ" addition="_IvzVYE7NEeyTe5jLSF3Q6g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_JCbL4E7MEeyTe5jLSF3Q6g" name="Detect track assets">
       <ownedComment xmi:type="uml:Comment" xmi:id="_HCyZ8E7NEeyTe5jLSF3Q6g">
         <body>The signalling systems detect the state of track assets, point positions, train detection sections.</body>
       </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_nNoZoL_zEeyLFuwTX2Xqlg" annotatedElement="_JCbL4E7MEeyTe5jLSF3Q6g">
+        <body>Detecting track assets is the process of acquiring the state that track assets report to the signalling system, notably to the interlocking.</body>
+      </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_IvzVYE7NEeyTe5jLSF3Q6g" name="Initialise train positions">
       <ownedComment xmi:type="uml:Comment" xmi:id="_YV7VsE7NEeyTe5jLSF3Q6g">
         <body>The RBC retrieves vital train positions as stored and transmitted by vital onboard units. This subsumes that EVCs, being vital devices, will not report stale or otherwise invalidated train positions.</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_AuchcL_0EeyLFuwTX2Xqlg" annotatedElement="_IvzVYE7NEeyTe5jLSF3Q6g">
+        <body>Trains acquire and report position autonomously. Upon initialisation, the trackside system must acquire train positions in parallel with the detection of track assets. </body>
       </ownedComment>
     </packagedElement>
     <packagedElement xmi:type="uml:Usage" xmi:id="_nA1gYE7MEeyTe5jLSF3Q6g" client="_hi2NsE7MEeyTe5jLSF3Q6g" supplier="_HAqVYBRpEeyQN9odROAPWw">
@@ -262,10 +273,86 @@ adjacent systems prevent trains from approaching.</body>
     <packagedElement xmi:type="uml:Usage" xmi:id="_T-iUIE7MEeyTe5jLSF3Q6g" supplier="_HAqVYBRpEeyQN9odROAPWw">
       <client xmi:type="uml:Actor" href="PerformingRail.uml#_Rn83QE7MEeyTe5jLSF3Q6g"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_hi2NsE7MEeyTe5jLSF3Q6g" name="Signalling technician"/>
-    <packagedElement xmi:type="uml:Association" xmi:id="_afuMYE7QEeyTe5jLSF3Q6g" name="consults driver"/>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_hi2NsE7MEeyTe5jLSF3Q6g" name="Signalling technician">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_UQQ7QL_0EeyLFuwTX2Xqlg" annotatedElement="_hi2NsE7MEeyTe5jLSF3Q6g">
+        <body>The signalling technician is the person responsible for technical operations other than train operations on the signalling system. Not to be confused with a signaller, the person who calls routes and generally ensures correct train operations, and the dispatcher, the person in charge of time tables.</body>
+      </ownedComment>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_afuMYE7QEeyTe5jLSF3Q6g" name="consults driver">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_d9nKUL_0EeyLFuwTX2Xqlg" annotatedElement="_afuMYE7QEeyTe5jLSF3Q6g">
+        <body>consult the driver whether or not the train is stationary and will prevent the train from moving from its current location.</body>
+      </ownedComment>
+    </packagedElement>
     <packagedElement xmi:type="uml:TimeConstraint" xmi:id="_kvb7QHIHEeyxWaP3DuJUkw" name="TimeConstraint to stop" constrainedElement="_T1d_YXIFEeyxWaP3DuJUkw">
       <specification xmi:type="uml:TimeInterval" xmi:id="_kvgzwHIHEeyxWaP3DuJUkw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_JLDvcLdDEeyRcuh0dwvOFQ" client="_HAqVYBRpEeyQN9odROAPWw" supplier="_JCbL4E7MEeyTe5jLSF3Q6g"/>
+    <packagedElement xmi:type="uml:StateMachine" xmi:id="_PEoK4LdDEeyRcuh0dwvOFQ" name="TrackSideInit">
+      <region xmi:type="uml:Region" xmi:id="_TnSdwLdDEeyRcuh0dwvOFQ" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_0NRUoLdHEeyRcuh0dwvOFQ" source="_rsTOkLdGEeyRcuh0dwvOFQ" target="_cPGrULdHEeyRcuh0dwvOFQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_lWxIgLdJEeyRcuh0dwvOFQ" source="_bykLMLdFEeyRcuh0dwvOFQ" target="_rsTOkLdGEeyRcuh0dwvOFQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_wzviILdJEeyRcuh0dwvOFQ" name="reset" source="_HCsC0LdFEeyRcuh0dwvOFQ" target="_bykLMLdFEeyRcuh0dwvOFQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_0uUhULdJEeyRcuh0dwvOFQ" source="_99rM0LdJEeyRcuh0dwvOFQ" target="_zZSBALdJEeyRcuh0dwvOFQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_C2IJgLdKEeyRcuh0dwvOFQ" source="_cPGrULdHEeyRcuh0dwvOFQ" target="_99rM0LdJEeyRcuh0dwvOFQ"/>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_HCsC0LdFEeyRcuh0dwvOFQ" name="poweroff">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_7XcU8LdKEeyRcuh0dwvOFQ">
+            <body>By design, when powered-off or reset the system is in fail-safe state.</body>
+          </ownedComment>
+        </subvertex>
+        <subvertex xmi:type="uml:State" xmi:id="_bykLMLdFEeyRcuh0dwvOFQ" name="SystemBooting">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_NtMWgLdGEeyRcuh0dwvOFQ">
+            <body>Trackside systems are powered and read static configuration and non-volatile stored information</body>
+          </ownedComment>
+        </subvertex>
+        <subvertex xmi:type="uml:State" xmi:id="_rsTOkLdGEeyRcuh0dwvOFQ" name="ReadingConfigurationData">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_Wwz2oLdHEeyRcuh0dwvOFQ">
+            <body>Read the yard's configuration data from non-volatile ROM</body>
+          </ownedComment>
+          <region xmi:type="uml:Region" xmi:id="_VppIULdJEeyRcuh0dwvOFQ" name="Region2">
+            <subvertex xmi:type="uml:State" xmi:id="_VppvZ7dJEeyRcuh0dwvOFQ" name="LoadConfigurationData"/>
+            <subvertex xmi:type="uml:State" xmi:id="_zQicELdGEeyRcuh0dwvOFQ" name="LoadingNonVolatileData">
+              <ownedComment xmi:type="uml:Comment" xmi:id="_Q7WfILdHEeyRcuh0dwvOFQ">
+                <body>read vital data such as temporary speed restrictions and restrictions on signals.</body>
+              </ownedComment>
+            </subvertex>
+          </region>
+        </subvertex>
+        <subvertex xmi:type="uml:State" xmi:id="_cPGrULdHEeyRcuh0dwvOFQ" name="AcquiringState">
+          <region xmi:type="uml:Region" xmi:id="_I7RYQLdJEeyRcuh0dwvOFQ" name="Region1">
+            <subvertex xmi:type="uml:State" xmi:id="_I7SmYLdJEeyRcuh0dwvOFQ" name="DetectingTrackAssets"/>
+            <subvertex xmi:type="uml:State" xmi:id="_PE1-kLdJEeyRcuh0dwvOFQ" name="ReceiveTrainPositions"/>
+          </region>
+        </subvertex>
+        <subvertex xmi:type="uml:FinalState" xmi:id="_zZSBALdJEeyRcuh0dwvOFQ" name="Basta"/>
+        <subvertex xmi:type="uml:State" xmi:id="_99rM0LdJEeyRcuh0dwvOFQ" name="Released"/>
+      </region>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_-YpgULdDEeyRcuh0dwvOFQ" client="_HAqVYBRpEeyQN9odROAPWw">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_VeGpAIAaEeyReZuR5F228A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_DWkL0LdEEeyRcuh0dwvOFQ" client="_IvzVYE7NEeyTe5jLSF3Q6g">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_L2tA4LdEEeyRcuh0dwvOFQ" annotatedElement="_DWkL0LdEEeyRcuh0dwvOFQ">
+        <body>train positions are stored onboard for a limited amount, about 24h, of time.</body>
+      </ownedComment>
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_V7fIkIAaEeyReZuR5F228A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_PXeY8LdEEeyRcuh0dwvOFQ" client="_HAqVYBRpEeyQN9odROAPWw">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_Wx_SwIAaEeyReZuR5F228A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_U511ULdEEeyRcuh0dwvOFQ" client="_JCbL4E7MEeyTe5jLSF3Q6g">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_Wdj64IAaEeyReZuR5F228A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_f_abkLdEEeyRcuh0dwvOFQ" client="_HAqVYBRpEeyQN9odROAPWw">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_WPEy8IAaEeyReZuR5F228A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_i91UgLdEEeyRcuh0dwvOFQ" client="_HAqVYBRpEeyQN9odROAPWw">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_EZLvcIAaEeyReZuR5F228A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Realization" xmi:id="_nPaecLdEEeyRcuh0dwvOFQ" client="_HAqVYBRpEeyQN9odROAPWw">
+      <ownedComment xmi:type="uml:Comment" xmi:id="_0HaEkLdEEeyRcuh0dwvOFQ" annotatedElement="_nPaecLdEEeyRcuh0dwvOFQ">
+        <body>Intransient information such as speed restrictions and rstrictions on signals are stored trackside.</body>
+      </ownedComment>
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_V7fIkIAaEeyReZuR5F228A"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oeficDjZEeyQeMlHlxk6EA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeficTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">

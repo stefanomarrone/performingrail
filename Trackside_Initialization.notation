@@ -58,7 +58,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ulkdcxVCEeyMXOG2LrUsxQ"/>
       </children>
       <element xmi:type="uml:UseCase" href="Track_Status_Management.uml#_F6flQBRuEeyQN9odROAPWw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ulj2YRVCEeyMXOG2LrUsxQ" x="340" y="320"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ulj2YRVCEeyMXOG2LrUsxQ" x="160" y="380"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_vSnwsBVCEeyMXOG2LrUsxQ" type="UseCase_Shape">
       <children xmi:type="notation:DecorationNode" xmi:id="_vSnwshVCEeyMXOG2LrUsxQ" type="UseCase_NameLabel"/>
@@ -71,7 +71,7 @@
         <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vSnwuBVCEeyMXOG2LrUsxQ"/>
       </children>
       <element xmi:type="uml:UseCase" href="Reserved_Status_Management.uml#_Ez5woBRuEeyQN9odROAPWw"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vSnwsRVCEeyMXOG2LrUsxQ" x="560" y="260"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vSnwsRVCEeyMXOG2LrUsxQ" x="700" y="280"/>
     </children>
     <children xmi:type="notation:Shape" xmi:id="_1-5-kIAWEeyQU45H8VK-zg" type="Classifier_SubjectShape">
       <children xmi:type="notation:DecorationNode" xmi:id="_1-7MsIAWEeyQU45H8VK-zg" type="Classifier_NameLabel"/>
@@ -84,37 +84,79 @@
       <element xmi:type="uml:Class" href="PerformingRail.uml#_8YVhsHzoEeyMX6xfbLFcdw"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1-5-kYAWEeyQU45H8VK-zg" x="600" y="160" width="200" height="41"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_zpLlY6YKEeyxKPnEOZQQVQ" type="StereotypeComment">
-      <styles xmi:type="notation:TitleStyle" xmi:id="_zpLlZKYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_zpLlZqYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <children xmi:type="notation:Shape" xmi:id="_FIM-ALdDEeyRcuh0dwvOFQ" type="UseCase_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_FIOzMLdDEeyRcuh0dwvOFQ" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_FIOzMbdDEeyRcuh0dwvOFQ" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_FIOzMrdDEeyRcuh0dwvOFQ" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_FIPaQLdDEeyRcuh0dwvOFQ" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_FIPaQbdDEeyRcuh0dwvOFQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_FIPaQrdDEeyRcuh0dwvOFQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FIPaQ7dDEeyRcuh0dwvOFQ"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="Trackside_Initialization.uml#_JCbL4E7MEeyTe5jLSF3Q6g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FIM-AbdDEeyRcuh0dwvOFQ" x="540" y="380"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_m2xxcLdDEeyRcuh0dwvOFQ" type="Actor_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_m2yYgLdDEeyRcuh0dwvOFQ" type="Actor_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_m2yYgbdDEeyRcuh0dwvOFQ" y="15"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_m2yYgrdDEeyRcuh0dwvOFQ" type="Actor_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_m2yYg7dDEeyRcuh0dwvOFQ" x="20" y="100"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_m2yYhLdDEeyRcuh0dwvOFQ" type="Actor_QualifiedNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_m2yYhbdDEeyRcuh0dwvOFQ" x="20" y="80"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_m2yYhrdDEeyRcuh0dwvOFQ" type="Actor_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_m2yYh7dDEeyRcuh0dwvOFQ" y="15"/>
+      </children>
+      <element xmi:type="uml:Actor" href="Trackside_Initialization.uml#_hi2NsE7MEeyTe5jLSF3Q6g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_m2xxcbdDEeyRcuh0dwvOFQ" x="145" y="184"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_tmGwMLdDEeyRcuh0dwvOFQ" type="UseCase_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_tmGwMrdDEeyRcuh0dwvOFQ" type="UseCase_NameLabel"/>
+      <children xmi:type="notation:DecorationNode" xmi:id="_tmGwM7dDEeyRcuh0dwvOFQ" type="UseCase_FloatingNameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_tmGwNLdDEeyRcuh0dwvOFQ" y="15"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_tmGwNbdDEeyRcuh0dwvOFQ" type="UseCase_ExtensionPointCompartment">
+        <styles xmi:type="notation:SortingStyle" xmi:id="_tmGwNrdDEeyRcuh0dwvOFQ"/>
+        <styles xmi:type="notation:FilteringStyle" xmi:id="_tmGwN7dDEeyRcuh0dwvOFQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tmGwOLdDEeyRcuh0dwvOFQ"/>
+      </children>
+      <element xmi:type="uml:UseCase" href="Trackside_Initialization.uml#_IvzVYE7NEeyTe5jLSF3Q6g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tmGwMbdDEeyRcuh0dwvOFQ" x="340" y="440"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_LGQfQL_zEeyLFuwTX2Xqlg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_LGQfQb_zEeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_LGQfQ7_zEeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="PerformingRail.uml#_wEHq4BIoEeyVOZB09kZL2w"/>
       </styles>
       <element xsi:nil="true"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zpLlZaYKEeyxKPnEOZQQVQ" x="520" y="140"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LGQfQr_zEeyLFuwTX2Xqlg" x="520" y="140"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_zpRsA6YKEeyxKPnEOZQQVQ" type="StereotypeComment">
-      <styles xmi:type="notation:TitleStyle" xmi:id="_zpRsBKYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_zpSTEKYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <children xmi:type="notation:Shape" xmi:id="_LGfv0L_zEeyLFuwTX2Xqlg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_LGfv0b_zEeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_LGfv07_zEeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="PerformingRail.uml#_M__c8BIsEeyVOZB09kZL2w"/>
       </styles>
       <element xsi:nil="true"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zpRsBaYKEeyxKPnEOZQQVQ" x="500" y="240"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LGfv0r_zEeyLFuwTX2Xqlg" x="500" y="240"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_zpaO46YKEeyxKPnEOZQQVQ" type="StereotypeComment">
-      <styles xmi:type="notation:TitleStyle" xmi:id="_zpaO5KYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_zpa18KYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <children xmi:type="notation:Shape" xmi:id="_LGrWA7_zEeyLFuwTX2Xqlg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_LGrWBL_zEeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_LGrWBr_zEeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="PerformingRail.uml#_zC8n8BIyEeyVOZB09kZL2w"/>
       </styles>
       <element xsi:nil="true"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zpaO5aYKEeyxKPnEOZQQVQ" x="680" y="140"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LGrWBb_zEeyLFuwTX2Xqlg" x="680" y="140"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_zpnqQKYKEeyxKPnEOZQQVQ" type="StereotypeComment">
-      <styles xmi:type="notation:TitleStyle" xmi:id="_zpnqQaYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_zpnqQ6YKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <children xmi:type="notation:Shape" xmi:id="_LG70sL_zEeyLFuwTX2Xqlg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_LG70sb_zEeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_LG70s7_zEeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="PerformingRail.uml#_8YVhsHzoEeyMX6xfbLFcdw"/>
       </styles>
       <element xsi:nil="true"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zpnqQqYKEeyxKPnEOZQQVQ" x="800" y="160"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LG70sr_zEeyLFuwTX2Xqlg" x="800" y="160"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_fMVZwRRqEeyQN9odROAPWw" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_fMVZwhRqEeyQN9odROAPWw"/>
@@ -194,7 +236,7 @@
       <styles xmi:type="notation:FontStyle" xmi:id="_G-qvQRVDEeyMXOG2LrUsxQ"/>
       <element xmi:type="uml:Include" href="Trackside_Initialization.uml#_G-iMYBVDEeyMXOG2LrUsxQ"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_G-qvQhVDEeyMXOG2LrUsxQ" points="[500, 259, -643984, -643984]$[700, 440, -643984, -643984]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G-9DIBVDEeyMXOG2LrUsxQ" id="(1.0,0.6833333333333333)"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G-9DIBVDEeyMXOG2LrUsxQ" id="(1.0,0.6666666666666666)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_G-9DIRVDEeyMXOG2LrUsxQ" id="(0.2127659574468085,0.0)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_4FdbYIAWEeyQU45H8VK-zg" type="Association_Edge" source="_1-5-kIAWEeyQU45H8VK-zg" target="_SbrVQBRrEeyQN9odROAPWw">
@@ -212,45 +254,84 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4F7VcIAWEeyQU45H8VK-zg" id="(0.5,1.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_4F7VcYAWEeyQU45H8VK-zg" id="(1.0,0.3)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_zpLlZ6YKEeyxKPnEOZQQVQ" type="StereotypeCommentLink" source="_TsgD8BRrEeyQN9odROAPWw" target="_zpLlY6YKEeyxKPnEOZQQVQ">
-      <styles xmi:type="notation:FontStyle" xmi:id="_zpLlaKYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_zpMMcKYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <edges xmi:type="notation:Connector" xmi:id="_JLLEMLdDEeyRcuh0dwvOFQ" type="Usage_Edge" source="_SbrVQBRrEeyQN9odROAPWw" target="_FIM-ALdDEeyRcuh0dwvOFQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_JLLrQLdDEeyRcuh0dwvOFQ" type="Usage_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_JLLrQbdDEeyRcuh0dwvOFQ" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_JLLrQrdDEeyRcuh0dwvOFQ" type="Usage_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_JLLrQ7dDEeyRcuh0dwvOFQ" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_JLLEMbdDEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Usage" href="Trackside_Initialization.uml#_JLDvcLdDEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JLLEMrdDEeyRcuh0dwvOFQ" points="[500, 257, -643984, -643984]$[620, 380, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JMM-8LdDEeyRcuh0dwvOFQ" id="(0.684931506849315,0.95)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JMM-8bdDEeyRcuh0dwvOFQ" id="(0.5714285714285714,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_pG0hcLdDEeyRcuh0dwvOFQ" type="Usage_Edge" source="_m2xxcLdDEeyRcuh0dwvOFQ" target="_SbrVQBRrEeyQN9odROAPWw">
+      <children xmi:type="notation:DecorationNode" xmi:id="_pG0hc7dDEeyRcuh0dwvOFQ" type="Usage_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_pG0hdLdDEeyRcuh0dwvOFQ" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_pG0hdbdDEeyRcuh0dwvOFQ" type="Usage_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_pG0hdrdDEeyRcuh0dwvOFQ" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_pG0hcbdDEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Usage" href="Trackside_Initialization.uml#_nA1gYE7MEeyTe5jLSF3Q6g"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_pG0hcrdDEeyRcuh0dwvOFQ" points="[175, 220, -643984, -643984]$[440, 203, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pHUQsLdDEeyRcuh0dwvOFQ" id="(1.0,0.72)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_pHUQsbdDEeyRcuh0dwvOFQ" id="(0.136986301369863,0.15)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_1M8lwLdDEeyRcuh0dwvOFQ" type="Include_Edge" source="_SbrVQBRrEeyQN9odROAPWw" target="_tmGwMLdDEeyRcuh0dwvOFQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_1M9M0LdDEeyRcuh0dwvOFQ" type="Include_KeywordLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_1M9M0bdDEeyRcuh0dwvOFQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_1M9M0rdDEeyRcuh0dwvOFQ" type="Include_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_1M9M07dDEeyRcuh0dwvOFQ" y="-20"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_1M8lwbdDEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Include" href="Trackside_Initialization.uml#_1MtVMLdDEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_1M8lwrdDEeyRcuh0dwvOFQ" points="[541, 240, -643984, -643984]$[417, 440, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1NjCsLdDEeyRcuh0dwvOFQ" id="(0.547945205479452,0.9833333333333333)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_1NjCsbdDEeyRcuh0dwvOFQ" id="(0.5032679738562091,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_LGRGUL_zEeyLFuwTX2Xqlg" type="StereotypeCommentLink" source="_TsgD8BRrEeyQN9odROAPWw" target="_LGQfQL_zEeyLFuwTX2Xqlg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_LGRGUb_zEeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_LGRtYL_zEeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="PerformingRail.uml#_wEHq4BIoEeyVOZB09kZL2w"/>
       </styles>
       <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zpLlaaYKEeyxKPnEOZQQVQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zpLlaqYKEeyxKPnEOZQQVQ"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zpLla6YKEeyxKPnEOZQQVQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LGRGUr_zEeyLFuwTX2Xqlg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LGRGU7_zEeyLFuwTX2Xqlg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LGRGVL_zEeyLFuwTX2Xqlg"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_zpSTEaYKEeyxKPnEOZQQVQ" type="StereotypeCommentLink" source="_bb2akBVCEeyMXOG2LrUsxQ" target="_zpRsA6YKEeyxKPnEOZQQVQ">
-      <styles xmi:type="notation:FontStyle" xmi:id="_zpSTEqYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_zpSTFqYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <edges xmi:type="notation:Connector" xmi:id="_LGfv1L_zEeyLFuwTX2Xqlg" type="StereotypeCommentLink" source="_bb2akBVCEeyMXOG2LrUsxQ" target="_LGfv0L_zEeyLFuwTX2Xqlg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_LGfv1b_zEeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_LGfv2b_zEeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="PerformingRail.uml#_M__c8BIsEeyVOZB09kZL2w"/>
       </styles>
       <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zpSTE6YKEeyxKPnEOZQQVQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zpSTFKYKEeyxKPnEOZQQVQ"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zpSTFaYKEeyxKPnEOZQQVQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LGfv1r_zEeyLFuwTX2Xqlg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LGfv17_zEeyLFuwTX2Xqlg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LGfv2L_zEeyLFuwTX2Xqlg"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_zpa18aYKEeyxKPnEOZQQVQ" type="StereotypeCommentLink" source="_cSg80BVCEeyMXOG2LrUsxQ" target="_zpaO46YKEeyxKPnEOZQQVQ">
-      <styles xmi:type="notation:FontStyle" xmi:id="_zpa18qYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_zpa19qYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <edges xmi:type="notation:Connector" xmi:id="_LGrWB7_zEeyLFuwTX2Xqlg" type="StereotypeCommentLink" source="_cSg80BVCEeyMXOG2LrUsxQ" target="_LGrWA7_zEeyLFuwTX2Xqlg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_LGrWCL_zEeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_LGr9Er_zEeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="PerformingRail.uml#_zC8n8BIyEeyVOZB09kZL2w"/>
       </styles>
       <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zpa186YKEeyxKPnEOZQQVQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zpa19KYKEeyxKPnEOZQQVQ"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zpa19aYKEeyxKPnEOZQQVQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LGrWCb_zEeyLFuwTX2Xqlg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LGr9EL_zEeyLFuwTX2Xqlg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LGr9Eb_zEeyLFuwTX2Xqlg"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_zpnqRKYKEeyxKPnEOZQQVQ" type="StereotypeCommentLink" source="_1-5-kIAWEeyQU45H8VK-zg" target="_zpnqQKYKEeyxKPnEOZQQVQ">
-      <styles xmi:type="notation:FontStyle" xmi:id="_zpnqRaYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_zpnqSaYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <edges xmi:type="notation:Connector" xmi:id="_LG70tL_zEeyLFuwTX2Xqlg" type="StereotypeCommentLink" source="_1-5-kIAWEeyQU45H8VK-zg" target="_LG70sL_zEeyLFuwTX2Xqlg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_LG70tb_zEeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_LG8bwL_zEeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="PerformingRail.uml#_8YVhsHzoEeyMX6xfbLFcdw"/>
       </styles>
       <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_zpnqRqYKEeyxKPnEOZQQVQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zpnqR6YKEeyxKPnEOZQQVQ"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_zpnqSKYKEeyxKPnEOZQQVQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LG70tr_zEeyLFuwTX2Xqlg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LG70t7_zEeyLFuwTX2Xqlg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_LG70uL_zEeyLFuwTX2Xqlg"/>
     </edges>
   </notation:Diagram>
   <notation:Diagram xmi:id="_wQbEcHICEeyxWaP3DuJUkw" type="PapyrusUMLSequenceDiagram" name="TracksideInitialisation_SD" measurementUnit="Pixel">
@@ -833,53 +914,68 @@
       <element xmi:type="uml:Class" href="Requirements.uml#_Wx_SwIAaEeyReZuR5F228A"/>
       <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WyRmoYAaEeyReZuR5F228A" x="520" y="320" width="241" height="121"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_z-aOgKYKEeyxKPnEOZQQVQ" type="StereotypeComment">
-      <styles xmi:type="notation:TitleStyle" xmi:id="_z-aOgaYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_z-aOg6YKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <children xmi:type="notation:Shape" xmi:id="_8HKl4LdDEeyRcuh0dwvOFQ" type="NamedElement_DefaultShape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_8HLM8LdDEeyRcuh0dwvOFQ" type="NamedElement_NameLabel"/>
+      <element xmi:type="uml:UseCase" href="Trackside_Initialization.uml#_HAqVYBRpEeyQN9odROAPWw"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8HKl4bdDEeyRcuh0dwvOFQ" x="520" y="580"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_CC_EELdEEeyRcuh0dwvOFQ" type="NamedElement_DefaultShape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_CC_EErdEEeyRcuh0dwvOFQ" type="NamedElement_NameLabel"/>
+      <element xmi:type="uml:UseCase" href="Trackside_Initialization.uml#_IvzVYE7NEeyTe5jLSF3Q6g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CC_EEbdEEeyRcuh0dwvOFQ" x="240" y="560"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_TyoVoLdEEeyRcuh0dwvOFQ" type="NamedElement_DefaultShape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_TyoVordEEeyRcuh0dwvOFQ" type="NamedElement_NameLabel"/>
+      <element xmi:type="uml:UseCase" href="Trackside_Initialization.uml#_JCbL4E7MEeyTe5jLSF3Q6g"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TyoVobdEEeyRcuh0dwvOFQ" x="835" y="552"/>
+    </children>
+    <children xmi:type="notation:Shape" xmi:id="_VXb-sL_0EeyLFuwTX2Xqlg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_VXb-sb_0EeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VXclwL_0EeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="Requirements.uml#_EZLvcIAaEeyReZuR5F228A"/>
       </styles>
       <element xsi:nil="true"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z-aOgqYKEeyxKPnEOZQQVQ" x="740" y="100"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VXb-sr_0EeyLFuwTX2Xqlg" x="740" y="100"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_z-yB86YKEeyxKPnEOZQQVQ" type="StereotypeComment">
-      <styles xmi:type="notation:TitleStyle" xmi:id="_z-yB9KYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_z-yB9qYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <children xmi:type="notation:Shape" xmi:id="_VYIiQL_0EeyLFuwTX2Xqlg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_VYIiQb_0EeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VYJJUL_0EeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="Requirements.uml#_VeGpAIAaEeyReZuR5F228A"/>
       </styles>
       <element xsi:nil="true"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z-yB9aYKEeyxKPnEOZQQVQ" x="360" y="100"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VYIiQr_0EeyLFuwTX2Xqlg" x="360" y="100"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_z_EV2aYKEeyxKPnEOZQQVQ" type="StereotypeComment">
-      <styles xmi:type="notation:TitleStyle" xmi:id="_z_EV2qYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_z_E84KYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <children xmi:type="notation:Shape" xmi:id="_VYyCgL_0EeyLFuwTX2Xqlg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_VYyCgb_0EeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VYypkL_0EeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="Requirements.uml#_V7fIkIAaEeyReZuR5F228A"/>
       </styles>
       <element xsi:nil="true"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z_EV26YKEeyxKPnEOZQQVQ" x="400" y="320"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VYyCgr_0EeyLFuwTX2Xqlg" x="400" y="320"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_z_XQwKYKEeyxKPnEOZQQVQ" type="StereotypeComment">
-      <styles xmi:type="notation:TitleStyle" xmi:id="_z_XQwaYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_z_XQw6YKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <children xmi:type="notation:Shape" xmi:id="_VZQjoL_0EeyLFuwTX2Xqlg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_VZQjob_0EeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VZQjo7_0EeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="Requirements.uml#_WPEy8IAaEeyReZuR5F228A"/>
       </styles>
       <element xsi:nil="true"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z_XQwqYKEeyxKPnEOZQQVQ" x="1160" y="80"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VZQjor_0EeyLFuwTX2Xqlg" x="1160" y="80"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_z_t2EKYKEeyxKPnEOZQQVQ" type="StereotypeComment">
-      <styles xmi:type="notation:TitleStyle" xmi:id="_z_t2EaYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_z_t2E6YKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <children xmi:type="notation:Shape" xmi:id="_VZw58L_0EeyLFuwTX2Xqlg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_VZw58b_0EeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VZw587_0EeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="Requirements.uml#_Wdj64IAaEeyReZuR5F228A"/>
       </styles>
       <element xsi:nil="true"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_z_t2EqYKEeyxKPnEOZQQVQ" x="1140" y="280"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VZw58r_0EeyLFuwTX2Xqlg" x="1140" y="280"/>
     </children>
-    <children xmi:type="notation:Shape" xmi:id="_0AAxAKYKEeyxKPnEOZQQVQ" type="StereotypeComment">
-      <styles xmi:type="notation:TitleStyle" xmi:id="_0AAxAaYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_0AAxA6YKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <children xmi:type="notation:Shape" xmi:id="_VaQpML_0EeyLFuwTX2Xqlg" type="StereotypeComment">
+      <styles xmi:type="notation:TitleStyle" xmi:id="_VaQpMb_0EeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VaQpM7_0EeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="Requirements.uml#_Wx_SwIAaEeyReZuR5F228A"/>
       </styles>
       <element xsi:nil="true"/>
-      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0AAxAqYKEeyxKPnEOZQQVQ" x="720" y="320"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VaQpMr_0EeyLFuwTX2Xqlg" x="720" y="320"/>
     </children>
     <styles xmi:type="notation:StringValueStyle" xmi:id="_PP2XAYAaEeyReZuR5F228A" name="diagram_compatibility_version" stringValue="1.4.0"/>
     <styles xmi:type="notation:DiagramStyle" xmi:id="_PP2XAoAaEeyReZuR5F228A"/>
@@ -922,65 +1018,419 @@
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wifcYIAaEeyReZuR5F228A" id="(1.0,0.5128205128205128)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_wigDcIAaEeyReZuR5F228A" id="(0.0,0.425531914893617)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_z-aOhKYKEeyxKPnEOZQQVQ" type="StereotypeCommentLink" source="_TU8kIIAaEeyReZuR5F228A" target="_z-aOgKYKEeyxKPnEOZQQVQ">
-      <styles xmi:type="notation:FontStyle" xmi:id="_z-aOhaYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_z-aOiaYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <edges xmi:type="notation:Connector" xmi:id="_-YrVgLdDEeyRcuh0dwvOFQ" type="Realization_Edge" source="_8HKl4LdDEeyRcuh0dwvOFQ" target="_VeWgoIAaEeyReZuR5F228A">
+      <children xmi:type="notation:DecorationNode" xmi:id="_-Yr8kLdDEeyRcuh0dwvOFQ" type="Realization_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="__McUwLdDEeyRcuh0dwvOFQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-Yr8kbdDEeyRcuh0dwvOFQ" y="39"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_-Yr8krdDEeyRcuh0dwvOFQ" type="Realization_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="__MsMYLdDEeyRcuh0dwvOFQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_-Yr8k7dDEeyRcuh0dwvOFQ" x="1" y="59"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_-YrVgbdDEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Realization" href="Trackside_Initialization.uml#_-YpgULdDEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-YrVgrdDEeyRcuh0dwvOFQ" points="[280, 625, -643984, -643984]$[280, 221, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-ZspMLdDEeyRcuh0dwvOFQ" id="(0.410958904109589,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_-ZspMbdDEeyRcuh0dwvOFQ" id="(0.5970149253731343,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_DWlZ8LdEEeyRcuh0dwvOFQ" type="Realization_Edge" source="_CC_EELdEEeyRcuh0dwvOFQ" target="_V70fwIAaEeyReZuR5F228A">
+      <children xmi:type="notation:DecorationNode" xmi:id="_DWmBALdEEeyRcuh0dwvOFQ" type="Realization_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DWmBAbdEEeyRcuh0dwvOFQ" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_DWmBArdEEeyRcuh0dwvOFQ" type="Realization_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_DWmBA7dEEeyRcuh0dwvOFQ" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_DWlZ8bdEEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Realization" href="Trackside_Initialization.uml#_DWkL0LdEEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_DWlZ8rdEEeyRcuh0dwvOFQ" points="[393, 600, -643984, -643984]$[300, 421, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DXKowLdEEeyRcuh0dwvOFQ" id="(0.39215686274509803,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_DXKowbdEEeyRcuh0dwvOFQ" id="(0.4975124378109453,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_PXfnELdEEeyRcuh0dwvOFQ" type="Realization_Edge" source="_8HKl4LdDEeyRcuh0dwvOFQ" target="_WyRmoIAaEeyReZuR5F228A">
+      <children xmi:type="notation:DecorationNode" xmi:id="_PXgOILdEEeyRcuh0dwvOFQ" type="Realization_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_QxLW0LdEEeyRcuh0dwvOFQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PXgOIbdEEeyRcuh0dwvOFQ" y="39"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_PXgOIrdEEeyRcuh0dwvOFQ" type="Realization_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_QxYLILdEEeyRcuh0dwvOFQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PXgOI7dEEeyRcuh0dwvOFQ" y="58"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_PXfnEbdEEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Realization" href="Trackside_Initialization.uml#_PXeY8LdEEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PXfnErdEEeyRcuh0dwvOFQ" points="[140, 610, -643984, -643984]$[600, 320, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PYH5MLdEEeyRcuh0dwvOFQ" id="(0.684931506849315,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PYH5MbdEEeyRcuh0dwvOFQ" id="(0.24896265560165975,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_U53qgLdEEeyRcuh0dwvOFQ" type="Realization_Edge" source="_TyoVoLdEEeyRcuh0dwvOFQ" target="_Wdx9UIAaEeyReZuR5F228A">
+      <children xmi:type="notation:DecorationNode" xmi:id="_U53qg7dEEeyRcuh0dwvOFQ" type="Realization_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_U54RkLdEEeyRcuh0dwvOFQ" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_U54RkbdEEeyRcuh0dwvOFQ" type="Realization_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_U54RkrdEEeyRcuh0dwvOFQ" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_U53qgbdEEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Realization" href="Trackside_Initialization.uml#_U511ULdEEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_U53qgrdEEeyRcuh0dwvOFQ" points="[964, 580, -643984, -643984]$[980, 421, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U6brMLdEEeyRcuh0dwvOFQ" id="(0.6589147286821705,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_U6brMbdEEeyRcuh0dwvOFQ" id="(0.16597510373443983,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_f_bCoLdEEeyRcuh0dwvOFQ" type="Realization_Edge" source="_8HKl4LdDEeyRcuh0dwvOFQ" target="_WPTccIAaEeyReZuR5F228A">
+      <children xmi:type="notation:DecorationNode" xmi:id="_f_bpsLdEEeyRcuh0dwvOFQ" type="Realization_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_f_bpsbdEEeyRcuh0dwvOFQ" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_f_bpsrdEEeyRcuh0dwvOFQ" type="Realization_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_f_bps7dEEeyRcuh0dwvOFQ" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_f_bCobdEEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Realization" href="Trackside_Initialization.uml#_f_abkLdEEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_f_bCordEEeyRcuh0dwvOFQ" points="[580, 630, -643984, -643984]$[960, 160, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gAKCcLdEEeyRcuh0dwvOFQ" id="(0.821917808219178,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_gAKCcbdEEeyRcuh0dwvOFQ" id="(0.0,0.5673758865248227)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_i917kLdEEeyRcuh0dwvOFQ" type="Realization_Edge" source="_8HKl4LdDEeyRcuh0dwvOFQ" target="_TU8kIIAaEeyReZuR5F228A">
+      <children xmi:type="notation:DecorationNode" xmi:id="_i92ioLdEEeyRcuh0dwvOFQ" type="Realization_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_i92iobdEEeyRcuh0dwvOFQ" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_i92iordEEeyRcuh0dwvOFQ" type="Realization_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_i92io7dEEeyRcuh0dwvOFQ" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_i917kbdEEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Realization" href="Trackside_Initialization.uml#_i91UgLdEEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_i917krdEEeyRcuh0dwvOFQ" points="[620, 630, -643984, -643984]$[640, 217, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_i-mwkLdEEeyRcuh0dwvOFQ" id="(0.821917808219178,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_i-mwkbdEEeyRcuh0dwvOFQ" id="(0.45871559633027525,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_nPbFgLdEEeyRcuh0dwvOFQ" type="Realization_Edge" source="_8HKl4LdDEeyRcuh0dwvOFQ" target="_V70fwIAaEeyReZuR5F228A">
+      <children xmi:type="notation:DecorationNode" xmi:id="_nPbskLdEEeyRcuh0dwvOFQ" type="Realization_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_nPbskbdEEeyRcuh0dwvOFQ" y="40"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_nPbskrdEEeyRcuh0dwvOFQ" type="Realization_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_nPbsk7dEEeyRcuh0dwvOFQ" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_nPbFgbdEEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Realization" href="Trackside_Initialization.uml#_nPaecLdEEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_nPbFgrdEEeyRcuh0dwvOFQ" points="[620, 630, -643984, -643984]$[320, 421, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nQCwkLdEEeyRcuh0dwvOFQ" id="(0.136986301369863,0.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_nQCwkbdEEeyRcuh0dwvOFQ" id="(0.5970149253731343,1.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_VXclwb_0EeyLFuwTX2Xqlg" type="StereotypeCommentLink" source="_TU8kIIAaEeyReZuR5F228A" target="_VXb-sL_0EeyLFuwTX2Xqlg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_VXclwr_0EeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VXclxr_0EeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="Requirements.uml#_EZLvcIAaEeyReZuR5F228A"/>
       </styles>
       <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_z-aOhqYKEeyxKPnEOZQQVQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z-aOh6YKEeyxKPnEOZQQVQ"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z-aOiKYKEeyxKPnEOZQQVQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VXclw7_0EeyLFuwTX2Xqlg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VXclxL_0EeyLFuwTX2Xqlg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VXclxb_0EeyLFuwTX2Xqlg"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_z-yB96YKEeyxKPnEOZQQVQ" type="StereotypeCommentLink" source="_VeWgoIAaEeyReZuR5F228A" target="_z-yB86YKEeyxKPnEOZQQVQ">
-      <styles xmi:type="notation:FontStyle" xmi:id="_z-yB-KYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_z-ypAaYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <edges xmi:type="notation:Connector" xmi:id="_VYJJUb_0EeyLFuwTX2Xqlg" type="StereotypeCommentLink" source="_VeWgoIAaEeyReZuR5F228A" target="_VYIiQL_0EeyLFuwTX2Xqlg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_VYJJUr_0EeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VYJJVr_0EeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="Requirements.uml#_VeGpAIAaEeyReZuR5F228A"/>
       </styles>
       <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_z-yB-aYKEeyxKPnEOZQQVQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z-yB-qYKEeyxKPnEOZQQVQ"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z-ypAKYKEeyxKPnEOZQQVQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VYJJU7_0EeyLFuwTX2Xqlg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VYJJVL_0EeyLFuwTX2Xqlg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VYJJVb_0EeyLFuwTX2Xqlg"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_z_E84aYKEeyxKPnEOZQQVQ" type="StereotypeCommentLink" source="_V70fwIAaEeyReZuR5F228A" target="_z_EV2aYKEeyxKPnEOZQQVQ">
-      <styles xmi:type="notation:FontStyle" xmi:id="_z_E84qYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_z_E85qYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <edges xmi:type="notation:Connector" xmi:id="_VYypkb_0EeyLFuwTX2Xqlg" type="StereotypeCommentLink" source="_V70fwIAaEeyReZuR5F228A" target="_VYyCgL_0EeyLFuwTX2Xqlg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_VYypkr_0EeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VYyplr_0EeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="Requirements.uml#_V7fIkIAaEeyReZuR5F228A"/>
       </styles>
       <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_z_E846YKEeyxKPnEOZQQVQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z_E85KYKEeyxKPnEOZQQVQ"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z_E85aYKEeyxKPnEOZQQVQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VYypk7_0EeyLFuwTX2Xqlg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VYyplL_0EeyLFuwTX2Xqlg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VYyplb_0EeyLFuwTX2Xqlg"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_z_XQxKYKEeyxKPnEOZQQVQ" type="StereotypeCommentLink" source="_WPTccIAaEeyReZuR5F228A" target="_z_XQwKYKEeyxKPnEOZQQVQ">
-      <styles xmi:type="notation:FontStyle" xmi:id="_z_XQxaYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_z_XQyaYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <edges xmi:type="notation:Connector" xmi:id="_VZQjpL_0EeyLFuwTX2Xqlg" type="StereotypeCommentLink" source="_WPTccIAaEeyReZuR5F228A" target="_VZQjoL_0EeyLFuwTX2Xqlg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_VZQjpb_0EeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VZQjqb_0EeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="Requirements.uml#_WPEy8IAaEeyReZuR5F228A"/>
       </styles>
       <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_z_XQxqYKEeyxKPnEOZQQVQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z_XQx6YKEeyxKPnEOZQQVQ"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z_XQyKYKEeyxKPnEOZQQVQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VZQjpr_0EeyLFuwTX2Xqlg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VZQjp7_0EeyLFuwTX2Xqlg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VZQjqL_0EeyLFuwTX2Xqlg"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_z_t2FKYKEeyxKPnEOZQQVQ" type="StereotypeCommentLink" source="_Wdx9UIAaEeyReZuR5F228A" target="_z_t2EKYKEeyxKPnEOZQQVQ">
-      <styles xmi:type="notation:FontStyle" xmi:id="_z_t2FaYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_z_t2GaYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <edges xmi:type="notation:Connector" xmi:id="_VZw59L_0EeyLFuwTX2Xqlg" type="StereotypeCommentLink" source="_Wdx9UIAaEeyReZuR5F228A" target="_VZw58L_0EeyLFuwTX2Xqlg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_VZw59b_0EeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VZw5-b_0EeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="Requirements.uml#_Wdj64IAaEeyReZuR5F228A"/>
       </styles>
       <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_z_t2FqYKEeyxKPnEOZQQVQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z_t2F6YKEeyxKPnEOZQQVQ"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_z_t2GKYKEeyxKPnEOZQQVQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VZw59r_0EeyLFuwTX2Xqlg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VZw597_0EeyLFuwTX2Xqlg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VZw5-L_0EeyLFuwTX2Xqlg"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_0AAxBKYKEeyxKPnEOZQQVQ" type="StereotypeCommentLink" source="_WyRmoIAaEeyReZuR5F228A" target="_0AAxAKYKEeyxKPnEOZQQVQ">
-      <styles xmi:type="notation:FontStyle" xmi:id="_0AAxBaYKEeyxKPnEOZQQVQ"/>
-      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_0AAxCaYKEeyxKPnEOZQQVQ" name="BASE_ELEMENT">
+    <edges xmi:type="notation:Connector" xmi:id="_VaQpNL_0EeyLFuwTX2Xqlg" type="StereotypeCommentLink" source="_WyRmoIAaEeyReZuR5F228A" target="_VaQpML_0EeyLFuwTX2Xqlg">
+      <styles xmi:type="notation:FontStyle" xmi:id="_VaQpNb_0EeyLFuwTX2Xqlg"/>
+      <styles xmi:type="notation:EObjectValueStyle" xmi:id="_VaQpOb_0EeyLFuwTX2Xqlg" name="BASE_ELEMENT">
         <eObjectValue xmi:type="uml:Class" href="Requirements.uml#_Wx_SwIAaEeyReZuR5F228A"/>
       </styles>
       <element xsi:nil="true"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0AAxBqYKEeyxKPnEOZQQVQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0AAxB6YKEeyxKPnEOZQQVQ"/>
-      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0AAxCKYKEeyxKPnEOZQQVQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VaQpNr_0EeyLFuwTX2Xqlg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VaQpN7_0EeyLFuwTX2Xqlg"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_VaQpOL_0EeyLFuwTX2Xqlg"/>
+    </edges>
+  </notation:Diagram>
+  <notation:Diagram xmi:id="_TnTr4LdDEeyRcuh0dwvOFQ" type="PapyrusUMLStateMachineDiagram" name="TrackInit_SMD" measurementUnit="Pixel">
+    <children xmi:type="notation:Shape" xmi:id="_TnTr4bdDEeyRcuh0dwvOFQ" type="StateMachine_Shape">
+      <children xmi:type="notation:DecorationNode" xmi:id="_TnTr4rdDEeyRcuh0dwvOFQ" type="StateMachine_NameLabel">
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TnTr47dDEeyRcuh0dwvOFQ" width="1091" height="20"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_TnTr5LdDEeyRcuh0dwvOFQ" type="StateMachine_RegionCompartment">
+        <children xmi:type="notation:Shape" xmi:id="_TnTr5bdDEeyRcuh0dwvOFQ" type="Region_Shape">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TnTr5rdDEeyRcuh0dwvOFQ" source="RegionAnnotationKey">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TnTr57dDEeyRcuh0dwvOFQ" key="RegionZoneKey" value=""/>
+          </eAnnotations>
+          <children xmi:type="notation:BasicCompartment" xmi:id="_TnTr6LdDEeyRcuh0dwvOFQ" type="Region_SubvertexCompartment">
+            <children xmi:type="notation:Shape" xmi:id="_HCw7ULdFEeyRcuh0dwvOFQ" type="Pseudostate_InitialShape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_HCxiYLdFEeyRcuh0dwvOFQ" type="Pseudostate_InitialFloatingNameLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_HCxiYbdFEeyRcuh0dwvOFQ" x="25" y="3"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_HCxiYrdFEeyRcuh0dwvOFQ" type="Pseudostate_InitialStereotypeLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_HCxiY7dFEeyRcuh0dwvOFQ" x="25" y="-10"/>
+              </children>
+              <element xmi:type="uml:Pseudostate" href="Trackside_Initialization.uml#_HCsC0LdFEeyRcuh0dwvOFQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HCw7UbdFEeyRcuh0dwvOFQ" x="69" y="30" width="40" height="40"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_bysuELdFEeyRcuh0dwvOFQ" type="State_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_bytVILdFEeyRcuh0dwvOFQ" type="State_NameLabel"/>
+              <children xmi:type="notation:DecorationNode" xmi:id="_bytVIbdFEeyRcuh0dwvOFQ" type="State_FloatingNameLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_bytVIrdFEeyRcuh0dwvOFQ" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_bytVI7dFEeyRcuh0dwvOFQ" type="State_RegionCompartment">
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bytVJLdFEeyRcuh0dwvOFQ"/>
+              </children>
+              <element xmi:type="uml:State" href="Trackside_Initialization.uml#_bykLMLdFEeyRcuh0dwvOFQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_bysuEbdFEeyRcuh0dwvOFQ" x="269" y="30"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_rsYHELdGEeyRcuh0dwvOFQ" type="State_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_rsYHErdGEeyRcuh0dwvOFQ" type="State_NameLabel">
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VppvZrdJEeyRcuh0dwvOFQ" width="340" height="20"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_rsYHE7dGEeyRcuh0dwvOFQ" type="State_FloatingNameLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_rsYHFLdGEeyRcuh0dwvOFQ" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_rsYHFbdGEeyRcuh0dwvOFQ" type="State_RegionCompartment">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Vpn6MLdJEeyRcuh0dwvOFQ" source="PapyrusCSSForceValue">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Vpn6MbdJEeyRcuh0dwvOFQ" key="visible" value="true"/>
+                </eAnnotations>
+                <children xmi:type="notation:Shape" xmi:id="_VppvYLdJEeyRcuh0dwvOFQ" type="Region_Shape">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VppvZLdJEeyRcuh0dwvOFQ" source="RegionAnnotationKey">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VppvZbdJEeyRcuh0dwvOFQ" key="RegionZoneKey" value=""/>
+                  </eAnnotations>
+                  <children xmi:type="notation:BasicCompartment" xmi:id="_VppvYrdJEeyRcuh0dwvOFQ" type="Region_SubvertexCompartment">
+                    <children xmi:type="notation:Shape" xmi:id="_VpqWcLdJEeyRcuh0dwvOFQ" type="State_Shape">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_VpqWcrdJEeyRcuh0dwvOFQ" type="State_NameLabel"/>
+                      <children xmi:type="notation:DecorationNode" xmi:id="_VpqWc7dJEeyRcuh0dwvOFQ" type="State_FloatingNameLabel">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_VpqWdLdJEeyRcuh0dwvOFQ" x="40"/>
+                      </children>
+                      <children xmi:type="notation:BasicCompartment" xmi:id="_VpqWdbdJEeyRcuh0dwvOFQ" type="State_RegionCompartment">
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VpqWdrdJEeyRcuh0dwvOFQ"/>
+                      </children>
+                      <element xmi:type="uml:State" href="Trackside_Initialization.uml#_VppvZ7dJEeyRcuh0dwvOFQ"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VpqWcbdJEeyRcuh0dwvOFQ" x="20" y="20"/>
+                    </children>
+                    <children xmi:type="notation:Shape" xmi:id="_zQnUkLdGEeyRcuh0dwvOFQ" type="State_Shape">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_zQnUkrdGEeyRcuh0dwvOFQ" type="State_NameLabel"/>
+                      <children xmi:type="notation:DecorationNode" xmi:id="_zQnUk7dGEeyRcuh0dwvOFQ" type="State_FloatingNameLabel">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_zQnUlLdGEeyRcuh0dwvOFQ" x="40"/>
+                      </children>
+                      <children xmi:type="notation:BasicCompartment" xmi:id="_zQnUlbdGEeyRcuh0dwvOFQ" type="State_RegionCompartment">
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zQnUlrdGEeyRcuh0dwvOFQ"/>
+                      </children>
+                      <element xmi:type="uml:State" href="Trackside_Initialization.uml#_zQicELdGEeyRcuh0dwvOFQ"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zQnUkbdGEeyRcuh0dwvOFQ" x="179" y="20"/>
+                    </children>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VppvY7dJEeyRcuh0dwvOFQ"/>
+                  </children>
+                  <element xmi:type="uml:Region" href="Trackside_Initialization.uml#_VppIULdJEeyRcuh0dwvOFQ"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VppvYbdJEeyRcuh0dwvOFQ" width="340" height="87"/>
+                </children>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rsYHFrdGEeyRcuh0dwvOFQ" y="20" width="340" height="87"/>
+              </children>
+              <element xmi:type="uml:State" href="Trackside_Initialization.uml#_rsTOkLdGEeyRcuh0dwvOFQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rsYHEbdGEeyRcuh0dwvOFQ" x="149" y="150" width="340" height="107"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_cPP1QLdHEeyRcuh0dwvOFQ" type="State_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_cPP1QrdHEeyRcuh0dwvOFQ" type="State_NameLabel">
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I7R_VrdJEeyRcuh0dwvOFQ" width="340" height="20"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_cPP1Q7dHEeyRcuh0dwvOFQ" type="State_FloatingNameLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_cPP1RLdHEeyRcuh0dwvOFQ" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_cPP1RbdHEeyRcuh0dwvOFQ" type="State_RegionCompartment">
+                <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I7QKILdJEeyRcuh0dwvOFQ" source="PapyrusCSSForceValue">
+                  <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I7QKIbdJEeyRcuh0dwvOFQ" key="visible" value="true"/>
+                </eAnnotations>
+                <children xmi:type="notation:Shape" xmi:id="_I7R_ULdJEeyRcuh0dwvOFQ" type="Region_Shape">
+                  <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I7R_VLdJEeyRcuh0dwvOFQ" source="RegionAnnotationKey">
+                    <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I7R_VbdJEeyRcuh0dwvOFQ" key="RegionZoneKey" value=""/>
+                  </eAnnotations>
+                  <children xmi:type="notation:BasicCompartment" xmi:id="_I7R_UrdJEeyRcuh0dwvOFQ" type="Region_SubvertexCompartment">
+                    <children xmi:type="notation:Shape" xmi:id="_I7TNcLdJEeyRcuh0dwvOFQ" type="State_Shape">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_I7TNcrdJEeyRcuh0dwvOFQ" type="State_NameLabel"/>
+                      <children xmi:type="notation:DecorationNode" xmi:id="_I7TNc7dJEeyRcuh0dwvOFQ" type="State_FloatingNameLabel">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_I7TNdLdJEeyRcuh0dwvOFQ" x="40"/>
+                      </children>
+                      <children xmi:type="notation:BasicCompartment" xmi:id="_I7TNdbdJEeyRcuh0dwvOFQ" type="State_RegionCompartment">
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I7TNdrdJEeyRcuh0dwvOFQ"/>
+                      </children>
+                      <element xmi:type="uml:State" href="Trackside_Initialization.uml#_I7SmYLdJEeyRcuh0dwvOFQ"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I7TNcbdJEeyRcuh0dwvOFQ" x="20" y="20"/>
+                    </children>
+                    <children xmi:type="notation:Shape" xmi:id="_PFFPILdJEeyRcuh0dwvOFQ" type="State_Shape">
+                      <children xmi:type="notation:DecorationNode" xmi:id="_PFFPIrdJEeyRcuh0dwvOFQ" type="State_NameLabel"/>
+                      <children xmi:type="notation:DecorationNode" xmi:id="_PFFPI7dJEeyRcuh0dwvOFQ" type="State_FloatingNameLabel">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_PFFPJLdJEeyRcuh0dwvOFQ" x="40"/>
+                      </children>
+                      <children xmi:type="notation:BasicCompartment" xmi:id="_PFFPJbdJEeyRcuh0dwvOFQ" type="State_RegionCompartment">
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PFFPJrdJEeyRcuh0dwvOFQ"/>
+                      </children>
+                      <element xmi:type="uml:State" href="Trackside_Initialization.uml#_PE1-kLdJEeyRcuh0dwvOFQ"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PFFPIbdJEeyRcuh0dwvOFQ" x="179" y="20"/>
+                    </children>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I7R_U7dJEeyRcuh0dwvOFQ"/>
+                  </children>
+                  <element xmi:type="uml:Region" href="Trackside_Initialization.uml#_I7RYQLdJEeyRcuh0dwvOFQ"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_I7R_UbdJEeyRcuh0dwvOFQ" width="340" height="87"/>
+                </children>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cPP1RrdHEeyRcuh0dwvOFQ" y="20" width="340" height="87"/>
+              </children>
+              <element xmi:type="uml:State" href="Trackside_Initialization.uml#_cPGrULdHEeyRcuh0dwvOFQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_cPP1QbdHEeyRcuh0dwvOFQ" x="149" y="350" width="340" height="107"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_zZaj4LdJEeyRcuh0dwvOFQ" type="FinalState_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_zZaj4rdJEeyRcuh0dwvOFQ" type="FinalState_FloatingNameLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_zZaj47dJEeyRcuh0dwvOFQ" x="25" y="3"/>
+              </children>
+              <children xmi:type="notation:DecorationNode" xmi:id="_zZaj5LdJEeyRcuh0dwvOFQ" type="FinalState_StereotypeLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_zZaj5bdJEeyRcuh0dwvOFQ" x="25" y="-10"/>
+              </children>
+              <element xmi:type="uml:FinalState" href="Trackside_Initialization.uml#_zZSBALdJEeyRcuh0dwvOFQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_zZaj4bdJEeyRcuh0dwvOFQ" x="469" y="510"/>
+            </children>
+            <children xmi:type="notation:Shape" xmi:id="_99zvsLdJEeyRcuh0dwvOFQ" type="State_Shape">
+              <children xmi:type="notation:DecorationNode" xmi:id="_99zvsrdJEeyRcuh0dwvOFQ" type="State_NameLabel"/>
+              <children xmi:type="notation:DecorationNode" xmi:id="_99zvs7dJEeyRcuh0dwvOFQ" type="State_FloatingNameLabel">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_99zvtLdJEeyRcuh0dwvOFQ" x="40"/>
+              </children>
+              <children xmi:type="notation:BasicCompartment" xmi:id="_99zvtbdJEeyRcuh0dwvOFQ" type="State_RegionCompartment">
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_99zvtrdJEeyRcuh0dwvOFQ"/>
+              </children>
+              <element xmi:type="uml:State" href="Trackside_Initialization.uml#_99rM0LdJEeyRcuh0dwvOFQ"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_99zvsbdJEeyRcuh0dwvOFQ" x="289" y="510"/>
+            </children>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TnTr6bdDEeyRcuh0dwvOFQ"/>
+          </children>
+          <element xmi:type="uml:Region" href="Trackside_Initialization.uml#_TnSdwLdDEeyRcuh0dwvOFQ"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TnTr6rdDEeyRcuh0dwvOFQ" width="1091" height="631"/>
+        </children>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TnTr67dDEeyRcuh0dwvOFQ" y="20" width="1091" height="631"/>
+      </children>
+      <children xmi:type="notation:BasicCompartment" xmi:id="_TqHvULdDEeyRcuh0dwvOFQ" type="compartment_shape_display">
+        <styles xmi:type="notation:TitleStyle" xmi:id="_TqHvUbdDEeyRcuh0dwvOFQ"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TqHvUrdDEeyRcuh0dwvOFQ"/>
+      </children>
+      <element xmi:type="uml:StateMachine" href="Trackside_Initialization.uml#_PEoK4LdDEeyRcuh0dwvOFQ"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TnTr7LdDEeyRcuh0dwvOFQ" x="30" y="30" width="1091" height="651"/>
+    </children>
+    <styles xmi:type="notation:StringValueStyle" xmi:id="_TnTr7bdDEeyRcuh0dwvOFQ" name="diagram_compatibility_version" stringValue="1.4.0"/>
+    <styles xmi:type="notation:DiagramStyle" xmi:id="_TnTr7rdDEeyRcuh0dwvOFQ"/>
+    <styles xmi:type="style:PapyrusDiagramStyle" xmi:id="_TnTr77dDEeyRcuh0dwvOFQ" diagramKindId="org.eclipse.papyrus.sysml16.diagram.stateMachine">
+      <owner xmi:type="uml:Package" href="Trackside_Initialization.uml#_sKH5QBVDEeyMXOG2LrUsxQ"/>
+    </styles>
+    <element xmi:type="uml:StateMachine" href="Trackside_Initialization.uml#_PEoK4LdDEeyRcuh0dwvOFQ"/>
+    <edges xmi:type="notation:Connector" xmi:id="_0NhMQLdHEeyRcuh0dwvOFQ" type="Transition_Edge" source="_rsYHELdGEeyRcuh0dwvOFQ" target="_cPP1QLdHEeyRcuh0dwvOFQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_0NhzULdHEeyRcuh0dwvOFQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_3dRs0LdHEeyRcuh0dwvOFQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_0NhzUbdHEeyRcuh0dwvOFQ" x="1" y="18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_0NhzUrdHEeyRcuh0dwvOFQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_3dcE4LdHEeyRcuh0dwvOFQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_0NhzU7dHEeyRcuh0dwvOFQ" y="-19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_0NhzVLdHEeyRcuh0dwvOFQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_3dqHULdHEeyRcuh0dwvOFQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_0NhzVbdHEeyRcuh0dwvOFQ" x="-2" y="57"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_0NhMQbdHEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Transition" href="Trackside_Initialization.uml#_0NRUoLdHEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0NhMQrdHEeyRcuh0dwvOFQ" points="[520, 300, -643984, -643984]$[360, 374, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0N6N0LdHEeyRcuh0dwvOFQ" id="(0.5882352941176471,0.9906542056074766)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0N6N0bdHEeyRcuh0dwvOFQ" id="(0.5882352941176471,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_lW65gLdJEeyRcuh0dwvOFQ" type="Transition_Edge" source="_bysuELdFEeyRcuh0dwvOFQ" target="_rsYHELdGEeyRcuh0dwvOFQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_lW65g7dJEeyRcuh0dwvOFQ" type="Transition_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lW65hLdJEeyRcuh0dwvOFQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_lW65hbdJEeyRcuh0dwvOFQ" type="Transition_GuardLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lW65hrdJEeyRcuh0dwvOFQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_lW65h7dJEeyRcuh0dwvOFQ" type="Transition_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_lW65iLdJEeyRcuh0dwvOFQ" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_lW65gbdJEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Transition" href="Trackside_Initialization.uml#_lWxIgLdJEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lW65grdJEeyRcuh0dwvOFQ" points="[320, 124, -643984, -643984]$[360, 200, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lXcd8LdJEeyRcuh0dwvOFQ" id="(0.6451612903225806,1.0)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lXcd8bdJEeyRcuh0dwvOFQ" id="(0.5294117647058824,0.0)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_wz3d8LdJEeyRcuh0dwvOFQ" type="Transition_Edge" source="_HCw7ULdFEeyRcuh0dwvOFQ" target="_bysuELdFEeyRcuh0dwvOFQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_wz3d87dJEeyRcuh0dwvOFQ" type="Transition_NameLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wz3d9LdJEeyRcuh0dwvOFQ" y="20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_wz3d9bdJEeyRcuh0dwvOFQ" type="Transition_GuardLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wz3d9rdJEeyRcuh0dwvOFQ" y="-20"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_wz3d97dJEeyRcuh0dwvOFQ" type="Transition_StereotypeLabel">
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wz3d-LdJEeyRcuh0dwvOFQ" y="60"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_wz3d8bdJEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Transition" href="Trackside_Initialization.uml#_wzviILdJEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_wz3d8rdJEeyRcuh0dwvOFQ" points="[100, 100, -643984, -643984]$[340, 80, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_w0H8oLdJEeyRcuh0dwvOFQ" id="(0.9,0.5)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_w0H8obdJEeyRcuh0dwvOFQ" id="(0.0,0.45454545454545453)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_0ueSULdJEeyRcuh0dwvOFQ" type="Transition_Edge" source="_99zvsLdJEeyRcuh0dwvOFQ" target="_zZaj4LdJEeyRcuh0dwvOFQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_0ueSU7dJEeyRcuh0dwvOFQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_FpuSgLdKEeyRcuh0dwvOFQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_0ueSVLdJEeyRcuh0dwvOFQ" x="-1" y="19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_0ueSVbdJEeyRcuh0dwvOFQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_Fp7G0LdKEeyRcuh0dwvOFQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_0ueSVrdJEeyRcuh0dwvOFQ" x="1" y="-18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_0ueSV7dJEeyRcuh0dwvOFQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_FqFe4LdKEeyRcuh0dwvOFQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_0ueSWLdJEeyRcuh0dwvOFQ" y="59"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_0ueSUbdJEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Transition" href="Trackside_Initialization.uml#_0uUhULdJEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_0ueSUrdJEeyRcuh0dwvOFQ" points="[520, 420, -643984, -643984]$[700, 478, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0uzpgLdJEeyRcuh0dwvOFQ" id="(0.9830508474576272,0.45454545454545453)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_0uzpgbdJEeyRcuh0dwvOFQ" id="(0.1,0.7)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_C2TvsLdKEeyRcuh0dwvOFQ" type="Transition_Edge" source="_cPP1QLdHEeyRcuh0dwvOFQ" target="_99zvsLdJEeyRcuh0dwvOFQ">
+      <children xmi:type="notation:DecorationNode" xmi:id="_C2UWwLdKEeyRcuh0dwvOFQ" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_D-kYQLdKEeyRcuh0dwvOFQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_C2UWwbdKEeyRcuh0dwvOFQ" x="-1" y="18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_C2UWwrdKEeyRcuh0dwvOFQ" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_D-uJQLdKEeyRcuh0dwvOFQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_C2UWw7dKEeyRcuh0dwvOFQ" y="-19"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_C2UWxLdKEeyRcuh0dwvOFQ" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_D-8LsLdKEeyRcuh0dwvOFQ" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_C2UWxbdKEeyRcuh0dwvOFQ" x="-1" y="58"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_C2TvsbdKEeyRcuh0dwvOFQ"/>
+      <element xmi:type="uml:Transition" href="Trackside_Initialization.uml#_C2IJgLdKEeyRcuh0dwvOFQ"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_C2TvsrdKEeyRcuh0dwvOFQ" points="[520, 420, -643984, -643984]$[346, 560, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_C2pt8LdKEeyRcuh0dwvOFQ" id="(0.47058823529411764,0.9906542056074766)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_C2pt8bdKEeyRcuh0dwvOFQ" id="(0.4406779661016949,0.0)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>
