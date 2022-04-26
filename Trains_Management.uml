@@ -4,64 +4,58 @@
     <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
   </eAnnotations>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Ydk70IRBEeywk-_Gar0q8A" name="Trains Management">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_MrFI0L_DEeyuSf-2jiPPcA" name="NID_ENGINE" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_QOzHML_DEeyuSf-2jiPPcA" name="L_TRAIN" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Tlt_sL_DEeyuSf-2jiPPcA" name="TrainPositionReport" visibility="public">
+      <type xmi:type="uml:Class" href="trackside_data.uml#_pDVx8InYEeywtu03ZyCfsg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_g1t2IL_DEeyuSf-2jiPPcA" name="Confirmed Rear End" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jIH9oL_DEeyuSf-2jiPPcA" name="timestamp" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+    </ownedAttribute>
     <region xmi:type="uml:Region" xmi:id="_aoXYYIRBEeywk-_Gar0q8A" name="Region1">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_5HInsLDSEeyjCNJ57Fq-CA">
-        <body>REQ-TrainLoc-1</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_8QT_ILDSEeyjCNJ57Fq-CA" annotatedElement="_6Y61ILDREeyjCNJ57Fq-CA _BuWxoLDSEeyjCNJ57Fq-CA">
-        <body>REQ-TrainLoc-3&#xD;
-REQ-TrainLoc-4</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_VsC9MLDUEeyjCNJ57Fq-CA" annotatedElement="_KNUiALDSEeyjCNJ57Fq-CA">
-        <body>REQ-TrainLoc-5</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_Z_V-YLDUEeyjCNJ57Fq-CA" annotatedElement="_R4TQsLDSEeyjCNJ57Fq-CA">
-        <body>REQ-TrainLoc-6&#xD;
-</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_13ctsLDUEeyjCNJ57Fq-CA" annotatedElement="_tpiRELDUEeyjCNJ57Fq-CA">
-        <body>REQ-TrainLoc-2&#xD;
-REQ-TrainLoc-11&#xD;
-REQ-TrainLoc-12</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_tzl6ELDWEeyjCNJ57Fq-CA" annotatedElement="_iof6oLDWEeyjCNJ57Fq-CA">
-        <body>REQ-TrainLoc-7</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_tAho8LDXEeyjCNJ57Fq-CA" annotatedElement="_b7ZUALDXEeyjCNJ57Fq-CA">
-        <body>REQ-TrainLoc-8&#xD;
-REQ-TrainLoc-9</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_yaxOoLDYEeyjCNJ57Fq-CA" annotatedElement="_j7Ob4LDYEeyjCNJ57Fq-CA">
-        <body>REQ-TrainLoc-10</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_VBLB8LDZEeyjCNJ57Fq-CA" annotatedElement="_Pz1aYLDZEeyjCNJ57Fq-CA">
-        <body>MovingRail D1.1 Sec.3.6</body>
-      </ownedComment>
-      <ownedComment xmi:type="uml:Comment" xmi:id="_AA2X4LDbEeyjCNJ57Fq-CA" annotatedElement="_5qKioLDaEeyjCNJ57Fq-CA _QvI6ILDbEeyjCNJ57Fq-CA">
-        <body>REQ-TrainLoc-13&#xD;
-REQ-TrainLoc-14</body>
-      </ownedComment>
       <transition xmi:type="uml:Transition" xmi:id="_ohfNcImpEey1ZJA0OWh0IQ" source="_fwRtYIRBEeywk-_Gar0q8A" target="_hu3hAIRBEeywk-_Gar0q8A"/>
-      <transition xmi:type="uml:Transition" xmi:id="_6Y61ILDREeyjCNJ57Fq-CA" name="TrainPositionReport [active engine]/OccupyTSA" source="_hu3hAIRBEeywk-_Gar0q8A" target="_a_xA8LDREeyjCNJ57Fq-CA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_BuWxoLDSEeyjCNJ57Fq-CA" name="[integrity confirmed] /ReleaseTSA" source="_a_xA8LDREeyjCNJ57Fq-CA" target="_Yg5KwLDREeyjCNJ57Fq-CA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_KNUiALDSEeyjCNJ57Fq-CA" name="[train in FS/OS mode &amp;&amp; integrty confirmed by external device] /ReleaseTSA" source="_a_xA8LDREeyjCNJ57Fq-CA" target="_Yg5KwLDREeyjCNJ57Fq-CA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_R4TQsLDSEeyjCNJ57Fq-CA" name="[train in FS/OS mode &amp;&amp; integrity confirmed by driver &amp;&amp; accept TI from driver] /ReleaseTSA" source="_a_xA8LDREeyjCNJ57Fq-CA" target="_Yg5KwLDREeyjCNJ57Fq-CA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_t4PGULDSEeyjCNJ57Fq-CA" name="Communication Timeout /UnknownTSA" source="_hu3hAIRBEeywk-_Gar0q8A" target="_Yg5KwLDREeyjCNJ57Fq-CA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_tpiRELDUEeyjCNJ57Fq-CA" name="[position ok] /Report Location and Status to TMS; store valid information; store timestamp" source="_Yg5KwLDREeyjCNJ57Fq-CA" target="_hgT80LDREeyjCNJ57Fq-CA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_iof6oLDWEeyjCNJ57Fq-CA" name="[CRE in advance of a specified location] /Request TPR" source="_Yg5KwLDREeyjCNJ57Fq-CA" target="_hu3hAIRBEeywk-_Gar0q8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_6Y61ILDREeyjCNJ57Fq-CA" name="TPRReceived() / snd: TSAoccupy() to Track Status manager, TrainPositionReport = PositionReport, snd: locationInfo() to TMS" source="_hu3hAIRBEeywk-_Gar0q8A" target="_a_xA8LDREeyjCNJ57Fq-CA">
+        <effect xmi:type="uml:Activity" xmi:id="_iPYbgLZyEey9vKcVSkVLmQ" name="sendSignal()"/>
+        <trigger xmi:type="uml:Trigger" xmi:id="_I-kekLZyEey9vKcVSkVLmQ" name="TPRReceived()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_hQVdQKrVEeyYGNlEZZyTmg"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_BuWxoLDSEeyjCNJ57Fq-CA" name="[PositionReport.integrityConfSource==MonitoringDevice] / snd: TSArelease() to Track Status manager, TrainIntegrity.integrityWaitTimer=INTEGRITY_WAIT_TIMEOUT" source="_a_xA8LDREeyjCNJ57Fq-CA" target="_Yg5KwLDREeyjCNJ57Fq-CA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_KNUiALDSEeyjCNJ57Fq-CA" name="[(PositionReport.M_MODE==FullSupervision || PositionReport.M_MODE==OnSight) &amp;&amp; PositionReport.integrityConfSource==ExternalDevice] / snd: TSArelease() to Track Status manager, TrainIntegrity.integrityWaitTimer=INTEGRITY_WAIT_TIMEOUT" source="_a_xA8LDREeyjCNJ57Fq-CA" target="_Yg5KwLDREeyjCNJ57Fq-CA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_R4TQsLDSEeyjCNJ57Fq-CA" name="[(PositionReport.M_MODE==FullSupervision || PositionReport.M_MODE==OnSight) &amp;&amp; PositionReport.integrityConfSource==Driver &amp;&amp; accept TI from driver] / snd: TSArelease() to Track Status manager, TrainIntegrity.integrityWaitTimer=INTEGRITY_WAIT_TIMEOUT" source="_a_xA8LDREeyjCNJ57Fq-CA" target="_Yg5KwLDREeyjCNJ57Fq-CA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_iof6oLDWEeyjCNJ57Fq-CA" name="[CRE in advance of a specified location] /request Position Report" source="_Yg5KwLDREeyjCNJ57Fq-CA" target="_hu3hAIRBEeywk-_Gar0q8A"/>
       <transition xmi:type="uml:Transition" xmi:id="_b7ZUALDXEeyjCNJ57Fq-CA" name="[position unexpected or in conflict with other train movements] /Alert TMS" source="_Yg5KwLDREeyjCNJ57Fq-CA" target="_i_eNQIRBEeywk-_Gar0q8A"/>
-      <transition xmi:type="uml:Transition" xmi:id="_j7Ob4LDYEeyjCNJ57Fq-CA" name="TrainPositionReport [Non-Leading or Sleeping engine]" source="_hu3hAIRBEeywk-_Gar0q8A" target="_hu3hAIRBEeywk-_Gar0q8A"/>
-      <transition xmi:type="uml:Transition" xmi:id="_Pz1aYLDZEeyjCNJ57Fq-CA" name="Computed MA /send MA" source="_hgT80LDREeyjCNJ57Fq-CA" target="_hu3hAIRBEeywk-_Gar0q8A"/>
-      <transition xmi:type="uml:Transition" xmi:id="_5qKioLDaEeyjCNJ57Fq-CA" name="Validated Train Data [train length > stored train length] /OccupyTSA" source="_hu3hAIRBEeywk-_Gar0q8A" target="_rWPKALDaEeyjCNJ57Fq-CA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_5qKioLDaEeyjCNJ57Fq-CA" name="VTDReceived() [TrainData.L_TRAIN>L_TRAIN] /snd: dataAck() to Speed Distance supervisor, snd: toTSA_occ() to Track Status manager" source="_hu3hAIRBEeywk-_Gar0q8A" target="_rWPKALDaEeyjCNJ57Fq-CA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_kTHwsLZ5Eey9vKcVSkVLmQ" name="VTDReceived()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_mO2QkKrTEeyYGNlEZZyTmg"/>
+        </trigger>
+      </transition>
       <transition xmi:type="uml:Transition" xmi:id="_QvI6ILDbEeyjCNJ57Fq-CA" name="[extends into a previously Clear area by more than the L3 margin] /Alert TMS" source="_rWPKALDaEeyjCNJ57Fq-CA" target="_hu3hAIRBEeywk-_Gar0q8A"/>
       <transition xmi:type="uml:Transition" xmi:id="_6hO4ELDbEeyjCNJ57Fq-CA" name="[extension ok]" source="_rWPKALDaEeyjCNJ57Fq-CA" target="_hu3hAIRBEeywk-_Gar0q8A"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_fwRtYIRBEeywk-_Gar0q8A" name="initial"/>
-      <subvertex xmi:type="uml:State" xmi:id="_hu3hAIRBEeywk-_Gar0q8A" name="idle"/>
+      <transition xmi:type="uml:Transition" xmi:id="_WQWcsLZ9Eey9vKcVSkVLmQ" name="[position ok]" source="_Yg5KwLDREeyjCNJ57Fq-CA" target="_hu3hAIRBEeywk-_Gar0q8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_wuyWsL-6EeyuSf-2jiPPcA" name="[PositionReport.integrityConfSource==NoInformation || PositionReport.integrityConfSource==Driver &amp;&amp; !accept TI from driver] / snd: TSAunknown() to Track Status manager" source="_a_xA8LDREeyjCNJ57Fq-CA" target="_Yg5KwLDREeyjCNJ57Fq-CA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_jE0roL-7EeyuSf-2jiPPcA" name="TrainIntegrity.integrityWaitTimer==0 / snd: TSAunknown() to Track Status manager" source="_hu3hAIRBEeywk-_Gar0q8A" target="_hu3hAIRBEeywk-_Gar0q8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_UmuN4L-8EeyuSf-2jiPPcA" name="timeout() [CommunicationSession.muteTimer==0] /snd: TSAunknown() to Track Status manager" source="_hu3hAIRBEeywk-_Gar0q8A" target="_RlNA0L_AEeyuSf-2jiPPcA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_KH4ToL_AEeyuSf-2jiPPcA" name="timeout()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_juhjcKuEEey9lovFct_p0Q"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_kpNdQL_AEeyuSf-2jiPPcA" name="VTDReceived() [TrainData.NID_ENGINE=NID_ENGINE &amp;&amp; TrainData.L_TRAIN==L_TRAIN] /snd: TSAoccupy() to Track Status manager, TrainPositionReport = PositionReport" source="_RlNA0L_AEeyuSf-2jiPPcA" target="_hu3hAIRBEeywk-_Gar0q8A"/>
+      <transition xmi:type="uml:Transition" xmi:id="_UyOToMAGEeyuSf-2jiPPcA" name="timeout() [CommunicationSession.sessionTimer==0] /snd: TSArelease() to Track Status manager" source="_RlNA0L_AEeyuSf-2jiPPcA" target="_i_eNQIRBEeywk-_Gar0q8A"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_fwRtYIRBEeywk-_Gar0q8A" name="afterSoM"/>
+      <subvertex xmi:type="uml:State" xmi:id="_hu3hAIRBEeywk-_Gar0q8A" name="waiting"/>
       <subvertex xmi:type="uml:FinalState" xmi:id="_i_eNQIRBEeywk-_Gar0q8A" name="go to a safe state"/>
-      <subvertex xmi:type="uml:State" xmi:id="_Yg5KwLDREeyjCNJ57Fq-CA" name="CRE updated"/>
-      <subvertex xmi:type="uml:State" xmi:id="_a_xA8LDREeyjCNJ57Fq-CA" name="MSFE updated"/>
-      <subvertex xmi:type="uml:State" xmi:id="_hgT80LDREeyjCNJ57Fq-CA" name="wait for MA"/>
-      <subvertex xmi:type="uml:State" xmi:id="_rWPKALDaEeyjCNJ57Fq-CA" name="Train Data received"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Yg5KwLDREeyjCNJ57Fq-CA" name="Confirmed Rear End updated"/>
+      <subvertex xmi:type="uml:State" xmi:id="_a_xA8LDREeyjCNJ57Fq-CA" name="Max Safe Front End updated"/>
+      <subvertex xmi:type="uml:State" xmi:id="_rWPKALDaEeyjCNJ57Fq-CA" name="checking extend of length"/>
+      <subvertex xmi:type="uml:State" xmi:id="_RlNA0L_AEeyuSf-2jiPPcA" name="mute timer expired"/>
     </region>
   </ownedBehavior>
 </uml:UseCase>
