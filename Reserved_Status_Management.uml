@@ -4,15 +4,44 @@
     <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
   </eAnnotations>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_0m7qQFzQEeyXZOuflJ6RTA" name="ReservedStatusManagement">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rSb6kL_tEeyuSf-2jiPPcA" name="extent" visibility="public"/>
     <region xmi:type="uml:Region" xmi:id="_11WlMFzQEeyXZOuflJ6RTA" name="Region1">
       <transition xmi:type="uml:Transition" xmi:id="_gTXN8FzREeyXZOuflJ6RTA" source="_5ZjrwFzQEeyXZOuflJ6RTA" target="_dFyesFzREeyXZOuflJ6RTA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_p8lK8FzREeyXZOuflJ6RTA" name="Remove Reserved Status Area" source="_dFyesFzREeyXZOuflJ6RTA" target="_ondLEFzREeyXZOuflJ6RTA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_tLORMFzREeyXZOuflJ6RTA" name="Reduce Reserved Status Area" source="_dFyesFzREeyXZOuflJ6RTA" target="_dFyesFzREeyXZOuflJ6RTA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_-M0J8FzREeyXZOuflJ6RTA" name="Update Reserved Status Area" source="_dFyesFzREeyXZOuflJ6RTA" target="_dFyesFzREeyXZOuflJ6RTA"/>
-      <transition xmi:type="uml:Transition" xmi:id="_H0FrgImbEey1ZJA0OWh0IQ" name="Extend Reserved Status Area" source="_dFyesFzREeyXZOuflJ6RTA" target="_dFyesFzREeyXZOuflJ6RTA"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_5ZjrwFzQEeyXZOuflJ6RTA" name="initial"/>
-      <subvertex xmi:type="uml:State" xmi:id="_dFyesFzREeyXZOuflJ6RTA" name="ReservedArea"/>
-      <subvertex xmi:type="uml:FinalState" xmi:id="_ondLEFzREeyXZOuflJ6RTA" name="final"/>
+      <transition xmi:type="uml:Transition" xmi:id="_fhAJUL_sEeyuSf-2jiPPcA" name="RSArequest()" source="_dFyesFzREeyXZOuflJ6RTA" target="_TXEyAMALEeyuSf-2jiPPcA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_ph8p0L_sEeyuSf-2jiPPcA" name="RSArequest()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_wGZt4Kq6Eey95JqQZoaUKg"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_UIMokL_tEeyuSf-2jiPPcA" name="RSArelease()" source="_dFyesFzREeyXZOuflJ6RTA" target="_3Rys4MALEeyuSf-2jiPPcA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_bbP_cL_tEeyuSf-2jiPPcA" name="RSArelease()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_IrMgMK4aEeym_qxcLUg2jw"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_cONx0MALEeyuSf-2jiPPcA" name="[continue==true]" source="_TXEyAMALEeyuSf-2jiPPcA" target="_T9WkUMAKEeyuSf-2jiPPcA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_gCAMgMALEeyuSf-2jiPPcA" name="[continue==false] /snd: reportRSA() to Route manager, snd: reportRSA() to TMS" source="_TXEyAMALEeyuSf-2jiPPcA" target="_dFyesFzREeyXZOuflJ6RTA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_-0qocMALEeyuSf-2jiPPcA" name="[continue==false] /snd: reportRSA() to Route manager, snd: reportRSA() to TMS" source="_3Rys4MALEeyuSf-2jiPPcA" target="_dFyesFzREeyXZOuflJ6RTA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_C3aFIMAMEeyuSf-2jiPPcA" name="[continue==true]" source="_3Rys4MALEeyuSf-2jiPPcA" target="_T9WkUMAKEeyuSf-2jiPPcA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_NBKjYMAMEeyuSf-2jiPPcA" name="requestPointNotReserved()" source="_dFyesFzREeyXZOuflJ6RTA" target="_Hul2gMAMEeyuSf-2jiPPcA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_TjUo0MAMEeyuSf-2jiPPcA" name="requestPointNotReserved()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_RI-EoK9VEeykxuC-paboug"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_XL1AkMAMEeyuSf-2jiPPcA" name="/snd: reportPointNotReserved() to Point manager" source="_Hul2gMAMEeyuSf-2jiPPcA" target="_dFyesFzREeyXZOuflJ6RTA"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_5ZjrwFzQEeyXZOuflJ6RTA"/>
+      <subvertex xmi:type="uml:State" xmi:id="_dFyesFzREeyXZOuflJ6RTA" name="idle"/>
+      <subvertex xmi:type="uml:State" xmi:id="_T9WkUMAKEeyuSf-2jiPPcA" name="reservedArea">
+        <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_whOYAMALEeyuSf-2jiPPcA" name="deleted" kind="exitPoint"/>
+        <region xmi:type="uml:Region" xmi:id="_nSHkIMALEeyuSf-2jiPPcA" name="Region1">
+          <transition xmi:type="uml:Transition" xmi:id="_rbdYEMALEeyuSf-2jiPPcA" name="/update extent" source="_nSKAYMALEeyuSf-2jiPPcA" target="_nSKAYMALEeyuSf-2jiPPcA"/>
+          <transition xmi:type="uml:Transition" xmi:id="_yPmlYMALEeyuSf-2jiPPcA" name="[extent==0]" source="_nSKAYMALEeyuSf-2jiPPcA" target="_whOYAMALEeyuSf-2jiPPcA"/>
+          <subvertex xmi:type="uml:State" xmi:id="_nSKAYMALEeyuSf-2jiPPcA" name="reserved"/>
+        </region>
+      </subvertex>
+      <subvertex xmi:type="uml:State" xmi:id="_TXEyAMALEeyuSf-2jiPPcA" name="RSA requested"/>
+      <subvertex xmi:type="uml:State" xmi:id="_3Rys4MALEeyuSf-2jiPPcA" name="RSA released"/>
+      <subvertex xmi:type="uml:State" xmi:id="_Hul2gMAMEeyuSf-2jiPPcA" name="points requested">
+        <doActivity xmi:type="uml:Activity" xmi:id="_d7evcMAMEeyuSf-2jiPPcA" name="compute points location"/>
+      </subvertex>
     </region>
   </ownedBehavior>
 </uml:UseCase>

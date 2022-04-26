@@ -5,20 +5,56 @@
   </eAnnotations>
   <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_BPGSMFLtEeyBXKjrAECXCw" name="RouteManagement">
     <region xmi:type="uml:Region" xmi:id="_DOkPkFLtEeyBXKjrAECXCw" name="Region1">
-      <transition xmi:type="uml:Transition" xmi:id="_HBeEAFLuEeyBXKjrAECXCw" source="_cYtj0FLtEeyBXKjrAECXCw" target="_YBdM0ImtEey1ZJA0OWh0IQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_LJLgQFLuEeyBXKjrAECXCw" name="Release Route" source="_ZF2pEImtEey1ZJA0OWh0IQ" target="_bESEoImtEey1ZJA0OWh0IQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_MMYCoFLuEeyBXKjrAECXCw" name="Lock Route" source="_bESEoImtEey1ZJA0OWh0IQ" target="_ZF2pEImtEey1ZJA0OWh0IQ"/>
-      <transition xmi:type="uml:Transition" xmi:id="_tLzDoImtEey1ZJA0OWh0IQ" name="Cancel Route" source="_YBdM0ImtEey1ZJA0OWh0IQ" target="_djO2MFLtEeyBXKjrAECXCw"/>
-      <subvertex xmi:type="uml:Pseudostate" xmi:id="_cYtj0FLtEeyBXKjrAECXCw"/>
-      <subvertex xmi:type="uml:FinalState" xmi:id="_djO2MFLtEeyBXKjrAECXCw"/>
-      <subvertex xmi:type="uml:State" xmi:id="_YBdM0ImtEey1ZJA0OWh0IQ" name="set">
-        <region xmi:type="uml:Region" xmi:id="_ZF2CAImtEey1ZJA0OWh0IQ" name="Region1">
-          <transition xmi:type="uml:Transition" xmi:id="_mFkLUImuEey1ZJA0OWh0IQ" source="_ihdLYImuEey1ZJA0OWh0IQ" target="_ZF2pEImtEey1ZJA0OWh0IQ"/>
-          <subvertex xmi:type="uml:State" xmi:id="_ZF2pEImtEey1ZJA0OWh0IQ" name="locked"/>
-          <subvertex xmi:type="uml:State" xmi:id="_bESEoImtEey1ZJA0OWh0IQ" name="released"/>
-          <subvertex xmi:type="uml:Pseudostate" xmi:id="_ihdLYImuEey1ZJA0OWh0IQ"/>
-        </region>
-      </subvertex>
+      <transition xmi:type="uml:Transition" xmi:id="_PpGqQL_xEeyuSf-2jiPPcA" source="_cYtj0FLtEeyBXKjrAECXCw" target="_OAd4gL_xEeyuSf-2jiPPcA"/>
+      <transition xmi:type="uml:Transition" xmi:id="_TyN0sL_xEeyuSf-2jiPPcA" name="MArequest() /snd: setPoints() to Points manager, snd: sweepPoints() to Points manager" source="_OAd4gL_xEeyuSf-2jiPPcA" target="_RW2lgL_xEeyuSf-2jiPPcA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_ZOQmoL_xEeyuSf-2jiPPcA" name="MArequest()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_AP714Kq-Eey95JqQZoaUKg"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_B6JKcL_yEeyuSf-2jiPPcA" name="reportPointsStatus() [points set] /snd: RSArequest() to Reserved Status manager, snd: RSArelease() to Reserved Status manager" source="_RW2lgL_xEeyuSf-2jiPPcA" target="_2YwK4L_xEeyuSf-2jiPPcA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_IeYTgL_yEeyuSf-2jiPPcA" name="reportPointsStatus()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_FujuUK56EeyNmoFpmwcymA"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_ddjcIL_yEeyuSf-2jiPPcA" name="reportPointsStatus() [points not set]" source="_RW2lgL_xEeyuSf-2jiPPcA" target="_bA4lYL_yEeyuSf-2jiPPcA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_jI_8AL_yEeyuSf-2jiPPcA" name="reportPointsStatus()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_FujuUK56EeyNmoFpmwcymA"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_CytUsL_zEeyuSf-2jiPPcA" name="reportRSA() [RSA ok] /snd: routeExtension to MA manager, snd: routeRestriction to MA manager" source="_2YwK4L_xEeyuSf-2jiPPcA" target="_17ntgL_yEeyuSf-2jiPPcA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_PckiwL_0EeyuSf-2jiPPcA" name="reportRSA()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_1zuyMKq8Eey95JqQZoaUKg"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_o-Q0UL_0EeyuSf-2jiPPcA" name="occupyTSA()" source="_17ntgL_yEeyuSf-2jiPPcA" target="_42l-8L_0EeyuSf-2jiPPcA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_VEZ4gL_1EeyuSf-2jiPPcA" name="occupyTSA()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_7pUU8K5_EeyNmoFpmwcymA"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_Zf2JEL_1EeyuSf-2jiPPcA" name="occupyTSA()" kind="local" source="_42l-8L_0EeyuSf-2jiPPcA" target="_42l-8L_0EeyuSf-2jiPPcA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_p9kfwL_1EeyuSf-2jiPPcA" name="occupyTSA()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_7pUU8K5_EeyNmoFpmwcymA"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_ef6wsL_1EeyuSf-2jiPPcA" name="TSArelease() [TSA deleted]" source="_42l-8L_0EeyuSf-2jiPPcA" target="_HyBnAL_2EeyuSf-2jiPPcA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_kqUdcL_1EeyuSf-2jiPPcA" name="TSArelease()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_38VF0K5_EeyNmoFpmwcymA"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_xZxLkL_1EeyuSf-2jiPPcA" name="TSArelease() [TSA !deleted]" source="_42l-8L_0EeyuSf-2jiPPcA" target="_42l-8L_0EeyuSf-2jiPPcA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_00V1AL_1EeyuSf-2jiPPcA" name="TSArelease()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_38VF0K5_EeyNmoFpmwcymA"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_Radg4L_2EeyuSf-2jiPPcA" name="reportRSA() [RSA not ok] " source="_2YwK4L_xEeyuSf-2jiPPcA" target="_bA4lYL_yEeyuSf-2jiPPcA"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_cYtj0FLtEeyBXKjrAECXCw" name="initial"/>
+      <subvertex xmi:type="uml:State" xmi:id="_OAd4gL_xEeyuSf-2jiPPcA" name="idle"/>
+      <subvertex xmi:type="uml:State" xmi:id="_RW2lgL_xEeyuSf-2jiPPcA" name="setPoints"/>
+      <subvertex xmi:type="uml:State" xmi:id="_2YwK4L_xEeyuSf-2jiPPcA" name="routeSet"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_bA4lYL_yEeyuSf-2jiPPcA" name="abort"/>
+      <subvertex xmi:type="uml:State" xmi:id="_17ntgL_yEeyuSf-2jiPPcA" name="routeReserved"/>
+      <subvertex xmi:type="uml:State" xmi:id="_42l-8L_0EeyuSf-2jiPPcA" name="routeLocked"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_HyBnAL_2EeyuSf-2jiPPcA" name="routeReleased"/>
     </region>
   </ownedBehavior>
 </uml:UseCase>
