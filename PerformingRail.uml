@@ -17,7 +17,9 @@
           <generalization xmi:type="uml:Generalization" xmi:id="_Mym5gBIyEeyVOZB09kZL2w" general="_9n0ZEBIrEeyVOZB09kZL2w"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_loElIK6cEeysMsIa0aUTrQ" name="sendingActions" aggregation="composite"/>
           <ownedAttribute xmi:type="uml:Port" xmi:id="_l9W4oK6cEeysMsIa0aUTrQ" name="integrity" type="_HGZ1wK6gEeysMsIa0aUTrQ" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_gDVmoMB2EeyXl9rAGjiEJA" name="speedSupervision" type="_YhcbIMB5EeyXl9rAGjiEJA" aggregation="composite"/>
           <nestedClassifier xmi:type="uml:Signal" xmi:id="_HGZ1wK6gEeysMsIa0aUTrQ" name="integrityInfoRecv"/>
+          <nestedClassifier xmi:type="uml:Signal" xmi:id="_YhcbIMB5EeyXl9rAGjiEJA" name="speedSupervision"/>
         </nestedClassifier>
         <nestedClassifier xmi:type="uml:Class" xmi:id="_wEHq4BIoEeyVOZB09kZL2w" name="Dispatcher">
           <ownedComment xmi:type="uml:Comment" xmi:id="_yV0M4E7SEeyTe5jLSF3Q6g">
@@ -94,7 +96,7 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_9X6ygK6EEeyNmoFpmwcymA" name="locationInfo" aggregation="composite"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_QURPMKtNEey01sp69YXD8w" name="TPRReceived"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_e0O4sKtNEey01sp69YXD8w" name="VTDReceived"/>
-              <nestedClassifier xmi:type="uml:Signal" xmi:id="_F_5pgK4YEeym_qxcLUg2jw" name="commTimeout"/>
+              <nestedClassifier xmi:type="uml:Signal" xmi:id="_F_5pgK4YEeym_qxcLUg2jw" name="timeoutEvent"/>
             </nestedClassifier>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_KC8o4KqOEeyJ1d4TAHIvQg" name="MA manager">
               <ownedUseCase xmi:type="uml:UseCase" href="MA_Management.uml#_INRgMBRuEeyQN9odROAPWw"/>
@@ -118,6 +120,7 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_DoDNcK59EeyNmoFpmwcymA" name="setPoint" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_38VF0K5_EeyNmoFpmwcymA" name="releaseTA" type="_jM5-gK6BEeyNmoFpmwcymA" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_7pUU8K5_EeyNmoFpmwcymA" name="occupation" type="_n2QIMK6BEeyNmoFpmwcymA" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_m5Wa4LggEeyKqK6Ed8IFdQ" name="seepingarea" aggregation="composite"/>
               <nestedClassifier xmi:type="uml:UseCase" href="Route_Management.uml#_5YQMsBRtEeyQN9odROAPWw"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_PkQxAKq9Eey95JqQZoaUKg" name="reportRSA"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_c2PAkKrBEey95JqQZoaUKg" name="MArequest"/>
@@ -223,10 +226,13 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_a8gfgK6KEeyNmoFpmwcymA" name="data" type="_hHVPwK6aEeysMsIa0aUTrQ" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_ZiDYoLGIEey0QOTMOj7Mdg" name="profile" type="_8WlcoLGKEey0QOTMOj7Mdg" aggregation="composite"/>
               <ownedAttribute xmi:type="uml:Port" xmi:id="_H5ao0LGaEeyfjpe2nC8Faw" name="recvPositionSpeed" type="_8qxlILGkEeyAy7hsZQgbmA" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_XRs-MLmtEeyZl7uuf1TJBA" name="endofmission" type="_o17C4LmtEeyZl7uuf1TJBA" aggregation="composite"/>
+              <ownedAttribute xmi:type="uml:Port" xmi:id="_faO_QMB2EeyXl9rAGjiEJA" name="informationToDriver" aggregation="composite"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_lqbUcKtNEey01sp69YXD8w" name="VTDAcknowledged"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_hHVPwK6aEeysMsIa0aUTrQ" name="trainData"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_8WlcoLGKEey0QOTMOj7Mdg" name="newCurve"/>
               <nestedClassifier xmi:type="uml:Signal" xmi:id="_8qxlILGkEeyAy7hsZQgbmA" name="receivingSpeedDistance"/>
+              <nestedClassifier xmi:type="uml:Signal" xmi:id="_o17C4LmtEeyZl7uuf1TJBA" name="EoM"/>
             </nestedClassifier>
             <nestedClassifier xmi:type="uml:Class" xmi:id="_Myuo4qqOEeyJ1d4TAHIvQg" name="Integrity Information manager">
               <ownedUseCase xmi:type="uml:UseCase" href="Integration_Information_Management.uml#_jD9zcDjZEeyQeMlHlxk6EA"/>
@@ -363,23 +369,20 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_COMu0Kq9Eey95JqQZoaUKg" name="ItemFlow7" informationSource="_0EoMEKq8Eey95JqQZoaUKg" informationTarget="_1zuyMKq8Eey95JqQZoaUKg">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_KSN1wIqWEeyM8dFJdTQLEQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_GO_1UKq-Eey95JqQZoaUKg" name="ItemFlow8" informationSource="_lsd-QKq9Eey95JqQZoaUKg" informationTarget="_AP714Kq-Eey95JqQZoaUKg">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_GO_1UKq-Eey95JqQZoaUKg" name="TMS_Route_marequest" informationSource="_lsd-QKq9Eey95JqQZoaUKg" informationTarget="_AP714Kq-Eey95JqQZoaUKg">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_R4aY4InXEeywtu03ZyCfsg"/>
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_0-nxUI_wEeyS0JpgfPwLfg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_bYMcoKq-Eey95JqQZoaUKg" name="ItemFlow9"/>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_x2EicKq_Eey95JqQZoaUKg" name="ItemFlow10" informationSource="_zstwcKq-Eey95JqQZoaUKg" informationTarget="_z-7h0Kq-Eey95JqQZoaUKg">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_OempwIquEey_E5TpwM1pKA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_9MS-YKrAEey95JqQZoaUKg" name="ItemFlow11" informationSource="_2aHx4Kq-Eey95JqQZoaUKg" informationTarget="_2DASYKq-Eey95JqQZoaUKg">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_9MS-YKrAEey95JqQZoaUKg" name="TSA2TMS" informationSource="_2aHx4Kq-Eey95JqQZoaUKg" informationTarget="_2DASYKq-Eey95JqQZoaUKg">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_QVt8gE6OEeyaL75nPQZQGA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_75avUKrCEey95JqQZoaUKg" name="ItemFlow12" informationSource="_r6B6cKrCEey95JqQZoaUKg" informationTarget="_sv06AKrCEey95JqQZoaUKg">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_75avUKrCEey95JqQZoaUKg" name="maextension" informationSource="_r6B6cKrCEey95JqQZoaUKg" informationTarget="_sv06AKrCEey95JqQZoaUKg">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_0-nxUI_wEeyS0JpgfPwLfg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_78sAkKrUEeyYGNlEZZyTmg" name="ItemFlow14" informationSource="_hX03QKrTEeyYGNlEZZyTmg" informationTarget="_tZerQKrTEeyYGNlEZZyTmg">
-        <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_78sAkKrUEeyYGNlEZZyTmg" name="ItemFlow14" informationSource="_hX03QKrTEeyYGNlEZZyTmg" informationTarget="_tZerQKrTEeyYGNlEZZyTmg"/>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_AD-mEKrVEeyYGNlEZZyTmg" name="ItemFlow15" informationSource="_qdmI8KrTEeyYGNlEZZyTmg" informationTarget="_mO2QkKrTEeyYGNlEZZyTmg">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_cwHsEKtyEey9lovFct_p0Q"/>
       </packagedElement>
@@ -392,7 +395,9 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_nVBjkKrVEeyYGNlEZZyTmg" name="ItemFlow18" informationSource="_WzsxMKrTEeyYGNlEZZyTmg" informationTarget="_hQVdQKrVEeyYGNlEZZyTmg">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_KgZJEKtuEey9lovFct_p0Q"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_lMB0gKuKEey9lovFct_p0Q" name="ItemFlow19" informationSource="_Dox0cKrTEeyYGNlEZZyTmg" informationTarget="_juhjcKuEEey9lovFct_p0Q"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_lMB0gKuKEey9lovFct_p0Q" name="ItemFlow19" informationSource="_Dox0cKrTEeyYGNlEZZyTmg" informationTarget="_juhjcKuEEey9lovFct_p0Q">
+        <conveyed xmi:type="uml:Class" href="trackside_data.uml#_R4aY4InXEeywtu03ZyCfsg"/>
+      </packagedElement>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_MxQv8K4VEeym_qxcLUg2jw" name="ItemFlow20" informationSource="_Gc9gUK4VEeym_qxcLUg2jw" informationTarget="_Jbnp0K4VEeym_qxcLUg2jw">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_QVt8gE6OEeyaL75nPQZQGA"/>
       </packagedElement>
@@ -408,16 +413,16 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_vGU7oK4VEeym_qxcLUg2jw" name="ItemFlow24" informationSource="_XjvbEK4VEeym_qxcLUg2jw" informationTarget="_lsEnsK4VEeym_qxcLUg2jw">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_IuXHEKLkEey9xcG6n6eidg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_r6Z1YK4ZEeym_qxcLUg2jw" name="ItemFlow25" informationSource="_U84wwK4ZEeym_qxcLUg2jw" informationTarget="_39__kK4YEeym_qxcLUg2jw">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_r6Z1YK4ZEeym_qxcLUg2jw" name="marestriction" informationSource="_U84wwK4ZEeym_qxcLUg2jw" informationTarget="_39__kK4YEeym_qxcLUg2jw">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_0-nxUI_wEeyS0JpgfPwLfg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_QeD_kK4aEeym_qxcLUg2jw" name="ItemFlow26" informationSource="_5AQGwK4YEeym_qxcLUg2jw" informationTarget="_IrMgMK4aEeym_qxcLUg2jw">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_G8Qn4E6QEeyaL75nPQZQGA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_ZrUQUK59EeyNmoFpmwcymA" name="ItemFlow27" informationSource="_GaV2QK56EeyNmoFpmwcymA" informationTarget="_2spsUKq-Eey95JqQZoaUKg">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_ZrUQUK59EeyNmoFpmwcymA" name="Points_Track_requestpointstatus" informationSource="_GaV2QK56EeyNmoFpmwcymA" informationTarget="_2spsUKq-Eey95JqQZoaUKg">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_xDHRIJAIEeyJ-qH-XxM-4g"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_aZascK59EeyNmoFpmwcymA" name="ItemFlow28" informationSource="_XYaZkK59EeyNmoFpmwcymA" informationTarget="_GDutEK56EeyNmoFpmwcymA">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_aZascK59EeyNmoFpmwcymA" name="reportingTSA_point" informationSource="_XYaZkK59EeyNmoFpmwcymA" informationTarget="_GDutEK56EeyNmoFpmwcymA">
         <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
       </packagedElement>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_a92PMK59EeyNmoFpmwcymA" name="ItemFlow29" informationSource="_DoDNcK59EeyNmoFpmwcymA" informationTarget="_GztYgK56EeyNmoFpmwcymA">
@@ -435,7 +440,7 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_QngmIK6AEeyNmoFpmwcymA" name="ItemFlow33" informationSource="_w6RYUK5_EeyNmoFpmwcymA" informationTarget="_7pUU8K5_EeyNmoFpmwcymA">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_QVt8gE6OEeyaL75nPQZQGA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_QRYL0K6FEeyNmoFpmwcymA" name="ItemFlow34" informationSource="_9X6ygK6EEeyNmoFpmwcymA" informationTarget="_-T4EcK6EEeyNmoFpmwcymA">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_QRYL0K6FEeyNmoFpmwcymA" name="location2TMS" informationSource="_9X6ygK6EEeyNmoFpmwcymA" informationTarget="_-T4EcK6EEeyNmoFpmwcymA">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_IuXHEKLkEey9xcG6n6eidg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_SS1tQK6FEeyNmoFpmwcymA" name="ItemFlow35" informationSource="_0o99UKq-Eey95JqQZoaUKg" informationTarget="_0cZB8K6EEeyNmoFpmwcymA">
@@ -447,28 +452,28 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_TW4kMK6FEeyNmoFpmwcymA" name="tempShunting" informationSource="_7LEYYKq-Eey95JqQZoaUKg" informationTarget="_1K3RgK6EEeyNmoFpmwcymA">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_b2jF0IqvEey_E5TpwM1pKA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_spoBgK6KEeyNmoFpmwcymA" name="ItemFlow38" informationSource="_oqn1UK6KEeyNmoFpmwcymA" informationTarget="_pDMGUK6KEeyNmoFpmwcymA">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_spoBgK6KEeyNmoFpmwcymA" name="TIMSupdate" informationSource="_oqn1UK6KEeyNmoFpmwcymA" informationTarget="_pDMGUK6KEeyNmoFpmwcymA">
         <conveyed xmi:type="uml:PrimitiveType" href="trackside_data.uml#_3DbG4K6KEeyNmoFpmwcymA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_R_9A8K6aEeysMsIa0aUTrQ" name="ItemFlow39" informationSource="_adSz8K6KEeyNmoFpmwcymA" informationTarget="_QmkmcK6KEeyNmoFpmwcymA">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_R_9A8K6aEeysMsIa0aUTrQ" name="traincommands" informationSource="_adSz8K6KEeyNmoFpmwcymA" informationTarget="_QmkmcK6KEeyNmoFpmwcymA">
         <conveyed xmi:type="uml:PrimitiveType" href="trackside_data.uml#_RhIcIK6IEeyNmoFpmwcymA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_SinCEK6aEeysMsIa0aUTrQ" name="ItemFlow40" informationSource="_RAVxUK6KEeyNmoFpmwcymA" informationTarget="_a8gfgK6KEeyNmoFpmwcymA">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_SinCEK6aEeysMsIa0aUTrQ" name="traindata_to_SDS" informationSource="_RAVxUK6KEeyNmoFpmwcymA" informationTarget="_a8gfgK6KEeyNmoFpmwcymA">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_gQQBUK6bEeysMsIa0aUTrQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="__SFsQK6cEeysMsIa0aUTrQ" name="ItemFlow41" informationSource="_lR8kIK6cEeysMsIa0aUTrQ" informationTarget="_l9W4oK6cEeysMsIa0aUTrQ">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="__SFsQK6cEeysMsIa0aUTrQ" name="integrityFeedback" informationSource="_lR8kIK6cEeysMsIa0aUTrQ" informationTarget="_l9W4oK6cEeysMsIa0aUTrQ">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_Pb-F0JQCEey49-7YVLx_Pw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="__4JmsK6cEeysMsIa0aUTrQ" name="ItemFlow42" informationSource="_loElIK6cEeysMsIa0aUTrQ" informationTarget="_2Bj8EK6cEeysMsIa0aUTrQ">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="__4JmsK6cEeysMsIa0aUTrQ" name="integrityConfirmation" informationSource="_loElIK6cEeysMsIa0aUTrQ" informationTarget="_2Bj8EK6cEeysMsIa0aUTrQ">
         <conveyed xmi:type="uml:Enumeration" href="trackside_data.uml#_Eh9_kK6fEeysMsIa0aUTrQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_AdTiMK6dEeysMsIa0aUTrQ" name="ItemFlow43" informationSource="_lR8kIK6cEeysMsIa0aUTrQ" informationTarget="_3fyNkK6cEeysMsIa0aUTrQ">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_AdTiMK6dEeysMsIa0aUTrQ" name="integrityToTPR" informationSource="_lR8kIK6cEeysMsIa0aUTrQ" informationTarget="_3fyNkK6cEeysMsIa0aUTrQ">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_Pb-F0JQCEey49-7YVLx_Pw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_AZzRQK9YEeykxuC-paboug" name="ItemFlow44" informationSource="_Mh39sK9VEeykxuC-paboug" informationTarget="_RhQBwK9VEeykxuC-paboug">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_AZzRQK9YEeykxuC-paboug" name="reportingRSA_point" informationSource="_Mh39sK9VEeykxuC-paboug" informationTarget="_RhQBwK9VEeykxuC-paboug">
         <conveyed xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_BJ21MK9YEeykxuC-paboug" name="ItemFlow45" informationSource="_GaV2QK56EeyNmoFpmwcymA" informationTarget="_RI-EoK9VEeykxuC-paboug">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_BJ21MK9YEeykxuC-paboug" name="Points_Reserved_requestingpointstatus" informationSource="_GaV2QK56EeyNmoFpmwcymA" informationTarget="_RI-EoK9VEeykxuC-paboug">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_xDHRIJAIEeyJ-qH-XxM-4g"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_Zj4P8LEMEeyVGPyNAHP5Cw" memberEnd="_Zj8hYLEMEeyVGPyNAHP5Cw _Zj9vgLEMEeyVGPyNAHP5Cw">
@@ -485,41 +490,48 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
         <ownedEnd xmi:type="uml:Property" xmi:id="_eQYbUrEMEeyVGPyNAHP5Cw" name="etcs on board" type="_fF5jUBI1EeyVOZB09kZL2w" association="_eQXNMLEMEeyVGPyNAHP5Cw"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_eQZpcLEMEeyVGPyNAHP5Cw" name="vbts" type="_SyI2YLEMEeyVGPyNAHP5Cw" association="_eQXNMLEMEeyVGPyNAHP5Cw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_SH-wkLGEEey0QOTMOj7Mdg" name="ItemFlow48" informationSource="_RdEO8LEOEeyVGPyNAHP5Cw" informationTarget="_VE_X4LEOEeyVGPyNAHP5Cw">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_SH-wkLGEEey0QOTMOj7Mdg" name="locationUpdate" informationSource="_RdEO8LEOEeyVGPyNAHP5Cw" informationTarget="_VE_X4LEOEeyVGPyNAHP5Cw">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_vt5skLGEEey0QOTMOj7Mdg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_S3fh8LGEEey0QOTMOj7Mdg" name="ItemFlow49" informationSource="_Ume28LEOEeyVGPyNAHP5Cw" informationTarget="_SeUQkLEOEeyVGPyNAHP5Cw"/>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_2aYrULGHEey0QOTMOj7Mdg" name="ItemFlow50" informationSource="_typo8KrCEey95JqQZoaUKg" informationTarget="_smVXULGHEey0QOTMOj7Mdg">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_S3fh8LGEEey0QOTMOj7Mdg" name="locationRequest" informationSource="_Ume28LEOEeyVGPyNAHP5Cw" informationTarget="_SeUQkLEOEeyVGPyNAHP5Cw"/>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_2aYrULGHEey0QOTMOj7Mdg" name="sendingMAtoTrain" informationSource="_typo8KrCEey95JqQZoaUKg" informationTarget="_smVXULGHEey0QOTMOj7Mdg">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_vHEbEJQBEey49-7YVLx_Pw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_3ISTILGHEey0QOTMOj7Mdg" name="ItemFlow51" informationSource="_RAVxUK6KEeyNmoFpmwcymA"/>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_5H5acLGHEey0QOTMOj7Mdg" name="ItemFlow52" informationSource="_0v3qQLGHEey0QOTMOj7Mdg"/>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_WSlzALGIEey0QOTMOj7Mdg" name="ItemFlow53" informationSource="_RAVxUK6KEeyNmoFpmwcymA" informationTarget="_LJohkLGIEey0QOTMOj7Mdg">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_WSlzALGIEey0QOTMOj7Mdg" name="traindata_to_DSP" informationSource="_RAVxUK6KEeyNmoFpmwcymA" informationTarget="_LJohkLGIEey0QOTMOj7Mdg">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_gQQBUK6bEeysMsIa0aUTrQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_fIL6sLGIEey0QOTMOj7Mdg" name="ItemFlow54" informationSource="_0v3qQLGHEey0QOTMOj7Mdg" informationTarget="_ZiDYoLGIEey0QOTMOj7Mdg">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_fIL6sLGIEey0QOTMOj7Mdg" name="braking" informationSource="_0v3qQLGHEey0QOTMOj7Mdg" informationTarget="_ZiDYoLGIEey0QOTMOj7Mdg">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_SeFxMLGJEey0QOTMOj7Mdg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Lvtk8LGaEeyfjpe2nC8Faw" name="ItemFlow55" informationSource="_JTR-wLGaEeyfjpe2nC8Faw" informationTarget="_H5ao0LGaEeyfjpe2nC8Faw">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Lvtk8LGaEeyfjpe2nC8Faw" name="movementUpdate" informationSource="_JTR-wLGaEeyfjpe2nC8Faw" informationTarget="_H5ao0LGaEeyfjpe2nC8Faw">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_58RcAJLuEeymw95ncJwi5w"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Oz57oLHPEeyN2dZwXfzAUA" name="ItemFlow55" informationSource="_L43G0LHPEeyN2dZwXfzAUA" informationTarget="_tZSmALHOEeyN2dZwXfzAUA">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_Oz57oLHPEeyN2dZwXfzAUA" name="unlock" informationSource="_L43G0LHPEeyN2dZwXfzAUA" informationTarget="_tZSmALHOEeyN2dZwXfzAUA">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_21OGkI_wEeyS0JpgfPwLfg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_wsCPkLODEeyq06BeRRk88A" name="ItemFlow56" informationSource="_typo8KrCEey95JqQZoaUKg" informationTarget="_TnnFwLHQEeyN2dZwXfzAUA">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_wsCPkLODEeyq06BeRRk88A" name="sendingMAtoTMS" informationSource="_typo8KrCEey95JqQZoaUKg" informationTarget="_TnnFwLHQEeyN2dZwXfzAUA">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_vHEbEJQBEey49-7YVLx_Pw"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_QV-40LOEEeyq06BeRRk88A" name="ItemFlow57" informationSource="_0EoMEKq8Eey95JqQZoaUKg" informationTarget="_aPgcQLHPEeyN2dZwXfzAUA">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_QV-40LOEEeyq06BeRRk88A" name="RSA2TMS" informationSource="_0EoMEKq8Eey95JqQZoaUKg" informationTarget="_aPgcQLHPEeyN2dZwXfzAUA">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_KSN1wIqWEeyM8dFJdTQLEQ"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_ovzJoLQDEeye7ZKlraEFyg" name="ItemFlow58" informationSource="_jkY0sLQDEeye7ZKlraEFyg" informationTarget="_d1Sj4LQDEeye7ZKlraEFyg">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_ovzJoLQDEeye7ZKlraEFyg" name="commandingTSR" informationSource="_jkY0sLQDEeye7ZKlraEFyg" informationTarget="_d1Sj4LQDEeye7ZKlraEFyg">
         <conveyed xmi:type="uml:Enumeration" href="trackside_data.uml#_wRBU0LQCEeye7ZKlraEFyg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_pvqEILQDEeye7ZKlraEFyg" name="ItemFlow59" informationSource="_dE8FALQDEeye7ZKlraEFyg" informationTarget="_fm9V0LQDEeye7ZKlraEFyg">
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_pvqEILQDEeye7ZKlraEFyg" name="communicatingTSR" informationSource="_dE8FALQDEeye7ZKlraEFyg" informationTarget="_fm9V0LQDEeye7ZKlraEFyg">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_QRwfsLP-Eeye7ZKlraEFyg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:InformationFlow" xmi:id="_GFh48LWCEey3stEDm9u2bQ" name="ItemFlow60" informationSource="_C3jhELWCEey3stEDm9u2bQ" informationTarget="_vIqUkLWBEey3stEDm9u2bQ">
         <conveyed xmi:type="uml:Class" href="trackside_data.uml#_xDHRIJAIEeyJ-qH-XxM-4g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_tVTxsLggEeyKqK6Ed8IFdQ" name="ItemFlow61" informationSource="_m5Wa4LggEeyKqK6Ed8IFdQ" informationTarget="_XpZbgLWGEey3stEDm9u2bQ">
+        <conveyed xmi:type="uml:Class" href="trackside_data.uml#_G8Qn4E6QEeyaL75nPQZQGA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_a5N3cLmtEeyZl7uuf1TJBA" name="eomCommand" informationSource="_loElIK6cEeysMsIa0aUTrQ" informationTarget="_XRs-MLmtEeyZl7uuf1TJBA">
+        <conveyed xmi:type="uml:Enumeration" href="trackside_data.uml#_Eh9_kK6fEeysMsIa0aUTrQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:InformationFlow" xmi:id="_lZek4MB2EeyXl9rAGjiEJA" name="hmiDisplay" informationSource="_faO_QMB2EeyXl9rAGjiEJA" informationTarget="_gDVmoMB2EeyXl9rAGjiEJA">
+        <conveyed xmi:type="uml:Enumeration" href="trackside_data.uml#_rlGuwMB4EeyXl9rAGjiEJA"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_nsyrMBI2EeyVOZB09kZL2w" name="References">
@@ -684,7 +696,6 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
   <PortsAndFlows:FullPort xmi:id="_lsiPsKq9Eey95JqQZoaUKg" base_Port="_lsd-QKq9Eey95JqQZoaUKg"/>
   <PortsAndFlows:FullPort xmi:id="_AP9rEKq-Eey95JqQZoaUKg" base_Port="_AP714Kq-Eey95JqQZoaUKg"/>
   <PortsAndFlows:ItemFlow xmi:id="_GPCRkKq-Eey95JqQZoaUKg" base_InformationFlow="_GO_1UKq-Eey95JqQZoaUKg"/>
-  <PortsAndFlows:ItemFlow xmi:id="_bYOR0Kq-Eey95JqQZoaUKg" base_InformationFlow="_bYMcoKq-Eey95JqQZoaUKg"/>
   <PortsAndFlows:FullPort xmi:id="_zTbGsKq-Eey95JqQZoaUKg" base_Port="_zTYqcKq-Eey95JqQZoaUKg"/>
   <PortsAndFlows:FullPort xmi:id="_zswMsKq-Eey95JqQZoaUKg" base_Port="_zstwcKq-Eey95JqQZoaUKg"/>
   <PortsAndFlows:FullPort xmi:id="_z-9-EKq-Eey95JqQZoaUKg" base_Port="_z-7h0Kq-Eey95JqQZoaUKg"/>
@@ -795,8 +806,6 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
   <PortsAndFlows:FullPort xmi:id="_smYaoLGHEey0QOTMOj7Mdg" base_Port="_smVXULGHEey0QOTMOj7Mdg"/>
   <PortsAndFlows:FullPort xmi:id="_0v6GgLGHEey0QOTMOj7Mdg" base_Port="_0v3qQLGHEey0QOTMOj7Mdg"/>
   <PortsAndFlows:ItemFlow xmi:id="_2abuoLGHEey0QOTMOj7Mdg" base_InformationFlow="_2aYrULGHEey0QOTMOj7Mdg"/>
-  <PortsAndFlows:ItemFlow xmi:id="_3IUvYLGHEey0QOTMOj7Mdg" base_InformationFlow="_3ISTILGHEey0QOTMOj7Mdg"/>
-  <PortsAndFlows:ItemFlow xmi:id="_5H6okLGHEey0QOTMOj7Mdg" base_InformationFlow="_5H5acLGHEey0QOTMOj7Mdg"/>
   <PortsAndFlows:FullPort xmi:id="_LJtaELGIEey0QOTMOj7Mdg" base_Port="_LJohkLGIEey0QOTMOj7Mdg"/>
   <PortsAndFlows:ItemFlow xmi:id="_WSo2ULGIEey0QOTMOj7Mdg" base_InformationFlow="_WSlzALGIEey0QOTMOj7Mdg"/>
   <PortsAndFlows:FullPort xmi:id="_ZiHDALGIEey0QOTMOj7Mdg" base_Port="_ZiDYoLGIEey0QOTMOj7Mdg"/>
@@ -821,4 +830,11 @@ https://dataprep.eulynx.eu/2021-05/EARoot/EA2/EA1/EA15/EA2370.htm</body>
   <PortsAndFlows:FullPort xmi:id="_C3mkYLWCEey3stEDm9u2bQ" base_Port="_C3jhELWCEey3stEDm9u2bQ"/>
   <PortsAndFlows:ItemFlow xmi:id="_GFn_kLWCEey3stEDm9u2bQ" base_InformationFlow="_GFh48LWCEey3stEDm9u2bQ"/>
   <PortsAndFlows:FullPort xmi:id="_XpeUALWGEey3stEDm9u2bQ" base_Port="_XpZbgLWGEey3stEDm9u2bQ"/>
+  <PortsAndFlows:FullPort xmi:id="_m5lEYLggEeyKqK6Ed8IFdQ" base_Port="_m5Wa4LggEeyKqK6Ed8IFdQ"/>
+  <PortsAndFlows:ItemFlow xmi:id="_tVdisLggEeyKqK6Ed8IFdQ" base_InformationFlow="_tVTxsLggEeyKqK6Ed8IFdQ"/>
+  <PortsAndFlows:FullPort xmi:id="_XSg2gLmtEeyZl7uuf1TJBA" base_Port="_XRs-MLmtEeyZl7uuf1TJBA"/>
+  <PortsAndFlows:ItemFlow xmi:id="_a5iAgLmtEeyZl7uuf1TJBA" base_InformationFlow="_a5N3cLmtEeyZl7uuf1TJBA"/>
+  <PortsAndFlows:FullPort xmi:id="_fa6UsMB2EeyXl9rAGjiEJA" base_Port="_faO_QMB2EeyXl9rAGjiEJA"/>
+  <PortsAndFlows:FullPort xmi:id="_gDafIMB2EeyXl9rAGjiEJA" base_Port="_gDVmoMB2EeyXl9rAGjiEJA"/>
+  <PortsAndFlows:ItemFlow xmi:id="_lZi2UMB2EeyXl9rAGjiEJA" base_InformationFlow="_lZek4MB2EeyXl9rAGjiEJA"/>
 </xmi:XMI>
