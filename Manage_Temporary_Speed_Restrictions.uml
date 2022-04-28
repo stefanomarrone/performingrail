@@ -3,7 +3,7 @@
   <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cx2G0CwwEey2avjLWh7Mbg" source="http://www.eclipse.org/papyrus/2016/resource/shard">
     <references xmi:type="uml:Class" href="PerformingRail.uml#_av43QBIzEeyVOZB09kZL2w"/>
   </eAnnotations>
-  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_22yS8FOOEeyTQoKzZjpjIQ" name="Manage Temporary Speed Restrictions">
+  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_22yS8FOOEeyTQoKzZjpjIQ" name="Manage Temporary Speed Restrictions (individual)">
     <region xmi:type="uml:Region" xmi:id="_3YOMEFOOEeyTQoKzZjpjIQ" name="Region1">
       <transition xmi:type="uml:Transition" xmi:id="_X6_AEEiAEeyRbplaRb-Ecw" source="_KY5UEEiAEeyRbplaRb-Ecw" target="_N4yiYEiAEeyRbplaRb-Ecw"/>
       <transition xmi:type="uml:Transition" xmi:id="_Y7bJYEiAEeyRbplaRb-Ecw" name="recvTSRCommand() [command==Activate] /snd: TSRinfo() to MA manager" source="_N4yiYEiAEeyRbplaRb-Ecw" target="_RmtloEiAEeyRbplaRb-Ecw">
@@ -15,6 +15,7 @@
       <transition xmi:type="uml:Transition" xmi:id="_Z3PRYEiAEeyRbplaRb-Ecw" name="recvTSRCommand() [command==Remove] /snd: TSRinfo() to MA manager" source="_UcguEEiAEeyRbplaRb-Ecw" target="_bRsdMEiAEeyRbplaRb-Ecw"/>
       <transition xmi:type="uml:Transition" xmi:id="_dL11sEiAEeyRbplaRb-Ecw" name="recvTSRCommand() [command==Purge] /snd: TSRinfo() to MA manager" source="_bRsdMEiAEeyRbplaRb-Ecw" target="_IESSkIm6Eey1ZJA0OWh0IQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_dktBoEiAEeyRbplaRb-Ecw" name="recvTSRCommand() [command==Cancel] /snd: TSRinfo() to MA manager" source="_bRsdMEiAEeyRbplaRb-Ecw" target="_RmtloEiAEeyRbplaRb-Ecw"/>
+      <transition xmi:type="uml:Transition" xmi:id="_u_XXkMb5EeyccZppOc9w5Q" name="recvTSRCommand() [command==Activate] /snd: TSRinfo() to MA manager" source="_UcguEEiAEeyRbplaRb-Ecw" target="_RmtloEiAEeyRbplaRb-Ecw"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_KY5UEEiAEeyRbplaRb-Ecw"/>
       <subvertex xmi:type="uml:State" xmi:id="_N4yiYEiAEeyRbplaRb-Ecw" name="established"/>
       <subvertex xmi:type="uml:State" xmi:id="_RmtloEiAEeyRbplaRb-Ecw" name="activated"/>
