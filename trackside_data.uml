@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ConstraintBlocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks">
   <uml:Package xmi:id="_KmTioE6OEeyaL75nPQZQGA" name="data">
     <packagedElement xmi:type="uml:Package" xmi:id="_7RlhcIWuEeyWqMvyxp-iUQ" name="DataType">
       <ownedComment xmi:type="uml:Comment" xmi:id="_dMgtYIsWEeyti_Bx9Y2PIg">
@@ -98,6 +98,7 @@
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_ngWQwKLoEey9xcG6n6eidg" name="TPR_Kind">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ngWQwaLoEey9xcG6n6eidg" name="SoM"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_ngWQwqLoEey9xcG6n6eidg" name="Normal"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_6zWIoMVcEeyV998Zn-SHyg" name="EoM"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_neDmMKLyEey8CrBFlQNT-w" name="Q_STATUS_Kind">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_8zO0AKLyEey8CrBFlQNT-w" name="Valid"/>
@@ -190,6 +191,7 @@
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_Eh9_kK6fEeysMsIa0aUTrQ" name="DriversActions">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_p8C0YK6fEeysMsIa0aUTrQ" name="Train integrity confirmation"/>
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_dNEB0LmLEeyA0Z0sTgI9gw" name="Level NTC selected"/>
+          <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Qi1aQMVlEeyV998Zn-SHyg" name="OS Confirmed"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Enumeration" xmi:id="_rlGuwMB4EeyXl9rAGjiEJA" name="InformationToDriver">
           <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_rlGuwcB4EeyXl9rAGjiEJA" name="Warning"/>
@@ -212,6 +214,10 @@
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Gfb3wLQDEeye7ZKlraEFyg" name="Purge"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_He2tYLQDEeye7ZKlraEFyg" name="Cancel"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_QXJGoMVwEey5rJ-BghwSjA" name="ConnectionStatus_Type">
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QXJGocVwEey5rJ-BghwSjA" name="connected"/>
+        <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QXJtsMVwEey5rJ-BghwSjA" name="notConnected"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="Trackside">
       <ownedComment xmi:type="uml:Comment" xmi:id="_R4dDYIsPEeyti_Bx9Y2PIg" annotatedElement="_R4aY4InXEeywtu03ZyCfsg">
@@ -221,6 +227,9 @@
         <body>See 7.4.2.4 of Subset -026-7 v3.00&#xD;
 Assumption:&#xD;
 1) one section in the MA</body>
+      </ownedComment>
+      <ownedComment xmi:type="uml:Comment" xmi:id="_k2ItoMVgEeyV998Zn-SHyg" annotatedElement="_w38vIMVfEeyV998Zn-SHyg">
+        <body>status != unknown</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_jHKIUIWvEeyWqMvyxp-iUQ" client="_H7N7cIWvEeyWqMvyxp-iUQ" supplier="_7RlhcIWuEeyWqMvyxp-iUQ"/>
       <packagedElement xmi:type="uml:Class" xmi:id="_R4aY4InXEeywtu03ZyCfsg" name="TrainData" visibility="public">
@@ -328,6 +337,20 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_vIZvgKu1EeyzZf6WGdtVgQ" name="desynchronizationTimer">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_y3RQoMVhEeyV998Zn-SHyg" name="SYNCHRONIZATION_TIMEOUT" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_y3R3sMVhEeyV998Zn-SHyg" name="synchronizationTimer">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_w38vIMVfEeyV998Zn-SHyg" name="status_constraint">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_3VuD0MVfEeyV998Zn-SHyg" constrainedElement="_ErWYYE6UEeyaL75nPQZQGA">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_HM5X4MVgEeyV998Zn-SHyg">
+              <language>Natural language</language>
+              <body>status != unknown</body>
+            </specification>
+          </ownedRule>
+        </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Dependency" xmi:id="_4HC8cIquEey_E5TpwM1pKA" client="_H7N7cIWvEeyWqMvyxp-iUQ" supplier="_rANpEIquEey_E5TpwM1pKA"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_hQ7uEIqzEey_E5TpwM1pKA" memberEnd="_hQ88MYqzEey_E5TpwM1pKA _hRIiYIqzEey_E5TpwM1pKA">
@@ -412,9 +435,7 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_ixcZ4Iv4EeyIuMpgGOW6ag" name="sessionTimer" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_AY1VgIv5EeyIuMpgGOW6ag" name="connected" visibility="public">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
-        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AY1VgIv5EeyIuMpgGOW6ag" name="connections_status" visibility="public" type="_QXJGoMVwEey5rJ-BghwSjA"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_I5TE0JPHEeym_Y8iJLDdAA" name="TrainIntegrity">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_rgiWMIsiEeyti_Bx9Y2PIg" name="Q_LENGTH" type="_M6mIoIsXEeyti_Bx9Y2PIg"/>
@@ -524,6 +545,12 @@ to issue a MA if integrity lost</body>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_UXdwUJMOEeyEEqDYLr-O6w" name="extent" type="_G8Qn4E6QEeyaL75nPQZQGA"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_ZMBEcJMOEeyEEqDYLr-O6w" name="data" type="_3ABl8JLxEeymw95ncJwi5w"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_CiDRIpMSEeyEEqDYLr-O6w" name="following" type="_PMgNMIWuEeyWqMvyxp-iUQ" association="_CiCDAJMSEeyEEqDYLr-O6w"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="__2Z7MMVOEey5L-3k50cGfA" name="INTEGRITY_LOST_MA_ISSUING" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_ODjDcMVcEeyV998Zn-SHyg" name="INTEGRITY_DRIVER_ACCEPTANCE" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EBoolean"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_j51sEInZEeywtu03ZyCfsg" name="Infrastructure">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_oDxV4InZEeywtu03ZyCfsg" name="D_NVROLL  " visibility="public">
@@ -1112,4 +1139,5 @@ to issue a MA if integrity lost</body>
   <Blocks:Block xmi:id="_SeINcLGJEey0QOTMOj7Mdg" base_Class="_SeFxMLGJEey0QOTMOj7Mdg"/>
   <Blocks:Block xmi:id="_QR8s8LP-Eeye7ZKlraEFyg" base_Class="_QRwfsLP-Eeye7ZKlraEFyg"/>
   <Blocks:Block xmi:id="_TKO7sLlvEeyA0Z0sTgI9gw" base_Class="_TKKqQLlvEeyA0Z0sTgI9gw"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_w4C1wMVfEeyV998Zn-SHyg" base_Class="_w38vIMVfEeyV998Zn-SHyg"/>
 </xmi:XMI>
