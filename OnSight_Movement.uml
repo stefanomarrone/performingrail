@@ -101,7 +101,9 @@ Procedure OS Subset 26 - 5- p35</body>
         </message>
         <message xmi:type="uml:Message" xmi:id="_0eqmkF22Eey_gKPac597Xw" name="Update MaxSFE" messageSort="asynchCall" receiveEvent="_0etp4F22Eey_gKPac597Xw" sendEvent="_0etC0F22Eey_gKPac597Xw"/>
         <message xmi:type="uml:Message" xmi:id="_jgZSIF23Eey_gKPac597Xw" name="ACK for OS mode" messageSort="reply" receiveEvent="_jgagQF23Eey_gKPac597Xw" sendEvent="_jgZ5MF23Eey_gKPac597Xw"/>
-        <message xmi:type="uml:Message" xmi:id="_yQZtQF58EeyF-MT3_lWeIQ" name="Ask for ACK for OS profile" receiveEvent="_yRJUIF58EeyF-MT3_lWeIQ" sendEvent="_yRItEF58EeyF-MT3_lWeIQ"/>
+        <message xmi:type="uml:Message" xmi:id="_yQZtQF58EeyF-MT3_lWeIQ" name="Ask for ACK for OS profile" receiveEvent="_yRJUIF58EeyF-MT3_lWeIQ" sendEvent="_yRItEF58EeyF-MT3_lWeIQ">
+          <signature xmi:type="uml:Signal" href="PerformingRail.uml#_3RMW4MVkEeyV998Zn-SHyg"/>
+        </message>
         <message xmi:type="uml:Message" xmi:id="_fI_iEF59Eey3X8JiS_0juA" name="Transition to OS mode" messageSort="asynchCall" receiveEvent="_fJQAwF59Eey3X8JiS_0juA" sendEvent="_fJOyoF59Eey3X8JiS_0juA"/>
         <message xmi:type="uml:Message" xmi:id="_a30_0Lo7Eeyav9I0cqK3YA" name="send integrity status to TPR" messageSort="asynchCall" receiveEvent="_a34qMLo7Eeyav9I0cqK3YA" sendEvent="_a34DILo7Eeyav9I0cqK3YA">
           <signature xmi:type="uml:Signal" href="PerformingRail.uml#_kLpN8K6dEeysMsIa0aUTrQ"/>
@@ -157,7 +159,7 @@ Procedure OS Subset 26 - 5- p35</body>
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_vHyeIbW-EeyhTtGKJTe9cg" name="guard">
               <constrainedElement xmi:type="uml:Property" href="trackside_data.uml#_rgiWMIsiEeyti_Bx9Y2PIg"/>
               <constrainedElement xmi:type="uml:Property" href="trackside_data.uml#_cnznYIsiEeyti_Bx9Y2PIg"/>
-              <specification xmi:type="uml:LiteralString" xmi:id="_cJKV4LZLEeyjzpg8hNaQkQ" value="Mode is OS and integrity confirmed by TIMS"/>
+              <specification xmi:type="uml:LiteralString" xmi:id="_cJKV4LZLEeyjzpg8hNaQkQ" value="(M_MODE == OnSight) and (Q_LENGTH == MonitoringDevice)"/>
             </guard>
           </operand>
         </fragment>
@@ -178,7 +180,7 @@ Procedure OS Subset 26 - 5- p35</body>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_AD3psLZMEeyjzpg8hNaQkQ" name="Message47ReceiveEvent" covered="__-vfELW8EeyhTtGKJTe9cg" message="_AD2bkLZMEeyjzpg8hNaQkQ"/>
             <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_S8OIQLpIEeyav9I0cqK3YA" name="BehaviorExecutionSpecification49Finish" covered="__-vfELW8EeyhTtGKJTe9cg" execution="_S8NhMLpIEeyav9I0cqK3YA"/>
             <guard xmi:type="uml:InteractionConstraint" xmi:id="_oaPF8bZLEeyjzpg8hNaQkQ" name="guard">
-              <specification xmi:type="uml:LiteralString" xmi:id="_4WFeoLZLEeyjzpg8hNaQkQ" value="Mode OS and L3 configured to accept driver confirmation and integrity confirmed by driver"/>
+              <specification xmi:type="uml:LiteralString" xmi:id="_4WFeoLZLEeyjzpg8hNaQkQ" value="(M_MODE == OnSight) and (Q_LENGTH == MonitoringDevice) and (INTEGRITY_DRIVER_ACCEPTANCE)"/>
             </guard>
           </operand>
         </fragment>
@@ -238,6 +240,9 @@ Procedure OS Subset 26 - 5- p35</body>
       </include>
       <include xmi:type="uml:Include" xmi:id="_nrJY8LpJEeyav9I0cqK3YA">
         <addition xmi:type="uml:UseCase" href="Manage_Dynamic_Speed_Profile.uml#_kQKg0DjZEeyQeMlHlxk6EA"/>
+      </include>
+      <include xmi:type="uml:Include" xmi:id="_sESWUMYkEeyD4MjOW0IJUg">
+        <addition xmi:type="uml:UseCase" href="MA_Management.uml#_INRgMBRuEeyQN9odROAPWw"/>
       </include>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_CK0gwEFsEeyfxc1FgnjdUg" memberEnd="_CNlg4EFsEeyfxc1FgnjdUg _CNmvAEFsEeyfxc1FgnjdUg">

@@ -90,8 +90,8 @@ REQ_TS_7</body>
         <fragment xmi:type="uml:BehaviorExecutionSpecification" xmi:id="_YKPMsLmBEeyqoK4HVL7mRA" name="BehaviorExecutionSpecification25" covered="_ioB2sLmAEeyqoK4HVL7mRA" finish="_YKPzwLmBEeyqoK4HVL7mRA" start="_S6P5wLmBEeyqoK4HVL7mRA"/>
         <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_S6Qg0LmBEeyqoK4HVL7mRA" name="Message22ReceiveEvent" covered="_ioB2sLmAEeyqoK4HVL7mRA" message="_S6PSsLmBEeyqoK4HVL7mRA"/>
         <fragment xmi:type="uml:ExecutionOccurrenceSpecification" xmi:id="_YKPzwLmBEeyqoK4HVL7mRA" name="BehaviorExecutionSpecification25Finish" covered="_ioB2sLmAEeyqoK4HVL7mRA" execution="_YKPMsLmBEeyqoK4HVL7mRA"/>
-        <fragment xmi:type="uml:CombinedFragment" xmi:id="_271uILmAEeyqoK4HVL7mRA" name="CombinedFragment21" covered="_feAKsLmAEeyqoK4HVL7mRA _ioB2sLmAEeyqoK4HVL7mRA _YtmqYLl_EeyqoK4HVL7mRA _8Gnb0Ll-EeyqoK4HVL7mRA" interactionOperator="opt">
-          <operand xmi:type="uml:InteractionOperand" xmi:id="_272VMLmAEeyqoK4HVL7mRA" name="InteractionOperand0" covered="_feAKsLmAEeyqoK4HVL7mRA _ioB2sLmAEeyqoK4HVL7mRA _YtmqYLl_EeyqoK4HVL7mRA _8Gnb0Ll-EeyqoK4HVL7mRA">
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_271uILmAEeyqoK4HVL7mRA" name="CombinedFragment21" covered="_YtmqYLl_EeyqoK4HVL7mRA _8Gnb0Ll-EeyqoK4HVL7mRA _ioB2sLmAEeyqoK4HVL7mRA _feAKsLmAEeyqoK4HVL7mRA" interactionOperator="opt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_272VMLmAEeyqoK4HVL7mRA" name="InteractionOperand0" covered="_YtmqYLl_EeyqoK4HVL7mRA _8Gnb0Ll-EeyqoK4HVL7mRA _ioB2sLmAEeyqoK4HVL7mRA _feAKsLmAEeyqoK4HVL7mRA">
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_axtlQLmBEeyqoK4HVL7mRA" name="Message27SendEvent" covered="_ioB2sLmAEeyqoK4HVL7mRA" message="_axs-MLmBEeyqoK4HVL7mRA"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_axuMULmBEeyqoK4HVL7mRA" name="Message27ReceiveEvent" covered="_YtmqYLl_EeyqoK4HVL7mRA" message="_axs-MLmBEeyqoK4HVL7mRA"/>
             <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_mPIq0bmBEeyqoK4HVL7mRA" name="Message30SendEvent" covered="_YtmqYLl_EeyqoK4HVL7mRA" message="_mPIq0LmBEeyqoK4HVL7mRA"/>
@@ -127,6 +127,9 @@ REQ_TS_7</body>
       </include>
       <include xmi:type="uml:Include" xmi:id="_U8qaUEhrEeyBhenFSEKB3w">
         <addition xmi:type="uml:UseCase" href="Train_Position_Reporting.uml#_hQC-wDjZEeyQeMlHlxk6EA"/>
+      </include>
+      <include xmi:type="uml:Include" xmi:id="_rmlM8MbwEeyTWrsSkEhCyw">
+        <addition xmi:type="uml:UseCase" href="Trains_Management.uml#_INQ5IBRuEeyQN9odROAPWw"/>
       </include>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_ASFqMD1eEeyAv_UCn311nQ" memberEnd="_ASiWID1eEeyAv_UCn311nQ _ASiWIT1eEeyAv_UCn311nQ">
