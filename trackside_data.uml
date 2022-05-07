@@ -16,6 +16,10 @@
         <ownedAttribute xmi:type="uml:Property" xmi:id="_TTMIUE6QEeyaL75nPQZQGA" name="end">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_jF3SIM0cEeyO7Lbj1D5EhA" name="pathID" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EInt"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sGuOoM0cEeyO7Lbj1D5EhA"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_SvucgIq1Eey_E5TpwM1pKA" name="TrackAreaUnknown">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_Y5LuEIq1Eey_E5TpwM1pKA" name="ReportingTrainWithoutTrainIntegrityConfirmed"/>
@@ -487,6 +491,7 @@ Assumption:&#xD;
         </ownedRule>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_IU8SIJSZEeyW24yVM5ADIg" name="D_LRBG">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tKuM0M0dEeyO7Lbj1D5EhA"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_ro7HEosrEeyti_Bx9Y2PIg" name="balisegroup" type="_3fk7EIsiEeyti_Bx9Y2PIg" association="_ro6gAIsrEeyti_Bx9Y2PIg"/>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_o8NFkKL6Eey8CrBFlQNT-w" name="L_DOUBTOVER">
@@ -495,6 +500,10 @@ Assumption:&#xD;
         <ownedAttribute xmi:type="uml:Property" xmi:id="_SfQFcKL8Eey8CrBFlQNT-w" name="L_DOUBTUNDER">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Jc6r0KMIEey8CrBFlQNT-w"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_oGdBsM0dEeyO7Lbj1D5EhA" name="AbsolutePosition" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uj5mQM0dEeyO7Lbj1D5EhA"/>
         </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_t2nhMKLmEey9xcG6n6eidg" memberEnd="_t3MI8KLmEey9xcG6n6eidg _t3OlMKLmEey9xcG6n6eidg">

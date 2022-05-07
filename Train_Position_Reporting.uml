@@ -51,7 +51,12 @@
           <port xmi:type="uml:Port" href="PerformingRail.uml#_SeUQkLEOEeyVGPyNAHP5Cw"/>
         </trigger>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_IW2qgEclEeyg8fpv7VrCwA" name="sendEoMTPR()" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_jUvNQEclEeyg8fpv7VrCwA">
+      <transition xmi:type="uml:Transition" xmi:id="_IW2qgEclEeyg8fpv7VrCwA" name="sendEoMTPR()" guard="_JcnLcMm4EeyfSrYGOrx-Vg" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_jUvNQEclEeyg8fpv7VrCwA">
+        <ownedRule xmi:type="uml:Constraint" xmi:id="_JcnLcMm4EeyfSrYGOrx-Vg" name="TPR_Kind == EoM">
+          <specification xmi:type="uml:InstanceValue" xmi:id="_JcnLccm4EeyfSrYGOrx-Vg" name="TPR_Kind">
+            <instance xmi:type="uml:EnumerationLiteral" href="trackside_data.uml#_6zWIoMVcEeyV998Zn-SHyg"/>
+          </specification>
+        </ownedRule>
         <trigger xmi:type="uml:Trigger" xmi:id="_1MLKULvQEeypSKK8Y-1Esw" name="sendEoMTPR()">
           <port xmi:type="uml:Port" href="PerformingRail.uml#_WzsxMKrTEeyYGNlEZZyTmg"/>
           <port xmi:type="uml:Port" href="PerformingRail.uml#_hQVdQKrVEeyYGNlEZZyTmg"/>
