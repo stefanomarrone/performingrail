@@ -327,32 +327,26 @@ adjacent systems prevent trains from approaching.</body>
         <subvertex xmi:type="uml:State" xmi:id="_99rM0LdJEeyRcuh0dwvOFQ" name="Released"/>
       </region>
     </packagedElement>
-    <packagedElement xmi:type="uml:Realization" xmi:id="_-YpgULdDEeyRcuh0dwvOFQ" client="_HAqVYBRpEeyQN9odROAPWw">
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_SjtH0M8TEeyfv7j_7ztKUw" name="Satisfy32" client="_IvzVYE7NEeyTe5jLSF3Q6g">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_V7fIkIAaEeyReZuR5F228A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_XIZbAM8TEeyfv7j_7ztKUw" name="Satisfy31" client="_HAqVYBRpEeyQN9odROAPWw">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_V7fIkIAaEeyReZuR5F228A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_X9w8wM8TEeyfv7j_7ztKUw" name="Satisfy32" client="_HAqVYBRpEeyQN9odROAPWw">
       <supplier xmi:type="uml:Class" href="Requirements.uml#_VeGpAIAaEeyReZuR5F228A"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Realization" xmi:id="_DWkL0LdEEeyRcuh0dwvOFQ" client="_IvzVYE7NEeyTe5jLSF3Q6g">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_L2tA4LdEEeyRcuh0dwvOFQ" annotatedElement="_DWkL0LdEEeyRcuh0dwvOFQ">
-        <body>train positions are stored onboard for a limited amount, about 24h, of time.</body>
-      </ownedComment>
-      <supplier xmi:type="uml:Class" href="Requirements.uml#_V7fIkIAaEeyReZuR5F228A"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Realization" xmi:id="_PXeY8LdEEeyRcuh0dwvOFQ" client="_HAqVYBRpEeyQN9odROAPWw">
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_ZN02cM8TEeyfv7j_7ztKUw" name="Satisfy33" client="_HAqVYBRpEeyQN9odROAPWw">
       <supplier xmi:type="uml:Class" href="Requirements.uml#_Wx_SwIAaEeyReZuR5F228A"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Realization" xmi:id="_U511ULdEEeyRcuh0dwvOFQ" client="_JCbL4E7MEeyTe5jLSF3Q6g">
-      <supplier xmi:type="uml:Class" href="Requirements.uml#_Wdj64IAaEeyReZuR5F228A"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Realization" xmi:id="_f_abkLdEEeyRcuh0dwvOFQ" client="_HAqVYBRpEeyQN9odROAPWw">
-      <supplier xmi:type="uml:Class" href="Requirements.uml#_WPEy8IAaEeyReZuR5F228A"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Realization" xmi:id="_i91UgLdEEeyRcuh0dwvOFQ" client="_HAqVYBRpEeyQN9odROAPWw">
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_akl1EM8TEeyfv7j_7ztKUw" name="Satisfy34" client="_HAqVYBRpEeyQN9odROAPWw">
       <supplier xmi:type="uml:Class" href="Requirements.uml#_EZLvcIAaEeyReZuR5F228A"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:Realization" xmi:id="_nPaecLdEEeyRcuh0dwvOFQ" client="_HAqVYBRpEeyQN9odROAPWw">
-      <ownedComment xmi:type="uml:Comment" xmi:id="_0HaEkLdEEeyRcuh0dwvOFQ" annotatedElement="_nPaecLdEEeyRcuh0dwvOFQ">
-        <body>Intransient information such as speed restrictions and rstrictions on signals are stored trackside.</body>
-      </ownedComment>
-      <supplier xmi:type="uml:Class" href="Requirements.uml#_V7fIkIAaEeyReZuR5F228A"/>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_bwLecM8TEeyfv7j_7ztKUw" name="Satisfy35" client="_HAqVYBRpEeyQN9odROAPWw">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_WPEy8IAaEeyReZuR5F228A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Abstraction" xmi:id="_cnQQYM8TEeyfv7j_7ztKUw" name="Satisfy36" client="_JCbL4E7MEeyTe5jLSF3Q6g">
+      <supplier xmi:type="uml:Class" href="Requirements.uml#_Wdj64IAaEeyReZuR5F228A"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_oeficDjZEeyQeMlHlxk6EA">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_oeficTjZEeyQeMlHlxk6EA" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -445,4 +439,11 @@ adjacent systems prevent trains from approaching.</body>
     <base_NamedElement xmi:type="uml:Class" href="Requirements.uml#_Wx_SwIAaEeyReZuR5F228A"/>
     <base_Class xmi:type="uml:Class" href="Requirements.uml#_Wx_SwIAaEeyReZuR5F228A"/>
   </Requirements:Requirement>
+  <Requirements:Satisfy xmi:id="_Sj8_cM8TEeyfv7j_7ztKUw" base_DirectedRelationship="_SjtH0M8TEeyfv7j_7ztKUw" base_Abstraction="_SjtH0M8TEeyfv7j_7ztKUw"/>
+  <Requirements:Satisfy xmi:id="_XIjMAM8TEeyfv7j_7ztKUw" base_DirectedRelationship="_XIZbAM8TEeyfv7j_7ztKUw" base_Abstraction="_XIZbAM8TEeyfv7j_7ztKUw"/>
+  <Requirements:Satisfy xmi:id="_X97U0M8TEeyfv7j_7ztKUw" base_DirectedRelationship="_X9w8wM8TEeyfv7j_7ztKUw" base_Abstraction="_X9w8wM8TEeyfv7j_7ztKUw"/>
+  <Requirements:Satisfy xmi:id="_ZN-ncM8TEeyfv7j_7ztKUw" base_DirectedRelationship="_ZN02cM8TEeyfv7j_7ztKUw" base_Abstraction="_ZN02cM8TEeyfv7j_7ztKUw"/>
+  <Requirements:Satisfy xmi:id="_aku_AM8TEeyfv7j_7ztKUw" base_DirectedRelationship="_akl1EM8TEeyfv7j_7ztKUw" base_Abstraction="_akl1EM8TEeyfv7j_7ztKUw"/>
+  <Requirements:Satisfy xmi:id="_bwUoYM8TEeyfv7j_7ztKUw" base_DirectedRelationship="_bwLecM8TEeyfv7j_7ztKUw" base_Abstraction="_bwLecM8TEeyfv7j_7ztKUw"/>
+  <Requirements:Satisfy xmi:id="_cnYzQM8TEeyfv7j_7ztKUw" base_DirectedRelationship="_cnQQYM8TEeyfv7j_7ztKUw" base_Abstraction="_cnQQYM8TEeyfv7j_7ztKUw"/>
 </xmi:XMI>
