@@ -843,6 +843,17 @@ to issue a MA if integrity lost</body>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_QeaN0M-YEeyM0K7-okakbA" name="L_TRAININT" visibility="public">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
         </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_dNS0EM_AEeyAAOvme_Ervg" name="MAX_L_TRAININT" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <nestedClassifier xmi:type="uml:Class" xmi:id="_jAilEM_AEeyAAOvme_Ervg" name="cnst_LTRAININT">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_wE2v8M_AEeyAAOvme_Ervg">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_3p_8YM_AEeyAAOvme_Ervg">
+              <language>Natural language</language>
+              <body>MAX_L_TRAININT >= L_TRAININT</body>
+            </specification>
+          </ownedRule>
+        </nestedClassifier>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_28cmcJQCEey49-7YVLx_Pw" memberEnd="_28dNgpQCEey49-7YVLx_Pw _28d0kZQCEey49-7YVLx_Pw">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_28dNgJQCEey49-7YVLx_Pw" source="org.eclipse.papyrus">
@@ -1152,4 +1163,5 @@ to issue a MA if integrity lost</body>
   <Blocks:Block xmi:id="_QR8s8LP-Eeye7ZKlraEFyg" base_Class="_QRwfsLP-Eeye7ZKlraEFyg"/>
   <Blocks:Block xmi:id="_TKO7sLlvEeyA0Z0sTgI9gw" base_Class="_TKKqQLlvEeyA0Z0sTgI9gw"/>
   <ConstraintBlocks:ConstraintBlock xmi:id="_w4C1wMVfEeyV998Zn-SHyg" base_Class="_w38vIMVfEeyV998Zn-SHyg"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_jAwngM_AEeyAAOvme_Ervg" base_Class="_jAilEM_AEeyAAOvme_Ervg"/>
 </xmi:XMI>
