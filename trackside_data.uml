@@ -310,6 +310,9 @@ Assumption:&#xD;
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_keE38aL7Eey8CrBFlQNT-w" value="1"/>
         </ownedAttribute>
         <ownedAttribute xmi:type="uml:Property" xmi:id="_atDOMLpyEeyn0dkWvQX0_A" name="integrityConfSource" type="_M6mIoIsXEeyti_Bx9Y2PIg"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_XiNw0NXEEeyRNJNNUa96Gw" name="timestamp">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_RCTlYInZEeywtu03ZyCfsg" name="MovementAuthority">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_qYaLIIsPEeyti_Bx9Y2PIg" name="Q_DIR" type="_uIiN0IsPEeyti_Bx9Y2PIg"/>
@@ -375,13 +378,13 @@ Assumption:&#xD;
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_j5lLUIqzEey_E5TpwM1pKA" name="traindata" type="_R4aY4InXEeywtu03ZyCfsg" association="_j5ivEIqzEey_E5TpwM1pKA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_37ujoIq2Eey_E5TpwM1pKA" memberEnd="_37vxwoq2Eey_E5TpwM1pKA _37wY0Yq2Eey_E5TpwM1pKA">
+      <packagedElement xmi:type="uml:Association" xmi:id="_37ujoIq2Eey_E5TpwM1pKA" memberEnd="_37vxwoq2Eey_E5TpwM1pKA _37wY0Yq2Eey_E5TpwM1pKA" navigableOwnedEnd="_37wY0Yq2Eey_E5TpwM1pKA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_37vxwIq2Eey_E5TpwM1pKA" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_37vxwYq2Eey_E5TpwM1pKA" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_37wY0Yq2Eey_E5TpwM1pKA" name="trackstatus" type="_QVt8gE6OEeyaL75nPQZQGA" association="_37ujoIq2Eey_E5TpwM1pKA"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_5ZjMgIq2Eey_E5TpwM1pKA" memberEnd="_5Zjzkoq2Eey_E5TpwM1pKA _5ZlBsIq2Eey_E5TpwM1pKA">
+      <packagedElement xmi:type="uml:Association" xmi:id="_5ZjMgIq2Eey_E5TpwM1pKA" memberEnd="_5Zjzkoq2Eey_E5TpwM1pKA _5ZlBsIq2Eey_E5TpwM1pKA" navigableOwnedEnd="_5ZlBsIq2Eey_E5TpwM1pKA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5ZjzkIq2Eey_E5TpwM1pKA" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5ZjzkYq2Eey_E5TpwM1pKA" key="nature" value="UML_Nature"/>
         </eAnnotations>
