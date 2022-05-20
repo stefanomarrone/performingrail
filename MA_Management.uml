@@ -7,15 +7,19 @@
     <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_tbGRANgnEeyaAPq8qdqM4g" name="fail" kind="exitPoint"/>
     <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_t-BX4NgnEeyaAPq8qdqM4g" name="success" kind="exitPoint"/>
     <region xmi:type="uml:Region" xmi:id="_gTfNMEPMEey8WPmtkrbobw" name="Region1">
-      <transition xmi:type="uml:Transition" xmi:id="_Na3E4EPNEey8WPmtkrbobw" source="_nb02MNgnEeyaAPq8qdqM4g" target="_qv2LsNgnEeyaAPq8qdqM4g"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Na3E4EPNEey8WPmtkrbobw" name="/snd: MovementAuthority to Dynamic Speed Profile manager, snd: MovementAuthority to TMS" source="_1EJA0Ng5EeyaAPq8qdqM4g" target="_t-BX4NgnEeyaAPq8qdqM4g"/>
       <transition xmi:type="uml:Transition" xmi:id="_zTv8oEPNEey8WPmtkrbobw" source="_lEooAEPMEey8WPmtkrbobw" target="_oH8A8EPMEey8WPmtkrbobw"/>
-      <transition xmi:type="uml:Transition" xmi:id="_Y_GkIEPNEey8WPmtkrbobw" name="[success]" source="_oH8A8EPMEey8WPmtkrbobw" target="_nb02MNgnEeyaAPq8qdqM4g"/>
-      <transition xmi:type="uml:Transition" xmi:id="_b3tI8EPNEey8WPmtkrbobw" name="[fail]" source="_oH8A8EPMEey8WPmtkrbobw" target="_tbGRANgnEeyaAPq8qdqM4g"/>
-      <transition xmi:type="uml:Transition" xmi:id="_dLzXoEPZEey8WPmtkrbobw" source="_qv2LsNgnEeyaAPq8qdqM4g" target="_t-BX4NgnEeyaAPq8qdqM4g"/>
+      <transition xmi:type="uml:Transition" xmi:id="_Y_GkIEPNEey8WPmtkrbobw" name="[known location]" source="_oH8A8EPMEey8WPmtkrbobw" target="_nb02MNgnEeyaAPq8qdqM4g"/>
+      <transition xmi:type="uml:Transition" xmi:id="_b3tI8EPNEey8WPmtkrbobw" name="[unknown location]" source="_oH8A8EPMEey8WPmtkrbobw" target="_tbGRANgnEeyaAPq8qdqM4g"/>
+      <transition xmi:type="uml:Transition" xmi:id="_pwuWYNg6EeyaAPq8qdqM4g" name="[train following another train] /updateRules" source="_nb02MNgnEeyaAPq8qdqM4g" target="_1EJA0Ng5EeyaAPq8qdqM4g"/>
+      <transition xmi:type="uml:Transition" xmi:id="_1cc9sNg6EeyaAPq8qdqM4g" name="[train up to the boundaries of an unknown TSA] /updateRules" source="_nb02MNgnEeyaAPq8qdqM4g" target="_1EJA0Ng5EeyaAPq8qdqM4g"/>
+      <transition xmi:type="uml:Transition" xmi:id="_H85aENg7EeyaAPq8qdqM4g" name="[M_MODE==OnSigth] /updateRules" source="_nb02MNgnEeyaAPq8qdqM4g" target="_1EJA0Ng5EeyaAPq8qdqM4g"/>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_lEooAEPMEey8WPmtkrbobw" name="initial"/>
-      <subvertex xmi:type="uml:State" xmi:id="_oH8A8EPMEey8WPmtkrbobw" name="Check_Validity"/>
-      <subvertex xmi:type="uml:State" xmi:id="_nb02MNgnEeyaAPq8qdqM4g" name="Computing_MA_Boundaries"/>
-      <subvertex xmi:type="uml:State" xmi:id="_qv2LsNgnEeyaAPq8qdqM4g" name="Issuing_MA"/>
+      <subvertex xmi:type="uml:State" xmi:id="_oH8A8EPMEey8WPmtkrbobw" name="check valid location"/>
+      <subvertex xmi:type="uml:State" xmi:id="_nb02MNgnEeyaAPq8qdqM4g" name="location validated"/>
+      <subvertex xmi:type="uml:State" xmi:id="_1EJA0Ng5EeyaAPq8qdqM4g" name="rules updated">
+        <doActivity xmi:type="uml:Activity" xmi:id="_lIJMQNg7EeyaAPq8qdqM4g" name="computeMA"/>
+      </subvertex>
     </region>
   </ownedBehavior>
 </uml:UseCase>
