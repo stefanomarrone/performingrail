@@ -915,7 +915,7 @@ to issue a MA if integrity lost</body>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_u2vvsKtxEey9lovFct_p0Q" name="Message" isAbstract="true">
         <ownedAttribute xmi:type="uml:Property" xmi:id="_XwGHwKtyEey9lovFct_p0Q" name="direction" type="_EMlr4KtyEey9lovFct_p0Q"/>
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_VYC00qt-Eey9lovFct_p0Q" type="_u2vvsKtxEey9lovFct_p0Q" association="_VYCNwKt-Eey9lovFct_p0Q">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_VYC00qt-Eey9lovFct_p0Q" type="_u2vvsKtxEey9lovFct_p0Q">
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VYC006t-Eey9lovFct_p0Q"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VYC01Kt-Eey9lovFct_p0Q" value="1"/>
         </ownedAttribute>
@@ -926,7 +926,7 @@ to issue a MA if integrity lost</body>
       <packagedElement xmi:type="uml:Class" xmi:id="_cwHsEKtyEey9lovFct_p0Q" name="ValidatedTrainData">
         <generalization xmi:type="uml:Generalization" xmi:id="_eg9-oKtyEey9lovFct_p0Q" general="_u2vvsKtxEey9lovFct_p0Q"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_VYCNwKt-Eey9lovFct_p0Q" name="acknowledge" memberEnd="_VYC00qt-Eey9lovFct_p0Q _VYC01at-Eey9lovFct_p0Q">
+      <packagedElement xmi:type="uml:Association" xmi:id="_VYCNwKt-Eey9lovFct_p0Q" name="acknowledge" memberEnd="_VYC01at-Eey9lovFct_p0Q">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VYC00Kt-Eey9lovFct_p0Q" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VYC00at-Eey9lovFct_p0Q" key="nature" value="UML_Nature"/>
         </eAnnotations>
@@ -1044,6 +1044,12 @@ to issue a MA if integrity lost</body>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_o36I8br3Eey6s-y4-zslsg" key="nature" value="UML_Nature"/>
         </eAnnotations>
         <ownedEnd xmi:type="uml:Property" xmi:id="_o38lMbr3Eey6s-y4-zslsg" name="movementauthority" type="_vHEbEJQBEey49-7YVLx_Pw" association="_o3yNILr3Eey6s-y4-zslsg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_QdLGQNkxEey7tc8dtUE_zg" name="TPR Request">
+        <generalization xmi:type="uml:Generalization" xmi:id="_Wg1R0NkxEey7tc8dtUE_zg" general="_u2vvsKtxEey9lovFct_p0Q"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_dZFjENkxEey7tc8dtUE_zg" name="position" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
       </packagedElement>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_lG4ScIWxEeyjW475vB6H-g">
@@ -1167,4 +1173,5 @@ to issue a MA if integrity lost</body>
   <Blocks:Block xmi:id="_TKO7sLlvEeyA0Z0sTgI9gw" base_Class="_TKKqQLlvEeyA0Z0sTgI9gw"/>
   <ConstraintBlocks:ConstraintBlock xmi:id="_w4C1wMVfEeyV998Zn-SHyg" base_Class="_w38vIMVfEeyV998Zn-SHyg"/>
   <ConstraintBlocks:ConstraintBlock xmi:id="_jAwngM_AEeyAAOvme_Ervg" base_Class="_jAilEM_AEeyAAOvme_Ervg"/>
+  <Blocks:Block xmi:id="_QdsDoNkxEey7tc8dtUE_zg" base_Class="_QdLGQNkxEey7tc8dtUE_zg"/>
 </xmi:XMI>
