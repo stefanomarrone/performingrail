@@ -57,7 +57,7 @@ X2R2 D4.1 page 56: Train Integrity refresh period</body>
       </transition>
       <transition xmi:type="uml:Transition" xmi:id="_7wdlsEhsEeyBhenFSEKB3w" name="SoM" source="_woKFwEIwEey5-bfWf6TPtQ" target="_7FdLEEIwEey5-bfWf6TPtQ"/>
       <transition xmi:type="uml:Transition" xmi:id="_0_uFIEiBEeyBhenFSEKB3w" name="EoM" source="_dwvaMEI4Eey5-bfWf6TPtQ" target="_5Hle8EhsEeyBhenFSEKB3w"/>
-      <subvertex xmi:type="uml:State" xmi:id="_dwvaMEI4Eey5-bfWf6TPtQ" name="Train integrity status information management">
+      <subvertex xmi:type="uml:State" xmi:id="_dwvaMEI4Eey5-bfWf6TPtQ" name="Train integrity status Management">
         <region xmi:type="uml:Region" xmi:id="_L69ZgEI6Eey5-bfWf6TPtQ" name="Region1">
           <transition xmi:type="uml:Transition" xmi:id="_mLtUsEh1EeyBhenFSEKB3w" name="IntegrityConfirmedByTIMS()" guard="_TZvD4MR-EeyuyfCVbG_SxA" source="_1HmskEIwEey5-bfWf6TPtQ" target="_FLH6kEhzEeyBhenFSEKB3w">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_TZvD4MR-EeyuyfCVbG_SxA" name="[3]">
@@ -190,14 +190,14 @@ X2R2 D4.1 page 56: Train Integrity refresh period</body>
               <port xmi:type="uml:Port" href="PerformingRail.uml#_pDMGUK6KEeyNmoFpmwcymA"/>
             </trigger>
           </transition>
-          <subvertex xmi:type="uml:State" xmi:id="_1HmskEIwEey5-bfWf6TPtQ" name="Train Integrity Lost"/>
-          <subvertex xmi:type="uml:State" xmi:id="_7FdLEEIwEey5-bfWf6TPtQ" name="No train integrity information">
+          <subvertex xmi:type="uml:State" xmi:id="_1HmskEIwEey5-bfWf6TPtQ" name="Lost"/>
+          <subvertex xmi:type="uml:State" xmi:id="_7FdLEEIwEey5-bfWf6TPtQ" name="No Information">
             <ownedComment xmi:type="uml:Comment" xmi:id="_dw-LEEI1Eey5-bfWf6TPtQ" annotatedElement="_7FdLEEIwEey5-bfWf6TPtQ">
               <body></body>
             </ownedComment>
           </subvertex>
-          <subvertex xmi:type="uml:State" xmi:id="_xJppQEIwEey5-bfWf6TPtQ" name="Train integrity confirmed by driver"/>
-          <subvertex xmi:type="uml:State" xmi:id="_FLH6kEhzEeyBhenFSEKB3w" name="Train integrity confirmed by external device "/>
+          <subvertex xmi:type="uml:State" xmi:id="_xJppQEIwEey5-bfWf6TPtQ" name="Driver"/>
+          <subvertex xmi:type="uml:State" xmi:id="_FLH6kEhzEeyBhenFSEKB3w" name="Monitoring Device"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_ho9RUEhsEeyBhenFSEKB3w" kind="shallowHistory"/>
         </region>
       </subvertex>

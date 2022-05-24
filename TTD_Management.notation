@@ -349,7 +349,7 @@
                     </children>
                     <children xmi:type="notation:Shape" xmi:id="_mo2ZEHUqEeyc962K-4AASw" type="Pseudostate_ChoiceShape">
                       <children xmi:type="notation:DecorationNode" xmi:id="_mo2ZEnUqEeyc962K-4AASw" type="Pseudostate_ChoiceFloatingNameLabel">
-                        <layoutConstraint xmi:type="notation:Location" xmi:id="_mo3AIHUqEeyc962K-4AASw" x="60"/>
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_mo3AIHUqEeyc962K-4AASw" x="40" y="20"/>
                       </children>
                       <children xmi:type="notation:DecorationNode" xmi:id="_mo3AIXUqEeyc962K-4AASw" type="Pseudostate_ChoiceStereotypeLabel">
                         <layoutConstraint xmi:type="notation:Location" xmi:id="_mo3AInUqEeyc962K-4AASw" x="25" y="-10"/>
@@ -1117,7 +1117,7 @@
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_uPDD0YTgEeycc8_s_B-Sng" type="Transition_GuardLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_xpcHEITgEeycc8_s_B-Sng" name="IS_UPDATED_POSITION" booleanValue="true"/>
-        <layoutConstraint xmi:type="notation:Location" xmi:id="_uPDD0oTgEeycc8_s_B-Sng" x="123" y="-64"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uPDD0oTgEeycc8_s_B-Sng" x="99" y="-84"/>
       </children>
       <children xmi:type="notation:DecorationNode" xmi:id="_uPDD04TgEeycc8_s_B-Sng" type="Transition_StereotypeLabel">
         <styles xmi:type="notation:BooleanValueStyle" xmi:id="_xugNQITgEeycc8_s_B-Sng" name="IS_UPDATED_POSITION" booleanValue="true"/>
@@ -1217,6 +1217,25 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dE1XUoWgEeyRBaFsEufRiA" points="[500, 1061, -643984, -643984]$[500, 1080, -643984, -643984]$[220, 1080, -643984, -643984]$[220, 880, -643984, -643984]$[560, 871, -643984, -643984]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dPuYsIWgEeyRBaFsEufRiA" id="(0.49079754601226994,1.0)"/>
       <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dPuYsYWgEeyRBaFsEufRiA" id="(0.0,0.5238095238095238)"/>
+    </edges>
+    <edges xmi:type="notation:Connector" xmi:id="_PtUJgNtIEeyOK-VVtkMWfw" type="Transition_Edge" source="_mo2ZEHUqEeyc962K-4AASw" target="_OZSI8ITcEeycc8_s_B-Sng">
+      <children xmi:type="notation:DecorationNode" xmi:id="_PtUwkNtIEeyOK-VVtkMWfw" type="Transition_NameLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_QUuu0NtIEeyOK-VVtkMWfw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PtUwkdtIEeyOK-VVtkMWfw" x="-86" y="-204"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_PtUwkttIEeyOK-VVtkMWfw" type="Transition_GuardLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_QWwIENtIEeyOK-VVtkMWfw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PtUwk9tIEeyOK-VVtkMWfw" x="1" y="-18"/>
+      </children>
+      <children xmi:type="notation:DecorationNode" xmi:id="_PtUwlNtIEeyOK-VVtkMWfw" type="Transition_StereotypeLabel">
+        <styles xmi:type="notation:BooleanValueStyle" xmi:id="_QZWwINtIEeyOK-VVtkMWfw" name="IS_UPDATED_POSITION" booleanValue="true"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PtUwldtIEeyOK-VVtkMWfw" x="-1" y="59"/>
+      </children>
+      <styles xmi:type="notation:FontStyle" xmi:id="_PtUJgdtIEeyOK-VVtkMWfw"/>
+      <element xmi:type="uml:Transition" href="TTD_Management.uml#_Pq_OQNtIEeyOK-VVtkMWfw"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_PtUJgttIEeyOK-VVtkMWfw" points="[640, 1029, -643984, -643984]$[700, 1020, -643984, -643984]$[940, 1020, -643984, -643984]$[940, 820, -643984, -643984]$[680, 820, -643984, -643984]$[680, 860, -643984, -643984]"/>
+      <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PyIYENtIEeyOK-VVtkMWfw" id="(0.9523809523809523,0.45)"/>
+      <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_PyIYEdtIEeyOK-VVtkMWfw" id="(0.759493670886076,0.0)"/>
     </edges>
   </notation:Diagram>
 </xmi:XMI>

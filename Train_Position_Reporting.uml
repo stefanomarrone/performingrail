@@ -46,11 +46,6 @@
           <port xmi:type="uml:Port" href="PerformingRail.uml#_hQVdQKrVEeyYGNlEZZyTmg"/>
         </trigger>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_qVE48EckEeyg8fpv7VrCwA" name="positionRequest()" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_f4a-wEciEeyg8fpv7VrCwA">
-        <trigger xmi:type="uml:Trigger" xmi:id="_45L80LpKEeyav9I0cqK3YA" name="positionRequest()">
-          <port xmi:type="uml:Port" href="PerformingRail.uml#_SeUQkLEOEeyVGPyNAHP5Cw"/>
-        </trigger>
-      </transition>
       <transition xmi:type="uml:Transition" xmi:id="_IW2qgEclEeyg8fpv7VrCwA" name="sendEoMTPR()" guard="_JcnLcMm4EeyfSrYGOrx-Vg" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_jUvNQEclEeyg8fpv7VrCwA">
         <ownedRule xmi:type="uml:Constraint" xmi:id="_JcnLcMm4EeyfSrYGOrx-Vg" name="TPR_Kind == EoM">
           <specification xmi:type="uml:InstanceValue" xmi:id="_JcnLccm4EeyfSrYGOrx-Vg" name="TPR_Kind">
@@ -79,7 +74,7 @@
           <port xmi:type="uml:Port" href="PerformingRail.uml#_VE_X4LEOEeyVGPyNAHP5Cw"/>
         </trigger>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_J8eUoNs6EeyS9-tGFTdugA" name="getTPRRequest()" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_B6aisNs6EeyS9-tGFTdugA">
+      <transition xmi:type="uml:Transition" xmi:id="_J8eUoNs6EeyS9-tGFTdugA" name="getTPRRequest (parameter)" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_B6aisNs6EeyS9-tGFTdugA">
         <trigger xmi:type="uml:Trigger" xmi:id="_TRcf8Ns6EeyS9-tGFTdugA" name="getTPRRequest()">
           <port xmi:type="uml:Port" href="PerformingRail.uml#_t0ducNiDEeyYK5aahhWWrQ"/>
         </trigger>
