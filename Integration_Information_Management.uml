@@ -190,14 +190,14 @@ X2R2 D4.1 page 56: Train Integrity refresh period</body>
               <port xmi:type="uml:Port" href="PerformingRail.uml#_pDMGUK6KEeyNmoFpmwcymA"/>
             </trigger>
           </transition>
-          <subvertex xmi:type="uml:State" xmi:id="_1HmskEIwEey5-bfWf6TPtQ" name="Lost"/>
-          <subvertex xmi:type="uml:State" xmi:id="_7FdLEEIwEey5-bfWf6TPtQ" name="No Information">
+          <subvertex xmi:type="uml:State" xmi:id="_1HmskEIwEey5-bfWf6TPtQ" name="Integrity Lost"/>
+          <subvertex xmi:type="uml:State" xmi:id="_7FdLEEIwEey5-bfWf6TPtQ" name="No Information Information">
             <ownedComment xmi:type="uml:Comment" xmi:id="_dw-LEEI1Eey5-bfWf6TPtQ" annotatedElement="_7FdLEEIwEey5-bfWf6TPtQ">
               <body></body>
             </ownedComment>
           </subvertex>
-          <subvertex xmi:type="uml:State" xmi:id="_xJppQEIwEey5-bfWf6TPtQ" name="Driver"/>
-          <subvertex xmi:type="uml:State" xmi:id="_FLH6kEhzEeyBhenFSEKB3w" name="Monitoring Device"/>
+          <subvertex xmi:type="uml:State" xmi:id="_xJppQEIwEey5-bfWf6TPtQ" name="Integrity Confirmed by Driver"/>
+          <subvertex xmi:type="uml:State" xmi:id="_FLH6kEhzEeyBhenFSEKB3w" name="Integrity Confirmed by External Device"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_ho9RUEhsEeyBhenFSEKB3w" kind="shallowHistory"/>
         </region>
       </subvertex>
