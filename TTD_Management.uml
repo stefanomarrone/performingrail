@@ -16,7 +16,7 @@
       <subvertex xmi:type="uml:State" xmi:id="_teze8E1DEey51db6W6sgyA" name="Occupied"/>
     </region>
   </ownedBehavior>
-  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_ZyBkUFK_EeyODuBwckM_-w" name="TTD_Management">
+  <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_ZyBkUFK_EeyODuBwckM_-w" name="TTD_Management_SM">
     <region xmi:type="uml:Region" xmi:id="_cXFiEFK_EeyODuBwckM_-w" name="Region1">
       <ownedComment xmi:type="uml:Comment" xmi:id="_3KqGoFONEey-6ZlVQ1gHJw">
         <body>all TTDs and all Position reports&#xD;
@@ -66,7 +66,7 @@ Movingrail D1.1</body>
       </subvertex>
       <subvertex xmi:type="uml:State" xmi:id="_5uQQYFK_EeyODuBwckM_-w" name="Synchronisation between TTD occupancy and TPR for each train">
         <connectionPoint xmi:type="uml:Pseudostate" xmi:id="_tAXHAHUlEeyc962K-4AASw" kind="entryPoint"/>
-        <region xmi:type="uml:Region" xmi:id="_ZLexEHSSEey70MNaFQKawQ" name="Region1">
+        <region xmi:type="uml:Region" xmi:id="_ZLexEHSSEey70MNaFQKawQ" name="TTD Management checks Rear Train Occupancy">
           <transition xmi:type="uml:Transition" xmi:id="_2EtqIHUqEeyc962K-4AASw" source="_VMLqsHUmEeyc962K-4AASw" target="_OTlJkITcEeycc8_s_B-Sng"/>
           <transition xmi:type="uml:Transition" xmi:id="_6eCa0HUqEeyc962K-4AASw" guard="_I3vrUHUrEeyc962K-4AASw" source="_wjn1kHUpEeyc962K-4AASw" target="_x1d38HUpEeyc962K-4AASw">
             <ownedRule xmi:type="uml:Constraint" xmi:id="_I3vrUHUrEeyc962K-4AASw">
@@ -111,6 +111,7 @@ Movingrail D1.1</body>
             </ownedRule>
           </transition>
           <transition xmi:type="uml:Transition" xmi:id="_c_ouQIWgEeyRBaFsEufRiA" source="_Pa-r4IWfEeyRBaFsEufRiA" target="_OTlJkITcEeycc8_s_B-Sng"/>
+          <transition xmi:type="uml:Transition" xmi:id="_Pq_OQNtIEeyOK-VVtkMWfw" name="[false]" source="_mmKRcHUqEeyc962K-4AASw" target="_OTlJkITcEeycc8_s_B-Sng"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_VMLqsHUmEeyc962K-4AASw"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_wjn1kHUpEeyc962K-4AASw" name="TTD_STATUS(TTD(MaxSRE(Train)))==OCCUPIED" kind="choice"/>
           <subvertex xmi:type="uml:Pseudostate" xmi:id="_x1d38HUpEeyc962K-4AASw" name="TTD_STATUS(TDD(MinSRE(Train)))==CLEAR" kind="choice"/>
@@ -121,7 +122,7 @@ Movingrail D1.1</body>
           <subvertex xmi:type="uml:State" xmi:id="_r0_4sITfEeycc8_s_B-Sng" name="add a desynchronizationTimer for TTD"/>
           <subvertex xmi:type="uml:State" xmi:id="_Pa-r4IWfEeyRBaFsEufRiA" name="contact TMS Rear End prb"/>
         </region>
-        <region xmi:type="uml:Region" xmi:id="_HiXR8HUZEeyO5v1ny_QVKg" name="Region2">
+        <region xmi:type="uml:Region" xmi:id="_HiXR8HUZEeyO5v1ny_QVKg" name="TTD Management checks Front Train Occupancy">
           <ownedComment xmi:type="uml:Comment" xmi:id="_nAxmgHVOEeyEscYo_klkzA">
             <body>Add Synch_TTD_TrainTPR TO TRAIN</body>
           </ownedComment>

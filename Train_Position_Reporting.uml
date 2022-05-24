@@ -46,11 +46,6 @@
           <port xmi:type="uml:Port" href="PerformingRail.uml#_hQVdQKrVEeyYGNlEZZyTmg"/>
         </trigger>
       </transition>
-      <transition xmi:type="uml:Transition" xmi:id="_qVE48EckEeyg8fpv7VrCwA" name="positionRequest()" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_f4a-wEciEeyg8fpv7VrCwA">
-        <trigger xmi:type="uml:Trigger" xmi:id="_45L80LpKEeyav9I0cqK3YA" name="positionRequest()">
-          <port xmi:type="uml:Port" href="PerformingRail.uml#_SeUQkLEOEeyVGPyNAHP5Cw"/>
-        </trigger>
-      </transition>
       <transition xmi:type="uml:Transition" xmi:id="_IW2qgEclEeyg8fpv7VrCwA" name="sendEoMTPR()" guard="_JcnLcMm4EeyfSrYGOrx-Vg" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_jUvNQEclEeyg8fpv7VrCwA">
         <ownedRule xmi:type="uml:Constraint" xmi:id="_JcnLcMm4EeyfSrYGOrx-Vg" name="TPR_Kind == EoM">
           <specification xmi:type="uml:InstanceValue" xmi:id="_JcnLccm4EeyfSrYGOrx-Vg" name="TPR_Kind">
@@ -79,6 +74,16 @@
           <port xmi:type="uml:Port" href="PerformingRail.uml#_VE_X4LEOEeyVGPyNAHP5Cw"/>
         </trigger>
       </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_J8eUoNs6EeyS9-tGFTdugA" name="getTPRRequest (parameter)" source="_hsOCMEcjEeyg8fpv7VrCwA" target="_B6aisNs6EeyS9-tGFTdugA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_TRcf8Ns6EeyS9-tGFTdugA" name="getTPRRequest()">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_t0ducNiDEeyYK5aahhWWrQ"/>
+        </trigger>
+      </transition>
+      <transition xmi:type="uml:Transition" xmi:id="_ZrADANs6EeyS9-tGFTdugA" name="PositionRequest()" source="_B6aisNs6EeyS9-tGFTdugA" target="_f4a-wEciEeyg8fpv7VrCwA">
+        <trigger xmi:type="uml:Trigger" xmi:id="_i6JTINs6EeyS9-tGFTdugA" name="positionRequest">
+          <port xmi:type="uml:Port" href="PerformingRail.uml#_SeUQkLEOEeyVGPyNAHP5Cw"/>
+        </trigger>
+      </transition>
       <subvertex xmi:type="uml:Pseudostate" xmi:id="_PpjNIEcGEeyulrbFdhDRlw"/>
       <subvertex xmi:type="uml:State" xmi:id="_xAIcsEcZEeyulrbFdhDRlw" name="Verifying_PositionStatus"/>
       <subvertex xmi:type="uml:State" xmi:id="_f4a-wEciEeyg8fpv7VrCwA" name="Wait_Train_Localization_Unit_Position"/>
@@ -87,6 +92,7 @@
       <subvertex xmi:type="uml:State" xmi:id="_jUvNQEclEeyg8fpv7VrCwA" name="TPR_data_stored_onboard"/>
       <subvertex xmi:type="uml:State" xmi:id="_pwUjoEe0Eeyg8fpv7VrCwA" name="Aggregating_data_in_SoM_TPR_message"/>
       <subvertex xmi:type="uml:State" xmi:id="_4sG5gEiQEey8Q6WFZJUagA" name="Aggregating_data_in_TPR_message"/>
+      <subvertex xmi:type="uml:State" xmi:id="_B6aisNs6EeyS9-tGFTdugA" name="Receive_TPR_Request"/>
     </region>
   </ownedBehavior>
 </uml:UseCase>
