@@ -1,10 +1,10 @@
 # Communication Management, Trains Management, Track Status Management UPPAAL model
 
-This is the model described in the PERFORMINGRAIL Deliverable 2.2, with Communication Management being the main automaton.
+This is the timed automata network described in the PERFORMINGRAIL Deliverable 2.2, with Communication Management as the main automaton. It models the interaction between the CommunicationManagement function and the TrainsManagement and TrackStatusManagement functions regarding the Loss of Communication of a Train with the L3 Trackside system.
 
 ## Prerequisites
 
-In order to manipulate the model UPPAAL has to be installed on your machine from the official website: https://uppaal.org/downloads/. Once the model has been added to the UPPAAL directory it can be edited and used for simulation and verification purposes.
+In order to manipulate the model, UPPAAL has to be installed on your machine from the official website: https://uppaal.org/downloads/. Once the model has been added to the UPPAAL directory it can be edited and used for simulation and verification purposes.
 
 ## Usage
 
