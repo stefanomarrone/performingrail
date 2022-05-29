@@ -4,8 +4,10 @@
 <<descrition>>
 
 ## Prerequisites
-
 <<tools to install>>
+
+The model is designed with uppaal tool.
+For download, please follow Installation Instructions in https://uppaal.org/downloads/
 
 ## Usage
 
