@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>//Assumption : train length never changes in train data
+//Assumption : desynch timer &lt;= synch timer
+//Assumption : TPR_Reporting_TIMEOUT &lt; SynchronizationTIMEOUT
+//int [0,nTrain] n
+
+
+// status TTD/TSA
+const int NB_STATUS = 3;
+typedef int [0, 2] STATUS_Type ; 
+const STATUS_Type CLEAR = 0;
+const STATUS_Type OCCUPIED = 1;
+const STATUS_Type UNKNOWN = 2;
+
+
+const int nTTDs=10; //number of ttds
+const int nLRBG=10; //number of LRBG
+const int nTrain=3 ; //number of trains
+
+const int desynchronizationTIMEOUT = 2 ; //it is also the timeout for each TTD to report its status regularly
+const int synchronizationTIMEOUT = 5 ;
+
+const int Loc_ABS_LRBG[nLRBG] = {0,5000,10000,15000,20000,25000,30000,35000,40000,45000}; //m
+const int startTTD[nTTDs] = {0,5000,10000,15000,20000,25000,30000,35000,40000,45000}; //m
+const int endTTD[nTTDs] = {5000,10000,15000,20000,25000,30000,35000,40000,45000,50000}; //m
+const int L_TRAIN = 900 ; //m
+
+//train speed max 110 m/s 400 km/h = 
+
+//variable related to TTD management
+STATUS_Type reportedTTDStatus [nTTDs] ; //local variable 
+
+bool synchro ;
+bool checkShorten ; //If it exists a TSA to be shorten
+bool checkAlertTrain ;
+int reportedTTDM_mSFE [nTrain] ;
+int reportedTTDM_MSFE [nTrain] ;
+int reportedTTDM_mSRE [nTrain] ;
+int reportedTTDM_MSRE [nTrain] ;
+int ReportedTTDM_idLRBG [nTrain] ; 
+
+bool AlertTMS [nTrain];
+bool AddDesynTimer [nTTDs];
+
+int ReleaseTrackStatusFrontTrainStart [nTrain];
+int ReleaseTrackStatusFrontTrainEnd [nTrain];
+int ReleaseTrackStatusRearTrainStart [nTrain];
+int ReleaseTrackStatusRearTrainEnd [nTrain];
+
+//variable related to Train management
+
+int reportedTM_mSFE [nTrain] ;
+int reportedTM_MSFE [nTrain] ;
+int reportedTM_mSRE [nTrain] ;
+int reportedTM_MSRE [nTrain] ;
+int ReportedTM_idLRBG [nTrain] ;
+
+clock test ;
+//Channel definition
+//TTD - TSA
+chan releaseTSA   ;
+chan releaseTSACompleted ;
+broadcast chan InfoTM [nTrain] ; 
+broadcast chan OccupiedTTD[nTTDs]; // TTD_ TTDM
+broadcast chan ClearTTD[nTTDs]; // TTD_ TTDM
+chan AlertTMS_TTDM ; //TTD - TMS
+chan AlertTMS_Faulty_TTD [nTTDs] ; //TTD - TMS
+//Train Position Reporting
+
+broadcast chan TrainPositionReport [nTrain]; // TPR-TM
+
+</declaration>
+	<template>
+		<name>TTD</name>
+		<parameter>int ID_TTD,  STATUS_Type initStatus</parameter>
+		<declaration>clock t_TTD ;</declaration>
+		<location id="id0" x="-425" y="-221">
+			<name x="-476" y="-238">Clear</name>
+			<label kind="invariant" x="-561" y="-195">t_TTD &lt;= desynchronizationTIMEOUT</label>
+		</location>
+		<location id="id1" x="-195" y="-221">
+			<name x="-204" y="-255">Occupied</name>
+			<label kind="invariant" x="-297" y="-204">t_TTD &lt;= desynchronizationTIMEOUT</label>
+		</location>
+		<location id="id2" x="-289" y="-348">
+			<name x="-299" y="-382">Init</name>
+		</location>
+		<init ref="id2"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-731" y="-229">t_TTD == desynchronizationTIMEOUT</label>
+			<label kind="synchronisation" x="-620" y="-255">ClearTTD[ID_TTD] !</label>
+			<label kind="assignment" x="-629" y="-212">t_TTD = 0</label>
+			<nail x="-476" y="-195"/>
+			<nail x="-484" y="-221"/>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-110" y="-246">t_TTD == desynchronizationTIMEOUT</label>
+			<label kind="synchronisation" x="-110" y="-263">OccupiedTTD[ID_TTD] !</label>
+			<label kind="assignment" x="-110" y="-229">t_TTD = 0</label>
+			<nail x="-144" y="-263"/>
+			<nail x="-136" y="-204"/>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id1"/>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id1"/>
+			<label kind="guard" x="-255" y="-323">initStatus == OCCUPIED</label>
+			<label kind="assignment" x="-238" y="-306">t_TTD = 0</label>
+		</transition>
+		<transition>
+			<source ref="id2"/>
+			<target ref="id0"/>
+			<label kind="guard" x="-476" y="-314">initStatus == CLEAR</label>
+			<label kind="assignment" x="-433" y="-297">t_TTD = 0</label>
+		</transition>
+		<transition>
+			<source ref="id1"/>
+			<target ref="id0"/>
+			<nail x="-195" y="-161"/>
+			<nail x="-425" y="-161"/>
+		</transition>
+	</template>
+	<template>
+		<name>TTDM_ReceiveTTD</name>
+		<parameter>int ID_TTD</parameter>
+		<declaration>void checkDesynTimer(int iTTD) {
+if (AddDesynTimer[iTTD] == true )
+
+AddDesynTimer[iTTD] = false ;
+}</declaration>
+		<location id="id3" x="-102" y="-255">
+		</location>
+		<location id="id4" x="-102" y="-348">
+			<urgent/>
+		</location>
+		<location id="id5" x="-314" y="-263">
+			<urgent/>
+		</location>
+		<init ref="id4"/>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id3"/>
+			<label kind="synchronisation" x="-357" y="-348">AlertTMS_Faulty_TTD [ID_TTD] !</label>
+			<nail x="-314" y="-323"/>
+			<nail x="-127" y="-323"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id5"/>
+			<label kind="guard" x="-663" y="-280">synchro == true &amp;&amp; AddDesynTimer [ID_TTD] == true</label>
+			<label kind="synchronisation" x="-484" y="-297">ClearTTD[ID_TTD] ?</label>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id3"/>
+			<label kind="assignment" x="-93" y="-306">reportedTTDStatus [ID_TTD] = UNKNOWN</label>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="guard" x="-484" y="-229">synchro == true &amp;&amp; AddDesynTimer [ID_TTD] == false</label>
+			<label kind="synchronisation" x="-263" y="-212">ClearTTD[ID_TTD] ?</label>
+			<label kind="assignment" x="-348" y="-195">reportedTTDStatus [ID_TTD] = CLEAR</label>
+			<nail x="-119" y="-195"/>
+			<nail x="-144" y="-229"/>
+		</transition>
+		<transition>
+			<source ref="id3"/>
+			<target ref="id3"/>
+			<label kind="guard" x="-68" y="-230">synchro == true</label>
+			<label kind="synchronisation" x="-60" y="-213">OccupiedTTD[ID_TTD] ?</label>
+			<label kind="assignment" x="-60" y="-196">reportedTTDStatus [ID_TTD] = OCCUPIED,
+checkDesynTimer(ID_TTD)</label>
+			<nail x="-34" y="-272"/>
+			<nail x="-68" y="-238"/>
+		</transition>
+	</template>
+	<template>
+		<name>TTDM_ReceiveTrainInfo</name>
+		<parameter>int iTrain</parameter>
+		<location id="id6" x="-85" y="-229">
+		</location>
+		<location id="id7" x="-85" y="-144">
+			<committed/>
+		</location>
+		<init ref="id6"/>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id6"/>
+			<label kind="guard" x="-114" y="-293">synchro == false</label>
+			<label kind="synchronisation" x="-119" y="-314">InfoTM [iTrain] ?</label>
+			<nail x="-136" y="-238"/>
+			<nail x="-93" y="-280"/>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id6"/>
+			<nail x="-25" y="-144"/>
+			<nail x="-25" y="-229"/>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id7"/>
+			<label kind="guard" x="-357" y="-246">synchro == true</label>
+			<label kind="synchronisation" x="-356" y="-229">InfoTM [iTrain] ?</label>
+			<label kind="assignment" x="-493" y="-204">reportedTTDM_mSFE [iTrain] = reportedTM_mSFE [iTrain],
+reportedTTDM_MSFE [iTrain] = reportedTM_MSFE [iTrain],
+reportedTTDM_mSRE [iTrain] = reportedTM_mSRE [iTrain],
+reportedTTDM_MSRE [iTrain] = reportedTM_MSRE [iTrain],
+ReportedTTDM_idLRBG [iTrain] = ReportedTM_idLRBG [iTrain]</label>
+		</transition>
+	</template>
+	<template>
+		<name>TPR_Management</name>
+		<parameter>int ID_Train</parameter>
+		<declaration>const int T_CYCLOC = 5 ;
+clock t_tpr ;</declaration>
+		<location id="id8" x="-221" y="-212">
+			<name x="-204" y="-170">TPR_init</name>
+			<label kind="invariant" x="-289" y="-195">t_tpr &lt;= T_CYCLOC</label>
+		</location>
+		<init ref="id8"/>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id8"/>
+			<label kind="synchronisation" x="-450" y="-212">TrainPositionReport [ID_Train] !</label>
+			<label kind="assignment" x="-374" y="-195">t_tpr = 0</label>
+			<nail x="-280" y="-212"/>
+			<nail x="-221" y="-153"/>
+		</transition>
+	</template>
+	<template>
+		<name>TMS_TTDM</name>
+		<parameter>int ID_TTD</parameter>
+		<declaration>void updateAlertTrainPosition(){
+
+checkAlertTrain = false ;
+for (i : int[0,nTrain-1])
+{
+    AlertTMS[i] = false ;
+    
+}
+}</declaration>
+		<location id="id9" x="0" y="0">
+		</location>
+		<init ref="id9"/>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id9"/>
+			<label kind="synchronisation" x="-280" y="8">AlertTMS_Faulty_TTD [ID_TTD] ?</label>
+			<nail x="-25" y="51"/>
+			<nail x="-76" y="-8"/>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id9"/>
+			<label kind="synchronisation" x="85" y="-34">AlertTMS_TTDM ?</label>
+			<label kind="assignment" x="85" y="-17">updateAlertTrainPosition()</label>
+			<nail x="68" y="-59"/>
+			<nail x="93" y="34"/>
+		</transition>
+	</template>
+	<template>
+		<name>TM_SendTrainInfo</name>
+		<parameter>int ID_Train</parameter>
+		<location id="id10" x="-110" y="-391">
+		</location>
+		<location id="id11" x="-110" y="-263">
+			<urgent/>
+		</location>
+		<location id="id12" x="-262" y="-391">
+			<name x="-357" y="-399">computeInfo</name>
+			<urgent/>
+		</location>
+		<init ref="id10"/>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id12"/>
+			<label kind="synchronisation" x="-246" y="-425">TrainPositionReport[ ID_Train] ?</label>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id10"/>
+			<nail x="-42" y="-263"/>
+			<nail x="-42" y="-399"/>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id11"/>
+			<label kind="synchronisation" x="-280" y="-323">InfoTM [ID_Train] !</label>
+		</transition>
+	</template>
+	<template>
+		<name>TTDManagement</name>
+		<declaration>clock t_TTD_M ;
+clock t_TMS_processing_time;
+
+// init structure FrontTrainShorten &amp; RearTrainShorten
+void initializeAllStructure()
+{
+checkShorten = false ;
+
+checkAlertTrain = false ;
+for (i : int[0,nTrain-1])
+{
+    ReleaseTrackStatusFrontTrainStart[i] = -1 ; //-1 means that no release shall be done
+    ReleaseTrackStatusFrontTrainEnd[i] = -1 ; //-1 means that no release shall be done
+    ReleaseTrackStatusRearTrainStart[i] = -1 ; //-1 means that no release shall be done
+    ReleaseTrackStatusRearTrainEnd[i] = -1 ;  //-1 means that no release shall be done
+    AlertTMS[i] = false ; //false means that no need to alert TMS 
+    
+}
+for (i : int[0,nTTDs-1])
+{
+    AddDesynTimer[i] = false ;   //ok
+}
+}
+
+//check if remaining TSA to be shorten
+void checkTSAShorten()
+{
+int i = 0 ;
+checkShorten = false ;
+
+while (i&lt; nTrain-1 &amp;&amp; checkShorten == false)
+{
+    if (ReleaseTrackStatusFrontTrainStart[i] != -1 || ReleaseTrackStatusRearTrainStart[i] != -1) checkShorten = true ;
+    else i = i + 1 ;
+    
+}
+}
+
+//chech if TMS needs to be alerted abt train location
+void checkAlertTMS_Train()
+{
+int i = 0 ;
+checkAlertTrain = false ;
+
+while (i&lt; nTrain-1 &amp;&amp; checkAlertTrain == false  )
+{
+    if (AlertTMS[i] == true) checkAlertTrain = true ;
+    else i = i + 1 ;
+    
+}
+}
+//chech if TMS needs to be alerted abt faulty TTD
+
+
+
+void Synchronize()
+{
+    for (i : int[0,nTrain-1])
+    {
+        int xmF = Loc_ABS_LRBG [ReportedTTDM_idLRBG [i]] + reportedTTDM_mSFE [i] ;
+        int xMF = Loc_ABS_LRBG [ReportedTTDM_idLRBG [i]] + reportedTTDM_MSFE [i] ;
+        int xmR = Loc_ABS_LRBG [ReportedTTDM_idLRBG [i]] + reportedTTDM_mSRE [i] ;
+        int xMR = Loc_ABS_LRBG [ReportedTTDM_idLRBG [i]] + reportedTTDM_MSRE [i] ;
+        int TTDmF ;
+        int TTDMF ;
+        int TTDmR ;
+        int TTDMR ;
+        int j = 0;
+    
+        while (j &lt;= nTTDs-1)
+        {
+            if  (xmF &gt;= startTTD[j] and xmF &lt;= endTTD[j]) TTDmF = j ;
+            else j ++ ;  
+        }            
+
+        j = 0 ;
+        while (j &lt;= nTTDs-1)
+        {
+            if  (xMF &gt;= startTTD[j] and xMF &lt;= endTTD[j]) TTDMF = j ;
+            else j ++ ;
+        }              
+
+        if ((reportedTTDStatus[TTDmF] == OCCUPIED) and (reportedTTDStatus[TTDMF] == CLEAR))
+        {
+            checkShorten = true ; 
+            ReleaseTrackStatusFrontTrainStart [i] = startTTD[TTDMF];
+            ReleaseTrackStatusFrontTrainEnd [i] =  xMF ;
+        }
+
+        if ((TTDmF==TTDMF) and (reportedTTDStatus[TTDMF] == CLEAR) )
+        {
+            AddDesynTimer[TTDmF] = true ; 
+        }
+
+        if ((reportedTTDStatus[TTDmF] == CLEAR) and (reportedTTDStatus[TTDMF] == OCCUPIED))
+        {
+            checkAlertTrain = true ; 
+            AlertTMS[i] = true ; 
+        }
+      //verify rear
+        j = 0 ;
+        while (j &lt;= nTTDs-1)
+        {
+            if  (xmR &gt;= startTTD[j] and xmR &lt;= endTTD[j]) TTDmR = j ;
+            else j ++ ;              
+        }
+
+        j = 0 ;
+        while (j &lt;= nTTDs-1)
+        {
+            if  (xMR &gt;= startTTD[j] and xMR &lt;= endTTD[j]) TTDMR = j ;
+            else j ++ ;              
+        }
+
+       if ((reportedTTDStatus[TTDmR] == CLEAR) and (reportedTTDStatus[TTDMR] == OCCUPIED))
+        {
+            checkShorten = true ; 
+            ReleaseTrackStatusRearTrainStart [i] = xmR ;
+            ReleaseTrackStatusRearTrainEnd [i] = endTTD[TTDmR]  ;
+
+        }
+
+        if ((TTDmR==TTDMR) and (reportedTTDStatus[TTDMR] == CLEAR) )
+        {
+            AddDesynTimer[TTDmR] = true ;  
+        }
+
+        if ((reportedTTDStatus[TTDmR] == OCCUPIED) and (reportedTTDStatus[TTDMR] == CLEAR))
+        {
+            checkAlertTrain = true ;            
+            AlertTMS[i] = true ; 
+        }
+  
+    }  
+
+}</declaration>
+		<location id="id13" x="-586" y="-399">
+			<label kind="invariant" x="-569" y="-408">t_TTD_M &lt;= synchronizationTIMEOUT</label>
+		</location>
+		<location id="id14" x="-586" y="-476">
+		</location>
+		<location id="id15" x="-586" y="-280">
+			<committed/>
+		</location>
+		<location id="id16" x="-442" y="-212">
+			<committed/>
+		</location>
+		<location id="id17" x="-816" y="-255">
+			<label kind="invariant" x="-986" y="-247">t_TMS_processing_time &lt;= 1</label>
+		</location>
+		<init ref="id14"/>
+		<transition>
+			<source ref="id17"/>
+			<target ref="id15"/>
+			<label kind="guard" x="-850" y="-289">t_TMS_processing_time == 1</label>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id15"/>
+			<label kind="synchronisation" x="-612" y="-221">releaseTSACompleted ?</label>
+			<nail x="-493" y="-229"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id17"/>
+			<label kind="guard" x="-799" y="-212">checkAlertTrain == true</label>
+			<label kind="synchronisation" x="-782" y="-229">AlertTMS_TTDM !</label>
+			<label kind="assignment" x="-790" y="-246">t_TMS_processing_time = 0</label>
+			<nail x="-731" y="-238"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id13"/>
+			<label kind="guard" x="-918" y="-382">checkShorten == false &amp;&amp; checkAlertTrain == false</label>
+			<label kind="assignment" x="-722" y="-365">synchro = true,
+t_TTD_M = 0</label>
+			<nail x="-629" y="-297"/>
+			<nail x="-629" y="-374"/>
+		</transition>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id16"/>
+			<label kind="guard" x="-433" y="-272">checkShorten == true</label>
+			<label kind="synchronisation" x="-433" y="-255">releaseTSA !</label>
+			<nail x="-442" y="-280"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id15"/>
+			<label kind="guard" x="-578" y="-357">t_TTD_M == synchronizationTIMEOUT</label>
+			<label kind="assignment" x="-569" y="-340">Synchronize(),
+synchro = false</label>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id13"/>
+			<label kind="assignment" x="-578" y="-459">t_TTD_M = 0,
+initializeAllStructure()</label>
+		</transition>
+	</template>
+	<template>
+		<name>TrackStatus_TTD</name>
+		<declaration>void updateStructure()
+{
+checkShorten = false ;
+
+for (i : int[0,nTrain-1])
+{
+    ReleaseTrackStatusFrontTrainStart[i] = -1 ; 
+    ReleaseTrackStatusFrontTrainEnd[i] = -1 ; 
+    ReleaseTrackStatusRearTrainStart[i] = -1 ; 
+    ReleaseTrackStatusRearTrainEnd[i] = -1 ; 
+    
+}
+
+}</declaration>
+		<location id="id18" x="-178" y="-272">
+		</location>
+		<location id="id19" x="-178" y="-195">
+			<name x="-153" y="-212">ReleaseAreas</name>
+			<committed/>
+		</location>
+		<init ref="id18"/>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id18"/>
+			<label kind="synchronisation" x="-408" y="-255">releaseTSACompleted !</label>
+			<label kind="assignment" x="-357" y="-238">updateStructure()</label>
+			<nail x="-246" y="-195"/>
+			<nail x="-246" y="-280"/>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id19"/>
+			<label kind="synchronisation" x="-170" y="-246">releaseTSA ?</label>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+// List one or more processes to be composed into a system.
+
+TTDMProcess = TTDManagement();
+TSProcess = TrackStatus_TTD();
+
+TTDProcess0 = TTD(0, OCCUPIED);
+TTDProcess1 = TTD(1, CLEAR);
+TTDProcess2 = TTD(2, CLEAR);
+TTDProcess3 = TTD(3, CLEAR);
+TTDProcess4 = TTD(4, OCCUPIED);
+TTDProcess5 = TTD(5, CLEAR);
+TTDProcess6 = TTD(6, CLEAR);
+TTDProcess7 = TTD(7, OCCUPIED);
+TTDProcess8 = TTD(8, CLEAR);
+TTDProcess9 = TTD(9, CLEAR);
+
+TTDRProcess0 = TTDM_ReceiveTTD(0);
+TTDRProcess1 = TTDM_ReceiveTTD(1);
+TTDRProcess2 = TTDM_ReceiveTTD(2);
+TTDRProcess3 = TTDM_ReceiveTTD(3);
+TTDRProcess4 = TTDM_ReceiveTTD(4);
+TTDRProcess5 = TTDM_ReceiveTTD(5);
+TTDRProcess6 = TTDM_ReceiveTTD(6);
+TTDRProcess7 = TTDM_ReceiveTTD(7);
+TTDRProcess8 = TTDM_ReceiveTTD(8);
+TTDRProcess9 = TTDM_ReceiveTTD(9);
+
+TTDMTIProcess0 = TTDM_ReceiveTrainInfo(0);
+TTDMTIProcess1 = TTDM_ReceiveTrainInfo(1);
+TTDMTIProcess2 = TTDM_ReceiveTrainInfo(2);
+
+TMProcess0 = TM_SendTrainInfo(0);
+TMProcess1 = TM_SendTrainInfo(1);
+TMProcess2 = TM_SendTrainInfo(2);
+
+TPRProcess0 = TPR_Management(0);
+TPRProcess1 = TPR_Management(1);
+TPRProcess2 = TPR_Management(2);
+
+TMSProcess0 = TMS_TTDM(0);
+TMSProcess1 = TMS_TTDM(1);
+TMSProcess2 = TMS_TTDM(2);
+TMSProcess3 = TMS_TTDM(3);
+TMSProcess4 = TMS_TTDM(4);
+TMSProcess5 = TMS_TTDM(5);
+TMSProcess6 = TMS_TTDM(6);
+TMSProcess7 = TMS_TTDM(7);
+TMSProcess8 = TMS_TTDM(8);
+TMSProcess9 = TMS_TTDM(9);
+
+system TTDMProcess, TSProcess,
+TPRProcess1,TPRProcess2, TPRProcess0,
+ TTDProcess0, TTDProcess1, TTDProcess2, TTDProcess3, TTDProcess4, TTDProcess5, TTDProcess6, TTDProcess7, TTDProcess8, TTDProcess9,
+ TTDRProcess1, TTDRProcess2, TTDRProcess3, TTDRProcess4, TTDRProcess5, TTDRProcess6, TTDRProcess7, TTDRProcess8, TTDRProcess9,
+ TTDMTIProcess0, TTDMTIProcess1, TTDMTIProcess2, 
+TMProcess0, TMProcess1, TMProcess2 ,
+ TMSProcess1, TMSProcess2, TMSProcess3, TMSProcess4, TMSProcess5, TMSProcess6, TMSProcess7, TMSProcess8, TMSProcess9;
+ </system>
+	<queries>
+		<query>
+			<formula>E&lt;&gt; test &gt;= 10</formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+		<query>
+			<formula>
+</formula>
+			<comment></comment>
+		</query>
+	</queries>
+</nta>
