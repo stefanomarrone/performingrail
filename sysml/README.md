@@ -12,22 +12,13 @@ This folder contains the SysML model of ETCS-L3 according to the objective of th
 
 ## Usage
 
-The file characterizing a SysML project are:
-*.project
-*.di => tool metadata=> entry point for starting modeling
-*.notation => graphical data
-*.uml => UML model data
+The model is apportioned over different files to foster an easier distributed and collaborative environment. Each file is related to a different submodel/part of the whole model. This notwithstanding, the usage of the model is transparent to this division. Hence, there are in the folder many triplets of .di, .notation and .uml files.
 
-The model is apportioned over different files to foster an easier distributed and collaborative environment. Each file is related to a different submodel/part of the whole model. This notwithstanding, the usage of the model is transparent to this division. Hence, there are in the folder many triplets of .di, .notation and .uml files: they are usually grouped in the XXXXX.
-
-To explore and contribute to the project, after cloning the repository, import the project in Papyrus:
-•	File > Import… > Git > Projects from Git > Next
-•	Choose Clone URI, Next, and enter the project URL
-https://github.com/PapyrusSysMLinAction/SmartHomeUseCase
-•	Choose the main branch of the repository and the location of your local workspace
-* Open in the Project Explorer the file Perfomringrail
-•	Explore the model via “Model Explorer”
-
+To explore and contribute to the project, after cloning the repository in a local folder:
+- (right click in the “Project Explorer”) > Import... > Git > Projects from Git > Next
+- Choose the main branch of the repository and the location of your local workspace
+- Open in the Project Explorer the file Perfomringrail
+- Explore the model via “Model Explorer”
 
 
 ## License
