@@ -5,7 +5,7 @@ Points Management is the function of the trackside devoted to the management of 
 <<descrition>>
 
 ## Prerequisites
-
+In order to manipulate the model, UPPAAL has to be installed on your machine from the official website: https://uppaal.org/downloads/. Please follow Installation Instructions. Once the model has been added to the UPPAAL directory it can be edited and used for simulation and verification purposes.
 <<tools to install>>
 
 ## Usage
