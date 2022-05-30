@@ -158,7 +158,9 @@
         <packagedElement xmi:type="uml:Class" xmi:id="_vt5skLGEEey0QOTMOj7Mdg" name="PVT_Raw_Data">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_68BmwLOFEeyq06BeRRk88A" name="position" type="_CRWn0N9zEey2geZbwIm9rQ"/>
           <ownedAttribute xmi:type="uml:Property" xmi:id="_9Ih6kLOFEeyq06BeRRk88A" name="speed" type="_CRWn0N9zEey2geZbwIm9rQ"/>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="__wCvYLOFEeyq06BeRRk88A" name="time" type="_CRWn0N9zEey2geZbwIm9rQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__wCvYLOFEeyq06BeRRk88A" name="time">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+          </ownedAttribute>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_8plwUJMOEeyEEqDYLr-O6w" name="BrakeStep">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_JMmTAJMREeyEEqDYLr-O6w" name="lowSpeed">
