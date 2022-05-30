@@ -744,8 +744,8 @@ TPR_TrainModeProcess = TPR_Management (0);
 Train_ManagementProcess = Train_Management(0);
 //TrainMoveProcess = TrainMove(1, 900 , 1000.0, 1, 2, 5.0, 25000.0) ; //int ID_Train, int Length , int posInit, int ID_LRBG_init,  int RefreshspeedPeriod, double speed
 // List one or more processes to be composed into a system.
-system TIMSProcess, IIMProcess,TrainModeProcess, TPR_TrainModeProcess , LocationUnitProcess, DriverProcess,Train_ManagementProcess, IIMUpdateProcess, TrainDataProcess &lt; SDSProcess; 
-// TrainSpeedProcess, IIMUpdateProcess, ,  TrainDataProcess ;
+system TIMSProcess, IIMProcess,TrainModeProcess,TrainSpeedProcess, TPR_TrainModeProcess , LocationUnitProcess, DriverProcess,Train_ManagementProcess, IIMUpdateProcess, TrainDataProcess &lt; SDSProcess; 
+//  ;
  </system>
 	<queries>
 		<query>
