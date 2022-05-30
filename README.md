@@ -1,25 +1,32 @@
-# ETCS-L3 Specification
+# Performingrail's Moving Block Modelling Baseline
 
-This folder contains modelling baseline of ETCS-L3 according to the objective of the WP2 - of the Performingrail project. 
+This folder contains modelling baseline of future ETCS-L3 moving block signalling systems according to the objective of the WP2 - Modelling and Analysis of Moving Block Specifications of the PERformance-based Formal modelling and Optimal tRaffic Management for movINGblock
+RAILway signalling (Performingrail) project. 
 
 ## The PerformingRail project
+Performingrail aims to deliver formal modelling and optimal traffic management, a moving block railway signalling using advanced train positioning approaches that mitigates potential hazards in the diverse market segments. It is a project funded by the Shift-to-Rail EU Programme.
 
+https://www.performingrail.com/
 
 
 ## Repository structure
 The file characterizing a SysML project are:
-*.project
-*.di => tool metadata=> entry point for starting modeling
-*.notation => graphical data
-*.uml => UML model data
+*sysml
+*formal => graphical data
+*other => tool metadata=> entry point for starting modeling
 
 
 ## Scientific and technical papers
-
+The following papers have been published and 
 
 
 ## Acknowledgement
 
+
+## Main Contributors
+Stefano Marrone
+Roberto Nardone
+Rim Saddem
 
 
 
