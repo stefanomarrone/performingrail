@@ -155,19 +155,10 @@
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
           </ownedAttribute>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_vt5skLGEEey0QOTMOj7Mdg" name="Location Raw Data">
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_68BmwLOFEeyq06BeRRk88A" name="position">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_9Ih6kLOFEeyq06BeRRk88A" name="lowerMargin">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="__wCvYLOFEeyq06BeRRk88A" name="upperMargin">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
-          </ownedAttribute>
-          <ownedAttribute xmi:type="uml:Property" xmi:id="_CK8EgLOGEeyq06BeRRk88A" name="confidenceLevel">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
-          </ownedAttribute>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vt5skLGEEey0QOTMOj7Mdg" name="PVT_Raw_Data">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_68BmwLOFEeyq06BeRRk88A" name="position" type="_CRWn0N9zEey2geZbwIm9rQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_9Ih6kLOFEeyq06BeRRk88A" name="speed" type="_CRWn0N9zEey2geZbwIm9rQ"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="__wCvYLOFEeyq06BeRRk88A" name="time" type="_CRWn0N9zEey2geZbwIm9rQ"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_8plwUJMOEeyEEqDYLr-O6w" name="BrakeStep">
           <ownedAttribute xmi:type="uml:Property" xmi:id="_JMmTAJMREeyEEqDYLr-O6w" name="lowSpeed">
@@ -221,6 +212,20 @@
       <packagedElement xmi:type="uml:Enumeration" xmi:id="_QXJGoMVwEey5rJ-BghwSjA" name="ConnectionStatus_Type">
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QXJGocVwEey5rJ-BghwSjA" name="connected"/>
         <ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="_QXJtsMVwEey5rJ-BghwSjA" name="notConnected"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_CRWn0N9zEey2geZbwIm9rQ" name="UncertainData">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_CRWn0d9zEey2geZbwIm9rQ" name="value" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_CRWn0t9zEey2geZbwIm9rQ" name="lowerMargin">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_CRWn099zEey2geZbwIm9rQ" name="upperMargin">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_CRWn1N9zEey2geZbwIm9rQ" name="confidenceLevel">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EFloat"/>
+        </ownedAttribute>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_H7N7cIWvEeyWqMvyxp-iUQ" name="Trackside">
@@ -1174,4 +1179,5 @@ to issue a MA if integrity lost</body>
   <ConstraintBlocks:ConstraintBlock xmi:id="_w4C1wMVfEeyV998Zn-SHyg" base_Class="_w38vIMVfEeyV998Zn-SHyg"/>
   <ConstraintBlocks:ConstraintBlock xmi:id="_jAwngM_AEeyAAOvme_Ervg" base_Class="_jAilEM_AEeyAAOvme_Ervg"/>
   <Blocks:Block xmi:id="_QdsDoNkxEey7tc8dtUE_zg" base_Class="_QdLGQNkxEey7tc8dtUE_zg"/>
+  <Blocks:Block xmi:id="_CRX18N9zEey2geZbwIm9rQ" base_Class="_CRWn0N9zEey2geZbwIm9rQ"/>
 </xmi:XMI>
