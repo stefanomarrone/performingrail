@@ -1,4 +1,4 @@
-# <<section name>>
+Points Management UPPAAL model
 
 
 <<descrition>>
