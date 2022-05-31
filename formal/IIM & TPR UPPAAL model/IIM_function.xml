@@ -418,7 +418,7 @@ const int INTEGRITY_CHECK_TIMEOUT = 2 ; //Time of sending Integrity info to TPR 
 		<name>TrainData</name>
 		<parameter>int ID_Train, int Length , int posInit, int ID_LRBG_init,  int speed_init, int max_speed</parameter>
 		<declaration>// frenquency of sending information
-const int TD_sending_TIMEOUT = 1;
+const int TD_sending_TIMEOUT = 30;
 clock t_trainData ;</declaration>
 		<location id="id17" x="-161" y="-221">
 			<name x="-195" y="-161">sendTrainData</name>
