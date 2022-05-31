@@ -606,7 +606,6 @@ clock t_tpr ;</declaration>
 		</location>
 		<location id="id30" x="-349" y="-348">
 			<name x="-442" y="-357">waitLocation</name>
-			<committed/>
 		</location>
 		<location id="id31" x="-425" y="-221">
 			<name x="-467" y="-195">ComputeTPR</name>
@@ -625,13 +624,6 @@ clock t_tpr ;</declaration>
 			<source ref="id29"/>
 			<target ref="id32"/>
 			<label kind="synchronisation" x="-203" y="-297">RequestPositionReport[ID_Train] ?</label>
-		</transition>
-		<transition>
-			<source ref="id31"/>
-			<target ref="id31"/>
-			<label kind="synchronisation" x="-595" y="-246">IntegrityInfo[ID_Train] ?</label>
-			<nail x="-484" y="-272"/>
-			<nail x="-527" y="-187"/>
 		</transition>
 		<transition>
 			<source ref="id30"/>
@@ -790,15 +782,6 @@ system TIMSProcess, IIMProcess,TrainModeProcess,TrainSpeedProcess, TPR_TrainMode
 		</query>
 		<query>
 			<formula>E&lt;&gt; IIMProcess.Integrity_Confirmed_Driver</formula>
-			<comment></comment>
-		</query>
-		<query>
-			<formula></formula>
-			<comment></comment>
-		</query>
-		<query>
-			<formula>
-</formula>
 			<comment></comment>
 		</query>
 	</queries>
