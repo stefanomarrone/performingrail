@@ -6,7 +6,7 @@ In order to manipulate the model, UPPAAL has to be installed on your machine fro
 
 ## Usage
 
-The model consists of .... templates.
+The model consists of six templates.
 
 
 
