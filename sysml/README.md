@@ -1,6 +1,6 @@
 # SysML ETCS-L3 Specification
 
-This folder contains the SysML model of ETCS-L3 according to the objective of the Performingrail project. The model is reported as a Papyrus model.
+This folder contains the SysML model of ETCS-L3 according to the objective of the PerformingRail project. The model is reported as a Papyrus model.
 
 ## Prerequisites
 

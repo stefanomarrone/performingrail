@@ -1,22 +1,14 @@
 # Integrity Information Management and Train position reporting UPPAAL model
-
-
-
-<<descrition>>
-This is the timed automata model described in the PERFORMINGRAIL Deliverable D2.2, dedicated to the description of the 2 functions:  Integrity Information Management and Train position reporting. 
-To set up our models, some peripheric automata have also been added to emulate the interactions of the 2
-aforementioned functions with the other functions involved in the MB system (Speed and Distance Supervision,
-, Trains Management), as well as with some external actors (Driver, TIMS, TLU).
+This is the Timed Automata model described in the PerformingRail Deliverable D2.2, dedicated to the description of the functions:  Integrity Information Management and Train position reporting. 
+To set up our models, some peripheric automata have also been added to emulate the interactions of the two
+aforementioned functions with the other functions involved in the MB system (Speed and Distance Supervision, Trains Management), as well as with some external actors (Driver, TIMS, TLU).
 
 
 ## Prerequisites
-<<tools to install>>
-
 In order to visualize and manipulate the model, UPPAAL tool has to be installed on your machine from the official website: https://uppaal.org/downloads/. Please follow Installation Instructions. 
 Once the model has been added to the UPPAAL directory it can be edited and used for simulation and verification purposes.
 
 ## Usage
-
 An UPPAAL model is constituted of various timed automata templates (possibly parameterizable) that can be instantiated to establish the model of the actual system to be investigated.
  Concretely, this latter is a network of timed automata that correspond to the composition of the instances created from these templates. 
 
@@ -28,10 +20,10 @@ Our model contains 11 templates:
 - ``Driver" automaton which emulates the behaviour of the Driver block by sending signal 'Integrity_Confirmed_By_Driver".
 	It has as parameter ID_Train, the ID of the train.
 
-- ``Train mode" automaton which emulates the switching between the different ETCS operation modes. It is designed particularly in order to consider condition 8 (see PERFORMINGRAIL Deliverable D2.2).
+- ``Train mode" automaton which emulates the switching between the different ETCS operation modes. It is designed particularly in order to consider condition 8 (see PerformingRail Deliverable D2.2).
 	It has as parameter ID_Train, the ID of the train.
-	All the switching conditions are summarized in Table 8.1 of PERFORMINGRAIL D2.2.
-	
+	All the switching conditions are summarized in Table 8.1 of PerformingRail D2.2.
+
  
 - ``Train localization Unit" automaton, which emulates the behaviour of the Train localization Unit. It regularly receives from the ``train position reporting" automaton requests for location. 
     It computes the location and sends it back to the ``Train position reporting" automaton.
@@ -57,7 +49,6 @@ Our model contains 11 templates:
 - ``Trains_management" automaton which receives Train position report from The ``Train_Position_Reporting" automaton, and 
  receives Train Data from ``Speed and Distance supervision" automaton, and sends an acknowledgement upon reception. 
  
-
 In the system composition, we instantiate each required template with the relevant parameters, if any.
  
 We have also set a list of properties that can be checked by means of the UPPAAL Verfier engine. 

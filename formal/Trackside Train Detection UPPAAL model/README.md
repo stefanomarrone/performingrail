@@ -1,11 +1,6 @@
 # Trackside Train Detection Management UPPAAL model
-
-
-
-<<descrition>>
-This is the timed automata model described in the PERFORMINGRAIL Deliverable D2.2, dedicated to the description of the function: Trackside Train Detection Management.
-To set up our models, some peripheric automata have also been added to emulate the interactions of the aforementioned function
- with the other functions involved in the MB system (Train position reporting, Track Status Management, Trains Management), as well as with some external actors (TTD, TMS)
+This is the timed automata model described in the PerformingRail Deliverable D2.2, dedicated to the description of the function: Trackside Train Detection Management.
+To set up our models, some peripheric automata have also been added to emulate the interactions of the aforementioned function with the other functions involved in the MB system (Train position reporting, Track Status Management, Trains Management), as well as with some external actors (TTD, TMS)
 
 ## Prerequisites
 <<tools to install>>
@@ -58,8 +53,6 @@ Our model contains 8 templates:
 - ``TPRManagement" automaton which represents a part of the behaviour of the ``TPR_Management" function. 
 	It sends each T_CYCLOC a TPR to `TM_SendTrainInfo" automaton.
 	This automaton has as parameter ID_Train, the ID of the train.
-
-
 
 In the system composition, we instantiate each required template with the relevant parameters, if any.
 In our case, we consider a system composed of 10 TTD and 3 trains. 
