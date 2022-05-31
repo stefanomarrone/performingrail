@@ -156,15 +156,14 @@ session_timer[i] &lt;= SESSION_EXPIRED_TIMEOUT</label>
 const int TRAIN_MSG_PERIOD = 2;
 const int IDLE_TIME = 5;
 
-double position = 0.0;
-double t0 = 0.0;
-
+int position = 0;
+int new_p;
 clock tpr_wait;
 
 void setTPR_resetTPRwait(){
     tpr[i].id = i;
     tpr[i].length = length;
-    tpr[i].position = fint(position); 
+    tpr[i].position = position; 
     tpr_wait = 0;
 }
 
@@ -175,10 +174,6 @@ void setWrongTPR_resetTPRwait(){
     tpr_wait = 0;
 }
 
-void updatePosition(double &amp;position, double &amp;t0){
-    position = position + velocity * (train_time[i] - t0);
-    t0 = train_time[i];
-}
 
 </declaration>
 		<location id="id4" x="-1572" y="43">
@@ -197,20 +192,33 @@ void updatePosition(double &amp;position, double &amp;t0){
 			<name x="-1385" y="-280">Idling</name>
 			<label kind="invariant" x="-1445" y="-255">tpr_wait &lt;= IDLE_TIME</label>
 		</location>
-		<location id="id8" x="-1572" y="204">
+		<location id="id8" x="-1572" y="153">
+			<committed/>
 		</location>
-		<branchpoint id="id9" x="-1572" y="-102">
+		<location id="id9" x="-1572" y="-42">
+			<committed/>
+		</location>
+		<branchpoint id="id10" x="-1572" y="-102">
 		</branchpoint>
 		<init ref="id8"/>
 		<transition>
-			<source ref="id8"/>
-			<target ref="id4"/>
-			<label kind="synchronisation" x="-1564" y="119">depart_ch[i]?</label>
+			<source ref="id9"/>
+			<target ref="id10"/>
+			<label kind="assignment" x="-1657" y="-76">position = position + new_p</label>
 		</transition>
 		<transition>
 			<source ref="id4"/>
 			<target ref="id9"/>
-			<label kind="guard" x="-1657" y="-59">tpr_wait == TRAIN_MSG_PERIOD</label>
+			<label kind="select" x="-1598" y="-8">p : int[0, 20]</label>
+			<label kind="guard" x="-1666" y="-25">tpr_wait == TRAIN_MSG_PERIOD</label>
+			<label kind="assignment" x="-1513" y="-8">new_p = p</label>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id4"/>
+			<label kind="assignment" x="-1538" y="110">train_time[i] = 0,
+position = 0,
+new_p = 0</label>
 		</transition>
 		<transition>
 			<source ref="id7"/>
@@ -235,17 +243,17 @@ void updatePosition(double &amp;position, double &amp;t0){
 			<nail x="-1785" y="43"/>
 		</transition>
 		<transition>
-			<source ref="id9"/>
+			<source ref="id10"/>
 			<target ref="id7"/>
 			<label kind="assignment" x="-1487" y="-195">tpr_wait = 0</label>
 		</transition>
 		<transition>
-			<source ref="id9"/>
+			<source ref="id10"/>
 			<target ref="id6"/>
 			<label kind="synchronisation" x="-1606" y="-195">tpr_ch[i]!</label>
 		</transition>
 		<transition>
-			<source ref="id9"/>
+			<source ref="id10"/>
 			<target ref="id5"/>
 			<label kind="synchronisation" x="-1734" y="-195">tpr_ch[i]!</label>
 		</transition>
@@ -264,24 +272,24 @@ void check_trains(){
     }
         
 }</declaration>
-		<location id="id10" x="0" y="0">
+		<location id="id11" x="0" y="0">
 			<committed/>
 		</location>
-		<location id="id11" x="0" y="-85">
+		<location id="id12" x="0" y="-85">
 			<label kind="invariant" x="17" y="-93">check_trains_clock &lt;= CHECK_TRAINS_PERIOD</label>
 		</location>
-		<init ref="id10"/>
+		<init ref="id11"/>
 		<transition>
-			<source ref="id11"/>
-			<target ref="id11"/>
+			<source ref="id12"/>
+			<target ref="id12"/>
 			<label kind="guard" x="42" y="-136">check_trains_clock == CHECK_TRAINS_PERIOD</label>
-			<nail x="34" y="-136"/>
-			<nail x="-34" y="-136"/>
+			<nail x="59" y="-170"/>
+			<nail x="-59" y="-170"/>
 		</transition>
 		<transition>
-			<source ref="id10"/>
-			<target ref="id11"/>
-			<label kind="assignment" x="0" y="-42">sys_time = 0</label>
+			<source ref="id11"/>
+			<target ref="id12"/>
+			<label kind="assignment" x="8" y="-51">sys_time = 0</label>
 		</transition>
 	</template>
 	<template>
@@ -310,63 +318,63 @@ void alertTMS(){
 }
 
 </declaration>
-		<location id="id12" x="204" y="306">
+		<location id="id13" x="204" y="306">
 			<name x="221" y="298">GoToSafeState</name>
 		</location>
-		<location id="id13" x="204" y="-93">
+		<location id="id14" x="204" y="-93">
 			<name x="221" y="-102">MuteTimerExpired</name>
 		</location>
-		<location id="id14" x="-654" y="-93">
+		<location id="id15" x="-654" y="-93">
 			<name x="-731" y="-93">Waiting</name>
 		</location>
-		<location id="id15" x="-578" y="-246">
+		<location id="id16" x="-578" y="-246">
 			<name x="-620" y="-272">SendTSAOccupied</name>
 			<committed/>
 		</location>
-		<location id="id16" x="-654" y="77">
+		<location id="id17" x="-654" y="77">
 			<name x="-790" y="59">FrontEndUpdated</name>
 		</location>
-		<location id="id17" x="-238" y="306">
+		<location id="id18" x="-238" y="306">
 			<name x="-221" y="306">RearEndUpdated</name>
 		</location>
-		<location id="id18" x="-221" y="-93">
+		<location id="id19" x="-221" y="-93">
 			<name x="-297" y="-127">SendingTSAUnknown</name>
 			<committed/>
 		</location>
-		<location id="id19" x="-306" y="-246">
+		<location id="id20" x="-306" y="-246">
 			<name x="-289" y="-263">CheckLengthExtent</name>
 		</location>
-		<location id="id20" x="-170" y="-8">
+		<location id="id21" x="-170" y="-8">
 			<committed/>
 		</location>
-		<location id="id21" x="204" y="94">
+		<location id="id22" x="204" y="94">
 			<committed/>
 		</location>
-		<location id="id22" x="-731" y="-178">
+		<location id="id23" x="-731" y="-178">
 			<name x="-858" y="-187">SendTSAUnkown</name>
 			<committed/>
 		</location>
-		<location id="id23" x="-654" y="-8">
+		<location id="id24" x="-654" y="-8">
 			<committed/>
 		</location>
-		<location id="id24" x="-357" y="-42">
+		<location id="id25" x="-357" y="-42">
 			<committed/>
 		</location>
-		<location id="id25" x="0" y="136">
+		<location id="id26" x="0" y="136">
 			<committed/>
 		</location>
-		<location id="id26" x="-442" y="306">
+		<location id="id27" x="-442" y="306">
 			<committed/>
 		</location>
-		<init ref="id14"/>
+		<init ref="id15"/>
 		<transition>
-			<source ref="id26"/>
-			<target ref="id17"/>
+			<source ref="id27"/>
+			<target ref="id18"/>
 			<label kind="synchronisation" x="-416" y="289">integrity_reset_ch[i]!</label>
 		</transition>
 		<transition>
-			<source ref="id16"/>
-			<target ref="id26"/>
+			<source ref="id17"/>
+			<target ref="id27"/>
 			<label kind="guard" x="-875" y="272">(tpr[i].M_MODE==0||tpr[i].M_MODE==1) &amp;&amp;
 tpr[i].integrityConfSource == 1 &amp;&amp;
 integrityAcceptedByDriver()</label>
@@ -375,16 +383,16 @@ integrityAcceptedByDriver()</label>
 			<nail x="-943" y="306"/>
 		</transition>
 		<transition>
-			<source ref="id16"/>
-			<target ref="id26"/>
+			<source ref="id17"/>
+			<target ref="id27"/>
 			<label kind="guard" x="-484" y="110">tpr[i].integrityConfSource == 2</label>
 			<label kind="synchronisation" x="-433" y="127">tsarelease_ch[i]!</label>
 			<label kind="assignment" x="-433" y="144">integrityTimer[i] = 0</label>
 			<nail x="-280" y="170"/>
 		</transition>
 		<transition>
-			<source ref="id16"/>
-			<target ref="id26"/>
+			<source ref="id17"/>
+			<target ref="id27"/>
 			<label kind="guard" x="-722" y="153">(tpr[i].M_MODE==0||tpr[i].M_MODE==1) &amp;&amp;
 tpr[i].integrityConfSource == 3</label>
 			<label kind="synchronisation" x="-680" y="187">tsarelease_ch[i]!</label>
@@ -392,118 +400,118 @@ tpr[i].integrityConfSource == 3</label>
 			<nail x="-586" y="212"/>
 		</transition>
 		<transition>
-			<source ref="id25"/>
-			<target ref="id12"/>
+			<source ref="id26"/>
+			<target ref="id13"/>
 			<label kind="synchronisation" x="34" y="196">TPR_NotOK!</label>
 		</transition>
 		<transition>
-			<source ref="id20"/>
-			<target ref="id25"/>
+			<source ref="id21"/>
+			<target ref="id26"/>
 			<label kind="guard" x="-153" y="34">tpr[i].id != i ||
 tpr[i].length != length</label>
 			<label kind="synchronisation" x="-110" y="77">tsarelease_ch[i]!</label>
 		</transition>
 		<transition>
-			<source ref="id24"/>
-			<target ref="id14"/>
+			<source ref="id25"/>
+			<target ref="id15"/>
 			<label kind="synchronisation" x="-501" y="-68">TPR_OK!</label>
 		</transition>
 		<transition>
-			<source ref="id20"/>
-			<target ref="id24"/>
+			<source ref="id21"/>
+			<target ref="id25"/>
 			<label kind="guard" x="-323" y="-68">tpr[i].id == i &amp;&amp;
 tpr[i].length == length</label>
 			<label kind="synchronisation" x="-314" y="-25">tsaoccupy_ch[i]!</label>
 		</transition>
 		<transition>
-			<source ref="id23"/>
-			<target ref="id16"/>
+			<source ref="id24"/>
+			<target ref="id17"/>
 			<label kind="synchronisation" x="-654" y="9">tsaoccupy_ch[i]!</label>
 		</transition>
 		<transition>
-			<source ref="id14"/>
-			<target ref="id23"/>
+			<source ref="id15"/>
+			<target ref="id24"/>
 			<label kind="guard" x="-654" y="-51">VTD == false</label>
 			<label kind="synchronisation" x="-654" y="-68">tpr_ch[i]?</label>
 		</transition>
 		<transition>
-			<source ref="id22"/>
-			<target ref="id14"/>
+			<source ref="id23"/>
+			<target ref="id15"/>
 			<label kind="synchronisation" x="-790" y="-127">tsaunknown_ch[i]!</label>
 			<nail x="-722" y="-127"/>
 		</transition>
 		<transition>
-			<source ref="id14"/>
-			<target ref="id22"/>
+			<source ref="id15"/>
+			<target ref="id23"/>
 			<label kind="synchronisation" x="-731" y="-161">integrity_timeout_ch[i]?</label>
 			<nail x="-671" y="-161"/>
 		</transition>
 		<transition>
-			<source ref="id21"/>
-			<target ref="id12"/>
+			<source ref="id22"/>
+			<target ref="id13"/>
 			<label kind="synchronisation" x="204" y="179">tsarelease_ch[i]!</label>
 		</transition>
 		<transition>
-			<source ref="id13"/>
-			<target ref="id21"/>
+			<source ref="id14"/>
+			<target ref="id22"/>
 			<label kind="synchronisation" x="213" y="0">timeout_ch[i]?</label>
 		</transition>
 		<transition>
-			<source ref="id13"/>
-			<target ref="id20"/>
+			<source ref="id14"/>
+			<target ref="id21"/>
 			<label kind="synchronisation" x="0" y="-68">tpr_ch[i]?</label>
 		</transition>
 		<transition>
-			<source ref="id19"/>
-			<target ref="id14"/>
+			<source ref="id20"/>
+			<target ref="id15"/>
 			<label kind="guard" x="-433" y="-212">extensionOK()</label>
 			<label kind="assignment" x="-493" y="-195">VTD = false</label>
 		</transition>
 		<transition>
-			<source ref="id19"/>
-			<target ref="id14"/>
+			<source ref="id20"/>
+			<target ref="id15"/>
 			<label kind="guard" x="-331" y="-204">extendsIntoPreviouslyClearArea()</label>
 			<label kind="assignment" x="-331" y="-187">alertTMS()</label>
 			<nail x="-348" y="-161"/>
 		</transition>
 		<transition>
-			<source ref="id15"/>
-			<target ref="id19"/>
+			<source ref="id16"/>
+			<target ref="id20"/>
 			<label kind="synchronisation" x="-493" y="-272">tsaoccupy_ch[i]!</label>
 		</transition>
 		<transition>
-			<source ref="id18"/>
-			<target ref="id13"/>
+			<source ref="id19"/>
+			<target ref="id14"/>
 			<label kind="synchronisation" x="-119" y="-119">tsaunknown_ch[i]!</label>
 		</transition>
 		<transition>
-			<source ref="id14"/>
-			<target ref="id18"/>
+			<source ref="id15"/>
+			<target ref="id19"/>
 			<label kind="synchronisation" x="-476" y="-119">timeout_ch[i]?</label>
 		</transition>
 		<transition>
-			<source ref="id16"/>
-			<target ref="id17"/>
+			<source ref="id17"/>
+			<target ref="id18"/>
 			<label kind="guard" x="-595" y="34">tpr[i].integrityConfSource == 0 ||
 (tpr[i].integrityConfSource == 1 &amp;&amp; !integrityAcceptedByDriver())</label>
 			<label kind="synchronisation" x="-459" y="77">tsaunknown_ch[i]!</label>
 			<nail x="-238" y="77"/>
 		</transition>
 		<transition>
-			<source ref="id17"/>
-			<target ref="id12"/>
+			<source ref="id18"/>
+			<target ref="id13"/>
 			<label kind="guard" x="-102" y="281">positionIsUnexpected()</label>
 			<label kind="assignment" x="-68" y="306">alertTMS()</label>
 		</transition>
 		<transition>
-			<source ref="id17"/>
-			<target ref="id14"/>
+			<source ref="id18"/>
+			<target ref="id15"/>
 			<label kind="guard" x="-365" y="9">positionOK()</label>
 			<nail x="-178" y="68"/>
 		</transition>
 		<transition>
-			<source ref="id14"/>
-			<target ref="id15"/>
+			<source ref="id15"/>
+			<target ref="id16"/>
 			<label kind="guard" x="-705" y="-229">tpr[i].length &gt; length &amp;&amp; VTD == true</label>
 			<label kind="synchronisation" x="-705" y="-212">tpr_ch[i]?</label>
 		</transition>
@@ -538,50 +546,50 @@ void sendTSAReleaseToRouteManager(){}
 
 void updateExtent(){}
 </declaration>
-		<location id="id27" x="-425" y="-289">
+		<location id="id28" x="-425" y="-289">
 			<name x="-399" y="-306">Unknown</name>
 		</location>
-		<location id="id28" x="17" y="-289">
+		<location id="id29" x="17" y="-289">
 			<name x="34" y="-297">Occupied</name>
 		</location>
-		<location id="id29" x="-586" y="-42">
+		<location id="id30" x="-586" y="-42">
 			<name x="-569" y="-51">GoToSafeState</name>
 		</location>
-		<location id="id30" x="17" y="-17">
+		<location id="id31" x="17" y="-17">
 			<name x="34" y="-25">Removed</name>
 		</location>
-		<location id="id31" x="110" y="-246">
+		<location id="id32" x="110" y="-246">
 			<committed/>
 		</location>
-		<init ref="id28"/>
+		<init ref="id29"/>
 		<transition>
-			<source ref="id31"/>
-			<target ref="id28"/>
+			<source ref="id32"/>
+			<target ref="id29"/>
 			<label kind="synchronisation" x="42" y="-238">tsarelease_RM_ch[i]!</label>
 			<nail x="51" y="-238"/>
 		</transition>
 		<transition>
-			<source ref="id28"/>
-			<target ref="id31"/>
+			<source ref="id29"/>
+			<target ref="id32"/>
 			<label kind="synchronisation" x="85" y="-280">tsarelease_ch[i]?</label>
 		</transition>
 		<transition>
-			<source ref="id27"/>
-			<target ref="id29"/>
+			<source ref="id28"/>
+			<target ref="id30"/>
 			<label kind="guard" x="-731" y="-102">conflictWithOtherTrainMovements()</label>
 			<nail x="-518" y="-144"/>
 		</transition>
 		<transition>
-			<source ref="id27"/>
-			<target ref="id29"/>
+			<source ref="id28"/>
+			<target ref="id30"/>
 			<label kind="guard" x="-595" y="-144">tpr[i].length &gt;= length - TSA_LENGTH_TOLERANCE &amp;&amp;
 tpr[i].length &lt;= length + TSA_LENGTH_TOLERANCE</label>
 			<label kind="synchronisation" x="-476" y="-161">tsaoccupy_ch[i]?</label>
 			<nail x="-434" y="-111"/>
 		</transition>
 		<transition>
-			<source ref="id27"/>
-			<target ref="id30"/>
+			<source ref="id28"/>
+			<target ref="id31"/>
 			<label kind="guard" x="-671" y="25">rcvReleaseTSAFromTMS() &amp;&amp; extent == 0</label>
 			<label kind="synchronisation" x="-323" y="25">tsarelease_RM_ch[i]!</label>
 			<nail x="-748" y="-289"/>
@@ -589,16 +597,16 @@ tpr[i].length &lt;= length + TSA_LENGTH_TOLERANCE</label>
 			<nail x="17" y="51"/>
 		</transition>
 		<transition>
-			<source ref="id27"/>
-			<target ref="id30"/>
+			<source ref="id28"/>
+			<target ref="id31"/>
 			<label kind="guard" x="-323" y="-102">sweepable == true &amp;&amp;
 extent&lt;Configurable_Minimum_Length &amp;&amp;
 frontEndNotProtectedAtSoM()</label>
 			<nail x="-187" y="-17"/>
 		</transition>
 		<transition>
-			<source ref="id27"/>
-			<target ref="id27"/>
+			<source ref="id28"/>
+			<target ref="id28"/>
 			<label kind="guard" x="-697" y="-255">tpr[i].length &lt; length - TSA_LENGTH_TOLERANCE ||
 tpr[i].length &gt; length + TSA_LENGTH_TOLERANCE</label>
 			<label kind="synchronisation" x="-586" y="-280">tsaoccupy_ch[i]?</label>
@@ -607,43 +615,43 @@ tpr[i].length &gt; length + TSA_LENGTH_TOLERANCE</label>
 			<nail x="-510" y="-238"/>
 		</transition>
 		<transition>
-			<source ref="id27"/>
-			<target ref="id27"/>
+			<source ref="id28"/>
+			<target ref="id28"/>
 			<label kind="guard" x="-612" y="-374">rcvReleaseTSAFromTMS() &amp;&amp; extent &gt; 0</label>
 			<label kind="synchronisation" x="-527" y="-357">tsarelease_RM_ch[i]!</label>
 			<nail x="-459" y="-340"/>
 			<nail x="-510" y="-340"/>
 		</transition>
 		<transition>
-			<source ref="id28"/>
-			<target ref="id30"/>
+			<source ref="id29"/>
+			<target ref="id31"/>
 			<label kind="guard" x="25" y="-136">trainCompletelyLocatedInASA()</label>
 			<label kind="synchronisation" x="25" y="-161">tsaunknown_ch[i]?</label>
 		</transition>
 		<transition>
-			<source ref="id28"/>
-			<target ref="id28"/>
+			<source ref="id29"/>
+			<target ref="id29"/>
 			<label kind="synchronisation" x="102" y="-365">tsaoccupy_ch[i]?</label>
 			<nail x="42" y="-340"/>
 			<nail x="102" y="-340"/>
 		</transition>
 		<transition>
-			<source ref="id28"/>
-			<target ref="id27"/>
+			<source ref="id29"/>
+			<target ref="id28"/>
 			<label kind="guard" x="-297" y="-289">!trainCompletelyLocatedInASA()</label>
 			<label kind="synchronisation" x="-255" y="-306">tsaunknown_ch[i]?</label>
 		</transition>
 		<transition>
-			<source ref="id27"/>
-			<target ref="id28"/>
+			<source ref="id28"/>
+			<target ref="id29"/>
 			<label kind="guard" x="-297" y="-178">tpr[i].integrityConfSource == 1 &amp;&amp;
 integrityAcceptedByDriver()</label>
 			<label kind="synchronisation" x="-255" y="-195">tsaoccupy_ch[i]?</label>
 			<nail x="-204" y="-195"/>
 		</transition>
 		<transition>
-			<source ref="id27"/>
-			<target ref="id28"/>
+			<source ref="id28"/>
+			<target ref="id29"/>
 			<label kind="guard" x="-314" y="-416">tpr[i].integrityConfSource == 3</label>
 			<label kind="synchronisation" x="-255" y="-399">tsaoccupy_ch[i]?</label>
 			<nail x="-204" y="-382"/>
@@ -652,12 +660,12 @@ integrityAcceptedByDriver()</label>
 	<template>
 		<name>RouteManagement</name>
 		<parameter>const int i</parameter>
-		<location id="id32" x="0" y="0">
+		<location id="id33" x="0" y="0">
 		</location>
-		<init ref="id32"/>
+		<init ref="id33"/>
 		<transition>
-			<source ref="id32"/>
-			<target ref="id32"/>
+			<source ref="id33"/>
+			<target ref="id33"/>
 			<label kind="synchronisation" x="8" y="34">tsarelease_RM_ch[i]?</label>
 			<nail x="0" y="68"/>
 			<nail x="-68" y="68"/>
@@ -666,29 +674,29 @@ integrityAcceptedByDriver()</label>
 	<template>
 		<name>TrainIntegrity</name>
 		<parameter>const int i</parameter>
-		<location id="id33" x="-51" y="-93">
+		<location id="id34" x="-51" y="-93">
 			<name x="-61" y="-127">WaitIntegrityTimer</name>
 			<label kind="invariant" x="-51" y="-85">integrityTimer[i] &lt;= INTEGRITY_WAIT_TIMEOUT</label>
 		</location>
-		<location id="id34" x="-128" y="-186">
+		<location id="id35" x="-128" y="-186">
 			<name x="-195" y="-221">IntegrityTimerExpired</name>
 		</location>
-		<init ref="id33"/>
+		<init ref="id34"/>
 		<transition>
-			<source ref="id34"/>
-			<target ref="id33"/>
+			<source ref="id35"/>
+			<target ref="id34"/>
 			<label kind="synchronisation" x="-229" y="-110">integrity_reset_ch[i]?</label>
 			<nail x="-145" y="-110"/>
 		</transition>
 		<transition>
-			<source ref="id33"/>
-			<target ref="id34"/>
+			<source ref="id34"/>
+			<target ref="id35"/>
 			<label kind="guard" x="-43" y="-186">integrityTimer[i] == INTEGRITY_WAIT_TIMEOUT</label>
 			<label kind="synchronisation" x="-43" y="-169">integrity_timeout_ch[i]!</label>
 			<nail x="-34" y="-169"/>
 		</transition>
 	</template>
-	<system>I = Initializer();
+	<system>//I = Initializer();
 
 T0 = Train(0, 10, 4);
 T1 = Train(1, 11, 6);
@@ -708,7 +716,7 @@ RM1 = RouteManagement(1);
 TI0 = TrainIntegrity(0);
 TI1 = TrainIntegrity(1);
 
-system I, T0, CM0, T1, CM1, TM0, TM1, TSM0, TSM1, RM0, RM1, TI0, TI1;
+system /*I, */T0, CM0, T1, CM1, TM0, TM1, TSM0, TSM1, RM0, RM1, TI0, TI1;
     </system>
 	<queries>
 		<query>
