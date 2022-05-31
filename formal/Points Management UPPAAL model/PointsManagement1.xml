@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE nta PUBLIC '-//Uppaal Team//DTD Flat System 1.1//EN' 'http://www.it.uu.se/research/group/darts/uppaal/flat-1_2.dtd'>
+<nta>
+	<declaration>// Place global declarations here.
+chan setandlock, createroute, sweep;
+bool EndPositionDetected;
+//EndPositionDetected = True
+const int Clear = 0, Occupied = 1, Unknown = 2, Reserved = 3, Right = 1, Left = 2, VacantPoint = 1, TrainArea = 1, FoulingArea = 2;
+int TrackStatus, PointPosition, EndPosition, Point, TrackStatusArea, move;
+
+</declaration>
+	<template>
+		<name>MainAutomata</name>
+		<location id="id0" x="-255" y="0">
+			<name x="-323" y="-8">Waiting</name>
+		</location>
+		<location id="id1" x="-25" y="-136">
+			<name x="-8" y="-144">Nominal</name>
+		</location>
+		<location id="id2" x="-25" y="0">
+			<name x="-8" y="-8">Degraded</name>
+		</location>
+		<location id="id3" x="-25" y="136">
+			<name x="-8" y="127">Sweepable</name>
+		</location>
+		<init ref="id0"/>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id3"/>
+			<label kind="synchronisation" x="-178" y="119">sweep!</label>
+			<nail x="-255" y="136"/>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id1"/>
+			<label kind="synchronisation" x="-195" y="-161">createroute!</label>
+			<nail x="-255" y="-136"/>
+			<nail x="-42" y="-136"/>
+		</transition>
+		<transition>
+			<source ref="id0"/>
+			<target ref="id2"/>
+			<label kind="guard" x="-237" y="-34">TrackStatus == Unknown || TrackStatus == Occupied</label>
+			<label kind="synchronisation" x="-195" y="-17">setandlock!</label>
+			<nail x="-42" y="0"/>
+		</transition>
+	</template>
+	<template>
+		<name>createRoute</name>
+		<declaration>bool retval, continueFlag, nominal,reenter;
+</declaration>
+		<location id="id4" x="399" y="238">
+			<name x="365" y="255">ReservedArea</name>
+			<committed/>
+		</location>
+		<location id="id5" x="204" y="238">
+			<name x="178" y="255">ExitPoint</name>
+			<committed/>
+		</location>
+		<location id="id6" x="17" y="85">
+			<name x="7" y="51">Trackstatus</name>
+			<committed/>
+		</location>
+		<location id="id7" x="399" y="85">
+			<name x="370" y="51">PointInRoute</name>
+			<committed/>
+		</location>
+		<location id="id8" x="-127" y="0">
+			<name x="-204" y="-9">mainentry</name>
+		</location>
+		<location id="id9" x="204" y="85">
+			<name x="170" y="51">OccupiedArea</name>
+			<committed/>
+		</location>
+		<location id="id10" x="17" y="238">
+			<name x="-25" y="255">WaitingState</name>
+			<committed/>
+		</location>
+		<location id="id11" x="-161" y="161">
+			<name x="-238" y="153">FreeArea</name>
+			<committed/>
+		</location>
+		<init ref="id8"/>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id11"/>
+			<label kind="guard" x="-136" y="102">TrackStatus == Clear</label>
+			<label kind="synchronisation" x="-110" y="119">setandlock!</label>
+		</transition>
+		<transition>
+			<source ref="id11"/>
+			<target ref="id10"/>
+			<label kind="guard" x="-153" y="178">reenter == true</label>
+		</transition>
+		<transition>
+			<source ref="id10"/>
+			<target ref="id6"/>
+			<label kind="guard" x="-34" y="178">reenter == true</label>
+		</transition>
+		<transition>
+			<source ref="id5"/>
+			<target ref="id10"/>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id5"/>
+			<label kind="assignment" x="255" y="238">retval := false</label>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id5"/>
+			<label kind="assignment" x="153" y="170">retval := false</label>
+		</transition>
+		<transition>
+			<source ref="id7"/>
+			<target ref="id9"/>
+			<label kind="guard" x="255" y="68">continueFlag == true</label>
+		</transition>
+		<transition>
+			<source ref="id4"/>
+			<target ref="id7"/>
+			<label kind="assignment" x="374" y="170">retval := true</label>
+		</transition>
+		<transition>
+			<source ref="id9"/>
+			<target ref="id4"/>
+			<label kind="guard" x="229" y="119">retval == true &amp;&amp;
+TrackStatus == Reserved</label>
+		</transition>
+		<transition>
+			<source ref="id6"/>
+			<target ref="id9"/>
+			<label kind="guard" x="34" y="68">retval == false &amp;&amp; 
+continueFlag == true &amp;&amp; 
+TrackStatus == Occupied</label>
+		</transition>
+		<transition>
+			<source ref="id8"/>
+			<target ref="id6"/>
+			<label kind="guard" x="-127" y="25">nominal == true</label>
+			<label kind="synchronisation" x="-85" y="42">createroute?</label>
+		</transition>
+	</template>
+	<template>
+		<name>SetandLock</name>
+		<declaration>int maxtime = 5;
+bool EndPositionDetected;
+//int id = 2;
+//id := id + 1;
+//const int[0,2] id = 0;
+clock time;
+
+
+
+</declaration>
+		<location id="id12" x="-442" y="0">
+			<name x="-536" y="0">Entrypoint</name>
+		</location>
+		<location id="id13" x="-279" y="0">
+			<name x="-340" y="8">Endposition</name>
+		</location>
+		<location id="id14" x="-127" y="0">
+			<name x="-229" y="0">NoEndPosition</name>
+		</location>
+		<location id="id15" x="8" y="-110">
+			<name x="25" y="-127">PointPositionRight</name>
+			<committed/>
+		</location>
+		<location id="id16" x="17" y="110">
+			<name x="25" y="119">PointPositionLeft</name>
+			<committed/>
+		</location>
+		<location id="id17" x="93" y="0">
+			<name x="119" y="-8">ErrorState</name>
+		</location>
+		<init ref="id12"/>
+		<transition>
+			<source ref="id15"/>
+			<target ref="id14"/>
+			<label kind="guard" x="-119" y="-178">EndPosition == Right &amp;&amp; move == Left</label>
+			<label kind="assignment" x="-110" y="-144">time := 0</label>
+			<nail x="7" y="-144"/>
+			<nail x="-128" y="-144"/>
+		</transition>
+		<transition>
+			<source ref="id16"/>
+			<target ref="id14"/>
+			<label kind="guard" x="-127" y="153">EndPosition ==Left &amp;&amp; move == Right</label>
+			<label kind="assignment" x="-102" y="127">time := 0</label>
+			<nail x="16" y="144"/>
+			<nail x="-128" y="144"/>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id15"/>
+			<label kind="guard" x="-280" y="-136">EndPosition == Right</label>
+			<nail x="-280" y="-110"/>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id16"/>
+			<label kind="guard" x="-263" y="34">EndPositionDetected == true &amp;&amp; EndPosition == Right &amp;&amp; time  &lt;= maxtime</label>
+			<label kind="assignment" x="8" y="59">PointPosition := Left,
+move := Clear</label>
+		</transition>
+		<transition>
+			<source ref="id13"/>
+			<target ref="id16"/>
+			<label kind="guard" x="-280" y="119">EndPosition == Left</label>
+			<nail x="-280" y="110"/>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id17"/>
+			<label kind="guard" x="-42" y="-17">time &gt; maxtime</label>
+		</transition>
+		<transition>
+			<source ref="id14"/>
+			<target ref="id15"/>
+			<label kind="guard" x="-255" y="-59">EndPositionDetected == true &amp;&amp; EndPosition == Left &amp;&amp; time  &lt;= maxtime</label>
+			<label kind="assignment" x="-17" y="-93">PointPosition := Right,
+move := Clear</label>
+		</transition>
+		<transition>
+			<source ref="id12"/>
+			<target ref="id13"/>
+			<label kind="synchronisation" x="-416" y="0">setandlock?</label>
+		</transition>
+	</template>
+	<template>
+		<name>Override</name>
+		<declaration>bool ghosttrain, move;</declaration>
+		<location id="id18" x="-816" y="-76">
+		</location>
+		<location id="id19" x="-637" y="-76">
+			<name x="-722" y="-68">InitialPointPosition</name>
+		</location>
+		<location id="id20" x="-450" y="-178">
+			<name x="-460" y="-212">UnknownArea</name>
+			<committed/>
+		</location>
+		<location id="id21" x="-450" y="17">
+			<name x="-476" y="34">OccupiedArea</name>
+			<committed/>
+		</location>
+		<location id="id22" x="-280" y="-76">
+			<name x="-271" y="-68">NewPointPosition</name>
+		</location>
+		<init ref="id18"/>
+		<transition>
+			<source ref="id20"/>
+			<target ref="id22"/>
+			<label kind="guard" x="-408" y="-153">Point == VacantPoint &amp;&amp; move == true</label>
+			<nail x="-280" y="-178"/>
+		</transition>
+		<transition>
+			<source ref="id21"/>
+			<target ref="id22"/>
+			<label kind="guard" x="-408" y="-17">Point == VacantPoint &amp;&amp; move == true</label>
+			<nail x="-280" y="17"/>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id21"/>
+			<label kind="guard" x="-629" y="-8">ghosttrain == true</label>
+			<label kind="assignment" x="-629" y="17">TrackStatus := Occupied</label>
+			<nail x="-637" y="17"/>
+		</transition>
+		<transition>
+			<source ref="id19"/>
+			<target ref="id20"/>
+			<label kind="guard" x="-629" y="-204">ghosttrain == true</label>
+			<label kind="assignment" x="-629" y="-178">TrackStatus := Unknown</label>
+			<nail x="-637" y="-178"/>
+		</transition>
+		<transition>
+			<source ref="id18"/>
+			<target ref="id19"/>
+			<label kind="synchronisation" x="-773" y="-93">setandlock?</label>
+		</transition>
+	</template>
+	<template>
+		<name>InitializePointPosition</name>
+		<location id="id23" x="-391" y="-68">
+		</location>
+		<init ref="id23"/>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id23"/>
+			<label kind="assignment" x="-323" y="-42">PointPosition := Right</label>
+			<nail x="-246" y="-85"/>
+			<nail x="-289" y="17"/>
+		</transition>
+		<transition>
+			<source ref="id23"/>
+			<target ref="id23"/>
+			<label kind="assignment" x="-552" y="-136">PointPosition := Left</label>
+			<nail x="-501" y="-59"/>
+			<nail x="-442" y="-187"/>
+		</transition>
+	</template>
+	<template>
+		<name>Sweepable</name>
+		<declaration>bool remove;</declaration>
+		<location id="id24" x="-646" y="-8">
+		</location>
+		<location id="id25" x="-450" y="-8">
+			<name x="-527" y="8">StartPoint</name>
+		</location>
+		<location id="id26" x="-246" y="-144">
+			<name x="-297" y="-187">FoulingPointArea</name>
+			<committed/>
+		</location>
+		<location id="id27" x="-246" y="102">
+			<name x="-271" y="119">TrainPathArea</name>
+			<committed/>
+		</location>
+		<location id="id28" x="-42" y="-34">
+			<name x="-17" y="-34">SweepPoint</name>
+		</location>
+		<init ref="id24"/>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id26"/>
+			<label kind="guard" x="-510" y="-170">TrackStatusArea == FoulingArea</label>
+			<nail x="-450" y="-144"/>
+		</transition>
+		<transition>
+			<source ref="id26"/>
+			<target ref="id28"/>
+			<label kind="guard" x="-102" y="-102">remove == true</label>
+			<nail x="-42" y="-144"/>
+			<nail x="-42" y="-51"/>
+		</transition>
+		<transition>
+			<source ref="id27"/>
+			<target ref="id28"/>
+			<label kind="guard" x="-102" y="59">remove == true</label>
+			<nail x="-42" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id25"/>
+			<target ref="id27"/>
+			<label kind="guard" x="-493" y="102">TrackStatusArea == TrainArea</label>
+			<nail x="-450" y="102"/>
+		</transition>
+		<transition>
+			<source ref="id24"/>
+			<target ref="id25"/>
+			<label kind="synchronisation" x="-595" y="-25">sweep?</label>
+		</transition>
+	</template>
+	<system>// Place template instantiations here.
+//const int[0,2] id = 0;
+main = MainAutomata();
+route = createRoute();
+lockpoint1  = SetandLock();
+ride = Override();
+sweeppoint = Sweepable();
+//lockpoint2 = SetandLock();
+//lockpoint3 = SetandLock(2);
+initializeposition = InitializePointPosition();
+// List one or more processes to be composed into a system.
+system main, route, lockpoint1, ride, sweeppoint, initializeposition;
+    </system>
+	<queries>
+		<query>
+			<formula></formula>
+			<comment></comment>
+		</query>
+	</queries>
+</nta>
