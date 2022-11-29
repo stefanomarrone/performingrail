@@ -1,5 +1,6 @@
 # SAN model
 The objective of the SAN model is to enable the evaluation of performance and performability properties at the system level. These properties are evaluated with respect to the movement of a train fleet on a track under the control of a trackside.
+This folder contains also a variant of the model (the one with the postfix _LossOfComm) that considers a potential temporary loss of communication of a single train.
 
 ## Prerequisites
 The model has been developed in Möbius 2.5.10, available at http://www.mobius.illinois.edu
